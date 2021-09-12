@@ -139,7 +139,7 @@
 
 </body>
 </html>
-<style>.avatar{visibility:hidden;} img[attribute='Kommentálás joga']{ display: none;}</style>
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
 <script>
 // ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 var images = document.querySelectorAll('img');
 
 for (var i = 0; i < images.length; i++) {
-  if(images[i].naturalWidth == 0 ){
+  if(images[i].naturalWidth==0 && images[i].src.toString().includes('resources/pictures')  ){
    console.log(images[i].src);
    var origsrc = images[i].getAttribute("src").toString();
     console.log(origsrc);
