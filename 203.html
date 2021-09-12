@@ -1,0 +1,803 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=203#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Októberi levéláradat";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=203#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Októberi levéláradat<BR><DIV CLASS="postheader_small">Levrov - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2007 november 7. 22:43:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_203.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Gyakrabban kellene a levelekkel foglalkoznom, mert kommentfal ide vagy oda, ömlenek azok is becsülettel. Nagyjából egy hónap termését dolgozom fel most. Nézzük, miket írtatok. Jó sok. </div><br><b>rolika írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok!<br>
+<br>
+Felháborító antiszemita jelenségre bukkantam!<br>
+<br>
+Mi másnak lehetne ugyanis nevezni azt, hogy isten választott népéről, amely kultúrális ráhatása nélkül köztudottan csak a bő gatyáig és a fütyülős barackig jutott volna el a magyar nép, elnevezik az alábbi növényt:<br>
+<br><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.bakker-holland.hu/Catalog/Productdetail.aspx?Ntt=zsid%c3%b3cseresznye&Ntk=NL&Ntx=mode+matchallany&Nty=1&N=0&productid=2693&D=zsid%c3%b3cseresznye&R=2693-018">Klikk!</a><br>
+<br>
+Viccet félretéve, egy ilyen egyszerű dolog mindennél jobban illusztrálja, hogyan s mint vélekedik a magyarság...<br>
+<br>
+Üdv: rolika</div><br><br><b>candyshop írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Helló!<br>
+<br>
+Patai Józsikához szeretnék hozzáfűzni... Azt nem hiszem hogy építkezésen robotolna, mivel a drágaságom tele van lóvéval... Én  elég sokat járok ú.n. "sznobbudai" kávézókba szórakozóhelyekre, előfordul hogy szoktam ott látni őt. Következő sztorim van róla, másodkézből hallottam csak, mindenki döntse el maga hogy igaz-e.<br>
+Józsika a szurkálása után lement szilveszterkor szórakozni egy ismert budai szórakozóhelyre (ami egyébként közismerten ritka szar, és 14 éves maffiózónövendékek gyűjtőhelye), és iszogatott egy csicskásával aki rendszeresen vele van. Nemsokára megérkezett egy fekete bőrű srác, aki szintén szórakozni jött le. Józsika nem szarozott sokáig, odament a kiskésével és elkezdett kötözködni meg kurvaanyázni, meg késsel hadonászni. Ezt a biztonságiak nem igazán tolerálták, kivitték Józsikát, összepakolták, mercibe be, aztán uccu el vele. Nem láttuk utána egy hónapig, bár nem nagyon hiányzott:D:D Szóval ennyit arról hogy szegény józsika, az ártatlan bárányka, ő még a légynek se tudna ártani.<br>
+<br>
+Üdv,<br>
+candyshop<br><br></div><br>Józsikáról egyéb információ is felgyűlt. Nem mondhatni, hogy "robotolt" volna az építkezésen, inkább a keze alá rendelt csórócigányokat csicskáztatta, jó cigány szokás szerint. Jelenleg máshol "dolgozik"... erről egy későbbi levélben lesz szó.<br><br><b>jonnyka írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Érdekes dolgkról szereztem ma tudomást: korámányunk oly csodálatosan játsza a birkát az egészségügyi biztosítással kapcsolatban, hogy az már mesébe illő! Méghogy nincs semmilyen elképzelésük! <br>
+Édesanyám hivatali munkát végez és ma megkereste egy külföldi biztosító cég munkatársa, hogy nem lenne e kedve beszállni az egészségügyi-biztosítási businessbe. A képlet egyszerű: házról házra kellene járnia és megkérdezni minden 18 és 60 év közötti állampolgárt, hogy mi az elképzelése a jövőbeli egészségügyi biztosításáról. Természetesen a közvéleménykutatásba be lenne csempészve a biztosító cég rekláma is. A pénz elképesztő amit le lehetne akasztani! Minden egyes megkérdezett ember után fizetne 400(!!!) ft-ot. Ez az összeg 300 fő után 600(!!!) ft-ra elelkdene és így tovább, és így tovább! <br>
+A kérdés: elfogadja az ember a tálcán kínált meggazdagodást (mert akár milliókat is be lehet zsebelni így néhány hónap alatt), vagy nem. Mi pénzt fog leakasztani a biztosító az embereken, ha képes ennyi pénzt áldozni arra, hogy "megtudja" ki mit szeretne? Ha az anyagi oldalát nézzük nem lehet félre tenni olyan egyszerűen a lehetőséget...<br>
+A nem mellett a morális érvek szólnak. Szálljon be az ember fia egy olyan folyamatba amivel a nagyszerű kormányunk akaratát szolgálja? Megtömi a zsebét aki ezt felvállalja az biztos, de megéri-e, hogy aztán ujjal mutogassanak rá és mindenki tudja róla, hogy igen, ő is benne van ebben az országromboló intézkedésben.<br>
+Fű alatt már minden el van rendezve csak meg kell találni az embereket akik a piramis legallján lesznek és "fillérekért" elvégzik a piszkos munkát...<br>
+Két ismerősöm különböző véleményt adott a témával kapcsolatban:<br>
+<br>
+ "...Kihagyhatatlan! Ha most nem kapja el a fonalat akkor sem változik semmi, csak maximum kongani fog a zsebe az ürességtől..."<br>
+<br>
+ "...Agyon kéne lőni az összest aki ebben benne van..."<br>
+<br>
+A kérdés megmaradt ugyan, de a becsület többet ér bárminél és a döntés megszületett... <br>
+<br>
+Arra leszek kíváncsi, hogy mi lesz mikor eljön (tavasszal) a házaló biztosítók szezonja. Vajon hány helyen fogják őket szidni és vajon ki lesz az aki ezt elvállalja? Egy biztos: a kisember ebből megint csak szívni fog és a gazdag még gazdagabb lesz, viszont valamilyen biztosítást nem árt majd kötni, mert ki tudja mikor lesz szükség rá...</div><br><div style="text-align: justify;">Lesz. Mint ahogy a telemarketinget is be fogják vezetni, azaz a telefonos zaklatást. Emlékszem, amikor 1990 körül megjelentek a kereskedelmi tévék, és bevezették, hogy a tévéfilmeket reklámokkal szakítják meg. Mindenki nézett döbbenten, hülyék ezek? Ugyan korábban is hallottunk róla, hogy Amerikában így van, de mint valami eszement helyi hülyeségre tekintettünk rá. Film közepébe reklám, baromság. Aztán nesze. Minden szart ide kell hozni.<br></div><br><b>Gombob írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Üdvözlet Vidékről!<br>
+<br>
+Egy jellemző kis tapasztalattal szeretném árnyalni a magyarországi cigánykérdést:<br>
+<br>
+Országos áruházlánc vidéki boltjában vagyok biztonsági őr. A megélhetési bűnözők, összes családtagjaikkal eléggé kiszámítható "vásárlók". Mert vagy pelenkáért jönnek, vagy terhességi tesztért. A kettő között van kirakva a sok óvszer, de azokból csak a főútról bejáró cigánykurva vásárol (igaz ő mindennap). Minden hónap 3.-5. között tömegesen jönnek, ilyenkor kerül a purdéknak chips és kóla is - addig üvöltenek, amíg meg nem kapják. Asszem a segélyek érkeznek meg ezidőtályt, vagy családi pótlék. Egyébként -hál istennek- másért nem is járnak, csak egy-két profi tolvaj néz be időnként, de őket már az eladók is pofáról ismerik. Ezeket amíg el nem kapjuk őket, nem lehet kitiltani, de szorosan mellettük lépkedek, egy pillanatra sem lehet levenni a szememet róluk. Ilyenkor végül semmit sem vesznek, csak körülnéznek mit érdemes megpróbálni legközelebb, vagy csak felderítik mikor nincs őr. Mindenesetre kifelé állandóan jelez, sípol az áruvédelmi kapu (a zsebembe szoktam rakni egy "csipogót", azzal jeleztetem be őket) én meg minden esetben ellenőrzöm őket, "ne hogy má" szeressenek ide járni vásárolni. A profi tolvajok sohasem zúgolódnak, csak mosolyognak-tudják hogy nem vittek semmit, igaz a múltkor beadtam az egyiknek, hogy az új biztonsági kapu már személy szerint is ismeri őt, azért jelez (hehe). Újabban a képükbe tolom a mobilomat egy foto erejéig, amit aztán szétküldünk országosan, az egész bolthálózat részére. Végezetül, csak az igazság kedvéért azt is ideírom, hogy nem minden cigány lop, és sok magyar is próbálkozik-de azért le lehet vonni következtetéseket.<br>
+<br>
+Ui.: Alkalmi munkavállalói könyvel dolgozom, mert így a munkáltató megspórolja a közterhek jelentős részét, és magasabb órabért tud adni. Emellett rendszeres szociális segélyre vagyok jogosult én is, de az új szociális tv. szerint tavaly havi 2800 ft.-ra voltam jogosult. Havi!!! Miközben ugyenez egy három 20 éves fiát otthon tartó cigánycsaládnál havi 50 000 ft.-ot tett ki. Na akkor ki is van motiválva, hogy dolgozzon? Mindenesetre-bár lehet hogy nem szép-én is ott fogom fejni az államot, ahol tudom...<br>
+<br>
+Szebb Jövőt!</div><br>Mai cigányötpercünket hallották. Most pedig emlékezzünk egy kicsit ismét a hídlezárás hőseire.<br><br><b>Zsombor írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok !<br>
+<br>
+Reagálnék az utolsó írásod , utolsó sorára amikor is azt írod , h de. már nem volt egy tüntető sem a városban.<br>
+Tegnap (okt. 26-án), a Ferenciek terénél voltunk még kb. 100-an és egy seregnyi rohamrendőr (300) , 4 busznyi katona ,  ez nagyjából du. 3kor volt.<br>
+Nem hiányoztak a kellékek sem : kamerák (némelyik prof. volt , szal tuti megy vmelyik tvbe) , fényképezők , <br>
+kamerás kocsi ...<br>
+Mi 7-en kimentünk a Lánchíd felé 11kor de. ( nekem a fősulim ekkor ért véget ) és amikor kiértünk az alagútból , elénk ugrott 6 rendőr : személyi , kipakolni a zsebeket stb. , ahogy viselkedtek velünk az valami kritikán aluli volt. <br>
+A társaságból csak én és egy másik srác voltam nagykorú ( 19 és 20 ) velünk annyira nem szívóztak , de a többiekkel nagyon gecik voltak ; ( ezen a viselkedés módon egyáltalán nem csodálkozom , megszoktuk már ). Hány Árpád-házi királyunk volt , meg hasonló hülyeségeket kérdeztek tőlünk , gondolták most jól beégetnek , h nem tudunk semmit , ennek ellenére valamennyi kérdésre simán válaszoltunk , na ez nagyon nem tetszett nekik :DD ezután megfenyegetett minket az egyik cigány rendőr - ott rámjött a röhöghetnénk , mert eszembe jutott a mondatod , h olyan sötét a tekintete , h el lehet benne merülni és télleg XD - h bevisz minket ha mégegyszer meglát minket zászlóval " faszkodni " <br>
+( értelmes megnyilvánulás , mindössze annyi volt h az egyik srác a hátára kötötte az árpádsávost ) , erre az egyik <br>
+zsernyák aki rendesebb volt odaszólt neki halkan , h " te , miért is viszed be ezeket , mert zászló volt a hátán ??? " <br>
+ezután eleresztettek minket. Érdekes , sokak szerint a rendőrök nagyrésze velünk van hát itt a 7 ből 2 volt normális.<br>
+<br>
+Ja és jó volt az adás :))<br>
+<br>
+Üdv , Zsombor.<br>
+<br>
+ </div><br>Hála Istennek nem csak mi vagyunk ebben az országban, van kin röhögni is.<br><br><b>Driod_seeker írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Lesz még kommunista feltámadás! Legalábbis az alábbi DRIOD ( djzotya93@freemail.hu ) lapja alapján a faj még nem haldoklik.<br>
+<br>
+Azt írja: " Az MSZP régen alakult, és érdekes módon, a Fidesszel együtt remek koalicióban volt. Azonban mostmár, hogy Orbán Viktor került a Fidesz vezetőségére, megtagadta az MSZP koalicióját.  Nem régóta, Gyurcsány Ferenc, egy (számomra)  szimpatikus ember lett a MSZP elnöke. Azóta Magyarország sorsa rendkívül jó lett :) NE FORDULJUNK VISSZA! MSZP!!! "<br>
+<br>
+Most sírjak vagy nevessek?!<br>
+<br>
+Link: <a target="_blank"style="color: rgb(0, 0, 0); font-weight: bold;" href="//gportal.hu/gindex.php?pg=10104939">http://gportal.hu/gindex.php?pg=10104939</a>
+</div><br>Hát a tótok hogy vannak?<br><br><b>Crowley írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok!<br>
+<br>
+Nemtudom, hogy ismeritek e a Travian nevű internetes statégiai játékot. Elég népszerű, úgyhogy el tudom képzelni.<br>
+Nos a minap a HU3-as szerveren az egyik barátomtól érdekes levelet kaptam. A levél arról tájékoztat, hogy alakult egy szlovák klán a szerveren, akik kijelentették, hogy ők ide "magyartölni" jöttek...<br>
+A klánjuk leírásában éltetik Trianont, gyalázzák Malina Hedviget, stb.[N-o-P] -a klán neve, ha bárki indít egy falut a Hu3-as szerveren, rákereshet. Én is leellenőriztem, és valóban. Szövetégesük nincs csak háborúban állnak egy tonna klánnal. Nos ezokból, vajmi kevés esélyük van a játék folyamán, de maga az eset, hogy ezek megjelentek és ez a nyilvánvaló gyűlölet amit közvetítenek fölháborított.<br>
+Nos ilyen is létezik. Köszönöm a figyelmet... <br>
+<br>
+Üdv.: Crowley</div><br>Tehát a tótok köszönik, jól vannak. Még...<br><br><div style="text-align: justify;">Egy korábbi adásunkban felolvastunk egy hallgatói levelet, amelyben megírták, hogyan razziázik a rendőrség a military börzéken, "tiltott önkényuralmi jelképekre" vadászva, mintha ez lenne a legfontosabb dolguk, és hogyan próbálja - az érintettek szerint - egy HM-es ezredes ellehetetleníteni a katonai hagyományőrzést Magyarországon.<br></div><br><b>HLord írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Üdvözletem!<br>
+<br>
+Bár hosszabb ideje hallottam az oldalról, csak nemrég jutottam el odáig, hogy belehallgassak a rádiós tartalomba. A 6. adásban emlegetett vásár egyenruhás/kitüntetéses történet és Udovecz Györggyel kapcsolatos hírek őszintén megleptek.<br>
+Kezdve a vásárral, két éve jártam Angliában, Greenwichben, és a helyi piac negyedét uralta a második világháborúból származó eredeti vagy másolat egyenruhák és kitüntetések tömkelege  (lehet éppen szezonja volt) mind szövetségesek és tengelyhatalmak oldaláról. Érdekes, hogy Angliában (ahol a második világháború után a németjuhászt is megpróbálták elszász-lotharingiai juhászkutyának elnevezni, csak hogy ne legyen német), most teljesen legálisan lehet kereskedni ilyen árukkal. Sőt, SS Hitlerjugend, Luftwaffe és több más un. &#8222;náci zenével&#8221; kereskednek angol cégek teljesen hivatalosan.<br>
+Nálunk természetesen pont a nyugati demokráciára hivatkozva tiltják meg a hitleri német jelképek és társaik használatát. Ennyi erővel a Heineken több millió szibériai munkatáborban meghalt szerencsétlenre és nagyapáim elképesztő hadifogságára emlékeztethet engem. Ergó be lehetne azt is tiltatni, mert az is juj de gonosz és démoni jelkép! <br>
+Nem pont egyes esetekben a tiltás feleslegességének felismerése és a tolerancia a demokrácia jellemzője? Ilyen és ehhez hasonló tiltásokkal csak nevetségessé tesszük magunkat más országok lakóinak szemében.<br>
+<br>
+Udoveczről pedig én se tudok sok jót szólni. Mivel a HM embere, így természetesen ők megkapnak minden segítséget a fegyverek és felszerelések rekonstrukciójára. Miközben más második világháborús csapatok pedig szenvednek, hogy képet tudjanak szerezni az akkori egyenruha szabályzatról. Ezen kívül meglepő módon csak akkor tud egy csapat a csaták és megemlékezések vérkeringésébe rendesen beállni és meghívottként azokon szerepelni, ha úgy öltözködik, és úgy viselkedik, mint ahogyan Udo és társai előírják. Természetesen az egyenruhánál legtöbbször csak az a jó, ahogy saját csapatuk van felszerelve. Aki pedig nem egyezik bele ezekbe a játékszabályokba, azok nem szívesen látott vendégek.<br>
+Mi ez, ha nem egy becsületteljes és (sajnos a mostani politikai viszonyok közt) alapból támadható hagyományápolás monopolizálása anyagi érdekek által vezérelve? Udoról a vele egy körbe tartozó urak közül is nem egy rossz véleménnyel van, és óva intenek tőle mindenkit: teljesen kihasználja az ő segítségére szoruló csapatok választási lehetőségének hiányát a saját hasznára. Igéreteit általában nem tartja meg és végül előnytelen üzletre kényszerít, amikbe belefér tízezer forintok lenyúlása is a kezdő csapatoktól, akik hozzá fordulnak segítségért.<br>
+Vajon mire megy azzal a pár tízezer forinttal egy olyan ember, akinek jól fizető állása, jó pályázási lehetőségei, teljesen felszerelt csapata van? Nem gondolom úgy, hogy rászorulna&#8230; közben pedig az elszenvedő csapatoknak súlyos érvágás minden elvesztett forint, és rögtön kevesebb felszerelést/könyvet/ruhaanyagot tudnak beszerezni.<br>
+Sajnálatos ezt látni, amit egyes emberek művelnek a hagyományőrzéssel, és ez nem csak a második világháborúsnál van így. Meg még a magyar szokások szerint rögtön ha megalakul egy csapatokat összefogó szervezet, akkor összevesznek a vezetők, egy részük kiválik és voilá: szakadárokkal együtt már van két magyar szervezet, akik riválisai egymásnak és pont egymást hátráltatják az európai érvényesülésben és pályázati pénzek nyerésében. <br>
+Ez szakadáshoz vezethet a csapatok közt. Láttam már, hogyan zsidóznak, kommunistáznak stb. stb. egy csapatot, mert a másik szervezetben van benne. Szerencse az, hogy a többség jól kijön egymással, mégha ez semlegességben merül is ki. Megpróbáljuk emberi méltóságunk megőrizni és nem a pénz játékszereivé válni.<br>
+<br>
+Az ember azt gondolná, hogy az emberek megbecsülik a honvédet, hogy van még a szónak jelentősége számukra, és ha végigmegy az utcán beöltözve régi egyenruhába, akkor mindenhol boldogan fogadják.<br>
+Ezzel szemben az a valóság, hogy az emberek sokszor nagyon tudatlanok és gyanakvóak. Náciztak már le 48-as szabadságharcos honvédet és volt már olyan állat aki felvonuláskor karlendítéssel heil hitlerezett a csapatoknak (az ilyen barom szerintem meg is érdemelte volna hogy bevigyék, persze nem történt meg&#8230;). Az embert megfenyegetik a helyi járaton a fekete képűek, hogy ne járjon ilyen szélsőjobbos dologban, mert megverik. Közben azt se tudja mi is ez a &#8222;szélsőjobbos&#8221; dolog, nincs fogalma se róla! Persze a buszon fenyegetősdi csak akkor hangzik el, ha egy hagyományőrzővel szemben állnak (több mint) hárman legalább, mert csak így van merszük nekik pattogni. Ha még SS egyenruhában állnék, talán részben megérteném az aggodalmat, azonban a honvédség bármely kori egyenruháját felvéve nem hiszem azt, hogy szélsőséges eszméket terjesztenék.<br>
+Ha pedig ifjúsággal próbálkozik foglalkozni katonai alapozás, honvédséggel való megismertetés terén az ember, akkor zárt kapukkal találkozik. Rögtön előkerül a Magyar Gárdát övező hisztéria, hogy nem akarják szegény kis drága nyerkőckéket (akik szarnak a viselkedésre és a fegyelemre) ilyen fasisztoid nevelésnek alávetni. Jót tenne nekik pár katonai hangvételű óra, talán megtanulnák, hogy csöndben és idegrángás nélkül is ki lehet bírni tíz percet. Az egy más kérdés, hogy vannak olyan sulik, ahol a gyerekeket érdekelné is a téma, csak a tanárok nem engedik, nehogy meg legyenek rontva. Észbe kéne kapni és elnézni nyugatra, ahol például kadétcsapatok működnek a középiskolákban és fegyelemre, lövészetre képzik a jelentkezőket. Kivétel van néhol, van amikor hajlandóak bizonyos politikaialg korrekt előadások tartására, bemutatókra, de ez minden.<br>
+<br>
+Enyhén más nyugatra tőlünk a katonaság megítélése és az elhunyt hősök tisztelete. El kéne gondolkozni, hogy a sok nyugati őrület mellett nem kéne már akkor ezt is tőlük &#8222;átvenni&#8221;?<br>
+<br>
+HLord<br>
+</div><br>Katonák után ismét rendőrökről: találkozás egy rohamrendőrrel, civilben...<br><br><b>Grizli viking írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Ahová végül is eljutottunk. Egy szomorkás realista-idealista firkálása.<br>
+Tegnap este ülök a barátaimmal a kocsmában. Ez a tevékenység itt nálunk vidéken meglehetősen csendes időtöltésnek számít, hál istennek. Ugyanis itt, ha megkéri az ember a tulajt &#8211; aki amúgy is régi ismerős &#8211; hogy a tököm sem kíváncsi a tetves (ezt még lehet?) családi balhéira, vagy a szar, zenének csúfolt fosra, akkor megszüntetik ezeket az elmepusztító okokat.<br>
+Szóval ülünk az asztalnál és folyik a szó. Egyik társunk, barátunk, fegyveres szolgálaton van, bár nem rendőr. A tavalyi meg az idei &#8222;rendőr bálra&#8221; őt is felrendelték, hogy merre kolbászolt nem firtatjuk, de azt mondta nem a &#8222;verő brigádban&#8221; volt. A csapat kezd belemelegedni az események taglalásába, kivörösödnek az arcok, villognak a szemek, ökölbe szorul a kéz, feszül az indulat. A hangulat kezd &#8222;rendszerváltó&#8221; lenni, barátunk védi a mundér becsületét. Én, miután kocsival vagyok, csak ásványvízen keresztül látom az egész történetet, a többiek a maláta szörp hatása alatt brutálisan őszinték. Már a szélsőségig (mi is az a szélsőség?) fokozódnak az indulatok, bár senki nem haragszik senkire. Ekkor elhangzik az ominózus kérdés: &#8222;Te belelőnél a tömegbe, amiben mi is ott vagyunk?&#8221; Nagy csend lesz. Így tisztán hallható a válasz: &#8222;Igen! Inkább ők, mint én!&#8221; A többiek felzúdulnak. A barátunk menti magát, hiszen ha rátámad a csőcselék, meg kell védenie magát! Egy pillanatra csend lesz, ezt kihasználva megszólalok: &#8222;A csőcselék támadásától én is megvédelek majd, de ha szembefordulsz a saját Nemzeteddel, én magam lőlek le, barátom!&#8221;<br>
+Hát így ért véget &#8211; ha nem is a híres walesi lakoma &#8211; de egy csendes, baráti sörözés, ma Magyarországon, egy eldugott kis falu kocsmájában, a XXI. Század elején.<br>
+Ha gondoljátok tegyétek ki a többiek okulására.<br>
+Tisztelettel: Grizli</div><br><div style="text-align: justify;">Kitettük. Okuljunk. Ilyenek a rendőrök. Sajnos tényleg sok van közöttük, aki csak azért rendőr, mert jelenleg nem lehet se nyilasnak, se ávósnak beállni.<br></div><br>Érintjük a Talmud témáját is.<br><br><b>Nedudgi írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Hali!<br>
+Az összeesküvés elméletekhez egy minimális adalék:<br>
+valóban elmélet az elvadultabbja, ugyanakkor fel kell ismerni azt, hogy a zs-k előszeretettel "bújnak" és háttérből szervezkednek, így a cionista szervezetek tevékenységeinek egy részéről nincs tudomásunk, a gój kápóik nem is kapnak információt a valódi célokról, legékesebb példái ennek, a szabadkőművesség belső klikkje (illuminati, bnai brith, stb) és külsősei közi különbség és a talmud 2 verziója, egy belső használatra zs-knek gyűlölködő szövegekkel és egy másik a nagyközönségnek. Ez a kettősség, összadva azzal, hogy világméretű jelenség, már fél lábbal az összeesküvés elmélet kategóriába is sorolható, mégis igaznak tűnik (és nem csak tűnik), mivel összeáll velük a mozaik. A bizonyíték kevés ezekre - szemben mondjuk a lokális cionista lobbyk tevékenységével -, mégis akad azért ezekre is (pl. mikor Mónus Áront egy nagy tőzsdei sikere után beszervezték a párizsi nagypáholyba, sikerült belső dokumentumokat szerezzen, ráadásul addig neki sem volt fogalma mit takar a szabadkőművesség).<br>
+Bár, ha mindezt abból a szempontból nézzük, melyik mozaik kirakó-szeletkéi ezek a dolgok; ugyanúgy a korlátlan pénzbitorlás és a korlátlan hatalom-manipuláció, mint lokális szinten, akkor már nem is annyira összeesküvés és elmélet, viszont direkt rejtett részint, nehogy a birkák megrémüljenek a mértékétől.<br>
+<br>
+Üdv: Nedudgi</div><br>Kulturális programajánlónk következik.<br><br><b>Balázs írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">üdv Gyárosok!<br>
+<br>
+Egy színházi előadást ajánlanék a figyelmetekbe:<br>
+Menyasszonytánc (Operettszínház)<br>
+<br>A darab rövid leírása:<br><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.operettszinhaz.hu/index.nof?o=0&nyelvid=1&mod=elo&time=2008&did=24&nyelvid=1&k1=1#d24">Klikk!</a><br><br>
+Uge mondanom sem kell, hpogy a 3 bemutatott népcsoport közül a magyar volt a legvisszataszítóbb?<br>
+Részegen randalírozó, zsidógyűlölő csürheként volt beállítva, míg ezzel szemben a zsidóság a jó és szép, saját vallásukat és hitüket megtartó szent nép.hányinger.<br>
+A darab története folyamán számtalan konfliktus generálódik, melyek közül csak nagyon kevés kerül feloldásra.<br>
+S így a magyarok maradnak a gecik.<br>
+<br>
+KERO - azaz Kerényi Miklós Gábor SZDSZ-holdudvaros - rendezése a darab, s a változatosság kedvéért ebbe is betolta a kölykét, bár most az egyszer legalább neki való szerep: fiatal zsidó zenészt játszik. (A Rudolfban magyar nemesúrként, díszmagyarban kornyikált a színpadon.)<br>
+<br>
+Szóval egy bicskanyitógoató darabot láthattunk, ahol a végkövetkeztetés: ezek a szemét magyarok kitagadták, s próbálná csak meg két hétig egyikük is, hogy miylen zsidónak lenni!</div><br>S ugyan, hol van ez még Spiró darabjaitól, például a Hazámhazámtól, amit a Krétakör okádott elő pár éve.<br><br><b>P$YCHO írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Helló Bombagyárosok!<br>
+<br>
+Bocs, ha másodszorra küldöm, de tegnap lefagyott a Firefox és nem tudom, hogy megkaptátok-e.<br>
+Nemrég odatévedtem az oldalon a FAQ-hoz, azon belül is a "megfigyelnek-e, lehallgatnak-e, féljek-e az NBH-tól" típusú kérdések juttattak eszembe egy esetet, ami tavaly késő ősszel/kora télen történt meg.<br>
+Vidéki vagyok, de a fővárosban tanulok. Itthon voltam egy késődélután, amikor csörgött a vonalasunk, édesanyám vette fel a telefont, beszélt rajta 5-10 percig, utána felhívta testvérét - szintén vonalason, végül jön be hozzám és újságolja nekem, hogy felhívta a titkosszolgálat és talán le is hallgatták. Én csodálkozom rajta, hogy mi van?????? Aztán elmeséli:<br>
+A telefonáló vmi T-com-os hívogatós ember volt a szokásos ajánlatokkal. Már a bejelentkezése is szokatlan volt, de ez akkor anyámnak nem tűnt fel nagyon az elején:<br><br>
+- Halló, tessék! - veszi fel anyám<br>
+- Jó napot, X*** Y***nével beszélek?<br>
+- Igen.<br><br>
+Azért fura, mert a szolgáltatónál nincs megadva anyám neve.<br>
+Ezután beszélgetés alakult ki, arról milyen előfizetésünk van, miket tud ajánlani a fickó...blabla.<br>
+Aztán terelődött a téma, anyám vhogy megemlítette, h egyetemista vagyok:<br><br>- Ugye Pesten tanul a fia? - kérdezte határozottan a t-comos, ez meglepte anyámat, ezért határozottan visszakérdezett<br>
+- Ezt honnan tudja?<br>
+- Ööö... gondoltam.<br><br>Ezt követően a fazon ajánlotta a barangolókártyát (ami azért jó, mert a segítségével a mi számlánkra terhelve tudok bárhonnan telefonálni), majd röviddel ezután vége lett a beszélgetésnek.<br><br>Anyám épp hogy letette a telefont, már hívta is testvérét családi ügyben. A beszélgetés során a vonal mind2 végén többször is furcsa zörejt hallotak.<br><br>
+Utána jött be hozzám anyám... Mondja, hogy meg kéne kérdezni exügynök ismerősünket (igen nekünk van ilyen, de ő nyugatra kémkedett nem ávh-s). Fogtam a mobilom és felhívtam. Felvázoltam neki az esetet. Lehetségesnek tartotta, hogy az nbh volt. Ugyanis ez a "felhívunk mint a telefonszolgáltató embere és információt szedünk ki belőled" módszer bevett szokás (persze államtitkokra nemhiszem, hogy  jó, de személyes adatokra tökéletes). Őt is rendszeresen keresik így telefonon (néha személyesen is). Úgy szokta lerázni a hívogatókat, hogy "Maga a 3. aki ma ezzel felhív, most meg amúgy sem érek rá, mert költözésben vagyok." Elmondta azt is, hogy a baralngoló kártya azért hasznos "nekik", mert a kártyahasználat során ugye beütöm a kártya kódját, és ezzel tálcán kínálom mikor, honnan telefonálok.<br>
+A lehallgatásról annyit mondott, hogy 3. személy könnyedén rá tud csatlakozni a vezetékes telefonon történő beszélgetésre (bármiféle poloska nélkül), teljesen észrevétlenül, kivéve, ha vmit elbasz a lehallgatásnál, mert olyankor hallani ZÖREJT a vonal mindkét oldalán. Érdekes, nem?<br><br>
+A poén az, hogy bár ott voltam párszor a Kossuth téren, és a tv ostromnál is, de puszta jelenlétemnél és "elkúrtad", "Gyurcsány takarodj"... stb bekiabálásoknál több "államellenes" cselekedetem nem volt, arcomat nem takartam el,  rendőr sem igazoltatott. Mégis leinformáltak vmiért, méghozzá a saját anyámnál... Persze kellett az ügynök úr droidsága is, hogy ezt észrevegyük.<br>
+<br>
+Üdv és Kitartás!<br>
+P$YCHO</div><br><div style="text-align: justify;">Hja, így megy ez. Egyszer megjegyezte nekem egy korrekt rendőrtiszt, hogy ne lepődjek meg ezen, "mindenkit lehallgatnak." Hogy kik és miért, azt nem részletezte.<br></div><br><b>répcze írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok Gyárosok!<br>
+<br>
+Ez tetszeni fog: pert nyert az Ifjúsági Kereszténydemokrata szövetség a rendőrség ellen. <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.xlap.hu/index.php?column=2&news_id=419">Részletesen ld. itt.</a><br><br>
+A lényeg: A bíróság jogerős végzésében kimondta, hogy a sajtótájékoztató nem tekinthető sem felvonulásnak, sem tüntetésnek, ezért nincs jelentősége annak, hogy a sajtótájékoztató közterületen került-e megtartásra, illetve megállapítható az is, hogy az eljárás alá vont személyt nem terhelte bejelentési kötelezettség sem.<br>
+<br>
+Tüntetni?! Macerás. Járjunk sajtótájékoztatóra!<br>
+<br>Hajrá!<br>
+répcze<br>
+</div><br><div style="text-align: justify;">Nem meglepő. A rendőrség annyira balfasz mostanság, hogy még a közismerten elfogult bíróságok sem tudnak mást csinálni, mint elmarasztalni őket. Nyilván lesz még néhány ilyen per, az októberi tüntetések miatt csak én magam is legalább egymilliót ki fogok verni belőlük, aztán majd sírhatnak, hogy jaj, nincs pénz új gumibotra. Persze arra mindig lesz.<br><br>De ne is tüntessünk: illeszkedjünk be a Szép Új Világba! Ezt tessék figyelni. Újságíró-tanfolyam indul!<br></div><br><b>KalóZ írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Tisztelt Bombagyár szerkesztőség!<br>
+<br>Egy ELTE-s levlistáról jött egy levél, mely újságíróknak, ELTE-s újságszerkesztőknek szólt, mivel az ELTE-TTK lapját többek közt én is szerkesztem, illetve írogatok bele zöldségeket, gondoltam elolvasom a levelet. Teljesen ledöbbentem, mikor azt olvastam a levélben, hogy újságíró képzés indul, jelentkezzen aki akar, a képzést na ki fogja tartani? Na ki!?<br><br>
+Aki kitalálta, hogy Tricikli az nyert egy ingyenes faszkorbácsot! Igen Alias Balás Márk Tricerattops személyesen, a tajgetosz pozitívak egyik leszármazottja, bár rejtély, hogy valamely őse, miként lehetett képes túlélni...<br><br>
+De kérem a díszzsidóvér ellenálló fajta sajnos. Balás Márk a jövőbeli újságíró palántáknak ilyen szép hangzatos dolgokat kíván oktatni: <br><br>
+"előadások, szekciómunka lesz a program, nagyon<br>
+hasznos gyakorlati újságíró ismeretekkel. Időpont: <span style="font-weight: bold;">novenber</span> (lol még írni sem tud trici) 17. szombat 9 - 17:30"<br><br>
+Nem csoda, hogy ilyen szenny a média most, de ha Triciklire kerülnek az újságírópalánták, akkor lesz aztán csak katasztrófa. Reméljük Trici áldatlan tevékenységét hamarost befejezi. A listán, amin a levél jött, hangot adtam Trici elleni nemtetszésemnek. Képzeljétek mi történt? Pillanatok alatt jöttek a libsinyáltól, habzó szájból, jelen esetben ujjtól ragadó levelek, miszerint én főfő antiszemitarasszistajajjdejajjde gonosz ember vagyok. Írtam az EHÖK-nek is, aki a képzést szervezi, hogyan tudtak Tricinél alkalmatlanabb embert keríteni erre. A válaszukat várom, kíváncsi leszek tőlük mennyi anyázást kapok. Lehet elnézek őshüllőnk egyik ilyen előadására, kicsit megizzasztani őnagyságát. Ha bejutok, természetesen rögzítem valamilyen módon az eseményeket, hogy együtt röhöghessünk Tricin.<br><br>
+Szebb jövőt!<br>
+Kalóz</div><br>Kíváncsian várjuk, kedves Kalóz, de vegyél fel gardigánt, mert novenberben hideg van!<br><br>Ömlesztett kesergés következik Baresz részéről. Karácsonyra kap majd egy billentyűzetet, amin szóköz is van.<br><br><b>Baresz írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Már régen tervezem ezen cikk megírását,mert elegem van abból,hogy azon eszméket és  magát a hitvallást amit képviselek mindig csak támadják.A dolgok tavaly kezdödtek amikor Elkúrtuk Ferenc beszéde kiszivárgott.Azt,hogy milyen módon arról megoszlanak a vélemények,de ezt senki soha nem fogja megtudni biztosan.Ugye az ezek után történtek mindenki számára ismertek,vegyük szépen sorba a fontosabbakat.Tévéostrom:Itt tulajdonképpen a rendörség provokációjából alakult ki ez a helyzet,mert nem voltak hajlandóak emberi hangnemben beszélni a tömeg képviselöjével,agresszivan elküldték öt a francba.A feldühödött tömeg pedig rátámadt a rendörökre mint az már ismeretes.Miután bejutottak állitólag 100 Milliós kár keletkezett.Akkor a rendörségen miért csak 1 laptop eltünésében inditottak eljárást?A másik."Kifosztották a büfét".Valóban?Akkor miért rugtak ki 5 rendört azért mert leütötték a büfé lakatját és több zsugor üditőt eltulajdonítottak?Folytassuk az események sorozatát.2006.október 23-án megmutatta igazi arcát a politikai "elit".Fejmagasságban kilött gumilövedék,vipera,jogtalan elöállitások,szükségtelen brutalitás.Mindenki tudja miröl beszélek.2007.Március 15?No comment.És most elérkeztünk a közelmúlt eseményeihez.Október 22-én éjszaka Fletó beszédet mondott az operában.Ez mindössze 100 millió forintunkba került.A maga 3 rendör ezredével,teljes titkosszolgálattal,mesterlövészekkel,helikopterekkel,kordonokkal.E közben a Szabadság téren tömeg gyült össze,hogy tiltakozzon a kormány ellen.Toroczkai László és Budaházy György kiváló beszéde után elindult a tömeg(Jogosan mint az utóbb kiderült)az operaházhoz.A Nagymező utcán azonban ellenállásba ütköztek,de nem hátráltak meg,szerették volna folytatni utjukat.Toroczkai Lacit örizetbe vették,miután megfejelte a pajzsot,söt igyekezett rá is harapni arra mint sérüléseiböl kiderült.De ha ez még nem lenne elég,fülével még tenyéren is vágta az egyik rendörbűnözöt.Mint azt a bíróság is kimondta,jogszerütlen volt az elöállítás(köszönet a Magyar Jogvédö Alapitványnak amiért Laci ismét köztünk van).Ezen estén egy olyan dolog történt,amit én,és az egész Nemzeti oldal elitél.Autóborogatás.Igen,az ilyen baromállatokat ki kell szürnünk magunk közül.Muszály.DE!Tudok mutatni olyan képet(hála Tomcatnek),amin nyilvánvalóan látszik,hogy nem egy autót a csodálatos uj és szép izraeli vízágyú boritott fel.Október 23-án nem történt jelentös esemény.Október 26-án a Kuruc.info internetes hírportál hídzárat szervezett.Sajnos a zár sikertelen volt,de még igy  is megbénította pár órára a forgalmat.Ez a hídzár azért szükségszerű,mert ez felkelti a világ figyelmét.Például a Die Presse című ujság.A konzervatív osztrák napilapban Peter Bognar &#8222;Gyurcsány, takarodj végre!&#8221; címmel jelentetett meg cikket.Fletóra mostmár nemzetközi nyomás is helyezödik.Itt irom le,hogy lesz megint hídzár,lesznek tüntetések.Elkerülhetetlen amig nem takarodik el az MSZP,Fidesz,SZDSZ,stb.Na és a végére hagytam amit a legfontosabbnak tartok.Bemutatnám a Nemzeti Radikális oldalt.Hogy kik is vagyunk,miben hiszünk.<br>
+<br>
+<br>
+Nemzeti Radikálisok<br>
+--------------------<br>
+<br>
+Mi,nemzeti érzelmü magyarok hiszünk abban,hogy ez az ország fel tud még emelkedni a jelenlegi helyzetböl és ki tudja nöni magát olyan naggyá,mint történelmünk kezdetén.Legföképpen hagyományőrzéssel,az ösi magyar idök és a történelem tanulmányozásával tengetjük idönket.És a kormányt fikázzuk:)Hiszünk abban,hogy visszakaphatjuk a Trianonban elrabolt földjeinket,és ismét egy országban lehetünk magyar testvéreinkkel.Hiszünk Istenben,a becsületben,az igazságban.Meglepödtél?Nem,nem hiszünk Hitlerben,Mussoliniben vagy egyéb náci és fasiszta eszmékben.Erre az szokott lenni a válasz,hogy Árpád-sávos zászló,meg nyilaskeresztes meg minden.A nyilaskersztes zászló 7 vágatú.Az Árpád-sávos 8,és mint nevében is bennevan Árpád vezér idejéböl származik.Rengeteg csoportunk van.Magyar Gárda,Nemzeti Őrsereg,Kárpát Haza Nemzetőrség,Mi Magunk,MÖM,HVIM,Gój Motorosok,Nemzeti Motorosok,stb.Ismerjétek meg öket,érdemes!Mind tisztességes,hazáját féltö ember.Ne a sajtóból ismerjétek meg öket,mert az elfogultan baloldali!Ismerjétek meg saját magatok kedves testvéreim!Olvassatok utána!Mit gondoltok miért van velünk rengeteg 56-os túlélő?Mert ök is abban hisznek amiben mi!Nektek is ebben kéne!Nem hisztek a Szent Koronában és Nagy Magyarországban?Akkor szégyeljétek el magatokat,és gondolkodjatok el magatok.Miben különbözünk mi töletek?Abban,hogy nekünk már kinyilt a szemünk,és féltjük a hazát!<br>
+<br>
+ADJON AZ ISTEN!SZEBB JÖVÖT!</div><br>Most pedig helyettesítem Blogint, és spam témakörben mutatok be egy levelet.<br><br><b>Yokas írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Szevasztok!<br>
+<br>
+Hírlevéllel zaklat az MSZP egy 3 perces e-mail címet!<br>
+2007.november 03. 3:51-kor regisztráltam a citromail-en a "miazhogy" nevet.<br>
+Rá 3 percre,ezt a levelet kaptam!<br>
+Az általános beállításokat még szinte el sem végeztem,mikor jött a maszoptól az e-mail.<br>
+<br>
+----- Original Message ----- <br>
+From: <br>
+To: <br>
+Sent: Saturday, November 03, 2007 3:54 AM<br>
+Subject: MSZP hírlevél 2007.11.03<br><br>
+&gt; ORBÁN VIKTORNAK EURÓPAI POLITIKÁT KELLENE KÉPVISELNIE<br>
+&gt; <br>
+&gt; Az MSZP szerint ideje volna, hogy Orbán Viktor, a Fidesz elnöke is az európai<br>
+&gt; konzervatív politikát képviselje - mondta Simon Gábor, az MSZP<br>
+&gt; választmányának elnöke szerdai sajtótájékpztatóján.<br>
+&gt; <br>
+&gt; Folytatás a következő címen:<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/hirek/mutatHir&amp;fnId=110209&amp;fnHid=110209<br>&gt; -----<br>
+&gt; <br>
+&gt; TISZTA VIZET A POHÁRBA<br>
+&gt; <br>
+&gt; 2006. április 24-én 16 munkaadói szervezet írta alá a Megállapodás a<br>
+&gt; Jövőnkért kiáltványt, melyben az aláírók felelős és fenntartható<br>
+&gt; gazdaságpolitikát, állami és magánfinanszírozáson alapuló egészségügyet,<br>
+&gt; államháztartási és a versenyképességet növelő adóreformot szorgalmaztak. A<br>
+&gt; kiáltványhoz az elmúlt másfél évben további 8 szervezet csatlakozott.<br>
+&gt; <br>
+&gt; Folytatás a következő címen:<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/hirek/mutatHir&amp;fnId=110089&amp;fnHid=110089<br>&gt; -----<br>
+&gt; <br>
+&gt; NABUCCO-ZÁRLAT<br>
+&gt; <br>
+&gt; "Az új hálózatokon keresztüli földgáz-szállítás megoldása kiemelkedő<br>
+&gt; fontosságú az EU számára. Ez az új korridor növeli a gázellátás biztonságát,<br>
+&gt; s eközben versenyt teremt az európai piacon" - mondta Valentin Ivanov,<br>
+&gt; Bulgária gazdasági- és energiaügyi minisztere.<br>
+&gt; <br>
+&gt; Folytatás a következő címen:<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/hirek/mutatHir&amp;fnId=110046&amp;fnHid=110046<br>&gt; -----<br>
+&gt; <br>
+&gt; A KÖZÉP-EURÓPAI RÉGIÓ SAJÁTOSSÁGAI<br>
+&gt; <br>
+&gt; Magyarország számára egyértelmű, hogy az energia-struktúra fejlesztésében<br>
+&gt; élen kell járnia - hangsúlyozta Hernádi Zsolt, a MOL elnök-vezérigazgatója.<br>
+&gt; <br>
+&gt; Folytatás a következő címen:<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/hirek/mutatHir&amp;fnId=110036&amp;fnHid=110036<br>&gt; -----<br>
+&gt; <br>
+&gt; AZ EURÓPAI ENERGIA-HELYZET ÉS ENNEK GLOBÁLIS ÖSSZEFÜGGÉSEI<br>
+&gt; <br>
+&gt; Az energiapiac helyzete rengeteget változott az elmúlt években - mondta<br>
+&gt; Patrik Heren, a Heren Energy elnöke az európai gázellátás, energia- és<br>
+&gt; szénpiac sajátosságairól tartott előadásában.<br>
+&gt; <br>
+&gt; Folytatás a következő címen:<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/hirek/mutatHir&amp;fnId=110035&amp;fnHid=110035<br>&gt; -----<br>
+&gt; <br>
+&gt; NEMZETKÖZI ENERGIAÜGYI KONFERENCIA BUDAPESTEN<br>
+&gt; <br>
+&gt; "Az energiaügy nem tisztán üzleti, vagy gazdasági kérdés, hanem átfogó<br>
+&gt; nemzeti, regionális, globális dilemma. Közvetlenül érinti a nemzeti és<br>
+&gt; regionális szuverenitás, a nemzetbiztonság és regionális biztonság kérdéseit"<br>
+&gt; - mondta Gyurcsány Ferenc miniszterelnök a nemzetközi Nabucco-konferencián,<br>
+&gt; Budapesten.<br>
+&gt; <br>
+&gt; Folytatás a következő címen:<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/hirek/mutatHir&amp;fnId=110032&amp;fnHid=110032<br>&gt; <br>
+&gt; -----<br>
+&gt; <br>&gt; A legpörgősebb 5 fórum témakör:<br>
+&gt; <br>
+&gt; Mi legyen Gyurcsány Ferenccel?<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/forum/forumReturn&amp;fromMutat=1&amp;fnId=830<br>&gt; <br>
+&gt; Sziasztok!<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/forum/forumReturn&amp;fromMutat=1&amp;fnId=21619<br>&gt; <br>
+&gt; Na, mi legyen Orbánnal?<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/forum/forumReturn&amp;fromMutat=1&amp;fnId=19539<br>&gt; <br>
+&gt; Rendőrség<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/forum/forumReturn&amp;fromMutat=1&amp;fnId=38234<br>&gt; <br>
+&gt; Moderálással kapcsolatos kérdések, javaslatok, észrevételek<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/forum/forumReturn&amp;fromMutat=1&amp;fnId=1003<br>
+&gt; <br>&gt; További érdekességek honlapunkon:<br>
+&gt; <br>
+&gt; Minden, amit az EU-ról írtunk, minden, amit az EU-ról tudni akar:<br>
+&gt; www.mszp.hu/europaiunio<br>
+&gt; <br>
+&gt; Eseménynaptárunk: <br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/esemenyek/listaEsemenyek&amp;pnOsszes=1<br>&gt; <br>
+&gt; MSZP az Ön lakókörnyezetében. Helyi hírek, információk, események<br>
+&gt; megjelenítése:<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/teruletek/mutatMagyarorszag<br>
+&gt; <br>
+&gt; Interjúk: <br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/hirek/listaHirek&amp;fcHirTipus=i<br>
+&gt; <br>
+&gt; e-párttagság és e-tagozati tagság: <br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/belepes/formEbelepes&amp;fnId=56<br>
+&gt; <br>
+&gt; Hírlevél megrendelése, regisztrálás fórumunkra, saját oldal készítésére: <br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/forum/formRegisztracio1&amp;fcTipus=h<br>
+&gt; <br>
+&gt; Hírlevél, regisztráció adatainak módosításához jelentkezzen be oldalunkon, és<br>
+&gt; válassza a "Beállítások" gombot a bal oldalsáv belépés mezőjében.<br>
+&gt; <br>
+&gt; -------------------------------------------------------------------------------------------<br>
+&gt; <br>
+&gt; Hírlevél lemondása:<br>
+&gt; http://www.mszp.hu/index.php?gcPage=public/hirlevel_lemond<br>
+&gt; <br>
+</div><br>E roppant érdekes témák között böngészve eszembe jut, hogy - talán emlékeztek - a Bombagyár ideiglenes e-mail címét milyen sebességgel törölték a Citromailről. Jó tudni tehát, hogy a Citromail szoci kezekben van, így tessék levelezni rajta. Mindenkinek ajánlom helyette a Gmailt!<br><br><b>Solinimo írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">A YouTube-on véletlenül akadtunk rá egy röhejes görög filmre, amely lelkesen magyarázza, hogy Kasztrióta György, az albánok legendás Szkander bégje tulajdonképpen görög származású (<a target="_blank"style="color: rgb(0, 0, 0);" href="//www.youtube.com/watch?v=QZpCs6aFt0o">http://www.youtube.com/watch?v=QZpCs6aFt0o</a>). Az az ötletem támadt, hogy vegyünk példát szomszédainkról, akik az ujjukból szopott Matei Corvint vagy Vratislav lovagot letolták a világ torkán. Noha a mi történelmünkön nem kell mit szépíteni, legyünk kreatívak: magyarázzuk meg hogy a világtörténelemben minden jeles ember magyar volt! Jómagam szeretnék jó példával elöl járni, íme néhány kiváló hazánkfia valódi életrajza. A kedves gyárlakó bombatársakat pedig arra biztatom, hogy eresszék szabadon fantáziájukat, írjuk együtt dédunokáink történelemkönyveit!<br>
+<br><span style="font-weight: bold;">
+Csíki Linkó Ábrahám</span> (Abraham Lincoln)<br>
+(1809. február 12 &#8211; 1865. április 15.)<br><br>
+Az Egyesült Államok kiváló elnökének édesapja, Csíki Linkó Tamás a Hória és Kloska-féle román parasztlázadás idején kényszerült elmenekülni Erdélyből 1784-ben. A székely fiatalember Franciaországon és Németalföldön keresztül jutott Angliába, majd egy telepescsoporthoz csatlakozva az Újvilágba vándorolt ki. Csíki Linkó Tamás először Massachusetts államban telepedett le. Csatlakozott az ifjú Egyesült Államok milíciájához, és kitüntette magát a vankujolá indiánok elleni háborúban, amiért az állam birtokkal jutalmazta az Ohión túli Kentucky vidékén. Felvette a jóval angolosabb hangzású Lincoln nevet, és feleségül vette a szintén magyar származású Hankó Ilonát (Nancy Hanks).<br><br>
+1807-ben született első lányuk, Sarolta (Sarah), 1809-ben pedig fiuk, Ábrahám. A család 1816-ban Indianába költözött át. 1818-ban Linkó édesanyja, Ilona elhunyt. 1830-ban a családnak a vankujolák támadásai elől tovább kellett költöznie Illinois államba. Az ifjú Ábrahámot 1834-ben beválasztották Illinois állam törvényhozásába, 1837-ben pedig az ügyvédi kamara tagja lett. 1846-ban került be az Egyesült Államok képviselőházába, ahol törvényjavaslatokat terjesztett be a rabszolgaság és Románia megszüntetésére. Szintén az ő kezdeményezésére vált a magyar az Egyesült Államok hivatalos nyelvévé, és maradt is az egészen 1904-ig. Politikai példaképének a neves zeneszerző nagyapját, Ferenczi Bénit (Benjamin Franklin) tekintette. <br><br>
+1854-ben számos jeles magyarral együtt részt vett a respublikánus párt megalapításában. Ennek a pártnak a színeiben választották meg az Amerikai Egyesült Államok 16. elnökévé 1860-ban.<br><br>
+Markánsan románellenes politikája miatt a déli államok már a választási kampány idején fenyegetőztek az Únióból való kilépéssel. 1861 áprilisában Dél-Carolinu bejelentette elszakadását, melyet további kilenc állam követett. Linkó úgy akadályozta meg Washington D.C. bekerítését (hiszen Virginia állam a Konföderációhoz csatlakozott), hogy mielőtt az északról határos Maryland parlamentje szavazott volna, a gyűlés negyvenegy román képviselőjét karóba húzatta Baltimore főterén, így a szecessziós javaslat néhány szavazattal megbukott. Kitört a polgárháború, melyben az Únió, kiváló magyar tábornokainak (Meggyes-Meade, Pápay-Pope, Sármány-Sherman, és a későbbi elnök, Galántai-Grant) köszönhetően győzelmet aratott. Nagy állatbarát hírében állt, ezt bizonyítja, hogy 1862-es Emancipációs Nyilatkozatában egyenlő állampolgári jogokat biztosított az emberszabású majmoknak. Még tartott a háború, mikor Linkót 1864-ben az amerikai szavazók újra elnökké választották. <br><br>
+1865. április 9-én a Konföderáció csapatai letették a fegyvert. Linkó úgy határozott, hogy a felállított hadsereget nem szerelik le, hanem behajózzák, és Fiuméban partra szállva kivívják Magyarország függetlenségét, Erdélyben pedig megvalósítják a teljes nemzeti homogenitást. Erről folytatott tárgyalásokat Washingtonban az emigrációba kényszerült Kossuth Lajossal. 1865. április 14-én az egyesített magyar-amerikai vezérkarral dolgozták ki a partraszállás haditerveit, majd a fárasztó nap végén feleségével ellátogatott a Ford színházba, ahol az &#8220;Amerikai unokatestvérünk&#8221; című darabot tekintették meg. Az előadás végén a darab főszereplője, Iuon Vilcea Butu (John Wilkes Booth) meghívást kapott az elnöki páholyba. A színész váratlanul fegyvert rántott és fejbe lőtte az elnököt, aki másnap belehalt sérülésébe. A kiváló magyar elnök halálát az egész világ megrendülten fogadta, a gyászoló tömegek számos nagyvárosban lincseltek meg románokat. Az USA kongresszusa Linkó emlékére elrendelte, hogy a nemzeti zászlót Árpád-sávos mintával tervezzék újra.<br>
+<br><span style="font-weight: bold;">
+Bánpétery Béla Napóleon</span> (Napoleon Bonaparte)<br><br>
+A zseniális hadvezér, a dinasztiaalapító francia császár 1769. augusztus 15-én született Ajaccióban. Édesapja, a Háromszék megyéből kivándorolt Bánpétery Károly Korzikán vette nőül a toszkán nemeskisasszonyt, Letizia Ramolinót. Hét gyermekük született, másodikként a kis Béla, akinek anyja a furcsa &#8220;Napóleon&#8221; második keresztnevet adta.. A mokány székely testalkatú, éles eszű fiút már tízévesen katonai iskolába küldték, és már 1785-ben, több évnyi anyagból egyszerre levizsgázva tüzértisztté avatták. A katonai akadémián az évfolyam parancsnoka önkényesen megváltoztatta Bánpétery nevét Bonapartéra, sőt keresztnévként is csak az olaszosabb hangzású Napóleont használhatta.<br><br>
+A forradalom kitörésekor Korzikán tartózkodott, ahol a jakobinus hatalom nevében állította helyre a rendet. A helyei román kolónia életveszélyesen megfenyegette családját, így 1793-ban a teljes Bánpétery família a francia szárazföldre menekült. Az ifjú Béla Toulon (édesapjával csak Tolnaként emlegették) ostromakor a tüzérség parancsnoka volt, neki sikerült a megszálló angol csapatokat evakuálásra kényszerítenie. Beválasztották a Közbiztonsági Bizottságba is, azonban román ügynökök mesterkedései folytán Robespierre bukásakor néhány hétre börtönbe került. A touloni börtönben ma is megtekinthető cellája, ahol a falakra bilincseivel ízes székely trágárságokat karcolt.<br><br>
+1795-ben Párizsban teljesített szolgálatot, amikor a királypárti erők a főváros elfoglalására szervezkedtek. Bánpéteryt nevezték ki a Tuileries palota védelmére sebtében szervezett csapatok élére. Sikerrel teljesítette a feladatot, később erről mondta, hogy &#8220;egy marék kartáccsal lesöpörte&#8221; az ellenséget. Érdekes, hogy a tüzérség géniuszának másodunokatestvére, Gábor Áron a család otthon maradt ágából szintén az ágyúk mestere lett. A diadal hírnevet és népszerűséget hozott neki, a Direktórium pártfogoltja lett. 1796-ban feleségül vette Josephine de Beauharnais-t. A mézeshetek csak néhány napig tartottak, Bánpétery azonnal az Itáliába induló francia sereg élére állt. Megverte a pápai állam seregét, és kiverte az osztrákokat Lomardiából. A krónikák feljegyezték, hogy katonáinak megtiltotta, hogy a Habsburg seregben harcoló magyarokra lőjenek. A magyar huszárok sem támadtak a franciákra, hanem délnek fordultak, és felépítették a pisai ferde tornyot (kitalálhatjuk hogy a helyi olaszok milyen eredeti magyar elnevezést ferdítettek el: a tornyot a katonák valójában  vizesblokknek szánták) valamint a Kolosszeumot, ahol lovasbemutatókat tartottak.<br><br>
+Itáliai sikereinek köszönhetően Bánpétery nagy befolyásra tett szert a francia politikában. A befolyásos tábornokot ellenfelei boldogan küldték Egyiptomba, ahová ő a székelyek eredetét kutatni vágyott, odavezető útján mellékesen Máltára is kitűzte a piros-fehér-zöld trikolórt. (A francia nacionalisták fortyogtak tehetetlen dühükben, és Bánpétery halála után az összes tetteit ábrázoló festményen kék-fehér-piros francia zászlót festettek a valódi ábrázolások tetejére.)<br><br>
+Egyiptom elfoglalása után román ügynökök segítségével a brit flottának sikerült elvágnia Bánpétery hazavezető útját, így ő szárazföldön haladva Szíriát is elfoglalta. <br><br>
+1799-ben a sorozatos vereségeket szenvedő Direktórium hazarendelte a &#8220;maroknyi székelyt,&#8221; ahogy katonái nevezték. November 9-én (brumaire 18-án, a direktóriumi naptár szerint) Bánpétery katonái segítségével átvette a hatalmat, és életfogytig Első Konzullá neveztette ki magát. Számos társadalmi reformot vezetett be, legfontosabb műve valószínűleg az alkotmány, melynek a &#8220;Béla törvényei&#8221; címet adta, a magyarul megfogalmazott szöveg közepes francia fordítója azonban a nem túl szerencsés &#8220;Code Napoleon&#8221; címet adta neki.<br><br>
+1803-ban kötötte talán Franciaország történetének legjobb üzletét: Valamennyi román alattvalóját az észak-amerikai gyarmatokra száműzte, majd a fiatal Egyesült Államokat kényszerítette, hogy vegye át őket. Hogy ez milyen következményekkel járt az USA történelmére nézve, elég csak a polgárháborúra gondolnunk, ahol a románokat végre sikerült legyőzni.<br><br>
+1804-ben a párizsi Notre Dame templomban I. Béla néven francia császárrá koronázták &#8211; noha a későbbi történetírók inkább Napóleonként emlegetik. A ceremónia közben az idős, remegő kezű pápa segítségére kellett sietnie, önmaga tette saját fejére a koronát, ezt később az egyházfő enciklikában köszönte meg neki.<br><br>
+1805-ben román ügynököknek sikerült elérniük, hogy Anglia, Ausztria és Oroszország szövetségre lépett a székely császár ellen. Román szabotázsakciók miatt a francia flotta súlyos vereségeket szenvedett, a szárazföldön azonban Bánpétery maga vezette seregét, és Ulmnál majd Austerlitznél megverte a Habsburg seregeket. Az osztrák zászlók alól minden magyar egység a székely császár pártjára állt, ez és a vereségek miatt Ausztriának decemberben békét kellett kérnie. <br><br>
+A román ügynökök azonban nem tétlenkedtek, a következő évben Poroszországot sikerült Béla ellen uszítaniuk. Bánpétery azonban Jénánál tönkreverte seregeiket, és 1807-ben az orosz cár is békét kért.<br>
+1809-ben Ausztria megszegte szövetségét Napóleonnal, a császár gyorsan és hatékonyan cselekedett: Wagramnál az osztrákok megsemmisítő vereséget szenvedtek. Habsburg Mária Lujza főhercegnő, amikor meglátta a székely császárt, gyógyíthatatlanul belészeretett. (Bánpétery közben újra agglegény volt: Titkosszolgálata felderítette, hogy felesége eredeti családnave Babescu: a császár azonnal elvált tőle, az asszonynak alternatívaként felajánlotta, hogy alulról nézhet meg egy guilliotine-t.) Mint jó székely, viszolygott a Habsburgoktól, de remélve hogy magyar testvérei sorsán enyhíthet, feleségül vette az osztrák kisasszonyt.<br><br>
+1811-ben Bánpétery elérkezettnek látta az időt, hogy felszabadítsa Magyarországot a Habsburg iga alól. Hatalmas sereget gyűjtött, és keletnek indult, úgytervezte hogy Galíca felől nyomul be ősei földjére. Krakkó mellett azonban román ügynökök hihetetlen akciót hajtottak végre: A sereg valamenyi iránytűjét elállították, és összes térképét kicserélték, így a hatalmas sereg Oroszország felé tévedt. Napóleon naplójában így írta le a sereg hangulatát: &#8220;Én jó bort ígértem ezeknek, barátságos fogadtatást, erre itt minden fel van perzselve. Hol a bús p..ában vannak a Kárpátok?!&#8221; A székely azonban konok fajta, meg sem állt Moszkváig. A sereg félpanzióban töltött egy telet az üres városban, majd hazaindult.<br><br>
+Bánpétery ellenségeinek román ügynökei legendákat költöttek a csapatok hatalmas veszteségeiről. Ezekkel az álhírekkel félrevezették a porosz, angol, spanyol és portugál államokat, akik újból a császárra támadtak. Drezdánál a székely hős súlyos vereséget mért a szövetségesekre, majd Lipcsénél fényes győzelet aratott egy kétszeres túlerőben lévő sereg felett. A háborúskodástól megcsömörlötten, rendezetten vonult vissza Franciaországba, és kimerültségre hivatkozva lemondott a trónról. Elba szigetére vonult vissza (ellenségei később elterjesztették, hogy kényszerből kellett odamennie, noha ez a koholt elmélet ezer sebből vérzik). Elba szigetén székely népművészettel, faragással és zenével foglalkozott. Távollétét kihasználva a szövetségesek elfoglalták az üresen hagyott Franciaországot. A császár elleni terveket szövögettek, csapatai nélkül azt hitték, elfoghatják és egy atlanti szigetre vihetik. Bánpétery hajóra szállt, és 1815 március 1-én újra francia földre lépett. A szövetségesek által kinevezett bábkirály, XVIII. Lajos az 5. gyalogezredet küldte ellene, ők azonban a császár oldalára álltak. Béla Párizsba vonult, ahol hamarosan 150,000-es hadsereget toborzott, és további 200,000 önkéntes állt mellé.<br><br>
+Ekkor következett az ún. &#8220;száznapos hadjárat,&#8221; melynek végén, 1815. július 15-én Waterloonál megsemmisítő vereséget mért az ellene felsorakozott angol és porosz csapatokra. Bár győzelme után egész Európa a lábai előtt hevert, sőt Nagy-Britannia kapuja is nyitva állt, az egyszerű székely ember meghasonlott a politikától. Rochefort kikötőjéből Szent Ilona szigetére hajózott, és ott élt békés visszavonultságban, elutasítva a visszahívására érkezett könyörgő küldöttségeket. Azonban román ellenségei nem nyugodhattak meg, míg a nagy székely császár életben volt. 1821. május 5-én egy pitesti-i fanatikus diák, Dumitru Moldovan arzénnal megmérgezte. A XIX: század legnagyobb államférfija, &#8220;a maroknyi székely&#8221; 51 éves volt. 1840-ben hamvait Párizsba szállították, de Szent Ilona szigetén továbbra is látható eredeti síremléke, egy faragott székely kopjafa.<br>
+Bánpétery leszármazottait a francia nép később űjra trónra emelte (&#8220;Lófő-dinasztia,&#8221; bár a franciák gyakrabban nevezik őket Bonapartéknak, a császár elferdített nevéből), ők azonban sajnos nem tudtak felnőni a nagy ős emlékéhez.<br>
+<br><span style="font-weight: bold;">Szikszóy Vilmos </span>(William Shakespeare)<br>
+1564-1616<br><br>
+A világhírű magyar drámaíró édesapja, Szikszói Tamás az angol Koronának tett szolgálatokat, orkokra vadászott Indiában, ezért kapott birtokot az avon-parti Stratfordban. Nyolc gyermeke közül harmadikként született Vilmos, aki 1592-ben Londonba ment, hogy meghódítsa a színház világát. Műveit, melyeket magyar nyelven írt, és utólag, húga segítségével fordított le angolra, 1590 és 1613 között szerezte. Valamennyi a világ irodalmi örökségének gyöngyszeme. 1613-ban visszavonult a család stratfordi birtokának gémeskútja mellé, és három évvel később hunyt el. Művei:<br><br>
+A velencei kalmár (Eredetileg &#8222;A Koszos Babó,&#8221; de az angliai félszerzetek szankciókkal fenyegettek)<br>
+Hamlet (Eredeti címe szerint: Vazul, azonban az angol közönség miatt ezt megváltoztatták)<br>
+Othello (Otelló, a troll, ezt azonban rövidítették)<br>
+III. Richárd (Az eredeti változatban Richárd délceg férfi volt, azonban az Esélyegyenlőség Első Lordja fogyatékos főszereplőt követelt)<br>
+Valamint: A vihar (The Tempest); A két veronai nemes (The Two Gentlemen of Verona); A windsori víg nők (The Merry Wives of Windsor); Szeget szeggel (Measure for Measure); Tévedések vígjátéka (Comedy of Errors); Sok hűhó semmiért (Much Ado About Nothing; A lóvá tett lovagok (Love's Labor's Lost); Szentivánéji álom (A Midsummer Night's Dream); Ahogy tetszik (As You Like It); A makrancos hölgy (Taming of the Shrew); Minden jó, ha vége jó (All's Well That Ends Well); Vízkereszt, vagy amit akartok (Twelfth Night or What You Will); Téli rege (The Winter's Tale); Pericles (Pericles, Prince of Tyre); János király; II. Richárd; IV. Henrik, I.-II. rész; VI. Henrik, I.-II. rész; VIII. Henrik; Troilus és Cressida; Coriolanus; Titus Andronicus; Romeó és Júlia; Athéni Timon; Julius Caesar; Macbeth; Lear király; Antonius és Kleopátra; Cymbeline <br>
+<br><span style="font-weight: bold;">
+Romhányi Ervin</span> (Erwin Rommel)<br><br>
+1891. november 17-én született Heidenheimben. Édesapja id. Romhányi Ervin professzor a helyi református líceum főigazgatója volt. A debreceni származású apa, aki Heidelbergben szerzett diplomát, 1874-ben Bismarck személyes kérésére tért vissza Németországba, és vállalta el a német református egyház elméleti képzésének fellendítését. Egy helyi nemes család lányát, Helene von Luzt vette el, és öt gyermekük közül másodikként, 1891-ben született meg az ifjabb Ervin.<br><br>
+Az ifjú Ervin eredetileg mérnöknek készült, de édesapja családjának hagyományai (nagyapja 1848-ban huszárezredes volt) erősen hatottak rá, így a hivatásos katonai pályát választotta, 1911-ben a danzigi kadétiskolába iratkozott be (Itt vette rá parancsnoka, hogy karrierje érdekében változtassa meg nevét. Az ifjú Ervin hivatalosan beleegyezett, de magánleveleit továbbra is Romhányiként írta alá, naplóját is magyarul vezette). Az első világháborúban először a francia frontra vezényelték, majd mikor Románia 1916-ban szövetségeseit hátba támadva betört Erdélybe, áthelyezését kérte a német expedíciós hadtestbe. Feljegyezték róla, hogy mikor a megfutamított román hadsereget üldözték, minden román település helységnévtábláját levizelte, piros-fehér-zöld zászlókat tűzött ki Regát-szerte, és Bukarestet porig akarta rombolni (Tőle származik az idézet: &#8222;Lesz még Bukarest magyar falu!&#8221;). Parancsnokai ezt sajnos megakadályozták, csak később derült ki hogy ez mekkora hiba volt. Túlbuzgóságát látva, noha önként jelentkezett, parancsnokai nem hagyták a Központi Hatalmak Romániát megszálló kötelékében, hanem az olasz frontra vezényelték. Kitüntette magát Caporettónál és az isonzói csatában is. Ekkor jegyezte naplójába: &#8222;Bárcsak adnának nekem egy zászlóaljnyi szalonnázgató székely hegyivadászt, azok megmutatnák a halkonzervzabáló Alpenkorpsnak, hogyan kell harcolni!&#8221; Vitézségéért megkapta az első- és másodosztályú vaskeresztet, és a legmagasabb Pour le Merité kitüntetést is.<br><br>
+A két háború között a drezdai és a potsdami katonai iskolában tanított, 1938-ban, az Anschluss után pedig a wiener neustadti (számos feddést kapott azért, mert hivatalos iratokon is csak Bécsújhelyt volt hajlandó írni) vezérkari akadémia parancsnoka lett.<br><br>
+A II. világháború kitörésekor egy különleges osztagot vezetett Lengyelországban, majd a francia hadjáratban egy páncéloshadosztály parancsnokságával bízták meg. A 7. pho egyészen Arrasig nyomult, tulajdonképpen Romhányi érdeme volt, hogy a Szövetségeseket Dunquerque-nél a tengerbe szorították, ezért meg is kapta a Lovagkeresztet. <br><br>
+1941 elején Észak-Afrikába vezényelték, a teljesen leharcolt és demoralizált olasz csapatok megsegítésére. Naplójába ezt írta: &#8222;Ezek a puhányok is maradtak volna inkább az operáiknál, legszívesebben beosztanék egy század olaszt a konyhára, a többit meg hazazavarnám.&#8221; Fantasztikus képességeit hasznosítva, nagyapja huszáros harcmodorában felszabadította Bengázit, elfoglalta Tobrukot, és benyomult Egyiptomba is. (Saját mondájuk szerint onnan származnak az orkok, gondolta gyökerestül irtja ki a problémát, és fel akarta venni a kapcsolatot a magyarábokkal is.) Román ügynökök szabotázsai miatt sajnos utánpótlását elvesztette, és az angolok (akiknek seregét a sors iróniája folytán egy másik magyar, Gömörhegy-Montgomery tábornok vezette) visszaszorították Líbiába. Amikor a Fáklya-hadműveletben a Szövetségesek partra szálltak Algériában, az Afrika-hadtest helyzete reménytelenné vált. Romhányi úgy gondolta, hogy ideje rég dédelgetett tervének megvalósításához kezdeni, és Romániát a földdel egyenlővé tenni, a Ploiesti olajmező kivételével, melyet Magyarországhoz kívánt csatolni. Ehelyett Görögországon és Olaszországon keresztül ismét Franciaországba küldték, ahol tétlenségre volt kárhoztatva. A partraszállás előestéjén román ügynökök hamis ürüggyel Németországba csalták, a Szövetségesek az időjárásnál, ár-apálynál és a holdfénynél is fontosabb tényezőnek tartották, hogy a kiváló magyar tábornok ne tudjon közbelépni.<br><br>
+Amikor nyilvánvalóvá vált, hogy Hitler, a magyarokat és románokat egymás ellen kijátszva nem hajlandó egész Erdélyt visszacsatolni, Romhányi, néhány magyar származású tábornoktársával (Bekő-Beck, Baróczy-Brauchitsch, Szabó-Bereghy Stauffenberg) merényletet kísérelt meg Hitler ellen. Román ügynökök meghiúsították a tervet, és hogy családját a következményektől megvédje, Romhányi 1944. október 14-én ősmagyar-japán módra szeppukut követett el.<br><br>
+A kiváló magyar tábornagyot a németek is sajátjuknak érzik mind a mai napig, nevét a német flotta egyik cirkálója viseli, melyre a német fölé mindig felhúzzák a magyar zászlót is.<br>
+<br>
+Kedves gyárlakók, aranyozzunk be néhány fekete lapot történelemkönyveinkben!<br>
+</div><br><div style="text-align: justify;">Köszönjük. Majd írunk egy csomó könyvet ezekről, amelyekben egymásra hivatkozgatunk az irodalomjegyzékben, és az egész paksamétát odaajándékozzuk az Amerikai Kongresszusi Könyvtárnak. A románok ezt tették, és az amcsik meg is vannak győződve, hogy az ő dákoromán kontinuitáselméletük az utolsó szóig igaz.<br></div><br><b>pea írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok!<br>
+Azért írok, mert egy elég furccsa hírt hallottam egy rádióadásban.<br>
+Sajnos épp csak elkaptam a hírt, és utánajárásban sem vagyok jó, ezért kissé hiányosan tudom nektek továbbadni.<br>
+Ha jól emlékszem, akkor Szegeden bezárnak egy óvodát az ősziszünetben valami egészen zavaros és elképesztően gyanús körülmények között. Az egyik apuka szólalt meg a hír kapcsán, aki önkormányzati képviselő, és nem is volt rest összeszedni hamarjában egy-két érdekes adatot a gyermeke ovodájának bezárásáról. Már a bezárás ügymenete is teljesen érthetetlen. Emlegetnek valami kéményt, ami balesetveszélyes, ezért az ősziszünet lejártával kérik a szülőket, hogy ne oda vigyék vissza a gyerekeket.<br>
+Ami a sok zavaros adatból megmaradt bennem:<br>
+1. A szülők felháborodása értetlensége. Először, annyit hallottak, hogy veszélyes valami kémény, aztán hogy már ne is vigyék oda a gyermekeiket. Volt olyan szülő, akinek 2 gyermeke is oda jár, és kapott két papírt a gyermekei adataival (amelyek mellesleg rosszak voltak), és mindkét gyermekhez ajánlatot, hogy melyik oviba irassa át őket. Természetese 2 különböző ovit ajánlottak. A szülőin felmerült, hogy itt bizony ezt bezárják, hiába jönnek itt a kéménnyel, és erre vonatkozóan papírokat stb kértek, amelyet meg is ígértek nekik, de természetesen másnap minden erre vonatkozó iratot titkosítottak. Szóval teljes a zűr. Senki nem tud semmit.<br>
+2. Elhangzott, hoigy az épületet a közelmúltban újították fel. Emiatt gondolták, hogy ez a kémény dolog ez kamu.<br>
+3. A képviselő apuka szerint létezik egy törvény, amely szerint óvodát és bölcsödét augusztustól márciusig nem szabad bezárni. Fogalmam sincs létezik-e ilyen törvény, de ha igen...<br>
+4. Ez az óvoda a város egyetlen olyan ovodája, ahova Dawn-kóros gyermekeket is be lehet iratni.<br>
+5. Az óvodától 150 méterre létesült egy casino, amely már hetek óta nem tud megnyitni, mert nem kap engedélyt.<br>
+<br>
+Sajnos ennél jobban nem tudom összeszedni a hírt, és utánajárni sem tudok, mert nem az említett város közelében lakom, no meg azt sem tudom hol kezdjem. :-D Gondoltam elküldöm nektek, hátha tudtok vele valamit kezdeni. Vagy esetleg van olyan bombagyáros, aki tud erről valamit.<br>
+Sok sikert nektek!<br>
+pea<br>
+</div><br><div style="text-align: justify;">Mindössze annyit tudok, ami biztos, hogy alkoholmérés és kaszinó nem üzemelhet óvoda, iskola közelében 300 méteren belül. Az 5. pont elég jól megmagyarázza, miért is kellett bezárni ezt az óvodát. Mindent a cigányokért!<br><br>És most számoljunk kamatokat.<br></div><br><b>Vidéki Be-tone írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Tisztelt Bombagyár!<br>
+ <br>
+Javasolnék egy témát Nektek, amiről már régóta beszélgetünk a baráti, ismerősi körben!<br>
+A levél megírását Morvai Krisztina bankokkal szembeni kurucos megnyilatkozása késztette!<br>
+ <br>
+Mégpedig!<br>
+ <br>
+A kérdés: az uzsorások-e az igazi uzsorások - amiket (akiket) mindig is tiltott a törvény, elítélt a közvélemény, akikhez csak akkor mentek régen is az emberek, ha már minden kötél szakadni látszott - vagy a bankok, pénzügyi szolgáltatók-e az igazi nagyhalak ebben a tóban?<br>
+ <br>
+Az uzsorás havi 8-10, rosszabb esetben 12-15%-ra adja ki a pénzét, ami évi szinten megduplázza a pénzét, vagyis 100 %-os hasznot hoz neki, legfeljebb 130-140 %-ot.<br>
+ <br>
+Példa: <br>
+ <br>
+100.000,- Ft kölcsön esetén 12 X havi   8 %-kal, egy év alatt összesen 196.000,- Ft.<br>
+100.000,- Ft kölcsön esetén 12 X havi 15 %-kal, egy év alatt összesen 238.000,- Ft <br>
+a visszafizetendő összeg.<br>
+ <br>
+Eddig ez volt a sumák, törvénytelen, tisztességtelen pénzkihelyezés!<br>
+ <br>
+A mai banki betéti kamatok éves hozama 8-12 %, lekötési idő függvényében.<br>
+ <br>
+Akkor most jöjjön a "legális, minden szempontból szabályos, törvényes, tisztességes" megoldás!<br>
+ <br>
+ A mi "szeretett" ( az uzsora uzsorájába bőven beleférő hirdetési összegekért, amit úgyis az ügyfél fizet ki!!!) sokat reklámozott pénzintézeteink alap THM-je gyorskölcsön esetén "csak" 278 % (vagy a plafon 436 %, pl.: Provident györskölcsön. Ezek az adatok közkézen forgó reklámokból tudhatók, de nem napi pontossággal, inkább csak ízelítőül!)<br>
+ <br>
+Micsoda kegy! <br>
+ <br>
+Egy napon belül kap max. 30.000,- Ft-ot, amit mondjuk heti 5.000,- Ft törlesztéssel, 45 nappal (6 hét alatt) a pénz felvétele után vissza kell fizetni. Utána még 10-11 hétig fizetheti a "tisztességes kamatot". Itt kezdődik az adósságspirál! <br>
+Kifizethetetlen, vagy megy még a gatyája is sokszor az adósnak!<br>
+Itt a 30.000,- Ft helyett már 83.400,- Ft-ot kell visszafizetni. Ugye nem kevés!<br>
+ <br>
+Mivel itt nem adnak többet, mint 30.000,- Ft-ot, a könnyebb szemléltetés miatt itt is 100.00,- Ft-tal számolunk.<br>
+ <br>
+Ha mondjuk 100.000,- Ft-ot adnának gyorskölcsönt, és feltételezzük, hogy heti 16.352,- Ft-ot törlesztünk, akkor a kb. 45 nap alatt visszafizetnénk a kölcsön összegét, utána fizetnénk még  11-szer 16.352-t, úgy jönne ki pontosan 278.000,- Ft-ra a visszafizetendő összeg.<br>
+ <br>
+De ez csak akkor igaz, ha rövid, kb. 4 hónapon belülre határidőre vállaljuk a visszafizetést, kamatostul!!! Ha hosszab futamidőt választunk, akkor jöhet akár a 436 %-os THM is!. <br>
+Na, tessék!<br>
+ <br>
+Ha a számokat egymás mellé tesszük, akkor látszik csak igazán, hogy ki is az uzsorás Magyarországon!!!<br>
+ <br>
+Kishalaknál, egy év alatt visszafizetendő, havi törlesztéssel: <br>
+ <br>
+       100.000,- Ft kölcsön 12 X havi 10 %-kal, egy év alatt összesen 220.000,- Ft.<br>
+       100.000,- Ft kölcsön 12 X havi 15 %-kal, egy év alatt összesen 238.000,- Ft<br>
+ <br>
+Nagyhalaknál, 4 hónap alatt visszafizetendő, heti törlesztéssel:<br>
+ <br>
+100.000,- Ft kölcsön 17 X heti 16.352,- Ft  4 ( azaz négy hónapig, tehát nem egy évig fizetendő!!!) hónap alatt 278.000,- Ft.<br>
+ <br>
+Ha jól számolom, akkor egy magyar Forint egy év alatt 3-szor is fialhat, ami azt jelenti, hogy a haszna a pénzkihelyezőnek egy év alatt a kamat kamatával, hozamával akár 6-8-10-szeres is lehet!!! (nem vagyok közgazdász, se matematikus, de az alsó szám még első ránézésre is igaz lehet, nem túlzás!) <br>
+ <br>
+Micsoda buli!!! <br>
+ <br>
+Persze mondhatják, hogy sokba kerülnek ám a reklámok, meg a munkatársi kört is meg kell fizetni, meg...   meg, hogy nagy a kockázat is! <br>
+Rendben! <br>
+De ennyire pofátlan számokról nem is mertünk még álmodni sem néhány évvel ezelőtt! <br>
+Na és milyen gátlástalan emberek képviselik ezeket a cégeket! Nem egyszer halljuk, hogy nagyon kemény szavakat, mondatokat használva hajtják be a pénzeket, fenyegetőznek végrehajtóval, bírósággal, BAR-listával, akár testi épséggel is, stb. <br>
+ <br>
+Na és persze teljesen "hivatalosan" !!!<br>
+ <br>
+Tudjuk, bankokra szükség van, a pénz mozgatja a világot! De ilyen gátlástalanul? <br>
+ <br>
+És hány embert, családot tettek már tönkre ezek a haszonleső, embertelen körök?!<br>
+ <br>
+Tehát, kik is az igazi uzsorások?<br>
+ <br>
+Javaslom, nézzetek utána, ha van hozzá szakértőtök, ki lehetne dolgozni egy még precízebb anyagot arról, hogy milyen jól lubickolnak a "nagyhal" banktőkések ebben a kellemes vízű tóban, itt Magyarországon!<br>
+ <br>
+A másik mise a pénznyerőgépek körülötti sorsokról, tragáédiákról szólhatna!!! Tudnék mesélni!<br>
+ <br>
+Írhatnék még sok mindent, de gondolatébresztőnek bőven elég lehet ennyi!<br>
+ <br>
+Üdvözlettel: Vidéki Be-tone<br>
+ <br></div><br><div style="text-align: justify;">Helyes a bőgés, oroszlán, bár nem kell ezen meglepődni. Kulturált országokban (pl. Kanada, USA) a bankokat nagyon keményen fogják, és nem az átlagparaszttól várják el, hogy átlássa a rafináltan megfogalmazott, apróbetűs szerződéseket. Ha egy kanadai bank olyan kamatot szedne, amilyet Magyarországon szoktak, már húzhatná is le a rolót.<br><br>Következő levelünk témája a póker.<br></div><br><b>Kiss Sándor írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok!<br>
+<br>
+Bár látom, hogy Selindek, a magyarországi póker atyja már hozzászólt Tomcat "Póker" című cikkéhez, hadd írjak még én is pár gondolatot. A póker valóban egy újkeletű játék, gyakorlatilag az internet burjánzásával terjedt el, dollármilliárdokat forgat meg szerte a világon, és bizony sok ember hagy ott kisebb-nagyobb összegeket az asztalnál. De az bizton állítható, hogy a póker hosszú távon nem szerencsejáték, legalábbis az élő, kaszinós illetve internetes változat. A pókertermek onnan szedik a profitot, hogy minden játék nyereményéből lecsippentenek egy részt (kvázi egyfajta asztal-használati díjat), a többit a játékosok osztják el egymás között, és itt jön be a tudás faktor. Persze a póker minden más formája (lásd kocsmai gépek stb.) az szerencsejáték, mert úgy van beállítva, hogy ne lehessen rajta nyerni.<br>
+<br>
+Hogy a lényegre térjek: sok mindenben egyetértek Tomcattel, de van egy dolog, amit ezek szerint Tomcat nem tud: Magyarországon sok embernek jelent stabil bevételt a póker. Kikre gondolok? Elsősorban egyetemistákra, akiknek a póker egy óriási lehetőség, hogy a mai nehéz időkben plusz bevételhez jussanak, finanszírozhassák a tandíjukat, albérletüket, a napi étkezéseket, tankönyveket. Tudom, miről beszélek, mert egyetemista éveim alatt a fő bevételi forrásom nekem is a póker volt, amely jó esetben annyi bevételt jelentett havonta, mint a diákhitel meg az ösztöndíj együttvéve, és óriási segítség volt a mindennapokban. A póker révén olyan kis luxuscikkekhez is hozzájuthattam, amit egyébként nélkülöznöm kellett volna, pl. új telefon, fényképező, nyaralás a barátnőmmel. És a pontosan vezetett excel tábláim őrzik a tényt: soha nem vesztettem. Minden dollár, amit külföldre küldtem, többedmagával érkezett vissza.<br>
+<br>
+Node, mivel gondolom már mindenki undorodva nézi, hogy egy "hajógyári zsidó befektető" ajnározza a pókert :) (ami persze nem vagyok), elmondom akkor a figyelmeztető szavakat is, amit mindenkinek tudnia kéne, aki kapcsolatba akar kerülni ezzel a játékkal. Először is: a póker nem játék. Aki a pókert "játssza", az veszteni fog. Másodszor: a pókermezőny nagyon telített, és a legtöbben már kizárólag azért pókereznek online, hogy pénzt csináljanak. Kevesen tudják, hogy alig minden tizedik pókerjátékos stabil nyerő, az összes többi előbb, vagy utóbb, de garantáltan veszít. Hogy mennyire okoz függőséget a póker, azt nem tudom, mert én soha nem éreztem semmiféle kényszert, hogy játsszak. Sőt, épp ellenkezőleg. A haszonért folytatott pókerezés iszonyatosan unalmas, sokszor monoton, és lelkileg is erősen megterhelő. Csak az vállalkozzon rá, aki stabil, erős személyiség, jó a monotónia-tűrő képessége, képes hosszú távon gondolkodni, soha nem veszti el a fejét, nincsen semmiféle győzelmi kényszere, tud veszíteni, és tud nyerni is anélkül, hogy ügyet csinálna belőle. A haszonpókerezés munka, amely lelki és szellemi rátermettséget igényel, folyamatos koncentrációt, nem lankadó figyelmet, kőkemény lelki fegyelmet és önkontrollt. Aki a játékot, az izgalmat, az "ólin"-feelinget keresi benne, az ne kezdjen el pénzben játszani, legföljebb csak haveri körben, jelképes összegekért. Ami egyébként lehet jó szórakozás is. Persze tudom, hogy általában taszító az, ha valamit hirtelen fölfújnak, és trendi lesz. Mentségemre szóljon, amikor én elkezdtem játszani, még nem létezett póker magyarul, se könyvben, se TV-ben, én angolul olvastam könyveket, és eredeti angol versenyeket néztem, szakértő kommentárral. Ami egyébként hihetetlenül izgalmas és szórakoztató tud lenni, Gyuri bácsit nem akarom megbántani, de a pókerhez továbbra sem ért, a magyar közvetítés szakmai színvonala pedig nagyon alacsony.<br>
+<br>
+Hogy a Bombagyár szellemiségéhez illő végszóval zárjam ezt a kis fejtegetést: az én véleményem szerint a póker kemény munka, és csak kevéssel izgalmasabb, mint egy Tescoban pénztárosnak lenni (bár kétségkívül jobban fizet). Csak erős idegzetű, felkészült, függőségektől mentes embereknek ajánlom, a többiek inkább menjenek ki a szabadba, menjenek kirándulni, bulizni, társasjátékozni. Ezermillió jobb dolog van a világon a pókernél, pláne az órákon át tartó monitorbámulásnál. Higgyétek el, a póker egyáltalán nem könnyű pénz, nagyfokú rátermettséget és felkészültséget igényel.<br>
+<br>
+Üdv,<br>
+Sanyi<br>
+<br>
+ui. ezt eredetileg a cikkhez tartozó fórumba akartam megírni, de csak emiatt nem volt kedvem most a regisztrációs procedúrát végigjátszani</div><br><div style="text-align: justify;">Ó, azok a szegény egyetemisták, akik kénytelenek pókerezni a napi betevő falatért, tandíjért! A szívem szakad meg. És ugye közülük is csak minden tizedik nyer, vagy az egyetemisták kivételek? Kedves önellentmondást hoztál itt össze, kiváló példája vagy a játékfüggőnek, aki csupán azért védi szenvedélyét, mert történetesen nyert. Továbbra is fenntartom, hogy a póker szerencsejáték, amit nagyon szigorú ellenőrzés alá kellene vonni, és éppen úgy korlátozni kellene a népszerűsítését, ahogyan például az alkoholét, a dohányét vagy a pornográf termékekét.<br></div><br><b>Kopi írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Fontosnak tarom, hogy emlékezzünk meg november hetedikéről! Nem, nem a kilencven évvel ezelőtti Nagy Októberi Szocialista Forradalomról, amely emberek millióit taszította nyomorba. Hanem a két évvel ezelőtti Nagy Kampányszagú Átfogó Adócsökkentési Törvénycsomagról, melyet még annak hatályba lépése előtt, de már az országgyűlési választások után hatályon kívül helyeztek, mely emberek millióit taszította nyomorba.<br>
+<br>
+Akkoriban készítettek egy propagandakiadványt (háromrét hajtott szórólap), mely minden APEH kirendeltségen megtalálható volt. Címe: Adójogszabályok változása 2006-2010. között. Ebben az alábbi magvas gondolatokat olvashatjuk (saját véleménnyel kiegészítve):<br>
+<br>
+&#8222;Tisztelt Adófizető!<br>
+<br>
+A Kormány előterjesztése alapján az Országgyűlés 2005. november 7-én döntött az adótörvények módosításáról. Ennek köszönhetően 2006. január 1-jétől 2010-ig évről évre enyhülnek az adóterhek, és egyszerűbbé válik adórendszerünk.&#8221;<br>
+<br>
+Ezt várjuk évek óta! Minden kormány minden évben megígéri, hogy majd most egyszerűsítik az adórendszert, csökkentik az adóterhelést, stb. Aztán mindegyik kormánynak beletörik a bicskája, mert ezt nem lehet 1-2 év alatt véghezvinni. Az adóterhek beharangozott enyhülése pedig mind a közérzetem mind fizetési papírom szerint ép ellentétes tendenciát mutat.<br>
+Na, de olvassuk tovább az önfényezést:<br>
+<br>
+&#8222;Az adócsökkentési program nagyobb biztonságot teremt az adózóknak: öt évre előre tervezhetően, törvényi garanciával védve válik a közteherviselés igazságosabbá és versenyképesebbé a Magyar Köztársaságban.&#8221;<br>
+<br>
+Na, itt recsegnek a plafont tartó traverzek! Abszurdisztánban ennyit ér a törvényi garancia! Az Országgyűlést a saját döntései sem kötelezik semmire. Hát ha ez az agyonistenített köztársaság, akkor köszönöm, nem kérek belőle! Még egy abszolutisztikus uralkodó sem tehetett ilyet! Persze, okos ballib jogászok majd jól megaszongyák, hogy ez jogszerű, nem lehet belekötni, mert mind a megszavazás, mind a hatályon kívül helyezés a jogalkotási törvénynek megfelelően történt. Ha a törvény betűjét nézzük, biztosan így van. De ebben az esetben a képviselők nem pusztán éltek törvényadta jogukkal, hanem visszaéltek vele! Azt hiszem, ezt nevezik rosszhiszemű joggyakorlásnak. (Érdekes nyomozómunka: azon képviselők névsora, akik a tagjai voltak mind a 2002-2006 közötti mind a mostani parlamentnek, és először megszavazták ezt a törvénycsomagot, majd megszavazták ennek visszavonását is! Szívesen olvasnék ilyen névsort.)<br>
+<br>
+Most pedig nézzük az egyes adófajták beharangozott változásait. De előtte ne feledjük az utolsó fél mondatot: &#8222;válik a közteherviselés igazságosabbá és versenyképesebbé&#8221;<br>
+<br>
+&#8222;Társadalombiztosítási járulék<br>
+<br>
+2007-ben 29-ről 26 százalékra csökken a munkáltatók által fizetett társadalombiztosítási járulék mértéke. (&#8230;) 2009-ben további 2 százalékponttal csökken a munkáltatók által fizetett társadalombiztosítási járulék mértéke.&#8221;<br>
+<br>
+Nocsak! Úton-útfélen azt hallani, hogy az adócsökkentés adókiesést okoz. Pedig megfelelő mértékű csökkentés (a Fidesz által szorgalmazott egyszeri 10 százalékpontos csökkentést soknak tartom) esetén a munkáltató által eddig adóként befizetett (azaz az ő szempontjából kidobott) pénz munkahelyteremtésre, fejlesztésre fordítható, ami újabb adófizetőt jelent, tehát akár még nőhet is az össz adóbevétel.<br>
+<br>
+&#8222;Iparűzési adó<br>
+<br>
+2008-tól pedig teljesen megszűnik ez az adónem.&#8221;<br>
+<br>
+Miután kiderült, hogy ez az adónem (hasonlóan az olasz IRAP-hoz) nem ellenes az EU rendelkezéseivel, így ez az adó megmaradhat. Bizonyos értelemben jó is, hiszen ez az adónem a helyi önkormányzatok bevétele. Az amúgy is meglehetősen rossz anyagi helyzetben levő önkormányzatok számára ez úgy kell, mint nekem egy falat sör! Egyébként az iparűzési adó teljes egészében levonható a társasági adó alapjából, ez azonban egy veszteséges kisvállalkozás számára annyit ér mint döglött kutyának a fogmosás&#8230; Ellenben versenyképesség szempontjából negatív a hatása.<br>
+<br>
+&#8222;Személyi jövedelemadó<br>
+<br>
+2006-ban a személyi jövedelemadó felső kulcsa 38-ról 36 százalékra csökken, a 18 százalékos kulcs határa pedig 1 millió 500 ezer forintról 1 millió 550 ezer forintra emelkedik.<br>
+<br>
+2007-ben további 150 ezer, 2008-ban 200 ezer, 2009-ben 400 ezer, 2010-ben pedig már 700 ezer forinttal emelkedik az adótábla sávhatára. Ezzel évről-évre csökken az átlagos keresetek adóterhelése, de mérséklődik a magasabb jövedelmek tere is.&#8221;<br>
+<br>
+Az SZJA a leginkább &#8222;populista&#8221; adónem, hiszen mértékének vagy sávhatárának változását minden munkavállaló közvetlenül érzékeli. Én ennek tudom be, hogy eddig ennek az ígéretnek minden szavát betartották. Hétfőig! Ekkor az Országgyűlés elvetette a sávhatár emelését, így az maradt 1 millió 700 ezer forint. Aki esetleg számolt a sávhatár-emelés következtében megmaradó pénzzel (vö. &#8222;előre tervezhetően&#8221;), az jövőre 27 ezer forintról kénytelen lemondani (150 ezer * 18%).<br>
+<br>
+Amiről a szórólap és a törvénycsomag &#8222;elfelejtett&#8221; szólni:<br>
+- SZJA-kedvezmények totális megnyirbálása (lakáshitel-kedvezmény, családi kedvezmény, Sulinet-kedvezmény, felnőttképzés kedvezménye),<br>
+- foglalkoztatottat terhelő egészségbiztosítási járulék emelése 4%-ról először 6%-ra, majd 7%-ra,<br>
+- munkavállalói járulék emelése 1%-ról 1,5%-ra,<br>
+- ingatlanadó bevezetése,<br>
+- &#8222;középső&#8221; ÁFA-kulcs eltörlése, az ide tartozók (élelmiszerek, utazás, rezsi) felemelése,<br>
+- elvárt adó bevezetése,<br>
+- kamatadó bevezetése.<br>
+<br>
+Szóval mindez immár két éve. Most mondja meg valaki: a vörösök minden november hetedikén átverik az embereket?</div><br>Éljen november hetedike! És ezzel el is fogytak félretett leveleink. Köszönjük a türelmet, és írjatok még.<br><br></DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2007-11-07&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=203&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=203&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=203&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12771"></A>18. Vidéki Be-tone</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=203&id=10997#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-14 19:12:05</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">TaTa86 részére!<br />
+<br />
+Nem vagyok matekból egyetemet végzett, a gimiben átlag 4-es körül voltam, de ez itt most nem a védekező zóna! Nem vagyok tévedhetetlen...!<br />
+<br />
+100.000,- Ft kölcsön 12 X havi 10 %-kal, egy év alatt összesen 220.000,- Ft.<br />
+De én ezt egy sima, mezei uzsorásra vonatkoztattam! Semmi THM, ennyit kérnek vissza egy év alatt!<br />
+<br />
+Az biztos, hogy szemléltetésnek szántam ezeket a mintákat, oda is írtam, hogy nem pontos (inkább hozzávetőleges) számításokról van szó!  Egy magasanképzett, a fogalmakkal teljesen tisztában levő szakember biztos tudna egy korrekt számítást készíteni.<br />
+<br />
+Erre bíztatnék egy olyan bombagyárost, aki komolyan ki tudja mutatni, hogy hogy' is van ez itt?   <br />
+<br />
+A banki pénzkihelyezésnél (kölcsönfelvételnél) egy csomó fogalommal, apróbetűssel, kitétellel, meghagyással tisztában kell lenni, mert vannak olyan kifejezések, amik után vagy így, vagy úgy felszámolják a pénzeket, és ki is kell fizetni, előbb-utóbb!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12586"></A>17. TGabor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 00:48:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Viszont az igaz, hogy ha meg akarjuk védeni azt a részt, akiktől a jó játékosok nyernek, akkor tenni kell valamit. Szerintem elég jó önuralmam van, nem igazán tudnék függő lenni, ezért ha gonosz lennék, azt mondanám: aki nem veszi észre, hogy átlagban veszít, annak úgy kell.<br />
+Azt is tudom, hogy van olyan, aki szórakozásból csinálja, és olyan az anyagi helyzete, hogy megteheti, hogy mindig veszít.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12585"></A>16. TGabor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 00:43:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szerintem Kiss Sándornak a pókeres írásában teljesen igaza van.<br />
+<br />
+Ahhoz, hogy valaki hosszú távon pénzt keressen belőle, valószínűséget kell tudnia számolni (vagy olyat olvasni, ahol ezt már megtette más helyette), előre látni egy bizonyos lapkombináció nyerési esélyeit. Ha mindenki tökéletesen csinálná ezt, akkor - mivel a nyereményekből lejön az üzemeltető haszna - mindenki stabilan vesztene egy kicsit, hosszú idejű átlagban (a szerencse tényező véletlen folyamatnak fogható fel, ez varianciát okoz, amit az átlagolás csökkent és valaki a tudásától, önuralmától függően stabilan keres, vagy veszít: ez a várható érték - de ezt inkább nem folytatom :) ). De nem mindenki csinálja ezt az esélyfigyelembevevős dolgot jól - sőt, elég sokan vannak -, így akik jól csinálják, az ilyenektől nyerik el a pénzt. Akik pénzkeresés miatt csinálják, azok általában nem függők, inkább már unják - a függők inkább a vesztes csoporthoz tartoznak.<br />
+Nekem is van egy ismerősöm, aki ebből él. Én is próbáltam 2-3-szor, és tényleg csak az kell, hogy ott legyen mellettünk a megfelelő táblázat, kiismerjük az ellenfél hibáit, szokásait és előre lássuk azt, hogy mekkora a valószínűsége annak, hogy nyerni fogunk.<br />
+<br />
+A pénzkeresős póker hosszú távon = VALÓSZÍNŰSÉGSZÁMÍTÁS</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment11517"></A>15. 15. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-10 15:59:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">tomket azért neked elég hülye a felfogásod a póker témakörben</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment11217"></A>14. <A HREF="mailto:emn@freemail.hu" STYLE="color: #000000">eMM</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-09 07:45:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Crowley Travianban ezek a tótok egy kissé átértékelték a politikájukat.Most néztem,mostmár békében akarnának élni.Gondolom azóta párszor elkenték a szájukat.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment11204"></A>13. <A HREF="mailto:emn@freemail.hu" STYLE="color: #000000">eMM</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-09 01:23:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Solininio ezen a "fekete történelmen" szétröhögtem az agyam.Saját szerzemény? Először Rommelt kezdtem el olvasni, úgy kb a közepén esett le hogy ez paródia!:)<br />
+Ha saját szerzemény írj még ilyet ne kimélj bennünket!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment11074"></A>12. Frigo</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-08 18:52:24</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_697.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tomcat, szeretném ajánlani az sg.hu komment/fórum rendszerét (mint példa);<br />
+<br />
+ott az előzmény nem új ablakot nyit meg, hanem a hozzászólás alatt az eredeti hozzászólást (a link szövege pedig a hozzászólás száma és a felhasználó neve);<br />
+<br />
+a témák/cikkek csoportokba vannak sorolva, legutolsó hozzászólás alapján, jelölve az új hozzászólásokat; az egyes témákat be lehet rakni kedvencekbe, amiket a fórum nyitólapján kijelez, új hozzászólásokkal együtt;<br />
+<br />
+meg ami hiányzik ugyan belőle, de jó lenne: naponta, vagy több naponta egy-egy email, ha új hozzászólás érkezik olyan témába, amibe írtunk<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment10997"></A>11. <A HREF="mailto:tataa01@freemail.hu" STYLE="color: #000000">TaTa86</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-08 16:33:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_401.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A bandok uzsorás hiteles levélhez...<br />
+<br />
+komolyan mondom, hogy középszinten sem szabadna matekból átengendi az embereket, akik nincsenek tisztában a "kamatos kamat" fogalmával...<br />
+<br />
+100.000,- Ft kölcsön 12 X havi 10 %-kal, egy év alatt összesen 220.000,- Ft.<br />
+<br />
+nem egészen <br />
+<br />
+100.000,- Ft kölcsön 12 x havi 10 %-kal, egy év alatt összesen:<br />
+313.842,8 Ft   ==> 314% THM (vagy 214% nem tom)<br />
+Magyarul a provident a mezei orkmaffia szintjén van, nem kell démonizálni :P</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment10884"></A>10. <A HREF="mailto:csimbum@gmail.com" STYLE="color: #000000">mihaj-a414</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=203&id=10728#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-08 13:50:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_749.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Wow.<br />
+Ezt nem tudtam... Nem vagyok Tátk-os. Az IK-n sem fenékig tejfel az élet, de ott eddig mindig szívesen segítettek, ha valami gondom volt... Vagy lehet, hogy csak a megfelelő embereket ismerem?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment10728"></A><FONT COLOR="#FF0000">9. </FONT><A HREF="mailto:textortextrix@gmail.com" STYLE="color: #000000">Textor Textrix</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-08 09:20:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=203&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=203&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=203&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

@@ -1,0 +1,453 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=685#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Népszavazási kiskáté III. - a tandíjról";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_448.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Népszavazási kiskáté III. - a tandíjról<BR><DIV CLASS="postheader_small">Blog - Molnárgörény</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 március 5. 19:00:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_685.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Az első részt tulajdonképpen 
+egyszerűen ismételni kell. Ma  Magyarországon olyan csekély a jövedelem és olyan nagy az elvonás 
+ebből  az EU átlagához képest, hogy állambácsinak semmilyen erkölcsi alapja  nincs további 
+feladatainak finanszírozását áthárítani a kizsigerelt  polgárokra.<br><br>Tandíj esetében ez 
+legalább olyan szemétség, mint  amikor valakinek az egészségét veszik el, másfajta fizetnivalókkal. 
+A  tandíj ugyanis a szegényebb diákok diplomaszerzési lehetőségét  gyakorlatilag nagyságrendekkel 
+képes lecsökkenteni.<br><br>A kormány  azt állítja, hogy a tandíj éppenséggel elősegíti a 
+szegényebbek  bejutását. Nos, ez szimpla nettó hazugság. Az államilag finanszírozott  egyetemi 
+helyeket ugyanis a legjobb felvételi pontszámot elérő diákok  kapják, míg a gyengébbek juthatnak be 
+a tandíjas helyekre.<br><br>Namármost  a pontszámban ilyen-olyan pluszpontokat is lehet kapni: 
+például  nyelvvizsgákért, különösen, ha az felsőfokú. Ám vajon melyik  gimnázumban lehet simán, a 
+tananyagból felsőfokú nyelvvizsgát kapni? Az  elit, netán két tannyelvű gimnáziumokban, ahol eleve 
+fizetni kell  ezért-azért, és már ott jókora túljelentkezés van, és egyáltalán nem  jellemző, hogy a 
+szegényebbek jutnának be... Tehát már a  többletpont-lehetőségeknél előnyben vannak a gazdagok - a 
+nehezebb fejű  gyermekeiknek ők könnyedén fogadhatnak magántanárokat is. Szó nincs  tehát arról, 
+hogy a szegény özvegyasszony legkisebb gyermeke olyan  egyenes úton juthatna tandíjmentes egyetemi 
+helyhez, mint a mesében a  királylány kezéhez...<br><br>A másik fele a dolognak, hogy azért az  
+értelmiségiek (na jó, engem kivéve) általában még a mai helyzetben is  jobb anyagi körülmények 
+között élnek az egyszerű melósoknál. A fasizmus  pedig most következik (sőt, ez még annál is 
+rosszabb:  szociáldarwinizmus): az értelmi képességek is öröklődnek. Nem egy  génnel, és nem direkt 
+öröklésmenettel, hanem csak statisztikus  jelleggel, de azért öröklődnek. Magyarán: az értelmiségi 
+házaspár  gyermeke nagyobb eséllyel lesz jobb szellemi képességű, mint a  munkásgyermek. Vagyis: az 
+eleve jobb anyagi körülmények közé születő  doktorpalánta még valószínűleg jobb adottságú is, tehát 
+duplán előnyben  van.<br><br>Vajon a tehetséges, de szegény gyerekeknek jobb lesz a  tandíjtól, 
+ahogy a kormány mondja? Frászkarikát, már a felvételi  pontszámban képtelenek a tisztán pénzen múló 
+többletpontokat begyűjteni!<br><br>Amikor  pedig valaki egyetemi polgárrá válik: ha az egyeteme a 
+húzósabbak közé  tartozik (legyen a példa az orvosi, az hat év, és egyértelműen a  legnagyobb a 
+tananyagának összmennyisége), akkor nappali tagozat  mellett (orvosin nincs levelező vagy esti, 
+érthető okokból, a  gyakorlati képzés nem végezhető gyorstalpaló jelleggel) szinte  képtelenség 
+munkát vállalnia. Az orvosin nem csak vizsgaidőszak van:  demonstrációk, dolgozatok vannak szorgalmi 
+időszakban is, és aki azokon  leég, esetleg nem is mehet félévkor vizsgára.<br><br>A kormány meg  
+mivel kampányol? Azt mondja, hogy a gazdag kölykök végiglógják az  egyetemet. Nos, ez egy baromság 
+újra. Van, aki igen, de hogy ez lenne  az általános, az rendkívül cinikus és hazug duma. Az 
+egyetemre nem  azért járnak ám, hogy lézengve diplomához jussanak a népek, hanem  legtöbben azért, 
+hogy egy értelmiségi szakmát elsajátítsanak olyan  szinten, hogy azt később művelni is tudják. 
+Vagyis a tőlük telhető  lehető legjobban.<br><br>A kormány csúsztatása azért találhat célba  néhány 
+egyszerűbb embernél, mert ők látják a kocsmába járó  egyetemistákat. Akik mellesleg felnőtt emberek, 
+és bizony, olykor  kirúgnak a hámból, mint akárki. Ám az, hogy időnként besöröznek, nem  jelenti 
+egyben azt is, hogy végiglógnák a tanulmányaikat.<br><br>A  kormány azt is mondogatja, hogy a tandíj 
+azért szükséges, mert így a  nagyon drága (például megint az orvosi) és a nagyon olcsó (mondjuk, a  
+jog) képzések között némi költség-átrendezést lehet elérni. Ez egyrészt  nem is igaz (mert az 
+egyetemek nem adják át egymásnak a pénzt,  legfeljebb az állami forrást csökkenti a kormány 
+aszimmetrikusan),  másrészt nem is használ semmit. Elsősorban azért nem, mert a nagyon  drága 
+orvosképzés - hála a Mengelica-féle "reformoknak" - ma már  elsősorban a külföld javára 
+történik!<br><br>Jellemző, hogy amikor  bevezették a diploma kiadásához szükséges nyelvvizsgákat, 
+eleinte a  medikusok kaffogtak ellene. Nem véletlenül: ma a szakirodalom immár  magyar nyelven is 
+jól követhető, és ami nem, az általában nem is  alkalmazható még nálunk. Egy Magyarországon, 
+magyarokat gyógyító orvos  - még ha eretnekség is ezt kimondani - szakmailag naprakész tud lenni,  
+ha a magyar nyelvű szakirodalmat követi.<br>Aztán megváltozott az  orvostanhallgatók hozzáállása! 
+Most már úgy tanulják a nyelveket, mint  a kisangyal! Még norvég nyelvtanfolyam is van az egyetemen 
+- érdekes,  hogy éppen Norvégia keres állandóan európai orvosokat... Most a  medikusnak szinte 
+fontosabbak a nyelvek, mint a szakmai tárgyak -  nyelvtudással azonnal mehet külföldre, mihelyt 
+megkapta a diplomáját.  Miért is?<br><br>Egyszerű a válasz. Itthon már azt is tervbe vették  (elsőre 
+nem merték megcsinálni), hogy az egyetem utáni rezidens-évek  alatt ne kapjon a rezidens orvos 
+fizetést, hanem ő fizessen a  képzésért... Zseniális ötlet! Ha minden jól megy, akkor (azonnali  
+felvételit, egyenes úton végzett egyetemet számítva) 26-28 éves korig  fizethet a leendő szakorvos, 
+hogy aztán mintegy nettó 120 ezer  forinttal kiléphessen a nagybetűs életbe, és ebből a hatalmas 
+összegből  családot alapítson, lakást szerezzen, ésatöbbi. Persze, fizesse vissza  a diákhitelt 
+is...<br><br>Hát megőrültek ezek? Még tandíjat is? Az én  évfolyamom 1989-ben még 400 fölötti 
+létszámmal végzett itt, Budapesten  a SOTE-n. A mostani évfolyam tablóján 255 fotót számoltam... 
+Ebből a  fele azonnal elmegy, ide meg jön a szerb, ukrán és román egyetemeken  végzett kisebbségi 
+magyar. Ő legalább tud magyarul... Ám ez két okból  is súlyos probléma: egyrészt azok az egyetemek 
+még ma is gyengébbek a  magyaroknál, másrészt pedig a magyar értelmiség elvándorlása az  elcsatolt 
+területekről komplettálja és visszafordíthatatlanná teszi  Trianont. A magyar oktatáspolitika tehát 
+erélyesen hozzájárul a  Felvidék és Erdély etnikai arányainak rontásához.<br><br>Mit lehetne  tenni? 
+A tandíj önmagában nem volna eretnekség: feltéve, ha a  megszerzett diplomával olyan jövedelmet 
+lehetne szerezni, amiből a  családalapításon, lakásszerzésen felül a tandíjra fordított hitel is  
+visszafizethető. Na de itt és most? Ezekből a fizetésekből? Ez bizony  
+képtelenség.<br></div><br><div style="text-align: justify;">Hadd idézzem Teremburát, aki az én 
+blogomon az első cikknél  kommentben írta meg a véleményét - a tőle megszokott logikával és  
+alapossággal. Egyetértek vele: tandíjat csak úgy lehetne kérni, ahogy ő  mondja. Akár a képzés 
+teljes összegét (hitelként, nem a diák zsebéből  kiszedve) - de hát ez esetben a majdani 
+munkáltatóval is tudomásul kell  vetetni, hogy a kiművelt emberfő értéke az bizony nem havi százezer 
+ forint, hanem legalább annyi, amennyibe a kiképzése került.<br><br>Terembura ezt 
+írta:<br></div><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Tandíj vonatkozásában szerintem mindkét most felkínált alternatíva 
+nagyon rossz. Ha rajtam múlna, akkor egészen radikális lennék: a felsőoktatás egésze legyen fizetős, 
+méghozzá úgy, hogy az fedezze az oktatás teljes költségét. Tehát ingyenes oktatás: NEM, 
+részhozzájárulás: NEM, egyetlen apró, de nem lényegtelen kiegészítéssel.<br><br>Éspedig azzal, hogy 
+a tanulmányi idő alatt tandíj címén a diák egyetlen buznyákot se fizessen. Illetve ha akar, akkor 
+fizethet, de nem köteles. A ki nem fizetett tandíj egyszerűen az állammal, azaz az adófizető 
+polgárok összességével szemben fennálló személyes hitelszámláját terheli. Ennek fejében viszont az 
+állam a hiányzó összeget - se többet, se kevesebbet - átutalja a felsőoktatási intézménynek. Így az 
+nem a költségvetési támogatásból, hanem a tandíjból tartja fenn magát. Mondjuk K+F célokra adhat (és 
+adjon is) az állam külön költségvetési pénzt, de ennek a tandíjhoz semmi köze.<br><br>Marad a 
+kérdés, hogy miből hitelez az állam? Természetesen a befolyó adókból. Ha ez nem lenne elég, akkor 
+erre a célra akár hitelt is fel lehet venni, mert az oktatásra fordított pénz (igen jó, biztosan 
+megtérülő) beruházásként működik. Ilyen célból érdemes növelni az államadósságot és kifejezetten azt 
+kell növelni, mert az állam elég jó kamatfeltételekkel tud hitelhez jutni (pláne normális 
+gazdaságpolitika mellett).<br><br>A diák akkor kezdi meg az állammal szemben fennálló 
+tandíjtartozásának törlesztését, ha végzett és munkába áll. Méghozzá úgy, hogy a diploma által 
+biztosított többletjövedelme révén befizetett többlet személyi jövedelemadó erejéig a törlesztést 
+leírhatja az adóból. Nem az adóalapból, vigyázat! Magából az adóból. Azaz ugyanúgy fizeti az SZJA-t, 
+mint bárki más, csak annak egy meghatározott részét nem az APEH nyeli le, hanem egyből továbbutalja 
+a tandíjalapnak hiteltörlesztésként.<br><br>Ebben a rendszerben ha valaki elvégzi az egyetemet és 
+azonnal külföldön vállal munkát, a hitelt akkor is törlesztenie kell. Mivel SZJA-t ilyenkor nem 
+fizet (itthon), ezért zsebből. Persze lehet kísérletezni államközi megállapodásokkal legalább EU 
+szinten, hogy a fogadó fél az ott fizetett adó egy részét utalja át a képzést végző ország 
+tandíjalapjának, de amíg ilyen megállapdás nincs, addig a törlesztőrészleteket bizony ki kell 
+köhögni. Ha külföldön nem keres annyit, hogy a törlesztőrészletek levonása után is több maradjon 
+neki, mint itthon, akkor ne menjen külföldre.<br><br>Van még egy rakás részletkérdés persze. Mi van 
+akkor, ha a diák végez, megkapja a diplomát, munkába áll, majd rögtön meghal? Mi van ha megrokkan és 
+munkaképtelenné válik? Kimarad az iskolából? Munkanélküli lesz? Hogy lehet korlátozni az intézmények 
+tandíj-igényét? Meg még egy csomó más hasonló ügy.<br><br>Ezek egy részét megoldja, ha valami 
+biztosítási elemet is beleviszünk a rendszerbe, más részénél valamennyire az illető egyént is 
+felelőssé kell tenni (anyagilag is). De ezek mind kezelhető problémák, csak szakértelem és jóakarat 
+kell hozzá.<br><br>Mivel azonban ilyen alternatíva a szavazólapon nem lesz, erre nem is tudok 
+szavazni (most). Marad itt is az igen (mint kisebbik rossz)."</div><br><br><div style="text-align: justify;">A  kormány egyszerűen nem hajlandó tudomásul venni, hogy a mai  Magyarországot vezeti, nem 
+pedig egy részvénytársaságot. Hát hozzuk a  tudomására...<br></div><br>  </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-03-05&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=685&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=685&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=685&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=685&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=685&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=685&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=685&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=685&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=685&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=685&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment37762"></A><FONT COLOR="#FF0000">86. </FONT>Shadow82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-10 17:29:20</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1811.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment37714"></A><FONT COLOR="#FF0000">85. </FONT>Shadow82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-10 11:18:30</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1811.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment37271"></A><FONT COLOR="#FF0000">84. </FONT>Mellike</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=685&id=37058#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-03-08 21:40:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment37164"></A>83. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-08 17:12:40</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B><a href="//www.fuckingnews.tv/images/Idiocracy.jpg" target="_new" style="color: #000000;">http://www.fuckingnews.tv/images/Idiocracy.jpg</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment37153"></A>82. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-08 16:05:41</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">sajna, nincs időm elolvasni a kommenteket, itt az ényimé:<br />
+<br />
+vajszínűleg igennel fogok szavazni a legjobb meggyőződésem ellenére. Mai képzési rendszerünk elavult. Gladiátorkiképzőink, melyeket valamiért iskoláknak nevezünk, tökéletesen alkalmatlanok feladatuk betöltésére, mind az ott ideiglenesen raktározott éretlen embertömegek, mind azok számára, akik szülőknek nevezik önmagukat, és mégis hagyják, hogy gyermekeik egy ilyen istállóban szocializálódjanak(szokják, szopják a többieket).<br />
+<br />
+Hiszem, hogy egy felelős szülő, napi egy óra koncentrált  ráfordítással kétszer annyit tudna kihozni gyermekéből, mint amit egy átlagos iskola tud. Ja, és nem szocializált, hanem civilizált felnőtteket eredményezne fáradsága.  Ennek az országnak nem intellektüellekre van szüksége, hanem magyar emberekre. Az &#8222;értelmiségi&#8221; eszméi megvásárolhatók, a magyar ember lelke nem, ámbár az ideje igen.<br />
+ <br />
+Sokszor nem értem még a gyárlakók affinitását a &#8222;munkahelyek&#8221; irányában. Nem ez a jövő útja. Egy EMBERNEK érteni kell a föld megműveléséhez, a műszaki berendezésekhez,  a pénzügyekhez,  edzettnek, egészségesnek  kell lennie, mind testben, mind lélekben. Ha az alapok megszerzése után specializálódni akar, mert valami különösen érdekli, hát tegye, de ne pénzügyi motivációk vezéreljék.<br />
+<br />
+Amíg mi idehaza MINDENT anyagi vonatkozásban szemlélünk, nincs jövőnk. <br />
+<br />
+Ezt a magot elvetni pedig az iskolarendszer nem tudja, megkockáztatom, egyenesen azért működtetik, mert céljuk az, hogy megvezethető, önálló gondolkodásra képtelen amorf masszát hozzanak létre &#8211; nem Embert.<br />
+<br />
+Ma, egy értelmes, kíváncsi és szorgos gyermek bizonyos irányítással egyetemi kurzust végezhet majd akármilyen témában, anélkül, hogy betenné akár egyetlen iskolába is a lábát &#8211; különösen angol nyelvterületen, de a magyar nyelvű internetes források is rohamléptekben bővülnek. Példa: az Államokban  majd 3,5 millió gyermek tanul otthon(homeschooling) a 35 millió iskoláskorúból és eredményeik, azokat összehasonlítva &#8222;nem-iskolakerülő&#8221; társaikkal MEGDÖBBENTŐEK. Elég időt töltöttem ennek a kérdésnek tanulmányozásával, s arra a következtetésre jutottam, hogy semmi pénzért - és minden törvénnyel dacolva - nem adnám gyermekemet iskolába.<br />
+<br />
+Hosszan, hosszan, hosszan finomíthatnám még mondanivalómat, de a lényeget értitek. Hány és hány diplomával rendelkező idiótát ismer mindegyőnk. <br />
+<br />
+Igen a rendszer, és nem csak az oktalanításügy a velejéig haszontalan, sőt káros, de azok akik most vannak hatalmon ne nyúljanak semmihez &#8211; semmihez, ezért az:<br />
+<br />
+<br />
+IGEN! Háromszor!<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment37058"></A><FONT COLOR="#FF0000">81. </FONT>Shadow82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-08 11:04:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1811.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment36916"></A>80. Emmanuel Goldstein</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=685&id=36874#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-03-07 21:38:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2576.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha valaki olyan iskolába megy tanulni, ami szart se ér, akkor ne csodálkozzon, hogy utánna nem lesz munkája. Ennyi.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment36914"></A><FONT COLOR="#FF0000">79. </FONT>Mellike</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=685&id=36874#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-03-07 21:34:39</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment36893"></A>78. Rhinoeli</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=685&id=36652#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-03-07 19:17:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1429.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Shadow82!<br />
+<br />
+Az én érvem nem arról szól, hogy utálom-e az mszp-t. Ha a fidesz vezetné be, akkor is igennel szavaznék. Amíg nincs esélyegyenlőség (most sincs), és ilyen húzásokkal még jobban aláásnak, addig ezt nem lehet elfogadni. Nekem van két hugom, akik egyetemre szeretnének járni (nagyon nem tudom őket elképzelni asztalosnak, női mivoltuk miatt), énmagam orvosira járok, magamat ugyan el tudnám képzelni fizikai dolgozóként, sosem vetettem meg a fizikai munkát, csak a mai helyzetben azzal kitörölhetem a seggem, meg a leendő családom/szüleim is, mivel éhen döglenénk. Ennyire egyszerű. És ezzel rengetegen vannak ugyanígy, ergo az a magyar társadalom érdeke, hogy ne legyen tandíj.<br />
+<br />
+Részemről befejezve, MG egyébként mindent leírt...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment36881"></A>77. Silver</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-07 18:07:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2992.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Shadow82!<br />
+<br />
+Javíts ki, ha tévedek, de a tandíj nem csak az egyetemeket fogja majd érinteni, hanem a teljes felsőoktatást is. Namost a főiskola picit tágabb fogalom. Ott már olyan emberek képződnak (Mérnök informatikusok, Gépészmérnökök, Programtervezők, Agrármérnökök, stb.), akiknek már gyakorlati szerepük is van. Például Mérnök informatika szakon az Autonóm rendszerek szakirány, amivel el lehet menni mondjuk robotokat programozni a győri Audihoz. De technikusi végzettséggel baszhatom. Namost szerintem végigmérve, hogy hány ember került ki a felsőoktatásból, akik szintén hasonló munkakörökben dolgoznak, picit magasabb az elhelyezkedési arány, mint ahogy te rámutattál az egyetemeknél az 1:10-es arányra. Azt, hogy diplomával miért nem lehet elhelyezkedni ebben az országban, hagyjuk, mert akkor azt mondanád, hogy vak vagyok, hogy mindent az állambácsira akarok fogni.<br />
+<br />
+A felvételi eljárást pedig (igazad van) kihagytam, hogy nem teljesen korrekt. A személyes felvételi eljárásnak meg voltak az előnyei.<br />
+<br />
+Próbáltam leszűrni, de nem tudtam, hogy véleményeddel most akkor mit támogatsz. Legyen, vagy ne legyen tandíj?<br />
+<br />
+Sajnálom, sajnos ideológiailag nem vagyok elég képzett. :) Ezt elismerem.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=685&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=685&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=685&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=685&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=685&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=685&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=685&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=685&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=685&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=685&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

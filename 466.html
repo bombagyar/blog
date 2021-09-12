@@ -1,0 +1,555 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=466#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Európa - és hazánk - kétfrontos háborúja a sötétség ellen";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=466#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Európa - és hazánk - kétfrontos háborúja a sötétség ellen<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 január 4. 19:14:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_466.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><span style="font-weight: bold;">Ha majd az utolsó európai anyát is
+kirabolták, megverték, megbecstelenítették, az utolsó város utolsó
+negyedét is gettóvá és putrivá változtatták, és az utolsó liter tiszta
+ivóvízbe is beleszartak ezek a férgek, mit fognak kezdeni magukkal az
+új, a megváltozott, a tulajdonukban lévő Európában? Nyilván azt, amit a
+piócák, tetvek, bolhák, kullancsok, bélférgek, amikor a gazdaszervezet
+utolsó csepp vérét is kiszívták, megették, megfertőzték, vagyis éhen
+döglenek.</span><br><br> Egy átlag magyar a világról alkotott
+ismereteinek zömét a televízióból szerzi. Naponta tucatszám néz meg
+olyan filmeket, amelyekben például a tengerentúli orvosok, tudósok zöme
+néger, míg a bűnözők, prostituáltak szinte kivétel nélkül mind fehér
+bőrűek, és igen nagy százalékban szőkék. Egy átlag néger családfő
+mérnök, de legalábbis jogász, mindennapjait valamelyik gyönyörű
+kertvárosban éli idillikus családi körülmények között, reggelente
+újságot olvas, majd a munkahelyére siet, ahol kollégái és barátai
+körében köztiszteletnek örvend (a valóságban zömük az elemi iskolát is
+alig végzi el és az írás-olvasással is komoly gondjai vannak, fekete
+reáltudósok pedig mutatóba sem akadnak - a szerk.). Ezzel szemben egy
+átlagosnak ábrázolt fehér családban problémák tömkelegével találkozunk,
+ahol a feleség csalja a férjet, aki emiatt alkoholista, veri a
+gyerekeit, állandóan a tévét bámulja, és úgy általában igen rendezetlen
+körülmények között tengetik szánalmas mindennapjaikat.<br><br>Mondani
+sem kell, hogy ez a kép köszönőviszonyban sincs a valósággal, amely
+egész egyszerűen fordítottja ennek a hazugságnak, így egy átlag
+magyarnak alapvetően hamis fogalmai vannak a tengerentúli állapotokról.
+Nem értjük, fel sem fogjuk, hogy az ottani embereknek mi bajuk van a
+négerekkel, miért nem keresik a társaságukat, miért nézik le őket,
+miért kapnak szívinfarktust, ha a szomszédjukba költözik egy néger
+család, egyszóval mire fel, és egyáltalán milyen jogon az a fenenagy
+rasszista, kirekesztő hozzáállás, amiről nap mint nap mégis hallunk.
+Hiszen a négerek kedvesek, intelligensek, becsületesek,
+törvénytisztelők, és arról igazán nem tehetnek, hogy a jóisten egy
+kicsit sötétebb bőrrel áldotta meg őket. Felháborodunk, ha arról
+értesülünk, hogy valahol bőrszín alapján ítélkeznek, és szinte kedvünk
+lenne példásan megleckéztetni ezeket az előítéletes embereket, akik
+viselkedésükkel társadalmi feszültségeket szítanak, és úgy általában
+minden rossz okozói.<br><br> Lelkesen tapsikolunk, nevetünk, amikor a
+televízió képernyőjén felbukkan hazánk elsőszámú négere, művésznevén
+&#8222;Fekete Pákó&#8221;, aki már közel tizedik éve szórakoztatja az aljanépet
+pusztán azzal, hogy ennyi idő alatt is képtelen volt normálisan
+elsajátítani a magyar nyelvet, hát még azzal, amikor magyar nótákat
+kezd el énekelni. Egy végtelenül kedves, bohókás, szeretetre méltó
+figura. Az égvilágon semmi baj nincs vele. Jó hogy itt van. Sokakban
+mégis aggodalmat kelthet, hogy ugyanez a férfi már vagy hat utódot
+nemzett kicsiny országunkban, hat különböző nőnek, legutóbb egy magas
+szőkének, és hogy még mindig (nemző)ereje teljében van, azaz további
+Pákó-porontyok várhatóak. Hol itt a probléma? &#8211; vethetnénk fel a
+kérdést, hiszen ahol elfér egy Fekete Pákó, ott elfér hat is. Csakhogy
+a dolog &#8211; sajnálatos módon &#8211; nem így működik.<br><br>Nem köztudott, de amerikai vizsgálatok tömkelege igazolja, hogy egy átlag néger értelmi színvonala nagymértékben elmarad egy átlag fehér bőrű ember értelmi színvonalától.
+Fekete Pákó sem kivétel: nem egy lángész. Egy néger bohócot még elvisel
+az ország, úgyis mondhatnánk, hogy van felvevőpiaca. No de mi lesz a
+gyerekeivel? Az intelligencia közel 80%-osan genetikailag meghatározott
+tulajdonság. Buta Pákónak buták lesznek az utódai is. Nem élhet majd
+mindegyik abból, amiből az apja, nyilván tanulniuk kell majd, állást
+keresni, elhelyezkedni. És itt kezdődik a probléma. A Pákó-porontyokból
+ugyanis nagy valószínűséggel nem lesz atomtudós, de még átlagos magyar
+állampolgár sem. Valószínűleg ugyanaz lesz belőlük, mint az Amerikai
+Egyesült Államokban élő testvéreikből, azaz a társadalom perifériáján
+tengődő, képzetlen, társadalomellenes viselkedésre hajlamos egyedek
+összessége.<br></div><div style="text-align: justify;"><br> Persze egy fecske még nem csinál nyarat. Sok,
+felelősségteljesen gondolkodó ember számára is alaptalannak tűnhet a
+félelmem. Csakhogy azt nem szabad elfelejteni, hogy évente több
+tucatnyi néger kér hazánkban letelepedési engedélyt, és Magyarország az
+Európai Unió tagjaként az Afrikában éhező négerek millióinak vágyálma,
+végső úticélja. Franciaországban is úgy kezdődött a baj, hogy a volt
+gyarmatokról az anyaországba vándorolt néhány néger család, akiknek a
+leszármazottai ma már jórészt a francia állam segélyeiből tengődnek, az
+átlagnál jóval több utódot nemzenek, és ha valami nem teszik nekik,
+akkor beáramlanak a belvárosba, és autók százait gyújtják fel,
+rabolnak, fosztogatnak. Ezt hívják faji zavargásnak. Olyanról még senki
+sem hallott, hogy a rossz szociális körülményekkel küszködő fehérek
+gyújtogatnák a jómódú négerek autóit, vagyis faji zavargásnak
+definíciószerűen a négerek hőbörgését, és rasszista indíttatású
+pusztítását nevezzük. Ma már elmondhatjuk, hogy Párizsnak is van saját
+Harleme, ahová a francia csendőrség még a lábát sem meri betenni, és ha
+egy átlag, fehér bőrű francia vetődik arra &#8211; mert mondjuk komolyan
+veszi azt a balgaságot, hogy a saját hazájában oda megy, ahova akar &#8211;
+akkor bizony örülhet, ha ezt a kalandot élve megússza.<br><br> De még
+csak Franciaországig sem kell menni, hogy hasonló jelenséggel
+találkozzunk. Közép- és Kelet-Európa négerei köztudottan a cigányok.
+Még ha egy néger és egy cigány között felületes szemlélődő talál is
+némi különbséget &#8211; például ha egy néger rabol ki, akkor esetleg csak
+simán megver, ellenben a cigány még meg is késel (ez tévedés az USA-ban
+és Nyugaton, akárcsak Afrikában, a négerek ölnek is, nagyon sokat és
+brutálisan. A néger késelési "kultúrára" még az amúgy cionista Tony
+Blair is felhívta a figyelmet - a szerk.) &#8211; de a lényeg ugyanaz.
+Mindkettő genetikailag társadalomellenes, és ezért az emberi
+civilizáció és faj rákfenéje. Elmondhatjuk tehát, hogy Európa jelenleg
+&#8211; és már megint &#8211; kétfrontos háborút vív a túlélésért. Keletről a
+cigányok özönlik el, nyugatról a négerek. A propaganda szerint mégis
+mi, fehér bőrű emberek vagyunk a hibásak minden rosszért.
+Szégyellhetjük magunkat. De kérdem én, ha majd az utolsó európai anyát
+is kirabolták, megverték, megbecstelenítették, az utolsó város utolsó
+negyedét is gettóvá és putrivá változtatták, és az utolsó liter tiszta
+ivóvízbe is beleszartak ezek a férgek, mit fognak kezdeni magukkal az
+új, a megváltozott, a tulajdonukban lévő Európában? Nyilván azt, amit a
+piócák, tetvek, bolhák, kullancsok, bélférgek, amikor a gazdaszervezet
+utolsó csepp vérét is kiszívták, megették, megfertőzték. Vagyis: éhen
+döglenek.<br><br>És megint százezer éveknek és jégkorszaknak kell majd
+eltelnie ahhoz, hogy talán valahol Észak-Európában, a hófödte
+hegygerincek, és zöld füvű tisztások mentén egy piciny kunyhóban
+felsírjon egy gyerek, aki a természet és Isten különös kegyességéből
+olyan furcsa mutációval született, amely tiszta tekintetet és különös
+értelmet adományozott neki, valamint tehetséget arra, hogy akár a jég
+hátán is megéljen. És kapott még valamit, amely már messziről
+megkülönbözteti őt a Földön élő majmok hordáitól, amely alkalmassá
+teszi őt vadászat közben arra, hogy a tiszta, szűz hóba rejtse arcát,
+és amely önmagában is jelzi nemességét, Istentől való eredetét:
+gyönyörű, hófehér bőrt.<br><br><span style="font-style: italic;">Ludman Zsolt</span><br>Kuruc.info nyomán<br><br><span style="font-style: italic;"></span></div></DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-01-04&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=466&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=466&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=466&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=466&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=466&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=466&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=466&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=466&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=466&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=466&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=466&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=466&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=466&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25470"></A><FONT COLOR="#FF0000">119. </FONT>Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-08 03:44:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25258"></A>118. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=466&id=24941#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-01-07 11:02:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">igen, igen, azt már tudjuk hogy a laborokban lehet keresztezni, génekkel sebészkedni, időt gyorsítani, vagyis -hogyisszokták mondani....- ISTENT JÁTSSZANI :))) megvan rá a lehetőség.<br />
+az nagyon nem érv hogy a bizniszmenek erre támaszkodnak. ha van egy elmélet ami működik számítógépen, az még nem bizonyíték.<br />
+<br />
+és hiába Google/Könyvtár/Ebook/Fotel kandalóval teával/Terepkísérlet-ezek, az állítólagos mérhetetlenül lassú fejődéssel szembeni elképesztően gyors degenerációra, az iszonyatos mértékű fajkihalásra, az élő kövületekre, az élettelen anyag és az élő sejt közti felfoghatatlan nagyságú szakadékra, és a köztes fajok hiányára nem találok magyarázatot.<br />
+persze ettől még lehet, ezért mondom hogy hajrá.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25236"></A>117. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-07 06:05:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">T. Sz. sietek, úgyhogy rövid leszek: a 109 es link video, nem értem mire utaltál...<br />
+<br />
+üdv!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25233"></A><FONT COLOR="#FF0000">116. </FONT>Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-07 03:59:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25231"></A><FONT COLOR="#FF0000">115. </FONT>Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-07 02:59:43</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25215"></A>114. <A HREF="mailto:rhino666@citromail.hu" STYLE="color: #000000">Rhino666</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-06 23:36:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_115.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Érdekes (rasszista) felfogás. Én gyakorlatilag korcs vagyok, de magyarabbnak tartanak engem, mint egy átlag magyart - mert engem érdekel a Hazám állapota és igyekszek tenni érte valamit.<br />
+<br />
+Amúgy meg szerencse, hogy nem nézek TV-t, mert totál hülye lennék én is egy idő után, ha tényleg ilyen csúsztatások folynak...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25109"></A>113. foldib</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=466&id=24775#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-01-06 16:30:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Robin Cook - Mutáció...<br />
+legnagyobb!! mindenkinek csak ajánlani tudom!!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25095"></A>112. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-06 14:06:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez itt David Duke Babó Szupremácizmusának IV fejezete, illetve vagy 5 oldal hiányában az. Majd pótolom ahogy tudom. Sokan vagytok, kik nem értitek az összefüggéseket, nem azért, mert buták vagytok, hanem egyszerűen csak tudatlanok. Ez nem bűn, nem is hiba, hanem állapot. Lehet és érdemes is változtatni rajta...<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+"Dr David Duke - Babó Szupremácizmus, IV fejezet.<br />
+<br />
+Babók, Kommunizmus és Polgárjogok.<br />
+<br />
+   A különc n&#245;, aki a Polgári Tanács irodájában hevesen beszélt a babókról és a kommunizmusról, bizonyára tisztában volt bizonyos tényekkel. A tények kikerülhetetlenek voltak: a kommunizmus és a cionizmus ugyanabból a babó lelkületb&#245;l született, amely Moses Hessben testesült meg. <br />
+  Lassan világossá vállt számomra ez a kett&#245;s morális mérce, mely a babók és nem-babók közötti kapcsolatot áthatja. A babók egy bizonyos fajta erkölcsöt gyakorolnak a maguk számára és egy más erkölcsr&#245;l papolnak a nem-babóknak. A babó erkölcsöt faji büszkeség, szolidaritás, hagyomány és az önérdekek alkotják. Az általuk érzékelt versenytársaiknak viszont a sokszín&#251;ségr&#245;l, liberalizmusról prédikálnak. Ha nem létezne ilyen kett&#245;sség, akkor hogyan is tudná a babók uralta Amerikai média:<br />
+<br />
+ - Támogatni az izraeli nemzetet, amely szorgalmazza iskoláiban a judaizmus szenvedélyes követését, ugyanakkor ellenzi a karácsonyi dalok éneklését az Amerikai állami iskolákban?<br />
+ - Támogatni az izraeli nemzetet, amelynek szigorúan különálló iskolái, közösségei és intézményei vannak külön a babóknak és az araboknak, s mindeközben elítélni a különálló iskolákat és lakónegyedeket Amerikában és Dél Afrikában?<br />
+ - Támogatni az izraeli nemzetet, "csak babók" elv&#251; bevándorlási törvényével együtt, miközben aláásni Amerika törekvését még az illegális bevándorlás visszaszorítására is.?<br />
+ - Támogatni az izraeli nemzetet, amely megengedi minden izraeli állampolgárnak, hogy gépfegyverrel közlekedjen, ha úgy kívánja, míg az Amerikai Állampolgárok fegyverviselésének szigorítását kezdeményezi.<br />
+ - Támogatni az izraeli nemzetet, amely nyíltan küldetésnek tekinti a babó nép és örökség meg&#245;rzését, ugyanakkor elítéli azokat az európaiakat, akik a nyugati kultúra és örökség meg&#245;rzését merészelik szorgalmazni Amerikában?<br />
+  - Mindig úgy beállítani a babók és nem-babók kapcsolatát, hogy a nem-babók a gonosztev&#245;k, a babók pedig ártatlan áldozatok, s ugyanakkor elítélni azokat a nem-babókat, kik egyszer&#251;en merészelik megvédeni önmagukat az ilyen faji rágalmaktól?<br />
+<br />
+  Az erkölcsi képmutatás nyilvánvalóvá vált. Befolyásos babók faji g&#245;gre alapozott erkölcsöt hirdetnek a babó tömegeknek, és ennek ellenkez&#245;jét a nem-babók számára. Ha az &#245; szolidaritási politikájuk erkölcsi szempontból helytálló számukra, akkor az miért nem lehet erkölcsileg helyes számunkra is? Miért-e kett&#245;s mérce? Ha a saját érveik szerint a "Fehér Fajgy&#251;löl&#245;k" etikailag elítélend&#245;k, akkor miért nem lehet elítélni a babó szupremácistákat ugyanúgy? <br />
+  Amíg Herzl és más cionisták lázasan azon voltak, hogy támogatást szerezzenek a kirekeszt&#245; babó állam megalapítására, babó aktivisták Amerikában megpróbálták tagadni az Amerikai kultúra keresztény alkotóelemét, és még a karácsonyi dalokat is eltüntetni iskoláinkból. Amíg azt a meggy&#245;z&#245;désüket harsogják, hogy &#245;k "választott nép" minden más nép fölött, és különleges nemzetként ünneplik magukat, amelyet az ábrahámtól való leszármazás határoz mag egész napjainkig, addig azt mondják az Európai-Amerikaiaknak, hogy a faji azonosságtudat gonosz. Amíg egy olyan babó nemzeti államot hoztak létre, ahol az állampolgárság szinte kizárólag a "babó nép" származási örökségén alapszik, a babó antropológusok azt az eszmét támogatják, hogy az Európai faj nem létezik. A Palesztinok állítólag azért gonoszok, mert egyszer&#251;en egy saját nemzetet akarnak, melyet saját népük irányít, annak ellenére, hogy ugyanez a kívánság volt izrael alapításának elve.<br />
+ Habár a babók odaadóan támogatják saját kirekeszt&#245;, önmaguk által irányított államukat, lázasan megpróbálják aláásni Amerika Fehér vezérlését és jellegét, egy nagyméret&#251;, nem-Európai bevándorlás által. Szisztematikusan a "sokszín&#251;ségen" és a pluralizmuson munkálkodnak MINDEN nemzeten belül, kivéve a babó világ központját izraelt. Míg izrael megtiltja a nem-babóknak, hogy bizonyos média tulajdonosai legyenek az amerikai tömegmédia birtoklásáért mindent megtesznek.<br />
+   <br />
+                                      A kommunista ideológia és a faj<br />
+<br />
+ Mattie Smith azt mondta nekem, hogy a babók vezet&#245; szerepet játszanak örökségünk alappilléreinek elpusztításában. El&#245;tte már olvastam, hogy a babók voltak annak az akadémiai mozgalomnak a vezet&#245;i, amely azt az eszmét támogatta, hogy a nemzetek és a fajok mesterséges entitások. Megvizsgáltam a faji egyenl&#245;ség elvének alapgondolatait, és azt találtam, hogy a nemzetközi kommunizmus hívei voltak az univerzalizmus modern eszméinek úttör&#245;i. A kommunizmus világszerte szövetségre lépett a nemzeti és faji kisebbségi csoportokkal( már ahol ezen csoportok nem a Fehérekb&#245;l álló kisebbséget jelentették) "az imperialista és gyarmati elnyomás alóli szabadságért" folytatott küzdelmükben. Hamarosan rájöttem, hogy a modern id&#245;kben a nemzetközi kommunista mozgalom babó vezetés&#251; volt, pontosan úgy, ahogyan a bolsevizmust babók vezették Oroszországban a XX. század elején. <br />
+  Egy babó írástudó Nathan Glaze mint tényt közölte, hogy az 1960-as és 1970-es években babók tették ki az aktív kommunisták felét az Egyesült Államokban, és öt vezet&#245; közül négy babó volt. Két babó, Jerry Ruby és Abbie Hoffman vezette a marxista beállítottságú hippi-mozgalmat, és mindketten a forradalmi 'Chicago-i Hetek' csoport öt babó tagja között voltak, akiket bírósági eljárárás alá vetettek az 1968-as demokrata pártgy&#251;lés er&#245;szakos megzavarásáért. Olvastam egy könyvet, amelynek címe: Behind Communism (A Kommunizmus mögött), és meglepetéssel vettem tudomásul, hogy legalább négyen babók voltak öt letartóztatott kommunista kémkedésért és hazaárulásért elítélt egyén közül az Egyesült Államokban és Kanadában.<br />
+ Valószín&#251;leg a leghírhedtebb hazaárulás történelmében az volt, amikor Ethel és Julius Rosenberg ellopta az atomtitkokat. Tagjai voltak a Fusch-Gold kémcsoportnak, amely a Manhatten-terv és az Amerikai atomprogram más ágai körül tevékenykedett. A F-G kör hét tagja b&#251;nösnek vallotta magát a kémkedéssel kapcsolatos vádakban. Ezek a következ&#245;k voltak: Klaus Fuchs, Harry Gold, David Greenglass, Abraham Brothman, Mirjam Moskowitz, Sidney Weinbaum, és Alfred Slack. Egy másik gyanúsított Morton Sobell Mexikóba menekült, de a Mexikói hatóságok kiadták az Egyesül Államoknak, hogy tárgyalás útján elítéljék. Egy esküdtszék szintén elítélte a Rosenbergeket, és kivégezték &#245;ket. A tíz kém közül legsúlyosabb felel&#245;sség az atomtitkok Szovjetúniónak való eladásáért csak egy személyt, Alfred Slackot terhelte, egy nem babót.<br />
+  A többi jelent&#245;s kémbotrány az Amerasia-ügy, a Gerhart Eisler-ügy, a Judith Coplin-ügy, és az Alger Hiss-ügy voltak. A babók kiemelked&#245; számban vettek részt ezekben az ügyekben és a vádlottaknak dönt&#245; többségét tették ki. Az egyetlen híres nem-babó kém Alger Hiss volt. A Hollywoodi tízek-ügyben a Képvisel&#245;ház letartóztatta Hollywood tíz vezet&#245; forgatókönyv-íróját a Kongresszus megsértéséért. Az Amerika-ellenes tevékenységeket vizsgáló Kongresszusi Bizottság el&#245;tt kellett megfelelniük, és nem voltak hajlandóak vallomást tenni, amikor azt kérdezték t&#245;lük, kommunisták-e. Babó kiadványokban megjelentek olyan állítások, hogy a bizottság nyilvánvaló ok nélkül tette tönkre az írókat. Nemrég sok olyan film jelent meg, amelyek megvédik a Hollywoodi tízeket, és úgy állítják be &#245;ket, mint akiket igazságtalanul üldöztek, annak ellenére, hogy tízb&#245;l hatan tagdíjat fizet&#245; tagjai voltak a kommunista pártnak. A másik négy bizonyíthatóan számos kommunista fronttevékenységben vett részt és ilyen kapcsolata is volt. Tízb&#245;l kilencen babó származásúak voltak.  <br />
+  Amíg babó marxisták "polgárjogi" er&#245;feszítések politikai oldalával is foglalkoztak, ugyanakkora er&#245;vel nyomultak el&#245;re akadémiai körökben. Az 1930-as évekre a biológiai tudományok felismerték, hogy különböz&#245; emberi fajok léteznek, ugyanakkora bizonyossággal, mint az, hogy az állatvilágban különféle fajok és alfajok vannak. Azaz, hogy a Kevin Storm elemz&#245; is mondta "csak mindaddig, amíg az egalitárius politika szele az Amerikai akadémiai körökbe be nem fújt, s ezt a szelet egy okos, jó összeköttetésekkel rendelkez&#245;, pénzes, céltudatos kisebbség keltette".<br />
+  Kezdtem rájönni, hogy nem az afro-amerikaiak voltak a faji különállás megszüntetésének f&#245; szószólói. A legtöbb afro-amerikai, ahogy ez igaz a legtöbb emberre, büszke sajátosságaira, de emellett világosan szociális és gazdasági haladást kíván. A legnépszer&#251;bb fekete vezet&#245; a XX. század elején a fekete szeparatista Marcus Garvey volt, aki a feketék afrikába való visszatérését, továbbá egy új fekete nemzet alapítását célozta meg. E fekete szeparatista mozgalom és az Európai-Amerikaiaknak a saját nyugati örökségük meg&#245;rzése érdekében tett er&#245;feszítései ellen lépett fel egy kisebbség, amely mind a két törekvést megkísérelte meghiúsítani. Még ma is - annak ellenére, hogy a babó média mindent megtett azért, hogy lejárassa &#245;t - a legnépszer&#251;bb afro-amerikai vezet&#245; a mohamedán Louis Farrakhan, aki minden szégyenkezés nélkül a saját fajtájának fennmaradásáért dolgozik. <br />
+<br />
+              Egy mozgalom, amely minden nép ellensége.<br />
+<br />
+  Franz Boas, a modern egalitárius antropológiai iskolának az elismert atyja, Németországból jött babó bevándorló volt, és csak csekély képzettséggel rendelkezett az antropológia területén, mivel doktori értekezését a víz színeir&#245;l írta. Boas bevezette az általa "kulturális antropológiának" nevezett tárgykört az antropológia tudományába. Fellépéséig az antropológia a természettudományokhoz tartozott. Boas sikeresen kettéosztotta az antropológiát a kulturális és fizikai antropológiára. <br />
+  A korai fizikai antropológusok igazából a faj tudósai voltak,mert az embert és annak evolúciós fejl&#245;dését tanulmányozták a múltbéli és mostani emberi fajtáknak a mérhet&#245; testi sajátosságai alapján. Ha akármelyik jó fizikai antropológus kezébe vesz egy emberi koponyát, akkor annak jellemz&#245;i alapján gyorsan azonosítja az adott ember egyed fajtáját,természetesen ez a fiziológiai tudás elengedhetetlen volt az &#245;sember kiásott maradványainak kiválogatásához és az ember &#245;störténetének és evolúciós fejl&#245;désének összeegyeztetéséhez. A kulturális antropológia inkább az emberiség különféle egykorú kultúráival és a történelem el&#245;tti id&#245;,valamint az ókor kulturális vonatkozású kérdéseivel foglalkozott. Így ez az antropológiát sokkal kevésbé pontossá, és  igen eltér&#245; értelmezési lehet&#245;ségek felé tette nyitottá.<br />
+  Meglep&#245;,hogy miel&#245;tt ilyen kiemelked&#245; antropológus lett, Boas elismerte,hogy faji származás elmebeli tulajdonságokban is mutat eltérést. The mind of primitíve man (a kezdetleges ember elméje) cím&#251; m&#251;vében ezt írja.<br />
+<br />
+ "A strukturális különbségeket funkcionális, fiziológiai és pszichológiai eltérések kell,hogy kísérjék;és ahogy a struktúrában nyilvánvaló bizonyítékot találtunk a fajok közötti különböz&#245;ségekre, ugyanúgy eleve fel kell tételeznünk, hogy különbségeket fogunk találni az elmebeli tulajdonságokban is."<br />
+<br />
+ Boasnak mindkét szül&#245;je radikális szocialista volt abban a szocialista mozgalomban, amely keresztül söpört európán 1870-ben. Életrajzában tanítványa, Mellville Herskovits azt írta,hogy Boas politikai szimpátiái "a szocializmus különféle formáihoz" húztak. Az USA Képvisel&#245;háza idézte Boas együttm&#251;ködését 44 kommunista frontszervezettel. ugyanakkor,amikor a nácik hatalomra jutottak Németországban és a fajilag tudatos antropológusok befolyása növekedett a világ tudományos közösségében, Boas bevetette antropológiai befolyását politikai szimpátiájának szolgálatában. Azt a sarlatán eszmét kezdte el terjeszteni,hogy valójában nem léteznek különböz&#245; emberi fajok. Azzal érvelt,hogy bár léteznek b&#245;rszín-változatok és különféle vonások, azok a csoportok,amelyeket fajoknak nevezünk,nem mutatnak nagy eltérést genetikailag. Azt állította, hogy egyedül a közvetlen környezet hozza létre a felszíni eltéréseket. 1938-ban kihagyta a fenti idézetet könyvének új kiadásából.<br />
+  Nagyon sok babó tanítványt gy&#251;jtött maga köré, többek között Gene Weltfish-t, Isador Chein-t, Mellville Herskovits-ot, Otto Klineberg-et és Ashley Montague-t. Követ&#245;i között volt az afro-amerikai tudós K.B. Clark és két n&#245;,Ruth Benedict és Margaret Mead.Mead késöbb híres könyvet is írt Szamoáról ( Coming of Age in Samoa - felnötté válás Szamoában),amelyben azt sugallja,hogy a válogatás nélküli nemi kapcsolatok a tizenévesek  traumáit és problémait csökkentenék.( E könyvét kés&#245;bb megcáfolta Derek Freeman, aki kimutatta,hogy Mead meghamisította a Szamoáról szóló adatokat.) <br />
+  Boas és tanítványainak teljes köre kiterjedt kommunista kapcsolatokkal rendelkezett. Minduntalan kijelentette,hogy a"rasszizmus ellen vív szent háborút",és egy ebéd közben hirtelen meghalt, ahol még egyszer utoljára, nyomatékosan kijelentette, hogy "fajgy&#251;lölet&#8221; ellen küzdeni kell. Boas és elvtársai a legtöbb egyetem antropológia tanszékén hamarosan  átvették a vezetést: Arra ösztönözték egalitárius elvtársaikat,hogy mindig a saját jelöltjüket támogassák a tanári kinevezéseknél. Míg a hagyományos antropológusoknak nem volt rejtett céljuk és" szent ügyük", amiért küzdjenek, Boas és követ&#245;i annak a " szent küldetésnek" teljesítésébe kezdtek, hogy kiirtsák a faji ismereteket a modern oktatási intézményb&#245;l. Ez sikerült is nekik.<br />
+  Bármikor, amikor az egalitaristák hatalomra tettek szert, segítették elvtársaikat az oktatói el&#245;menetelben azokon az egyetemeken és oktatói tanszékeken, amelyeket &#245;k vezettek. Hittestvéreiket és a nem-babó egalitáriusokat segítették abban,hogy tanári kinevezést kapjanak,továbbá,hogy anyagi támogatáshoz és kutatási megbízásokhoz jussanak. ugyanolyan együttm&#251;ködés folyt köreikben mint az antropológiai szervezetek és folyóiratok testületeiben. Mindenesetre a kegyelemdöfés az egalitárius dogma er&#245;teljes támogatása volt a média részér&#245;l, amely f&#245;leg babó kezekben volt.<br />
+  A faji egyenl&#245;séget a nagyközönségnek mindig tudományos tényként mutatták és mutatják be,amelyekkel csak a "bigottak" és a "tudatlanok" nem értenek egyet. Az egalitárius írók, mint Ashley Montague és mások a magazinok, újságok, majd kés&#245;bb a televízió részér&#245;l nagy magasztalásban részesültek. Mindegy volt,hogy az illet&#245; babó vagy nem-babó, a faji egyenl&#245;ségben való hit megvallása valósággal dogmává vált azok számára, akik az antropológia, vagy az akadémiai világ bármely részében el&#245;re akartak haladni. A "politikailag korrekt" gondolkodáshoz való igazodás presztízst, elismerést,pénz és sikert eredményezett. A faji igazmondás személyes támadásokhoz, kudarcba fulladt pályafutásokhoz és gyakran anyagi nehézségekhez vezetett.<br />
+  Ashley Montague lett az egalitárius félrevezetés legismertebb szószólója, elfoglalva ezzel Boasnak,mint a rasszizmus-ellenesség legnépszer&#251;bb hirdet&#245;jének helyét. Jól formált brit kiejtése és el&#245;kel&#245; neve rögtön hitelt kölcsönzött a faji egyenl&#245;ségr&#245;l vallott véleményének. Még ma is, harminc év után,emlékszem lehengerl&#245; szerepléseire a Today televíziós m&#251;sorban. Könyve, a Race: Man's Most Dangerous Myth( A faj : az emberiség legveszélyesebb mítosza) az egyenl&#245;ség bibliája lett, és nagyon mély hatással volt rám, miel&#245;tt még alkalmam lett volna a kérdés másik oldaláról is olvasni. Montague eredeti neve valójában nem is Montague volt, hanem Israel Ehrenberg. a pszichológiai mimikri kimagasló gyakorlata során Ehrenberg többször megváltoztatta nevét, de végül megállapodott, nem csak egy akármilyen angolszász álnévnél, hanem a Montague névnél,amely Nagy-Britannia egyik legrégibb és egyik legel&#245;kel&#245;bb középkori nemesi családjának neve volt.<br />
+ Útban a csúcsra fontos volt felrakni a szemellenz&#245;ket a nem-babókra a &#8222;babó fajjal&#8221; és a &#8222;multikulturalizmusnak&#8221; a babók számára nyújtott el&#245;nyeivel kapcsolatban. Amint uralmuk alapjait megvetették, elképeszt&#245; módon kezdték az ellentétét mondani annak, amit korábban vallottak. Majdnem ugyanabban a pillanatban,  amikor azt állították, hogy a fajnak és az etnikumnak nincs valóságos jelent&#245;sége, és elkezdtek a babó etnográfia fontosságáról beszélni, elmenve egészen annak fejtegetéséig, hogy az antropológiát a babók uralják!<br />
+ Az 1990-es évek végére a babó írók bátran kezdet írni arról, hogy &#245;k uralják az Amerikai antropológiát. Egy 1977-es kiadású Amercan Antropologist-ban, amit az Amerikai Antropológiai Szövetség jelentet meg, Geyla Frank babó tudós azt írja, hogy az egalitárius Amerikai antropológia olyannyira teljesen babó, hogy a &#8222;babó történelem részének&#8221; kellene azt nyilvánítani. Frank a továbbiakban azt mondja, hogy az antropológia egy bizonyos szociális program szolgálatában áll, és tanulmánya olyan babó antropológusokkal foglalkozik, akik &#8222;egyes multikultúrális elméleteket szeretnének mozgalmi célkit&#251;zéssé változtatni&#8221;. Az antropológusoknak ugyanez a fajtája, akik azt mondják, &#8222;nem létezik semmi olyasmi, hogy faj&#8221;, ha fehérekr&#245;l és feketékr&#245;l van szó, akkor rögtön képmutató módon, a babók egyedülálló genetikai homogenitásáról kezdenek el beszélni. Továbbá egyre több babó antropológus lépett a nagy nyilvánosság elé, az &#245; sajátos genetikai és kulturális örökségeiket ünnepelve.<br />
+  Az amerikai akadémiai oktatás leveg&#245;jét még mindig uralja az egalitarizmus, kivéve persze, ha valaki a &#8222;Kiválasztott Nép&#8221; különleges tulajdonságairól beszél. Richard Lewontin, Leon Kamin, Jared Diamond és Stephen Jay Gould az az egalitarizmus négy, babóságát felvállaló és egyben vezet&#245; tudományos magyarázója. Friss, tudományos ismeretek lavinája helyett, ami bizonyítja a gének fontos szerepét az egyén és a csoportok közötti kapcsolatok létrehozásában, a faji egalitarizmus még mindig az antropológia és a humán pszichológia szentírása, ahogyan azt a népszer&#251; média beállítja. Lewontin, Kamin, Gould, Rose Diamond és más egalitaristák olyan magazinok hasábjain bukkannak fel rendszeresen, mint a Smithsonian, Natural History, Nature, Discover, Time, Newsweek, és más, nagy példányszámú kiadványok. A TV-programokban gyakran mint &#8222;szaktekintélyeket&#8221; szólaltatják meg &#245;ket a faji kérdésekkel kapcsolatban, miközben a faji egalitarizmus tudományos  cáfolóit nem engedik szóhoz jutni. A legtöbb egalitarista nyiltan marxista, amir&#245;l a média mélyen hallgat. Képzeljük csak el, ha az egyik ellenfelük nyiltan náci volna;  gondolom ezt a tényt minduntalan hallatnák.<br />
+ A legegyszer&#251;bben valószín&#251;leg úgy lehet bizonyítani a babó egalitaristák szándékos megtévasztését, hogy közzétesszük a babó egalitarizmus egyik vezet&#245; alakjának, Jared Diamondnak felt&#251;n&#245;en képmutató írásait.<br />
+ A New York Reviw of Books-ban Diamond magasztalta Cavalli Sfrozát, &#8222;mert letiporta a tudósoknak abbeli próbálkozását, hogy az emberiséget fajokra osszák, ugyanúgy, mint a madarakat vagy más különféle állatokat fajokba sorolják&#8221;. De a Natural History magazin egy újabb cikkében Diamond azt is állítja, hogy a genetikai kutatások bizonysága szerint a babók valóban különbözneka nem-babóktól. Egy szokatlan kijelentést tesz: &#8222;Van egy gyakorlati ok arra, hogy odafigyeljünk a babó génakre. Az izraeli államnak nagyon sokba került olyan bevándorlásának és továbbképzésének költsége, akik üldözött kisebbségek voltak más országokban. Ez rögtön azt a kérdést veti fel, hogy hogyan lehet meghatározni, hogy ki a babó? Így Diamond azt mondja, hogy nincsen valódi különbség a különböz&#245; emberfajok között, ugyanakkor lehetséges és hasznos is megkülönböztetni a sokkal kevésbé hangsúlyos különbségeket a babók és a nem-babók között. Ugyanaz az ember, aki nyílt határokat javasol Amerikának, azt mondja, milyen csodálatos, hogy izrael most már képes lesz genetikailag meghatározni, hogy ki a babó, hogy azután érvényesítse a fajilag kirekeszt&#245; bevándorlási törvényeit!<br />
+ Egy jó példa a babó stratégiára abban a reményükben látható, hogy egyszer széles körben be fog olvadni a palesztin nép más népekbe és kultúrákba. A palesztinok f&#245;leg mohamedánok és keresztények. Ezek olyan vallások, amelyek szemléletükben alapvet&#245;en univerzalisták, a babó vallás szupremácista szemléletével ellentétben. Miután a palesztinokat ki&#251;zték a a mai &#8222;nagy izrael&#8221; területér&#245;l, azok beszivárogtak a  nyugati országokba, ahol nagyon sok palesztin beházasodott és beolvadt a befogadó országok népességébe. A babó szupremácisták helyesen jósolják meg, hogy a beolvadt palesztinoknak majd gyengébb köt&#245;déseik lesznek és kevésbé lesznek elkötelezettek palesztin örökségük és a palesztin szabadság ügye iránt. Ami a palesztinokra vonatkozik, minden olyan népre érvényes, amelyeket a babó szupremácisták ellenségesnek, vagy versenytársnak látnak. Éppen ezért próbálják meg következetes módon eltiporni a faji örökség, kultúra és a szolidaritás meg&#245;rzésére irányuló vágyat minden emberben, kivéve saját magukat. Az egalitarizmus kizárólag nem-babó fogyasztásra alkalmas, míg a faji megkülönböztetés és szupremácizmus a judaizmus lelke-veleje marad.<br />
+ Az antropológiának, mint a &#8222;babó történelem részének&#8221; jól megszervezett irányítása ellenére a fajok létének tudományos igazolása olyan mértékben halad el&#245;re, hogy a népszer&#251; egalitaristák lehet, hogy már nem sokáig lesznek képesek visszatartani a tudományos árhullámot. Soha nem volt nagyobb eltérés a tudományos és a népszer&#251; értelmezés között.<br />
+ Természetesen a babó szupremácisták számára stratégiai fontossága van annak, hogy letörjék az etnikai szolidaritás, kultúra és h&#251;ség mindennem&#251; megnyilvánulását ellenfeleik körében. Ha más népeket er&#245;s szálak f&#251;zik azonosságukhoz, örökségükhöz és kultúrájukhoz, akkor természetesen nem olyan könnyen vetnék alá magukat a szidó uralomnak.<br />
+<br />
+                                                       A freudi támadás<br />
+<br />
+ A pszichológia, csakúgy, mint az antropológia, babó ostrom alá került. Sigmund Freud napjaitól kezdve a Pszichológiát mint &#8222;babó tudományt&#8221; tartják számon. Az egyik babó önéletrajz-író így fogalmaz:<br />
+ <br />
+ A történelem a pszichoanalízist &#8222;babó tudománnyá&#8221; tette. Ekképp támadták azt továbbra is. Németországban, Olaszországban és Ausztriában megsemmisítették, és mint ilyet, a Föld négy szegletébe szám&#251;zték. Még a mai napig is így tekintenek rá barátai és ellenségei egyaránt. Természetesen mára már vannak olyan kiváló analitikusok, akik nem babók...De a mozgalom krémje az utóbbi ötven év alatt f&#245;leg babó maradt, ahogy az a kezdetekt&#245;l fogva volt.<br />
+ <br />
+ A nagy gazdasági világválságól kezdve az akadémiai pszichológia lebecsülte az örökl&#245;dés hatását és majdnem minden viselkedési mintáért és értelmi képességért a környezet alakító hatását tette felel&#245;ssé. Azt állította, hogy nem az örökl&#245;dés, hanem inkább a környezet a felel&#245;s a fajok között létez&#245; lelki és viselkedésbeli különbségekért. Freudnak és tanítványainak elméletei nemcsak a faji elvet, hanem az Európai Civilizáció spirituális és morális értékeit is támadták. Freud azt sugalmazta, hogy a keresztény szexuális moralitás az oka nagymértékben a mentális betegségeknek. Kitartóan aláásta a szexuális h&#251;ség gondolatát és a házasság alapját. 1915-ben ezt mondta:<br />
+<br />
+  &#8222;A szexuális moralitás &#8211; ahogyan azt a maga széls&#245;séges formájában társadalomként Amerika testesíti meg &#8211; számomra igen szánalomra méltó. Egy összehasonlíthatatlanul szabadabb szexuális életet javaslok.&#8221;<br />
+<br />
+ A Moses and Monotheism( Mózes és a monoteizmus) cím&#251; 1939-ben megjelent m&#251;vében Freud minduntalan a kereszténységet támadja, miközben a babók spirituális szupremációját hirdeti:<br />
+<br />
+ &#8222; A nép, annak a boldog meggy&#245;z&#245;désnek a tudatában, hogy birtokolja az igazságot és kiválasztott, eljutott odáig, hogy minden intellektuális és erkölcsi teljesítményt nagyra értékeljen. A keresztény vallás nem tartott azokba a magaslatokba, ahova a babó vallás szárnyalt.&#8221; - Sigmund Freud<br />
+<br />
+  Ahogyan a kommunista babók politikai háborúban álltak az orosz cárokkal, a Freudot követ&#245;k a nyugati keresztény kultúra ellen vívtak háborút. Kevin McDonald, a babó fajközpontúság klasszikus tanulmányában, amelynek a címe: A People That Shall Dwell Alone( A nép, mely magában teng&#245;dik ), rámutat, hogy Freud Totem és Tabu-ja felfedi Freudnak a nem-babók elleni kulturális háborúban játsztott szerepét:<br />
+ <br />
+ &#8222;Freud spekulációinak világosan látható célkit&#251;zése volt. Ahelyett, hogy spekulációi meger&#245;sítették volna az &#245; idejében létez&#245; kultúra morális és intellektuális alapjait, a spekulációi szerves részét képezték a nem-babó kultúra ellen vívott háborújának. Olaynnyira, hogy a Totem és Tabu-t a Róma és a katolikus egyház fölött aratott gy&#245;zelemnek tekintette...&#8221;<br />
+<br />
+ Freudot kéjjel töltötte el, amit &#245; a(Római Birodalomhoz hasonlított) keresztény világ elleni háborúnak tekintett, és azt sugallta, hogy &#245; olyan, mint eszményképe, Hannibál, és az a célja, hogy Rómát kifossza:<br />
+<br />
+ &#8222;Hannibál...kedvenc h&#245;se volt kés&#245;bbi iskoláskoromnak...El&#245;ször kezdtem megérteni, hogy mit is jelent egy idegen fajhoz tartozni...a szemita generális alakját még mindig magasra értékelem. Ifjúkorom számára Hannibál és Róma a babóság állhatatossága és a katolikus egyház szervezettsége közötti konfliktust jelképezte&#8221;.<br />
+<br />
+ Freud a babó szupremácista néz&#245;pontját nagyon világossá teszi egy levelében, amelyet egy olyan babó n&#245;nek írt, aki gyereket akart egy nem-babó férfit&#245;l. A levéllel az volt a célja, hogy a hasadást pszichoanalízissel gyógyítsa meg. Ezt írta:<br />
+<br />
+ &#8222;Be kell vallanom..., hogy a maga fantáziálása a Megváltó születésér&#245;l egy vegyes kapcsolatban nem tetszett nekem egyáltalán. Az Úr abban a babóellenes id&#245;ben &#245;t a fels&#245;bbrend&#251; babó fajból támasztotta. De tudom, hogy ezek csak az én el&#245;ítéleteim.&#8221;<br />
+<br />
+ Egy évvel kés&#245;bb ugyanaz a n&#245; olyan gyereket szült, akinek az apja a &#8222;fels&#245;bbrend&#251; babó faj&#8221; tagja volt. Freud így válaszolt:<br />
+<br />
+ &#8222;Jómagam ahogy ezt ön is tudja, az árja ügy el&#245;szeretetének leghalványabb árnyalatától is megszabadultam, és biztos vagyok benne, ha a gyermek fiú lesz, akkor élharcos cionista válik majd bel&#245;le. Sötét hajúnak kell lennie, nem kell több gyapotfej&#251;. Szám&#251;zzük ezeket a lidérceket.<br />
+  Nem fogom dicsérni Jungot Münchenben, ahogyan ezt maga is nagyon jól tudja..., mi babók vagyunk és azok is maradunk. A többiek mindig csak ki fognak minket zsákmányolni, és soha nem fognak megérteni és értékelni.&#8221;(Idézve az 1991, 45 Jerushalmi-ban.)<br />
+<br />
+ Tehát az újabb európai történelem leghíresebb babójáról kiderül, hogy széls&#245;ségesen gojellenes és babó szupremácista! Nem furcsa, hogy Freudról egyetlen népszer&#251; életrajz és dokumentum sem említi meg ezt a fontos tényt? Freud nemcsak tudatosan indított háborút kulturális értékeink ellen, hanem számára kényelmes módon elmebetegnek nevezett minden olyan embert, aki ellenállt támadásának. A Mózes és monoteizmusban úgy mutatja be az antiszemitizmust, mint mentális betegséget amely a babó fels&#245;bbrend&#251;ség iránti irigységb&#245;l fakad.<br />
+ Az Egyesült Államok fele sebesen pöfög&#245; hajó fedélzetén Freud megemlítette barátainak, hogy az amerikai nép azt hitte, egy csodaszert fog nekik elhozni, de ehelyett &#8222;a pestist hozzuk el nekik&#8221;-mondta.<br />
+<br />
+ 			A  polgárjogi mozgalomban<br />
+<br />
+  A babó tudományos élet tagjai vezették az egalitarianizmusért folytatott küzdelmet az oktatásban a természettudományok és a szociológia területén, és a propagandaharc élén a babó médiamágnások álltak. Ugyanígy a &#8222;polgárjogi&#8221;mozgalom vezet&#245;i és financiális segít&#245;i is a babó közösségb&#245;l kerültek ki.<br />
+  Szinte 1909-es megalakulásának els&#245; napjától kezdve a National Association for the Advencement of Colorad People (NAACP) volt az a f&#245; szervezet, amely a fajilag kevert amerikai társadalomért küzdött. Furcsa,hogy a vezet&#245; testületben csak egy amerikai volt,W.E.B. Dubois ( aki valójában mulatt volt). A testület legtöbb tagja a babó marxista ideológusok közül került ki. Az Egyesült Államok Kongresszusa és más állami vizsgálati testület kimerít&#245;en dokumentálta azt a tényt, hogy az NAACP alapítói a kommunista ügy aktivistái voltak. Dobois azt kívánta, hogy a kommunista Ghánában temessék el. Az NAACP els&#245; elnöke Arthur Spingarn volt, és csak babók töltöttek be elnöki tisztet, alapításától kezdve egészen az 1970-es évekig. Noel Spingarn követte bátyját, Arthurt, utána pedig Kivie Kaplan irányította a szervezetet. Azt, hogy az NAACP babó vezetés alatt állt, a nagyközönség nem tudta. Amikor kamasz voltam , az egyetlen név, amelyet kapcsolatba hoztam az NAACP-vel, Roy Wilkins  volt, a szervezet afro-amerikai országos titkára. Mivel olyan sokat szerepelt a sajtóban és a nyilvánosság el&#245;tt, mint sok más amerikai én is azt gondoltam, hogy Wilkins az NAACP vezet&#245;je. De valójában abban az id&#245;ben Kaplan volt a valódi NAACP-vezet&#245;. Végül Benjamin Hooks lett az els&#245; afro-amerikai elnök az 1970-es évekbe. Mire aztán végre egy afro-amerikai lett a szervezet elnöke, a nyilvánosság többé nem hallott sokat az NAACP &#8222;országos titkáráról&#8221;. Ett&#245;l kezdve az NAACP szóviv&#245;je lett az NAACP elnöke.<br />
+  A nem régi babó-troll szakadásban a liberális babók sportszer&#251;tlennek nyilvánították az amerikai trollok trollok rájuk való neheztelését, s felhányták nekik, hogy  az integrációs mozgalom oroszlánrészét a babók állták. Avval dicsekedtek, hogy az integrációért folytatott jogi küzdelemnek 90%-át babó ügyvédek vívták, és sokáig babó pénzb&#245;l.  <br />
+  Gyakorlatilag a polgárjogi mozgalom minden el&#245;relépése a bíróságokon keresztül történt. Elrendelték az iskolák kényszer&#251; faji integrációját és végül ráer&#245;ltették Amerikára a hatalmas fehér-ellenes diszkriminációs  programot,amelynek orwelli nevet adtak: &#8222; pozitív megkülönböztetés&#8221;(&#8222;affirmative action&#8221;). A meghetározó szerep itt is a babóknak jutott.<br />
+  Az a szervezet, amely nagyon sok ilyen harcot vívott,az NAACP Legal Defense Fund volt (NAACP Jogi Képviseleti Alap), amely más mint maga az NAACP. Még ma is a huszonegyedik században, még mindig babók vezetik a The National Association for the Advencement of Colored People Legal Defense Fund-ot. A jogi alapon belül Jake Greenberg évekig tevénykedett, és Brown f&#245; ügyvédje volt a híres Brown versus Board of Education Legfels&#245;bb Bíróság által tárgyalt hírhedt perben. Ebben a gyalázatos döntésben a Legfels&#245;bb Bíróság egyetlen pusztító tollvonással megkezdte az amerikai közoktatási rendszer átalakítását az iparosodott világ egyik legjobb rendszeréb&#245;l a legrosszabbá. Az új rendszer, messze attól, hogy megnyugtatta volna a faji kedélyeket csak tovább fokozta a faji közötti gy&#251;löletet Amerikában.<br />
+  Még ott is, ahol nem babók voltak az integrációs mozgalom valódi vezet&#245;i, &#245;k adták a színfalak mögötti legtöbb támogatást. Martin Luther King Jr.Stanley Levinston befolyása alá került, aki King nagyon sok beszédét írta, egyesek szerint többek között a I Have a Dream (Van egy álmom) cím&#251; beszédet, amelyet a Washingtoni Menet során mondott el. John és Robert Kenedy figyelmeztették Kinget,hogy szakadjon el Levinstontól, mert neki kommunista el&#245;élete volt. King ugyanakkor Levinstont felbecsülhetetle értéknek találta és nem volt hajlandó ezt megtenni. A Student Non-Violent Coordinating Commitee (SNCC), a Tanulók Er&#245;szakmentes Koordinációs Tanácsa és a Congress of Racial Equality (CORE), a Faji Egyenl&#245;ség Kongresszusa alakuló id&#245;szakaiban is a babóknak kulcsszerep jutott, és sokan a névleges White &#8222; Freedom Riders&#8221; (fehér polgárjogi mozgalmárok) tagjai közül, akik délre mentek, babók voltak. A philadelphiai Mississippiben megölt három &#8222; Freedom Riders&#8221; közül két babó (Schwerner, Goodmann) és egy afro-amerikai (Chaney) volt.<br />
+  Annak az embernek a nyilvános  imázsa, aki magát &#8222; Martin Luther Kingnek&#8221; nevezte (eredeti neve Michael King volt), iskolapéldája a média Amerikára gyakorolt hatásának. A legtöbb ember a ami napig nem tudja, mennyire vett részt kommunista tevékenységekben King, részben azért, mert  a média a mai napig nem vesz tudomást King kommunista kapcsolatairól. King bizalmasan magát marxistának nevezte, és bels&#245; körében azt állította, hogy er&#245;feszítései egy &#8222; osztályharc&#8221; részét képezték. Személyes titkára, Bayard Rustin, kommunista volt. Amikor Kingnek Rustin helyett valaki mást kellett találnia 1961-ben, akkor másik kommunistát választott, Jack O'Dellt. Legf&#245;bb tanácsadója ( vagy inkább irányítója) mindenesetre a babó kommunista Stanley Levinston volt, aki szerkesztette és nagyrészt maga írta King Stride Toward Freedom ( Út a szabadság felé) cím&#251; könyvét. Levinston készítette el King adóbevallását és irányította pénzgy&#251;jt&#245; tevékenységét: az &#245; feladata volt szovjet pénzt pumpálni az USA kommunista pártjába.<br />
+  Csak nemrég tárták fel, hogy King doktori értekezésének nagy részét plagizálta. A Boston University (Bostoni Egyetem) egy bizottságot hozott létre , hogy meghatározzák, King milyen mértékben plagizált. Megállapították hogy az els&#245; rész 45%-a, a második rész 21%-a más szerz&#245;kt&#245;l származik. Az iskolák gyakran sokkal kevesebb csalásért visszavonnak diplomákat és tudományos fokozatokat, ha rájönnek arra, de Kingnek a polgárjogi mozgalomban betöltött szerepe megakadályozta azt, hogy visszavonják teológiai doktorátusát.<br />
+  A média mindig is óvatosan jó keresztény családapaként mutatta be Kinget, Isten emberének példaképeként. De Kingnek egy tucat kapcsolata volt prostituáltakkal, fehérekkel és feketékkel egyaránt, egyházi pénzb&#245;l fizette és rendszeresen verte &#245;ket. Mindezt dokumentálta az FBI, a King-el kapcsolatban álló emberek pedig elismerték.<br />
+  King a meggyilkolása el&#245;tti éjszakát fehér prostituáltakkal való közösüléssel és azok verésével töltötte. Az FBI megfigyelést rögzít&#245; szalagján &#8222; King tiszteletes&#8221; így kiált fel közösülés közben:&#8221; Istenért b.-ok&#8221; és &#8222; ma este nem vagyok troll&#8221;. A King -felvételek annyira elítél&#245;ek ránézve, hogy a kazettákat és az összes többi FBI dokumentumokat 50 évre titkosították. A tények ellenére King babó mozgatói és szövetségeseik a médiában állandóan dics&#245;ítették Kinget.<br />
+  Az elmúlt évek során babók és feketék közötti kapcsolat romlott, ahogy a fekete amerikaiak politikai érzülete sokkal nacionalistábbá vált a maga nemében. A babó együttm&#251;ködés a fekete polgárjogi ügyekben azokra az id&#245;kre nyúlik vissza , amikor még nagyon sok kommunista a feketéket egy kommunista felkelés potenciális forradalmárainak tekintette. A kommunisták, amikor létrehozták a szovjet államot, pillanatnyilag megnyerték a kommunizmus és a cionizmus közötti testvérharcot, amelyet Winston Churchill 1920-ban leírt. A radikális amerikai babók a feketékben lelki szemeikkel az amerikai proletariátust látták, az  elnyomott orosz jobbágy tengerentúli változatát, akiket mint szövetségeseket lehet felhasználni egy kommunista forradalom világra segítésénél. Természetesen még a nem-kommunista babók is szorgalmazták az &#8222; amerikai&#8221; fajtól független definícióját, mert &#245;k jobban,mint bárki más ,tudatában vannak kívülálló helyzetüknek az európai-amerikai társadalomban. Majdnem minden szervezet babó frakció megpróbálta kiiktatni azokat a törvényeket és hagyományokat, amelyek az európai származásúak csoportszolidaritását támogatták. A babó szupremácisták szintén keményen dolgoztak azon, hogy minden más olyan etnikai csoport szolidaritását gyöngítsék, amelyek ellenfélnek számíthatnának.<br />
+  A második világháború után két f&#245; tényez&#245; kezdte a babókat eltávolítani a kommunizmustól: a szovjet állam eloroszosodása és Izrael Állam megalapítása.<br />
+  Ahhoz, hogy a németeket le lehessen gy&#245;zni, Sztálin és a szovjet uralom oly módon ösztönözte az orosz népet, hogy a mély, hazafias érzelmekre hatottak. Sztálin maga, minden id&#245;k legparanoiásabb és legkegyetlenebb uralkodója, ügyesen kijátszotta az egyik babó tábort a másik ellen, amíg úgy nem lépett fel, mint a megkérd&#245;jelezhetetlen uralkodó Oroszországban. Leon Trockijt ( Lev Bronsteint ), Sztálin f&#245; riválisát, szám&#251;zetésbe kényszerítették, és kés&#245;bb meggyilkolta &#245;t az orosz NKDV. Habár bizonyos babó egyének továbbra is központi szerepet játszottak uralma alatt, Sztálin minden babó szövetségesében hatalmát fenyeget&#245; tényez&#245;t látott. Minden potenciális fenyegetést, amelyet képes volt felfedezni,brutálisan eltaposott, és a Szovjetuniót egy nacionalistább pályán indította el. A szovjet kommunizmus himnuszát, az egalitarista és antinacionalista  &#8222; Internacionálét&#8221; egy hagyományos orosz himnusz váltotta fel.<br />
+  A babó kommunisták pozitív diszkriminációját a forradalom kezdeti napjaiban az egyetemi érdemrendszer és a hadsereg váltotta fel. Sztálin  babók elleni man&#245;verei közül sokra derült fény egészen jóval a második világháború utánig, és nagyon sok babó alig hitte el, hogy elvesztették uralmukat a szovjet rezsim felett. Egészen az 1960-as évek végéig Oroszországon kívül más országokban is a babók még mindig marxista vezet&#245;k többségét tették ki a világon mindenhol, többek között az USA-ban is. Bár sok ilyen babó kommunista valamelyest oroszellenessé vált, és most már trockistáknak nevezték magukat. Csak néhány radikális babó ragaszkodott ahhoz      a kommunista látomáshoz, amely Oroszországban fejez&#245;dött ki. A legtöbben azonban egy új marxista  eszme felé nyúltak, amely az egalitarianizmusban gyökerezik, míg közben ragaszkodik a kommunizmus szociális tanaihoz, és elkezdtek kapitalista gazdaságokba vándorolni.<br />
+  A &#8222;fehér&#8221; oroszok visszakövetelték Oroszországot, a Babók létrehozták Izrael Államot, és úgy t&#251;nt, hogy az Ortodox, fajközpontú jövendölések végre valóra válnak."  .....<br />
+<br />
+<br />
+Mint mondottam, vagy 5 oldal hibádzzik belőle. Ha szeretnél többet megtudni erről a könyvről és a témakörről, töltsd le a következő videót:<br />
+<B><a href="//igazsag.myip.hu/DavidDuke.wmv" target="_new" style="color: #000000;">http://igazsag.myip.hu/DavidDuke.wmv</a></B>       </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25075"></A>111. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-06 12:31:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A helyes kérdés nem az, hogy ők genetikailag "jobbak-e". A helyes kérdés, hogy genetikailag mások-e. És a válasz erre egyértelmű igen.<br />
+ <br />
+Kimondanád-e, hogy a farkaskutya jobb a pulinál? Nem, nincs értelme, mivel minden fajta más és más éghajlatra és munkára lett kitenyésztve. Jobbak egymásnál? Nem, specializálódtak erre, vagy arra a tevékenységre, és te is okosan teszed, ha olyan fajtát választassz, mely céljaidnak megfelel, különben meggyűlik a bajod velük, bármennyire is szereted őket.<br />
+ <br />
+Mára a fekete kutya megveszett. Semmi értelme a kezünket tördelni, hogy hol rontottuk el, azt majd elvégezzük később, most hirtelenjében azt a munkát kell elvégeznünk, hogy a fertőzés veszélyét mihamarabb hírül adjuk mindenkinek, kit veszélyeztet harapása, bezárjuk kapuinkat előtte, és ha látunk belőle, lőjük le - mint a veszett kutyát.<br />
+<br />
+CSAK bajt hozhat ránk, semmi jót nem várhatunk tőle!!!<br />
+<br />
+SEMMIT!!!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment25061"></A>110. benzin</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=466&id=25039#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-01-06 10:51:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1686.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Abban biztos vagyok hogy afrikában az átlag IQ lényegesen alacsonyabb mint europában, azt vitattam, hogy ez genetikai okok miatt lenne és nem amiatt, hogy olyan iskolázatlanságban nőnek fel amilyenben.<br />
+Ha valakinek nem fejlesztik hosszú éveken át a logikai készségét mint bármelyik civilizált iskolában értelemszerűen gyengébben is fog kitölteni egy iq tesztet ha egyáltalán tudja mit kell csinálni.<br />
+<br />
+Fordítsuk meg a kérdést. Általánosságban elfogadott tény hogy a babó származásúak között több a felsőoktatást végzett, ügyvéd, orvos, bankár stb. Ez a legtöbb országban így van. Akkor ők genetikailag jobbak ?<br />
+<br />
+Másik példa : ha kitöltetnénk egy iq tesztet 10,000 békés megyeivel és 10,000 budapestivel igen valószinü hogy az utóbbiaknál magasabb értéket kapnánk, sokkal jobbak ugyanis a lehetőségeik az oktatásra mint egy elmaradottabb, munkanélküliséggel sokkal jobban sujtott szegény térségben. Mégse hiszem hogy a pestiek akárcsak egy kicsit is jobb génálománnyal rendelkeznének mint a békésiek.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=466&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=466&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=466&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=466&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=466&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=466&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=466&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=466&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=466&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=466&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=466&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=466&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=466&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

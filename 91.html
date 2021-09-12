@@ -1,0 +1,413 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=91#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Bréking nyúz: A magyar az univerzum hivatalos nyelve!";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=91#" ONCLICK="window.open('popup_userdatasheet.php?id=139', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_139.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Bréking nyúz: A magyar az univerzum hivatalos nyelve!<BR><DIV CLASS="postheader_small">Blog - BlueBunny</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2007 október 13. 23:27:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_91.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><p style="text-align: justify;">Ebben a cikkben egy (véleményem 
+szerint) nagyszerű magyar írót szeretnék bemutatni nektek, akinek azonban nyomtatásban méltatlanul 
+kevés munkája jelent meg, pedig rendkívül termékeny szerző. Művei nem biztos, hogy minden 
+Bombagyár-olvasónak tetszeni fognak (tőlük elnézést kérek), de van pár olyan jellemzője 
+munkásságának, amely joggal vívhatja ki a ti rokonszenveteket is.</p><p style="text-align: justify;">Előre szeretném bocsájtani, hogy ez az író, <span style="font-style: italic;">Viola 
+Zoltán</span>, nem úgynevezett "nemzeti meggyőződésű", éppen ellenkezőleg, ezért lehet őt akár 
+utálni is (mondjuk engem is lehet ugyanezért utálni, opcionálisan) és nem is vallásos, hovatovább 
+ateista. Amiért mégis a figyelmetekbe ajánlom őt és a műveit, elsősorban az, hogy egy olyan sci-fi 
+univerzumot hozott létre <span style="font-style: italic;">Poliverzum </span>néven (és ezen 
+fáradozik továbbra is), amely összemérhető Asimov "robotok és birodalom" univerzumával, és &#8211; 
+most ugrik Demszky Gábor a kátyúba! &#8211; ebben az univerzumban, az emberek által lakott bolygókon 
+<span style="font-style: italic;">a magyar a hivatalos nyelv</span>. És úgy hívják az embereket, 
+hogy <span style="font-style: italic;">Árpád </span>meg <span style="font-style: italic;">Tibi</span>. <br>De mindez nem valami szánalmas faszkodás keretébe van beleillesztve, mint 
+Grespik világképe a Szíriuszról jött magyarokkal, hanem többségében igen kiváló, cselekményes, 
+izgalmas, humoros történetek ezek. Kezdetnek ajánlom a kiváló <span style="font-style: italic;">Kajjám, a tévedés</span> című regényt, aztán sorban a többit.</p><p style="text-align: justify;">A <span style="font-style: italic;">Kajjám, a tévedés</span> műfaja leginkább fantasyként 
+definiálható. Na most, én rühellem a fantasyt, mert általában, valljuk be, igénytelen szar. Vagy 
+nem, csak én nem ismerem eléggé a műfajt. A lényeg: a <span style="font-style: italic;">Kajjám</span>ot szinte egy ültő helyemben olvastam végig, annyira jó. És hosszú, hogy áldja 
+meg az Isten (hehe) Viola Zoltánt. Utálom, amikor egy kiváló regény fogja magát, és hirtelen, 
+mielőtt még úgy igazán beleéltem volna magam, egyszer csak véget ér. A Kajjám hosszú, és Zoli más 
+műveiben sem fukarkodik a terjedelemmel. (Mindazonáltal vannak novellái, azaz rövidebb írásai is, 
+aki azokat jobban kedveli, az sem fog csalatkozni.) Ha rosszak lennének a könyvei, ez persze kínos 
+lenne, de a jónál csak egy a jobb: a még több jó. És ezek azok.<br></p><ul style="text-align: justify;"><li>Itt olvasható a <span style="font-style: italic;">Kajjám, a tévedés</span> című regény 
+a Magyar Elektronikus Könyvtár adatbázisában: <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//mek.oszk.hu/04000/04036/index.phtml">http://mek.oszk.hu/04000/04036/index.phtml</a></li><li>Itt
+olvasható minden a Poliverzumról egy logikus, wikis (!!!) szerkezetben: <a target="_blank"style="color: rgb(0, 0, 0); font-weight: bold;" href="//poliverzum.birodalom.net/powi">http://poliverzum.birodalom.net/powi</a></li></ul><div style="text-align: justify;">Viola Poliverzuma ráadásul nyitott, a szerző ezt írja róla: "Szeretném, 
+ha mások is bekapcsolódnának ebbe, szeretnék egy alapítványt létrehozni arra, hogy a magyarok 
+alkossák meg - sorozatomra épülve - a világirodalom legnagyobb összefüggő mesevilágát." Az erre 
+vonatkozó <a target="_blank"style="color: rgb(0, 0, 0); font-weight: bold;" href="//poliverzum.birodalom.net/powi/index.php/Felh%C3%ADv%C3%A1s">felhívás itt található</a>. 
+Tehát íráshoz kedvet érző olvasók, fel a kezeket, jelentkezni, és szaporítani a Poliverzum-regények 
+számát!<br></div><br><p></p> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2007-10-13&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=91&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=91&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=91&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=91&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=91&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=91&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=91&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4922"></A>57. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4739#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-16 17:06:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">az eszmefuttatásod szerintem akkor és csak akkor helyes, ha a "vallásos" szócskát lecseréljük mondjuk "elmebeteg"-re :D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4920"></A>56. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4733#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-16 17:02:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">a kémia (molekulák) és a biológia (sejt) közötti iszonyatos méretű szakadék az, amit eddig még _semmi_ sem hidalt át. ha azt mondjuk, ez olyan mint a különbség egy rajzszög és a Nemzetközi Űrállomás között, akkor nem mondtunk elég nagyot.<br />
+6X írtad hogy "elmélet", maradjunk hát ennyiben :)<br />
+drukkolok a FACE-nek.<br />
+<br />
+55: igaz, már kiderült, hogy a fehér szakállas bácsika nem a felhőkön ül, az is hogy nem a Napban trónol, sem a Tejútrendszer közepén lévő szupernehéz fekete lyukban, stb. viszont _mindig_ lesz egy olyan további hely, ahová akinek tetszik, odaültetheti. a materialisták _sosem_ fogják megkapni a csodafegyvert a kivégzéséhez. pl evo-témában nem is kell nekik belekapaszkodni a sejt létrejöttének megmagyarázatlanságába, elég ha azt mondják, a teremtőjük olyan világot alkotott, ami magában hordozta az élet megszületésének lehetőségét, bibibí. :)<br />
+egyébként a teremtéstörténetek is evolúciót mesélnek el, nem véletlenül jön az ember utoljára, viszont a legeslegelejére, hogy miért van egyáltalán valami, és miért nem a nagy semmi van (nincs), arra sem fog soha senki magyarázatot találni.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4748"></A>55. Aamin&#12373;&#12435; -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4677#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-15 23:00:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_530.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Egy kreacionista mondhatja ezt: a teremtője rakta úgy össze, hogy Te azt hidd, egymásból evolválódtak."<br />
+<br />
+Ez az közkeletű felfogás a hívők körében, ez nem zárja ki, hogy a tudomány területén tevékenykedj, mint evolúcióbiológus, de mellette tudsz imádkozni a templomban Istenhez. Tudod mit? Bár én inkább Douglas Adams féle megközelítésben úgy vélem, hogy Isten már nem fér bele a világról alkotott képembe, mert nélkülözhető a világ keletkezésére és működésére adott válaszok során, de ha más nem így véli, tegye. Én transzhumanistaként szintén el tudok képzelni egy olyan lényt, amely jóval fejletebb nálunk és jóval többet tud a világ működéséről, ezáltal nálunk sokkal magasabb szinten be képes avatkozni annak működésébe, ez nem okoz problémát, ahogy annak elképzelése sem, hogy mi is eljuthatunk erre a szintre, ez az út pedig a tudományos megismerés ösvényén vezet keresztül.<br />
+<br />
+"<i>Dawkins: ilyen iszonyatosan sok idő alatt lehetetlen az, hogy ne történjen meg a szemlencse megjelenése</i> - és igaza van :) ezért cikik az élő kövületek (amik tanúsítják, hogy az adott lény nem változott, alkalmazkodott, fejlődött tovább)<br />
+<br />
+Dawkins valóban azt írta, hogy a szemlencse megjelenése igen valószínű az evolúció során, de nem biztos, hogy a szemlencse pont a Nautilus-nál fog megjelenni. <br />
+<br />
+<i>A populációk elkülönülnek egymástól,  és az eltérő környezeti körülmények között elegendő különbség halmozódik fel ahhoz, hogy külön fajt alkossanak. Az eredeti faj ezután kihalhat, de akár korlátlanul tovább is élhet az eredeti élőhelyen.</i> Tudjuk, hogy a Nautilus nem rendelkezett szemlencsével, a lencse nélküli szemét vagy annak egyszerűbb változatát az őseitől örökölhette, akiktől örökölhették azt más fajok is, vagy épp maguk a Nautilus leszármazottai. Nem tudom pontosan hol jelent meg elősször az összetett szem, de a kialakulása több különálló faj evolúcióján át ívelt. <i>A kutatók primitív szemeket és fényérző szerveket azonosítottak szinte a teljes állatvilágban, és nyomon tudták követni a szemek evolúciós történetét az összehasonlító genetika területén is. Kiderült például, hogy különböző csoportoknál a szemek egymástól teljesen függetlenül alakultak ki.</i></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4739"></A>54. <A HREF="mailto:nora.somlai@gmail.com" STYLE="color: #000000">BlueBunny</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-15 22:36:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_139.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Aamin szavára figyelmezzetek. Az van, amit ő mondott. Így szerencsére nem nekem kell leírni ezeket, ami azért jó, mert lusta vagyok, mint a rongy.<br />
+<br />
+Még az is lehetséges, hogy nem is kell megtéríteni a vallásos embereket a materializmusra. Igaz, hogy a materialista világkép(sajnos) igaz, a vallásos világkép meg (sajnos) nem igaz, de elképzelhető, hogy az egyén jobban jár, ha a nagyobb boldogságot adó (vallásos) világképben hisz.<br />
+<br />
+A baj az, hogy nem csak az egyén boldogságáról szól ez az egész. Mindennapi életünket nagyon sok ponton érinti a világképünk. Például ha arról van szó, hogy csináljunk egy gyógyszert, ami megment valakit a haláltól, a vallásos ember mondhatja, hogy minek, hiszen a halál után csak jobban jár a beteg, a materialista viszont nekiáll és megcsinálja a gyógyszert.<br />
+A vallásos ember fogja a Szent Könyvét, és különböző idegesítő rendszabályokat olvas ki belőle, aminek semmi értelme azon kívül, hogy az ő istene azt mondta. Ezzel beszűkíti a saját, a családja és idegen emberek személyi szabadságát is, csadort pakol a nőkre, nem hagyja őket munkába menni, levágja a csiklóját, és ha nem tetszik neki már a felesége képe, felkoncolja.<br />
+<br />
+És még az élet számtalan területén hasznos, ha a világot olyannak látjuk, amilyen, és nem olyannak, amilyet egy kitalált mémrendszer  ír elő nekünk. Emiatt sajnos mégis szükség van a vallásos egyének megtérítésére a materializmus felé. Sajna.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4733"></A>53. Aamin&#12373;&#12435; -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4677#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-15 22:05:57</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_530.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tiszteletreméltó, hogy tényleg utánnaolvastál a dolgoknak, és csak ezután alakítottad ki a véleményedet, a legtöbben valamiért nem képesek rá.<br />
+<br />
+Az autokatalízis önmagában nem elég, de sokmindent megmagyaráz. A kémia és a biológia közti átmenet a sejtek révén valósult meg. A sejt nem más, mint a földi élet legkisebb szerkezeti és működési egysége, önálló életjelenségekkel (anyagcsere, szaporodás), vannak olyan organizmusok, amelyek csupán egyetlen sejtből állnak.<br />
+<br />
+Több elmélet van arra nézve, hogyan alakultak ki az első sejtek. Amennyire tudom az Intelligens Tervezés hívei ezen a részen lépnek közbe, szerintük az első sejtek egy Szuperintelligens Tervező tevékénységének eredményeképp létezhettek a földön (lásd Szkepszis.hu), minden más magyarázat csupán materialista elmék kétségbeesett próbálkozása, ami boldogtalanságot szül az emberek között, akik emiatt szenvednek. Figyeljük meg: az Intelligens Tervezés hívei megengednek maguknak egy ilyen megalapozatlan kijelentést, de a tudományos elmélet legkisebb bizonytalanságaiban is azonal az egész elmélet bukását látják. Egy tényeződ azonban nem kalkulálnak be az elképzeléseikbe, az időtényezőt: <i>Az a kémiai reakció, amely kb. százezer évet igényel ahhoz, hogy közel teljesen végbemenjen, mai pergô agyunknak reménytelenül lassú. Ugyanakkor ez a százezer év az élet kialakulására rendelkezésre álló idônek mintegy ötezred része</i><br />
+<br />
+Az első sejtek kialakulására pedig mint említettem több elmélet is van. melyek a sejtek kialakulását főleg a szerves makromolekulákból (fehérjékből, zsírsavakból, nukleonsavakból és szénhidrátokból) álló alrendszerek összekapcsolódásából vezetik le (chemoton modell). Ezen szerves makromolekulák létrejöhettek az ősleves elmélet szerint, vannak más elméletek, amelyek az anyagásványok jelentőségét emelik ki a prebiológiai evolúcióban, míg mások szerint az építőkövek az őslevesben készülnek el, de a polimerizáció a felszínen törnénik. Az egyik elmélet szerint, a sejtszerű szerveződésre jellemző kémiai folyamatok valamilyen ásvány felszínéhez tapadva zajlottak.<br />
+ Jelenleg is folynak kutatások mesterséges sejt előállítására, lásd FACE program, amelynek keretében viszonylag egyszerű kémiai átalakításoktól organikus sejt funkcióival bíró rendszerek kidolgozásáig szeretnének eljutni. Mások egyszerű elősejtek létrehozását tűzték ki célul, amelyek egy autokatalitikusan növekedő és kettéosztódó membránból és két specifikus ribozimből áll, melyből az első ribozim egy általános replikáz (képes önmaga és és a másik ribozim másolatainak előállítására), a második ribozim a lipid szintézisben vesz rész (ami a membránok létrehozásához szükséges).<br />
+<br />
+Ami magát az ősgént illeti. A sejtek a DNS molekula segítségével tárolják a teljes genetikai anyagukat, azaz a genomot, de jóval a DNS előtt, körülbelül 4 milliárd évvel ezelőt még csak RNS létezett, a genetikai információ itt tárolódott. Ezek voltak az ősi RNS gének a legelső hipotetikus sejtekben (ribo-organizmusok), az RNS-ek egyaránt elláták a kémiai reakciók és a replikáció katalizálását (amelyet ma a fehérjék végeznek), és az információ tárolását is (amely ma a DNS feladata).<br />
+<br />
+Persze a dolog nem ilyen egyszerű, mint te is felvetetted, rengeteg megoldandó probléma, felmerülő kérdés van még, többek között, hogy a sejtek megjelenése előtti evolúció folytatódhatott-e a ribozimek megjelenéséig, ma még nem teljesen értjük a nukliensavak és a lipidek keletkezését, és így tovább a fenti felvetett problémákkal együtt.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4677"></A>52. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4670#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-15 18:21:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">ha az autokatalízis önmagában elég lenne az evolúció bizonyítására, akkor ezt diadalittasan harsoghatnák - nem teszik, mert nem elég. de nem erre gondoltam - belátom, az előbb túl pontatlanul fogalmaztam - hanem arra hogy nincsenek sehol azok az ős-gének amik a kémia és a biológia között az átmenet lennének (és ilyen irányú folyamatokat sem lehet megfigyelni, hiába lebegnek a világűrben cukormolekulák, etc). Dawkins erről - kissé patetikusan, hogy jobban hangozzon - azt írta hogy "már rég feladták ezt a lovagi életmódot".<br />
+<br />
+nem, a legos példával azt akartam jelezni, hogy egy kreacionista mondhatja ezt: a teremtője rakta úgy össze, hogy Te azt hidd, egymásból evolválódtak.<br />
+<br />
+igen, a nautilus szemét biztos erre is felhozta példaként amit idéztél, de amiről én beszélek az konkrétan egy olyan rész, amikor ellenérveket hoz. annál a résznél, amikor azt magyarázza, miként működik a szelekció (véletlen mutációk, amelyik előnyös az túlél és szaporodik és elterjed a populációban) itt azzal érvel az evolúció ellen, hogy ilyen iszonyatosan sok idő alatt lehetetlen az, hogy ne történjen meg a szemlencse megjelenése - és igaza van :) ezért cikik az élő kövületek.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4670"></A>51. Aamin&#12373;&#12435; -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4647#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-15 17:41:27</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_530.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"De ezt az önmásoló molekula-témát akkor "hiszem ha látom". de komolyan, örülnék ha legalább egyetlen egyet találnának vagy összeraknának végre laborban."<br />
+<br />
+Ez a kémiai evolúció tárgykörébe tartozik. A replikáció kémiai alapja az autokatalízis, ami mindíg replikációhoz vezet. Az autokatalízis során valamely kémiai reakció végterméke maga a katalizátor. A glikoaldehided tartják a legegyszerűbb önreplikáló molekulának, ami még érdekesebb, hogy a glikolaldehidet Tejútrendszerünk középpontjához közel, egy óriási gázfelh&#245;ben sikerült kimutatni, az arizonai Kitt Peak Obszervatórium 12 méteres rádiótávcsövével. <i>"A glikolaldehid szénb&#245;l, oxigénb&#245;l és hidrogénb&#245;l álló, nyolcatomos molekula, amely más molekulákkal kölcsönhatva bonyolultabb cukrokat, (a gyümölcsökben lev&#245;) glükózt és ribózt hozhat létre. A ribóz a nukleinsavak közül az RNS-nek fontos épít&#245;eleme. A glikolaldehid, amely az asztali cukor egyszer&#251;bb unokatestvére, pontosan ugyanazokat az atomokat tartalmazza, csak más molekuláris szerkezetben, mint a metil-formát és az ecetsav, amelyeket korábban már felfedeztek csillagközi felh&#245;kben.<br />
+A cukormolekulákat egy t&#245;lünk mintegy 26 ezer fényévre, galaxisunk középpontjához közel fekv&#245; nagy por- és gázfelh&#245;ben fedezték fel. Az ilyen, sokszor több fényév átmér&#245;j&#251; gázfelh&#245;k anyagából születnek az új csillagok. Bár a Földön megszokott s&#251;r&#251;ségekhez képest a csillagközi felh&#245;k anyaga nagyon ritka, mégis bonyolult kémiai reakciók mennek végbe bennük több száz, ezer vagy millió éven keresztül. Eddig több mint százhúszféle molekulát fedeztek fel ilyen felh&#245;kben. Legtöbbjük kevés atomból áll, csak kevés tartalmaz nyolcat, vagy még annál is többet. &#8222;A glikolaldehid felbukkanása egy ilyen felh&#245;ben azt jelenti, hogy a molekula még ennyire gyér, ritka gázban is képes kialakulni &#8211; mondta Hollis. &#8211; Egyel&#245;re még nem értjük, hogyan mehet ez végbe. A kérdés tisztázásához csillagászok és elméleti kémikusok szoros együttm&#251;ködése, további csillagászati megfigyelések és elméleti kémiai számítások szükségesek. Úgy t&#251;nik, a csillagközi felh&#245;kben végbemen&#245; kémiai folyamatok sokkal gazdagabbak és eredményesebbek, mint eddig gondoltuk.&#8221;</i><br />
+<br />
+Persze rengeteg további felmerülő kérdés van, de tudjuk, hogy létrejöhettek önreplikálódó molekulák, és ha persze szemmel látható bizonyítékot akarsz, ld. autokatalízis. Még kémiában tanulhattál róla.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4664"></A>50. Aamin&#12373;&#12435; -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4644#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-15 17:21:46</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_530.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"..lehet hogy félreértesz, én nem akarok mindenáron full evo-ellenes lenni"<br />
+<br />
+Rendben, bocs. Tényleg félreértettelek.<br />
+<br />
+A <b>legós kutyus</b> példája olyan fogós*, mint William Paley teológus példája, aki kétszáz évvel ezelőtt úgy érvelt a Teremtő mellett, hogy a következő vetette fel: 'Ha a pusztában találnánk egy órát, akkor biztosak volnánk benne, hogy kell lennie valahol egy órásmesternek, mert egy olyan bonyolult szerkezet, mint egy óra, nem jöhetett volna létre csupán a természet vak erői által'<br />
+Nagyon fogós kérdés, Dawkins maga egy egész könyvet szentelt a magyarázatnak (a könyv címe A Vak Órásmester). Ha még nem olvastad, ajánlom.<br />
+<br />
+*<i> De a példa rossz. Nyílván te azt akartad megmutatni ezzel a példával, hogy a két dolog azonos építőanyagból áll, mégsem egymásból evolválódtak. Az élőlények közti hasonlóság nem csupán abból áll, hogy azonos építőanyagból épülnek fel, leginkább a felépítés az ami hasonlóvá teszi őket más élőlényekhez. Ez olyan, mintha lenne egy legó kutyus, és egy legó kutyu antennával a fején, ebben az esetben már joggal feltételezhetnénk, hogy az antennával rendelkező legókutyus a legókutyusból evolválódott (bár ezen példa az egyszerűsége miatt azt sem zárja ki, hogy egymástól függetlenül jöttek létre), és mindkettő a kulturális evolúció terméke.</i><br />
+<br />
+<b>Konkrét példa</b><br />
+<br />
+Itt némi csúsztatás van. Dawkins arra a feltevésre, miszerint: <i>'Az olyan összetett szervek, mint a szem csak teljes egészükben működhetnek, nem jöhettek létre apránként. Bármely részük eltávolítása használhatatlanná teszi az egész szervet.'</i> válaszolta azt, hogy: <i>a mai élőlények között is számtalan olyan fényérzékeny szervet találunk, amelyek messze nem olyan tökéletesek, mint a gerincesek szeme, mégis láthatóan az adott állatok hasznára válnak. Ezekből a szervekből egy sorozatot is összeállíthatunk, amely ugyan ez esetben nem jelent valódi fejlődési sort, de reprezentálja e szervek fokozódó bonyolultságát az egyszerű fényérzékeny pigmentsejttől kezdve a kehelyszemen és a Nautilus lencse nélküli szemén keresztül a mi hólyagszemünkig. Az ilyen fejlődési sorokat más szervek esetén esetleg nehéz, vagy lehetetlen reprodukálni, de ez minden bizonnyal csak képzelőerőnk hiányára vezethető vissza.</i><br />
+<br />
+Egyszóval Dawkins nem arról ír, hogy a Nautilus-nak lehetne lencséje, mert azzal jobban látna, hanem arról, hogy a fejlődés fokozatosan is végbemehetett, az olyan összetett szerv, mint a szem apránként jött létre.<br />
+<br />
+<b>Szimuláció</b><br />
+<br />
+<i>Bár Dawkins mindent megtesz, hogy felfogjuk az evolúció rendelkezésére álló idő hatalmas voltát, az emberben mindig motoszkál az érzés, hogy talán még ez az idő sem elég. A múlt évtized közepén D.-E. Nilsson és S. Pelger egy számítógépes modellt dolgoztak ki, amellyel szimulálni tudták, hogy egy eredetileg csak három sejtrétegből álló fényérzékeny szemfoltból egyszerű mutációk és szelekció segítségével hány generáció alatt alakulhat ki egy komplex szem. Bár minden paramétert pesszimistán határoztak meg, a szimuláció 350.000 generáció alatt tökéletes halszemet hozott létre. Ez kevesebb, mint fél millió évnek felel meg</i><br />
+<br />
+Igen szimuláció.  A szimulációkat épp erre találták ki, modell szintjén utánozza a jelenségeket.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4647"></A>49. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4632#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-15 16:22:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">értem én a mutációt, szelekciót, az egésznek a feltételezett működését, és logikusnak is találom (és pl az is megvan hogy vasnál nehezebb elemek a szupernova robbanáskor keletkeznek), de ezt az önmásoló molekula-témát akkor "hiszem ha látom". de komolyan, örülnék ha legalább egyetlen egyet találnának vagy összeraknának végre laborban. nem biorobotot, hanem molekulát, ahogy állítólag indult. addig bizonyítatlan elmélet.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment4644"></A>48. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=91&id=4626#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-15 16:11:46</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">lehet hogy félreértesz, én nem akarok mindenáron full evo-ellenes lenni, én csak annyit mondok, hogy egyáltalán nem érzem olyan meggyőzőnek a mellette felsorakoztatott érveket, mint ahogyan azt el szeretnék adni. kedvenceim a "régen a Földet is laposnak hitték "-féle nagyképűsködő élcek.<br />
+<br />
+de ha képviselnem kellene az ellenoldalt, ilyeneket válaszolnék:<br />
+-a fosszíliák semmit sem bizonyítanak, olyan kevesen vannak. erről is asszem pont Dawkins írt az egyik könyvben nagyon magyarázkodásgyanúsan. fogadkozott hogy ha sokkal több lelet lenne, akkor azzal bizonyisten bizonyítani lehetne. dehát sajnos nincs.<br />
+-anatómia, genetika, stb: pl akár a jóisten is intézhette így, mondjuk ha építek legoból egy kutyust:<br />
+<B><a href="//www.h6.dion.ne.jp/~add3/LOVELOG_IMG/lego-dog.jpg" target="_new" style="color: #000000;">http://www.h6.dion.ne.jp/~add3/LOVELOG_IMG/lego-dog.jpg</a></B><br />
+aztán Csubakkát:<br />
+<B><a href="//hollywoodprop.com/LEGO%20Vader%20and%20Chewie%2002.jpg" target="_new" style="color: #000000;">http://hollywoodprop.com/LEGO%20Vader%20and%20Chewie%2002.jpg</a></B><br />
+akkor Csubakka kötelezően ebből a kutyából evolvált? :)<br />
+-szimulációk: hurrá. ez bizonyíték?<br />
+<br />
+egy konkrét probléma:<br />
+-az élő kövületek. amikor kifognak az óceánból ezt-azt, amiket százmillió éves leletekből ismerünk, és _rohattul_ nem változott, nem alkalmazkodott, nem fejlődött tovább. Dawkins egyik elkent példája is ilyen, amikor egy ilyen lény szeméről ír, aminek nincs lencséje, pedig azzal óriási előnyre tenne szert.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=91&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=91&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=91&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=91&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=91&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=91&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=91&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

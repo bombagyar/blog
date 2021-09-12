@@ -1,0 +1,523 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2228#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Az Egyesült Afrikai Hold-expedíció";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2228#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Az Egyesült Afrikai Hold-expedíció<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 május 22. 11:11:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2228.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><span style="font-style: italic;">Múlt heti rádióműsorunkban idéztük Yoweri Musevini ugandai elnök szavait, amelyben a kelet-afrikai államok egyesítését követelte egy afrikai holdprogram megindításának céljából. Arra kértük olvasóinkat, próbálják elképzelni, milyen is lesz, amikor a fekák a Holdra mennek. Az alábbi történetet Gizi fedőnevű gyárlakónk küldte. Két grafikai megoldás is született. Az elsőt ismeretlen olvasónk hozta papíron - máskor mondd a neved is, így nem tudjuk kiírni! - a másodikat pedig Gerysama, aki szokás szerint képregényt rajzolt. Előbbit illusztrációként&nbsp; a szöveg közepén, utóbbit a végén találhatjátok.</span><br><br><hr style="width: 100%; height: 2px;"><br><div style="text-align: center;"><span style="font-weight: bold;">EGYESÜLT AFRIKAI EXPEDÍCIÓ</span><br style="font-weight: bold;"></div><span style="font-weight: bold;">
+</span><div style="text-align: center;">A Harmadik Világ visszavág<br></div><div style="text-align: center;">
+szájensz fiksün<br></div>
+<br>
+2009. július 4., Ungabunga Központ, déli 12 óra 03 perc.<br>
+<br>
+Perzselő nyári nap volt, az égbolton felhő nyoma nem látszott. A forrón
+hullámzó levegő délibábot vetített az őrtorony sarkába a
+szögesdrótkerítés mentén.<br><br>
+- Banánfa &#8211; gondolta Csimpi a barakk ablakából bámulva.<br>
+- Holló-kosz &#8211; gondolta Barakk Osama, de aztán rögtön gyanút fogott.<br>
+- Úúú-állomás &#8211; örvendezett Fekete Dákó vigyorogva.<br>
+- Idióták &#8211; gondolta a fegyveres vadőr, majd cigarettát vett elő és rágyújtott. Napszemüvege himmleresen csillogott.<br>
+<br>Zöld katonai teherautó hajtott el háta mögött, és ment a szigorúan
+őrzött Belső Körzet felé. Aztán egy másik teherautó lassított a
+vadőrhöz érve. Az lassan hátrafordult, és faarccal a majomguánó-képű
+teherautó-vezetőre meredt.<br><br>
+- Ungabunga, hungalunga, bla-blabla &#8211; magyarázta az ugandai az ablakon
+kihajolva, idétlen gesztikuláció kíséretében. Aztán a gázpedálra
+taposott, és a zöld járgány mély nyomot vágva a homokba, berregve
+továbbindult abba az irányba, amerre az előző is ment.<br><br>A vadőr nem kapkodott. Szép nyugodtan elszívta cigijét, és egyenletes léptekkel a barakkban őrzöttekhez ment eligazítást adni.<br>
+<br>- Valagutu legénysége! - kezdett bele. &#8211; Ungabunga Központ hamarosan
+indítja űrhajójukat. Egy órájuk van, hogy összepakolják legszükségesebb
+dolgaikat, felöltözzenek, és 13:00-ra Valagutun akarom magukat tudni.
+Világos? (Heves fejrázás.) Ne feledjék: fontos küldetés a maguké!
+Afrikai polgárként elsőként léphetnek majd a Hold felszínére, ami kis
+lépés lesz maguknak, de óriási lépés az Egyesült Afrikai Expedíciónak.
+Uraim! Afrika szeme magukon. Jó utat és sok sikert! &#8211; Tisztelgett, majd
+hátraarcot csinált, és elvonult. A három holdutasjelölt csorgó nyállal
+nézte távozását.<br><br>
+Minden olyan hirtelen történt. Mogyorónyi agyuknak alig volt ideje
+felfogni az eseményeket. Összepakolták legszükségesebb felszerelésüket,
+és elindultak a Belső Körzetbe. Helikoptereket láttak a fejük felett
+repülni.<br><br>
+- Höhö, ú-állomás! &#8211; nevetett Dákó önfeledten.<br>
+- Óriásszúnyog &#8211; gondolta Csimpi és megvakarta a hónalját.<br>
+- Atomrakétapajzs-telepítő &#8211; töprengett Osama Jewbaka-jelmezében.<br><br>
+A Belső Körzetbe egy széles folyosó vezetett, mindenfelé emberek
+sürögtek-forogtak. Odaérve alig volt idejük körülnézni, a vadőr tüstént
+mellettük termett.<br><br>
+- Erre! &#8211; utasította őket, és határozott léptekkel elindult a
+rakétakilövő-állomás felé. Ott két ember várta őket, egy a vadőrnél
+alacsonyabb, fekete hajú férfi és egy magas, szőke, kék szemű, északi
+típusú újonc katona.<br>
+- Fritzmann. &#8211; nyújtott kezet a vadőrnek a fekete hajú. Semmilyen
+érzelem nem látszott az arcán. Komoly volt. Nem úgy, mint társa, aki
+vidáman, széles mosoly kíséretében üdvözölte őket.<br>
+- Privjet, továrisi! Minyá závút Igor! Ócsiny prijátnó!<br><br>
+Még Csimpinek is integetett.<br>
+<br><A NAME="FNAODQE"><A HREF="./index.php?post=2228#FNAODQE" ONCLICK="openbigwindow('resources/pictures/tomcat_nigger_holdprogram.jpg', 800, 592); return true;"><img bigpic="resources/pictures/tomcat_nigger_holdprogram.jpg" src="./resources/pictures/tomcat_nigger_holdprogram_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>- Csimpánz! &#8211; mutatott rá Fritzmann Csimpire. &#8211; Mostantól neved Majom-1!
+Jewbaka! Mostantól neved Majom-2! Te pedig &#8211; nézett végig Fekete Dákón &#8211;
+Nigger! Fedélzetre! És ne feledjétek: a Hold is néha banán alakú! &#8211;
+ezzel elrobogott.<br>
+- Dászvidánye! &#8211; integetett az orosz és ő is elment. Magukra öltötték
+űröltözéküket (ezt a szót próbálja meg Pákó kimondani, hehehe &#8211; a
+szerk.) és beültek az űrhajóba.<br>
+- Visszaszámlálás: 10, 9, 8&#8230; 3, 2, 1, kilövés!<br><br>
+Az űrhajó nagyot rázkódott és a kondenzsugár a magasba lökte. Ablakából
+egyre kisebbnek látszottak a Körzet emberei, az Ungabunga, majd az
+egész város. Nem sokkal később már az éterben lebegtek.<br>
+<br>- Gyonyorú! &#8211; hatódott meg Fekete Dákó. &#8211; Ú-állomás, ú-állomás!<br>
+<br>Recsegés hallatszott, aztán Fritzmann hangja a hangszóróból:<br>
+<br>- Ungabunga Központ jelentkezik.<br>
+- Valagutu ú-állomás! &#8211; makogta Nigger.<br>
+- Ez nem űrállomás, te idióta! &#8211; szólt közbe Csimpi.<br>
+- Majom-1! Mi a feladata?<br>
+- Majom-1, jelentem, ellenőrizni a gombokat egytől harminchétig.<br>
+- Helyes. Majom-2! Mi a feladata?<br>
+- Jelentem, ellenőrizni a gombokat harminchéttől ötvenhétig.<br>
+- Nagyszerű! Nigger, mi a feladata?<br>
+- Jelentem, majmokat etetni, gombokhoz nem nyúlni! Csak azt nem értem, ha nem nyúlok semmihez, ki fogja kormányozni az űrhajót?<br>
+- Ne aggódjon! Az nem a maga hatásköre. A robotpilóta irányítja a gépet
+a Hold felé, és biztosítja a komplikációmentes landolást. Rövid időn
+belül ott lesznek. Kitartás! Különleges különítményeink további
+információval fognak szolgálni, ha odaértek. Vége.<br>
+- Ha odaérünk? &#8211; csodálkozott Csimpi.<br>
+- Úrlények, úrlények! &#8211; örvendezett Dákó.<br>
+- Szerintem&#8230; űrnácik! &#8211; fogott gyanút Osama. &#8211; Biztos haláltáborokat
+üzemeltetnek&#8230; a földönkívüliekkel együtt&#8230; a Holdon! Elgázosítanak,
+elszappanosítanak, dunábalőnek, körülmetélnek, Úristen, mi lesz
+velünk?! &#8211; pánikolt Barakk.<br>
+- Majd igyekszünk feltűnésmentesen elvegyülni közöttük &#8211; nyugtatta Csimpi.<br><br>
+Ennyiben maradtak. Valagutu lassan leereszkedett a Hold felszínére. Az utasok kiszálltak.<br>
+<br>- Konnyebb vagyok, mint négy éve! Múkodott a Sóbert-diéta! &#8211; fedezte fel Nigger a csökkent gravitációs hatást.<br>
+<br>Egy tányérsapkás tiszt lépett hozzájuk.<br>
+<br>- Majom, Jewbaka, Nigger! Kövessenek! Parancs!<br>
+- Heil Hiller! &#8211; jópofiskodott Fekete Dákó egy fegyelmezett karlendítés mellett.<br><br>
+Egy nagy kapun mentek keresztül, melyen a következő felirat volt olvasható: &#8222;A szappan tisztává tesz&#8221;.<br>
+<br>- Mi az a szappan? &#8211; értetlenkednek szinkronban Majom2 és Nigger.<br>
+- Banán &#8211; nyilvánított véleményt Majom1.<br>
+- Tényleg! &#8211; jutott Nigger eszébe. &#8211; A Hold akkor most banán alakú?<br>
+<br>A többiek úgy tettek, mintha meg se hallanák. De Dákót ez egyáltalán nem zavarta.<br>
+<br>- És mi az az anyag, amiből áll? Má&#8217;mint a Hold! Miből van? Homok? Vagy
+mi ez a szurke? &#8211; lehajolt és tanulmányozásba vette a holdkőzetet.<br>
+- Sajtból van a Hooold, sajtból van a Hooold&#8230; - zendített rá Majom1.<br>
+- De hát ez nem is sajt! &#8211; értetlenkedett Nigger, és megpróbálta
+megnyalni, de az űrhajós sisak megakadályozta ebben. &#8211; Mi van, ha
+tényleg sajtból van? Vagy banánból? &#8211; elmélkedett.<br>
+- Te, szerintem ez holló-hamu! &#8211; vélte Barakk Osama. &#8211; Színe és állaga
+alapján&#8230; - lábával kicsit megkotorta. &#8211; Igen. Alighanem hamu lesz.
+Pfúj! Holló-kosz! &#8211; fintorgott.<br>
+- Ezek itt a Magas Szőkék szálláshelyei &#8211; törte meg a beszélgetést
+vezetőjük, és egy természetellenesen meredő, furcsa alakú objektumra
+mutatott. Bejáratánál egy alakot láttak fekete egyenruhában, melynek
+ujján villámalakú jelek voltak. A tányérsapka alól nagy, sápadtfehér
+arc bámult rájuk. Furcsa látvány volt. Hatalmas, fekete szemei alatt
+két rés látszott, nyilvánvalóan azok szolgáltak légzőnyílás gyanánt.
+Kicsi, ajaktalan szájából valami hosszúkás dolog lógott, és füstölt a
+vége.<br>
+- Hogy nem fulladnak meg? Van itt levegő? &#8211; kérdezte Dákó. Hogy ezt
+megállapítsa, leemelte sisakját, és azon nyomban kőkeménnyé fagyott. A
+többiek ránéztek.<br>
+- Ez meghód! &#8211; állapította meg Csimpi és tapsolt a feje felett.<br>
+- Vidd az égetőbe! &#8211; adta ki a parancsot vezetőjük az egyik kapuőrnek.<br>
+- Jawohl, Herr Orbángruppenführer! &#8211; mondta, azzal elvonszolta a testet.<br>
+<br>Barakk ebből semmit nem vett észre, azon gondolkodott, mi lehet az a hosszúkás tárgy annak a lénynek a szájában.<br>
+<br>- Biztos azzal gyújtják be a kemencét &#8211; tűnődött.<br>
+<br>Egy kerítés mellett haladtak el, melyen tábla volt, felirattal:
+Nagyfeszültség! A kerítés érintése hamvasztást von maga után!
+Túloldalán folyadékkal teli tartályok sorakoztak hosszasan,
+mindegyikben úszott egy-egy szürke, ufó-fejű massza.<br>
+<br>- Az ott Mengele doktor rabszolgatenyészete &#8211; magyarázta a tányérsapkás. Aztán vállat vont. &#8211; Valakinek dolgoznia is kell.<br>
+- 6 millió! &#8211; gondolta Csimpi.<br>
+- Űrnácik! &#8211; gondolta Barakk Osama.<br>
+- Ikrek! &#8211; gondolta Mengele doktor, mikor meglátta őket laboratóriumából kifelé jövet. &#8211; Horst! &#8211; kiabált oda kollégájának.<br>
+- Heil! &#8211; köszöntötte amaz.<br>
+- Ikrek, ugye?<br>
+- Annak tűnnek &#8211; bólintott Horst.<br>
+- A nevem Mengele. Jozef Mengele &#8211; nyújtott kezet.<br>
+- A kísérleti alanyai csak Onkel Mengelének szólítják &#8211; magyarázta Horst.<br>
+- Banán &#8211; mutatkozott be Csimpi is, és kezet rázott vele.<br>
+- Persze, van az is! &#8211; bólogatott a doktor, és vigyorgott tovább.
+Barakk Osama elővigyázatosabb volt. Ő nem akart kezet fogni vele.<br>
+- Hallottam már magáról &#8211; szólt Osama, és nem is sejtette, hogy ebben a pillanatban milyen közel állt a lebukáshoz.<br>
+- Valóban? &#8211; lepődött meg Mengele, ezt onnan lehetett tudni, hogy
+szemöldöke a homloka tetejére szaladt, de még mindig vigyorgott. Barakk
+nem válaszolt. Félt. Már így is túl sokat árult el. Jozef azonban nagy
+megkönnyebbülésére nem faggatta, hanem bekísérte őket a 101-es barakkba.<br>
+- Jó ebben a barakkban. Van levegő. Leöltözhettek. &#8211; mondta a
+Halálangyal, közben két banánt vett elő, egyiket Csimpinek, a másikat
+Osamának nyújtotta.<br>
+- Jó étvágyat! &#8211; vigyora szélesedett, ahogy mondta.<br>
+- Finom &#8211; gondolta Jewbaka, banánját a pofazacskójába tömve.<br><br>Mengele megvizsgálta, megmérte Csimpit, majd elkapta a karját és egy
+zöld folyadékkal teli injekciós tűt döfött bele. Osama mindezt látva
+megrémült, eszeveszetten kivágta az ajtót, és rohant az űrhajó felé a
+menekülés reményében.<br>
+<br>- Így ni. Meg is volnánk. &#8211; húzta vigyorra száját elégedetten Mengele,
+és egy újabb banánt nyújtott Csimpi felé, de az mozdulatlan maradt.<br>
+- Nofene. Hát nem meghalt? Ez esetben sajnos az ikertestvére sem
+maradhat életben, különben nem sikerülne a kísérlet. <br><br>Hirtelen Horst
+rontott be az ajtón lihegve.<br>
+<br>- Láttam elrohanni Jewbakát és követtem. Már az űrhajó spájzában van! &#8211;
+jelentette főnökének. Mengele most nem vigyorgott, csak lassan
+bólintott, felállt a székről, melyen ült, és szó nélkül követte
+Horst-t. Az űrhajóhoz érve Mengele megkérdezte:<br>
+- Biztos, hogy bent van?<br>
+- Egész biztos. A saját három szememmel láttam.<br>
+<br>Jozef bólintott. Szája gonosz vigyorra húzódott.<br>
+<br>- Akkor nyitom!<br>
+<br><div style="text-align: center;">* * *<br></div>
+<br>Barakk nagyon félt.<br><br>
+- Szappan leszek, szappan leszek! &#8211; pánikolt. &#8211; Vagy&#8230; vagy&#8230;! &#8211;
+Meghallotta a hangját. Ahogy engedik rá AZT! <br>- Lámpabúra!<br><br>Egyre
+hangosabb lett.<br><br>- Gáz? Gáz! Bélgáz! &#8211; üvöltötte teli torokból. -
+Elfingtam magam!<br><br>Teljesen kétségbe esett.<br><br>- Csípi a szemem, jaj! -
+kiáltotta. - Engedjenek kiii!<br><br>Érezte az ammónia szúrós szagát.
+Kaparta a torkát. Mintha fojtogatnák.<br><br>- Nem kapok levegőt! - zihálta. -
+Nem! Ne! Neeeee!<br><br>Sikolya hörgéssé változott.<br><br>- Nyitják! Nyitják&#8230;!
+Nyitják már a...<br><br>Minden elsötétült. Megelégedett boldogság lett úrrá
+rajta. Testét kívülről szemlélte. Megállapította, hogy hülyén nézett ki
+Csubakka-jelmezben. Örült is, hogy vége van. Felfelé emelkedett. Egyre
+magasabbra. Látta. Látta, ahogy Horst és Mengele kiszedik testét a
+spájzból, és elcipelik oda. ODA! Csattognak a bakancsok. És&#8230; és&#8230; és&#8230;
+fehér (!) fűző van bennük! Hirtelen minden világos lett.<br><br>- Neeem! Nem
+csinálhatnak szappant a testemből! Sem napernyőt! Nem engedem!
+Eresszenek el! Eresszenek! &#8211; lihegte, de már nem hallották. &#8211; Hova
+viszik a testem? &#8211; nyökögte egyre magasabbra és magasabbra emelkedve,
+mígnem már nem látott semmit, csak a csillagok szikrázását, és végül... a
+végtelen sötétséget.<br>
+<br><div style="text-align: center;">
+* * *<br></div>
+<br>
+- Új árucikkek! &#8211; fordult be Mengele vigyorogva a Magas Szőkék
+szálláshelyére, egy dobozt tartva a kezében. Társai köré gyűltek, és
+várták, miféle dolgokat szed ki belőle. Mengele elégedetten vigyorgott,
+és felbontotta a dobozt. Belenyúlt.<br><br>
+- Ahá! Dohányzacskó! &#8211; mutatta fel diadalmasan az első darabot, ami a
+kezébe került. &#8211; Napernyő! &#8211; Taps. És sorolta: - Lámpabúra, szandál,
+papucs, cipő, szappan&#8230;<br>
+<br>
+Bizony, bekövetkezett az elkerülhetetlen. Barakk Osama holdi maradványaival a Magas Szőkék mosták testüket. Borzalmas.<br><br>
+És a kapu gőgösen, makacsul tovább hirdette: <span style="font-style: italic;">"A szappan tisztává tesz!"</span><br>
+<br><div style="text-align: center;">
+<span style="font-weight: bold;">&#1050;&#1086;&#1085;&#1077;&#1094;.</span><br style="font-weight: bold;"></div><br><hr style="width: 100%; height: 2px;"><span style="font-style: italic;"></span><br><div style="text-align: center;"><A NAME="FMZOYAW"><A HREF="./index.php?post=2228#FMZOYAW" ONCLICK="openbigwindow('resources/pictures/tomcat_niggerek_a_holdon_1.jpg', 850, 1182); return true;"><img bigpic="resources/pictures/tomcat_niggerek_a_holdon_1.jpg" src="./resources/pictures/tomcat_niggerek_a_holdon_1_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="BDULRBV"><A HREF="./index.php?post=2228#BDULRBV" ONCLICK="openbigwindow('resources/pictures/tomcat_niggerek_a_holdon_2.jpg', 575, 800); return true;"><img bigpic="resources/pictures/tomcat_niggerek_a_holdon_2.jpg" src="./resources/pictures/tomcat_niggerek_a_holdon_2_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br></div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-05-22&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2228&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2228&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2228&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2228&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment170058"></A>28. PhoenixSpirit</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-25 00:51:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_341.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Miért pont 101-es barakk ? :)<br />
+<br />
+Orwell utánérzés ?<br />
+<br />
+Egyébként nagyon komoly. :)))</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169951"></A>27. Gomulka Béla</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2228&id=169943#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-24 11:04:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6552.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Még az is?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169944"></A>26. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2228&id=169633#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-24 10:18:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szia dobozos!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169943"></A>25. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-24 10:17:04</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Fincsi ahogy a nácik űrbéli terveire utal a munka. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169940"></A>24. Gomulka Béla</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2228&id=169924#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-24 08:37:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6552.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Én is furcsán érzem magam! <br />
+<br />
+(hehe)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169924"></A>23. Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2228&id=169633#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-24 00:08:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><br />
+  14. Gomulka Béla 2009-05-22 12:46:19    <br />
+ <br />
+!rtad:  <br />
+<br />
+" Hol itt a szájensz. Hol itt a fiksn? Ez az írás az inexes fingóverseny színvonalán van. Nem kellett volna." <br />
+<br />
+Na tessék ! Végre valami tőled amivel 100%-ban egyet értek.<br />
+ <br />
+ </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169812"></A>22. <A HREF="mailto:werrwolf@freemail.hu" STYLE="color: #000000">werrwolf</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-23 00:07:52</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3525.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Feketék Fehéren, ha az összes ott lenne, nem győznénk nézni a holdfogyatkozásokat! XD<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169743"></A><FONT COLOR="#FF0000">21. </FONT>Chack</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2228&id=169723#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-22 19:36:57</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169729"></A>20. Shirin</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-22 18:14:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2731.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B><a href="//i44.tinypic.com/121bz9v.jpg" target="_new" style="color: #000000;">http://i44.tinypic.com/121bz9v.jpg</a></B> (most csak ennyire tellett) </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169723"></A>19. warhamster (40.000) -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-22 17:17:16</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_250.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">trolloket a holdra! jííí.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2228&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2228&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2228&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2228&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

@@ -1,0 +1,424 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2108#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Egy karmikus tragédia: József Attila sorsa";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2108#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Egy karmikus tragédia: József Attila sorsa<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 április 11. 23:06:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2108.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><span style="font-style: italic;"></span>1905 április 11-én egy újszülött kisfiú sírt fel Budapesten, a ferencvárosi Gát utca 3. szám alatt. Egyszerű kétkezi munkáscsalád gyermeke, aki a keresztségben az Attila nevet kapta. Felnőtt korára a XX. század egyik legnagyobb magyar költőjévé lett, születésnapja ma a magyar költészet napja. Rövid, és ahogy mindig hozzá szokták tenni, tragikus életpályája ma kötelező általános iskolai tananyag. Azt azonban kevés tanár ismeri fel, valójában mire tanít bennünket József Attila tragikus sorsa. Mert az igaz tanítást nem versei, hanem ő maga&nbsp; és élete hordozza.<br><br>Minden nehézség, amit a Földön átélünk, próbatétel. Legyen akár csak apró kellemetlenség, mint a szőnyegre ömlött kávé, vagy akár hatalmas tragédia, szeretett hozzátartozónk halála, ezek mind anyagi, és nem lelki vonatkozású dolgok. A Földön minden percet azért élünk, hogy Isten nagyságát felfogjuk. Minden nehézség, de minden siker is azért ér bennünket, hogy megértsünk egy magasabb összefüggést, ami életen és anyagon túlmutat. Azok, akik tagadják Istent, vakon botladoznak az élet útvesztőjében, szidják az akadályokat, és úgy hiszik, a világ tökéletlen, hisz tele van akadályokkal. De aki leveszi szeméről az ostoba ateizmus ellenzőjét, megérti, hogy ezek az akadályok valójában útjelzők. Minden érthető és egyértelmű a világban, csak értelmezni kell az útjelzők üzeneteit. Aki erre képes, hamar rájön arra is, hogy nem csak akadályok, de&nbsp; más segítő jelzések is vannak mindenfelé, éppen ott és éppen úgy, ahogyan neki szüksége van rá. Végső soron pedig az egész világ valóban tökéletes, és szinte ergonomikusan az ember életéhez simul. Nincs értelme a falakat ledönteni, mert azokat egy magasabb akarat helyezte oda, és ha átlépünk rajtuk, rossz irányba haladunk.<br><br>József Attila hatalmas keggyel született. Verseket tudott írni, csodaszép, daloló sorokat, amelyekkel könnyen tehetett volna Isten kedvére, dicsőségére. Minden embernek kötelessége felfedezni magában azt a tehetséget, amivel Istent szolgálhatja. Mindenki legalább egy dologhoz jó képességet kapott. Van, aki szépen ír, van, aki nagyon türelmes, van, aki pontosan dolgozik, van, akinek keze van az állatokhoz, s van, aki tisztességgel dolgozik és neveli családját. Ezek mind lelki képességek. Teljesen mindegy, mivel tölti az ember az életét, a lényeg az, hogy ismerje fel, hogyan képes tehetségével Isten rendjének szolgálatára, tenni azért, hogy ez a rend fennmaradjon. József Attila szokatlan próba elé került. Nagy-nagy tehetséget kapott a versíráshoz, ám szegény családban kellett megszületnie, tisztességtelen apától, egy olyan korban, amelyben magát nemzetét is halálos veszély fenyegette. Körülötte felborulni látszott az a bizonyos rend. Ebben a helyzetben felismerni Istent, és neki ajánlani szolgálatát, nehéz feladat.<br><br>A Bhagavad-Gítában, India "Bibliájában" Krsna, azaz Isten elmagyarázza barátjának, a szent harcos Arjunának, hogy az isteni akarat mindig, mindenképpen teljesül. Az ember szabad akarata, döntése annyi, hogy részt vesz-e az isteni tervben vagy sem. Ha nem vesz részt, úgy is jó. Akkor is minden rendben lesz, legfeljebb ő&nbsp; most nem lép egy fokot a lelki fejlődés létráján, és nem élvezheti tette gyümölcsét. De akkor is az lesz a vége, amit Isten eltervezett.<br><br>József Attila előtt is ilyen választás állt. Születésekor eldöntetett, hogy példa lesz a jövő generációknak, nagy költő, akit versei révén milliók ismernek majd, és az iskolákban tanítják életpályáját. Azt kellett megmutatnia, hogy aki Istenben bízik, felülemelkedhet az anyagi világ béklyóin, s boldoggá válik. Rajta múlott, miféle híre lesz, milyen módon mutatja majd ezt a példát. Vajon a tragédia példája lesz, az Istent megtagadva elbukó emberé, vagy ellenkezőleg, az Istenből erőt merítő, s a földi, anyagi világon győzedelmeskedőé?<br><br>József Attila elbukott a próbán. Nem ismerte fel Istent. Nem értette meg helyét a világban még anyagi értelemben sem, nemhogy lelkileg. Gyönyörű verseivel nem tudott mit kezdeni. Értette, hogy valamiért csodálatos dalok születnek a fejében, de nem értette meg, hogy az elméjét egyre ostromló őrület egyetlen ellenszere a tehetsége. Emberekben, anyagi személyekben kereste boldogságát, eleinte édesanyjában (egy pszichiátere szerint vérfertőző kapcsolatban élt vele), majd nőkben, szerelemben. Többször próbálta elpusztítani magát, nem ismerve fel a lélek és a test különbözőségét, az öngyilkosság értelmetlenségét. Élete vége felé sátáni, Istent nyíltan tagadó, az isteni rendet felforgatni próbáló körökhöz csatlakozott, így lett az illegális kommunista párt tagja. Végül, a sors fintora, hogy véletlen baleset végzett vele, ám ezt tévesen mind a mai napig öngyilkosságnak hiszi szinte mindenki.<br><br>József Attila versei csupán önmagáról szólnak. Isteni mélységű és ihletésű versek, de nem adnak semmit a léleknek. Nincs meg benne az a mély, anyagi kötődéseken túli érték, amit kortársai közül például Dsida Jenő, vagy napjainkból Kovács Ákos vagy az Ismerős Arcok dalai képesek felmutatni. Művein érezni, hogy itt valami nagy, nagyon nagy dolog lappang, benne van az az anyagon túli rezgés, ami a lelki alkotások sajátja, de hiányzik maga a megértés, Isten felismerésének aha-élménye.<br><br>Lelki tudás kell ahhoz, hogy József Attila jelenségét értékelni tudjuk. Anyagi vágyak szemüvegén át, anyagi értékeken keresztül vizsgálva csupán jó versek, és ennyi. Ám ha magát a költőt nézzük, és lelki tudáson át próbáljuk megérteni, tisztává válik, miért élt ez a lélek a József Attila nevű testben harminckét évig. <br><br>Azért, hogy nekünk ne kelljen úgy eltévelyednünk, mint neki!<br><br></div></DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-04-11&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2108&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2108&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2108&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2108&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2108&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2108&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2108&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2108&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2108&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2108&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2108&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164557"></A>93. Egy humanista</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-04-17 00:20:53</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tomcat!<br />
+<br />
+Szerintem tévedsz József Attilát illetően. Az ateizmusról pedig igen keveset tudsz, viszont adod némi jelét annak, hogy osztod a Krisna tudatúak közös gyűlöletét velünk szemben. <br />
+<br />
+Had idézzek kettőt:<br />
+<br />
+Bhagavad-Gita<br />
+IX. A legbizalmasabb tudás<br />
+(11)Az ostobák kigúnyolnak, mikor alászállok emberi alakomban. Nem ismerik transzcendentális természetem és mindenek felett álló, páratlan uralmam. (12)Ezek a megtévesztett emberek vonzódnak a démoni és ateista nézetekhez. Ebben az illuzórikus állapotban a felszabaduláshoz, a gyümölcsöző tettekhez és a tudomány műveléséhez fűzött összes reményük vereséget szenved.<br />
+<br />
+<br />
+József Attila: Istenem<br />
+<br />
+ <br />
+<br />
+Dolgaim elől rejtegetlek,<br />
+Istenem, én nagyon szeretlek.<br />
+Ha rikkancs volna mesterséged,<br />
+segítenék kiabálni néked.<br />
+<br />
+ <br />
+<br />
+Hogyha meg szántóvető lennél,<br />
+segítenék akkor is mindennél.<br />
+A lovaidat is szeretném<br />
+és szépen, okosan vezetném.<br />
+<br />
+ <br />
+<br />
+Vagy inkább ekeszarvat fogva<br />
+szántanék én is nyomodba,<br />
+a szikre figyelnék, hogy ottan<br />
+a vasat még mélyebben nyomjam.<br />
+<br />
+ <br />
+<br />
+Ha csősz volnál, hogy óvd a sarját<br />
+én zavarnám a fele varjat.<br />
+S bármi efféle volna munkád,<br />
+velem azt soha meg nem unnád.<br />
+<br />
+ <br />
+<br />
+Ha nevetnél, én is örülnék,<br />
+vacsora után melléd ülnék,<br />
+pipámat egy kicsit elkérnéd<br />
+s én hosszan, mindent elbeszélnék.<br />
+<br />
+<br />
+<br />
+Végül had kérdezzek valamit: Mi más volna az istenképű ember feladata a földön, mint Isten munkáját folytatni? Ápolni, gondozni a Földet? Ez a feladat pedig genetikusan kódolt az emberben. Az ateizmus nem ment meg a beteljesítésétől. (szerintem könnyebbé teszi) Tehát nincs miért gyűlölnöd az ateistákat. És talán mielőtt József Attiláról elhiszel valamit, azért nézz utána. Tényleg. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164453"></A>92. Qdi Ace</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2108&id=164010#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-16 11:27:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2996.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem tudom, olvassa-e még vki a postot...<br />
+<br />
+<i>Az imént említettem Britney Spears-t, aki hasonló eset: kapott egy rendkívüli hangot</i><br />
+<br />
+RENDKíVÜLI HANG?! Na neee.... Neked tetszik Britney hangja? Hol az elhatárolódó gomb?!<br />
+<br />
+Bakker, Britney egy nulla. Nemcsak a hangjára értem, hanem úgy anblokk.<br />
+<br />
+Egyedüli, ami tetszik tőle, az a Metallica--Britney-féle <i>So f_cking crazy</i> snitt.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164436"></A>91. Szabolcs</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-04-15 23:13:48</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves Tomcat!<br />
+<br />
+Minden megbecsülésem ellenére ki kell jelentenem, hogy amit itt József Attiláról összehordtál, az mezei faszság. A saját személyes hiteden átszűrődő, érzelmekkel erősen átitatott vélemény, amellyel emiatt nem is vitatkoznék. Minden esetre megdöbbentő, hogy ilyen súlyos, komoly hozzáértést és tapasztalatot igénylő témában is ilyen fölényes magabiztossággal nyilatkozol. Ez számomra sokat ront a hitelességeden.<br />
+<br />
+Üdv., Szabolcs<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164324"></A>90. Gomulka Béla</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2108&id=164279#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-15 08:23:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6552.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Blaireu, ebben egyetértünk, az ember lelke, legyen bármi is az, nem jobb vagy nagyobb vagy szebb egy bogár lelkénél. De én az él&#245;lényben az él&#245;lényt tisztelem, és a növények is azok, a baktériumok, kékalgák, gombák, stb. A kutya jobban észrevehet&#245;. <br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164279"></A>89. Blaireau</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-04-14 19:26:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Haribol kedves Tomcat!<br />
+ha megengeded néhány dolog:<br />
+A post nagyon is jó szerintem, több ilyen is kellene.<br />
+ne felejtsük már el azt sem hogy a karma törvénye müködik. Akkor is ha nem hisznek benne az emberek. Attol még müködnek. Vannak olyan dolgok amik akkor is részei az életünknek ha nem akarjuk azokat elfogadni. Gondolok itt például a karmára vagy a Jóság a Tudatlanság és a Szenvedélyí kötőerőire. ha fejket hányunk sem tudunk ezektöl megválni.<br />
+József Attilának benne volt már a karmájában az hogyan és miilyen körülmények között született meg erre a világra éás kezében volt a lehetöség ezeken a dolgokon változtatni. Tehát nagyban meghatártozták a dolgait az elözö életében vagy életeiben elkövetett tettei.<br />
+<br />
+Gomulka Bélának:<br />
+Gouranga kedves Béla! Gondolj csak bele: nézz meg egy kutyát mondjuk hogyan tud irigykedni vagy hogyan tud megsértödni vagy szeretni, vagy mondjuk haragudni. Tomcat biztosan tudna neked mesélni a kutyáirol például. Ha az állatoknak nincsen lelke és tudata akkor hogyan képesek birtokolni mindazon érzéseket mint mondjuk az emberi testben lévö lelkek?<br />
+Nézz meg kérlek legalább egy David Attenborough filmet az állatokról. S akkor rájössz két dologra: egy, hogy az Isten teremtése csodálatos és tudatos, kettö, hogy az állatok ban is vannak érzések érzelmek, értelem, és tudat még akkor is ha nem olyan szinten mint nekünk emberi testben raboskodó lelkeknek.<br />
+<br />
+Turulgazdának:<br />
+Jaya Radhe kedves Turulgazda!<br />
+Melyik a fontosabb a test e vagy a lélek? <br />
+Nos a test az mulandó de a lélek az örök. krisna elmondja a Bhagavad Gitában hogy a leket nem lehet elpusztitani mert örörk. Mivel a test az elpusztul emiatt a lélek fontosabb. Mindenek elött az hogya nem ez a test vagyunk. s semmit sem viszünjk magunkkal a lelkünkön kivül. Krisztus ia azt mondja a menyben gyüjtsetek kincseket ne a földön. A tested arra szolgál, hogy segitségével el tudd vezetni a lelkedet az örök hazájába az Úr krisnához.<br />
+<br />
+Maradok tisztelettel: Tomcat prabhu hittestvére : Nanda Gopala dasa alias Blaireau</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164278"></A>88. Dieter Stein</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-04-14 19:17:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem fogom tudni kifejteni az egészet, mert túl hosszú, mert feltételezné, hogy néhány sorban fel tudom vázolni azt a "kört", amibe "beleillik" az, ami erről az egészről eszembe jutott.<br />
+<br />
+...Valamint, mert a vélemény, olyan, mint a segglyuk. Mindenkinek van, de senkit sem érdekel a másé.<br />
+<br />
+...Az, hogy az ember miért kerül ebbe az életbe, afféle "hitkérdés". Sosem fogunk tudni róla megegyezni, hogy József Attila teljesítette-e a "küldetését", vagy "megbukott", ha vallási szemszögből közelítjük (...sőt, még azt sem fogjuk tudni eldönteni, hogy küldetés, mint olyan, létezett-e). Ebben, mivel vallás, a buddhizmus sem kivétel.<br />
+<br />
+Az alapprobléma megértését nagyban segíti az alábbi néhány kérdésen való elmélkedés.<br />
+<br />
+...Ki "Isten"?...<br />
+<br />
+Létezik-e bármilyen cselekedet, amely összességében Isten akarata ellen való -- feltéve, ha Isten mindenható?<br />
+<br />
+...Az ezzel kapcsolatos ellen-kérdés pedig: létezik-e "nem mindenható" Isten?...<br />
+<br />
+Ha valaki alaposan átgondolja a fentieket, rájöhet, hogy miért nem tudok azonosulni TC postjával.<br />
+<br />
+Az inspirációk pedig?...<br />
+<br />
+Ha József Attila verseit olvasom, néha teljesen letaglóz az az "egység", amelyet némelyik költeményében találok. Néha a sírás környékez, ha olvasom.<br />
+<br />
+...Nem gondolom, hogy ember "önmagától", deduktív alapon képes leírni ezeket a gondolatokat. <br />
+<br />
+Ákos szövegeiben néhol ugyanezt felfedezem. Mindez különösen a korai Bonanza-szövegekben feltűnő... mármint, hogy egy húszéves, egyetemista valaki hogyan tud ráérezni dolgokra, amelyekről nyilván fogalma sem lehet.<br />
+<br />
+...De a zsenijeiket azért nem merném komolyan egymás mellé tenni.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164159"></A>87. durrell</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2108&id=164010#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-14 01:48:43</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nemtom ideillik-e vagy sem.<br />
+Talán igen.<br />
+Azt látom, hogy a természetben minden élőlény - növény, állat - nagylelkű - az ember kivételével. (A nagylelkűség az egyik legkiemelkedőbb tulajdonság szerintem.)<br />
+Minden növény százezerszeresen több virágport, magot, gyümölcsöt hoz, mint amennyire saját fajfenntartására szükség van és számtalan rovart, madarat, állatot, embert táplál.<br />
+Az emberek értékrendjében a növények állnak leghátul, vagy legalul. Pedig ha igy nézzük, talán forditva van: az ember van legalul, ő csak önmagával foglalkozik, aztán jönnek az állatok, és fölöttük a növények, akik nem követelnek, csak adnak.<br />
+Na mindegy, csak úgy eszembe jutott.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164109"></A>86. <A HREF="mailto:gy.szanti@yahoo.com" STYLE="color: #000000">ender</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-04-13 08:16:52</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Rosszul fogalmaztam.Nem feltetlenul vezetes,inkabb utmutatas.Nagyon sok ember egyedul elveszve erzi magat spiritualis teren,kell nekik az utmutatas.Egyik ut sem rossz,csak az emberek vannak mas es mas szinten.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164103"></A>85. brujerizmo</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-04-13 01:05:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6449.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">most ne már hogy kovács ákos/ismerős arcok vs. józsef attila</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment164096"></A>84. Gomulka Béla</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2108&id=164081#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-12 23:13:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6552.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">De kell keresni, hát nem ez derült ki az írásból? (kismosoly-jel)<br />
+Egyes egyházak azért többek a vallási vezetés intézményeinél. Kulturális intézmények is. Az információ pedig elválasztható a hitt&#245;l. (Lásd az Aquinói paradoxonát.) <br />
+Ez a duma, hogy el&#245;bb utóbb minden m&#251;vész / tudós / ország-város-híres embervallásos lesz, mert minden út egyfele vezet &#8211; ez nekem mindig is gyanús volt. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2108&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2108&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2108&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2108&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2108&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2108&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2108&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2108&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2108&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2108&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2108&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

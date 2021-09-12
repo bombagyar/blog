@@ -1,0 +1,515 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1276#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Kedves felebarátaim! Öntsünk tiszta vizet a kehelybe!";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=1276#" ONCLICK="window.open('popup_userdatasheet.php?id=131', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_131.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Kedves felebarátaim! Öntsünk tiszta vizet a kehelybe!<BR><DIV CLASS="postheader_small">Blog - ashnur</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 augusztus 23. 03:25:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1276.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><p style="text-align: justify;">  Hosszú hetek, sőt hónapok óta  
+   érik bennem a gondolat: valakinek szólnia kellene, mert nem lesz ez így jó. Valakinek szólnia     
+kellene nektek, hogy jócskán meg vagytok vezetve. Most felvállalom ezt a hálátlan szerepet, pedig    
+ tudom &#8211; nem leszek megdicsérve érte.<br>  <br></p><div style="text-align: justify;">  Arról van szó ugyanis, hogy közöttetek 
+jócskán     vannak úgynevezett hívők, kreacionisták, értelmestervezés--hívők. Nekik szól az 
+üzenet: Isten     nincs és nem is volt.<br></div><p style="text-align: justify;">  <br>  Nem Isten teremtette az eget és a földet és a 
+csillagokat, nem     Isten teremtette az első embert és épeszű ember nem hiheti azt sem, hogy az 
+első nőt az első ember     bordájából hozták létre, mert amúgy egyedül érezte magát. Egyébként hogy 
+lehet, hogy egy rakás     állatnál és növénynél eszébe jutott mindkét nem, csak az embernél nem? 
+Szórakozott Isten lenne ha     lenne, de nincs.<br>  <br>  Nem szólt le Ábrahámnak, hogy áldozza fel 
+Izsákot, csak azért, hogy     lássa - Ábrahám szót fogad. Nem történt meg, hogy létrehozott egy 
+szabad akaratú lényt, és utána     azzal szórakozott volna, hogy teszteli szót fogad-e? Továbbá nem 
+termékenyített meg egy szűz lányt     &#8211; mellesleg én nem vennék el terhes szűz lányt. Nem 
+szeretem a hazudós embereket. Úgy tűnik,     József hiszékenyebb volt mint az egészséges. Már ha 
+legalább ez megtörtént volna, pedig nem. Nem     volt Isten fia a földön, nem varázsolt éhezőknek 
+élelmet pár falatból és nem gyógyított meg     érintéssel bénákat és halálos betegeket. Bár <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0); text-decoration: underline;" href="//www.youtube.com/watch?v=Vwy4yB8cSwE" target="_blank">vannak sarlatánok</a> akik 
+manapság is ezzel hitegetik a népet.<br>  <br>  A modern     világ egyik legcsodálatosabb terméke, a 
+<a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.despair.com/viewall.html" target="_blank">demotivációs plakát</a> &#8211; ami     ellentétben az eredeti, rettenetesen blőd és 
+idealista ötlettel, a motivációs plakáttal szemben nem     hazudik, hanem a szemünkbe vágja az 
+igazságot. Vannak akik becsukják a szemüket, befogják a fülüket     és nem hajlandóak tudomásul 
+venni az igazságot:  </p><div style="text-align: justify;">  </div><p style="text-align: justify;">&nbsp;  <br>  </p><div style="text-align: justify;">  </div>  <div style="text-align: center;"><img src="//elni.hu/christianity.jpg" alt="Christianity" height="400" width="480">  
+</div><div style="text-align: justify;">  </div><div style="text-align: justify;">  </div><p style="text-align: justify;">      &nbsp;  </p><div style="text-align: justify;">  </div><p style="text-align: justify;">  Azoknak   akik   nem értenék, 
+már korábban is lefordítottam:<br>  <br>  </p><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A     kereszténység a 
+hit abban, hogy egy kozmikus zsidó zombi, aki a saját apja, örökéletűvé tud tenni ha     jelképesen 
+eszel a húsából, és telepatikusan elmondod neki, hogy elfogadod mesterednek, hogy ő     kivehessen 
+egy gonosz erőt a lelkedből, ami az egész emberiségben megvan, mert egy bordából lett nőt     
+meggyőzött egy beszélő kígyó, hogy egyen egy mágikus fáról... igen, ez így mind tökéletes értelmet    
+ nyer.&#8221;</div><p style="text-align: justify;"><br>  Rengetegszer találkozom a     
+&#8222;józan, paraszti ész&#8221; kifejezéssel, gondolom köztetek sokan is előszeretettel     
+használják. Kérlek vegyétek elő. Mégis hol logikus... nem is, hol ÉLETKÉPES ez az egész? A Hófehérke 
+    és a hét törpe valóságosabb, a Babszem Jankó logikusabb, a Zöld Péter (bár kíváncsi vagyok ezt   
+  hányan ismeritek?) értelmesebb és mindenképp helyesebb viselkedésre tanít! A Bibliát olvasni egy   
+  lázálom. Gyilkosságok családon belül, kiskorúak megrontása, áldozatok, önbíráskodás, álnok 
+emberek.     Mindezt a HIT nevében. Ha csak a tizede igaz amit ott leírnak már saját értékrendetek 
+szerint is     megvetnetek kellene a keresztény vallást.<br>  <br>  Ez a másik. Meglehetősen 
+humoros, hogy ahány     vallás mind szerint a többi: hamis vallás és a többiek istenei nem léteznek. 
+Minél több vallást és     szektát veszünk számba annál több ember van megvezetve és átverve. Ha 
+keresztényeknek lenne igazuk     akkor csak 4.4 milliárd ember van megvezetve. Sajnos azonban nem 
+ilyen jó a képlet, valójában a föld     teljes népességének alig 2.3 százaléka ateista és kb. 12% -a 
+nem vallásos tehát jó esetben is 5.7     milliárd felett vagytok ti akiket átvertek, megvezettek, 
+kihasználtak és kihasználnak minden nap.     Hát legalább a társaság hiányára nem 
+panaszkodhattok.<br>  <br>  A szörnyű az egészben, hogy egyes     vallásos emberek leállnak 
+vitatkozni. Mintha lenne min. Ilyen például aki nem hisz az evolúcióban.     Kreacionisták. Ha azt 
+mondom nincs isten, akkor rázzák a fejüket mert ebben hisznek. Ha azt mondom     1+1=2, akkor ezt 
+tudják és egyetértenek. Ha azt mondom köbgyök 27 akkor néhányan tudják, hogy 3. Az     evolúciót 
+tagadni olyan mintha azt tagadnád, hogy 3 a harmadikon 27 lesz.<br>  <br>  A probléma     
+valószínűleg ott van, hogy mivel a tudományos képzések szintje többnyire finoman szólva sem     
+kielégítő, így nagyon sokan az ilyesmiket nem értik, csak tudják, azaz elhiszik valakinek.     
+Ilyenformán egyforma súlya van annak amit a matektanár és amit a vallásoktató mond. Borzalom. Fel    
+ kéne fogni, hogy a tudomány nem hit kérdése, nem relatív a személytől &#8211; ahogy <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/Richard_Dawkins" target="_blank">Richard Dawkins</a> mondja a <a target="_blank"href="//www.richarddawkins.net/article,2925,On-TV-The-Genius-of-Charles-Darwin-Presented-by-Richard-Dawkins,Richard-Dawkins-Channel-4" target="_blank"><span style="font-weight: bold; color: rgb(0, 0, 0);">Darwinról szóló     
+filmjében</span></a>: akárki aki megkérdőjelezi ezt, bármikor kiugorhat egy tizedik emeleti ablakon  
+   és nézzük meg a hit vagy a tudomány az erősebb.<br>  <br>  A másik szörnyű tévedés ami sokakban 
+él,     hogy a vallás és tudomány az valamiféleképpen összehasonlítható, egyenrangú fél. Ez nem így 
+van. A     vallás nem keres megoldásokat, hanem készen legyártva kínál egy megoldást. A tudomány nem 
+kész,   nem   befejezett és főleg nem tartja magát tévedhetetlennek, valamint a tudomány önmagában a 
+dolgok     miértjére irányuló keresés.<br>  Nagyon jól összefoglalja ezt a<span style="font-weight: bold; color: rgb(0, 0, 0);"> </span><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.cartoonbank.com/product_details.asp?sid=40967" target="_blank">következő kép</a>:   
+  <br></p><p style="text-align: justify;"><br></p><div style="text-align: justify;">  </div><p style="text-align: center;">  &nbsp;<img src="//elni.hu/miracle.gif" alt="Miracle" height="300" width="300">  </p><div style="text-align: justify;">  </div><p style="text-align: justify;">  <br>   
+   A kép szövege angolul nem értőknek: <span style="font-style: italic;">&#8222;Azt hiszem kifejthetnéd bővebben kicsit a második     
+lépést&#8221; </span>- mondja az egyik tudós a másiknak egy egyenletnél, ahol a második pontban az áll: <span style="font-style: italic;">    
+&#8222;És akkor egy csoda történik...&#8221;</span><br>  <br>  A példa nem az enyém, az a <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//ted.com/" target="_blank">TED.com</a>   
+  -on hallottam, <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/Michael_Shermer" target="_blank">Michael Shermer</a>től. <a target="_blank"href="//www.ted.com/index.php/talks/michael_shermer_on_believing_strange_things.html" target="_blank"><span style="color: rgb(0, 0, 0);">Ő így folytatja:</span></a> <span style="font-style: italic;">&#8222;Ez az rajz egymagában teljes mértékben leszereli az értelmes tervezés híveinek érveit. Mondhatod azt, hogy egy csoda történik, csak ez így nem magyaráz meg semmit, nem    
+ ajánl semmit, nincs semmit amit tesztelhetnénk. Véget vet a beszélgetésnek.&#8221;</span><br>  <br>  A     
+kedvenc érvrendszerem pedig amit <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/George_Carlin" target="_blank">George Carlin</a> adott elő     
+1999-ben:<br>  </p><div style="text-align: justify;">  </div>  <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/MeSSwKffj9o" id="ltVideoYouTube" height="350" width="450">  	<param name="movie" value="http://www.youtube.com/v/MeSSwKffj9o">      
+	<param name="wmode" value="transparent">  	<param name="allowScriptAcess" value="sameDomain">      
+	<param name="quality" value="best">  	<param name="bgcolor" value="#FFFFFF">  	<param name="FlashVars" value="playerMode=embedded">  </object>  <div style="text-align: justify;">      
+</div><p style="text-align: justify;">  &nbsp;  </p><div style="text-align: justify;">  </div><p style="text-align: justify;">  Megpróbálom lefordítani ezt is, legalábbis az elejét &#8211; előre is 
+    elnézést, közel nem vagyok megfelelő a feladatra. A <span style="font-style: italic;">bullshit</span> szót, nem fogom fordítani, jó az    
+ eredetiben is.<br>  <br>  </p><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">A bullshit osztályon egy     üzletember vizet sem vihet egy 
+papnak. Mert meg kell mondjam emberek, amikor bullshitről van szó,     igazi, nagypályás bullshitről 
+akkor a félve kell tisztelnünk minden idők bajnokát a hamis     ígéreteknek és túlzásba vitt 
+igényeknek. Vallás. Vita nélkül a vallás rendelkezik a valaha létezett     legnagyobb bullshit 
+mesével. Gondoljatok bele. A vallás meggyőzött embereket arról, hogy van egy     láthatatlan ember 
+aki az égben él és figyeli minden cselekedetedet a nap minden percében. És ennek a     láthatatlan 
+embernek van egy különleges listája tíz dologgal amit ő nem szeretne ha te megtennél.   És   ha te 
+mégis megteszed bármelyiket ezek közül, akkor van neki egy különleges helye tele tűzzel,     
+füsttel,megégetéssel, kínzással és gyötrődéssel ahova betesz téged hogy élj és szenvedj és égj és    
+ fulladozz és sikoltozz és sírj mindörökkön örökké az idők végezetéig.    <br><br>DE Ő SZERET TÉGED! 
+       <br><br>Szeret téged és kéne neki PÉNZ! Mindig kell neki pénz. Ő mindenható, mindentudó csak  
+   valahogy nem tud a pénzzel bánni. A vallás dollármilliárdokat szed be, nem fizet adót és mindig 
+egy     kicsit többet szeretne. <br></div><p style="text-align: justify;"><br>  </p><div style="text-align: justify;">  </div><p style="text-align: justify;">  Ennyit a hívőkről. Viszont 
+vannak egyesek akik     nem hívők, vagy legalábbis nem bigottak, hajlandóak a párbeszédre valahol 
+&#8211; bár ennek eleve     semmi értelme ahogy fentebb már említettem &#8211; és azzal jönnek, hogy 
+de a keresztény, azaz krisztusi tanítások azok milyen jók, és milyen igazak, és azokat ha 
+követjük baj nem lehet. Nos a     véleményem kicsit más, de ebbe most ne menjünk bele mert hosszúra 
+nyúlna, fogadjuk el a vita     kedvéért. Egyetlen további kérdésem van. Minek ehhez egy elcseszett 
+apafigura aki le se szar     titeket? Hogy legyen kinek egyházadót fizetni, legyen hova a 
+költségvetésből támogatást fizetni?     Hogy szervezett módon képezzünk ki <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//newsinfo.inquirer.net/breakingnews/world/view_article.php?article_id=95567" target="_blank">homoszexuálisokat</a>? Semmi bajom a Krisztusi szeretettel, de ilyen csomagolásban   
+  köszönöm, nem kérem. Valahogy nem túl meggyőző. Főleg, hogy nem hiszek ezeknek a modern     
+keresztényeknek. Azt mondják, hogy megváltoztak, de szerintem csak azért van mert nincs akkor     
+hatalmuk már mint régen, legalábbis nem olyan kézzelfogható, mint a középkorban volt vagy     
+amilyen<span style="font-weight: bold; color: rgb(0, 0, 0);"> </span><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/Iran" target="_blank">most </a>van az iszlámnak <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/Afghanistan" target="_blank">itt</a><span style="font-weight: bold; color: rgb(0, 0, 0);">-</span><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/Anarchy_in_Somalia">ott</a>. Kicsit erőre kapnának, azonnal     
+kezdenék elölről.</p><p style="text-align: justify;"><br>  </p><div style="text-align: justify;">    
+  </div><p style="text-align: justify;">  Szóval itt lenne az ideje, hogy végérvényesen elpusztítsuk 
+    ezt a parazitát, ezt az élősködő gondolatvilágot amelyik annyi emberéletet követelt és követel 
+még     ma is. Természetesen nem akarok a butasága és hiszékenysége miatt megölni vagy deportálni 
+senkit,     egyszerűen csak meg kellene fosztani a támogatásoktól és csak közvetlen 
+szolgáltatásokért     kaphatnának pénzt, adomány vagy támogatás formájában nem. Pár nemzedék alatt 
+szinte végérvényesen     elsorvadnának.</p><p style="text-align: justify;"><br>  </p><div style="text-align: justify;">      </div><p style="text-align: justify;">  Akik pedig azon aggódnak, 
+hogy mi lesz az elkeseredett     emberekkel akiknek az egyetlen vigaszuk a hit Istenben és a bizalom 
+a vallásban, nekik üzenem, hogy     az ilyen embereket nem sajnálom, akik arra nem képesek, hogy 
+olyan barátokkal vegyék körbe magukat     akik segítenek nekik ha bajba jutnak azok nem érdemelnek 
+szánalmat. Ideje lenne észrevenni, hogy a     képzeletbeli barátokkal rendelkező emberek nem 
+feltétlenül azok akik társadalmat előreviszik. Semmi     gond velük, de nem értem minek reklámozni, 
+és főleg minek támogatni.<br>  <br><span style="font-style: italic; font-weight: bold;">  Ez a 
+bejegyzés a szerző sajátja, azzal a Bombagyár szerkesztősége nem vállal közösséget. - 
+blogin&nbsp;</span></p><div style="text-align: justify;">  </div><p style="text-align: justify;">&nbsp;  
+<br></p>     </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-08-23&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1276&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1276&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1276&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1276&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1276&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1276&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1276&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1276&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1276&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1276&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1276&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1276&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1276&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1276&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1276&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1276&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1276&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1276&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1276&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1276&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1276&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1276&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1276&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1276&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1276&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=1276&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> <A HREF="./index.php?post=1276&commentstart=250#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>26</B></A> <A HREF="./index.php?post=1276&commentstart=260#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>27</B></A> <A HREF="./index.php?post=1276&commentstart=270#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>28</B></A> <A HREF="./index.php?post=1276&commentstart=280#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>29</B></A> <A HREF="./index.php?post=1276&commentstart=290#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>30</B></A> <A HREF="./index.php?post=1276&commentstart=300#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>31</B></A> <A HREF="./index.php?post=1276&commentstart=310#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>32</B></A> <A HREF="./index.php?post=1276&commentstart=320#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>33</B></A> <A HREF="./index.php?post=1276&commentstart=330#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>34</B></A> <A HREF="./index.php?post=1276&commentstart=340#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>35</B></A> <A HREF="./index.php?post=1276&commentstart=350#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>36</B></A> <A HREF="./index.php?post=1276&commentstart=360#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>37</B></A> <A HREF="./index.php?post=1276&commentstart=370#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>38</B></A> <A HREF="./index.php?post=1276&commentstart=380#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>39</B></A> <A HREF="./index.php?post=1276&commentstart=390#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>40</B></A> <A HREF="./index.php?post=1276&commentstart=400#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>41</B></A> <A HREF="./index.php?post=1276&commentstart=410#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>42</B></A> <A HREF="./index.php?post=1276&commentstart=420#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>43</B></A> <A HREF="./index.php?post=1276&commentstart=430#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>44</B></A> <A HREF="./index.php?post=1276&commentstart=440#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>45</B></A> <A HREF="./index.php?post=1276&commentstart=450#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>46</B></A> <A HREF="./index.php?post=1276&commentstart=460#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>47</B></A> <A HREF="./index.php?post=1276&commentstart=470#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>48</B></A> <A HREF="./index.php?post=1276&commentstart=480#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>49</B></A> <A HREF="./index.php?post=1276&commentstart=490#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>50</B></A> <A HREF="./index.php?post=1276&commentstart=500#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>51</B></A> <A HREF="./index.php?post=1276&commentstart=510#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>52</B></A> <A HREF="./index.php?post=1276&commentstart=520#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>53</B></A> <A HREF="./index.php?post=1276&commentstart=530#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>54</B></A> <A HREF="./index.php?post=1276&commentstart=540#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>55</B></A> <A HREF="./index.php?post=1276&commentstart=550#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>56</B></A> <A HREF="./index.php?post=1276&commentstart=560#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>57</B></A> <A HREF="./index.php?post=1276&commentstart=570#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>58</B></A> <A HREF="./index.php?post=1276&commentstart=580#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>59</B></A> <A HREF="./index.php?post=1276&commentstart=590#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>60</B></A> <A HREF="./index.php?post=1276&commentstart=600#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>61</B></A> <A HREF="./index.php?post=1276&commentstart=610#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>62</B></A> <A HREF="./index.php?post=1276&commentstart=620#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>63</B></A> <A HREF="./index.php?post=1276&commentstart=630#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>64</B></A> <A HREF="./index.php?post=1276&commentstart=640#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>65</B></A> <A HREF="./index.php?post=1276&commentstart=650#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>66</B></A> <A HREF="./index.php?post=1276&commentstart=660#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>67</B></A> <A HREF="./index.php?post=1276&commentstart=670#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>68</B></A> <A HREF="./index.php?post=1276&commentstart=680#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>69</B></A> <A HREF="./index.php?post=1276&commentstart=690#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>70</B></A> <A HREF="./index.php?post=1276&commentstart=700#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>71</B></A> <A HREF="./index.php?post=1276&commentstart=710#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>72</B></A> <A HREF="./index.php?post=1276&commentstart=720#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>73</B></A> <A HREF="./index.php?post=1276&commentstart=730#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>74</B></A> <A HREF="./index.php?post=1276&commentstart=740#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>75</B></A> <A HREF="./index.php?post=1276&commentstart=750#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>76</B></A> <A HREF="./index.php?post=1276&commentstart=760#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>77</B></A> <A HREF="./index.php?post=1276&commentstart=770#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>78</B></A> <A HREF="./index.php?post=1276&commentstart=780#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>79</B></A> <A HREF="./index.php?post=1276&commentstart=790#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>80</B></A> <A HREF="./index.php?post=1276&commentstart=800#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>81</B></A> <A HREF="./index.php?post=1276&commentstart=810#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>82</B></A> <A HREF="./index.php?post=1276&commentstart=820#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>83</B></A> <A HREF="./index.php?post=1276&commentstart=830#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>84</B></A> <A HREF="./index.php?post=1276&commentstart=840#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>85</B></A> <A HREF="./index.php?post=1276&commentstart=850#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>86</B></A> <A HREF="./index.php?post=1276&commentstart=860#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>87</B></A> <A HREF="./index.php?post=1276&commentstart=870#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>88</B></A> <A HREF="./index.php?post=1276&commentstart=880#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>89</B></A> <A HREF="./index.php?post=1276&commentstart=890#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>90</B></A> <A HREF="./index.php?post=1276&commentstart=900#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>91</B></A> <A HREF="./index.php?post=1276&commentstart=910#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>92</B></A> <A HREF="./index.php?post=1276&commentstart=920#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>93</B></A> <A HREF="./index.php?post=1276&commentstart=930#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>94</B></A> <A HREF="./index.php?post=1276&commentstart=940#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>95</B></A> <A HREF="./index.php?post=1276&commentstart=950#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>96</B></A> <A HREF="./index.php?post=1276&commentstart=960#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>97</B></A> <A HREF="./index.php?post=1276&commentstart=970#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>98</B></A> <A HREF="./index.php?post=1276&commentstart=980#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>99</B></A> <A HREF="./index.php?post=1276&commentstart=990#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>100</B></A> <A HREF="./index.php?post=1276&commentstart=1000#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>101</B></A> <A HREF="./index.php?post=1276&commentstart=1010#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>102</B></A> <A HREF="./index.php?post=1276&commentstart=1020#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>103</B></A> <A HREF="./index.php?post=1276&commentstart=1030#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>104</B></A> <A HREF="./index.php?post=1276&commentstart=1040#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>105</B></A> <A HREF="./index.php?post=1276&commentstart=1050#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>106</B></A> <A HREF="./index.php?post=1276&commentstart=1060#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>107</B></A> <A HREF="./index.php?post=1276&commentstart=1070#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>108</B></A> <A HREF="./index.php?post=1276&commentstart=1080#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>109</B></A> <A HREF="./index.php?post=1276&commentstart=1090#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>110</B></A> <A HREF="./index.php?post=1276&commentstart=1100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>111</B></A> <A HREF="./index.php?post=1276&commentstart=1110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>112</B></A> <A HREF="./index.php?post=1276&commentstart=1120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>113</B></A> <A HREF="./index.php?post=1276&commentstart=1130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>114</B></A> <A HREF="./index.php?post=1276&commentstart=1140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>115</B></A> <A HREF="./index.php?post=1276&commentstart=1150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>116</B></A> <A HREF="./index.php?post=1276&commentstart=1160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>117</B></A> <A HREF="./index.php?post=1276&commentstart=1170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>118</B></A> <A HREF="./index.php?post=1276&commentstart=1180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>119</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment167103"></A>1189. .......... -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1276&id=92919#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-03 19:55:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2173.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Az a helyzet, hogy nem :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93942"></A>1188. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-09-02 12:55:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez régen íródott, én csak most olvastam. Ashnur, lehet hogy "amúgy" jó fej vagy, de eme iromány alapján csak szánni lehet téged. (Nem, nem azért mert "Krisztus úgyis szeret".)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93509"></A>1187. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1276&id=92919#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-31 16:58:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Az.<br />
+<br />
+Már csak az a kérdés hogy egy ilyen tiniőrjöngős cikk után, ki ad hitelt az ateizmusnak?<br />
+<br />
+<br />
+Hiteltelen mocskolódás ez az egész Ashnur féle borzadály.:D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92919"></A>1186. Julien</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-30 03:03:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ashnur!<br />
+<br />
+Az a helyzet, hogy egy idióta vagy.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92391"></A>1185. PhoenixSpirit</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-28 11:07:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_341.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Katolikus gimnáziumba jártam, bár ennek ellenére nem vagyok rendszeresen templomba járó hívő, de hiszek Istenben. Azt is hiszem, hogy nélküle nem lehetnénk itt, véletlenek folytán nem alakulhatott volna ki ez a világ(mindenség). Mindenkinek lehetne saját meggyőződései erről, a lényeg úgyis a végén derül majd ki (mint amit az egyszeri parasztbácsi mond a szexről : "pofázni lehet róla sokat, de a lényeg úgyis az ágyban derül ki" -ok, hülye hasonlat :D).<br />
+<br />
+Manapság egyre többször hallani, hogy Isten elfelejtett minket. Nem. Mi felejtettük el őt.<br />
+<br />
+Máig emlékszem erre a gyönyörű fali plakettre, amelyik néhai nagyanyám konyhájában volt:<br />
+<br />
+"Hol szeretet, ott béke<br />
+Hol béke, ott áldás<br />
+Hol áldás, ott Isten<br />
+Hol Isten - ott szükség nincsen."</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92266"></A>1184. dzsimboo</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-27 19:52:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Üdv<br />
+<br />
+Előre jelzem, hogy a kommentek jelentős száma miatt eltekintek a teljes felhozatal elolvasásától, ezért lehet, hogy ismétlek...<br />
+<br />
+A bejegyzés elején taglaltakkal (biblia így-úgy), mindenképp egyetértek, a későbbiekkel kapcsolatosan azonban lenne pár észrevételem: <br />
+-5.7 milliárd ember van megvezetve...  Na és a többivel mi van? Mi van az Ufó hívőkkel, a Demokrácia pártiakkal, a liberálisokkal, kapitalistákkal, kommunistákkal, nácikkal, technokratákkal, meg úgy alapjában mindenkivel. Nyilván a fennmaradó több mint egymilliárd ember széleskörű, elfogulatlan, és tárgyilagos információk alapján választja meg a világképét, nem valaki a szájába adja. Őket senki nem használja ki mert tudatában vannak önnön érdekeiknek, és mindig eszerint cselekszenek. <br />
+-Ez csak (baszogatás) a miheztartás végett. "Ha azt mondom köbgyök 27 akkor néhányan tudják, hogy 3."néhányan meg tudják, hogy a 27 az lehet komplex szám is, és akkor bizony "n" gyöke van, jelen esetben ez ugye minimum "3". Ha már...<br />
+-2.  "A tudomány nem kész, nem befejezett és főleg nem tartja magát tévedhetetlennek" muhaha... épp rá hivatkozva osztottad ki népet. <br />
+-3. "szervezett módon képezzünk ki..." ez meg olyan jaj de közhelyes, jaj de ... Egyszerűen ez méltatlan.<br />
+-4. Parazita, Élősködő, annyi emberéletet követel... De még szerencse, hogy nem deportálnál senkit butaság miatt.<br />
+-5. EEEEz az utolsó bekezdés is olyan lapos, ezzel a képzelt barát dologgal. <br />
+Másként: Tudományos okítás a vallás helyett: valóban azt gondolod, hogy majd itt a szabolcsi parasztnak, meg a pesti kőművesnek, vagy akár a bölcsészhallgatóknak kiosztanád az észt, hogy a világegyetem(!) keletkezésekor(!) létrejöttek a szuperhúrok(!) amik alkotják az atomokat, illetve az atomok alkotóelemeit, de ugyanakkor  tartalmazhatnak komplett dimenziókat(!) amikből egyébként nem is 3 van hanem úgy 14-17(!), és azóta ez az egész tágul, létrejött az idő(!), a tér(!), a galakszisok, amikről azt kell még tudni, hogy csak azért nem esnek szét, mert létezik a "sötét anyag" aminek egyetlen ismert tulajdonsága, hogy nem hagyja a galakszisokat szétesni(!)... és így tovább, és akkor ők megkönnyebülten hátradőlnek, hogy végre tudnak mindent, és senki se kérdi majd tőled hogy: DE MÉÉR?<br />
+ Azt kéne megértsd, hogy nem mindenki akar annyit gondolkodni ezeken mint te meg én, és nekünk is az a kényelmesebb ha ehelyett azt mondjuk Isten megteremtette a Földet. Vagy ha úgy jobb akkor Kádár volt, Esetleg Hitler...<br />
+ Üdv!<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92227"></A>1183. Raznor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1276&id=91418#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-27 18:58:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_970.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Igazad van, kiigazítom: Aki azt állítja, hogy "beszélgetett" Istennel, az vagy hazudik, vagy beteg az elméje.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment91662"></A>1182. Ungi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1276&id=91382#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-26 16:43:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">#1174., Tisztelt Szarvasbogár!<br />
+<br />
+&#8222;Szerintem nem csak a mostani egyébként zseniális meglátásaidat szoritod korlátok közé, hanem --- károsabb lehet --- a jövőbelieket is, azzal, hogy csakis háromdimenziós térben vagy hajlandó megérteni mindent, még Istent létét is.&#8221;<br />
+Amíg egy kérdésre 3D-ben is magyarázatot lehet találni, addig maradok a 3D-nél; ez a biztos, ez az egyszerűbb. Azt se tartom nagy bajnak, ha én maradok a 3D utolsó híve, és így a kreatívabb elmék opponensévé válok. Ha valami jó, akkor az úgyis megmarad, ha nem jó, akkor megérdemelten bukik el. Veszélyesnek sem tartom az ilyen világnézeti ütköztetéseket. Ami veszélyes tud lenni, az a politikai tartalmú ideológia, mert átkerül a gyakorlatba &#8211; és jónéhány életkárosító volt, és van még mindig belőlük, amik bár meg se születtek volna. De hát meglettek, és bekajolta azokat is az ügyes hitetők által megbolondított nép.<br />
+A tárgynál maradva, dogmává csak egy dolgot merevítek, az elérendő legnagyobb célt, a félisteni szinten át az isteni szint elérését, az anyagi világban maradva.<br />
+A jelenlegi Isten-modell szükségszerűen változni fog valamilyen irányba, az időközben megszerzett újabb (bizonyított, és / vagy egyéb kapcsolódó dolgokkal közvetve alátámasztott, és / vagy nagy valószínűségű) ismeretek, illetve nagy valószínűségű hipotézisek szerint.<br />
+Azt viszont nem ígérem meg, hogy pl. ebbe az irányba változhat, bár kétségkívül ez is egy irányzat:<br />
+Church of the Flying Spaghetti Monster<br />
+<B><a href="//www.venganza.org/" target="_new" style="color: #000000;">http://www.venganza.org/</a></B><br />
+Az elérendő legnagyobb cél &#8211; mint az egyetlen dogma a rendszerben &#8211; vannak a betartandó törvények és szabályok, amelyeket kellően nagy többséggel meg lehet változtatni, és végül azok a helyzetek, ahol csak annyi az irányelv, hogy mindenki cselekedjen a legjobb belátása szerint.<br />
+Olyanra kell ezt formálni, hogy kellően fejlődőképes, és kellően hajlékony legyen, viszont legyen annyi tartása is, hogy ne essen szét (pálmafa-modell).<br />
+Nem csak Isten-modellben, hanem teljes vallási és társadalmi rendszerben gondolkodom&#8230;<br />
+<br />
+&#8222;Ha ez az uniiverzum nem véletlen jött létre hanem egy mindenható és mindent tudó Isten alkotta és vezéreli, akkor feltétlenül tudnia kell, hogy bárhol, bármelyik pillanatban ebben az unuverzuban pontosan mi történik, sőt mert mindentudó és mindenható, bárhol bármely pillanatban bármire ráhathat. Teheti, ha jól értelek, mert nem független az anyagtól, és a "tudástelitettsége" is meg van hozzá.<br />
+Hoppá..., de ideje nincs. Ha ugyanis éppen az univerzum szélén ügyködik s mi ha a "közepén" vagyunk akkor csak 15 milliárd év után tudhatja meg, hpgy mit művelunk, esetleg bűnözünk, és a büntetés csak egy másik 15 milliárd év múlva érekzhetne hozzánk.&#8221;<br />
+Két részre bontva &#8211; <br />
+1 Ez az Univerzum véletlen jött-e létre, vagy Isten alkotta és vezérli:<br />
+A jelenleg alkalmazott Isten-modell szerint, az első, élethez vezető változásoknak a véletlenszerűségek alapján kellett összejönniük az anyagban; ha viszont már egy élőlény eljutott arra a szintre, hogy Isten lett belőle, akkor a további változások az anyagban már vagy spontán, az anyag eleve létező törvényei szerint történnek, vagy isteni beavatkozás által; az egyik eset biztosan megtörténik, a másik eset pedig szándék szerint.<br />
+Azt a példát tudom erre mondani, hogy a táplálék lebontása a gyomorban zömében a természet által eleve adott fizikai hatások révén történik meg, és nem tudatosan vezérelt. Más emberi döntések pedig elsősorban tudat által vezéreltek (hogy mikor, mit, és hogyan teszünk; pl. eszünk vagy nem eszünk, és mit eszünk; persze van itt némi visszacsatolás is, éhségérzet formájában).<br />
+Ez a kettősség jellemzően mindenütt megvan az élővilágban, csak minél fejletlenebb az élőlény, annál inkább a természet hatásai dominálnak; viszont az alapkövetelmény, hogy az élőlény valahogyan érzékelje a környezetét, és döntés- és reagálóképes legyen, ha a környezet változik, még ha az az élőlény csak egy sejteken élősködő parazita vírus szintű is. Nem is olyan mellesleg, ez a visszafejlődött állapot is egy bizonyíték arra, hogy az élet nem a baktériumokkal, és nem is a vírusokkal kezdődik, hanem ezek előtt van a kezdete. Hogy vannak, akik a vírusokat nem élőlénynek, hanem &#8222;fertőzőképes genetikai információnak&#8221; tartják&#8230; miért, az emberre talán ugyanez nem igaz, ha a fertőzőképes fogalmát a szaporodóképes fogalmára cseréljük? Itt már értelmezési különbségek vannak abban, hogy mi az élet. (Az egyik megfogalmazás szerint, nemi úton terjedő fertőzés, ahol a halálozási arány 100%.)<br />
+Kapcsolódó: nanobák<br />
+<B><a href="//www.poli.hu/poli/iskelet/peszter/99okt/cikkek/3rd.html" target="_new" style="color: #000000;">http://www.poli.hu/poli/iskelet/peszter/99okt/cikkek/3rd.html</a></B><br />
+<B><a href="//www.origo.hu/tudomany/elet/20010807milyen.html" target="_new" style="color: #000000;">http://www.origo.hu/tudomany/elet/20010807milyen.html</a></B><br />
+Mivel a modell szerint Isten létezésének nagyobb a valószínűsége, mint a nem létezésének (ld. istenérvként az élőlények létező fejlettségi sora alapján Istenig kiterjesztett élőlényi fejlettséget), ezért Isten létezőnek van tekintve, és ez a helyzet ugyanolyan kettősséget eredményez, mint ami az ember vonatkozásában is fennáll, hogy vannak dolgok, amelyek a természetre vannak bízva, és vannak, amelyek tudatos ellenőrzés és irányítás alá vannak vonva, a(z élő) rendszer jó működéshez szükséges célszerűség szerint.<br />
+<br />
+2. A fénysebesség feletti információátadás kérdése:<br />
+A jelenlegi Isten-modellem szerint Isten teste a látható Univerzum, viszont a tudata az a nem látható finom anyag, az erőtér az atomok között, ami mindent kitölt, és ez a tudat körülvesz bennünket, úgyhogy itt nincs számottevő távolság. A távolság Isten egyes durva anyagi alkotóelemei között van. Mondhatnánk, legyen Isten gondja, hogyan kommunikál gyorsan a saját alkotórészei között&#8230; de jó esély van rá, hogy a kommunikációnak van olyan, természetben létező módja is, ami nem az elektromágneses rezgések terjedése által történik; csak éppen ez a legnehezebben kutatható rész.<br />
+Az élet egy nagy puzzle, csak össze kell rakni, szoktam mondani, és valami fontos, ami által át lehet lépni a 300 km/sec korlátot, még nincs felfedezve, de már pedzegetik: tachionok, fénysebesség feletti fizika, többdimenziós terek, holografikus tér&#8230;<br />
+Valaki már belinkelte, de inkább legyen itt még egyszer:<br />
+&#8222;Hologram a való világ?<br />
+Különböző tudományágak képviselői jutottak arra a meggyőződésre, hogy ez érzékszervek által tapasztalt világ csupán egy szelete a valóságnak. A mélyebb szinteken a teljes világegyetem összefügghet, és az elme nem csak vetítheti, de alakíthatja is a valóságot.&#8221;<br />
+<B><a href="//index.hu/tudomany/holo0626/" target="_new" style="color: #000000;">http://index.hu/tudomany/holo0626/</a></B><br />
+Azért csak araszolgat előre a bizonyítható tudomány is &#8211; még ha esetleg csak ott tartunk most, ahol a régi görögök az atommal, és eltelik 1-2 évezred, amíg beigazolódik. Az még nem világos, hogy ezt mennyire lehet az élet pusztítására használni; az viszont igen, hogy az embernek erkölcsileg kellene sokkal gyorsabban fejlődnie, nem pedig technikailag.<br />
+Az atomokról:<br />
+<B><a href="//www.atomenergia.extra.hu/atom/targy/atom.htm" target="_new" style="color: #000000;">http://www.atomenergia.extra.hu/atom/targy/atom.htm</a></B><br />
+<br />
+Valamelyest ide kapcsolódik: sejtmemória<br />
+<B><a href="//en.wikipedia.org/wiki/Cellular_memory" target="_new" style="color: #000000;">http://en.wikipedia.org/wiki/Cellular_memory</a></B><br />
+<br />
+Kösz&#8217; az újabb szempontot az épülő-szépülő Isten-modellhez; végül úgyis csak kollektív módon tud majd további fejlődni, a többiek hozzászólása és kritikája által.<br />
+Most épp azt se tudom, a sok elvégzendő közül hova kapjak, de azért 2009 májusára meglesz az a rendszer, amire azt tudom mondani, hogy ez az újszülött.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment91653"></A>1181. tetra</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-26 16:26:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2814.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hihi, másfél hétig nem volt netem, 20+ olvasatlan bgy feed, de először a qdb-t olvastam el. Ott találtam meg ezt az írást a v.elne.hu-n, ami ashnur url mezőjében szerepel ottan. Elkezdtem olvasni, a közepén eldöntöttem, hogy ez egy gyökér, az elejével egyetértek (a kreacionisták idióták, meg a vallásnak sincs semmi értelme), de nagyon bután érvel, nem ésszel, hanem izomból. Tipikus izom-Firefoxos típus.<br />
+<br />
+Úgysem tudsz a hülyékkel mit kezdeni, MINDIG keresni fognak valamit, amiben lehet hinni, és nem kell gondolkodni. Mellesleg a tudomány sem nyújt válaszokat, a legelje ennek is a csodával indul...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment91615"></A>1180. Guenhwyvar</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-26 15:41:28</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3254.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nos, lenne néhány hozzáfűzni valóm ehhez a bejegyzéshez.<br />
+<br />
+"Az evolúciót tagadni olyan mintha azt tagadnád, hogy 3 a harmadikon 27 lesz."<br />
+<br />
+Ajánlanám ashnur figyelmébe Nemere Istvántól a "Teremtés, evolúció, vagy...?" (Alcím: Elméletek, csalások, tévedések, és..) című könyvet. Bár nem szeretem Nemerét, mert elfogult, de vannak ebben a könyvben meglepő érvek és ellenérvek mindkét oldalhoz.<br />
+<br />
+"A másik szörnyű tévedés ami sokakban él, hogy a vallás és tudomány az valamiféleképpen összehasonlítható, egyenrangú fél. Ez nem így van. A vallás nem keres megoldásokat, hanem készen legyártva kínál egy megoldást. A tudomány nem kész, nem befejezett és főleg nem tartja magát tévedhetetlennek, valamint a tudomány önmagában a dolgok miértjére irányuló keresés."<br />
+<br />
+A tudomány talán nem tartja magát tévedhetetlennek, csak a Tudományos Akadémia. A vallás nem keres megoldásokat, de a tudományos akadémia vezetői pedig ragaszkodnak a dogmáikhoz. Hát akkor ők mennyivel tudományosabbak, mint a vallás?<br />
+A tudományos "hit" pedig az ősrobbanás. Kitaláció az egész.<br />
+<br />
+Értelmes tervezés hívei pedig szerintem (sem) különbek a teremtéspártiaknál.<br />
+<br />
+És végül:<br />
+"és azzal jönnek, hogy de a keresztény, azaz krisztusi tanítások azok milyen jók, és milyen igazak, és azokat ha követjük baj nem lehet."<br />
+<br />
+Ugyan nem vagyok keresztyén (sem keresztény), meg más se nagyon, de azon érdemes lenne elgondolkodni, hogy ha mindenki ezek az erkölcsi megfontolások szerint élnének, és segítenék embertársaikat, tisztelnék a környezetüket, hogy akkor mennyivel jobb világ lenne itt. És ezt nem csak a kereszténység sajátja, a sok más vallásé is. <br />
+Bár az igaz, hogy elég gyenge a körítés a lényeg körül.<br />
+Nameg a legtöbb vallás nézete szerint ha nem az ő vallásukban hiszel, pokolrajucccmegdögleszörökidőkre, stb. (Kivéve talán a Buddhizmus, az egész normális, nem akarja a tanait senkire sem ráeröltetni).<br />
+<br />
+Mindent összegezve, van valami teremtő erő, amit a tudósok máshogy hívnak, mint a vallásosok. Mindegy, hogy Istennek nevezzük-e, vagy valami másnak.<br />
+Az igazságot meg egyszer úgy is megtudjuk, ha meghalunk.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1276&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1276&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1276&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1276&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1276&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1276&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1276&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1276&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1276&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1276&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1276&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1276&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1276&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1276&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1276&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1276&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1276&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1276&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1276&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1276&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1276&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1276&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1276&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1276&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1276&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=1276&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> <A HREF="./index.php?post=1276&commentstart=250#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>26</B></A> <A HREF="./index.php?post=1276&commentstart=260#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>27</B></A> <A HREF="./index.php?post=1276&commentstart=270#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>28</B></A> <A HREF="./index.php?post=1276&commentstart=280#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>29</B></A> <A HREF="./index.php?post=1276&commentstart=290#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>30</B></A> <A HREF="./index.php?post=1276&commentstart=300#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>31</B></A> <A HREF="./index.php?post=1276&commentstart=310#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>32</B></A> <A HREF="./index.php?post=1276&commentstart=320#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>33</B></A> <A HREF="./index.php?post=1276&commentstart=330#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>34</B></A> <A HREF="./index.php?post=1276&commentstart=340#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>35</B></A> <A HREF="./index.php?post=1276&commentstart=350#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>36</B></A> <A HREF="./index.php?post=1276&commentstart=360#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>37</B></A> <A HREF="./index.php?post=1276&commentstart=370#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>38</B></A> <A HREF="./index.php?post=1276&commentstart=380#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>39</B></A> <A HREF="./index.php?post=1276&commentstart=390#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>40</B></A> <A HREF="./index.php?post=1276&commentstart=400#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>41</B></A> <A HREF="./index.php?post=1276&commentstart=410#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>42</B></A> <A HREF="./index.php?post=1276&commentstart=420#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>43</B></A> <A HREF="./index.php?post=1276&commentstart=430#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>44</B></A> <A HREF="./index.php?post=1276&commentstart=440#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>45</B></A> <A HREF="./index.php?post=1276&commentstart=450#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>46</B></A> <A HREF="./index.php?post=1276&commentstart=460#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>47</B></A> <A HREF="./index.php?post=1276&commentstart=470#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>48</B></A> <A HREF="./index.php?post=1276&commentstart=480#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>49</B></A> <A HREF="./index.php?post=1276&commentstart=490#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>50</B></A> <A HREF="./index.php?post=1276&commentstart=500#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>51</B></A> <A HREF="./index.php?post=1276&commentstart=510#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>52</B></A> <A HREF="./index.php?post=1276&commentstart=520#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>53</B></A> <A HREF="./index.php?post=1276&commentstart=530#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>54</B></A> <A HREF="./index.php?post=1276&commentstart=540#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>55</B></A> <A HREF="./index.php?post=1276&commentstart=550#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>56</B></A> <A HREF="./index.php?post=1276&commentstart=560#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>57</B></A> <A HREF="./index.php?post=1276&commentstart=570#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>58</B></A> <A HREF="./index.php?post=1276&commentstart=580#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>59</B></A> <A HREF="./index.php?post=1276&commentstart=590#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>60</B></A> <A HREF="./index.php?post=1276&commentstart=600#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>61</B></A> <A HREF="./index.php?post=1276&commentstart=610#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>62</B></A> <A HREF="./index.php?post=1276&commentstart=620#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>63</B></A> <A HREF="./index.php?post=1276&commentstart=630#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>64</B></A> <A HREF="./index.php?post=1276&commentstart=640#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>65</B></A> <A HREF="./index.php?post=1276&commentstart=650#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>66</B></A> <A HREF="./index.php?post=1276&commentstart=660#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>67</B></A> <A HREF="./index.php?post=1276&commentstart=670#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>68</B></A> <A HREF="./index.php?post=1276&commentstart=680#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>69</B></A> <A HREF="./index.php?post=1276&commentstart=690#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>70</B></A> <A HREF="./index.php?post=1276&commentstart=700#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>71</B></A> <A HREF="./index.php?post=1276&commentstart=710#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>72</B></A> <A HREF="./index.php?post=1276&commentstart=720#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>73</B></A> <A HREF="./index.php?post=1276&commentstart=730#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>74</B></A> <A HREF="./index.php?post=1276&commentstart=740#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>75</B></A> <A HREF="./index.php?post=1276&commentstart=750#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>76</B></A> <A HREF="./index.php?post=1276&commentstart=760#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>77</B></A> <A HREF="./index.php?post=1276&commentstart=770#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>78</B></A> <A HREF="./index.php?post=1276&commentstart=780#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>79</B></A> <A HREF="./index.php?post=1276&commentstart=790#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>80</B></A> <A HREF="./index.php?post=1276&commentstart=800#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>81</B></A> <A HREF="./index.php?post=1276&commentstart=810#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>82</B></A> <A HREF="./index.php?post=1276&commentstart=820#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>83</B></A> <A HREF="./index.php?post=1276&commentstart=830#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>84</B></A> <A HREF="./index.php?post=1276&commentstart=840#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>85</B></A> <A HREF="./index.php?post=1276&commentstart=850#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>86</B></A> <A HREF="./index.php?post=1276&commentstart=860#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>87</B></A> <A HREF="./index.php?post=1276&commentstart=870#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>88</B></A> <A HREF="./index.php?post=1276&commentstart=880#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>89</B></A> <A HREF="./index.php?post=1276&commentstart=890#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>90</B></A> <A HREF="./index.php?post=1276&commentstart=900#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>91</B></A> <A HREF="./index.php?post=1276&commentstart=910#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>92</B></A> <A HREF="./index.php?post=1276&commentstart=920#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>93</B></A> <A HREF="./index.php?post=1276&commentstart=930#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>94</B></A> <A HREF="./index.php?post=1276&commentstart=940#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>95</B></A> <A HREF="./index.php?post=1276&commentstart=950#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>96</B></A> <A HREF="./index.php?post=1276&commentstart=960#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>97</B></A> <A HREF="./index.php?post=1276&commentstart=970#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>98</B></A> <A HREF="./index.php?post=1276&commentstart=980#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>99</B></A> <A HREF="./index.php?post=1276&commentstart=990#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>100</B></A> <A HREF="./index.php?post=1276&commentstart=1000#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>101</B></A> <A HREF="./index.php?post=1276&commentstart=1010#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>102</B></A> <A HREF="./index.php?post=1276&commentstart=1020#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>103</B></A> <A HREF="./index.php?post=1276&commentstart=1030#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>104</B></A> <A HREF="./index.php?post=1276&commentstart=1040#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>105</B></A> <A HREF="./index.php?post=1276&commentstart=1050#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>106</B></A> <A HREF="./index.php?post=1276&commentstart=1060#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>107</B></A> <A HREF="./index.php?post=1276&commentstart=1070#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>108</B></A> <A HREF="./index.php?post=1276&commentstart=1080#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>109</B></A> <A HREF="./index.php?post=1276&commentstart=1090#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>110</B></A> <A HREF="./index.php?post=1276&commentstart=1100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>111</B></A> <A HREF="./index.php?post=1276&commentstart=1110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>112</B></A> <A HREF="./index.php?post=1276&commentstart=1120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>113</B></A> <A HREF="./index.php?post=1276&commentstart=1130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>114</B></A> <A HREF="./index.php?post=1276&commentstart=1140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>115</B></A> <A HREF="./index.php?post=1276&commentstart=1150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>116</B></A> <A HREF="./index.php?post=1276&commentstart=1160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>117</B></A> <A HREF="./index.php?post=1276&commentstart=1170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>118</B></A> <A HREF="./index.php?post=1276&commentstart=1180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>119</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

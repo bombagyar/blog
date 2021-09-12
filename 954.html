@@ -1,0 +1,822 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=954#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A cionista terror kronológiája I.";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=954#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>A cionista terror kronológiája I.<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 május 19. 06:43:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_954.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Az alábbiakban részletes   
+történelmi áttekintést és kronológiát böngészhet a kedves Olvasó, amely a zsidó szupremacisták   
+tetteit sorolja fel a kezdet kezdetétől, az ókortól napjainkig. Természetesen a lista korántsem   
+teljes, és inkább világpolitikai jelentőségű eseményekre koncentrál, a modern kori történésekből   
+pedig inkább az Egyesült Államokkal és Izraellel kapcsolatosakat emeli ki. Így például hiába   
+keressük a listán az 1919-es magyarországi kommünt, az ifjútörök mozgalom disznóságait, ami az   
+örmények elleni népirtásban csúcsosodott ki, vagy a Solymosi Eszter-ügyet. Minden hiányossága   
+ellenére azonban ez a Victor Wolzek által összeállított lista kiváló képet ad Sión népének   
+ügyködéseiről, úgy politikai, mint kulturális, katonai vagy gazdasági hegemóniára való   
+törekvésükről. Rávilágít olyan összefüggésekre, amelyeket pedig jobb szeretnének titokban tartani.   
+Biztos vagyok benne azonban, hogy egy szép napon ezt a kronológiát történelmi forrásként fogják   
+használni, és vészkorszakként fogunk visszatekinteni a világméretű cionista befolyásra a XXI. század 
+  elején. Aztán majd két-háromszáz évvel később kezdődik minden elölről, ahogy mindig is   
+volt...<br><br></div><div style="text-align: justify;"><span style="font-weight: bold;">Kr. e.   
+950-930 körül</span><br>Judea törzsét, azaz a zsidókat, és egy kisebb törzset, a benjamitákat   
+elüldözik maguk közül az izraeliták. Ezek a csoportok Palesztinában, Kánaán déli részén telepednek   
+le. Kiűzetésük oka az volt, hogy a többi izraelita törzs lázadónak és bajkeverőnek tartotta őket,   
+különösen az "egy Isten" tanának sajátos értelmezése miatt.<br><br><span style="font-weight: bold;">Kr. e. 400 körül</span><br>Az immár független zsidó vallás, vagy ahogy ma ismerjük, a   
+rabbinikus judaizmus történetének kezdete. A vallási tanokat egyelőre csak szájhagyomány útján   
+terjesztik. E vallás szerint a zsidók Isten kiválasztott népe, és minden más nép alsóbbrendű. Ez az  
+ első bigott vallási irányzat a történelemben. Az Ótestamentum és a rabbinikus judaizmus nem   
+ugyanaz!<br><br><span style="font-weight: bold;">Kr. e. 4</span><br>Jézus születése<br><br><span style="font-weight: bold;">30 körül</span><br>A zsidók meggyilkolják Jézust, avagy megölik, ha ez   
+jobban tetszik. Jézust különféle bűnök miatt Pilátus elé hurcolják, aki ártatlannak mondja ki. A   
+zsidók erre dühödten követelik a halálát. <span style="font-style: italic;">"Pilátus pedig látván,   
+hogy semmi sem használ, hanem még nagyobb  háborúság támad, vizet vévén, megmosá kezeit a sokaság   
+előtt, mondván:  Ártatlan vagyok ez igaz embernek vérétől; ti lássátok! És felelvén az  egész nép ,  
+ monda: Az ő vére rajtunk és a mi magzatainkon." </span>(Máté 27.24-25)<br><br><span style="font-weight: bold;">66</span><br style="font-weight: bold;">Zsidó felkelés Róma ellen. A   
+zsidók elpusztítanak egy kisebb római helyőrséget Jeruzsálemben. Cestius Gallus, Szíria helytartója  
+ nagyobb haderőt küld a lázadás leverésére, de a zsidók ezt is visszaverik. Erre Róma 60 ezer jól   
+felszerelt, veterán katonát küld. Galilea ostroma után körülbelül 100 000 zsidót ölnek meg vagy   
+vetnek rabszolgaságba. A túlélők Jeruzsálembe menekülnek, ahol felkészülnek a város ostromára. 70   
+nyarán a római csapatok áttörik Jeruzsálem védelmét, és véres pusztítást végeznek. Elpusztul a   
+Második Templom is. Későbbi becslések szerint a lázadásban egymillió zsidó vett részt.<br><br><span style="font-weight: bold;">132-135</span><br style="font-weight: bold;">A Bar-Kochba-féle felkelés.  
+ Zsidó gerillacsapatok 123-tól kezdve orvtámadásokat hajtanak végre a római csapatok ellen. 
+Hadrianus   császár a Hatodik Ferrata légiót küldi Judeába a terroristák felszámolására. 132-ben 
+Simon   Bar-Kochba vezetésével a zsidók 50 erődöt és 985 védtelen várost és falut foglalnak el, 
+köztük   Jeruzsálemet. Rómából Publus Marcellust, Szíria helytartóját küldik ellenük, de a zsidók őt 
+is, és   Rufust is legyőzik. A part elfoglalása után tengeri csatákra is sor került. A zsidók 
+hadiszerencséje   akkor fordult meg, amikor Hadrianus Julius Severus csapatait küldte Judeába 
+Britanniából, Hadrianus   Quintus Lollicus Urbicus germániai csapataival megerősítve. Ekkor 12 légió 
+harcolt Palesztinában. A   zsidó haderő nagy létszáma miatt Severus nem kezdett nyílt csatákba, 
+hanem a zsidó erődöket   blokáddal és kiéheztetéssel gyengítette. Végül minden elfoglalt erődöt és 
+települést elpusztítottak.   135-ben a római csapatok elfoglalták Bethar városát, ahol minden zsidót 
+megöltek. A zsidók nagy   részét rabszolgaként Egyiptomba deportálták. A zsidó települések 
+újjáépítését megtiltották,   Jeruzsálemet átnevezték Aelia Capitolina-nak, és megtiltották a 
+zsidóknak, hogy a városban éljenek.   Még a tartomány nevét is megváltoztatták, ezután Judea helyett 
+Syria Palestina-nak nevezték. A zsidó   vallás gyakorlását is megtiltották. Bár Hadrianus minden 
+zsidó tőről fakadó gyakorlatot, így a   kereszténységet is üldözte, a rabbinikus judaizmusra különös 
+figyelmet fordított. Tilos volt a Tóra   tanulmányozása, a sábesz megtartása, a körülmetélés, a 
+zsidó tanácsok ülésezése, a zsinagógákban   való találkozás és minden más rituális gyakorlat. Ezen 
+események után kezdődött a zsidók világméretű   szétszóródása, és a templomi gyakorlatok helyett a 
+decentralizált, rabbinikus judaizmus elterjedése.   A zsidó etnocentrikusság nagy dokumentuma, a 
+Jeruzsálemi Talmud is a végső vereség után készült   Tiberias városában.<br><br><span style="font-weight: bold;">500-1300</span><br style="font-weight: bold;">Az Encyclopedia Britannica 
+szerint a középkori kereskedelem nagy részét a zsidó kereskedők   bonyolították, kivéve 
+Skandináviában, ahonnan kitiltották őket. Ellenőrzésük alatt álltak az ázsiai   útvonalak is. 
+Hatalmuk egészen a reneszánsz idők kezdetéig megmaradt, amikor kiüldözték őket szinte   minden 
+nyugat-európai országból. Az első ilyen ország Anglia volt 1290-ben. Franciaország követte a   
+példát 1306-ban, majd Spanyolország 1492-ben, Portugália pedig 1498-ban. Ezután csak néhány német   
+városállamba, Észak-Olaszország egy részébe, és az Avignon környéki pápai birtokokra maradt   
+bejárásuk. Befolyásukat azonban alaposan megnyirbálták a negyedik lateráni zsinaton hozott   
+rendelkezések.<br><br><span style="font-weight: bold;">740</span><br style="font-weight: bold;">Ázsiában, a mai Törökországtól északkeletre egy mintegy 4000 fős létszámú mongol-török   
+gyökerű törzs, a kazárok zsidó vallásra térnek uralkodójuk, Bulan parancsára. Belőlük lesznek később 
+  az askenázi zsidók, a világ legnépesebb zsidó etnikai csoportja, bár ma már sokan tagadják a kazár 
+  eredetüket.<br><br><span style="font-weight: bold;">1100 után</span><br style="font-weight: bold;">A   kazár zsidó befolyás egyre erősödik Lengyelországban, végül a pénzverés is zsidó 
+monopóliummá válik.   A pénzérmékre héber nyelvű feliratok is kerülnek a lengyel mellett. Az 
+elkövetkező három évszázadban   Lengyelországban heves belpolitikai küzdelmek zajlanak a zsidók és a 
+gójok között az ország   uralmáért. A zsidókat nagyban segíti az időközben elbukott kazár 
+királyságból beáramlók tömege. Bár   Lengyelországnak minden adottsága megvan, hogy Európa vezető 
+nemzeti közé emelkedjen, a zsidó   befolyás visszatartó hatása miatt ez sohasem történik 
+meg.<br><br><span style="font-weight: bold;">1012-1744</span><br style="font-weight: bold;">A zsidók 
+olyan jogokat kapnak   Lengyelországban, mint sehol a világon. Saját, autonóm jogrendszert (kahal) 
+alkalmaznak, amelynek   révén egymás közötti jogvitáikat a keresztény lengyel jogrend megkerülésével 
+rendezhetik. Ezen   előjogok miatt, amit a lengyel korona a kaliszi egyezményben garantált, 
+Lengyelországot egész   Európában "paradisus Judeorum"-ként, a zsidók paradicsomaként emlegetik. 
+Amikor Európa több   országában zsidóellenes intézkedéseket hoznak, különösen a német államokban, a 
+Rajna völgyének   városaiban, az ott élő zsidók mind Lengyelország felé menekülnek. Ezek a 
+menekültek hozzák magukkal   a "német zsidó nyelvet", azaz a jiddisnek rövidített Judaische 
+Deutsch-ot, ami meghonosodik   Lengyelországban. A zsidók nem asszimilálódnak, többségük meg sem 
+tanulja a lengyel nyelvet, de erre   egyébként sincs szükségük, mert a kereskedelmen és az 
+erkölcstelen szexuális kicsapongáson kívül nem   érintkeznek a lakossággal. Gyakorlagilag államot 
+alkotnak az államon belül.<br><br><span style="font-weight: bold;">1290</span><br style="font-weight: bold;">A zsidókat kiűzik   Angliából.<br><br><span style="font-weight: bold;">1306</span><br style="font-weight: bold;">A   zsidókat kiűzik Franciaországból.<br><br><span style="font-weight: bold;">1321</span><br>A zsidókat   ismét kiűzik Franciaországból.<br><br><span style="font-weight: bold;">1348-1350</span><br style="font-weight: bold;">Spanyolországban, 
+Franciaországban, a német fejedelemségek területén és   Ausztriában a zsidók bosszúból fertőző 
+tetemekkel mérgezik meg a keresztények által használt   kutakat. Kontinensméretű pestisjárvány tör 
+ki. A keresztények pogromokat szerveznek, rengeteg zsidót   megölnek.<br><br><span style="font-weight: bold;">1459</span><br>Spanyolországban Espina megírja a   <span style="font-style: italic;">Fortaliatium Fidei</span> című művet, a történelem egyik   legélesebb 
+antijudaista röpiratát. Ennek állítása szerint Castilla tartományban inkvizíciós eljárás   keretében 
+meg lehetne állapítani, hogy sok zsidó csak színleg vette fel a kereszténységet, valójában   
+továbbra is judaizálásra és a keresztény erkölcs aláásására törekednek.<br><br><span style="font-weight: bold;">1543</span><br style="font-weight: bold;">Luther Márton megírja<span style="font-style: italic;"> A zsidókról és hazugságaikról</span> című művét.<br><br><span style="font-weight: bold;">1569</span><br style="font-weight: bold;">Szövetség születik a lengyel   
+vezetők és a zsidók között, hogy a vagyont egyre kevesebb kézbe juttassák, különösen Ukrajna   
+nyolcvan éven át, 1569-től 1648-ig tartó zsidó kolonizálása alatt. Mivel az egyezmény   
+monopóliumjogokat is garantált, a zsidó adószedők megerősíthették lengyel támogatóik politikai   
+hatalmát, saját vagyonukat gyarapítva, a lengyel kisbirtokosokat pedig csődbe juttatva. Bár hatalmuk 
+  rövid időre valóban megnőtt, ezzel csak felerősítették a nem sokkal később kitört zsidóellenes   
+megmozdulásokat. <br>Lengyelországban nem volt inkvizíció, ezért ami Spanyolországban elmaradt, itt  
+ megtörtént. Az ország a tolerancia iskolapéldájává vált, és ezzel kikövezte az utat saját, XVIII.   
+századi pusztulásához. A jezsuiták ugyan megpróbáltak fellépni a zsidó befolyás erősödése ellen, de  
+ ehhez hiányoztak hatalmi eszközeik, az inkvizíció és az ellenreformáció. Az országban a kálvinizmus 
+  mindenféle katolikus ellenreakció nélkül terjedt. Ahogyan Heinrich Graetz írta: <span style="font-style: italic;">"Lengyelország második Babilonná vált."</span><br style="font-style: italic;"><br><span style="font-weight: bold;">1572</span><br style="font-weight: bold;">II. Zsigmond 
+  lengyel király halálával a zsidók elegendő befolyásra tettek szert ahhoz, hogy ők jelöljék ki az   
+utódját, a török Porta, a francia hugenották és az angol protestánsok támogatásával. A nemzetközi   
+egyezséget egy bizonyos Askenázi Solomon ben Nátán hozta tető alá, Szokoli Mohamed szultán   
+tanácsadója. Solomon német származású zsidó volt, aki Lengyelországba vándorolt, és Zsigmond király  
+ udvari orvosa lett. Ezután Velencébe, majd Konstantinápolyba költözött, ahol éppen olyan hűen   
+szolgálta a szultánt, mint korábban a lengyel királyt. Utódja, Nasi József szintén a szultán   
+tanácsadója lett, s a világ zsidóságának afféle nem hivatalos vezetője.<br><br><span style="font-weight: bold;">1596</span><br style="font-weight: bold;">William Shakespeare megalkotja  
+ Shylock, a zsidó uzsorás negatív figuráját a <span style="font-style: italic;">Velencei   
+kalmár</span> című drámában. A zsidók már az első bemutatása idején megpróbálták betiltatni a művet, 
+  kevés sikerrel.<br><br><span style="font-weight: bold;">1633</span><br style="font-weight: bold;">A   zsidók teljes ellenőrzésük alá vonták a lengyelországi italpiacokat. A gabona árát ettől 
+kezdve úgy   manipulálták, hogy a piac jobban kedvezzen az italgyártásnak, mint más céloknak. 
+Emellett jelentősen   igyekeztek előmozdítani, propagálni az alkoholfogyasztást, ami az alkoholizmus 
+országos   elterjedéséhez, és a lengyel gazdaság teljesítőképességének zuhanásához vezetett. A 
+többségi   társadalom körében tovább növekedett a zsidók elleni ellenszenv, látva, hogyan használják 
+ki   gyengeségeiket saját hatalmuk és vagyonuk gyarapítására.<br><br><span style="font-weight: bold;">1647-48</span><br style="font-weight: bold;">Az ottomán birodalom elleni keresztes hadjárat   
+előkészítéseként a kozákok teljes polgárjogot kaptak a Lengyel Királyságban. A zsidó uzsorások   
+előjogait megnyirbálták, többé nem szedhettek díjat a templomoktól a temetésekért, esküvőkért,   
+keresztelőkért, és a zsidó adószedőknek való ellenszegülés többé nem számított bűncselekménynek.   
+Eközben a zsidók mellett a jezsuitákat is eltiltották a dél-ukrajnai területeken való működéstől,   
+így többé ők sem voltak képesek az ortodox hívőket a katolicizmus felvételére téríteni. 1648-ban   
+azonban azonban a szejmben a nagybirtokosok, zsidó háttértámogatóik nyomására, leszavazták ezt a   
+törvényt, jól példázva, hogyan befolyásolhatja egy maroknyi érdekcsoport a többség feletti   
+döntéseket, akár a közérdek ellenében is.<br>A XVII. század első felében a lengyelországi helyzet   
+hasonló volt a spanyolországihoz. Spanyolország volt az egyetlen másik európai ország, ahol a   
+zsidóság jelentős befolyással rendelkezett. Akárcsak Lengyelországban, itt is számos szefárd zsidó   
+követett olyan életmódot, ami ellenszenvet keltett az alsóbb néposztályokban. 1326-ban, a cuencai   
+éhínség idején a zsidó uzsorások negyven százalékos kamatra adtak kölcsönt az éhező parasztoknak,   
+hogy azok vetőmagot vehessenek. A blaszfémia szintén bevett szokásuk volt. Mózes ugyan a blaszfémia  
+ elkövetőit halálbüntetéssel rendelte sújtani, de ennek ellenére a zsidók gyakran gyalázták a   
+prófétát, akinek eljövetelét Mózes megjövendölte. A zsidók végül éppen azt csinálták, amit Mózes   
+tiltott: felebarátaikat rabszolgának eladva kerestek nagy vagyonokat, uzsorakamatra kölcsönöztek   
+pénzt, s tették ezt természetesen és gyakran. Gyakran arra kényszerítették keresztény szolgálóikat   
+vagy adósaikat, hogy zsidó módra körülmetélkedjenek, és megtagadják Krisztust.<br><br><span style="font-weight: bold;">1656</span><br style="font-weight: bold;">Egy zsidó rabbi a kereszténység 
+  tanításaival érvelve meggyőzi Oliver Cromwell kormányzót, hogy engedje meg a zsidók visszatérését  
+ Angliába.<br><br><span style="font-weight: bold;">1757-1813</span><br style="font-weight: bold;">A  
+ portugáliai szefárd zsidóknak fejpénzt fizet a kormány a kivándorlásért.<br><br><span style="font-weight: bold;">1760-1770</span><br style="font-weight: bold;">A zsidók vezető szerepre   
+tesznek szert az észak-amerikai rabszolgakereskedelemben, különösen a Rhode Island-i Newportban,   
+ahol a hajók többsége is zsidó tulajdon. Newportban épül meg egyébként Amerika első   
+zsinagógája.<br><br><span style="font-weight: bold;">1795</span><br style="font-weight: bold;">Lengyelország háromfelé darabolása idején a világ zsidóságának 80%-a itt él.<br><br><span style="font-weight: bold;">1804</span><br>Az orosz kormány, abban a reményben, hogy a zsidó   
+szektákat integrálhatja, elrendeli a kötelező és ingyenes iskolai oktatást a zsidó gyerekek számára. 
+  Az oktatás ekkoriban még luxusnak számít az egész világon, kevés orosz család engedheti meg 
+magának.   Eredményképpen a zsidók lesznek Oroszország legműveltebb népe, és hatalmuk jelentősen   
+megerősödik.<br><br><span style="font-weight: bold;">1806-1807</span><br>Napóleon döntésre akarja   
+vinni az immár évszázados zsidókérdést. 71 zsidót, köztük 46 rabbit rendel Párizsba, ahol kérdések   
+listáját adja át nekik a zsidók álláspontjáról házasságot, uzsorát, lojalitást, vallást tekintve. A  
+ válaszokkal megelégedve "felszabadítja" a francia zsidókat, olyan polgárjogokat adva nekik,   
+amelyeket korábban nem élveztek. Hamarosan kiderül azonban, hogy a zsidók hazudtak, továbbra sem   
+asszimilálódnak, és megtartják szupremácia-törekvéseiket.<br><br><span style="font-weight: bold;">1815</span><br style="font-weight: bold;">A waterloo-i csata után Nathan Rotschild sokmilliós 
+  vagyonra tesz szert azáltal, hogy a londoni tőzsdén hamis pletykákat terjeszt el a csata   
+kimeneteléről, mielőtt a hír hivatalosan megérkezne. Ez alapozza meg a Rotschild család nemzetközi   
+hatalmát. Ez persze az egész zsidóság számára előnyt jelent, hiszen a Rotschildok számos zsidó   
+intézményt nagy összeggel támogattak, és támogatnak mind a mai napig.<br><br><span style="font-weight: bold;">1818</span><br>Karl Marx megszületik Trier városában, Poroszországban. A  
+ kispolgári család később protestáns hitre tér. Marx később főszerepet játszik egy forradalmi 
+elmélet   kifejlesztésében, amely később világszerte pusztító ideológiai eszközzé válik. Legalább 
+100 millió   életet követeltek azok a konfliktusok, amelyeket a más világnézetet követő felek ellen 
+a kommunizmus   eszméit okként megnevező agresszorok robbantottak ki. A marxizmus valójában az 
+elidegenítés   doktrínája, amelynek célja, hogy eltávolítsa egymástól a társadalmi osztályokat, az 
+etnikai   csoportokat, a generációkat, még a nemeket is. Támogatói gazdasági, politikai, filozófiai, 
+  pszichológiai, de még esztétikai érveket is bevetnek e radikális, beteg világnézet   
+terjesztésére.<br><br><span style="font-weight: bold;">1838</span><br style="font-weight: bold;">Charles Dickens megalkotja Fagin, a zsidó bűnöző figuráját <span style="font-style: italic;">Twist Olivér</span> című regényében.<br><br><span style="font-weight: bold;">1848</span><br style="font-weight: bold;">Karl Marx közzéteszi a <span style="font-style: italic;">Kommunista   
+Kiáltványt,</span> ami gyakorlatilag az ősi zsidó közösségi rendszeren alapuló kommunizmus leírása.  
+ A könyv a hagyományos nyugati keresztény értékeket és erkölcsöket támadja, s valójában nem más, 
+mint   egy hosszú távú szociálpolitikai és gazdasági bosszúhadjárat terve.<br><br><span style="font-weight: bold;">Az 1800-as évek közepétől végéig</span><br style="font-weight: bold;">Richard Wagner, a nagy   német zeneszerző, Friedrich Nietzsche filozófus inspirációjára, 
+kritikus megjegyzéseket <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=655">fogalmaz meg</a>   a zsidóságról és a német népre 
+általuk leselkedő veszélyekről. Évekkel később Hitler kijelentette:   <span style="font-style: italic;">"Aki meg akarja érteni a nemzetiszocializmust, ismernie kell   Wagnert."</span><br style="font-style: italic;"><br><span style="font-weight: bold;">1852</span><br style="font-weight: bold;">Egy rabbi felesége, Harriet Beecher-Stowe megírja a<span style="font-style: italic;"> Tamás 
+bátya kunyhója</span> című regényt. Bár soha életében nem járt   Délen, ez nem akadályozta abban, 
+hogy túlzásokkal tarkított, Dél-ellenes felhangokkal tűzdelt   könyvét kiadja. 1862-ben, amikor 
+Harriet meglátogatta Lincoln elnököt, a legendák szerint az elnök   úgy üdvözölte őt, mint "a 
+hölgyet, aki miatt ez a nagy háború kitört." Ha a könyvben foglalt   propaganda igaz is lett volna, 
+vajon hihetné-e bármely intelligens olvasó, hogy a mitikus Tamás   bátya jobban élt volna Afrikában? 
+Másfél évszázaddal később, napjainkban ugyanis a rabszolgaság még   mindig létező intézmény a fekete 
+kontinensen.<br><br><span style="font-weight: bold;">1852</span><br style="font-weight: bold;">Benjamin Disraeli, Nagy-Britannia zsidó miniszterelnöke alsóházi   beszédében figyelmezteti 
+Európát, hogy a zsidóság veszélyt jelent Európa konzervatív értékrendjére.   Figyelmeztet arra is, 
+hogy a titkos társaságokban, mint az Illuminátusok, feltűnően sok zsidó   található. Kevesen 
+hallgatnak rá. <br><span style="font-weight: bold;"><br></span></div><span style="font-weight: bold;">1858</span><br style="font-weight: bold;"><div style="text-align: justify;">Megszületik Franz 
+Boas, a kultúrantropológia tudományának megalapozója. Munkásságáig az   antropológia azt jelentette, 
+amit ma "fizikai antropológiának" hívnak, az antropológusok a korábbi   kultúrák fizikai leleteit 
+igyekeztek magyarázni, az archeológusokkal együtt dolgozva. A   kultúrantropológus ezzel szemben 
+idegen kultúrákhoz látogat, hogy velük együtt élve tanulmányozza   környezetüket. Ez a módszer 
+természetesen sokkal több lehetőséget ad arra, hogy az antropológus a   primitív kultúra azon 
+elemeire fókuszáljon, amelyek támogatják az ő saját szociálpolitikai nézeteit.   A szociológia és a 
+pszichoanalízis mellett ez is egy kiváló példája annak, amikor a zsidók a   semmiből teremtenek egy 
+akadémikus tudományágat, ami saját érdekeiket szolgálja. Boas olyan   kultúrantropológusokat 
+képzett, mint Margaret Mead vagy Ruth Benedict. Boas egyébként azon német   zsidó intellektuellek 
+egyike volt, aki úgy érezte, lehetőségei egyre szűkülnek a Bismarck vezette,   egyesülő 
+Németországban, és Amerikába vándorolt.<br><br><span style="font-weight: bold;">1862</span><br>Ulysses S. Grant tábornok parancsot ad a zsidók kiutasítására bizonyos   
+amerikai államokból, kártékony tevékenységük miatt. A zsidók Lincoln elnöknél tiltakoznak (mint   
+azóta is, ha valami bajuk van), aki visszavonja a parancsot.<br><br><span style="font-weight: bold;">1870</span><br style="font-weight: bold;">Április 22-én az Vladimir Iljics Uljanov, későbbi   
+nevén Lenin, a későbbi orosz forradalmár megszületik egy orosz apától és egy zsidó   
+anyától.<br><br><span style="font-weight: bold;">1879</span><br>Február 9-én Grigorij Goldenberg   
+forradalmár agyonlövi Kropotkint, Harkov kormányzóját. Ez a Kropotkin történetesen unokabátyja volt  
+ a hasonló nevű anarchistának.<br><br><span style="font-weight: bold;">1881</span><br>Március 
+elsején   egy Grineveszkij nevű zsidó meggyilkolja II. Sándor orosz cárt. A négy fős 
+merénylőcsoport,   Grineveszkij, Riszakov, Mihajlov és Emeljanov aznap bombákkal megpakolva hagyták 
+el Heszja Helfman   zsidó kereskedő házát. Helfmann tárolta a robbanóanyagot a merénylethez. 
+Valamennyien a Narodnaja   Volka (Népakarat) nevű marxista forradalmi csoport tagjai voltak. Az első 
+bomba nem ölte meg II.   Sándort, de a Grineveszkij által eldobott második mind a cárt, mind a 
+merénylőt elpusztította. A   Narodnaja Volja egyébként az amerikai marxista csoport, a Land and 
+Liberty testvérszervezete volt,   amelyet Mark Natanson, szintén zsidó személy alapított, Alex 
+Berkman, hírhedt anarchista zsidó   nagybátyja. A Narodnaja Volja volt a világ első modern politikai 
+terrorista szervezete. Nem túl   meglepő módon, a zsidók a mai napig azt hangoztatják, hogy a II. 
+Sándor meggyilkolása után lezajlott   zsidóellenes pogromok minden ok nélkül robbantak ki, pusztán 
+az "oktalan és alaptalan zsidóellenes   gyűlölet" miatt.<br><br><span style="font-weight: bold;">1881</span><br>Kelet-európai askenázi   zsidók ezrei vándorolnak ki az Egyesült Államokba. 
+Csak 1890 és 1900 között mintegy ötszázezren   érkeznek az Újvilágba. Kevéssé ismert tény, hogy 
+közülük sokan azonnal kommunista vagy más baloldali   politikai szervezkedésbe kezdenek, mint ahogy 
+korábban is ilyen szervezetek tagjai   voltak.<br><br><span style="font-weight: bold;">1883</span><br style="font-weight: bold;">A zsidók   megkezdik a multikulturális bevándorlás 
+propagálását az Egyesült Államokban. Emma Lazarus zsidó   költőnő megírja propagandaversét, <span style="font-style: italic;">Az új Kolosszus </span>címmel.   Ezt a verset végül egy táblán a New 
+York-i Szabadság-szobron is elhelyezik. A vers mondanivalója az,   hogy Amerikának különféle etnikai 
+csoportok olvasztótégelyének kell lennie.<br><br><span style="font-weight: bold;">1884</span><br style="font-weight: bold;">Leo Pinszker ogyesszai zsidó   elindítja az első nagy cionista mozgalmat, 
+amely a zsidó nemzeti otthon létrehozását és zsidó   világuralmat hirdet. Ez csak kevéssel előzi meg 
+a bécsi Hertzl Tivadar hasonló   mozgalmát.<br><br>1888<br>Franz Boas megírja Változó hangok című 
+tanulmányát. Ebben elveti a   kulturális relativizmus nézetének magvait, aláásva az emberi rasszok 
+és kultúrák különbözőségének   addig elfogadott tudományos és kulturális téziseit. Boas szerint az 
+európai értékektől eltérő,   primitívebb körülmények között élő kultúrák <span style="font-style: italic;">"nem annak példái,   hogy mi milyenek voltunk régen, nem is retardáció vagy degeneráció 
+példái, hanem a kultúra   alternatív megnyilvánulásai, amelyek a miénkkel 
+egyenértékűek."</span><br><br><span style="font-weight: bold;">1889</span><br style="font-weight: bold;">Április 20-án megszületik Adolf   Hitler, aki mindenkinél pontosabban írta le a zsidók és 
+befogadó nemzeteik közötti konfliktus   lényegét, és a leghatékonyabb védelmet dolgozta ki a világ 
+rendje elleni zsidó tervek (pl. a   kommunizmus) ellen.<br><br><span style="font-weight: bold;">1891</span><br style="font-weight: bold;">Maurice de Hirsch báró, zsidó pénzember és 
+emberbarát egész vagyonát a kelet-európai zsidók   életkörülményeinek javítására ajánlja fel, amikor 
+a romló orosz közállapotok miatt tömeges   emigrációra kényszerülnek. Hirsch látomása szerint a 
+kelet-európai zsidóknak független gazdálkodókká   és kézművesekké kellene válniuk az Újvilágban. 
+(Mintha e két tevékenységről lennének híresek.)   1891-ben New Yorkban megalapítja a Baron de Hirsch 
+Alapítványt, amely e célt hivatott   támogatni.<br><br></div><span style="font-weight: bold;">1892</span><br style="font-weight: bold;"><div style="text-align: justify;">Emma Goldman 
+zsidó anarchista két társával összeesküvést   sző Henry Clay Frick emberbarát milliomos 
+meggyilkolására. A merényletet Alexander Berkman hajtja   végre, de kudarcot vall. Henry Clay Frick 
+megsebesül, de túléli a támadást.<br></div><br><span style="font-weight: bold;">1894</span><br style="font-weight: bold;">Alfred Dreyfus francia zsidó   századost kémkedés vádjával 
+letartóztatják. Az ismert baloldali író, Émile Zola újságcikke nyomán   megerősödő társadalmi 
+nyomásra azonban Dreyfust mentesítik a vádak alól, de csak részben   jogosan.<br><br><span style="font-weight: bold;">1895</span><br style="font-weight: bold;"><div style="text-align: justify;">Megjegyzés Herzl Tivadar, a Cionista Világszövetség alapítójának   naplójából, 1895 június 
+12: <span style="font-style: italic;">"Tüzeljük fel a szegény lakosságot a   határok mentén azzal, 
+hogy megtagadjuk tőlük a munkalehetőséget... Kisemmizésük és eltávolításuk   során óvatosan és 
+körültekintően kell eljárni..."</span><br></div><br><div style="text-align: justify;"><span style="font-weight: bold;">1897</span><br style="font-weight: bold;">Összeül az első   cionista 
+világkongresszus, Svájcban vagy Münchenben, ez a mai napig nem tisztázott. A konferencia   egyetlen 
+témája, hogy hogyan lehetne "visszaszerezni" Palesztinát.<br><br><span style="font-weight: bold;">1898</span><br>Márciusban megjelenik Mark Twain <span style="font-style: italic;">A zsidókról 
+  </span>című esszéje a <span style="font-style: italic;">Harper's Magazine</span>-ban.   
+Idézetek:<br><br><span style="font-style: italic;">"A zsidónak másik oldala is van. Elítélendő   
+módszereket alkalmaz, bár ezzel nincs egyedül, sosem fog megszabadulni bizonyos keresztény   
+konkurrenciától. Láthatjuk, hogy ritkán sérti meg a törvényt erőszakos bűncselekmények tekintetében. 
+  A bíróságokon inkább kereskedelemmel kapcsolatos ügyekben találkozhatunk vele. Hírnevét kisebb   
+csalásoknak, uzsorás gyakorlatának köszönheti, annak, hogy felgyújtja a saját házát, hogy   
+biztosítási pénzhez juthasson, ügyeskedő szerződéseinek, amelyekből bármikor kihátrálhat, de   
+partnerét körülbástyázza, és ügyes manővereiről, amelyek biztosítják neki a kényelmet és a   
+biztonságot, de amelyekkel, mint a bíróság és az esküdtszék átlátja, ha betűjét nem is, de a törvény 
+  szellemét megsértette. Gyakran látjuk a polgári élet hűséges és hatékony hivatalnokának 
+szerepében,   de hazafiatlannak bizonyul, ha katonaként kell a zászló alá állni."</span><br style="font-style: italic;"><br style="font-style: italic;"><span style="font-style: italic;">"Lehet 
+ennek csak a   fanatizmus az oka? </span>[a zsidók iránti állandó és nem szűnő gyűlöletnek]<span style="font-style: italic;"> Évekkel ezelőtt azt hittem, csaknem kizárólag ezért van, de később 
+felismertem hibámat. Ma   már az a meggyőződésem, hogy szinte semmi köze hozzá."</span><br style="font-style: italic;"><br style="font-style: italic;"><span style="font-style: italic;">"Szeretnék... hivatkozni egy   megjegyzésre, amit egy latin történész tett... A 
+kereszténység még annyira új volt, hogy Róma lakói   szinte még nem is hallottak róla, és keverték 
+fogalmait. A megjegyzés lényege a következő volt:   néhány keresztényt tévedésből üldöztek Rómában, 
+mert zsidónak hitték őket. Jelentése egészen   érthető. A pogányoknak semmi bajuk nem volt a 
+keresztényekkel, de nagyon is készek voltak a zsidók   üldözésére. Valamiért már akkor utálták a 
+zsidót, amikor még azt se tudták, mifélék a keresztények.   Elfogadhatjuk ezért, hogy a zsidóüldözés 
+jóval a kereszténység előtt is létezett, és nem azzal   együtt született meg? Én így 
+gondolom."</span><br style="font-style: italic;"><br style="font-style: italic;"><span style="font-style: italic;">"A gyapottermelő államokban a polgárháború után az   egyszerű és 
+nemtörődöm feketék részvényekért cserébe termeltek a fehér ültetvényeseknek. A zsidó   ekkor jelent 
+meg, üzletet nyitott az ültetvény mellett, és mindent hitelre árusított, amire a   feketéknek 
+szükségük volt. A végén, aratáskor ő lett a néger részének tulajdonosa, és részben még a   jövő 
+évinek is. A fehérek régóta megvetették a zsidót, de kérdés, hogy ezek után vajon a feketék   
+szerették-e."</span><br></div><br><div style="text-align: justify;"><span style="font-weight: bold;">1899-től</span><br>Az amerikai zsidók megkísérlik betiltatni William Shakespeare drámáit és   
+különböző keresztény jelképeket az egész Egyesült Államokban. Ezzel egyébként mind a mai napig   
+próbálkoznak. Kensingtonban, Maryland államban sikerül is elérniük a Mikulás betiltását.   
+Válaszképpen száz keresztény férfi Mikulás-jelmezben vonul végig a városon, a következő feliratú   
+táblával: <span style="font-style: italic;">"Ha a zsidók betilthatják a Mikulást, miért nem tiltjuk  
+ ki a zsidókat?"</span><br><br>(Folytatjuk)<br><br></div>   <div style="padding: 10px; background: rgb(255, 255, 255) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: center; margin-left: 20px; margin-right: 20px;"><img src="./resources/pictures/blogin_lanc.jpg" style="border: 0px solid rgb(0, 0, 0);" align="left" border="0"><font size="1">Ez a bejegyzés   
+közvetlenül kapcsolódik egy másik     Bombagyár-íráshoz:</font><br><br><a target="_blank"style="color: black;" href="//bombagyar.hu/index.php?post=960"><span style="text-decoration: underline;"><span style="font-style: italic;"><span style="font-weight: bold;">A Judapest égeti magát &#8211; szeretik a benzint, na</span></span></span></a><br></div><br>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-05-19&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=954&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=954&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=954&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=954&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=954&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=954&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=954&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=954&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60570"></A>65. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60544#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 15:21:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ungi,<br />
+<br />
+Az Ószövetség java történelmi kronológia, ezt egyszerűen átláthatod ha a könyveket összességében átolvasod, nem kiragadva bizonyos igéket. <br />
+<br />
+<br />
+A Jelenések könyve pedig szimbolisztikus próféciákból áll, eléggé nehezen húzható rá a gyűlöletre uszítás vádja. Persze lehet azt állítani hogy igen.<br />
+<br />
+A Biblia, ha jelen irányelv tekintetében tanulmányozzuk, nem hagyja jóvá sem a gyűlölködést, sem a háborúzást.<br />
+<br />
+A kereszténységet nem tudom miért nevezed folyamatosan babó manipulációs eszköznek, többek között azon vallások közé tartozik, mely megfosztja a babóságot kiválasztotti poziciójától. Ezért (is) gyűlölik annyira a babók, hisz többé nem ők az übermensch.<br />
+<br />
+A szellemi fejlődés tekintetében pedig nem egy bgy poston fogunk összeveszni, tanulmányoztam a Bibliát egyetemes erkölcs tekintetében és nem alacsonyabbak a követelményei mint a Btk-nak. Sőt.<br />
+<br />
+"Ott van pl. a Hit Gyülekezete; keresztény, sőt, judeo-keresztény gyülekezet, és olyan szinten vannak jelen a politikában (pl. Hack Péter, SZDSZ), "<br />
+<br />
+A Hit Gyülekezetét kereszténynek nevezni kb. olyan mint a Mazsihiszt ó.sz-i babók gyülekezetének. <br />
+<br />
+Németh Sanyikának nem sok köze van a kereszténységhez, ő is csak egy a sok nyomorult babó seggnyaló közül. <br />
+<br />
+Minden keresztény akiket ismerek többé-kevésbé elveti a hitgyülit és káros szektaként kezeli. Még azok is, akik amúgy pro-babók.<br />
+<br />
+<br />
+Összességében úgy látom hogy inkább a visszaélések miatt veted el a kereszténységet, nem pedig az újszövetségi tanítás miatt.<br />
+<br />
+Valahol érthető a reakciód, hisz az álszentség igencsak gusztustalan viselkedésforma. Ennek ellenére még mindig áll amit mondtam: ez nem Krisztus tanításait minősíti.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60544"></A>64. Ungi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60429#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 13:12:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Az rendben van, hogy a kereszténység az ókorban egy új korszakot nyitott, a jobbítás szándékával, ami már jobb is volt, mint az elődei, de, lévén hogy a fejlődés lehetősége nélküli vallás, mert alapvetően se hozzáadni, se módosítani nem lehet &#8211; elvenni belőle viszont érdekes módon lehet &#8211; mostanra már túlhaladottá vált, már csak azért is, mert a tan nem konzisztens, és ez lehetőség volt arra, hogy &#8222;kismillió&#8221; szekta szülessen, akik mind kereszténynek vallják magukat, pedig sok mindenben nem értenek egyet a többi kereszténnyel (sem). Egységes értelmezés, és álláspont hiányában a keresztény vallás &#8222;szétfolyt, szétesett&#8221;; és erre a lehetőség a tanban alapban benne van, és meg is valósult.<br />
+<br />
+Egy példa:<br />
+Gyűlölni, vagy nem gyűlölni?<br />
+<br />
+A gyűlölet nem elfogadható:<br />
+Lev 19,17 - Ne táplálj gyűlöletet szívedben testvéred iránt. Fedd meg embertársadat, s akkor nem osztozol bűnében.<br />
+<br />
+Lev 19,18 - Ne légy bosszúálló, és ne gyűlölködj néped fiaival. Szeresd embertársadat úgy, mint magadat. Én vagyok az Úr. <br />
+<br />
+Péld 10,12 - Veszekedést kelt a gyűlölet, a szeretet fátyolt borít a hibákra. <br />
+<br />
+Sir 28,7 - Gondolj a törvényre, ne gyűlöld embertársad, az Istennel kötött szövetségre, s nézd el a sértést. <br />
+<br />
+Mt 5,43 - Hallottátok a parancsot: Szeresd felebarátodat, és gyűlöld ellenségedet. 44 Én pedig azt mondom nektek, szeressétek ellenségeiteket, és imádkozzatok üldözőitekért! 45 Így lesztek fiai mennyei Atyátoknak, aki fölkelti napját jókra is, gonoszokra is, esőt ad igazaknak is, bűnösöknek is. 46 Ha csupán azokat szeretitek, akik szeretnek benneteket, mi lesz a jutalmatok? Nem így tesznek a vámosok is? 47 S ha nem köszöntitek, csak barátaitokat, mi különöset tesztek? Nem így tesznek a pogányok is? 48 Legyetek hát tökéletesek, amint mennyei Atyátok tökéletes!<br />
+<br />
+Kol 3,8 - De most hagyjátok el ezeket: a haragot, a gyűlölködést, a rosszindulatot, az átkozódást és az ocsmány beszédet. <br />
+<br />
+1Jn 2,9 - Aki azt állítja, hogy a világosságban él, de gyűlöli testvérét, az még mindig a sötétségben van. <br />
+<br />
+1Jn 3,15 - Aki gyűlöli testvérét, gyilkos, márpedig tudjátok, hogy egy gyilkosnak sem maradandó birtoka az örök élet. <br />
+<br />
+1Jn 4,20 - Ha valaki azt állítja, hogy: "Szeretem az Istent", de testvérét gyűlöli, az hazug. Mert aki nem szereti testvérét, akit lát, nem szeretheti az Istent sem, akit nem lát. <br />
+<br />
+<br />
+A gyűlölet elfogadható:<br />
+MTörv 1,27 - lázongtatok sátraitokban, így beszélvén: "Az Úr gyűlöl minket, azért hozott ki Egyiptomból. Ki akar szolgáltatni az amoritáknak, hogy vesztünket okozzák.<br />
+<br />
+MTörv 9,28 - Különben azt mondják majd annak az országnak a népei, ahonnan kivezettél bennünket: Az Úr nem tudta elvezetni őket a földre, amelyet ígért nekik, s gyűlöletből félrevezette, hogy a pusztában elpusztítsa őket! <br />
+<br />
+MTörv 12,31 - Azt az Úr, a te Istened (tiszteletére) nem szabad tenned. Mert azt tették isteneik kedvéért, ami az Úr, a te Istened szemében utálat tárgya és gyűlöletes, hisz még fiaikat és lányaikat is elégették isteneiknek. <br />
+<br />
+MTörv 16,22 - s ne állíts fel kőoszlopot sem, hiszen gyűlöletes az Úr, a te Istened előtt. <br />
+<br />
+Jud 5,17 - Amíg nem vétkeztek Istenük színe előtt, jól ment a soruk, mert olyan Istenük van, aki gyűlöli a gonoszságot. <br />
+<br />
+Eszt 4,s - Adj ajkamra ékes szavakat, amikor az oroszlán színe előtt leszek. Szívében kelts gyűlöletet ellenségünk ellen, hogy elpusztuljon azokkal egyetemben, akik egyetértenek vele. <br />
+<br />
+2Mak 3,1 - A szent város teljes békében élt, a törvényt - Oniász főpap buzgóságának és minden kihágás elleni gyűlöletének hála - egészen hűségesen szem előtt tartották. <br />
+<br />
+Zsolt 11,5 - Az Úr megvizsgálja az igazat éppúgy, mint a gonoszt, s aki a gonoszságot kedveli, azt gyűlöli lelke. <br />
+<br />
+Zsolt 26,5 - Gyűlölöm az összesereglett gonoszokat, s az istenteleneknél nem időzöm.<br />
+<br />
+Zsolt 139,19 Ó, Uram, bárcsak lesújtanál a gonoszokra, bárcsak távoznának a vérszopók. 20 Álnok módon beszélnek rólad, s gondolataidat őrültségnek veszik. 21 Ne gyűlöljem, Uram, aki téged gyűlöl? Ne irtózzam azoktól, akik ellened lázadnak? 22 Igen, égő gyűlölettel fordulok feléjük, nekem magamnak is elleneim lettek. 23 Vizsgálj meg, Uram, vizsgáld meg szívemet, tégy próbát és ismerd meg gondolataimat!<br />
+<br />
+Péld 13,5 - Az igaz gyűlöli a hazug beszédet, a gonosz viszályt és gyalázatot terjeszt<br />
+<br />
+Újszövetség:<br />
+Lk 14,26 - "Ha valaki követni akar, de nem gyűlöli apját, anyját, feleségét, gyermekeit, fivéreit és nővéreit, sőt még saját magát is, nem lehet a tanítványom. <br />
+<br />
+Zsid 1,9 - Az igazságot szereted, a gonoszságot gyűlölöd, azért kent föl Isten, a te Istened, a vigasság olajával minden társad felett. <br />
+<br />
+Júdás 1,23 - másokat mentsetek meg, kiragadva őket a tűzből; a többieket pedig rettegve szánjátok, s még a testük megfertőzte ruhát is gyűlöljétek. <br />
+<br />
+<br />
+Szeretet és gyűlölet ellentétpárja egyazon levélben (és már csak a közöny maradt ki):<br />
+Levél az efezusi egyháznak<br />
+<br />
+1 "Az efezusi egyház angyalának ezt írd: Aki a hét csillagot jobbjában tartja, s aki a hét arany gyertyatartó közt jár, a következőket mondja: 2 Tudok tetteidről, fáradozásaidról és kitartásodról. Tudom, hogy nem tűröd a gonoszokat: próbára tetted, akik apostolnak mondják magukat, noha nem azok, és hazugnak találtad őket. 3 Hűséges is vagy, szenvedtél a nevemért, és nem fáradtál bele. 4 De van egy kifogásom ellened, az, hogy kezdeti szeretetedtől eltértél. 5 Gondold meg, honnan süllyedtél ide! Térj meg, és térj vissza korábbi cselekedeteidhez! Mert elmegyek és elmozdítom helyéről gyertyatartódat, ha nem tartasz bűnbánatot. 6 Azt viszont, hogy gyűlölöd a nikolaiták tetteit, a javadra lehet írni - én is gyűlölöm őket. 7 Akinek van füle, hallja meg, mit mond a Lélek az egyházaknak: A győztesnek az élet fájáról adok enni, amely az Isten paradicsomában van."<br />
+<br />
+<br />
+Avagy a gyűlöletbeszéd a judaista Tórában, és a keresztény Bibliában&#8230;<br />
+<br />
+<br />
+Itt van pl. egy &#8222;gumibugyi&#8221; tétel, amely háborús célokra is jól felhasználható:<br />
+Préd 3,8 - Ideje a szeretetnek, és ideje a gyűlöletnek; ideje a háborúnak, és ideje a békének.<br />
+<br />
+<br />
+A gyűlölet ellen, és a mellette érvelő egyaránt megtalálja benne a maga hivatkozási alapját, és ezek kioltják egymást; nem arról van szó, hogy a Biblia a gyűlölet kérdésében nem mond semmit, hanem arról, hogy egymásnak ellentmondó dolgokat mond.<br />
+Összességében ellentmondásos, ha pedig valakik elkezdenek válogatni benne, akkor szekták fognak létrejönni, mert a Biblia alapján adott rá a lehetőség, hogy létrejöjjön pl. a gyűlölet elleni, és a gyűlölet melletti keresztény szekta is. És a gyilkos szekták vezetői és tagjai is biztos, hogy kikérték volna maguknak, ha valaki azt mondja rájuk, hogy ők nem keresztények.<br />
+Valóban jó, és jól működő vallás nem lehet olyan &#8222;gumibugyi&#8221;, amibe minden belefér.<br />
+Ha a BTK-t, vagy bármelyik törvénykönyvet annyira szabadon lehetne értelmezni, mint a Bibliát, vagy egymásnak ellentmondó állítások és törvények lennének benne, akkor nem érne semmit. Ha ilyen eset fordulna elő, vagy pedig lennének olyan &#8222;kiskapuk&#8221;, amellyel a szándék szerinti törvény megkerülhető, akkor azt értelemszerűen kiszedik, illetve egyértelműre fogalmazzák &#8211; már amennyiben nem valamelyik politikai csoport érdekét szolgálják a közérdek helyett a törvényhozók.<br />
+<br />
+&#8222;&#8230;bármit fel lehet használni arra hogy keresztülvidd a célodat&#8221;<br />
+Nem lehet rá bármit felhasználni, lásd a jól, és egyértelműen megfogalmazott törvénykönyveket. Bár a BTK bűnöket és büntetési tételeket határoz meg, a &#8222;miértek&#8221; tételes levezetése nélkül, mint &#8222;axiómákat&#8221;, viszont nem lehet belőlük levezetni azt, hogy ölni, vagy öngyilkosnak lenni rendben van, mert egyértelműen kizárja, hogy ezek elfogadhatóak legyenek.<br />
+Bár az vicces, hogy az &#8222;Általános rész&#8221;-ben, &#8222;A büntető törvény célja&#8221;-ként ez következik: 1. §. Hatályon kívül helyezte 1993. május 15. napjától az 1993. évi XVII.-es törvény, (mi a büntető törvénykönyv célja? &#8211; tudja a rosseb) viszont az a logikai kiindulási alap, amire utána az összes többi rész felépül, meg van határozva, pl.: &#8222;A bűncselekmény 10. §. (1) Bűncselekmény az a szándékosan, vagy &#8211; ha a törvény a gondatlan elkövetést is bünteti &#8211; gondatlanságból elkövetett cselekmény, amely veszélyes a társadalomra, és amelyre a törvény büntetés kiszabását rendeli. (2) Társadalomra veszélyes cselekmény az a tevékenység vagy mulasztás, amely a Magyar Köztársaság állami, társadalmi vagy gazdasági rendjét, az állampolgárok személyét vagy jogait sérti vagy veszélyezteti.&#8221;<br />
+Aztán jön a többi alap-definició is, a bűntett és vétség, halmazat, szándékosság és gondatlanság, kísérlet és előkészület, az elkövető, stb.<br />
+<br />
+Ezért nem csoda, hogy a kereszténység a középkor óta kikerült az államigazgatásból és a jogrendből, és már csak nem bizonyított, de feltételezett dolgokhoz, a vallási alapfunkciókhoz használatos (Isten, lélek).<br />
+<br />
+Akinek ez így jó &#8211; az a szellemi fejlődésben ott tart, hogy neki ez a csúcspont; viszont nem kellene ott megállni, főleg azért nem, mert a &#8222;bevett&#8221; vallás, az még nagyon befolyásolható szintet, és állapotot jelent.<br />
+<br />
+Nem tudom, hogy konkrétan hogyan, és mennyi idő alatt jutottak el a gyilkos szekták a gyilkolásig illetve az öngyilkosságig, csak azt, hogy eljutottak, a Bibliát felhasználva, és bizonyítva ezzel, hogy sok mindenre felhasználható betűhalmazról van szó, hivatkozott vezérelvként, és legfelsőbb tekintélyként &#8211; vagyis a Biblia egy olyan könyv, ami módot ad arra, hogy visszaéljenek vele, főleg a benne lévő sok, egymásnak ellentmondó kinyilatkoztatás által.<br />
+Ez legyen csak a babóké, én jobbra vágyom. Mindamellett Krisztust kiváló, és nagy hitű ókori személynek tartom, közvetítőnek Isten és ember között. Ami viszont az &#8222;egyetlen és igaz&#8221; hitet illeti, hány vallás hívei mondják ezt? Túl sokan ahhoz, hogy bármelyiket egyetlennek és igaznak tekintsem közülük, sőt, már az a kijelentés is, hogy az az &#8222;egyetlen és igaz&#8221;, az önkontroll hiányára, és manipulálási szándékra utal.<br />
+Az pedig nagyon nem tetszik, hogy a kereszténység a gyakorlati babóuralom egy hatásos megvalósító eszköze. Ha valamiből nem kérek, az a babóuralom, mert az bűn rossz, és rossz, mint a bűn, szellemet és testet degradáló, és hanyatlást biztosító. Kezdetben nyilván nem ilyen volt, de most már ilyenné vált, és a szerencsésebb vallású népek, vagy akár az ateisták is, lekörözik a keresztényeket mindenben ami számít, beleértve az életérzést is. A kereszténység már, itt és most, többet árt, mint használ, mert egyrészt logikai hibák halmaza, másrészt viszont népbolondításra még mindig jól felhasználható, és abból a megkövesedett dologból így lesz a hanyatlás eszköze. Ha ez csak a babókat érintené&#8230; csakhogy ez az USA-ra, Európa nagyrészére, Ausztráliára, és persze a Közel-Keletre is vonatkozik. A kereszténység már a végét járja, de a kereszténység által lefedett területek népei is hanyatlanak &#8222;rendesen&#8221;. Ezt látni, átélni, és mégis ide tartozni, rossz érzés. Viszont aligha lehet megszabadulni a babóuralomtól úgy, hogy a babó vallások megmaradnak, mert a két dolog nagyon összenőtt, sőt, mindig is összetartozott.<br />
+Babóktól megszabadulni, de a babó vallást megtartani, az nem fog menni.<br />
+Ott van pl. a Hit Gyülekezete; keresztény, sőt, judeo-keresztény gyülekezet, és olyan szinten vannak jelen a politikában (pl. Hack Péter, SZDSZ), hogy választások előtt a Hetek újságban választási kerületenként, és név szerint fel vannak sorolva az indulók, és a pártok; tudni lehet, hogy ki kinek az embere, és így összeáll a kép arról, hogy aktuálisan hogy áll a babóuralom. Miért is része egy ilyen szintű politikai összefoglaló a (judeo)keresztény vallásnak? Azért, mert mindent ők akarnak irányítani, világi politikát, és vallást egyaránt.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60529"></A>63. arax</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60184#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 11:30:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_382.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves VeszettA\'llat!<br />
+<br />
+Igazad van, elnézést, elfelejtettem berakni a linket, amit kritikával illettem. Ami a finneket illeti, én úgy hallottam, hogy Finnországban még mindig iskolai tananyag számukra is a halotti beszéd, mint a nyelvcsaládunk első egybefüggő írott szövege. A vérrokonságot a nyelvrokosággal keverni pedig nagy dilettantizmus.<br />
+Amúgy meg feltételezéseddel ellentétben elolvastam az általam kritizált forrást, úgyhogy az ostobázást tartsd meg magadnak, az amúgy sem egy elfogadott érv.<br />
+<br />
+Itt van a link, hülye legyen a talpán, aki nem röhögi ki ezt az embert:<br />
+<br />
+<B><a href="//web.tvnetwork.hu/~taara/" target="_new" style="color: #000000;">http://web.tvnetwork.hu/~taara/</a></B><br />
+<br />
+Egyébként meg kérdésedre válaszolva, szerintem annak kéne hinni, aki meggyőzőbb és alá tudja támasztani az állításait, és nem annak, aki azt mondja, amit hallani szeretnénk.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60528"></A>62. JocOi!</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-05-21 11:28:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2589.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Jó kis összefoglalás. A demokrácia órák bevezetése helyett inkább babó tanulmányi órák bevezetését kellene, persze ehez hasonló szemszögből! </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60429"></A>61. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60296#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 04:37:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ungi, bármit fel lehet használni arra hogy keresztülvidd a célodat, az ateizmus mint világnézet is számos háború, gyilkosság és nyomor úgymond "okozója", mégsem ítélem el azokat akik így gondolkodnak hisz ez csúsztatás lenne.<br />
+<br />
+"És nem az Isten nevében tett dolgok alapján minősítettem, hanem a kereszténység alapján tett dolgok alapján,; ne csúsztass."<br />
+<br />
+<br />
+Figyelj, félreérthettél valamit, elmondom ismét miről is van szó.<br />
+<br />
+A kereszténység alapján nem szabad gyilkolni, öngyilkosságot elkövetni illetve annak elkövetésére buzdítani bárkit, kihasználni/átverni/elnyomni másokat, továbbá szigorúan tilos bárkit eltiltani a közösségi élet gyakorlásától. (Erről eszembe is jut János Evangéliumának idevágó részlete: János 17:15 "Nem azt kérem, hogy vedd ki őket e világból, hanem hogy őrizd meg őket a gonosztól.")<br />
+<br />
+Amikor szektákat sorolsz fel mintegy rámutatva a kereszténység gonoszságára, helyesen elítélsz káros, gyakran gyilkos eszméket. Ezek az irányzatok azonban nem a biblikus kereszténységet képviselik, annak tanításaival nem összeegyeztethetők és semmiképp nem a vallást reprezentálják.<br />
+<br />
+"Milyen vallás az, amelyben a tanokkal 180 fokos ellentétben álló dolgokat is meg lehet tenni? Pl. a kereszténység. Kész, kösz&#8217;, akkor az szerintem, és számomra már jó rendszer nem lehet, hiszen tetszés szerint mindent bele lehet magyarázni, és annak az ellenkezőjét is, aztán mindenki válogasson belőle kedvére &#8211; akár tömeggyilkos kedvére is, amint látszik &#8211; és ha ez még nem elég, akkor ott van G. W. Bush főkeresztény, és társai is, napjaink történelmeként:"<br />
+<br />
+A törvényt, szabad akaratunk okán, bármikor megszeghetjük, ezáltal nem a törvényt minősítjük. <br />
+<br />
+A vallásból fakadó háborúk mennyisége egyébként eltörpül ha számításba veszed hogy hány háborút is vívott az emberiség. Ezeket is külön-külön kel elemeznünk hogy vajon milyen indokból törtek ki, milyen szerepet játszott egy adott vallás ebben, stb. Ha az álláspontomra vagy kiváncsi, az Újszövetség nem támogatja a háborúzást.<br />
+<br />
+<br />
+Teljes mértékig megértem hogy iszonyodsz azoktól a "keresztény" emberektől akik annyira turbóhitesek hogy nem átallanak háborúkat indítani. Ebben (és valószínüleg meglepően sok dologban) egyetértünk.<br />
+<br />
+Kérdés hogy vajon az Újszövetség ezt támogatja-e?<br />
+<br />
+Nem kell sokat Bibliát olvasni ahhoz hogy a Bush féle "keresztényeket" könnyedén elkülönítsük a hívő emberektől.<br />
+<br />
+Főleg hogy Bush egy szabadkőműves kis senkiházi. :)<br />
+<br />
+"Az &#8216;újjászületett-keresztények&#8217; Irakban együtt működnek az amerikai alakulatokkal. Az Irak elleni háború alatt az evangélista [1] Josh Llano kapitány friss vizet kínált a napok óta vizet nem látott irakiaknak: <br />
+&#8222;Ha vizet akarnak, kaphatnak, mert nekem van, amennyiben beleegyeznek a keresztség felvételébe.&#8221;"<br />
+<br />
+Josh Llano is egy igazi "keresztény", csak nehogy lelője egy iraki mesterlövész.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60296"></A>60. Ungi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60218#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-20 20:26:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Valóban, hagytam némi támadási felületet; legyen nektek igazatok azokban a részletkérésekben; mert valóban írhattam volna farizeusok utódai judaista babókat pl.<br />
+<br />
+Viszont:<br />
+<br />
+"Az hogy egy babó felhasznál mindent, még azt a vallást is melynek központi karakterét gyűlöli, az adott vallást minősíti vagy a babót, mit gondolsz?"<br />
+<br />
+Mind a kettőt, mert mind a kettő kell hozzá; nem csak egy kihasználó, hanem egy ilyen célra kihasználható vallás is; ahogy a prostitúció sem csak az egyik felet minősíti, hanem mind a kettőt, mert csak az egyikkel nem működne.<br />
+<br />
+<br />
+&#8222;Hol írja azt az Újszövetség hogy végezzük ki a gondolkodókat? Már megint az Isten nevében tett dolgok alapján minősítesz aminek semmi értelme. Isten nevében lehet buzulni/háborúzni/gyilkolni is, mégsem lesz helyes az Újszövetség tanításai szerint.&#8221;<br />
+<br />
+Sehol sem írja. Mégis megtették a magukat kereszténynek vallók. Nincs semmi értelme, rendben, de akkor annak a vallásnak mi értelme van, amelyre hivatkozva meg tudták tenni, és nem szólt rájuk a többi keresztény sem, hogy ne tegyétek?<br />
+<br />
+A kereszténység nevében égették el elevenen az adott kort (és a kereszténységbe felvett világnézeti dogmákat) meghaladó gondolkodót.<br />
+<B><a href="//hu.wikipedia.org/wiki/Giordano_Bruno" target="_new" style="color: #000000;">http://hu.wikipedia.org/wiki/Giordano_Bruno</a></B><br />
+...1548-ban született a Nápoly közelében fekvő Nola városában. Hosszú inkvizíciós eljárás után 1600 virágvasárnapján a katolikus egyház veszedelmes eretneknek nyilvánítva, elevenen elégettette Rómában, a Campo de' Fiorin.<br />
+Bruno erősen vallásos családba született, s az éles eszű fiút fiatalon felvették a Domonkos rendbe, ekkor vette fel az eredeti Filippo helyett a Giordano nevet. 1572-ben, 24 évesen pappá szentelték. <br />
+<br />
+Gyilkos szekta&#8230; és nem csak a középkorban, hanem a XX. századi történelemben is. Téboly, vallási köntösben &#8211; igen, de valóban jó vallás az, amit vezérfonalként erre is fel lehet használni?<br />
+<br />
+Ezek az emberek (&#8222;keresztény&#8221;) vallás nélkül életben maradtak volna.<br />
+<br />
+1960-1997 <br />
+ The Church Of The Lamb Of God (Isten Bárányának Egyháza)<br />
+- vezető: Ervil LeBaron (megh. 1981)<br />
+- vallási irányzat: mormon hátterű szekta<br />
+- ország: USA és Mexico<br />
+- áldozatok száma: 24 (kívülállók)<br />
+ <br />
+1978 nov. 18<br />
+ The People's Temple (Népek Temploma), <br />
+- vezető: Jim Jones (amerikai)<br />
+- vallási irányzat: keresztény hátterű szekta<br />
+- ország: Guyana <br />
+- áldozatok száma: 900+ (saját tagok)<br />
+<br />
+1993 ápr. 19<br />
+ Branch Davidian (Davidiánusok)<br />
+- vezető: David Koresh<br />
+- vallási irányzat: keresztény hétterű szekta<br />
+- ország: USA, Texas, Waco <br />
+- áldozatok száma: 90 (tagok)<br />
+<br />
+1994 okt. 5<br />
+ Order of the Solar Temple (A Naptemplom Rendje)<br />
+- vezető: Joseph Di Mambro és Luc Jouret<br />
+- vallási irányzat: gnosztikus hátterű szekta <br />
+- ország: Svájc és Kanada<br />
+- áldozatok száma: 53 (tagok)<br />
+ <br />
+2000 márc. 17<br />
+ The Church for the Restoration of the Ten Commandments of God (Mozgalom Isten Tízparancsolatának Helyreállításáért) <br />
+- vezető: Joseph Kibweteere<br />
+- vallási irányzat: keresztény hátterű végváró szekta<br />
+- ország: Uganda (polgárháború sújtotta terület)<br />
+- áldozatok száma: 1000+ (tagok)<br />
+<br />
+És nem az Isten nevében tett dolgok alapján minősítettem, hanem a kereszténység alapján tett dolgok alapján,; ne csúsztass.<br />
+<br />
+Milyen vallás az, amelyben a tanokkal 180 fokos ellentétben álló dolgokat is meg lehet tenni? Pl. a kereszténység. Kész, kösz&#8217;, akkor az szerintem, és számomra már jó rendszer nem lehet, hiszen tetszés szerint mindent bele lehet magyarázni, és annak az ellenkezőjét is, aztán mindenki válogasson belőle kedvére &#8211; akár tömeggyilkos kedvére is, amint látszik &#8211; és ha ez még nem elég, akkor ott van G. W. Bush főkeresztény, és társai is, napjaink történelmeként:<br />
+<br />
+Vallás és háború II.<br />
+<B><a href="//www.hazankert.com/03may9.html" target="_new" style="color: #000000;">http://www.hazankert.com/03may9.html</a></B><br />
+Még nem volt vége a háborúnak, de az evangélisták már készenlétben álltak Irak déli határának túloldalán: egyik kezükben víz és kenyér, a másikban Biblia. A judeo-kereszténységet importáló csoport élén Billy Graham fia, Franklin Graham állt, aki a muzulmán vallást a &#8216;sátáni Antikrisztus vallásának&#8217; tekinti. <br />
+Az &#8216;újjászületett-keresztények&#8217; Irakban együtt működnek az amerikai alakulatokkal. Az Irak elleni háború alatt az evangélista [1] Josh Llano kapitány friss vizet kínált a napok óta vizet nem látott irakiaknak: <br />
+&#8222;Ha vizet akarnak, kaphatnak, mert nekem van, amennyiben beleegyeznek a keresztség felvételébe.&#8221;<br />
+<br />
+G. W. Bush, aki minden áron háborút akart, hazugságaival vezette félre az amerikai népet és a világ közvéleményét<br />
+<B><a href="//www.hazankert.com/200805_bush-hazudott.html" target="_new" style="color: #000000;">http://www.hazankert.com/200805_bush-hazudott.html</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60265"></A>59. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60223#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-20 19:41:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Köszi, igazad van, akkor még csak szájhagyomány útján terjedt a "felsőbb igazság".</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60223"></A>58. antenor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60218#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-20 18:11:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_154.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">>>>Tévedés, nemcsak a talmudista babók nem fogadták el. <br />
+<br />
+Igen, arról nem is beszélve, hogy Jézus korában még nem is létezett a Talmud. A Talmudot a farízeusi hagyományokat követ&otilde; Ranagol-papnikus babóság kompillálta jóval Krisztus halála és a templom lerombolása után.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60218"></A>57. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60183#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-20 17:39:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">""1656<br />
+Egy babó Ranagol-pap a kereszténység tanításaival érvelve meggyőzi Oliver Cromwell kormányzót, hogy engedje meg a babók visszatérését Angliába"<br />
+Teccik érteni? "<br />
+<br />
+<br />
+Az hogy egy babó felhasznál mindent, még azt a vallást is melynek központi karakterét gyűlöli, az adott vallást minősíti vagy a babót, mit gondolsz?<br />
+<br />
+"Mt 10,35 - Azért jöttem, hogy szembeállítsam az embert apjával, a leányt anyjával, a menyet anyósával. <br />
+(*De nem a babót a babóval, hanem az egyik világnézetű és mentalitású (babó) embert a másik világnézetű és mentalitású (babó) emberrel."<br />
+<br />
+Itt nem a babó vallású és nem babó vallású emberek szembeállításáról van szó hanem arról hogy meghasonlás lesz az emberek között, hisz nem mindenki fogadja el a megváltót, értelemszerűen. Kár belevízionálni mindenféle babó összeesküvést.<br />
+<br />
+"Jn 10.10 A tolvaj csak azért jön, hogy lopjon, öljön és pusztítson. Én azért jöttem, hogy életük legyen és bőségben legyen. 11 Én vagyok a jó pásztor. A jó pásztor életét adja juhaiért. 12 A béres azonban, aki nem pásztor, akinek a juhok nem sajátjai, otthagyja a juhokat és elfut, amikor látja, hogy jön a farkas. A farkas aztán elragadja és szétkergeti őket.<br />
+További jó birkaságot a farkasok által csócsált nyájnak &#8211; már akinek ez kell"<br />
+<br />
+Óvakodni az olyan vezetőktől akik csak bérleményüknek tartanak aztán amikor baj van, kereket oldanak. Ez miért birkaság? Tudtommal a birkaság vakon követni egy vezetőt.<br />
+<br />
+<br />
+"Krisztus mint Messiás ment a babókhoz, csak a talmudista babók nem fogadták el; utána pedig, jóval később, a tanítványai elterjesztették a kereszténységet a nembabók között is, és ezzel kiterjesztették rájuk is a babó befolyást."<br />
+<br />
+Tévedés, nemcsak a talmudista babók nem fogadták el. A mai napig, a babók 99%-a nem fogadja el Jézust messiásnak mert ők egy hadúrt vártak, nem pedig egy áldozatot.<br />
+<br />
+"Mégis kik voltak azok, akik máglyán elégették Giordano Brunót, mert valakiknek ellent mert mondani, és mert ő tudta jól?<br />
+Aki gondolkodik, annak ez az egy eset is elegendő arra, hogy számára a kereszténység ne legyen követendő, mert egyrészt nem hiteles erkölcsileg a gyakorlatban, másrészt pedig nem is jól működő."<br />
+<br />
+Hol írja azt az Újszövetség hogy végezzük ki a gondolkodókat? Már megint az Isten nevében tett dolgok alapján minősítesz aminek semmi értelme. Isten nevében lehet buzulni/háborúzni/gyilkolni is, mégsem lesz helyes az Újszövetség tanításai szerint. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60217"></A>56. VeszettA\\\'llat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=954&id=60212#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-20 17:34:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"De ez így már tiszta állatvilág, és csak a bunkósbotnak használt technika a fejlett benne."<br />
+<br />
+<br />
+Nana, nesértegesd az állatokat, ők mindig a képességük szerinti legjobb döntést hozzák, erre csak az ember nemképes...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=954&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=954&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=954&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=954&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=954&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=954&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=954&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=954&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

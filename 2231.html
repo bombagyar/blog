@@ -1,0 +1,685 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2231#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Igazat ír-e anonym-us?";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2231#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Igazat ír-e anonym-us?<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 május 22. 19:34:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2231.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Ki az az anonym-us? Mint neve  
+ is mutatja, egy névtelen személy, aki februárban ezzel az aláírással jelentetett meg egy levelet 
+egy külföldi ingyenes webszolgáltatón létrehozott <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.freewebs.com/beszelo">oldalon.</a> A levél Gyurcsány   Ferencnek szól, írója egy 
+régi MSZP-s társa, aki, mint kiderül, még a KISZ-es időktől kezdve   partnere volt párton belüli 
+felemelkedésében. A levél megdöbbentő titkokat tár fel azokról az   ügyekről, amelyekről a 
+Gyurcsány-korszak idején a nagyközönség is értesült, de megfelelő információk   hiányában 
+természetesen nem érthettük, mi áll a háttérben.<br><br>Az alábbiakban elolvashatjátok a   levél 
+teljes szövegét, majd néhány gondolatomat, amellyel megkísérelek rávilágítani, kiféle-miféle   lehet 
+anonym-us, és milyen indíttatásból írta ezt a levelet. Arról is szó lesz, miért csak most   hallunk 
+erről a levélről, hónapokkal a feltűnése után, és miféle jóslatok teljesedtek be, honnan   tudott 
+előre anonym-us például a MOL orosz felvásárlási kísérletéről.<br><br><hr style="width: 100%; height: 2px;"><br><p><font size="1">Azt hiszem nincs mire tovább várni. Nem változol. Esik szét    
+minden.Te pedig már elvesztettedd az események és a magad feletti  uralmat. Legyen ahogy   
+lesz....</font></p><p><font size="1">Végig néztem a   
+karzatról&nbsp;  a tegnapi vergődésed. Szomorú és bosszantó volt egyszerre. Egy elhúzódó  végjáték   
+újabb értelmetlen de látványos felvonása. Ahol a zenét ugyan  Te rendeled de a számlát mégis mi   
+fizetjük.&nbsp;</font></p><font size="1">Tisztelt&nbsp;   Miniszterelnök&nbsp; Úr,<br>Kedves 
+Feri!<br><br>Valamikor régen nem így kezdtük!<br><br>Hittünk    abban, hogy ha az öregek az összes 
+értelmetlen kompromisszumukkal,  sunyi paktumukkal eltűnnek   &#8211; csakis valami jobb jöhet. Nem 
+csak  magunkért, hanem valami többért. Valamiért ami   fontosabb&nbsp; annál, hogy  kinek a seggét 
+nyaljuk éppen szárazra, és fontosabb annál is, hogy mit    kell fizetnünk azért, mert nem nyaljuk 
+szárazra azt a segget.<br><br>1989  januárjában, amikor   először ültünk egymás mellett egy 
+rendezvényen, Te  mint a Központi Bizottság titkára,&nbsp; nem így   gondolkodtál. Mondhatnám  azt 
+is, hogy akkor még nem tűntél olyan embernek amilyenné mára váltál.    De igazság szerint nem voltál 
+sem elég becsületes&nbsp; sem elég őszinte,  hogy kitarts mellettünk.   Így inkább ott hagytál 
+bennünket ostoba  idealistákat és úgy döntöttél, hogy gazdag leszel.   Könnyedén odadobtál  mindent 
+amiről reggel még szenvedélyesen vitatkoztunk azért, hogy este  már a   jól menő vállalkozók bálján 
+táncolhass.<br><br>Ez ugyan egy kicsit primitív és naiv mondat &#8211;   de attól még 
+igaz.<br><br>És  ma leveszem a hangot a tévéről, csak nézem a gesztusaid, a   rángatózást,  az 
+értelmetlen és drámai grimaszokat, a szájról is jól olvasható &#8211;  halálosan   komoly - 
+halandzsát, az oldalra billenő fejet, a semmibe  révedő majd bánatosan csillogó szemeket és   csak 
+sajnálni tudom  magunkat.&nbsp; Azért mert hittünk benned, a mostani keveseket meg azért  mert   még 
+ma is hisznek.<br><br>Miközben egyértelmű,hogy kicsúsztak a  kezedből a dolgok, ott állsz mint   
+valami cirkuszi mutatványos, aki  csak&nbsp; pörgeti - pörgeti pálcájával&nbsp; a tányérokat,   
+nyolcat, tizet ha  kell de már a tizenkettediknél el kezdenek potyogni a tányérok. Mert  nem megy,   
+mert tilos és veszélyes az ilyen bűvész mutatvány. Pláne nem  egy egész országgal, egy párttal&nbsp; 
+  - csak a kimerithetetlen egód&nbsp; önzése  miatt Feri!<br><br>Azért azt el kell ismerni, éveket 
+és   rengeteg  energiát áldoztál arra, hogy azzá válj amit 20 évvel ez előtt még te is  megvetettél  
+ volna!<br><br>Emlékszel még Miniszterelnök úr, mi volt a  kedvenc példabeszédünk Moldovától abban 
+az   időben, amikor még együtt  dolgoztunk? (Megjegyzem később Hofi is átvette): &#8220;A hajó azért 
+nem   megy  egy métert sem előre, mert valamelyik hülye a kazán teljes  gőzenergiáját a hajókürtre   
+kötötte.&#8221; Nagy utat tettünk meg azóta, Te  meg én, főleg Te Feri. Mondhatni &#8220;a kazántól  
+ a hajókürtig&#8221;.<br>&nbsp;<br>Levelem  nyílt, de mégis anonim. Ez valószínűleg sokat levon a    
+szavahihetőségéből. Nincs jövőm, csak múltam és nincs családom se már,  amire foghatnám miért nem   
+merek nyíltan kiállni.&nbsp; Egyszerűen csak  ismerlek, mert túl hosszú ideig dolgoztam Veled   
+&#8211; amikor együtt  csináltuk a KISZ-t, és mert közvetlenül vagy közvetetten évekig  dolgoztam   
+Neked, amíg az lettél mára aki vagy. És mivel ismerlek, okkal  tartok tőled. Ha valaki, akkor én   
+valóban tudom milyen a mostani arcod.<br><br>Soha  nem volt Benned gátlás vagy erkölcsi fék, ha   
+valamit el akartál érni.  Tudom, mert közelről láttam mire vagy képes a hatalomért. Olcsó poén ha    
+azt mondom &#8211; bármire? Válaszolhatod nyugodtan, hogy hiteltelen vagyok,  hiszen levelem nem   
+csak névtelen, de tele&nbsp; van natúr, primitív  indulatokkal.<br><br>Igazad is van, tele az egész  
+ cinizmussal,  indulatokkal és rossz kedvvel. És legalább egy tucatszor átírtam, az  elmúlt hónapok  
+ alatt, ami valljuk be nem tett jót a stílusának. De most  már mindegy. Éveken keresztül láttam   
+hogyan manipulálsz zseniálisan  mindent és mindenkit, de akkor ezt úgy gondoltam, hogy szükségszerű, 
+   helyes és van értelme. Hogy ez valahol az MSZP-ről és a közjóról szól.<br><br>De mára ebből semmi 
+  nem maradt Benned.<br><br>Ami  ma van az csak egy nagy ego nagy bűvészmutatványa, aminek nem    
+mellékszála hanem egyedüli értelme az átverés. Amibe belerokkan az  ország és lenullázódik az egész  
+ baloldal. Bár ezt ki nem szarja &nbsp;<br>le!  A lényeg, hogy Te játékban maradj, hiszen még van 
+egy   tucatnyi nemzet  és Gyurcsány mentő ötleted. Amit eddig, legnagyobb pechünkre, még nem  volt 
+módod   kifejteni.<br><br>Miniszterelnök úr, én mégis sokakkal  együtt, beleértve néhány félig bátor 
+  elnökségi tagot is, úgy gondolom,  hogy van egy morális határ amit nem lehet átlépni, és ha ez már 
+  csak  Gyurcsány Ferenc és 40 &#8211;&nbsp; 50 embere pártbéli és parlamenti pozíciójáról  szól   
+&#8211; szemben mindenkivel &#8211; akkor ezt ki kell mondani és meg kell  tagadni.<br><br>Nem   
+akarom titkolni, hogy az utóbbi hónapok tömény és  buta hazudozásának&nbsp; ami a lehallgatási   
+ügyben, a polipban, az &#8222;azért  csak jövő májusig szól&nbsp; az IMF mentőöv mert ők így szokták 
+  adni&#8221;, a  "nálunk nincs cigány bűnözés csak van aki szeret késelni",  "mélyrehatóbb lesz a   
+reform mint a Bokrosé &#8211; de nem fog fájni" típusú  szemétségeknek&nbsp; köze van ahhoz, hogy   
+betelt a pohár.<br>&nbsp;<br>Ugyanis  másokkal ellentétben én tudom, bár valószínűleg nem lenne   
+szabad  tudnom, hogy a legkülönbözőbb indokokra hivatkozva, a Szilvásy Gyuri  utasítására, a Te   
+tudtoddal, az NBH közel egy éve valóban lehallgatja a  Fidesz vezetésével kapcsolatot tartó   
+üzletembereket, politikai  elemzőket, a titkosszolgálatoktól a rendvédelmi szervektől eltávozott  és 
+  a Fidesszel szimpatizáló személyeket, hátha összejön valami a  fideszes TOP 10-ről.<br><br>Hiszen  
+ direktben nem lehet elrendelni egy Kósa vagy egy Kövér lehallgatását, ugye? Az mégis csak snassz   
+lenne.<br><br>Minden  más kormányzati állitás hazugság, ami arra épit, hogy az államtitokra    
+hivatkozva mindenki dermedten vigyázba áll és bármilyen jogsértés  megúszható.<br><br>Ráadásul   
+Miniszterelnök úr, ezek a lehallgatások  titokban maradnak még az azt hivatalból végző NBSZ előtt   
+is. Ügyesen&nbsp;  kitaláltátok, Hetesi Zsolt, korábbi NBSZ főnök aktív támogatásával. Az  NBH saját 
+  - zárt feldolgozást kér, így csak a Gyuri emberei tudhatják  mi van a szalagokon, és csak Ti 
+ketten,   miként akarjátok felhasználni.  Igaz, kedves Ibolya?<br><br>Miniszterelnök úr, bármennyire 
+is    patetikusan hangzik, azt kell, hogy mondjam: ezek erkölcstelen dolgok,  ezekre nem lehet   
+tisztességes&nbsp; hatalmat építeni. Ezek lejáratnak és  hiteltelenné tesznek bennünket. Valami   
+ilyesmit mondtál Te is a  választási vitában mélyen az Orbán szemébe nézve &#8211; nem?<br><br>Feri, 
+   tudom, hogyan működik Szilvásy Gyuriék és Veres Janiék paktuma az  Inkallal, tudom, hogyan zajlik 
+a   kapcsolattartás a radikális jobboldal  jó néhány prominensével, hogy a Gárda vezetésének 
+kulcsembere   évekig  együttműködött a Katonai Biztonsági Hivatallal. Tudom, ahogy Te&nbsp; is meg  
+a Gyuri is   tudja.<br><br>Tudom, hogy hónapok óta figyelte az NBH a  csőbombás olimpikont 
+családostól. És tudom,   hogy tudták, hogy a bombák  alkalmatlanok károkozásra, de zseniálisan 
+alkalmasak a média    figyelemfelkeltésére. Tudom, hogy erről a Laborcz folyamatosan  jelentett a 
+Gyurinak.<br><br>Az az   aljas fasiszta szélsőjobb már megint! Majdnem ügyesen szervezték meg, de a 
+Sanyi meg a Gyuri ezt is   el tudta ba&#8230;rontani.<br><br>Mert  az elsőtől az utolsó pillanatig 
+az NBH állt az ügy mögött.   Csak nem  merték &#8211; nem akarták a saját provokátorukat is őrizetbe 
+venni. Ezért  némi hezitálás   után az ötödik emeleti irodában úgy döntöttek &#8211; senkit  nem 
+vesznek őrizetbe csak a   bombagyártót. Gratula!<br><br>Majd két hét  múlva elengedték, szabadlábon 
+védekezhet, mert 20 darab   bomba egy autó  csomagtartójában a város legforgalmasabb helyén nem is 
+olyan nagy ügy.&nbsp;  Azóta   pedig néma csend. Mintha semmi sem történt volna....<br><br>Most 
+akkor mi van?<br><br>Tudom,  hogy a   szlovákiai futball botrány előtt hetekig egyeztetett az NBH és 
+a  szlovák titkosszolgálat a   részletekről és szándékosan nem  akadályoztátok meg a botrányt, pedig 
+minden szükséges információ a    rendelkezésetekre állt, hiszen az NBH ügynökei ott voltak a 
+szervezők  között.<br><br>Félre ne   magyarázd, nem azt mondom, hogy együtt  szerveztétek a 
+szlovákokkal, hanem azt, hogy együtt   hagytátok a botrány  bekövetkezését &#8211; mert ez Ficónak 
+és Neked is úgy kellett mint egy pohár    víz (a világgazdasági válság közepén, bár ez&nbsp; 
+képzavar).<br><br>Gyakori  ugye, miniszterelnök   úr, hogy a szlovák rendvédelmi szervek magyar  
+területen, mélységben ellenőriznek? A szlovák   rendőrség, a Szilvásy  Gyuriék információi alapján, 
+annyi rendőrt mozgósított, amennyivel    Budapestet el lehetett volna foglalni! Pontosan tudták mi 
+lesz és mit  fognak tenni ( és nem azért   mert &#8222;ezeken a meccseken mindig balhé  
+van..&#8221;)<br><br>Tudom, hogy a Laborczék nyakig   benne vannak a 64  Vármegye mozgalomban és 
+jelentős szerepük van Toroczkai  manipulálásában.   Miniszterelnök úr, tudom, hogy ki áll a Magyarok 
+ Nyilai mögött, hogy miért olyan nehéz lenyomni a   jobboldalt sikeresen  megosztó, nagyjából 30 
+milliós éves költségvetéssel operáló, (vajon  honnan   kaphatja szerinted?), a kormányt hivatalból - 
+a fideszt  leginkább utasításra gyűlölő, meglepően jól   tájékozott , &#8222;mi mindent  megteszünk, 
+hogy bezárjuk&#8221; fedőnevű Kurucinfót.<br><br>Bár az   ötlet  elismerem nem rossz. A következő 
+választáson az MDF semmilyen módon nem  lesz képes   megosztani a fideszre szavazók táborát. Ebben, 
+ha semmiben  sem, gondolom még egyetértünk.<br><br>De   a szélsőjobb! Az már más 
+dió.<br>&nbsp;<br>Tudom  én, hogy minden szavazat amit Vonáék megnyernek, a   fideszt gyengíti 
+és&nbsp;  Téged erősít. Téged, nem bennünket. Mert nekünk nem kell egy radikális    jobboldali párt 
+a parlamentben. Nekünk, BSZM-eknek (lefordítom:  baloldaliként szcializálódott   magyaroknak) 
+snassz, sértő, aljas dolog,  hogy a saját pártunk vezetése táplálja titkos pénzeken és   a médián át 
+ azt a radikális jobboldalt, amely (istenem add!) akár mág 10%-ot is  elvehet   Orbántól!<br><br>De 
+azt is tudom, hogy amire az MSZP-nek és az  országnak a legkevésbé van szüksége,   az a Szilvásy 
+Gyuri és a Laborc  Sanyi által manipulált radikális szélsőjobb.<br><br>Gondolj csak   bele,  az 
+emberek még azt hihetnék, arra használjuk ezeket a pozíciókat, hogy  rendőrpalotát   
+géppisztolyozzunk, lábtörlőket gyújtogassunk fel  sorsdöntő szavazások idején, belelőjünk (igaz csak 
+  légpuskával) a  Hiller üres szobájába, és mi magunk erősítjük a neonácikat (ha már  maguktól   
+képtelenek rendesen randalírozni). Mert szégyen ugyan, de  minden ilyen konfliktus úgy kell Neked   
+mint egy falat kenyér.<br><br>Amit  a Gyuri a Te támogatásoddal és tudtoddal meghonosított a    
+titkosszolgálatoknál és Bence Jóska segítségével a rendvédelmieknél, az  túlmegy minden   
+határon.<br><br>Szeretném, ha válaszolnál!<br><br>Igaz-e,  hogy tudatosan és rendszeresen ellenőrzik 
+  kérésednek megfelelően az  MSZP prominenseit? Igaz-e, hogy a Gyuri ellenőriztette Kovács László    
+külügyminisztert, Butor Klára pártigazgatót, Szigetvári Viktor  kampányfőnököt, Veres János   
+pénzügyminisztert, Puch László  pártpénztárnokot?!<br><br>Igaz-e, hogy az irányitásod alá tartozó    
+rendvédelmi és titkosszolgálati szervek (némi APEH segédlettel)  vizsgálatot folytatnak az MSZP-től  
+ távolodó Lasz György , az Inkall  Security vezetője,&nbsp; az MSZP-től soha el nem távolodott csak  
+ túlzottan  önjáró Knopp András -&nbsp; az energetikára szakosodott&nbsp;&nbsp; EMFESZ Kft.    
+vezetője, Pintér Sándor&nbsp; volt belügyminiszter Civil Kft-je, Csányi  Sándor valamennyi üzleti   
+érdekeltsége, a Fideszhez közelálló Nagy Elek  Vegyépszer zrt-je és Széles Gábor üzleti   
+érdekeltségei ellen?<br><br>Igaz-e,  hogy a Gyuriék titkosszolgálati módszerrel megzsarolták Szili   
+Katalint,  kihasználva egy emberileg érthető, de politikusként fel nem vállalható  magán titkát?   
+Ugye milyen csendessé vált az elmúlt fél évben?<br><br>Igaz-e,  hogy ez már a második, ezúttal   
+sikeres kísérlet volt Kati  elhallgattatására, hogy az elsőt két évvel ezelőtt egy (téves) NBH-s    
+feljelentés alapján kíséreltétek meg akkor a férje ellen. Tudod, amikor  rámozdultak egy   
+névazonosságra, miközben minden más adat téves volt!<br><br>Hát ha az élet úgy hozza, Pécsnek   
+legalább lesz majd egy jó polgármestere! Ez is valami, nem?<br><br>Igaz-e,  hogy sikerült mattot   
+adnod (vagy csak sakkot &#8211; ki tudja?) annak a Kiss  Péternek, aki egy kicsit közelebb került a  
+ kelleténél az Ázsia Center  vezetőihez, tudod akik ellen úgy nagyjából 1 milliárdos csalás ügyében  
+  őrizetbevételi stádiumban tart a nyomozás!<br><br>Honnan tudhattál  szegény Péter problémájáról?   
+Onnan, hogy az NBH ezt a vonalat már több  mint egy éve felderítette. Ne mond, hogy a Gyuri nem   
+szólt! Vagy a  Laborc Sanyi. Szólt hát, ugye milyen csendes lett a Péter is az elmúlt  fél   
+évben!?<br><br>Megkérdeznélek Miniszterelnök úr, indítasz-e  vizsgálatot annak a belső körökben   
+egyre jobban terjedő hírnek az  ügyében, miszerint ÖMV-s, Gazpromos szál van az UD zrt-s   
+lehallgatási  ügy hátterében. Hogy a Csányi egy évvel ezelőtti zavaros megzsarolása,  helikopterének 
+  lezuhanása, majd szervereinek és üzleti titkainak  lefoglalása között szoros ok &#8211; okozati   
+összefüggés van?<br><br>Ha a  Csányi kiszállása után a meggyengült Molt akár az ÖMV akár az orosz    
+Gazprom (direktben vagy stróman útján) vagy az OTP-t egy hasonszőrű  befektetői kör a közeljövőben   
+mégiscsak megszerzi, miként számoltok el  a gyanúval, hogy valaki közületek nem magyar érdeket   
+képviselt az UDZ  ügyben?<br><br>Apropó UDZ. A Szilvásy Gyuriék rácáfoltak legalább arra  a régi   
+viccre, miszerint az ötvenes és a kilecvenes évek kémelhárító  munkájában az az egyetlen különbség,  
+ hogy az ötvenes években még  legalább volt koncepció!&nbsp; Ha mást nem is, ezt a Gyuri meg Sanyi   
+újra  visszahozta.<br><br>És lehet, sokan innentől végképp hiteltelennek  fognak tartani, de akkor   
+is le kell írnom: tudom, hogyan próbálták  kicsinálni a Szilvásy Gyuriék Orbánt (az akkkor még nem   
+NBH főnök  Laborcz segítségével, az akkori NBH főnök Galambos Lajos háta mögött) a  2006-os   
+választások előtt.<br><br>Tudom az összes mocskos részletét  (ahogy Te is) az elindított és sebtében 
+  leállított akciónak. Ugye szép  a Kokó kocsmája Miniszterelnök úr és mindenki nagyon fotogén ott,  
+ pláne  ha vádalkut köthet?<br><br>És most tovább folytatjátok azt ami 2006-ban  nem jött össze.   
+Ráadásul úgy, hogy még a látszatra sem ügyeltek már.  Annyira kell, hogy ez a mindenki által   
+megvetett Rohác nevű&nbsp; szlovák  bérgyilkos, akinek a kezéhez közvetve vagy közvetlenül egy tucat 
+  ember  vére tapad, elmondhassa végre a vádalku részeként, hogy személyesen  Demeter Ervin és 
+barátai   bízták meg az 1998-as robbantásokkal a  fideszbeli és kisgazdapárti politikusok lakásánál, 
+hiszen   másként az  ellenzéknek esélye nem lett volna megnyeri a 98-as választást, nem?<br><br>Majd 
+ Rohác   úr mélyen belenéz a kamerába (ATV, Szólás szabadsága Baló úrral,  esetleg pár kommunikációs 
+  millióért TV2 vagy mindegyik, ahogy a média  taktika megkívánja&#8230;.) és a nagyobb hiteleség   
+kedvéért felháborodottan  megjegyzi: a Demeter emberei voltak olyan szarrágók, hogy dollár  helyett  
+ lejben fizetettek! És a Szilvásy Gyuri körül nyüzsgő  kommunikációs stáb tagjai a jól végzett munka 
+  érzésével dőlnek bele  megérdemelt&nbsp; vodkájukba..<br><br>Mert annyira kell az a rohadt    
+hazugság, hogy már hónapokkal ezelött benyilatkozták a hűbéreseid: ha  Rohác elmondja mit tud az   
+akkori idők&nbsp; megoldatlan ügyeiről, nem  kéritek rajta számon az Aranykéz utcai halottakat.   
+Erről szól a Ti  vádalkutok. Hányan is haltak meg ott a robbanásban Feri? Bástya  elvtársnak megér   
+ennyit&nbsp; egy hamis vallomás?<br><br>Egyébként ebben is  igazad van, ki nem szarja le, ha valaki  
+ hamisan vall. Ami jó a Szilvásy  Gyurinak és a Gyurcsány Ferinek, az jó az országnak és az MSZP-nek 
+  is?<br><br>Talán mégsem! &nbsp;<br><br>Ha csak ilyen eszközökkel lehet 2010-ig&nbsp; kormányon   
+maradni Feri, akkor ezen az áron nem kell a hatalom, legalábbis nekünk nem.<br><br>És  ha már itt   
+tartunk Miniszterelnök úr, ne nézz teljesen hülyének  bennünket. Azt hiszed nem látjuk és nem   
+érzékeljük, mit is készítesz  elő nekünk márciusra? Persze, a szabályok szerint erről sem illik    
+nyíltan beszélni, maximum a frakción belül sutyorogni két ülés között a  büfében.<br><br>Kilóra és   
+centire felmérted, hogy a 2010-es hajó  elment. Tény, és ezt mindannyian elismerjük, hogy a   
+manipuláció minden  létező és kitalált kövét (elnézést már megint a képzavarért)  megmozgatod, hogy  
+ a különbség a végeredményben a legkisebb legyen.<br><br>És  bizony az állandó petárdadurrogtatásba  
+ bele lehet fáradni. De ami még  ennél is rosszabb, egy idő után elkezdünk hinni abban, hogy amit    
+hazudunk az igaz. Ez a dilemma néhányunkat folyamatosan  elbizonytalanít, de nem Téged. Ezért a   
+tulajdonságodért még ma is  irigyellek ( régen pedig csodáltalak mert a kiválasztottság jelének    
+tartottam).<br><br>Te pontosan tudod, hogy mi kell Neked, a pártelnöki  tiszt. Mert az a jövő. A   
+2010-es választás elvesztésének másnapján (na  jó, lehet hogy tévedek és csak egy héttel később) Te  
+ és a hódolóid  (Zuschlág Janit leszámítva mert ő ül mint Buddha) átszervezitek,  feloszlatjátok,   
+újjáalakítjátok - a megfelelő rész aláhúzandó &#8211; a  pártot.<br><br>Az öreg pártharcosoknak   
+pedig annyi. Ebben a formációban  már&nbsp; nem lesz szükség Péterre, Imrére, Ferire és Katira talán 
+  még  Ildikóra sem. Kivéve, ha megértik az idők szavát és behódolnak, esetleg  visszavonulnak kies  
+ vidéki birtokaikra. &nbsp;<br><br>Csókolom a kezed, keresztapa.<br><br>Az  ország &#8211; meg a   
+választást nyert fidesz -&nbsp; csak fuldokoljon nyolc év meg  egy gazdasági válság nyakig érő   
+szarában. Amig vissza nem térsz fehér  lovon, tetemre hivni a bűnös Budapestet 2O14-ben (bár ez már  
+ tényleg  képzavar).<br><br>Mondom, hogy zseniális vagy!<br><br><span style="font-weight: bold;">Utóirat</span><br>&nbsp;<br>Tudom  Feri, hogy mindent tagadni fogsz, égbekiáltó, aljas   
+lejáratást  emlegetsz és (talán) szigorú vizsgálatot követelsz majd. Esetleg  elintézed azzal, hogy  
+ jobboldali provokáció és a polip műve! Pedig a  fent leírtak döntő többségét több tucat ember   
+memóriája és jó néhány  (pechedre) megmaradt, dokumentum őrzi &#8211; még néhány évig.<br><br>Nem    
+lenne tisztességesebb azt mondani, hogy nem terhelem a baloldalt tovább  a személyemmel, fogom a   
+Gyurcsány Ferenc baráti kör tagjait és  visszamegyünk ahhoz, amihez a legjobban értünk, pénzt   
+keresni?<br><br>Valószínűleg  tisztességesebb lenne. És nem vallana rád. Pedig életed csúcs    
+teljesítménye lehetne a remegő ajkakkal, akadozó levegővétellel, drámai  lassúsággal, elfátyolosodó  
+ tekintettel előadott lemondó nyilatkozat.<br><br>Tudod, úgy ahogy a Szabó Pali lemondása után   
+tetted.<br><br>Üdvözlettel<br>egykori barátod<br><br>anonym-us<br></font><br><hr style="width: 100%; height: 2px;"><br>Egyetlen mondatban összefoglalom, mi ez. Az MSZP továbbra is olajozottan működő,   
+profi kommunikációs csapatának legújabb gyöngyszeme, aminek célja, hogy minden piszkos ügyet a nagy  
+ nehezen kirugdosott Gyurcsány Ferenc nyakába varrjanak, megszabadítva terhes örökségétől a pártot.  
+ Ez is, mint a fiúk korábbi művei, gondosan kimunkált, szakmai igényességgel megfogalmazott,   
+megfelelő érzelmi húrokat pengető remekmű, a pszichológiai hadviselés mesterműve. Komolyan mondom,   
+földig hajolok a manipuláció eme mesterei előtt, mert vannak fokozatok, ahol a pimaszságért már nem  
+ jár pofon, csak tisztelet.<br><br>A tézis megvan, lássuk a bizonyítást.<br><br>Akárki írta ezt a   
+levelet, valóban MSZP-s belső ember lehet, mert olyan dolgokról ír, amelyeket valóban csak az láthat 
+  helyesen, aki benne volt - így például az UD Zrt. ügye. Említettem már nektek, hogy az UD-ügyhöz 
+egy   kicsit a Bombagyárnak is köze volt? No, nem sok, de közelebbről láttuk, mint más újságírók. 
+Mondjuk,   hogy olyan közelről, ahonnan már nem egészséges írni róla. Az talán nem titok, hogy a 
+Novarát alig   tudtuk kimenekíteni a házkutatás elől. Nem mintha titkokat őriznénk rajta, de nem 
+örültünk volna, ha   lefoglalják az UD szervereivel. Szóval van a levélben néhány dolog, amit, ha 
+nem is olyan közelről   látunk, mint a bennfentesek, de jóval közelebbről, mint az egyszerű 
+állampolgár. Így aztán nem csak   puszta véleményt tudunk mondani a levél néhány állításáról, hanem 
+első kézből tudjuk   cáfolni.<br><br>A levélíró névtelen, egy bűneit bevalló, a szemünk előtt "jó 
+útra térő" bűnöző. Ez   szimpátiát, egyszersmind kíváncsiságot ébreszt az emberekben. Az író 
+névtelensége a titokzatosság   ködét hivatott megteremteni, a "beismerő vallomás" jellege pedig azt 
+a katartikus győzelem-érzést   adja az olvasónak, amire minden átlagos, a feje felett elvonuló sötét 
+titkoktól megzavarodott   állampolgár vágyik. Mindenki szeretne valamit leleplezni, hogy ezek a 
+nyomasztó titkok végre   eltűnjenek, ezért ügynöközik tele pofával a sok egységsugarú, vagy ha maga 
+nem is tud egy igazi   ügynököt fogni, legalább szeretné az első sorból látni, amint a leleplezés 
+megtörténik, és akire   mindig is gyanakodott, végre nyilvánosan megszégyenül. Ha el tudjuk hitetni 
+az olvasóval, hogy   valami titokba lesz rövidesen beavatva, minden szót el fog hinni. Ezért&nbsp; 
+van a hosszú   felvezetés, a hosszas moralizálás, amelyben a levélíró elítéli Gyurcsányt, és arról 
+beszél, hogy   mivé vált az évek során. Ennek persze megvan a maga pszichológiai célja: 
+csoportidegenként ábrázolja   a leleplezett személyt, kifejezve azt, hogy "megváltozása" okán immár 
+nem csak az olvasó csoportjába   nem tartozik, de saját csoportja is kiveti magából. Az egységsugarú 
+olvasó erre gondolatban   összekapcsolja a levélíró csoportját (MSZP) a sajátjával ("normális" 
+emberek): íme, így születik meg   a gondolat, hogy a Gyurcsány nélküli MSZP igenis kompatibilis 
+lehet a társadalommal, és meg lehet   neki bocsátani...<br><br>A levél első egyharmada kizárólag 
+Gyurcsány személyét ostorozza. Szinte   sebészi óvatossággal rajzolja meg az embertelenné vált 
+egykori káder portréját, hogy az olvasó észre   se vegye, hogy manipulálják. A levél hatására sokan 
+úgy gondolhatják, hogy az MSZP valóban kivetette   magából az ilyen&nbsp; Gyurcsány-féle alakokat, 
+és most már talán ott is változik valami. Úgymond   minden visszatér a régi kerékvágásba, van itt 
+remény. De ne hagyjuk magunkat megvezetni. Az egyetlen   cél a szétszóródott MSZP-szavazókat 
+visszacsalogatni.<br><br>Lehallgatásokról olvashatunk ezután. A   Nemzetbiztonsági Szakszolgálat 
+lehallgatta néhány fideszes üzletember telefonját. Kiét? Nem tudjuk   meg. Általános 
+meghatározásokat kapunk, és kifejezetten hangsúlyozza a levélíró, hogy konkrét   fideszes vezetőket 
+(Kósa Lajos, Kövér László) nem figyeltek meg. Ugyan miért nem? Levegőben lebegő   állítás, amiről 
+gondosan lenyesegették a magától értetődő konkrétumokat. Lehallgatások azonban   természetesen 
+voltak, engem is lehallgattak, pedig én nem is vagyok fideszes, és különösebb   befolyásom sem volt 
+soha sehol semmire. Ezt viszont levél nélkül is tudjuk. Ez a rész tehát nesze   semmi, fogd meg 
+jól.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Feri, tudom, hogyan működik Szilvásy Gyuriék és Veres   Janiék paktuma 
+az Inkallal, tudom, hogyan zajlik a kapcsolattartás a radikális jobboldal jó néhány   prominensével, 
+hogy a Gárda vezetésének kulcsembere évekig együttműködött a Katonai Biztonsági   Hivatallal. Tudom, 
+ahogy Te  is meg a Gyuri is tudja."</div><br>A Gárda vezetésének kulcsembere?   Melyik kulcsembere? 
+Nagyon óvatos a levélíró, nem veti oda Dósa István nevét, noha Dósa semmit sem   tehetne, ha 
+megtenné. Ugyanakkor Hetesi Zsolt NBSZ-főnök nevét korábban gond nélkül leírta, konkrét   
+bűncselekménnyel - törvénytelen lehallgatással - hozva kapcsolatba őt. Mit is jelent ez? Az, hogy   
+Hetesi feltehetőleg valóban részt vett ilyesmiben, és Gyurcsány embereként vele együtt bukott, így   
+most már bele lehet rúgni. Ez tehát a kevés igaz állítás egyike. Dósát illetően viszont a levélíró   
+hazudik, pontosabban csúsztat. Tudja, hogy ha leírja a nevét, a sajtó nem fogja merni leközölni a   
+levelet, mert Dósa perelhetné őket érte. De ha nincs név, az más. Hetesi azonban nem fog perelni,   
+mert vaj van a füle mögött.<br><br>A levélíró itt átmegy támadásba, és a finoman hangolt psy-op   
+fegyvert a radikális jobboldal ellen fordítja. Futólag megemlíti Posta Imre kedvenc biztonsági   
+cégét, majd gyakorlatilag megerősíti a Dósa Istvánt a Kuruc.infó által ért ügynökvádat, ami annak   
+idején a Gárda kettészakadásához és jelentős meggyengüléséhez vezetett. Mi a cél? Ugyanaz: tovább   
+gyengíteni azt a radikális nemzeti jobboldalt, amitől az MSZP - joggal - úgy fél, mint a tűztől.   
+Ebben a körben az ügynökvádak elhintésével lehet a legnagyobb zavart okozni, mert a bizalmatlanság   
+mindent alá tud ásni.<br><br>De miért megy neki Dósának, hiszen őt már rég kigolyóztak a Gárdából?   
+Mert a hazugságot mindig az igazság egy kis szeletére kell alapozni. Egyrészt nem említi, hogy   
+melyik gárdáról van szó, csak annyit: "a Gárda." Ismerős, nem? Másodszor, Dósa István sokáig valóban 
+  együttműködött a Katonai Biztonsági Hivatallal - ugyanis katonatiszt volt. Minden csapattiszt   
+tevékenységét rendszeresen figyeli a KBH, hiszen ez a dolguk, és a csapattisztek is rendszeresen   
+írnak jelentést nekik. Katonai kémelhárítás a világ minden országában van, és a legsunyibb   
+médiaostobaság leügynöközni egy tisztet, ha időnként jelentést ír a kémelhárítóknak. Tudniillik ez a 
+  dolga! A titkosszolgálat nem bűnszövetkezet, hanem állami hatóság.<br><br>Mellesleg a levél   
+fogalmazói biztosan sokat hezitáltak, hogy megemlítsék-e Dósa apjának munkásőr múltját. Végül úgy   
+dönthettek, hogy kicsit stílustalan lenne. Elvégre az SZDSZ-es káderek apjának ávós múltját sem   
+szokás emlegetni.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Tudom, hogy hónapok óta figyelte az NBH a csőbombás   
+olimpikont családostól. És tudom, hogy tudták, hogy a bombák alkalmatlanok károkozásra, de   
+zseniálisan alkalmasak a média figyelemfelkeltésére. Tudom, hogy erről a Laborcz folyamatosan   
+jelentett a Gyurinak.<br><br>Mert az elsőtől az utolsó pillanatig az NBH állt az ügy mögött. Csak    
+nem merték &#8211; nem akarták a saját provokátorukat is őrizetbe venni.  Ezért némi hezitálás után  
+ az ötödik emeleti irodában úgy döntöttek &#8211;  senkit nem vesznek őrizetbe csak a bombagyártót.  
+ Gratula!<br><br>Majd  két hét múlva elengedték, szabadlábon védekezhet, mert 20 darab bomba  egy   
+autó csomagtartójában a város legforgalmasabb helyén nem is olyan  nagy ügy.&nbsp; Azóta pedig néma  
+ csend. Mintha semmi sem történt volna...."</div><br>Azt persze nem teszi hozzá a levélíró, hogy az  
+ NBH nem a bombák miatt figyelte a "csőbombás olimpikon" családját. Volt ott némi "házon belüli"   
+szál. A bomba csak véletlenül jött. Mellesleg ha már kamu bombaügyről és lehallgatásról van szó,   
+miért nem engem említ a levél? Pedig az én ügyem sokkal nagyobb port vert fel, sokkal közismertebb,  
+ és sokkal jobban kilógott a lóláb az első perctől kezdve. Nos, erre is van magyarázat: az én 
+ügyemet   kegyetlenül elkúrták, ráadásul elég publicitásom van ahhoz is, hogy azonnal cáfoljam, ha 
+rólam   írogatnak hülyeségeket. Nem kockáztathatták, hogy bedöntsem a gondosan megtervezett kamu   
+levelet.<br><br>És most jön a kedvenc részem.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Tudom, hogy a Laborczék nyakig 
+  benne vannak a 64 Vármegye mozgalomban  és jelentős szerepük van Toroczkai manipulálásában.   
+Miniszterelnök úr,  tudom, hogy ki áll a Magyarok Nyilai mögött, hogy miért olyan nehéz  lenyomni a  
+ jobboldalt sikeresen megosztó, nagyjából 30 milliós éves  költségvetéssel operáló, (vajon honnan   
+kaphatja szerinted?), a kormányt  hivatalból - a fideszt leginkább utasításra gyűlölő, meglepően jól 
+   tájékozott , &#8222;mi mindent megteszünk, hogy bezárjuk&#8221; fedőnevű   
+Kurucinfót."</div><br>Megint csak konkrétumok nélküli állítás: Laborczék (azaz az NBH) beépült a   
+HVIM-be. De nyakig ám! Csakugyan? És ki az ügynökük? Zagyva Gyula, Toroczkai László? Ki másnak van   
+szava a szervezetben? Ki az, aki Toroczkait manipulálni képes? Nos, Toroczkairól sok mindent el   
+lehet mondani, de hogy manipulálható lenne, azt nem. Ha a levélíró egy percig is képben lenne a   
+HVIM-et illetően, nem "manipulálást" hanem "zsarolást" írt volna, Toroczkait ugyanis többször   
+próbálták már megzsarolni. De akkor sem az NBH, hanem a Kuruc.infó.<br><br>Ismét egy pletykával   
+állunk szemben, amely makacsul tartja magát a szélsőjobboldalon: hogy Toroczkai ügynök. A levélíró   
+pontosan ismeri ezt a pletykát, és megpróbál ráerősíteni. De már jön is a következő.<br><br>A   
+levélíró állítólag tudja, ki áll a Magyarok Nyilai mögött? Hm. Érdekes. És mi van, ha én máshogy   
+tudom? Ó, persze nem állítom, hogy tudom. De mi van, ha annyit azért <span style="font-style: italic;">biztosan </span>tudok, hogy kik nem? Határozottan tagadom, hogy bármilyen titkosszolgálat   
+emberei lennének. Ismét csak egy kósza pletykát próbál valósággá formálni a levélíró: hogy a   
+Magyarok Nyilai mögött az NBH állna. Marhaság!<br><br>A Kuruc.infóval kapcsolatos kijelentés pedig   
+még nagyobb ostobaság. Molnár Balázs bandájáról sok mindent el lehet mondani, de hogy ügynökök   
+lennének, azt biztosan nem. Tudom, mert tagja voltam a brancsnak, éveken át álltam velük szoros   
+kapcsolatban. Egyszerűen egy gátlástalan héber magánweboldaláról van szó, amit megkapó szorgalommal  
+ hegesztget évek óta. Vannak ott milliók, de nem a kormánytól kapják, hanem az olvasóktól csalják 
+ki.   És ezzel el is érkeztünk a radikális jobboldal harmadik kedvenc pletykájához: hogy a Kurucot   
+Gyurcsányék hozták létre. Ez sem igaz. A jólértesültségük pedig egyszerűen annyiból áll, hogy   
+figyelik a sajtót, és ami érdekes nekik, azt átveszik és átírják. Ennyi!<br><br>Három sorban,   
+géppuska-gyorsasággal zúdult ránk a legmakacsabb és legvadabb pletykák igazolása. Ez a rész az   
+egységsugarú jobbikosnak szól. Azt a látszatot próbálja kelteni, hogy minden, amit suttogtak neki,   
+igaz, ezt az egész árpádsávos-turulmadaras mozgalmat a háttérhatalom irányítja, és megint átverték.  
+ A cél, hogy elkeseredve hazakullogjon, és egy életre lemondjon a szavazásról. Pláne a Jobbikra ne   
+szavazzon. Ne dőljön be senki!<br><br>Nézzük tovább a levelet.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Tudom én, hogy   
+minden szavazat amit Vonáék megnyernek, a fideszt  gyengíti és&nbsp; Téged erősít. Téged, nem   
+bennünket. Mert nekünk nem kell  egy radikális jobboldali párt a parlamentben. Nekünk, BSZM-eknek    
+(lefordítom: baloldaliként szocializálódott magyaroknak) snassz, sértő,  aljas dolog, hogy a saját   
+pártunk vezetése táplálja titkos pénzeken és  a médián át azt a radikális jobboldalt, amely (istenem 
+  add!) akár mág  10%-ot is elvehet Orbántól!"</div><br>Bingó: eljutottunk ide is: a Jobbik is az 
+MSZP   kreálmánya. Szépen, sorban haladunk tehát végig a pletykákon&nbsp; a legkevésbé jelentőstől 
+(Dósa   István és Toroczkai László ügynökök) a közepesen durvákon át (a Magyarok Nyilai és a 
+Kuruc.infó),   végül eljutunk a lényeghez: az egész Jobbik ügynökökből áll. Naná!<br><br>Most pedig 
+visszatérünk a   nagypolitikához. Kérdések hangzanak el. Igaz-e, hogy megfigyelik ezt, lehallgatják 
+azt, vizsgálják   ezt vagy azt? A kérdésnek álcázott állításoknak a fele sem igaz. Széles Gábor 
+cégei ellen például   nem folyik átfogó APEH-ellenőrzés. Nem igaz az sem, hogy az Ázsia Center 
+vezetői ellen bármiféle   büntetőeljárás folyna. Ezek egyszerűen a suttogó propaganda eszközei, hadd 
+kapkodja a fejét a   paraszt, úgyis csak annyit jegyez meg az egészből, hogy vannak valami sötét 
+ügyek.<br><br>A   következetesség elve mentén, a kisebb ügyektől a nagyobb felé haladva most 
+eljutunk a MOL   felvásárlására tett orosz kísérletig és az UD Zrt-ig, majd jön Jozef Rohác, a 
+szlovák bérgyilkos. A   MOL-ügyről azonban semmi olyan nem hangzik el a levélben, amit ne tudna 
+bárki, aki nem csak a   szemével olvassa el a híreket. Igen, tudjuk, miért kellett az oroszoknak a 
+MOL földgáztároló   kapacitása. Na és? Ez a leleplezés? Nem, ez felvezetés, hogy az iménti 
+gondolatmenetről - mindenki   ügynök a jobboldalon - át tudjon váltani az egységsugarú állampolgár a 
+második témára. Egy jó   stratégiai elemző - és ilyen az MSZP-ben azért akad - meg tudta mondani 
+februárban, hogy mire készül   Putyin a magyarországi gáztározókkal, és azt sem volt nehéz 
+megjósolni, hogy felvásárlással próbálja   majd megszerezni azokat. A másik lehetőség ugyanis a 
+háború. Januárban, amikor az ukránokkal és a   szerbekkel volt az a kis gázelzárós móka, 
+nyilvánvalóvá vált, hogy Oroszországnak létfontosságú lesz   a magyarországi gázipar megszerzése, és 
+meg fog vele próbálkozni. Egy titkosszolgálat még szép, hogy   előre tudta. Az a dolguk.<br><br>És 
+mi jön ezután? Kérem szépen, ez az aljas Gyurcsány   összepaktumozott Jozef Roháccal, és el akarta 
+neki nézni az Aranykéz utcai, számos halálos   áldozattal járó robbantást, ha elmondja, mit tud! 
+Fúj, de gusztustalan. De a "Hány halott is volt?"   költői kérdése nem ám azért van a levélben, mert 
+a levélíró komolyan gondolja, hanem ez is a   hazugságoktól megundorodott, bűnbánó bűnöző imázsát 
+hivatott erősíteni.<br><br>És végül a   végszó:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Tudom Feri, hogy 
+mindent tagadni fogsz, égbekiáltó, aljas lejáratást   emlegetsz és (talán) szigorú vizsgálatot 
+követelsz majd. Esetleg elintézed azzal, hogy jobboldali   provokáció és a polip műve! Pedig a fent 
+leírtak döntő többségét több tucat ember memóriája és jó   néhány (pechedre) megmaradt, dokumentum 
+őrzi &#8211; még néhány évig."</div><br>Miért, mit mondana,   ha egyszer tényleg nem igaz, ami a 
+levélben áll? Ami pedig igaz belőle, azt eddig is tudtuk. Igen,   Gyurcsány egy gazember, ebben bal- 
+és jobboldal egyetért, de ha jó alaposan megnézzük a levelet,   Gyurcsány megszólítása és 
+legorombítása csupán ürügy a levél megírására, mert az nem is neki szól.   Annak egyetlen valóban 
+fontos tartalma a nemzeti jobboldal lejáratását szolgáló rész. Minden egyéb   csak töltelékszöveg, 
+érzelmi manipuláció és figyelemelterelés. Ez a levél nem egy kiábrándult   főszocialista 
+leleplezése, hanem a radikálisok és a Jobbik elleni támadás, a suttogó propaganda   legújabb 
+fegyvere. Az sem véletlen, hogy a levél olyan hosszú, hiszen tudni lehet, hogy  a sajtó épp   a 
+terjedelme miatt nem fogja soha teljes egészében idézni, csupán állításokat ragad majd ki és   
+kommentál. Az újságolvasók 99%-a&nbsp; pedig soha nem fogja látni a teljes levelet, mert nem veszi a 
+  fáradságot, hogy rákeressen az Interneten, vagy ha meg is teszi, csak igen kevesen rendelkeznek   
+olyan tényismerettel, amelynek birtokában egyértelműen elutasíthatják a levélben foglaltakat. A   
+konklúzió pedig a következő: <span style="font-style: italic;">ha a Jobbikra szavazol, és hiszel a   
+radikálisoknak, Gyurcsány visszatér 2014-ben.</span> Az állítás persze elég messze van a szövegben a 
+  Jobbikról szóló résztől ahhoz, hogy csak tudat alatt csapódjon le. Zseniális! Bár a Jobbiknak   
+lennének ilyen szakemberei, akik ilyen leveleket tudnak írni.<br><br></div>  </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-05-22&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2231&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2231&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2231&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2231&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2231&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2231&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2231&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2231&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2231&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2231&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment170116"></A>82. dRmmm</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2231&id=170100#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-25 15:35:39</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Pont ezt akartam en is belinkelni:) Asszem este en is irok egyet.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment170107"></A>81. <A HREF="mailto:jerce@citromail.hu" STYLE="color: #000000">Mikka</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-25 14:06:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_770.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">De tényleg, honnan van ilyen sok pénze a Jobbiknak?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment170100"></A>80. Gábriel angyal</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-25 12:17:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2610.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Itt a folytatás. :)))<br />
+<br />
+<B><a href="//barikad.hu/node/29758" target="_new" style="color: #000000;">http://barikad.hu/node/29758</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169939"></A>79. <A HREF="mailto:emn@freemail.hu" STYLE="color: #000000">eMM</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2231&id=169932#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-24 07:53:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ugyan már,amilyen hszti  van a "nylak" körül ha meglennének (és ha lennének) simán mennének a böribe.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169932"></A><FONT COLOR="#FF0000">78. </FONT>vébermester</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-24 03:28:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_798.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169925"></A>77. Molnárgörény</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-24 00:28:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_448.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Márpedig a Magyarok Nyilai nagyon is gyanús a patikamérlegen kimért "merényleteivel", amelyek se kárt, se bajt nem okoztak soha.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169896"></A>76. bryan5</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-23 16:45:30</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4348.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hűséges illusztráció Feri piszos dolgairól, csak ennyit akarok mondani.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169875"></A>75. Gerysama</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-23 15:05:29</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3797.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Vicces:) Valóban úgy hangzik részben ez az egész, mintha az Mszp a szegény párt, aki csak Gyurcsánynak köszönheti a rosszhírét. Nah de akkor felmerül a kérdés, hogy akkor amikor hatalmon volt Feri, akkor miért nem rugdosta ki már egyből 2006 után a "szegény, becsületes és megtévesztett" Mszp? Hiszen ha mindenki összefogott volna, nem lett volna olyan nehéz megszabadulni egy nyavajás embertől. Két lehetőség is felmerül miért nem. Az egyik hogy nem is akarta. Ez a legvalószínűbb. A másik, hogy ha akarta is, akkor sem tudták volna, mert valószínűleg harapofogóban volt mindenkinek a töke. Ez csak azért kellemetlen, mert akkor ez annak a bizonyítéka, hogy volt valami szinte mindenki ellen, amivel zsarolni lehetett. Vagy sikkasztás gyanuja amit rá lehetett varrni, vagy valami durvább. Akkor már itt megdől ez a levél, bármennyire is legyen jól megírva.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169873"></A>74. warhamster (40.000) -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-23 14:55:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_250.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">én bitagyú meg elhittem, hogy csak a gyurcsány a hibás...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169862"></A><FONT COLOR="#FF0000">73. </FONT>Gambit</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2231&id=169860#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-23 14:02:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5598.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2231&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2231&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2231&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2231&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2231&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2231&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2231&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2231&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2231&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2231&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

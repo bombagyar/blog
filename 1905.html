@@ -1,0 +1,776 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1905#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A Dropshot-terv: III. világháború az 1950-es években";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=1905#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>A Dropshot-terv: III. világháború az 1950-es években<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 február 14. 04:15:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1905.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><div style="text-align: right;"><font size="1"><span style="font-style: italic;">"Mr. President, about thirty-five minutes   
+ago, General Jack Ripper, the   commanding General of Burpelson Air Force Base, issued an order to   
+the 34   B-52's of his wing which were airborne at the time as part of a special   exercise we were  
+ holding called Operation Dropkick.  Now, it appears that   the order called for the planes to 
+attack   their targets inside Russia."</span><br>- Turgidson tábornok a Dr. Strangelove című   
+filmben<br></font></div><br>A harmadik világháború   megvívására számtalan terv született keleten és 
+  nyugaton egyaránt. Középkorú katonaviseltek még   emlékezhetnek a Varsói Szerződés azon   
+elképzelésére, miszerint a Magyar Néphadsereg páncélos   alakulatai a Pó völgyében előretörve,   
+atombombákkal megsemmisített osztrák és északolasz városokon   keresztültörve érték volna el Milánó  
+ és Piacenza stratégiai célpontjait. Ez a terv csak annyiban   sántított, hogy a tervezők úgy   
+sejtették, vissza nem is fognak lőni, és a komáromi vasúti híd   illetve a győri légvédelmi   
+rakétadandár elpusztulásán kívül nem lesz itt nagy gebasz, hiszen a   szovjet stratégia   
+felsőbbrendű, a NATO meg úgyis hülye. Le is nézték: a haditervben "fillah" és   "piacsenza"   
+szerepelt, kisbetűvel, amúgy póriasan. Odaát, az ellenségnél ezt egy kicsit másképp   gondolták, s   
+így történt, hogy az amerikai 6. flotta kapta azt a nemes feladatot, hogy kis hazánkat   atomtűzbe   
+borítsa, indítva egy 1 megatonnás töltettel pontosan a Keleti pályaudvar fölött, lévén   Budapest   
+mértani középpontja, majd hasonló szeretetcsomagokkal kínálja meg iparvárosainkat   Almásfüzitőtől   
+Záhonyig, kivéve Dunaújvárost, mert azt valamiért nem vették túl komolyan. De ezek   már   
+hetvenes-nyolcvanas évekbeli stratégiai tervek voltak, és szerencsére csak Kelet-Európa     
+szeszesital-állományát érte jelentős pusztítás általuk, amit tudniillik a Varsói Szerződés     
+főtisztjei és tábornokai elfogyasztottak a különféle hadgyakorlatok és a leendő hadszínterek     
+turistának álcázva történő bejárása során. Egyébként is csúnya lett volna egy egész megatonna a     
+Keleti fölött 1 km magasan, pláne, ha még a Csepel Művek is kap 500 kilotonnát: nagyjából Monorig,   
+  Kiskunlacházáig, Szentendréig és Bicskéig szevasz lett volna minden élőnek, különösen mivel a     
+NATO-doktrína minden csapás legalább kétszeri megismétlését írta elő, félórás időközönként. Lett     
+volna Nemzeti Gödör üvegburkolattal, az biztos.<br><br>A boldog ötvenes években, amikor még kacagva  
+   és fiatalon kergették egymást a ma már zsémbesen bűzölgő, fogatlan posztkommunisták, és Sztálin   
+  elvtárs örökké élni látszott, máshogy képzelték mindezt. Atombomba ugyan már akkor is volt, de nem 
+    volt belőle sok, és a stratégiai rakétacsapás fogalma is csupán elméleti értelemmel bírt, lévén 
+hogy     még nem léteztek interkontinentális rakéták. Máshogy kellett volna ezt elintézni, a jó öreg 
+  puskával   és szuronnyal, valamint tankokkal, repülőkkel és egyebekkel. Ekkoriban tették le Harry 
+S   Truman   elnök asztalára az <span style="font-style: italic;">Operation Dropshot</span> című, 
+<span style="font-style: italic;">Most Secret, Eyes Only</span> bélyegzőkkel kiagyusztált 
+papírköteget,     amely stratégiai elemzést tartalmazott arra nézve, mikor és hogyan is robban majd 
+ki a várva várt     III. világháború.<br><br>Harry S Truman mellesleg különös ember volt: a középső 
+neve annyi volt,     hogy "S", pont nélkül. De ennek semmi köze a háborúhoz.<br><br>A Dropshot-terv 
+három kérdésre     kereste a választ.<br><br>- Hogyan fog elkezdődni a háború?<br>- Hogyan fog 
+lefolyni a háború?<br>-     Mi lesz a háború után?<br><br>A technika örvendetes fejlődésének hála, a 
+későbbi tervekből előbb a     harmadik, majd a második kérdéskör is kikerülhetett, megkönnyítve a 
+világvége-tervezők dolgát. Az     1949-ben kidolgozott Dropshot-terv 1957-re jövendölte a nagy balhé 
+kitörését, ám ebben - ma már     tudjuk - tévedtek. Mint ahogy abban is, hogy a nukleáris fegyverek, 
+bár hasznosak, nem fogják     eldönteni a háború kimenetelét. Teljesen kihagyták a számításból a 
+rakétafegyverzet fejlődését, az     interkontinentális rakétákat, amelyek akkor még ötletként sem 
+merültek fel, legalábbis Werner von     Braun még nem kapott akkora fizetési csekket, hogy beszéljen 
+róla, Verne Gyula regényeit pedig     nyilván nem olvasták a derék elemzők. Az atombombát 1949-ben 
+csak megtorló fegyverként vagy végső     megoldásként tekintették, a Dropshot-terv a III. 
+világháborút hagyományos fegyverekkel tervezte     megvívni. Igaz, megjegyzésként szerepelt a műben, 
+hogy ha valamelyik fél kifejleszt egy olyan     rakétát, amely képes egy atombombát hozzávetőleges 
+pontossággal átrepíteni az eurázsiai kontinensről     az amerikaira, alapvetően változik meg a 
+stratégiai helyzet, és ki lehet dobni az egész   paksamétát.   Az még nekik sem merült fel a 
+fejükben, hogy az oroszok lesznek olyan pofátlanok, és   Kubába viszik a   rakétáikat. De hát ki lát 
+a jövőbe?<br><br><A NAME="BKNYEZF"><A HREF="./index.php?post=1905#BKNYEZF" ONCLICK="openbigwindow('resources/pictures/tomcat_duckandcover.jpg', 363, 257); return true;"><img bigpic="resources/pictures/tomcat_duckandcover.jpg" src="./resources/pictures/tomcat_duckandcover_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0"></A>Azok az ötvenes évekbeli  
+   oktatófilmek, amelyek atomcsapás esetére a hasravágódást - <span style="font-style: italic;">duck 
+    and cover</span> - javasolják, már húsz évvel később is kacagtatóak voltak. Ellenben ha 
+figyelembe     vesszük, hogy a Dropshot elemzői szerint a szovjetek legfeljebb két atombombát tudtak 
+volna ledobni     az Egyesült Államok területére, már nem annyira. Hiszen ha nem pont az ember 
+fejére ejtik, az   akkori   atombombák még nem voltak valami nagy hatásúak. A Little Boy, ha a 
+Keleti fölött robbant   volna,   nagyjából a Dunáig rombolt volna, az 1949-ben ismert bombák pedig 
+nem sokkal voltak   nagyobbak. Ami   az amerikaiak terveit illeti, ők az uráli ipari körzeteket 
+szerették volna   megszórni kevés   bombájukkal, terveik szerint talán egy tucatnyival, ami nem is 
+volt olyan rossz   becslés a jövőre   nézve, hiszen a koreai háborúban csak azért nem vetették be az 
+atomfegyvert,   hiába követelte   MacArthur tábornok (az is egy szép pofa volt, majd egyszer írok 
+róla), mert csak   13 darab volt   belőle.<br><br>Az akkori elképzelések szerint a háborút nem 
+valamiféle véletlen   robbantotta volna   ki. Ekkor még nem voltak állandó készültségben járőröző 
+atomhordozó   bombázóegységek, sem - mint   említettem - rakétaütegek. Ez a háború is, akárcsak az 
+előző kettő,   általános mozgósítással, a   tartalékok behívásával kezdődött volna, hetekig, 
+hónapokig tartó   felvonulással, nem pedig hirtelen   lerohanással. Az első hadműveletek 
+megkezdéséig heves   járőrharcok és kisebb vállalkozások zavarták   volna a nyugalmat minden 
+frontvonalon, azaz   gyakorlatilag Németországtól Koreáig. A háború első   szakaszát az döntötte 
+volna el, ki lesz képes   gyorsabban felszerelni, a hadszínterekre juttatni és   ellátni egy 
+sokmilliós tömeghadsereget.   Azonban ha ez már mindkét fél részéről megtörtént,   klasszikus 
+anyagháború következett volna, azaz:   aki előbb tudja felhalmozni a készleteket, hogy egy   nagy 
+hadműveletet megindítson, az nyer.   Legalábbis egy-egy hadszíntéren.<br><br>Az elemzők   
+feltételezték, hogy a Szovjetunióban   háborúpárti a vezetés, amely fegyveres úton kívánja   
+kiterjeszteni a kommunista uralmat   Nyugat-Európára. Sztálin személyében ez a feltétel adott is 
+volt,   hiszen ne feledjük el, hogy már   1941-ben is csupán órák választották el a Vörös Hadsereget 
+az   indulási parancstól, amit a német   megelőző csapás meghiúsított. (A történelemoktatás 
+vélhetően soká   fogja követni a történészek   kutatásait, már ha egyáltalán. Bár már évek óta 
+bizonyított, hogy   Németország nem önszántából   támadta meg a Szovjetuniót, az iskolákban még 
+mindig a régi marxista   dogmát tanítják a "fasiszta   agresszorokról", ahogyan a holokauszt 
+legendáját sem lehet egykönnyen   kiirtani a régivágású   tanárok emlékezetéből, vagy akár József 
+Attila öngyilkosságának elméletét,   amiről pedig szintén   jónéhány éve bebizonyították, hogy nem 
+öngyilkosság volt, hanem szerencsétlen   baleset.) A másik   feltétel, hogy a háború nagyjából az 
+előrejelzett módon robbanjon ki, egy túl   gyengekezű vagy   éppen túl erőteljesen fellépő amerikai 
+vezetés. Az, hogy Trumant Dwight D.   Eisenhower követte az   elnöki székben - és neki már volt 
+pontja, mint ahogy középső neve is -   valószínűleg megmentette a   háborútól az amerikai népet, 
+ugyanis "Ike" tapasztalt katonaként,   ötcsillagos tábornokként tudta,   mennyire kell komolyan 
+venni azokat a vészjósló elemzéseket,   amelyeket Kasszandraként riogató   tanácsadói tettek le 
+íróasztalára alkalmanként, hihetetlen mértékű   szovjet fegyverkezésről   zagyválva. Az ötvenes évek 
+amerikai gazdagsága főként annak volt köszönhető,   hogy Eisenhower   visszafogta a katonai 
+kiadásokat, és inkább a polgári jólét fokozására fordította az   ország   erőforrásait.<br><br><A NAME="MGGQNWY"><A HREF="./index.php?post=1905#MGGQNWY" ONCLICK="openbigwindow('resources/pictures/tomcat_AdlaiStevenson.jpg', 350, 351); return true;"><img bigpic="resources/pictures/tomcat_AdlaiStevenson.jpg" src="./resources/pictures/tomcat_AdlaiStevenson_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0"></A>De mi lett volna,  
+   ha nem Eisenhower nyeri az elnökválasztást? Megnyerhette volna azt 1956-ban Richard Nixon, aki    
+ később valóban elnök lett, de politikája valószínűleg nem különbözött volna sokban a szintén     
+republikánus Eisenhowerétől. A demokraták ellenjelöltje Adlai E. Stevenson volt, Illinois     
+kormányzója, aki liberális nézeteiről, kiváló szónoki képességeiről és humanista elkötelezettségéről 
+    volt ismert. Politikai példaképének Woodrow Wilsont tekintette, így aztán biztosak lehetünk 
+benne,     hogy ha ő kerül hatalomra, egy szentimentális, érzelmi alapon határozó elnököt kaptak 
+volna az     amerikaiak a hideg fejjel, logikusan döntő Eisenhower, vagy négy évvel később a 
+hasonlóan racionális     John F. Kennedy helyett.<br><br>Stevenson elkötelezett szovjetellenesként 
+sokat beszélt a     Szovjetunió ellen indítandó háborúról. Beszédírója, John Kenneth Galbraith 
+megemlékezett arról, hogy     beszédeiből gyakran kellett a jóízlés határán is túlmenő kirohanásokat 
+törölnie, melyek   egytől-egyig   ezen eljövendő háborút propagálták. Hogy ezek a kijelentések 
+valóban politikai   szándékot tükröztek,   kétséges, inkább csak a demokraták kommunistaellenességét 
+hangsúlyozták, ám   még egy ilyen   kardcsörtetés is komoly feszültséget okozott volna az ötvenes 
+évek amúgy sem túl   nyugodt légkörében,   ha Sztálint feltételezzük a Szovjetunió 
+vezetőjének.<br><br>Mi lett volna, ha   1956-ban Stevenson az   elnök, és nem Eisenhower? 
+Valószínűleg sosem hangzik el a híres mondat az   Ovális Irodában: <span style="font-style: italic;">"Isten látja a lelkem, szeretnék segíteni, de nem   tehetem."</span> Ezt   mondta ugyanis 
+Eisenhower, miután tanácsadóival felmérték, milyen   következményekkel járna egy   esetleges 
+beavatkozás a magyarországi forradalomba. A baloldali   Stevenson azonban nem habozott volna   ezt 
+megtenni, vagy legalább csapatokat vezényelni   Nyugat-Európába, hogy későbbi népfelkeléseknek   
+segítséget nyújtsanak. Ha így történt volna,   bizonyára lettek is volna ilyen felkelések, és minden 
+  bizonnyal kitört volna a sokat emlegetett   III. világháború. Ez az, amit Eisenhower, a képzett 
+katona   átlátott, de rajta kívül kevesen. Az is   valószínű, hogy egy ilyen csapatösszpontosítás 
+esetén   Sztálin nem várta volna meg, míg azok   beérkeznek, hanem villámháborúban elfoglalta volna  
+ Nyugat-Európát az Atlanti-óceán partjáig, amit   a még mindig háborús szinten tartott és 
+fejlesztett   Vörös Hadsereg valószínűleg játszva elért   volna néhány nap alatt, félresöpörve a 
+békelétszámra   csökkentett brit, francia és amerikai   expedíciós csapatokat. A Dropshot-terv 
+pontosan ezt a   forgatókönyvet vázolja egy esetleges   kelet-európai szovjetellenes felkelés 
+esetére, javasolva az   elnöknek, hogy ne lépjen közbe.   Eisenhower meg is fogadta ezt.<br><br>De 
+mi történt volna, ha kitör   a nyugat-európai háború?   Értelemszerűen a Közel-Keleten és a 
+Csendes-óceánon sem maradt volna béke   sokáig. A Dropshot   tervezői ugyan tervként jelölték meg a 
+szovjet hadsereg megállítását valahol   Németországban, ám   reális esélyt csak arra láttak, hogy 
+Nagy-Britanniát megtartsák. Norman   Schwarzkopf, az 1991-es   Sivatagi Vihar-hadművelet parancsnoka 
+emlékirataiban leírta, milyen   állapotban voltak akkoriban a   nyugat-európai amerikai csapatok: 
+képzetlen, fegyelmezetlen   sorkatonák, rosszul karbantartott   fegyverzettel, semmiképpen sem 
+ellenfél a jól felszerelt szovjet   hadosztályoknak. (Ez a helyzet   egészen Vietnamig nem 
+változott, amikor az ismert eredmény miatt   áttértek a profi hadsereg   alkalmazására.)<br><br><A NAME="WQUEJFV"><A HREF="./index.php?post=1905#WQUEJFV" ONCLICK="openbigwindow('resources/pictures/tomcat_china_soldier.jpg', 392, 540); return true;"><img bigpic="resources/pictures/tomcat_china_soldier.jpg" src="./resources/pictures/tomcat_china_soldier_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: left; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;" border="0"></A>Kína kérdését a    
+ Dropshot-terv a korabeli helyzetben legvalószínűbb forgatókönyv szerint kezelte: egy kettészakadt   
+  országot vizionált, amelynek északi fele kommunista, a déli pedig polgári demokratikus uralom 
+alatt     áll. A valóságban Kína 1957-ben már teljesen kommunista volt, a kis Tajvant leszámítva, és 
+a     Szovjetunió szövetségese. Mao Ce-Tung fel is vetette Hruscsovnak, hogy 
+támadják meg     közösen a Nyugatot, s ehhez a több tízmilliós kínai hadsereget is felajánlotta. Ha 
+valóban kitört     volna a Dropshot-terv szerinti háború, ezek a kínai csapatok feltehetőleg 
+megszálló feladattal     kerültek volna Európába. Támadókapacitás híján valószínűleg máshol nem 
+végeztek volna komolyabb     hadműveletet, bár egy tajvani invázió megkísérlése értelemszerű lett 
+volna. A legrosszabb esetben     azonban a kínaiak partra is szállhattak volna Mexikóban, 
+miután a szovjet flotta legyőzte a     csendes-óceáni amerikai haditengerészeti erőket - bár ez a 
+valós erőviszonyok ismeretében egyáltalán     nem olyan valószínű - és dél felől behatolhattak volna 
+az Egyesült Államokba.<br><br>Ahhoz, hogy   az   Egyesült Államok egy ilyen szorongatott helyzetben 
+fennmaradjon, és az ellenséget határaitól   távol   tartsa, szigorú korlátozásokat kellett volna életbe léptetni a hadiállapot során. Minden   valószínűség   szerint tervgazdálkodást vezettek volna be, 
+érvényt szerezve annak a második   világháború során   hozott törvénynek, miszerint nemzetbiztonsági 
+vészhelyzetben a kormány   lefoglalhat és ellenőrzése   alá vonhat bármilyen ipari üzemet. Ilyen 
+intézkedésekre a második   világháborúban Nagy-Britannia   kényszerült, hogy végül mindenki, aki élt 
+és mozgott, a hadiipari   termeléssel foglalkozzon. Miközben   tehát az USA a kommunista szövetség 
+ellen harcolt volna, maga   is kommunista intézmények bevezetésére   kényszerült volna.<br><br>A Dropshot 
+kidolgozói érdekes módon egyáltalán nem   számoltak az amerikai földalatti kommunista   mozgalom erejével. Pedig a 
+harmincas és negyvenes   években ebbe a polipként terjeszkedő hálózatba sok   millió dollárt 
+fektetett a szovjet kormány,   hogy aztán olyan sikereket érjenek el, mint az   atomfegyver titkának 
+megszerzése. Ma már tudjuk,   hogy Eisenhower legközelebbi tanácsadói közül   többen is szovjet 
+ügynökök voltak. Ez az ötödik   hadoszlop könnyen dugába dönthette volna az   amerikaiak valamennyi 
+háborús tervét. Nem számol a   tervezet a pénzügyi körök hatalmával sem,   amelyek kezükben 
+tartották az amerikai gazdaságot,   hiszen ekkor már megszűnt a dollár aranyfedezete,   és emiatt 
+egyenes úton haladtak az 1970-es évek   államcsődjéhez, amelyből az OPEC-kel megkötött   egyezség 
+húzta ki az országot - legalábbis addig,   amíg el nem fogy az olaj. <br><br>Korrepetálás   
+következik azoknak, akik az előző órán nem   figyeltek. Az amerikai gazdaság 1971-ben összeomlott,   
+amikor a háború után megsegélyezett országok   Franciaország vezetésével kérték, hogy váltsák át   
+aranyra a nekik juttatott dollárkészletet. Az   USA erre nem volt képes, ami államcsődöt jelentett. 
+A   megoldás az lett, hogy rávették a   szaúd-arábiai királyt, érje el az OPEC-nél, hogy a jövőben 
+csak   dollárért adjanak el olajat a   világon bárkinek, és ezzel biztosítsák Amerika túlélését. 
+Ezért   cserébe az amerikai hadsereg   bármilyen körülmények között, bármilyen ellenséggel szemben   
+megvédelmezi Szaúd-Arábiát, és   hatalomban tartja a királyi családot. Olajat azóta is csak 
+dollárért   lehet vásárolni a világban,   és aki megpróbálja másért adni, arra Amerika nagyon 
+megharagszik - mint   például egy Szaddám   Huszein nevű emberkére 1990-ben. Olajat jelenleg a New 
+York-i, a londoni és a   tokiói tőzsdén lehet   vásárolni, s a londoni olajtőzsde az egyetlen ok, 
+amiért Nagy-Britannia nem   vezette be az eurót.   Mert ugye nem hisszük el, hogy puszta 
+hagyományőrzésből tartották meg a fontot?   Szóval jelenleg   csak az olaj miatt létezhet az Egyesült 
+Államok, és ezért kellett oly   hirtelen elfoglalni   Irakot, nem pedig holmi 
+lemustárgázozott kurdok miatt. A bökkenő az USA   szerepével a   világpolitikai porondon az, hogy 
+immár nem az a szuperhatalom, amely húsz vagy harminc   éve volt,   és már nem tudja oly biztosan 
+kézben tartani ezt az olajmonopóliumot, mint akkor. De   térjünk   vissza a Dropshot-tervhez.<br><br><A NAME="VZURYUK"><A HREF="./index.php?post=1905#VZURYUK" ONCLICK="openbigwindow('resources/pictures/tomcat_annuit_coeptis.jpg', 275, 275); return true;"><img bigpic="resources/pictures/tomcat_annuit_coeptis.jpg" src="./resources/pictures/tomcat_annuit_coeptis_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0"></A>Egyszóval a     
+Dropshot írói nem számoltak azzal a háttérhatalommal, amely kezében tartotta Amerikát, és amely     
+viszont elvesztette az uralmat a Szovjetunió fölött. Hiszen Sztálin szívfájdalom nélkül irtotta ki   
+  az újonnan létrejött Szovjetuniót uralni hivatott helytartókat Zinovjevtől Trockijig. Míg Lenin    
+ 1917-ben még dollármilliókat kapott forradalma végrehajtására bizonyos New York-i pénzügyi 
+köröktől,     akik később fényűző banketten mondtak hálát Jahvénak a Carnegie Hallban azért, mert "a 
+    világtörténelem legnagyszerűbb forradalmát" az ő népük hajtotta végre, 1945 után ugyanezek a     
+pénzügyi körök hirtelen azon kapták magukat, hogy kiakolbólították őket a saját birodalmukból, és    
+ Sztálin ugyanazt teszi, mint korábban Hitler: országa saját erőforrásaira támaszkodva    
+ saját, tőlük független birodalmat épít ki. Ennyi a magyarázat a hidegháború kitörésére, a fultoni   
+  beszédre és minden egyébre, ami 1945 és 1990 között történt: a Szovjetunió a tervezett világállam  
+   renegát tartománya volt, amit mindenáron meg kellett regulázni, vissza kellett hódítani. Jelenleg 
+    Oroszországban e tekintetben interregnum állapot áll fenn, hiszen bár a Szovjetunió gazdasági    
+ megfojtása sikerült a hidegháború által, egy Putyin nevű alkalmatlankodó fráter továbbra is tartja 
+a     frontot a világ "jogos tulajdonosaival" szemben, és holmi erős nemzetállamot akar ott, ahol már 
+rég     meg kellett volna valósulnia a végső internacionalista álomnak. A tavalyi grúz-abház háború  
+   közelebbi rokonságban áll a Dropshot-tervvel, mint gondolnánk.<br><br>Mit tettek volna e pénzügyi 
+    körök, ha a Dropshot valóra válik? Kétségkívül komoly dilemma elé kerültek volna, azazhogy abban 
+    voltak már 1945 óta, hiszen a szovjet blokkban az a rendszer uralkodott, amelyet ők létre 
+kívántak     hozni, ám kapui zárva voltak előttük. Ezért minden bizonnyal a nyugati háborús 
+erőfeszítéseket     támogatták volna, hiszen megette a fene az egész kommunizmus-dolgot, ha nem ők 
+irányítják, ám közben     kétségkívül roppant ádáz földalatti harc tört volna ki köztük és a 
+Szovjetunióból irányított     amerikai kommunista hálózat között, amit egyébként szintén ők maguk 
+hoztak létre korábban... Ez lett     volna, ami a háborút eldönti, és csak másodsorban a fegyverek. 
+Globális méretekben ismétlődött   volna   meg az, ami Magyarországon 1919-ben: a társaság kétfelé 
+szakadva önmagával harcol, a gójok   pedig   szorgalmasan lövöldözik egymást mindkét oldalon... A 
+mai vadliberalizmus, a civilizációt     pusztulással fenyegető multikulturalizmus egyébként nem más, 
+mint a hidegháború idején Nyugaton     kitűnően működő balos aknamunka eredménye, amely Martin 
+Luther Kinget, Daniel Cohn-Benditet, Joschka     Fischert vagy György Pétert kitermelte. Az 
+eredetileg bomlasztásnak szánt ideológiák a mai napig     terjednek és mérgezik az agyakat, ahogy a 
+második világháborús propaganda bizonyos elemei is     mindmáig a köztudat részei.<br><br>Aki a 
+fentieket puszta fantáziálásnak tekinti, tegye fel magának     a kérdést, miért nem szabad feltenni 
+John Kerry szenátornak a kérdést, hogy mi köze a Koponyák és     Csontok nevű szabadkőműves 
+páholynak az amerikai kormányzathoz - az egyetemistát, aki ezt meg     merészelte kérdezni, azonnal 
+sokkolókkal teperte le Kerry testőrsége - és miért kellett George W.     Bush egyik felmenőjének 
+Geronimo koponyájából innia, ha egyébként nem volt egy perverz állat. (Vagy     ki ásta ki Kádár 
+János koponyáját, és minek, avagy Tisza István koponyáját miért gyűjtötték be     hasonló módon 
+korábban.) No, de térjünk vissza a Dropshotban leírt tervekhez, és ne azt feszegessük,     mi nem 
+szerepelt benne. Tegyük fel, hogy a világ egyszerű, és a háborúk lovagiasan, a harctéren     dőlnek 
+el, és minden pont az, aminek látszik...<br><br><A NAME="RCSSMFR"><A HREF="./index.php?post=1905#RCSSMFR" ONCLICK="openbigwindow('resources/pictures/tomcat_t10tank.jpg', 800, 550); return true;"><img bigpic="resources/pictures/tomcat_t10tank.jpg" src="./resources/pictures/tomcat_t10tank_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: left; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;" border="0"></A>A Dropshot forgatókönyve 
+szerint az Egyesült Államok a háború     második szakaszában képes lett volna visszavetni a szovjet 
+csapatokat Európában, és betörni a     Szovjetunió területére. A terv többé-kevésbé azonos lett 
+volna a Barbarossa-tervvel, ám Hitler     hibáit elkerülve. A háború célja a kommunista uralom 
+megdöntése, a vasfüggöny megszüntetése, és   egy   olyan, a Versailles-i békéhez hasonló diktátum 
+Oroszországra kényszerítése, amely egyszer s     mindenkorra megakadályozza, hogy ezeken a 
+területeken még egyszer kommunista uralom forduljon elő.     Összeesküvés-elmélkedők hozzátehetik: 
+és ezek után a kommunizmus, mint ideológia, eltűnt volna a     történelem süllyesztőjében, hogy eszméit 
+más néven, másképpen vegyék elő egy bizonyos idő után,     ismét ugyanazzal a céllal, amit a 
+szabadkőművesség nyíltan meghirdetett: a társadalmi egyenlőséget     és igazságosságot megvalósító, 
+utópisztikus világállam létrehozásának céljával... Arnold Toynbee, a     neves történész nézete 
+szerint pusztuló civilizációnk a XX. században "vészkorszakot" él át, s   ahogy   hanyatlik, 
+világháborúk sorát robbantja ki. E háborúk közös jellemzője, hogy hatalmi blokkok   vívják   őket 
+egymás ellen, s a győztes mindig eltörli a vesztest a föld színéről, területére   kiterjesztve   
+saját ideológiai-hatalmi rendszerét. Stimmel: ez történt az első, majd a második   világháborúban, s 
+  ez történik ma is a "terrorellenes háborúnak" nevezett valódi harmadik   világháborúban, amikor az 
+  őrült, globalista, anyagi érzékkielégítést hajszoló világ a spirituális   értékeket őrző utolsó 
+népek   elpusztítására tör.<br><br>De hogyan látták a jövőt a képzeletbeli és   hagyományos harmadik 
+  világháború felvázolói, a Dropshot elemzői? <br><br>A 
+Dropshot   utáni 1960-as években a világ sokkal szegényebb lett volna, mint a   valóságban. 
+Afrikában és Eurázsia   Szovjetunión kívüli részeiben káosz és anarchia dúlt volna,   helyi háborúk 
+garmadájával, s a   nagyhatalmak kevés figyelmet szenteltek volna e területeknek. A   háborúban 
+semleges távol-keleti   országok gazdasága ugyan fellendült volna, de nem annyira, mint a   
+nyolcvanas-kilencvenes években,   mert nem lett volna igény arra a nagy mennyiségű fogyasztói   
+cikkre, amit ezek az országok ma   gyártanak. Kína valószínűleg éppen úgy szétesett volna helyi   
+uralkodók, hadurak és bandavezérek   területeire, mint az 1920-as években.<br><br><A NAME="QFWDLDT"><A HREF="./index.php?post=1905#QFWDLDT" ONCLICK="openbigwindow('resources/pictures/tomcat_lebombazva.jpg', 440, 302); return true;"><img bigpic="resources/pictures/tomcat_lebombazva.jpg" src="./resources/pictures/tomcat_lebombazva_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0"></A>Nyugat-Európában elmaradt 
+    volna az 1950-es évek robbanásszerű fejlődése. Bár az új háború nem okozott volna akkora 
+károkat,     mint a második világháború, hiszen feltehetőleg a síkságokon gyorsan lezajló 
+ütközeteken kívül nem     lett volna szükség egyéb hadmozdulatokra, mégis visszavetette volna a 
+földrészt az 1945-ös     állapotokhoz. Az bizonyos, hogy a befektetői kedv ezek után évtizedeken át 
+elkerülte volna Európát,     hiszen ki vinné oda a vagyonát, ahol húsz-harminc évenként 
+menetrendszerűen lebombáznak     mindent?<br><br>Oroszország valószínűleg könnyebben állt volna 
+vissza a kapitalista rendre, mint a     kilencvenes években, hiszen nagyon sokan még éltek volna 
+azok közül, akik megtapasztalták a szabad     vállalkozást és a piacgazdaságot 1917 előtt, vagy akár 
+Lenin NEP-programját, amely megengedte a     kisvállalkozások működését. Mivel a háború győztesei 
+leszerelték volna az országot valójában jelentő     Vörös Hadsereget, vele tűnt volna el a 
+gigantikus szovjet ipar nagy része is, és a lakosság nagy     része mezőgazdasági termelésre állt 
+volna át. A Dropshot-terv szerzői szerint Oroszország "a papok     és parasztok országává" vált volna, 
+ami biztos nagyon tetszett volna Szolzsenyicinnek, de nem     valószínű, hogy sokáig és bőségesen biztosította 
+volna a lakosság megélhetését.<br><br>Az Egyesült Államok is furcsa     világgá vált volna. Az ötvenes 
+években egyre-másra jelentek meg az elemzések és könyvek arról,   hogy   a tervgazdálkodás 
+hatékonyabb és fejlettebb a piacgazdaságnál, mint azt a Szovjetunió   gazdaságának   akkori gyorsabb 
+növekedése bizonyítja. A Dropshot-háborúban az USA be is vezette volna a   tervgazdálkodást,   ami 
+feltehetőleg a háború után is megmaradt volna. A nagyipar tehát jórészt   állami irányítás alá   
+került volna, míg a kisvállalkozások maradnak magánkézben - ahogyan azt Lenin   NEP-programja is   
+megvalósította. Rövid időn belül ez lett volna a világszerte elfogadott gazdasági   modell, szemben 
+a   mai liberális piacgazdasággal.<br><br>Az   általános gazdasági 
+válság,   az alultermelés miatt nem létezett volna a nagy amerikai   szabadságálom. A legtöbb ember 
+fix   fizetésért dolgozott volna, olcsó bérházban lakva, nem pedig   nagy kiterjedésű, hatalmas 
+kertekkel   körülvett családi házakban. Az hatvanas-hetvenes évek   generációi nem keresték volna a 
+lázadás, a   kitörés lehetőségét, nem csak mert ezek alapvetően a   tétlen jólét eredményei voltak, 
+hanem mert a   történelem arra tanította volna őket, hogy csak a   beilleszkedéssel és az 
+összefogással érhetnek el   bármit. Ennek megfelelően nem létezett volna   populáris kultúra, vagy 
+akár rock and roll zene, vagy   nem vették volna komolyan, nem terjedt volna   el. Elvis Presley 
+egyszerű teherautósofőr maradt volna,   és a fiatalok elegáns, szürke zakóban vagy   kosztümben 
+siettek volna munkába, egyetemre, vagy ahová   éppen menniük kellett. Adlai Stevenson   demokrata 
+kormánya valószínűleg éppen úgy megbukott volna a   háború után, ahogy Roosevelté 1945-ben   vagy 
+Wilsoné 1918-ban, és a helyére republikánusok kerültek   volna - talán éppen Nixon elnökletével   - 
+akiknek ez a konformista világ maximálisan megfelelt   volna.<br><br>Ám ez a világ sem tartott   
+volna örökké. Talán a nyolcvanas évekre felismerte volna a   társadalom, hogy a tervgazdálkodási   
+rendszer igazából nem hatékonyabb, mint a piacgazdaság, hanem   éppenséggel gátja a fejlődésnek. A   
+konzumkultúra néhány évtized késéssel biztosan eljött volna, és   talán napjainkban, a 2000-es   
+években talán már nem sok különbség lenne a Dropshot utáni és a ma   ismert világ között. Lehet,   
+hogy most fedeznénk fel a rock and rollt, s a rendőrök kopasz,   árpádsávos zászlót lóbáló   
+nacionalista forradalmárok helyett hosszú hajú, beatzenét hallgató   egyetemistákat vernének,   
+akiknek elegük van a fojtogató állami mindenhatóságból. Az államot pedig   Magyarországon minden   
+bizonnyal azok kakastollas csendőrök képviselnék ismét, akik 1945 után az   amerikai felszabadításig 
+  eltűntek...<br><br></div>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-02-14&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1905&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1905&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1905&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1905&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1905&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1905&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1905&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1905&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1905&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1905&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1905&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1905&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment152078"></A>107. <A HREF="mailto:molnibalage@freemail.hu" STYLE="color: #000000">Molnibalage</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1905&id=151879#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-02-16 22:28:19</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem. A rendszer úgy van felépítve, hogy egyetlen ember nem tud háborút indítani. Alsó hangon 5 vezető kell hozzá asszem a döntéshozói-<br />
+<br />
+Aztán a végrehajtó oldalon is nem egy ember kell hozzá..<br />
+<br />
+Ha csak egy ember kellene hozzá gondolod, hogy akkor a Hidegháború hideg maradt volna?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151999"></A>106. Alexivenos</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-02-16 20:34:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_603.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">egy kis javítás: Sztálin 1956-ban már 3 éve halott volt. <br />
+<br />
+Hruscsov akart volna háborút???</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151886"></A>105. Ecoli</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-02-16 12:45:52</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Erdekessegkeppen: a XX. szazadban minden haboru,melyben az USA reszt vett,ugy kezdodott,hogy demokrata elnok volt hivatalban. (kiveve az Obol-haborut,mert az epp id.George Bush idejere esett,de hat az egy ilyen csalad...)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151883"></A>104. crusader</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-02-16 10:11:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_725.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Érdekes írás. Köszi!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151879"></A>103. sbarrett</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-02-16 03:27:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4616.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Obama is bármikor megnyomhatja a gombot.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151806"></A>102. Akbar</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1905&id=151799#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-02-15 12:07:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1498.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez jó volt, Mr. Bond.....<br />
+<br />
+Bár nem osztom minden megállapítását Olivernek, de nagyon gondolatébresztő....</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151804"></A>101. <A HREF="mailto:molnibalage@freemail.hu" STYLE="color: #000000">Molnibalage</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1905&id=151803#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-02-15 11:18:30</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem olvastam el a linkelt cuccot, de kategorizálás szempontjából amit írtál az korrekt. A jellemzően elterjed hatóerő a taktikai fegyreknél 20-200kt. Ez még simán fissziós nagyságrend. 200 kt felett kezdődnek a fúziós cuccok.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151799"></A>100. JamesBond</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-02-15 08:04:34</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2180.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ugyan sok, sok mindennel nem értek egyet, mit a cikk maga tartalmaz, még többel nem értek egyet, mit a hozzászólások takarnak. Nem tudtok, KÉPTELENSÉG ezt a valóságot, amiben élünk leképezni annélkül, hogy a a faji kérdést megoldottátok volna magatokban. MINDEN innen indul, és ide érkezik vissza. Lehet ezt a világot jobbos vagy balos, ill gazdasági vagy spirituális szemlélettel megközelíteni, mint mondottam lehet, de nem fog eredményre vezetni. Amikor is elkezditek ezt a világot, melyben élünk faji szemüvegen keresztül nézni, rá fogtok jönni, hogy azok a frusztrációk, melyek a többi szemléletet ill. az általuk leírható világot jellemzik el fognak tűnni. Ennyit belőlem és most jöjjön egy pici Revilo Pendleton Oliver-ről. Az ürge a II világháború alatt belső elhárítós volt, Washingtonban, utána pedig professzor. Egyetemi oktatást kapsz - hallod e? Becsüld meg. Én egy éve kezdtem bele a cikk ferdítésébe, de nem jutottam a végére. Hiányzik pár bekezdés. Hogy mégis miért mellékelem, az nyilvánvaló lesz, ha elolvasod.<br />
+<br />
+Pattonnal kapcsolatban, a bunkó, tudatlan faszfejek figyelmébe ajánlom a naplóját, melyben tisztán és nyiltan megírta, hogy mire katonaként megtette ami a parancsban állt(mint ahogyan tették azt a Nürnbergben elítélt katonai vezetők), tisztán és nyiltan a legyőzött Német nép mellett és a szövetségesekkel(szovjet(nem orosz) és babó) szemben foglalt állást. Tudta, mint katonai szakember, hogy a vörös hadsereg három napnál túl nem fog tudni semmilyen ellenállást tanusítani, hiszen az ellátási vonalai nem léteztek - mind hadianyag mind táplálék szempontjából. A Lend-Lease program - a kölcsön-bérlet nélkül a Szovjetúnió rég elvesztette volna a háborút. Érdekes adalék lenne neked is Tc elolvasni Major Jordan(Jordan őrnagy) naplóját. Tisztán kirajzolódnak belőle azok a viszonyok, melyek irányába tapogatózol. Olyan dolgok vannak benne, amire már kedves parasztbácsink is az mondaná, hogy namá eszt méggse hiszemel...Meg fogsz döbbenni. Igen, Te is. Majd túljutsz ezen is. Pénz és a hasadóanyag. Hivatkozások a hozzászólás végén, sajna, nagy részük angolul.<br />
+<br />
+És most jöjjön egy Amerikai Professzor:<br />
+<br />
+<b>Mivel tartozunk parazitáinknak?</b><br />
+<i>Prof. Revilo P. Oliver (1968, Júniusi előadás)</i><br />
+<br />
+Az a néhány szerencse-fia, akinek volt alkalma megismerkedni Dr. Revilo P. Oliver munkásságával, joggal tarthatja őt az egyik legkimagaslóbb XX. századi Amerikainak.<br />
+<br />
+Az 1908-as születésű professzor gyorsan megmászta az Akadémia fokait, hogy azután a nyelvészet és a klasszika-filológia legnagyobb egyéniségei között foglaljon helyet. 32 éven át volt a Klasszikai Tudományok Professzora az Illinois-i Egyetem Urbana-i tanszékén. Szép csendesen tengethette volna életét oly módon, amint azt legjobban szerette: aszkéta módjára, a skolasztika nagyítóját briliáns elméjével a múlt porosodó köteteire és kézírásaira fókuszálva - de más utat választott. Tisztán és honfitársainak többségét évekkel megelőzve látta, hogy nemzetét bomlasztó idegen elemek vették irányításuk alá, és elhatározta, hogy annak ellenére, hogy eme cselekedete miféle hatással lesz jó hírére, s társadalmi helyzetére, fel fogja emelni ellenük hangját. Az 1954-es esztendőtől, egészen haláláig szinte szakadatlanul próbálta felrázni az Európai származású Amerikaiakat a reájuk leselkedő csapdára &#8211; de fényes lehetőségeikre is felhívta figyelmüket.<br />
+<br />
+Dr. Oliver eme beszédét egy New York-i Hamburg-béli klubban (Lorelei Club) tartotta, mely nem esik messze Buffalo-tól, kizárólag Német származású Amerikaiakból álló hallgatósága részére.<br />
+<br />
+A beszéd eredeti kéziratát elvitte az árvíz, mely Dr. Oliver házát 1990-ben sújtotta, és így a szerkesztő állította azt helyre az Everett Weibert úr által készített eredeti magnó-felvételt használva. Az estleges hibák így természetesen a szerkesztő számlájára írandóak, nem Dr. Oliverére.<br />
+<br />
+Az itt közreadott beszéd egyike Dr. Oliver legkiválóbb előadásainak, és bizonyossággal állíthatom, hogy legkitűnőbb esszéje. Nyomtatott formában itt jelenik meg először.<br />
+<br />
+<b><i>Kevin Alfred Strom</i></b><br />
+<br />
+<br />
+<b>Mivel tartozunk parazitáinknak?</b><br />
+<br />
+Hölgyeim és Uraim, először is engedjék meg, hogy megköszönjem a meghívásukat és megtisztelő jelenlétüket. Az utóbbi tucat év során számtalan konzervatív és patrióta szervezet összejövetelein tartottam előadást, de ez az első alkalom, hogy kizárólagosan Német származásúak előtt mondok beszédet: azaz fajunk azon ágának leszármazottai előtt, mely otthon maradt, mialatt atyafiságuk meghódította és megszállta a haldokló és nagyrészt elkorcsosult Római Birodalom nyugati területeit, azon Római Birodalomét egyébként, melyet egy, még távolabbi atyafiságuk egy másik ága alapított több mint egy évezreddel azelőtt.<br />
+<br />
+Nos, tudtommal ma egy csakis a tagság, és bizalmas vendégeik számára szervezett zártkörű rendezvényen beszélek. Úgy állapodtunk meg, hogy ami itt ma elhangzik, az bizalmas, úgymond jegyzőkönyvön kívül marad, nem terjeszthető semmilyen formában, valamint, hogy nincs jelen egyetlen újságíró sem. Ennek okán, őszintén és köntörfalazás nélkül fogom önökkel megosztani harcunkra vonatkozó legelfogulatlanabb helyzet megállapításomat.<br />
+<br />
+Páran önök közül talán még emlékeznek a régi mesére a diáklányról, akit csak nagy soká nyomott el az álom, de amint kettőt ütött az óra, arra riadt, hogy szobája ajtaja lassan kitárul. Rémületében bele akart sikoltani a sötétbe, de valaki zsebkendőt szorított ajkára, és erős karok emelték ki ágyából - s dobták az épület előtt várakozó luxus Rolls-Royce tágas hátsó ülésére, mely sietve, kerékcsikorgással megiramodott. Hosszú út után kiemelték a kocsiból és bevitték egy pompás palota hatalmas előcsarnokán át, fel a márványlépcsőkön egy elegánsan berendezett hálószobába, ahol is az ágyra hajították. Ekkor látta először tisztán elrablóját: jóképű, erős férfit tökéletes estélyi öltözékben. Az ágy mellett állt, és töprengőn, csendesen nézett le a lányra. A lány beszélni próbált és végül kinyöszörögte: "Oh, és most mi fog történni velem?" A férfi vállat vont és visszakérdezett:<br />
+<br />
+"Honnan tudhatnám én azt? Ez itt az Ön álma!"<br />
+<br />
+A történet természetesen abszurd, de amiért megnevettet bennünket, az a meghatározhatatlan játék, amit a tudatalattink rejtett zugaival űz. Az álmot úgy lehetne meghatározni, hogy az agyban végbemenő bizonyos érzetek sorozata, mialatt mind szervi érzékelésünk, mind akaraterőnk és gondolkodásunk fel van függesztve, így nem irányíthatjuk az érzetek ezen kavalkádját. De természetesen az is jól ismert jelenség, hogy amint azt álmodjuk, hogy álmodunk, abban a pillanatban álmunk véget ér és felébredünk. Ekkor elménk öntudatos része veszi át a kormányt és ismét felelőssé válunk gondolatainkért, és szembe kell néznünk mindennapjainkkal, ahol is felelősséggel tartozunk cselekedeteinkért, melyek, megfontoltságukból, avagy balgaságukból kifolyólag alapvetően befolyásolják sorsunk alakulását. Álmaink talán tudatalatti vágyaink és félelmeink kifejeződései, legyenek azok akár kellemesek akár fájdalmasak. De amikor ébren vagyunk, muszáj, hogy döntéseinket a legobjektívebb, leghidegvérűbb becsléseink alapján hozzuk, olyan becslések alapján, melyek helyesen mérik fel a tendenciákat és körülöttünk örvénylő erőket, melyek helyesen mérik fel a mindennapi realitásokat, figyelembe véve, hogy soha semmi nem fog megtörténni, csak azért, mert mi úgy gondoljuk, hogy az úgy lenne kívánatos, illetve, hogy nem fog nem megtörténni, csak mert mi úgy hisszük, hogy az úgy kellemetlen lenne.<br />
+<br />
+Az idő, amikor is gondosan és racionálisan számba kell venni jelen helyzetünket és kilátásainkat eljött. Az Oxfordi Egyetem Brasenose épülettömbje zöld pázsitjának közepén, ha jól emlékszem áll egy magányos napóra, melynek bronztábláján ez a dermesztő felirat áll:  <i>Később van, mint gondolnád&#8230;</i><br />
+<br />
+Biztosíthatom Önöket, Amerikai honfitársaim, hogy ma már később van - sokkal később - mint gondolnák. Természetesen az is lehetséges, hogy már túl késő van, és mint egy veterán megfigyelő és amúgy is kitűnő barátom bizonygatta nekem mostanság: jelen helyzetünk oly lehetetlen, mint amilyen a Délieké volt Richmond elvesztése után annak a tragikus második háborúnak a végkifejlete során melyet hazánk függetlenségéért vívtunk. Én viszont őszintén hiszek abban, hogy még van némi esélyünk a túlélésre. Ha nem hinnék benne, bizonyosan nem beszélnék ma itt önökkel, és nem ecsetelném önöknek, hogy milyen nagy kutyaszorítóban is vagyunk.<br />
+<br />
+Persze lehet, hogy tévedek. Nem vagyok se jós, se próféta és nem ismerem sem ellenségeink titkos terveit, sem szervezetük belső felépítését. Csak abból tudok következtetni hatalmuk valószínű mértékére, stratégiájuk hathatósságára, amit eddig sikerült véghezvinniük. Amit ma önök elé tárok az nem több a legjobb becslésemnél, melyet hosszú idő alatt és a legnagyobb gonddal állítottam össze, de azt is meg kell vallanom Önöknek, hogy nem vagyok szakértő, valamint azt is - mivel azt ígértem, hogy őszinte leszek - hogy hasonló becsléseim a múltban sorra túlzottan optimistának bizonyultak. <br />
+<br />
+Amikor otthagytam Washington dögletes atmoszféráját 1945 végén, nem voltak balsejtelmeim Nemzetünk sorsa felől. Akkoriban a legreálisabb számításaim alapján bizonyos voltam egy népfelkelés kitörésében öt éven belül. Bizonyos voltam benne, hogy Washington titkai hamar napvilágra fognak jutni, és Nemzetünkön felháborodás és fordulat szele fog végigsöpörni, amint az Amerikaiak szeme elé tárul akár csak a töredéke is annak szennynek, amit az a kóros teremtmény, aki Fehér Házban kuporgott oly sok éven át művelt, körülvéve magát degeneráltak, korcsok, árulók, és idegen felforgatók bandájával.<br />
+<br />
+Tudtam, biztos voltam benne, hogy Pearl Harbor titka nem fog rejtve maradni, és hogy az Amerikai nép meg fogja tudni hogyan manőverezték a Japánokat abba a csapdába, ami Flottánk és oly sok katonánk életébe került. Biztos voltam benne, hogy Roosevelt és Churchill(aki akkoriban még csak egy volt a sok állampolgár közül az akkoriban még ténylegesen nagy Britániában) konspirációja nyilvánosság elé fog kerülni és hogy Roosevelt 1936-tól 1939-ig kitartóan folytatott az irányú erőfeszítéseiről is tudomást fog szerezni a nép, hogy Európában kirobbantsa azt az eszelős testvérháborút, mely romokba döntötte a kontinenst, mely oly mértéktelenül pusztított abból, mi legdrágább és pótolhatatlan minden faj számára &#8211; a legjobb fiainak genetikai örökségét &#8211; és amely oly hatalmas élet és anyagi veszteséggel járt saját hazánk számára is, és amelyet szándékosan oly módon folytattak, hogy biztosítsák az Egyesült Államok és Nagy Britannia vereségét &#8211; nem is beszélve Franciaországéról és Németországéról. Biztos voltam benne, hogy amint kitör a béke, azonnal szemébe fog mindenkinek ötleni, hogy az egyetlen célja a háborúnak a bolsevik kutyák rászabadítása volt a feldúlt területekre. Bizonyos voltam benne, hogy pillanatok alatt átlátunk azon a hazaáruló csapdán, ami az ENSZ képében leselkedett ránk. Biztos voltam benne, hogy minden jóravaló embernek felkavarodik a gyomra amint rájön, hogy a Brit kormány hivatalosan hangoztatott stratégiája &#8211; teljes ellentétben a Genfi és mindenféle hivatalos és hallgatólagos háborús egyezményekkel &#8211; mely a nyílt, védtelen Német városok bombázásának megindítását sürgette, annak érdekében, hogy annyi ártatlan civilt öljenek meg, hogy a Német kormány arra legyen kényszerítve, hogy ugyanezt tegye a védtelen Brit lakossággal szemben, hogy eme vonakodó lakosságban fel lehessen ébreszteni némi lelkesedést eme öngyilkos háború iránt, melyet a Brit kormány próbált saját népére kényszeríteni &#8211; a történelemben leírt első esetet képezvén, ahol is egy kormány saját lakosságát mészároltatja propaganda céljából. Úgy hittem, hogy azon honi gyalázatoknak részletei, mint pl. a hírhedt Washingtoni Zendülési-Per mindenképpen kiderülnek és oly érzelmeket fognak tisztességes emberek lelkeiben kelteni, aminőket ily bűnöknek kelteniök kell.<br />
+<br />
+És biztos voltam benne, hogy ezer másféle, az emberi történelem során sose látott és csak ritkán megközelített mérvű gaztettről is lehull a lepel, azzal a következménnyel, hogy néhány éven belül minden tengerjáró gőzösünk csurig lesz a fellázadt nép jogos dühétől kétségbeesetten menekülő kártevők hordájával.<br />
+<br />
+1945-ben meg voltam győződve arról, hogy 1952-re nem lesz Amerikai, kit Roosevelt nevét hallván ne rázná ki a hideg, avagy tudná azt a nevet szitokszó nélkül kimondani.<br />
+<br />
+De tetszik látni: tévedtem. Viszont igazam volt a lelepleződés elkerülhetetlenségéről. Mint a Lengyel tisztikar tetemei a Katyn-i erdőkből (amiről nekünk már tudomásunk volt akkoriban), kiket a bolsevikok mészároltak le, a Roosevelt rezsim sok más titkolt bűne is a napvilágra került addigra. Ez a lelepleződési folyamat se nem volt oly sebes, illetve teljes mérvű, mint vártam, de összességében így is több mint elegendőnek kellett volna, hogy bizonyuljon a remélt reakció kiváltásához. Pearl Harbor titkának csak vagy 80%-ára derült fény, de ez a 80%-nyi önmagában is elegendő ahhoz, hogy felkavarja a gyomrát egy egyébként egészséges embernek. Természetesen én magam sem vagyok tisztában eme kormány páratlan hazaárulásának a teljes mértékével, talán nem is sejthetem az egészet, de vallom, hogy vagy 50%-a nyilvánosság elé került ilyen, vagy olyan formában, nem szükségszerűen közismert nyomtatványok égisze alatt, de különböző nyelvű folyóiratokban könyvekben, kiadványokban, melyektől a nyilvánosságot ez a nemzetközi összeesküvés meg szeretné tagadni, és ugyan nem személyes tanúvallomásokról, de mindenesetre olyan bizonyítékokról van szó, melyekből minden gondolkodó ember levonhatja az egyedülien helytálló, elkerülhetetlen következtetést. Az információ elérhető az érdekeltek számára, és elegendően közismert az anyag ahhoz, különösen, ami a Pearl Harbor történetét illeti, hogy ráébresszen akárkit - kinek hazája sorsa és jövője nem közömbös &#8211; hogy tovább tanulmányozza a bizonyítékokat. De a reakció csak nem következett be. És máig ugyanannak a Nagy Háborús Bűnösnek az elhízott, gunyoros ábrázata virít ránk a legelterjedtebb 6 centes postai bélyegről, anélkül, hogy a nagy nyilvánosság tiltakozásának adna hangot. Miért van ez így?<br />
+<br />
+Igaz, hogy valami erélytelen reakció kezdett csírázni, amikor is Joseph McCarthy Szenátor megkezdte híres kihallgatásainak sorozatát a Belső Elhárítással foglalkozó Szenátusi Albizottság előtt. Ezen kihallgatások alig testesítettek meg többet, mint egy halovány szivárgást a hivatalos titoktartás roppant gátján, mely visszatartotta az arra vonatkozó bizonyítékok tengerét, hogy az Egyesült Államok lopva és fokozatosan idegen érdekek, és az őket kiszolgáló árulók hatalmába került. De amikor a gátak elkezdenek szivárogni, akkor már nincs messze a gátszakadás. És így, amikor a McCarthy kihallgatások megkezdődtek, nem is sokkal később, mint ahogyan azt megjósoltam, felsóhajtottam: <b><i>Végre! Elkezdődött! És hamarosan elkezdődik a patkányok fejvesztett menekülése a jogos megtorlás elől.</i></b><br />
+<br />
+De sajnos megint csak tévedtem. Helyettem egy barátomnak lett igaza. Ő a CIA-nál dolgozott azidőtájt, mely ügynökség akkoriban még alkalmazott pár Amerikait is. Éppen Wheelingben, West Virginia államban lábatlankodott 1950 február 9-én, amikor is McCarthy Szenátor elmondta híres beszédét, miszerint a Kommunista Pártnak avagy a Szovjet Hírszerzésnek 57 tagja dolgozik a Külügyminisztériumban felelős beosztásban, és hogy a Külügy tisztában is van ezzel. A beszéd után a Barátom talált alkalmat arra, hogy négyszemközt maradhasson McCarthyval, s a következőket mondta el neki:<br />
+<br />
+"Szenátor Uram, Ön azt állította, hogy 57 ismert kommunista dolgozik a Külügyminisztériumban. Ha hozzá tudna férni ügynökségem aktáihoz, tudhatná, hogy kétségtelen bizonyíték van rá, hogy a legalább tízszer annyi van ott belőlük. De Szenátor Úr, maga nincs tisztában a hatalmával annak az összeesküvésnek, aminek most nekiment. Ezek Önt el fogják pusztítani. Teljesen meg fogják Önt semmisíteni."<br />
+<br />
+De McCarthy Szenátor egyszerűen megrázta a fejét és ezt mondta: "Ugyan, az Amerikai nép ezt soha sem hagyná, sohasem hagynának cserben!". Tudniillik ő is tévedett&#8230;<br />
+<br />
+Nincs rá szükség, hogy részletezzük McCarthy bukásának folyamatát. Természetesen őt is saját csapatából, belűlről intézték el. Az idegenek, akik sajtónkat, rádióadóinkat, és idióta-ládáinkat(TV) irányítják telis-teli fröcskölték mocskukkal az egész országot. Tudatlan és idegbajos kis mitugrászok rajai - kiket értelmiségieknek titulálunk - sikoltozták és köpködték főiskoláik és egyetemeik kapuiból &#8211; ugyanazt, amit mindíg. És mindez megtette a hatását. De a konspiráció csak egy nem rutin művelettel tudta McCarthyt elhallgattatni. <br />
+<br />
+Találtak maguknak egy tisztet a Hadsergben, aki katonaként megbukott amíg Bernard Baruch ki nem nevezte vezérezredesnek és aki 1945-ben nem remélhetett többet, mint, hogyha bizonyítani tudja, hogy az álltala Európában az Amerikai érdekek ellen elkövetett minden baklövésére, attrocitására és szabotázs-akciójára egyenesen az Elnöktől kapta a parancsot, s azokat határozott tiltakozása ellenére hajtották végre, akkor talán megmenekülhet a hadbíróság és a lefokozás elől. A konspiráció fogta ezt az alakot, s sajtójuk segítségével konzervatív maskarába bújtatták. Írtak neki néhány beszédet, melyet elő tudott adni túl sok dadogás nélkül. Megmutatták a vigyorát szerte a bambák dobozaiban(TV). És Elnököt csináltak belőle. Tehát Ike-t (Eisenhover beceneve) azzal a küldetéssel választtatták meg, hogy hátba döfje McCarthyt. Ezt ő meg is tette. Ezzel azután be is tapasztották azt a kis repedést a gátban.<br />
+<br />
+De hogyan is sikerült nekik mindez? Persze, fel tudjuk göngyölíteni az egész műveletet lépésről lépésre. Tudjuk, hogy ellenségeink alattomosak, sunyik és galádok. Tudjuk, hogy a világ minden kincse a karmaik között van, beleértve az Egyesült Államok Kincstárának tartalmát, és természetesen a jövedelemadó jóvoltából, mindaz ami az Önök és az én pénztárcámban lapul. Akármelyik ostoba vagy jellemtelen Amerikait felfogadhatják, hogy azután az úgy táncoljon, ahogyan csak fütyülnek, nomeg adja arcát, hogy ők a háttérben maradhassanak. De a számunkra legfontosabb kérdés nem alattomosságukra s természetes gonoszságukra vonatkozik. <br />
+<br />
+A mélyebb, fontosabb és kellemetlenebb kérdés a következő: Mi volt és mi az a hiba mindmáig az amerikai emberek személyiségében, mely hajdanán és most is ellenségeik önkéntes áldozataivá teszi őket?<br />
+<br />
+Pár éve nem ment ritkaságszámba,  hogy egy-egy gyorsbeszédű szélhámos talált magának balekot 5-10000 dollárnyi készpénzzel, kinek eladhatta a Brooklin-hidat, vagy a Holland-alagutat, és amikor azt hallottam, hogy a Pennsylvania Vasutak elkezdte elbontani New York-i állomását, valaki megvette azt 25000 dollárnyi készpénzzel. Ezek a csalók kétségtelenül erekölcstelen emberek. Péladamutató büntetést érdemelnek. De el kell, hogy ismerjük, a vásárlókkal sincs minden rendben. Akármennyire is együttérzünk velük, abban azt hiszem egyetértünk, hogy bizony ezek a vásárlók nem hallgattak a józan eszükre.<br />
+<br />
+Tudják, ellenségeink mérhetetlenül lenéznek bennünket, és a hátunk mögött, de néha még nyiltan is igen lenézően nyilatkoznak felőlünk. Talán még emlékeznek, hogy néhány éve egy Hruscsov nevű ember volt a soros menedzser a konspirátorok Orosz birtokán alkalmazásban. Ike(Eisenhover) barátja  meghívta országunkba és itteni körútja során a sajtó és még néhány Amerikai is tisztelettel, helyesléssel fogadta. Hazatérte után nem sokkal ezt mondta a sajtónak Bécsben:" Hogy mit gondolok az Amerikaiakról? Az ember az arcukba köp, ők meg azt hiszik, hogy harmat szállt reájuk&#8230;" <br />
+<br />
+Ez a gyengéd és választékos kifejezésmód emlékeztet arra, amit egy ismerősőm mondott a Második Világháború alatt. Ez a veterán újságíró fontos pozíciót töltött be a Roosevelt rezsim hazugság-műhelyeinek egyikében, melynek feladata az volt, hogy fenntartsa a birkákban azt azirányú lelkesedést, hogy fiaikat és férjeiket önként küldjék a vágóhídra. Egyik &#8211; az elvi álláspontokat egyeztetendő &#8211; konferenciájukon, ez az ember tiltakozását fejezte ki azon okból kifolyólag, hogy egyik tervezetük oly átlátszóan abszurd volta megsemmisítené a nyilvánosság ügynökségük iránt érzett bizalmát azzal az eredménnyel, hogy a jövőben semmit sem hinne el abból, mit ők ott hírek gyanánt kotyvasztottak. Nagy vita tört ki az ügyben, aminek a végére az ilyenfajta kérdések tekintélyes szakértője tett pontot. Ennek az embernek egyébiránt pár évvel azelőtt el kellett hagynia Németországot valamilyen okból kifolyólag, s azóta áldotta az Amerikai kontinenst jelenlétével. Nos, ez az ember kinek idegzetét láthatólag kissé felborzolta az eszmecsere, kivette elegáns kis szivarkáját ajkai közül és ezt a döntést sziszegte:<br />
+<br />
+"Ve spit in ze faces of ze Amerikan schwine"(Köpünk az Amerikai disznók arcába). Ez azután véget is vetett a megbeszélésnek. A Mester megnyilatkozott.<br />
+<br />
+De miért is vetnek meg bennünket ennyire és vajon rászolgáltunk-e eme megvetésre? Hacsak nem korcsosultunk életképtelen félkegyelműek fajává, kell, hogy legyen valami épelméjű magyarázat hiszékenységünkre. S ha van rá magyarázat, ezt ki is kell, hogy mondjuk. Ez volt a valódi oka, hogy felhoztam McCarthy Szenátor esetét, mely oly régmult s hiábavaló történelemnek tünhet számunkra. Pedig ez az epizód nyilvánvalóan közvetlen,  kapcsolatban áll mai szorult állapotunkkal. És amikor visszatekintünk a ma már nyilvánvaló tényezőkre &#8211; mint például információs és pénzügyi csatornáink idegen kezekben való összpontosulására, rá kell, hogy jöjjünk, hogy még távolabra kell visszanéznünk. És akkor szemünkbe ötlik még egy faktor, amelyről csak mostanában rántotta le a leplet úgynevezett "hallgatóink" botrányos viselkedése u.n. "egyetemeinken" és a még botrányosabb viselkedése azoknak az adminisztrátoroknak és tantestületeknek, melyek ezeket e diploma-gyárakat irányítják. Tisztán látni, hogy a mocskos szélhámosok bandája élükön John Dewey-val elérte célját. Rá kell ébrednünk arra, hogy az állami iskolák évtizedek óta mint agy-mosodák működnek, összességükben igen sikeresen. Ennek a gépezetnek ajánljuk fel gyermekeinket, hogy ez azután nevetséges és alantas babonákkal töltse fel elméiket, hogy természetes tisztességérzetüket és erényeiket kiszipolyozza lelkeikből, hogy korai züllésre és romlásba döntse őket, hogy gondtalan felelőtlenségre, tudat-ölő kábítószerekre szoktassa őket &#8211; lesüllyessze őket az állati létezés szintje alá. Az állami oktatási intézmények bizonyultak igazából a legértékesebb szerszámnak abból a készletből, melyet ellenségeink ellenünk használnak. Ennek az előadásnak a fennmaradó része nem lenne elegendő pusztán a felsorolásához annak a sok módszernek, melyek alkalmazásával ezek az állítólagos "pedagógusok" elvégezték pusztító feladatukat.<br />
+<br />
+Amikor is visszatérünk McCarthy Szenátor történetéhez, és mélyebb okok után nézünk, persze hibáztathatjuk az iskolákat is, melyek akkoriban kevésbé nyiltan tették mindazt, amit a mai napig tesznek. De ez még mindig megválaszolatlanul hagyja a nagy kérdést: hogyan dőlhettek be az Ameriakiak ennek a csalásnak? Miért is olyan hiszékenyek, hogy John Dewey így át tudta verni őket?<br />
+<br />
+Nos, ugorjunk csak vissza 1917-be, amikor Dewey fondorlata még csak egy kisebb területen tudott gyökeret verni és a világ még sokkal tisztább és kellemesebb hely volt.<br />
+<br />
+Ez viszont rögtön Woodrow Wilson &#8211; történelmünk következő vészes figurájának - idejébe repít vissza bennünket. Nem tartozom azok közé, kik Wilsont velejéig romlottnak tartják. Úgy hiszem, olyan ember volt, kit megrészegített saját hangja. És azt hiszem, élete nagy részében összetévesztette hallucinációit a valósággal, éppúgy ahogyan ezt azon az 1919-es reggelen tette, amikor is a kihalt utcákon végighajtva kalapját lengetve és mélyen meghajolva fogadta az őt köszöntő, de csak a saját, látomásokkal teli fejében létező sokaság üdvözlését. Így azután hajlok arra, hogy elhiggyem, hogy saját maga is elhitte annak nagy részét, amit mondott.  És annak ellenére, hogy politikai pályafutása során nem volt más, mint egy marionett, kinek zsinórjait Jacob Sciff, Bernard Baruch, a Warburgok, vagy ügynökük: House Ezredes rángatta, bizony, tagadhatatlan, hogy amikor elkántálta beszédeit arról, hogy a "demokrácia számára biztonságossá kell tenni a világot", és hogy "meg kell vívni azt az utolsó háborút, mely majd véget vet a háborúknak", az Amerikai nép elhitte amit mondott. Ahelyett, hogy orvost hívtak volna hozzá, amikor belekezdett képtelen mondókáiba, megengedték neki, hogy egy olyan háborúba sodorja őket, mihez közük nem volt és hogy Amerika erejét olyasvalamire használja, ami hosszútávon éppolyan katasztrófális hatással volt Angliára, mint Németországra.<br />
+<br />
+Ugyan elismerem, hogy egy háborúk nélküli világ kellemes és vonzó gondolat, de azok, akik hisznek ennek lehetőségében azok kérjék ezt Télapótól jövőre, kinek létezésében kétségtelenül szintén hisznek.<br />
+<br />
+ <br />
+Tehát ugorjunk még egyet vissza 1909-be, amikor az Amerikai népnek felajánlottak egy tervet a nemzetek elpusztítására, mely tervet megintcsak egy koszos degenerált &#8211; Karl Marx alias Mordechai Levi fogalmazta meg. Igaz, hogy a tervezet támogatói alkalmaztak pár újságírót, liberális professzort, és más értelmiségi prostituláltat azért, hogy azok kétségbevonhatatlanul bebizonyítsák, hogy a jövedelmi-adójavaslat semmilyen körülmények között sem haladhatja meg a 4%-ot még milliomos jövedelmek esetén sem, és hogy az másokat még annyire sem érinthet azon nyilvánvaló ok miatt, hogy egyetlen Szövetségi Kormány sem tudna elkölteni ennyi tömérdek pénzt. A lényeg viszont, hogy az Amerikai nép többsége &#8211; kik egy független, minimális beavatkozáson alapuló kormányt örököltek, mely kormányt szigorú alkotmány béklyóz mindenféle, a nemzetbiztonságot nem érintő kérdésben &#8211; nos, ez a nép elhitte mindezt a zagyvaságot. Valójában ezen támogatók a következőt mondták neki mézzel jól leöntve: "Gyertek csak kis balgák, tegyétek be fejecskéiteket ebbe a hurokba és mi majd segítünk rajtatok. És a kis balgák a saját nyakukra húzták a hurkot és így az ország történelmében elkezdődött a Nagy Fehér Rabszolgatartási Rezsim uralkodása és emiatt tartunk ott ahol tartunk.<br />
+<br />
+Persze visszanézhetnénk sokkal messzibbre is és ha időnk engedné, érdemes lenne visszatekinteni legalább a XVIII. századig, amikor is azt a bizarr mitológiát megalkották &#8211; melyet ma liberalizmusként vernek iskoláinkban gyermekeink fejébe sok más alapvető hazugsággal egyetemben &#8211; mely Weishaupt széleskörű összeesküvése ügynökeinek, közönséges szélhámosoknak, és csalogányhangon csicsergő buzgóagyú idealisták szövetségének végterméke. No de azt hiszem, hogy kellőképpen bizonyítottam azt a tényt, hogy mi, Amerikaiak egy olyan idült betegségtől szenvedünk, mely végérvényesen ellenségeink könyörületére kárhoztatott bennünket, azálltal, hogy megfosztott bennünket az önálló gondolkodásra való hajlamtól. Van egy &#8211; talán végzetes - gyengeségünk, mely nemcsak, hogy arra buzdít, hogy hallgassunk holmi önkijelölt jótét-lelkek locsogásaira, de mintegy hipnotikus transzban, saját akaratunkat feladva, esztelenül meg is tegyük mindazt, amire a hipnotizőr bennünket felszólított.<br />
+<br />
+Nem hiszem, hogy ez a különös gyarlóság - más furcsaságainkkal ellentétben &#8211; velünkszületett, öröklött formája az elmebajnak. Ha ez így lenne, ma már nem is léteznénk: öseinket még a történelem hajnala előtt felfalták volna. Úgy tűnik, ez a betegség hét különböző jellemvonásunk kombinációjának elhajlása: olyan fajta fonákság, melyet azon a félreértések hoztak létre és tápláltak, melyek azon különleges körülményekből következtek melyek alapján a Nyugat a világot uralta és élvezte hatalmának, jólétének gyümölcseit az utóbbi századok során. Jellemvonásunk mindhét eleme, melyet számba fogok venni jó tulajdonság, legalábbis abban az értelemben, hogy velünkszületettek, hogy nem is tudnánk eltávolítani őket, még ha akarnánk sem, így hát el kell hogy fogadjuk azokat. Hosszasan elemezhetnénk mindegyiket, és nagyon tanulságos volna összehasonlítani magunkat a többi fajjal vonatkozásaikban, de az ídő rövidsége miatt csak pár szót fogok mindegyikre áldozni, annak érdekében, hogy gondolatmenetemet tisztán követhessék.<br />
+<br />
+Az első az a képzelőerő, mely mélyen és élénken fejlett fajunkban: a képzelet, mely szellemi igényt támaszt többek közt nagyszerű irodalom megteremtésére: mind személyes beszámolók, mind fantasztikus és csodálatos, a valóságtól elrugaszkodott alkotások formájában. De ez a tehetség azt a veszélyt hordozza magában, hogy nem fogjuk tudni tisztán szétválasztani az élénk képzelőerő szüleményeit a valóságtól.<br />
+<br />
+A második a becsület, mely oly erős bennünk, mint amennyire ostoba és értelmezhetetlen más fajok számára. Ez az, ami többek között becsületes küzdelemre sarkallja fajunk férfiait, amikor is a csatatéren egymással találkoznak. Innen ered az lovagi étosz, amit Diomédesz és Glaukusz  Trója melletti párbaja és fajunk azóta is tartó történelme szemléltet. Viszont ez kitesz annak a veszélynek, hogy lovagiasan fogunk viszonyulni olyanokkal, kiknek szemében mindez merő botorság.<br />
+<br />
+A harmadik az objektív és filozófikus gondolkodásnak a képessége, mely gyakorlatilag csakis fajunkban létezik és mely lehetővé teszi számunkra, hogy mások helyébe képzeljük magunkat, de egyúttal azt kitesz annak az illúziónak is, hogy azt feltételezzük, hogy nekik a mieinkhez hasonló gondolataik, érzelmeik, reakcióik lesznek.<br />
+<br />
+A negyedik a részvét. Egész fajunk idegenkedik szükségtelen fájdalom okozásától, és egyetemesen irtózunk a szenvedés látványától. Ez a tulajdonságunk persze a nevetség és megvetés tárgyát képezi belőlünk bolygónk lakosságának többségének szemében, mivel ök másképp vannak megalkotva. Afrika barbárai, kik már ma is gazdáink abban az értelemben, hogy az ő ellátásukról is mi gondoskodunk, egy ember megkínzását falrengető mókának tartják. És amikor egy vak foglyot látnak rángatózni amint azt forró vasakkal bökdösik, jóízűen derülnek azon &#8211; valódi derűvel, mely viccesebb számukra, mint a legvidámabb bohózat mint amit Te valaha is a szinpadon láttál. Végigkutathatod Kína terjedelmes és tiszteletre méltó irodalmát egy kis részvét és szánalom megnyilatkozásáért &#8211; mindhiába.<br />
+<br />
+Ötödik a bőkezűségünk. Mind személyes mind hivatalos, állami támogatás, adományok formájában &#8211; ami természetesen maga után vonja mindazon idegenek megvetését s gyűlöletét, kik a támogatásból részesülnek.<br />
+<br />
+Az önfeláldozás a hatodik és igen erősen fejlett bennünk, hiszen ez az egyik alapfeltétele bármiféle civilizált társadalom létének. Egy nép sem tudna fennmaradni a világon olyan ösztön vagy meggyőződés hiányában, mely fiait életük feladására késztetné annak a társadalomnak védelmére, melybe beleszülettek.<br />
+<br />
+És hetediknek utoljára a vallásos érzület, melyen természetesen az egész emberiség osztozik, de ami bennünk megintcsak jellegzetes formát ölt. 15 százada a Nyugat vallása a Kereszténység volt, a Nyugati Kereszténység, és ma nem létezik, még a láthatáron sem semmi, mi át tudná venni szerepét. Viszont az történelmi, sajnálatos, de megváltoztathatatlan tény, hogy ma népességünknek csupán vagy 12-14%-a hisz Jézus Krisztusban, Isten fiában, lelkünk örök létében és abban, hogy bűneinkért megfogunk fizetni a másvilágon. Ennek pedig az a következménye, hogy a velünkszületett vallási érzület fajunk többségében nem talál egyértelmű hitre, így ez a kielégületlen ösztön kiszolgáltatott akármelyik jöttment szélhámosnak &#8211; és ezzel azoknál a kuruzslóknál és hitvány alakoknál senki sincs jobban tisztában, kik szószékeink többségét ma bitorolják. Amikor a hit elveszett, az, amit Pareto a vallási maradványnak nevez egy nép legsebezhetőbb pontjává: Akhillesz sarkává válik. Ez az a betöltetlen vágyódás a megkérőjelezhetetlen hitre egy felsőbrendű hatalom létében.<br />
+<br />
+Nos, mindezen tulajdonságok összességénak egyfajta félreértelmezése dominanciánk századai alatt félrevezettek bennünket a más fajokat illető koncepcióink megalkotásánál. Úgy képzeltük, hogy földi javainkkal együtt rájuk ruházhatjuk szellemi és lelki tulajdonságainkat is.<br />
+<br />
+És soha nem tudtunk ellenállni annak az önámításból adódó elégedettségnek, amit a bennünket való utánzás vált ki. Az utánzásra való képesség nemcsak az emberiség sajátja, hanem az emberszabásúaké is, melyet hűen tükröz közismert kifelyezésünk: majmolni.<br />
+<br />
+A majmok utánozó képessége persze korlátolt. De az Autsztraloid bennszülöttek kivételével a többi faj elfogadhatóan képes külsőségeinkben megjelenő jellemvonásainkat utánozni. Ha felöltik ruháinkat, felveszik társadalmi szokásainkat, beszélik nyelveinket ugyanazokat a frázisokat használva melyeket ellestek tőlünk, mégha nem is mindíg értik meg, vagy üres frázisoknak képtelenségeknek tartják azokat, más fajok egyedei olyan meggyőzően utánozhatnak bennünket, hogy azt hinnők, hogy átvették mentalitásainkat és életfelfogásunkat. És bárminemű hiányosságot elnézhetnéenk, illetve megnyerő naivitásnak vélhetnénk.<br />
+<br />
+Ez az utánzóképesség sajátja a primitív népeknek, legelábbis az intelligensebbjeiknek, és számtalan alkalommal megtévesztett bennünket. A Brittek legalább annyira rászedhetőek mint mi vagyunk. Alkalmak százaival adtak ösztöndíjat Basuto-földi vagy Kenyai, Nigériai, vagy más gyaramtaikról származó feketéknek &#8211; ugyanazzal a kiszámítható eredménnyel. A pénzen a vadember kiöltözködött, kijárt egy Angol iskolát, megtanult focizni, Oxfordra járt, írt egy elragadó esszét Wordsworth-ről vagy ódon törvényekről, félnótás Angol nőstényekkel párosodott, kik őt orkntikusnak, s magukat ettől széles-látókörűeknek hitték, s amikor ráunt az Angol bőkezűségre, hazament törzséhez, ahol is feltálalták neki azt az alaposan átsült csecsemőt, melynek élvezetétől azoknak az ostoba Angloknak az ostoba előítéletei oly sokáig megfosztották.<br />
+<br />
+A nagyon is intelligens keleti népek még tehetségesebbek - majd zseniálisak az alakoskodás műfajában. <br />
+<br />
+A babóság, ez a különös és egyedülálló nemzetközi nép, mely mióta történetét írják mindíg más népek országaiba ültette kolóniáit, annak a kaméleon-szerű készségének köszönheti sikerét, hogy bármely körülötte élő nép szokásait és modorosságait le tudta másolni, már amikor így kívánta érdeke. Nagyon intelligensek, nincs kizárva, hogy bennünkket is megelőznek. De minden megfigyelő, nevezetesen Douglas Reed és Roderick Stohlheim is megemlítette a babók ama bámulatos képességét, hogy Németnek tünjenek Berlinben, Csehnek Prágában, Olasznak Rómában és Angolnak Londonban, oly könnyedén váltogatván jellemüket, mint más ember az öltözékét. Természetesen ebben a babóknak van egy hatalamas előnye, mégpedig az, hogy bőrük fehér, és hogy sokuk, legalább is külsöségekben hasonlít ránk, némelyek majdnem megkülönböztethetetlenek tőlünk, legalábbis a laikus számára, olyan nem-keleti tulajdonságokat is felsorakoztatván mint pl. szőke avagy vörös hajat.<br />
+<br />
+Így tehát nem vagyok biztos benne, hogy a színlelés nagymesterei nem egy nép fiai, kiknek nem adatott meg ez a testi előny: a Japánok. Abbéli tulajdonságuk, hogy bizalmunkba tudnak férkőzni, eltulajdonítják tehnológiáinkat és tudományos eredményeinket egyszerűen lenyűgöző, amit abból is láthatunk, hogy mire voltak képesek arra a pár szegényes szigetre összezsúfolódván. De alakoskodás terén sem aratnak kevesebb babért.<br />
+<br />
+Sose felejtem ami egyik barátommal történt, aki a 30-as évek vége felé kémia-professzori posztot töltött be az ország mondhatni stratégiai helyen elhelyezkedő egyik nagyobb egyetemén. Végzőseinek legkiválóbbjának négy fiatal Japán hallgató bizonyult. Részben, mert nagy buzgósággal tették magukévá a kémia leghomályosabb fortélyait is, és részben mivel idegenségük felébresztette benne a számunkra oly természetes nemeslelkűséget, meghívta őket magához vendégségbe is, és a három éves kurzus alatt úgy vélte, hogy emberileg is jól megismerte őket. Modoruk és angolságuk nem hagyott maga után kívánnivalót. A legnagyobb csodálattal adóztak Amerikának és intézményeinek. Természetesen a legfelsőbb viszonylatokban hivatkoztak a "demokráciára". Elítélték a militarizmust, és lelkesen epekedtek a "világbéke" valamint a "népek közötti bizalom és megértés" után. Barátom akkoriban meg volt győződve, hogy ha több ilyen fiatalt sikerülne az Egyesült Államokban iskoláztatni, a hivatalos Japán álláspont országunkkal szemben lassan megváltozna, és a két ország azontúl örök harmóniában létezhetne egymással.<br />
+<br />
+De bizony egy szép napon vidéken találta magát vagy húsz kilóméterre az egyetemtől, barátai autójára várván valami kereszteződésben. Azok kicsit késtek, és mivel forrón sütött a nap, barátom a közeli liget fáinak árnya alatt keresett mendéket a hőségtől. Mit ad Isten, éppen a négy Japán hallgatóját látta kószálni irányába. A kerszteződésnél megálltak, és széjjelnéztek. Mivel nem láttak senkit, beálltak egymásnak háttal, előkaptak egy Leica fényképezőgépet és lefényképezték a kerszteződéshez vezető utakat, és a környéket minden lehetséges szemszögből, majd mindent lejegyeztek egy térképre is. Természetesen nem csak azért jöttek el Amerikába, hogy kémia-tudományunkat elsajátítsák, hogy azt azután ellenünk is fordíthassák, de azért is, hogy az egyetemet és környékét feltérképezhessék ha netán a jövőben valami megszálló seregnek vagy diverzáns egységnek szüksége lenne ilyesmire. Fajukra jellemzően türelmes alapossággal folytatták eme tevékenységet, kétségtelenül nagyokat derülve magukban a nagy fehér mamlaszokról, kik önként adják át nehezen szerzett tudásuk javát természetes ellenségeiknek.<br />
+<br />
+De gondolkodásmódunkat még egy ennél is veszélyesebb koncepció is homályosítja, melyet vallásunk már rég elsajátított. Századok óta azzal a tévhittel küszködünk, hogy a nyugati típusú Kereszténység exportálható más kultúrákba, és csak a legutóbbi események tették nyilvánvalóvá mennyire hiú és hiábavaló is volt misszionáriusaink öt évszázad alatt kifejtett minden tettbuzgósága és lelkesedése. Amint Cortez és vasemberekből álló kicsiny de merész csapata meghódította at Azték Birodalmat, nyomukban beáramlott egy sereg őszinte és odaadó, főként Ferencesekből álló hittérítő, kik azonnal elkezdték terjeszteni az Igét a bennszülötteknek. És ezek hamarosan ragyogó, ártatlan lelkesedéstől fűtött beszámolókat küldtek haza az általuk megmentett lelkekről. Torquemada, Sagun Atyák és sok más tiszteletes beszámolójának lapjairól szinte átsüt őszinteségük, áhitatosságuk,  jámborságuk és örömük, hogy az Úr munkáját végezhetik. És az ő érdekükben külön örülök, hogy a szegény Ferencesek nem is sejtették milyen picinyke szerepet is játszottak mindazon megtérések elérésében, melyek olyan nagy örömet okoztak számukra. Sokkal hatékonyabb volt könyveiknél és igéiknél a Spanyol ágyú, mely lerombolta az Azték sáncokat, a kegyetlen Spanyol katona, ki levágta az Azték papokat saját oltáraiknál és ledöntötte az Azték áldozati piramisok bálványait. Az Aztékok nem azért fogadták el a Kereszténység tanait, mert megérintatte szívüket a szeretet és a megbocsájtás igéje, hanem mert Kereszténység volt a vallása a Fehér Embernek, kit legyőzhetetlenné tett bronzágyúja s páncélzata.<br />
+<br />
+Történt mindez a XVI század elején, s mi azóta is újra és újra megismételjük ezt e kegyes hibát, mivel a misszionáriusaink, kiket szétküldtünk a szélrózsa minden irányába, ártatlan elégedettséggel sugározták haza a Krisztus számára megementett lelkek listáját. És csak a nemzetközi összeesküvés kolónializmus elleni kampánya gyümölcseinek beérése után jöttünk csak rá sokan arra, hogy azok a "megtérések" többnyire az Angol Ezredek fegyelmének és a Fehér Ember hatalmának következményei voltak. Afrika partjain többször megesett, hogy egy-egy buzgóbb hittérítő egyedül merészkedett a szárazföld belseje felé, s a bennszülöttek, miután kitűnően elszórakoztak kinzásukkal, a helyi gasztronómiai recepteknek megfelelően vagy nyersen, vagy sülve elfogyasztották üket. Az ilyen helyeken persze pár hónapon belül többnyire horgonyt vetett egy Britt cirkáló, kilőtt egy féltucat gránátot a kérdéses falura és ha nem volt sietős az útja, talán partra is szállt egy tengerészgyalogos egység és végigverte a közeli bozótot, hogy az így elkapott benszülöttekből felhúzzon egy tucatot a magasabb pálmákra. Amennyiben a törzs nem volt különösebben együgyű, többnyire vették is a lapot. A misszionáriusok következő csoportját a villám és a mennykő istenének képviselőjeként tisztelték és ha Isten ezen emberei elegendő rizst és gyógyítást is osztottak, sokakat tudtak megkeresztelni. Meg tudták tanítani a rituálékat, talán még valamiféle babonát is el tudtak ültetni a bennszülöttekben, melynek volt valami halovány köze a valláshoz, de ami a Kerszténység lényegét illeti, akár követhették volna Szent Ferenc példáját és prédikálhattak vona a madaraknak. Igaz, hogy a volt gyarmatokon néhol még mindíg megtűrik a hittérítőket, már amennyiben azok jól fizetnek, de azt azért megtanultuk, hogy az evangélium szorosan követi a Britt mundért a Fehér Ember gyalázatos és esztelen visszavonulása során abból a világból, mely valamikor az övé volt.<br />
+<br />
+Mindezen körülmények hozzájárultak ahoz, ahogyan megtűrjük a "jótét lelkeket" és azt a hihetetlen bárgyúságot, mely nem kérdezteti meg velünk: vajon ki ELLEN teszi mindazt a sok jót? Mert bizony sajnálatosan az is igaz, hogy vagy 80 százaléka ezon magasztos "felemelő" és "társadalmi igazság"-ra vonatkozó elképzeléseknek nem a haszonélvező sorsa iránti rokonszenvből ered, hanem kapzsiságból és rosszindulatból. De mi sohase kérdezünk&#8230;<br />
+<br />
+Ezért is élősködik rajtunk annyi intelektüell. Rátaláltak ugyanis a csalás egyik legjövedelmezöbb és legbiztonságosabb formájára. Az intellektüellt két tulajdonságáról ismerjük fel: gördülékeny, síma nyelvhasználatáról és igen kifinomult szaglásáról. Messziről megérzi zsebedben egy húszdolláros illatát és eme pompás aork orrcimpájához érkezésétől számítva két percent belül már csorog is le az 'eszme' az ajkán. Ismered a zsargont: "elnyomottak, kizákmányoltak", "esélyegyenlőség", "kultúrálisan visszamaradott", "fejlődésben elmaradott" és a többi, ad infinitum nauseam. És amint csicsergését hallgatod, valószínűleg észre se veszed, amint keze becsúszik a zsebedbe.<br />
+<br />
+Nos, talán ma még elég gazdagok vagyunk ahoz, hogy így levegyenek bennünket, de azokat az alaposan, fondorlattal és gonoszsággal kifundált 'jótéteményeket' már nem engedhetjük meg magunknak. Mégis eltűrjük őket egy olyan közös, öngyilkos mazochizmussal. Egy olyan mértékben kifordított értékrendszert tettünk magunkévá, mely minket alárendelt fajjá minősít, melynek egyetetlen haszna a felsőbbrendűek számára, hogy rabszolgának használjanak, verjenek, és kedvük szerint mészároljanak bennünket.<br />
+<br />
+Erre az eredményre lehet mindazon törekvések együttes hatását egyszerüsíteni, miután lefejtettük róluk azt a nyúlós, ragadós mázat, mellyel ellenségeink kenték be mozgalmukat, és melyet saját szentimentalista értelmiségünk ész nélkül böfög vissza.<br />
+<br />
+Mindez persze nem ujdonság. Ha időm engedné, ráirányítanám figyelmüket a részleteire annak a mérhetetlen és gyógyíthatatlan csapásnak, melyet a rabszolga-felszabadítók piciny de lármás és őrülten fanatikus csoportja okozott Nemzetünknek amikor is a Déli Államokat a Déli Függetlenségi Háborúba kényszerítette. Nem, nem mentegetem a rabszolgatartást, a troll rabszolgák tartását mint intézményt. Vallom, hogy Jefferson és Lincoln elnökökenek volt igazuk, amikor is azt a rendszert többszörösen ártalmasnak tartották racionális meggondolások alapján is, mely meggondolásnak legfőb elemei:<br />
+<br />
+-először is, mert fenntartotta azt az állapotot, mely szerint hazánkban sok millió, saját fajunktól annyira radikálisan különböző - és saját mértékeink szerint alantas - fajhoz tartozó személyek tartózkodását tette szükségessé<br />
+<br />
+-másodszor pedig, hogy eme rendszer korcsok létrehozásában bábáskodott, mely szerencsétlen teremtmények öröklött, de összeegyeztethetelen ösztöneik  rabságában szenvednek.<br />
+<br />
+Amint önök is nyilvánvalóan tudják, Lincoln Elnök eltökélt volt abban, hogy a Trolloket vagy visszaszállítja Afrikába, vagy a gazdaság érdekei szerint Közép Amerikába. De a Rabszolga-felszabadítók nem voltak racionálisak. És, sajnálattal kell megállapítanom, hogy többségük Amerikai volt, mint pl. Wendell Phillips, Prof. Elizur Wright, és persze egy sor hisztérika, mint pl. Lydia Child, és Harriet Beecher Stowe. A vezérük William Lloyd Garrison volt, megintcsak egy Amerikai, bár olyan babók pénzelték, mint amilyen Isaak Mack is volt. Picinyke csapat volt ez, melyeket mélyen megvetett az épelméjű Amerikaiak többsége mind Délen és Északon. De addíg sírtak, ríttak, míg megkapták, amit akartak. 1840-ben kezdtek el agitálni az Egyesült Államok szétválásáról két részre és húsz év folyamatos kántálás után a Dél elkezdte komolyan venni követeléseiket.<br />
+<br />
+Írásaik nagyon tanulságosak lehetnek számunkra. A Bibliából idéznek, "emberi jogokról" és "egyenlőségről" dadognak, de nem tudják teljesen elkendőzni valódi gyűlölködésüket. Mérgük a Dél ültetvényeseire összpontosult, kiknek többsége néhány kivétellel valóban Úriember és Úrihölgy volt. Az abolicionisták &#8211; részben helyesen - úgy tekintettek ezekre a déli földbirtokosokra, mint olyan Férfiakra, kik magasan fölöttük alltak mind neveltség, kultúra, mind emberség szempontjából. És ezért engesztelhetetlenül gyűlölték őket. Hagymázas agyukban egy olyan tökéletesen hamís kép élt ezekről az ültetvényesekről, mint határtalanul gazdag, ráérős emberekről kik széles teraszaikon hűsölnek naphosszat jeges mentolos punccsal a kezük ügyében. És szenvedélyesen irigyelték őket. És a Dél Úrihölgyeiről is egy hasonlóan hamis kép élt bennük, kiket úgy képzelték, hogy tündéri könnyedségben élik napjaikat, míg álázatos rabszolgák sürögnek-forognak körülöttük. És persze helyesen lovagias, a hölgyekkel tisztelettel bánó férfiakat &#8211; kik Északon párjukat ritkították &#8211; is képzeltek a hölgyek mellé. És annyira, de annyira meg akarták alázni, el akarták pusztítani azt a Déli Hölgyet&#8230;És ez volt a valódi oka annak az örjöngő 'jótevéskedésüknek'.<br />
+<br />
+Nos, eddíg jutottam a fordítással, az eredeti(mentett) kézirat megtalálható itt:  <B><a href="//www.revilo-oliver.com/" target="_new" style="color: #000000;">http://www.revilo-oliver.com/</a></B><br />
+<br />
+<B><a href="//www.revilo-oliver.com/rpo/wwoop.htm" target="_new" style="color: #000000;">http://www.revilo-oliver.com/rpo/wwoop.htm</a></B><br />
+<br />
+Az előadás hanganyaga pedig itt:<br />
+<B><a href="//www.revilo-oliver.com/Audio/rpo19680609_What_We_Owe_Our_Parasites.mp3" target="_new" style="color: #000000;">http://www.revilo-oliver.com/Audio/rpo19680609_What_We_Owe_Our_Parasites.mp3</a></B><br />
+<br />
+Asszem, nyilvánvaló, hogy miért is idéztem meg a jó R.P.O szellemét...<br />
+<br />
+Patton tábornok hozzáállásáról, naplórészletek, ezekből millió és egy van a neten, csak ti nem tudtok róla...:<br />
+<B><a href="//www.666ismoney.com/Patton.html" target="_new" style="color: #000000;">http://www.666ismoney.com/Patton.html</a></B><br />
+<br />
+Jordan őrnagy naplója pedig itt:<br />
+<B><a href="//www.sweetliberty.org/issues/wars/jordan/01.html" target="_new" style="color: #000000;">http://www.sweetliberty.org/issues/wars/jordan/01.html</a></B><br />
+<br />
+Garantálom MINDENKINEK, hogy ezt az olvasmányt nem fogja letenni.<br />
+<br />
+Amennyiben pedig a II Világháború kitörését illeti, nézzetek meg pár képsort, hogys mi is történt a németekkel a lengyelekhez írt porosz területeken az első világháború után - amennyiben azt hiszi valaki, higy csak nekünk volt trianonunk:<br />
+<br />
+"Poland wants war with Germany and Germany will not be able to avoid it even if she wants to." (Polish Marshal Rydz-Smigly as reported in the Daily Mail, August 6th, 1939) <br />
+<br />
+Lengyelország háborút akar Németországgal, melyet a Németek nem fognak tudni kikerülni...<br />
+<br />
+<B><a href="//www.jrbooksonline.com/polish_atrocities.htm" target="_new" style="color: #000000;">http://www.jrbooksonline.com/polish_atrocities.htm</a></B><br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151798"></A>99. <A HREF="mailto:mordred88@gmail.com" STYLE="color: #000000">Mordred</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1905&id=151778#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-02-15 05:53:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5520.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Jah. A farkas pedig leült römizni a nagymamával, mielőtt elkísérte volna Piroskát hozzá, hogy egy jót zsúrozzanak együtt :)<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151796"></A>98. <A HREF="mailto:spotee@gmail.com" STYLE="color: #000000">Fütyőke</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-02-15 03:07:48</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_343.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Na én ezeket a cikkeket hiányolom^^ Régen TC régi blogján egy rakás ilyen található. <br />
+<br />
+Amúgy azoknak akik a cikk tartalmát firtatják és forrásokat követelnek:<br />
+https://www.alibris.com/search/books/isbn/9780853681236<br />
+Aki tud angolul bátran olvassa el a könyvet, ha annyira forrás-őrült.<br />
+<br />
+Akik tudnak angolul: <B><a href="//www.johnreilly.info/ww3.htm" target="_new" style="color: #000000;">http://www.johnreilly.info/ww3.htm</a></B> <br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1905&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1905&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1905&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1905&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1905&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1905&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1905&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1905&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1905&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1905&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1905&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1905&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

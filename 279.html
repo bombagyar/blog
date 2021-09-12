@@ -1,0 +1,473 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=279#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Antenor: A modern cionizmus gyökerei és az örmény holocaust";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=279#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Antenor: A modern cionizmus gyökerei és az örmény holocaust<BR><DIV CLASS="postheader_small">Levrov - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2007 november 24. 00:46:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_279.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;">    <p style="text-align: justify;" class="DefinitionTerm">A     
+    zsidóknak általában nem  szokásuk mások előtt kiteregetni szennyeseiket, de hát ez szükséges 
+része   a        zsidó összetartás mítoszának. Maguk között jóval megosztottabbak, mint hinnénk, de 
+hát  az   ő       történelemük sem szűkölködik az ostoba vagy kártékony személyiségekben.  Egy ilyen 
+figura   volt       Szabbatai Zevi (vagy Cvi), kabbalista zsidó rabbi és  hamis messiás. Zevi 
+Törökországban   élt       1626-1676 között, és különös módon  hozzá vezethetjük vissza többek közöt 
+a modern   politikai       cionizmus ideológiai  gyökereit is. Ez a nevezetes kabbalista rabbi 
+pályafutásának   csúcsán kinevezte        magát a zsidók által várva-várt Messiásnak. Követőinek 
+kijelentette hogy    megdönti a szultán       hatalmát, és visszavezeti a zsidóságot Palesztinába, 
+ahol  helyreállítja a   zsidók országát. Zevi       hamar ellentétbe került az akkor még jóval  
+megalkuvóbb stílust   képviselő talmudistákkal, akik       kiátkozták őt a zsidóságból,  ám ennek 
+ellenére egyre több   hívet szerzett magának. A kabbalizmus       egyébként is  népszerű volt 
+ekkortájt, így a zsidó   miszticizmus és okkultizmus több mint  sikeresen       vetekedett a 
+farizeusi talmudizmussal. Zevi   sajátos teológiája  szerint a Tóra erkölcsi tanításai       
+lejártak, ahogyan a bűn és bűnösség   fogalmai  is idejétmúlták, hiszen azok csak az általa eljött   
+    messiánikus korszakig voltak    érvényben. A szabbateisták sokatmondó mantrái: <span style="font-style: italic;">"áldjátok őt, aki   megengedi nektek mindazt, ami eddig tiltott        
+volt",</span> illetve: <span style="font-style: italic;">"a megváltás a  bűnön keresztül érhető      
+ el."</span> Zevi felszólította híveit, hogy   minél  többször kövessék el a harminchat legfőbb 
+bibliai       bűnt, mert ezzel meggyorsul az    üdvösségük eljövetele. A különböző szexuális bűnök 
+elkövetését       különösen  fontosnak tartotta,   maga is egy olyan közismert kairói zsidó lányt 
+vett  feleségül, aki       prostituáltból lett   "prófétanővé". Európa-szerte több,  mint egymillió 
+zsidót ragadott magával   ez az     okkultista   messiánikus mozgalom,  hívei tömegesen adták el 
+házaikat, hogy létrehozzák     Palesztinában   a   zsidók  dicsőséges országát. </p><div style="text-align: justify;">    </div><div style="text-align: justify;">    </div><p style="text-align: justify;" class="DefinitionTerm">Időközben persze a török    hatóságok is   
+felfigyeltek a szabbateistákra, és     amikor IV. Mehmed szultánnak a  fülébe jutott,   hogy le 
+kívánják   vetni trónjáról, kiadta az     elfogatóparancsot  Zevi ellen. Így 1666-ban,   vagyis 
+pontosan abban az   évben, amelyet Zevi a      Jeruzsálembe való bevonulására és messiási   
+uralmának kezdetére határozott   meg,  a török hatóságok     fogságába került. Hogy életüket   
+megmentsék, Zevi és  legodaadóbb hívei   felvették az iszlám     vallást, és elkötelezték magukat a  
+ szultán  szolgálatában. A zsidó ország   megteremtésének reménye     ezzel gyorsan összeomlott,  a  
+ tömegek szétszéledtek, a rabbik pedig örökre   kiátkozták a mozgalom     megmaradt  híveit. A   
+szabbateisták története azonban nem ért ezzel véget, mint   inkább  innentől     kezdődött el   
+igazán! <br></p><p style="text-align: justify;" class="DefinitionTerm">Zevi ugyanis a       török   
+fogságban tovább  fejlesztette teológiáját, immáron azt tanítva, hogy a földi hatalmat,   amely      
+  megakadályozta őt a zsidók országának létrehozatalában, belülről kell lerombolni. Ehhez a         
+legmegfelelőbb módszert abban látta, hogy ő és közvetlen  hívei felvették az iszlám vallást, ám      
+   megtérésük hamis volt, titokban megmaradtak  zsidóknak, és eképpen belülről rombolják majd le a   
+      török birodalmat. Zevi ugyan  1676-ban meghalt albániai száműzetésben, de a cselszövésekre     
+    specializált  titkos szekta tovább élt Dönmeh  név alatt. A <span style="font-style: italic;">dönmeh         </span>szó törökül aposztatát, hitehagyottat jelent, amit  a hamis 
+valláscsere miatt vettek   fel.       Zevi halálával a szélsőséges nézeteket  valló Rebbe Berechiah 
+lett a szekta vezetője,   amelyhez   ekkor     már számos, a  szultáni udvarban pozíciókat viselő 
+zsidó csatlakozott. A szekta   kitűzött    céljait     végül is a huszadik században valósították 
+meg, amikor török birodalmat    megdöntötték,   és a   szultánt   eltávolítták uralmából, majd nem 
+túl sokkal később  létrehozták a   cionista Izrael     államot. </p><div style="text-align: justify;">    </div><div style="text-align: justify;">        </div><p style="text-align: justify;" class="DefinitionTerm">Mielőtt látnánk, hogy   ezt  miként     vitték véghez, feltétlenül meg   kell 
+említeni a törökországi Dönmeh  szekta európai   válfaját, a     frankistákat is. A szintén   
+kabbalista zsidó Jákob  Frank (1726-1791) a   lengyelországi Podóliából     származott, 
+kereskedőként élt,    s egy törökországi útján vette fel a   kapcsolatot a Dönmeh     szektával. Az  
+ideológiát hamar   elsajátította, sőt, még fejlesztett is   rajta, miután visszatért      
+Lengyelországba. Frank és   tizenháromezer követője a kereszténység   elpusztítását  tűzték ki 
+célul,     ezért a katolikus vallásba   tértek be, természetesen dönmeh    módon, azaz hamis 
+szándékkal. Frank     szintén a bűnön keresztül   elérhető üdvösség  teológiáját   hirdette, ami 
+odáig fajult, hogy azt már     nyílt sátánizmusnak    nevezhetjük. Ő már nem elégedett   meg a 
+messiás szerepével, hanem isteni      reinkarnációnak tartotta   úgy Zevit, mint önmagát.   Emiatt a 
+talmudista  zsidókkal neki is komoly     konfliktusai voltak, akik   ellen örök bosszút   fogadott,  
+és megjövendölte, hogy egy vészkorszakot     hoz a zsidóságra. A   keresztény  vallásba   betért 
+frankisták mind befolyásos emberek voltak, elit     politikai körökben    forogtak. Maga   Frank és 
+Éva nevű lánya baráti viszonyban voltak Mária      Teréziával, és gyakran   megfordultak az   
+udvarában. Frank élete utolsó szakaszát  Frankfurtban,     töltötte, az Illuminátus rend   és a   
+Rothschild bankbirodalom  szülővárosában. Közeli kapcsolatban     állt az Illuminátus rendet     
+megalapító  Adam Weisthaupttal, mindkettőjüket Rothschild fivérek     pénzelték Az Illuminátusok a   
+  nihilimzus terjesztésével szándékozták megtörni a nemesség  erejét,     és ebben nagy szerepet   
+kaptak az   ebben már profinak számító frankisták.  Az általuk létrehozott     "Hellfire" klubokban  
+ perverz rituális    szexpartikat tartottak, ami hamar trendi lett a különböző     európai nemesi    
+körökben. A Dönmeh tagok   hírhedt szexorgiákká torzították a zsidó purim ünnepet      is, amit a   
+"fények kioltásának" neveztek.   Aktívak voltak a  politikában, a szabadkőműves     páholyokban,   
+emellett ők hozták létre a Tórát nem    szigorúan követő reformjudaizmus ágát. Közvetve     részt   
+vettek az 1800-as évek  keresztény megújulási   mozgalmaiban is, ahol elvetették a ma     keresztény 
+   cionizmusnak is nevezett teológia magvait. Az   Illuminátusok és a Rothschild  család     
+működését   itt nem kell különösebben feleleveníteni, de rá kell   mutatni, hogy a frankistáknak     
+nevezett   zsidók lényegében a háttérhatalom elit  frontharcosaivá   váltak. Ezek az istentagadó, 
+név-     és   vallásváltoztató, világias  okkultista zsidók messze   felülmúlják a talmudistákat, 
+akiket csak       eszközként  használnak, s ha kell feláldozzák őket, hogy   szenvedésükből maguknak 
+ kovácsoljanak       hasznot. </p><div style="text-align: justify;">    </div><div style="text-align: justify;">            </div><div style="text-align: justify;">    </div><div style="text-align: justify;">    </div><p style="text-align: justify;" class="DefinitionTerm">Visszatérve az időközben nagy mozgalommá         szélesedett  keleti Dönmeh 
+működésére, a törökök az örmény holocaustnak  nevezett eseményben a         legkegyetlenebb módon 
+pusztították el Kis-Ázsia csaknem  teljes keresztény lakosságát, az örmények         mellett a 
+görögöket és asszírokat is. Ez  a szisztematikus népirtás az első világháború ideje     alatt     
+zajlott le, és  másfélmillió áldozatot követelt. Törökország tényleges urai ekkor már a     Dönmeh   
+   szekta által dominált, szekuláris ifjútörök mozgalmárok voltak.</p><div style="text-align: justify;">    </div><div style="text-align: justify;">    </div><p style="text-align: justify;" class="DefinitionTerm">Mevlan   Z. Rifat az <span style="font-style: italic;">Inner Folds of the   
+Ottoman  Revolution</span> című   könyvében ezt írja: <br></p><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A népirtás terveit 
+  még 1910 és 1911 között dolgozta ki az ifjútörök       bizottság, amelynek tagsága elsősorban 
+olyan, a   Balkánról kitelepült és szinkretikus zsidó-iszlám       vallást (Dönmeh) képviselő, 
+zsidókból állt, mint   Enver, Behaeddin Shakir, Jemal és Nazim. A       találkozót Szalonikában, a 
+Rothschild támogatásból   működő Grant Orient páholyban tartották meg,     nem   meglepő módon 1914 
+agusztusában, vagyis három   hónappal azelőtt, hogy Törökország belépett     volna a   háborúba, 
+Erzeruban már minden régen elő volt   készítve a nagy mészárláshoz. Az első     világháborútól   
+kezdve a zsidóknak meghatározó szerepe volt a   török kormányzatban, beleértve     Atatürköt, Inonut 
+és   Bayart."</div><p style="text-align: justify;" class="DefinitionTerm">     </p><div style="text-align: justify;">    </div><div style="text-align: justify;">    </div><p style="text-align: justify;" class="DefinitionTerm">Avrum   M. Ehrlick, <span style="font-style: italic;">Sabbatean Messianism As  Proto-Secularism</span> című   könyvében ezt   írja: <br></p><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Dr. Nazim, Nuzhet Faik, Mustafa Arif, Muslihiddin Adlil, Sukru Bleda,    
+     Halide Edip Adivar és Ahment Emin mindannyian Dönmeh családból származtak, akik aktívak voltak 
+az         ifjútörök mozgalomban. Mehmet Kapanci (1839-1924), dönmeh, ismert bankár és Szalonika     
+polgármestere     volt, ő hozta létre a C.U.P-t (az ifjútörök mozgalom belső vezetési köre). További 
+    aktív ifjútörök     zsidók: Mehmed Javid Bey, Nissim Mazliah Izmírből, Vitali Faradji, Moise 
+Cohen     (későbbi neve Munis     Tekinalp) aki egykor rabbinak tanult, ő büszkén felvállalta a 
+török     identitást, de cionista érzelmű     maradt. (...) Érdekes, hogy Izrael első két 
+miniszterelnöke,     David Ben Gurion és Moshe Sharett,     valamint Izrael második elnöke, Yitzchak 
+Ben Zvi hosszú ideig     éltek és tanultak Isztambulban, ahol     magukévá tették a "lehitatmen" (a 
+héber kifejezés   jelentése   "ottománná válni") eszmét. Ben Zvi     állítólag szabbateista 
+családból származott.   Sharett az első   világháborúban az ottomán hadseregben     szolgált, Ben 
+Gurion pedig feladta orosz   állampolgárságát   az ottomán állampolgárságért."</div><p style="text-align: justify;" class="DefinitionTerm"> </p><div style="text-align: justify;">        
+</div><div style="text-align: justify;">      </div><p style="text-align: justify;" class="MsoBodyText">Egy  másik idézet Avrum   könyvéből:   <br></p><div style="text-align: justify;">      </div><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Vitatott kérdés,   hogy a zsidók   milyen fokú szerepet 
+töltöttek be az     ifjútörök mozgalomban. Egyesek szerint a   zsidók és a Dönmeh   dominálta az 
+államhatalommá váló     C.U.P-t. (...) A brit diplomaták olyan   jelentéseket küldtek   haza, hogy 
+egy zsidó-szabadkőműves     összeesküvést látnak munkában a   forradalom mellett.      "</div><div style="text-align: justify;">        </div><div style="text-align: justify;">      </div><p style="text-align: justify;" class="MsoBodyText2">Mielőbb bárki egy   antiszemita,    
+összesküvéselméleteket szövögető   fasisztának   nevezne, megjegyzem, hogy a fenti  írást   
+kizárólag   a témában szakértőnek számító   zsidó írók   munkábiól állítottam  össze.</p><p style="text-align: justify;" class="MsoBodyText2"><span style="font-weight: bold;">Források:</span>  
+ </p><div style="text-align: justify;">    </div><div style="text-align: justify;">    </div><div style="text-align: justify;">    </div><div style="text-align: justify;">      </div><p style="text-align: justify;" class="MsoNormal">Rabbi    Marvin Antelman: <span style="font-style: italic;">To Eliminate the      Opiate</span><br>Gershon    Scholem: <span style="font-style: italic;">The Messianic Idea in    Judaism</span><br>Jerry  Rabow:   <span style="font-style: italic;">50 Jewish Messiahs</span><br>valamint   Barry  Chamis   Dönmeh-kutató,   számtalan idevágó 
+cikk   írója. Cikkei megtalálhatók a  neten.</p><div style="text-align: justify;">      </div><div style="text-align: justify;">    </div><p style="text-align: justify;" class="MsoBodyText2">Igen, a 
+fenti szerzők mindannyian zsidók,akik    hisznek az       összeesküvés-elméletekben. Mi több, ők is 
+ugyanazokban a körökben  látják a veszélyt,   mint az       "antiszemita" és "fasiszta" gój  
+megfigyelők: a cionizmust megalkotó, istentelen zsidó     bankárokban,      politikusokban, a média 
+és a filmipar sarlatánjaiban. Ezek a zsidók hisznek      abban, hogy az örmény     holocaust 
+egyfajta főpróba volt a zsidó holocausthoz, amit  követni fog     majd egy harmadik, az     
+előzőeket messze meghaladó holocaust. És  valóban, a Biblia is ezt     jövendöli meg.</p><br><div style="text-align: right;"><span style="font-weight: bold;">Antenor<br><br></span></div>   
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2007-11-24&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=279&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=279&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=279&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=279&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=279&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=279&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=279&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment68059"></A>50. antenor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-21 19:41:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_154.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Amint látom, Drábik János is írt egy nagyon átfogó, hosszadalmas cikket ezzel a témával kapcsolatban.<br />
+<br />
+<B><a href="//tdyweb.wbteam.com/Hogyan_lesznek_a_tenyek_antiszemitak.htm" target="_new" style="color: #000000;">http://tdyweb.wbteam.com/Hogyan_lesznek_a_tenyek_antiszemitak.htm</a></B><br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment17004"></A>49. 49. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=279&id=16447#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-30 16:41:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Akkor adjuk meg nekik!<br />
+<br />
+Írjunk egy szép levelet Sólyom Láaszlónak, mellékeljük hozzá a bizonyító erejű kordokumentumokat (korabeli katonai és diplomáciai jelentések, újságcikkek, térképek másolatai, esetleg az egyházközség papjának éves beszámolója, stb.) és kérjük meg szépen, hogy adjon egy ilyen címet a falunak. <br />
+Meg lehet keresni nemzeti érzelmű nagyvállalkozókat is (már egy-kettő elérhető), hogy segítsenek méltó külsőségeket és tartalmat teremteni az ünnepséghez. Ugyancsak szükség lenne arra, hogy a falu önkormányzata elfogadna egy közgyűlési határozatot, hogy maguktól ugyan nem kérték volna, de a hozzájuk is eljuttatott kérést támogatják. <br />
+<br />
+Lehetséges kimenetek: <br />
+<br />
+1. Optimista változat: Sólyom megörül, megadja, elmegy, átadja; pl egy köztéri Szent Korona emlékműre sk. feltűz egy szép, hímzett nemzeti zászlót, amin a "leghűségesebbnek" felirat van, és ad egy K.E. Határozatot, amiben feljogosítja a falut a cím viselésére.<br />
+<br />
+2. Realista változat: Mindenki, úgy Sólyom, mint a helyi testület szarik az egészre, és elfelejtődik a dolog.<br />
+<br />
+3. Pesszimista változat: Beindul a hírverés, mire a szlovének szépen körbekapják és "visszafoglalják" a falut, mintegy eleget téve a békeszerződéseknek.<br />
+<br />
+4. Tragikomikus változat: A falu önkormányzata, miután mindenkiben tudatosodik a múlt e fontos részlete, egyhangúan, népszavazással megerősítve  úgy dönt, hogy az falu és határa legyen inkább Szlovénia része, azaz átlépnek az euro-zónába, hallgatva nagy miniszterelnökünkre, aki szerint el lehet menni az országból.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment16447"></A>48. Vidéki Be-tone</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=279&id=16272#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-28 18:06:57</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez marha jó!<br />
+<br />
+De tudtátok-e? <br />
+<br />
+Hogy amíg Sopron lakossága a trianoni békeszerződés során ideszavazott, és ezért megkapta a leghűségesebb magyar város címet... <br />
+<br />
+...addig Kercaszomor (Vas megye)-t elfoglalták a jugoszláv-szerb csapatok napokra, egy-két hétre(?), de hősies küzdelemmel, kaszával-kapával kiüzték a magyar lakosok az idegen betolakodókat úgy, hogy meg volt húzva már az új határ, ennek ellenére visszakerült Magyarországhoz a falu.<br />
+<br />
+A mai napig nem kapta meg a leghűségesebb falu címet!<br />
+<br />
+Tehát kapával-kaszával űzték ki a felfegyverkezett katonaságot, így a falu külső határában húzódik a magyar államhatár a mai napig</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment16272"></A>47. 47. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-28 11:19:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves Antenor!<br />
+Köszönöm ezt a kielégítő választ! Nem tudtam róla, mentségemre szolgáljon, hogy '80-ban érettségiztem, és nem a történelem, pláne nem Kisázsia történelme foglalkoztatott elsősorban. <br />
+Szlovénia-téma: Mielőtt a török megszállás alól felszabaduló és az Osztrák-Magyar Monarchiától elvett, a szó eredeti értelmében multurális területekből létre nem hozták a SHS Királyságot, a későbbi - horvát diktátor által vezetett - Jugoszlávia jogelődjét.<br />
+Csak egy ilyen, a közös ellenség, az osztrákok ellen szembe forduló területen eshetett meg, az Adria partján az, amivel Dékány András indítja az egyik könyvét (fejből idézem): "Horváth Ferit  szerb nacionalizmus vádjával az osztrákok letartóztatták."</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment15451"></A>46. Vidéki Be-tone</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=279&id=15441#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-25 11:49:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Puncsos!<br />
+<br />
+Helyeslem azt, amit ideírtál!  <br />
+Kiegészíteném azzal, hogy rövid ideig tartott a háború (talán egy hét alatt lezajlott minden, 4 halott volt, egy kenyérszállító helikoptert lőttek le a sajátjaik tévedésből), kevés veszteséggel!<br />
+<br />
+Ami fontos volt! Előtte virágzó farmergazdaság volt már, komoly kisparcellás műveléssel, de nagyon felszerelve mindennel, ami ehhez kellett.<br />
+<br />
+Még fontosabb! Nem engedték be a multikat (!!!!!!!!!), ott minden állami vagy magánkézben van, mimimális a korrupció, és nagy a fegyelem!!! Sok kis cég, kis bolt, mindenki jól él, mint a maci a málnásban. A sok külföldön dolgozó meg haza viszi, befekteti a kint megkeresett pénzét, nem elviszik az országból, mint nálunk!<br />
+<br />
+Beljebb nem is tudják, hogy élnek magyarok náluk, nem is foglalkoznak vele, nincs külön ki-kicsoda játék! Élnek, dolgoznak, nem piszkálják egymást! Vannak szlovén barátaim, és mind vendégszeretők, emberek, a határszéliek nagyrésze beszél magyarul, úgy, hogy egyik magyar, a másik szlovén! Jól kijönnek egymással!<br />
+<br />
+Hát ilyesmi a titok!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment15450"></A>45. Vidéki Be-tone</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=279&id=15411#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-25 11:34:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Alkaa!<br />
+<br />
+Iklódbördőcén 14 nyugdíjas lakik, a legfiatalabb jelenleg 66 éves!<br />
+<br />
+De tudtommal Szanticska a legkisebb lélekszámú település jelenleg Magyarországon, 6 fő (most lehet, hogy 8 már!) állandó lakossal!<br />
+<br />
+Szép napot!<br />
+<br />
+Be-tone</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment15449"></A><FONT COLOR="#FF0000">44. </FONT>Vidéki Be-tone</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=279&id=15408#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-25 11:29:53</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment15448"></A>43. 43. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-25 11:06:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Az összeesküvés elméletet egy bizonyos életkor fölött élettapasztalatnak hívják"</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment15445"></A><FONT COLOR="#FF0000">42. </FONT><A HREF="mailto:medwe00@gmail.com" STYLE="color: #000000">medwe</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-25 10:02:29</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment15444"></A><FONT COLOR="#FF0000">41. </FONT>Biri -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=279&id=15432#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-25 09:31:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=279&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=279&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=279&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=279&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=279&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=279&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=279&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

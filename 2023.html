@@ -1,0 +1,889 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2023#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A cigánybűnözés kronológiája - 2008 január - június";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>A cigánybűnözés kronológiája - 2008 január - június<BR><DIV CLASS="postheader_small">Blog - Főnix</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 március 21. 17:10:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2023.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><div style="text-align: justify; font-weight: bold;"><div style="text-align: center;"><font style="font-family: Arial,Helvetica;" size="5"><span style="font-weight: bold;"></span></font><font style="font-family: Arial,Helvetica;" size="4"><span style="font-weight: bold;">A cigánybűnözés kronológiája -   
+2008</span><span style="font-weight: normal;"> <font size="3"><span style="font-weight: bold;">január 1-től 2008 június 30-ig</span></font></span></font><br><br></div><br style="font-weight: normal;"><span style="font-weight: normal;">Ezt a bejegyzést még tavaly kezdtem  
+ el megírni. Akkor még nem volt cigánykérdés. Cigánybűnözés főleg nem, de az ugyebár most sincs. Aki 
+  cigányproblémát mert említeni, azt azonnal letorkollták a szokásos (náci, rasszista, kirekesztő,   
+stb..) jelzőkkel a különféle baloldali beállítottságú megélhetési (vagy önkéntes) idióták. Mostanra  
+ ez megváltozott, már naponta olvashatunk a különféle újságok vagy hírportálok hasábjain a   
+cigányságot érintő problémákról, de persze még mindig nem elfogulatlanul és őszintén.</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">Ezért döntöttem úgy, hogy átnézem a tavalyi év híreit, lássuk valóban mekkora a   
+cigányprobléma. Tényleg csak néhány elszigetelt, egyedi esetről van szó, vagy valóban kiemelkedőek   
+bűnelkövetésben és társadalomellenes viselkedésben?</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">Forrásként a kuruc.info   
+cigánybűnözés hírkategóriáját használtam fel. Azért ezt, mert tudtommal a kuruc.info az egyetlen   
+portál ami külön foglalkozik a cigánybűnözést érintő hírekkel. A hírek túlnyomó többsége   
+természetesen más - független! - hírportálokon is megjelent, helyi híroldalakon, országosakon,   
+híradókban, újságokban, stb..</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">A híreket időrendben olvashatjátok, 2008 január   
+elsejétől egészen június harmincadikáig.</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">A híreket két részre válogattam. A   
+normál betűvel írott bűncselekmények elkövetője valószínűsíthetően cigány, erre utalhat például a   
+település (ami vagy javarészt cigányok lakta terület, vagy kiemelkedő cigánybűnözéséről elhíresült)  
+ vagy az elkövetés módja, esetleg maga a bűncselekmény típusa (színesfémlopás, falopás). Ezen hírek  
+ egyikéről sem állítom teljes magabiztossággal hogy cigányok lennének az elkövetők, azonban akinek   
+van némi rálátása erre a területre, tisztában van vele, hogy feltételezéseim nem alaptalanok az   
+elkövetők származását illetően.</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">A cikk természtesen nem a kuruc.info cigánybűnözés   
+hírkategóriájának pontos másolata, mivel azokat a híreket amiknél nem láttam elég bizonyítékot az   
+elkövető származására, kihagytam. Ezen kívül a híreket röviden próbáltam összefoglalni, és a   
+kuruc.info jellegzetes stílusát sem vettem át.</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">A vastag feketével írott   
+bűncselekmények elkövetőiről pedig egyértelműen bebizonyosodott hogy cigány. A bizonyíték lehetett a 
+  név, fotó, videofelvétel, szemtanúk elmondása, helyiek beszámolója, illetve maga a (független 
+[vagy   baloldali kötődésű]) hírforrás.</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">Próbáltam a kérdéses részeknek 
+utánajárni, de még így is   lehetséges hogy néhol tévesek az információim. Ezek nem szándékos 
+csúsztatások, hanem tévedések,   melyeket javítani fogok, amennyiben bebizonyosodik hogy az 
+elkövetők nem cigány   származásúak.</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">Másfelől tudnunk kell, hogy ezen cikk csupán töredéke a 
+valóságnak. A   legtöbb bűncselekmény nem hírértékű, és mivel az emberek mostanra teljesen 
+elvesztették hitüket a   rendőrségben és az igazságszolgáltatásban, így csak különleges esetekben 
+tesznek feljelentést,   tudván hogy az az esetek többségében nem vezet semmiféle 
+eredményre.</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">Ezen bejegyzéshez nem   kívánok semmiféle megjegyzést fűzni, illetve 
+nem vonok le semmiféle következtetést, csupán az volt a   célom, hogy áttekinthessük kronologikusan 
+azt, ami a hivatalos - politikailag korrekt - álláspont   szerint nem létezik, és amiről beszélni 
+tilos.</span><br style="font-weight: normal;"><br style="font-weight: normal;"><span style="font-weight: normal;">Továbbá kíváncsian várom a különféle   cigányvédő szervezetek 
+reakcióját. Bizonyára ők is összeállítanak majd egy legalább ilyen hosszú   listát azokról a 
+bűncselekményekről, amiket magyarok követtek el cigányok ellen. Hiszen szerintünk   cigánybűnözés 
+nincs, a szélsőjobb viszont folyamatosan rettegésben tartja és terrorizálja az   ártatlan 
+cigányságot. Ha ez az igazság, itt egy egyszerű lehetőség arra, hogy   bizonyítsák.</span><span style="font-weight: bold;"><br><br>A cikk kizárólag a Magyarországon 2008   jan. 1. és 2008 júni. 
+30. között elkövetett(!) bűncselekményekkel foglalkozik!<br><br></span><hr style="width: 100%; height: 2px;"><span style="font-weight: bold;"><br></span><div style="text-align: center;"><font style="font-family: Arial,Helvetica;" size="5"><span style="font-weight: bold;">A cigánybűnözés 
+kronológiája - 2008 <font size="4">január 1-től 2008   június 30-ig</font></span></font><br><span style="font-weight: bold;"></span></div><span style="font-weight: bold;"><br></span></div><br>2008-01-02. 18:09<br>Egy   13 éves gyermekkorú és   két 14 éves 
+fiatalkorú fiú, valamint egy 19 éves férfi betört egy 84 éves   öregasszony házába,   rátámadtak, és 
+kirabolták.<br><br>2008-01-04. 10:25 <br>Ismeretlenek   megpróbáltak kirabolni egy   mentőautót 
+szombat este Budapesten a X. kerületi Hős utcában. A tettesek   betörték a gépkocsi egyik   oldalsó 
+ablakát, mialatt a személyzet egy beteget látott el egy Hős utcai   lakásban. Felforgatták a   
+kesztyűtartót, ahol azonban nem találtak értéket, így nem tulajdonítottak   el semmi   
+értékeset.<br><br>2008-01-04. 19:55 <br><span style="font-weight: bold;">Súlyos sérülést     
+szenvedett az a 15 éves fiú, akit egy tíz év körüli fiú szúrt combon csütörtökön délután Budapesten, 
+    a Blaha Lujza téren</span><br><br>2008-01-04. 19:55 <br><span style="font-weight: bold;">Egy 18  
+ éves   szakközépiskolás fiút a VIII. kerületben cigányok megtámadtak. A mentőben belehalt     
+sérüléseibe.</span><br><br>2008-01-10. 14:11<br>Szombathelyen két rabló pillangókéssel     
+kényszerítette áldozatát arra, hogy&nbsp; adják át értékeiket, de azok ellenálltak, így csak egy     
+gyűrűt sikerült zsákmányolniuk.<br><br>2008-01-11. 09:30<br><span style="font-weight: bold;">A     
+Nagyvárad téri templom rézborítását ellopták, majd a parókiát ürülékkel szennyezték be helyi     
+cigányok.</span><br><br>2008-01-12. 18:17<br>A marcali plébániatemplomban egy férfi rátámadt egy 76  
+   éves imádkozó asszonyra, többször megütötte, és megpróbálta megerőszakolni, de a templomban     
+tartózkodók az asszony segítségére siettek.<br><br>2008-01-13. 18:47<br>Tiszanána lakosai szombaton, 
+    az urivi áttörés napján ismét emlékművet avattak, immáron másodszor. A hősök kertjében álló     
+emlékműre felhelyezett, az elesettek, áldozatok neveit tartalmazó 24 bronztáblából ugyanis korábban  
+   ismeretlen személyek 12 darabot elloptak. A 134 nevet tartalmazó emlékmű     
+megcsonkult.<br><br>2008-01-17. 13:11 <br style="font-weight: bold;"><span style="font-weight: bold; color: black;">Az RTL Klub forgatócsoportja a Blaha téri késelő, "Maugli" rokonaihoz ment riportot   
+  készíteni, ám a cigányok, </span><a target="_blank"style="font-weight: bold; color: black;" href="//www.kuruc.info/r/35/20240/">kirabolták őket</a><span style="font-weight: bold; color: black;">. </span><br><br>2008-01-14. 20:37<br>Ismeretlen tettesek Kötcsén ellopták a református     
+imaház közel egymillió forint értékű harangját.<br><br>2008-01-15. 11:16<br>A Nyugati pályaudvarnál  
+   megpróbáltak kábelt lopni, amivel zárlatot és tüzet okoztak, illetve több vonat     
+késését.<br><br>2008-01-16. 09:50<br><span style="font-weight: bold;">Két 14-15 éves és egy 12 éves  
+   cigány egy 14 éves magyar fiútól kést használva rabolta el az értékeit este az Ifjúság     
+úton.</span><br><br>2008-01-20. 07:21<br><span style="font-weight: bold;">A Móricz Zsigmond körtér   
+  környékén hat cigány körbevett egy magyar fiatalt akit ezután összevertek és     
+kiraboltak.</span><br><br>2008-01-22. 18:32<br><span style="font-weight: bold;">Fejszével támadt a   
+  rendőrökre egy rinyaszentkirályi férfi, akit azért kerestek, mert a feltételezések szerint betört  
+   egy helyi gazda pincéjébe, és onnan ellopott mintegy tíz liter bort - közölte Bíró Gábor, a 
+Somogy     Megyei Rendőr-főkapitányság szóvivője.</span><br><br>2008-01-23. 18:28<br><span style="font-weight: bold;">Tiszaburán a pályáról levonuló jászdózsai játékosokat agyba-főbe verték a 
+helyi cigány     szurkolók. Csatárukat még játék közben úgy fejbe rúgták hogy annak orrából és 
+szájából tíz percig     dőlt a vér. Rajta kívül még Surányi Rolandot és Borics Lászlót - akik 
+civilben egyébként rendőrök -     verték meg nagyon, illetve egy fia védelmére siető édesanyát. A 
+játékosok a sporttelepet csak két     autónyi rendőr segítségével tudták 
+elhagyni.</span><br><br>2008-01-24. 14:29<br>Jászjákóhalmán a II.     világháborús emlékműről 
+ellopták az elesettek névsorát tartalmazó bronztáblát.<br><br>2008-01-25.     18:02<br><span style="font-weight: bold;">Százezres kárt okozott a tiszakórodi polgármesteri   hivatal   
+berendezésében egy fiatal cigány és nővére, mert ott nem tudták nekik garantálni, hogy egy   
+tanfolyam   elvégzése után kapnak munkát.</span><br><br>2008-01-25. 18:49<br><span style="font-weight: bold;">Hajdúhadházon egy fiatal fiú ellopta egy asszony mobiltelefonját, majd   
+két társa elgáncsolta   a nőt, megütötték, és a tárcáját is elrabolták.</span><br><br>2008-01-25.   
+21:43<br>Életveszélyes   állapotban került kórházba az a magyar férfi akit mellkason szúrtak az Örs  
+ vezér téren, miután   szóváltásba keveredett két fiatalemberrel, akik sértegették a   
+barátnőjét.<br><br>2008-01-26.   15:32<br>Okányon egy helyi bűnözőcsalád - fémlopás, droghasználat,  
+ stb. - félholtra vert egy idős   fogyatékos urat annak lakásán, majd kirabolta.<br><br>2008-01-30.  
+ 10:29<br><span style="font-weight: bold;">Egy ötfős cigány banda rendszeresen kirabolja a   
+Debrecenben a Petőfi téri pékséget és egyéb   boltokat. Az eladók azonnali zárással próbálnak a   
+bűnözők ellen védekezni.</span><br><br>2008-02-01.   18:18<br><span style="font-weight: bold;">Miután a 22 éves nő autójával elütött egy lopott   kerékpáron közlekedő cigányasszonyt a   
+Petőfi utcában - aki könnyebb sérüléseket szenvedett -, annak   rokonai rátámadtak a nőre, aki csak  
+ a rendőrség gyors kiérkezésének köszönhetően szenvedett csupán   nyolc napon belül gyógyuló   
+sérüléseket.</span><br><br>2008-02-02. 16:11<br><span style="font-weight: bold;">Életveszélyes   
+sérülést szenvedett az a 20 éves férfi, akit este tíz óra tájban egy zsebkéssel   szúrt hasba a 15   
+éves támadó egy italbolt előtt. Szemtanúk megerősítették hogy a támadók többen   voltak, és   
+mindannyian cigány származásúak.</span><br><br>2008-02-04. 14:21<br><span style="font-weight: bold;">Baltával támadt a falopáson rajtakapott Orsós Sándor a rendőrökre, ezért   azok csak   
+figyelmeztető lövés leadása után tudtak intézkedni.</span><br><br>2008-02-05.   07:29<br><span style="font-weight: bold;">A sajóbábonyi polgármester egy szándékos gyújtogatás   kapcsán a   
+következőt mondja egy lakossági fórumon: "Sajóbábonyban a magyar ember van hátrányos   helyzetben, a 
+  cigányok terrorizálják a magyarokat." Sajóbábonyban két éve egy idős férfit nyakon   szúrtak,   
+gerincét eltörték, az állításuk szerint csupán lopni induló   elkövetők.</span><br><br>2008-02-06.   
+15:34<br><span style="font-weight: bold;">Egy 14 és egy 16 éves   cigány fiú saját lakásán   
+rátámadott egy 92 éves úrra, bántalmazták, majd elvették 20.000     
+forintját.</span><br><br>2008-02-07. 08:43<br><span style="font-weight: bold;">A Henit felgyújtó     
+Kurai András - azaz Muki - cellájában egy 15 éves fiút megerőszakolt, majd orális szexre     
+kényszerített.</span><br><br>2008-02-08. 14:04<br><span style="font-weight: bold;">Tarnabodon egy    
+ 15,&nbsp; 16 és 17 éves cigány, lakásán kirabolt, majd olyan súlyosan bántalmazott egy 67 éves     
+férfit, hogy az belehalt sérüléseibe.</span><br><br>2008-02-10. 18:37<br>Emberölési kísérlet miatt   
+  keres a rendőrség egy 18 év körüli "fiatalembert" aki a nyílt utcán többször megszúrt két férfit   
+  Miskolc belvárosában.<br><br>2008-02-23. 16:18<br><span style="font-weight: bold;">Megerőszakolt 
+és     kirabolt egy 80 éves asszonyt szombaton, Tarnaörsön, egy 20 éves helybeli     
+cigány.</span><br><br>2008-02-23. 18:01<br>Még aznap elfogta a rendőrség O. Sándort, mikor     
+meggyilkolt egy 85 éves asszonyt jászberényi tanyájának udvarán.<br><br>2008-02-24. 20:22<br>Éjszaka 
+    két ismeretlen tört be egy idős asszony házába Nyírvasváriban. A zajra felébredő idős hölgytől a 
+    pénzét követelték, fojtogatták, majd megkötözték. Az asszony könnyű sérüléseket     
+szenvedett.<br><br>2008-02-24. 21:43<br>Késsel megszúrt egy 14 éves lány egy 33 éves férfit. A férfi 
+    súlyos sérülést szenvedett.<br><br>2008-02-24. 21:43<br>Szombaton négy kamasz verekedett össze   
+  Aranyosapátiban. Később a rokonok is csatlakoztak. Egy fiatalember súlyos, többen könnyű 
+sérüléseket     szenvedtek.<br><br>2008-02-24. 21:43<br>Egy zalai bálban verekedés tört ki. Egy 
+helybéli férfi     súlyos, egy másik könnyű sérüléseket szenvedett.<br><br>2008-02-24. 21:43<br>Öt 
+szabolcsi templomba     törtek be a hétvégén, ahol kifosztották a perselyeket.<br><br>2008-02-25. 
+15:57<br>Rágyújtotta az     ágyneműt arra az öreg mozgássérültre a rabló, akitől ezer forintot 
+tulajdonított     el.<br><br>2008-02-25. 15:57<br>A Vasvári Pál utcai telephely kerítését kivágták, 
+majd 9 éves     gyerekükkel színesfémet loptak.<br><br>2008-02-25. 15:57<br>Kispesten kábellopás 
+miatt     megrongálódott 36 távközlési törzskábel, aminek következtében az érintett terület 90 
+százalékán     nincs például telefon és internet szolgáltatás - közölte a Magyar 
+Telekom.<br><br>2008-02-25.     15:57<br>Szülei élelmiszerekkel pakolták tele 13 éves gyerekük 
+ruházatát, majd mikor ez feltűnt az     eladóknak, a szülők sorsára hagyták 
+gyermeküket.<br><br>2008-02-25. 15:57<br>Számítógép, LCD     monitor, CD-s rádiós magnó, készpénz, 
+és egy lemezkazetta volt a zsákmánya annak az ismeretlen     tettesnek, aki szombatra virradóra tört 
+be egy rákócziújfalui óvodába.<br><br>2008-02-27.     11:31<br><span style="font-weight: bold;">A 
+Borsod megyei Tállyán egy 9 éves cigánygyermek támadt     iskolatársaira, és rabolta ki 
+őket.</span><br><br>2008-02-29. 19:19<br>A baranyai     Felsőszentmártonban egy kocsmai 
+tömegverekedés után az egyik sértett belehalt sérüléseibe,     Hegyszentmártonban pedig egy bálban 
+majdnem agyonvertek valakit.<br><br>2008-03-08.     09:44<br>Zalakomárban a családhoz kiérkező 
+orvost rendőri felügyelet mellett életveszélyesen     megfenyegették.<br><br>2008-03-08. 
+09:50<br>Életveszélyes helyzetet teremtettek az illegális     fémgyűjtők az elhagyott Egercshi 
+bányában.<br><br>2008-03-08. 09:57<br><span style="font-weight: bold;">Siófokot rettegésben tartják 
+a cigányok. Jól behatárolható az a fiatalokból, fiatal     felnőttekből álló bűnözői kör, akik a 
+városrészben gyakori autófeltöréseket, betöréseket elkövetik.     Legutóbb két tizenéves a temetőben 
+lopta el egy idős asszony táskáját a pénzével     együtt.</span><br><br>2008-03-08. 16:00<br><span style="font-weight: bold;">Érpatakon a fehérek     rettegésben élnek, a helyi cigányok mindenkit 
+megfenyegetnek, a szemtanúk nem mernek tanúskodni. A     faluban havonta 17 millió forint segélyt 
+fizetnek ki, ebből 94%-ot cigányok     kapnak.</span><br><br>2008-03-10. 11:11<br><span style="font-weight: bold;">Hevesi és borsodi     falvakat tartanak rettegésben a cigányok. Utoljára 
+a BAZ megyei Gadnán egy nyolcvanyolc éves     asszonyt erőszakoltak meg, majd különös 
+kegyetlenséggel meggyilkolták: késsel összeszurkálták, a     szemét kinyomták, levágták a lábát, 
+majd baltával széthasították a fejét.</span><br style="font-weight: bold;"><br>2008-03-11. 
+17:09<br><span style="font-weight: bold;">2 év 10 hónapra     ítélik azt a cigány lányt aki többek 
+között lopás, rablás, erőszak és nemzeti csoport elleni   erőszak   miatt került bíróság elé. 
+Támadásainál a következőket mondta: "Ti magyarok nagyon   fennhordjátok az   orrotokat, meg lesztek 
+verve, meg lesztek ölve!" Tetteit nem bánta meg, büszkén   mesélte bűneit a   bíróságon, és a 
+tanúkat folyamatosan szidalmazta.</span><br><br>2008-03-12.   14:04<br><span style="font-weight: bold;">Hétfőn délután a gyöngyösi kórházban cigányok megvertek   egy doktornőt,   aki egy beteget 
+nem akart befektetni az osztályra. Az orvos szerint a beteg   állapota ezt nem   indokolta, 
+járóbeteg szakrendelésre kívánta továbbküldeni. A doktornő beadta a   felmondását,   feljelentést 
+nem mer tenni.</span><br><br>2008-03-12. 14:56<br><span style="font-weight: bold;">Kaposvár-Kisasszondon két nőt hurcolt el az erdőbe, egyiküket meg is   erőszakolta egy 47 
+éves   kisasszondi cigány férfi. A férfi 4 hónapon keresztül menekült a rendőrség   elől. A 
+belső-somogyi   cigányság &#8211; mint egykor a betyárok idején &#8211; segítette a   bújkálásban, 
+élelmet vittek neki   búvóhelyeire.</span><br style="font-weight: bold;"><br>2008-03-17. 
+14:24<br><span style="font-weight: bold;">Kirabolt és meggyilkolt egy 93 éves   asszonyt a 15 éves 
+fiú a Borsod   megyei Szalonnán.</span><br><br>2008-03-18. 15:32<br>Két férfi egy   74 éves 
+asszonnyal végzett, majd   3200 forintot zsákmányoltak tőle.<br><br>2008-03-21.   09:51<br>Alig 
+múltak tizennégy évesek azok a   lányok, akik Miskolcon kővel és bottal vertek meg egy   50 éves 
+férfit. A két kamasz a munkából   hazafelé tartó férfit azért támadta meg, hogy pénzt   követeljen 
+tőle. Miután nem kaptak pénzt, kővel   dobálták meg a férfit, majd bottal kezdték   
+ütlegelni.<br><br>2008-03-21. 16:12<br>Két büntetett   előéletű férfi erőszakolt meg egy asszonyt a  
+ Szabolcs-Szatmár-Bereg Megyei Tornyospálcán, miután   rátörték házának ajtaját és megverték.   
+<br><br>2008-03-22. 18:36<br>Többször is maffiamódszerekkel   tulajdonítottak el értékes, rézből   
+készült légkábeleket a BKV Zrt. vonalain, ezzel csak az elmúlt   fél évben több tízmillió forintos   
+kárt okoztak a közlekedési vállalatnak. A BKV félmillió forintot   ajánlott fel a nyomravezetőnek,   
+az ügyben a rendőrség is nyomoz.<br><br>2008-03-23. 19:14<br>A   Rábaköz egyik legrégibb és   
+legnagyobb búcsújáró-helyét, a szanyi Szent Anna Kápolnát és több más, a   térségben található   
+templomot is kifosztottak ismeretlenek a húsvétot megelőző nagyhétben.   Gyertyatartókat,   
+feszületeket loptak el, de volt, ahonnan a harangot is magukkal   vitték.<br><br>2008-03-24.   
+18:07<br><span style="font-weight: bold;">Rossz jegyet akart adni neki,   ezért megrúgta, és egy   
+vascsővel kezdte ütögetni fizikatanárát egy 16 éves fiú. Az eset egy   józsefvárosi iskolában   
+történt. A fizikatanár azóta felmondott.</span><br><br>2008-03-25.   21:29<br><span style="font-weight: bold;">Agyonverte hároméves gyermekét a cigány   apa.</span><br><br>2008-03-26.  
+ 10:33<br>Húsvét hétfőjét követő reggelen családi házában holtan   találtak egy 78 éves kenézlői   
+asszonyt. A helyszíni szemle megállapításai szerint a lakásba dolog   elleni erőszakkal behatoltak,  
+ majd bántalmazták az idős sértettet, aki ennek következtében   elhalálozott. A lakásból használati  
+ tárgyakat és készpénzt tulajdonítottak el.<br><br>2008-03-27.   07:26<br>Kaposvár: Országos   
+felháborodást váltott ki a tanárát lökdöső, rugdosó, csapteleppel   fenyegető fővárosi diák. Az eset 
+  nem egyedi. A kaposvári Széchenyi kereskedelmi és vendéglátó-ipari   középiskolában például már   
+teljesen elfajult a helyzet: a tanárok azt fontolgatják, nem tanítanak   egy bizonyos osztályban,   
+ahol az egyik diáklány szerintük lehetetlenné teszi nemhogy a normális   oktatást, de még a   
+legalapvetőbb iskolai normákat sem tartja be.<br><br>2008-03-27. 21:51<br><span style="font-weight: bold;">100 millió Ft veszteséget okoztak a kispesti   kábeltolvajok.</span><br><br>2008-03-31.   
+13:48<br>Kifosztották és szétverték a hétvégén a mádi   templomot.<br><br>2008-03-31.   
+18:53<br>Vasúti kábellopáson kaptak rajta a hétvégén a rendőrök egy 16   és egy 18 éves lányt   
+Baktalórántháza közelében. A lányokat nem vették őrizetbe.<br><br>2008-04-01.   13:32<br>Rátámadt a  
+ gyermekjóléti szolgálat három munkatársára egy család Nyírcsaholyban, kettejük   könnyű sérüléseket 
+  szenvedett. A szolgálat egyik munkatársa, valamint egy védőnő és egy gyakorlaton   lévő főiskolai  
+ hallgató azért kereste fel hétfőn a családot, mert a felszólítás ellenére sem adatták   be 15   
+hónapos babájuknak a kötelező védőoltást.<br><br>2008-04-01. 14:35<br><span style="font-weight: bold;">Több rablást is elkövetett már egy 11 éves cigánylány Szegeden, a   rendőrség, mivel a   
+gyermek még nem büntethető, tehetetlen. Fél tucat rablás, illetve annak kísérlete   írható egy 10   
+éves szegedi gyermeklány számlájára a rendőrség adatai szerint - értesült a   HavariaPress. A   
+gyermek hosszabb ideje tarja már rettegésben a csongrádi megyeszékhelyen     
+élőket.</span><br><br>2008-04-02. 14:37<br>Miskolc egyik belvárosi lakótelepének környékén egy     
+gyerekkorú és két fiatalkorú rabolt ki egy fiatalkorú fiút. A három támadó 15 000 forintot     
+zsákmányolt.<br><br>2008-04-05. 14:00<br>Miután fizetni nem tudott, késével nyakon szúrta a     
+taxisofőrt a 17 éves Fk R István.<br><br>2008-04-05. 14:02<br><span style="font-weight: bold;">Több  
+   alkalommal megerőszakolta saját, 12 éves lányát egy cigány a Heves megyei Tarnabodon. A kislány   
+  mostohaanyja tett bejelentést a Hevesi Rendőrkapitányságon arról, hogy élettársa, a gyermek     
+édesapja, immár egy éve rendszeresen molesztálja a kislányt, és többször meg is erőszakolta -     
+közölte a Heves Megyei Rendőr-főkapitányság sajtószóvivője, Soltész     
+Bálint.</span><br><br>2008-04-07. 14:56<br>Ellopták Dunaharaszti és Szigetszentmiklós között a HÉV   
+  kábelét a sztrájk ideje alatt. A kábel visszapótlása súlyos költséget jelent majd, melyet     
+természetesen az adófizetők pénzéből fizetnek.<br><br>2008-04-08. 15:25<br><span style="font-weight: bold;">Egy három éves kisfiút gázolt el egy autó kedden kora délután, a Szabolcs-Szatmár-Bereg     
+megyei Nyírkáta Petőfi utcájában. A kisfiú az eddigi adatok szerint féktávolságon belül rohant a     
+Petőfi Sándor utca úttestjére, s egy arra hajtó autós elgázolta kocsijával. A baleset következtében  
+   a gyermek súlyosan megsérült.</span><span style="font-weight: bold;"> Az elgázolt kisfiú 
+családja,     mintegy harminc cigány ember (a patkány is állat) dühében az autó sofőrjére, valamint 
+utasára     támadt. Beverték a kocsi szélvédőjét és oldalsó ablakát, a sofőrt pedig össze-vissza     
+verték.</span><span style="font-weight: bold;"> A végletekig elfajulni látszó helyzetet a közben     
+odaérkező mentősök határozott fellépése mentette meg. A gyermeket és a sofőrt is kórházba     
+szállították, mindkettejüket súlyos sérülésekkel.</span><br><br>2008-04-10. 16:30<br>Szerencs - A    
+ vasúti síneket talpfához leszorító csavarokat szedtek ki Szerencsen fémhulladék gyűjtők - elkapták  
+   őket. Nemcsak tolvajlás, hanem börtönévekkel fenyegető, vasúti közlekedés biztonságának     
+veszélyeztetése miatt indult eljárás... &nbsp;<br><br>2008-04-10. 18:09<br>Jászladány: Nagy     
+felháborodást keltett Jászladányon, hogy a helyi temetőből ellopták a 80 kilós lélekharangot. Balogh 
+    Zoltántól a Jászberényi Rendőrkapitányság bűnügyi osztályvezető helyettesétől tudtuk meg, hogy a 
+    rendőrség kedden értesült a történtekről, s meg is kezdték a nyomozást az 
+ügyben.<br><br>2008-04-11.     11:51<br>Élet és testi épség elleni közvetlen fenyegetéssel 
+elkövetett zsarolás gyanúsítottait     akarták elfogni a rendőrök Taktaszadán és Prügyön még kedden, 
+ám a feldühödött kétszáz fős     rokonsereg ki akarta szabadítani őket. Végül a helyszínre érkező 
+közel félszáz rendőr és kommandósok     láttára lecsillapodtak a kedélyek.<br><br>2008-04-13. 
+13:15<br>A négy fiatalkorú és három     gyermekkorú fiú három embert rabolt ki szombaton éjszaka 
+Egerben; egy ezüst nyakláncot egy     pendrive-ot és két mobiltelefont zsákmányoltak. Mindhárom 
+áldozatukat megverték; egyikük súlyos     sérüléseket szenvedett.<br><br>2008-04-14. 
+15:22<br>Jászladány - Hátborzongató jelenetnek lehettek     tanúi azok a szórakozni vágyók, akik a 
+péntek estét az egyik jászladányi büfében töltötték. A     nyugodt beszélgetés egyik pillanatról a 
+másikra vérfürdővé változott. Az egyik 47 éves vendéget egy     közismerten agresszív férfi 
+üvegpohárral nyakon szúrta, s a tettes mint aki jól végezte dolgát,     tette elkövetése után 
+távozott a helyszínről. A szúrás mindösze két miliméterre állt meg a nyaki     
+artériától.<br><br>2008-04-17. 10:32<br>Megöltek egy 77 éves asszonyt somogyzsitfai otthonában     
+anyagi haszonszerzés miatt - közölte a rendőrség csütörtökön az MTI-vel. A Somogy Megyei     
+Rendőr-főkapitányság szóvivőjének tájékoztatása szerint az áldozatra - összekötözött kezekkel és     
+lábakkal - a hozzátartozók találtak rá szerda délután.<br><br>2008-04-17. 12:32<br>Fajtalankodásra   
+  kényszerítettek nagyobb társai egy tizenegy éves kisfiút az igali speciális iskola és 
+kollégiumban;     legalábbis ezt állítja a fiú, akinek szülei feljelentést tettek a rendőrségen - 
+írja a csütörtöki     Somogyi Hírlap. A megyei lapnak nyilatkozó anya azt mondta, a fiú egy januári 
+napon zaklatottan     érkezett haza Büssübe az igali kollégiumból, szinte azonnal azt kezdte 
+mesélni, hogy a nagyobbak -     négy tizenhat-tizenhét éves fiú - mit műveltek egy hétéves kis 
+társukkal. Aztán az is kibukott     belőle: vele is ugyanezt tették... A gyerek elmondása szerint 
+egy hétéves társával együtt a négy fiú     a vécébe vitte őket, ahol meztelenre kellett vetkőzniük 
+és veréssel, fenyegetéssel fajtalankodásra     vették rá őket. A fiú szerint még egy kést is a 
+torkukhoz szorítottak és azt mondták: ha bárkinek     beszélnek a történtekről, megölik őket. Az 
+eset többször is megismétlődött.<br><br>2008-04-18.     14:27<br><span style="font-weight: bold;">Fegyveres rablást kísérelt meg egy férfi csütörtök délután     Pécsett. A Nagy Lajos Király 
+utcai szemüvegboltban két eladóhölgy tartózkodott, amikor fél négy     körüli időben belépett az 
+ajtón egy 45 év körüli, 175 cm magas, köpcös testalkatú, kreol bőrű,     borostás 
+férfi.</span><br><br>2008-04-20. 15:00<br>Életveszélyt okozó testi sértés megalapozott     gyanúja 
+miatt őrizetbe vett a rendőrség egy 16 és egy 17 éves fiút, mert a Győr-Moson-Sopron megyei     
+Tényőn úgy összerugdostak egy 21 éves fiatalembert, hogy elrepedt a lépe - közölte a megyei     
+rendőr-főkapitányság sajtóreferense szombaton.<br><br>2008-04-20. 15:06<br>Szombaton este nyolc óra  
+   előtt a Vásárosnaményi Rendőrkapitányság járőrei az Alkotmány utcán igazoltattak két személyt,    
+ akikkel kapcsolatban felmerült, hogy előzőleg betörtek egy közeli házba. A rendőrök ellenőrizték a  
+   lakást, ahol vérbe fagyva találták a tulajdonost, egy 69 éves férfit.<br><br>2008-04-20. 
+16:36<br>Az     M7-es autópálya mellett, egy kapcsolószekrényből a tolvajok optikai- és rézkábeleket 
+vittek el,   ami   miatt Nagykanizsa palini városrészében, továbbá Magyarszentmiklós és Gelse 
+térségében mintegy     kétezer előfizetőnél szűnt meg a távközlési cég 
+szolgáltatása.<br><br>2008-04-20. 16:47<br>A Keleti     Pályaudvarra érkező és onnan induló vonatok 
+20-30 perces késéssel közlekednek, mert ismeretlenek,     délután kábelt akartak lopni és eközben 
+megrongálták a vasúti jelzőberendezés     vezetékeit.<br><br>2008-04-21. 18:26<br>Őrizetbe vette a 
+rendőrség azt a férfit, aki magát egy     szolgáltató munkatársának kiadva lopott meg egy idős 
+embert Józsefvárosban, majd még össze is verte     a sértettet.<br><br>2008-04-22. 
+15:19<br>Hajléktalanok kifosztásából éltek - Megvakították   siketnéma   áldozatukat. Rablás miatt 
+emelt vádat a kaposvári ügyészség egy házaspár ellen, akik   hajléktalanok   kifosztásából éltek. 
+Módszerük az volt, hogy a férfi gázspray-vel szembe, illetve   arcon fújta a   hajléktalanokat, majd 
+megrugdosta, ütötte őket, hogy képtelenek legyenek     védekezni.<br><br>2008-04-25. 
+11:17<br>Mindössze egy zacskó chipset zsákmányolt az a korábban     emberölés vádjával ült 25 éves 
+férfi, aki a salgótarjáni taxiállomáson bántalmazott két     mátraverebélyi lakost. A 48 esztendős 
+apa,&nbsp; az ütés következtében nyolc napon túl gyógyuló     arccsonttörést szenvedett. Ezután a 14 
+éves fiút is földre küldte, s azt követelte tőle, hogy adja     át neki a kezében szorongatott 
+rágcsálnivalót. A gyerek nem ellenkezett.A tettest rövid időn belül     elfogták. 
+<br><br>2008-04-27. 17:01<br>Több száz háztartásban szünetelt az internet- és     
+telefonszolgáltatás Nagykanizsán, mert szombaton este az M7-es autópálya mellől ismét kábelt vittek  
+   el ismeretlenek.<br><br>2008-04-28. 12:33<br>Mezőtúr külterületén a 46-os számú főút mellett az   
+  ismeretlen elkövető két helyen elvágta az elektromos kábelt, méghozzá úgy, hogy azt az érkező 
+vonat     kerekei alá rakta, és a kerekek vágták el azokat. A kábel-elvágás következtében a vasúti 
+sorompó és     fényjelzőkészülék működésképtelenné vált.<br><br>2008-05-01. 15:31<br>Hétszáz méter 
+hosszú vasúti     biztonsági kábelt loptak el még szerdára virradóra a Bács-Kiskun megyei 
+Mátéházapuszta     vasútállomásról. A kábel a fénysorompó működtetéséhez volt szükséges és a tolvaj 
+a föld alól ásta     ki.<br><br>2008-05-04. 12:23<br>Ellopták a mezőkövesdi régi kistemplom 
+orgonasípjait feltehetően     csütörtökről péntekre virradó éjszaka. Az orgonasípok rézből 
+készültek, a kár hozzávetőlegesen 5     millió forint.<br><br>2008-05-04. 23:48<br><span style="font-weight: bold;">Siófok: Dulakodásig     fajult a minap négy roma asszony lopási kísérlete 
+egy siófoki ruhaüzletben, ahol a társaság azzal     próbálta elterelni az eladók figyelmét, hogy a 
+polcokról a földre dobálták a boltban található árut.     Az eladók próbálták kizavarni az üzletből 
+a hőzöngő nőket, akik diszkriminációra hivatkozva nem     voltak hajlandóak távozni. &#8211; A 
+garázdálkodók folyamatosan fenyegetőztek, az egyik eladó     begipszelt kezét is megrángatták 
+&#8211; mondta Beke Ibolya, a Siófoki Rendőrkapitányság szóvivője.     A csapat végül akkor adta fel 
+a küzdelmet, amikor az eladók telefonon rendőrt hívtak, távozásuk     előtt azonban még arcon köpték 
+az egyik bolti alkalmazottat. A kiérkező rendőrök még a     városközpontban megtalálták a nőket, 
+akinek az sem tetszett, hogy igazoltatták őket, ezért trágárul     üvöltöztek a 
+rendőrökkel.</span><br><br>2008-05-05. 11:10<br>Néhány száz forintos zsákmány miatt     
+működésképtelenné tették a tolvajok a darányi temető halotthűtő berendezését.<br><br>2008-05-06.     
+17:18<br><span style="font-weight: bold;">Dormánd: A hétfői anyák napi ünnepségen az egyik szülő     
+szidalmazta és életveszélyesen meg is fenyegette az egyik tanítónőt. Kedden tovább fajultak a     
+dolgok, mert tettlegességre is sor került, amikor is az anyuka fojtogatni kezdte a     
+tanerőt.</span><br><br>2008-05-07. 19:16<br>Elloptak egy komplett vasútállomást Somogyban. A     
+kaposújlaki megállónak még a vázát sem hagyták meg a tolvajok. A somogyjádi állomáson a fűtési     
+szezonból megmaradt szénnek is akadt &#8222;gazdája&#8221;.<br><br>2008-05-08. 15:24<br><span style="font-weight: bold;">Kisbér - Egy 77 éves kisbéri nénihez kedden késő délután kopogtatott be   
+  egy 60 év körüli, cigányasszony, hogy jósoljon. Azt olvasta ki tenyeréből, hogy sok pénz áll a     
+házhoz, ha megmutatja a sajátját. A néni minden gyanakvás nélkül elővette borítékban tartott     
+nyugdíját, melyet a javasasszony többször megforgatott a tenyerében, majd elköszönt és egy piros     
+színű személygépkocsival távozott a helyszínről. Az autót egy fiatalabb roma férfi vezette. Az idős  
+   hölgy ezt követően vette észre, hogy a borítékból, hiányzik 80.000     
+forintja.</span><br><br>2008-05-08. 21:51<br>Majdnem félmillió forintot zsarolt ki körülbelül egy    
+ hónap alatt egy 13 éves fiú és egy 12 éves lány egy ötödikes osztálytársuktól egy mátészalkai     
+iskolában, tájékoztatott a Szabolcs-Szatmár-Bereg megyei Rendőr-főkapitányság. A rendőrség a gyerek  
+   anyjának feljelentése alapján hétfőn kezdett nyomozni, mert a nő szerint 460 ezer forint 
+félretett     pénzük tűnt el otthonról.<br><br>2008-05-09. 08:51<br>Három idősebb nőt is kiraboltak 
+hajdúhadházi     fiatalok május elején. A tettesek bántalmazták is áldozataikat. Két fiú ellen 
+betöréses lopás     kísérlete miatt szintén nyomoznak.<br><br>2008-05-09. 10:59<br><span style="font-weight: bold;">Szeged - Csak a bőre tartotta össze bal lábát a szegedi Fogarasi 
+Zoltánnak, akit hétfőn     délután ütött el egy Dacia a Szivárvány utcában. A személyautó vezetője 
+és utasa a baleset után     elmenekült a helyszínről, a rendőrök azóta sem találják őket. A súlyosan 
+sérült férfi munkaadója 250     ezer forint jutalmat ajánlott fel a 
+nyomravezetőnek.</span><br><br>2008-05-11.     23:17<br>&nbsp;Elfogta a rendőrség azt az öt férfit, 
+akit azzal gyanúsítanak, hogy Miskolcon, az     Újgyőri főtéren bántalmaztak és kiraboltak egy 67 
+éves férfit. Zsákmányuk az áldozat pénze és órája     volt.<br><br>2008-05-12. 15:13<br><span style="font-weight: bold;">Kiraboltak egy házaspárt   vasárnap   délután egy Győr mellett úton. Az 
+idős embereket támadóik félrevezették, így ők azt   hihették, hogy   rendőri intézkedés részesei. A 
+három rabló a házaspár minden értékét elvitte, a kár   körülbelül   egymillió 
+forint.</span><br><br>2008-05-13. 14:50<br>Rendszresen lopják a Mesztegnyői   Erdei Vasút   sínjeit. 
+Most 60-70 méteres szakasz tűnt el. 60-70 méter hosszan felszedték a   Mesztegnyő és   Nagybajom 
+közötti kisvasút síneit. A hiányzó szakasz a mozdony vezetője még időben   észre vette, így   az 
+utaskkal teli szerelvény kisiklás nélkül meg tudott állni. Az elkövetők   lovaskocsit használtak a   
+lopott síndarabok szállításához.<br><br>2008-05-13. 16:08<br><span style="font-weight: bold;">Egy 61 
+  éves, valamint egy 36 éves nő hétfőn este a Tinódi Lajos utcában   lefogott és bántalmazott egy 52 
+  éves férfit, majd kirabolták.</span><br><br>2008-05-13.   18:39<br>Fegyverrel kirabolt egy 20 éves 
+  kisszállási fiút és társát a fővárosban. A két   egyetemistára a Petőfi-híd budai oldalán támadt 
+rá   négy férfi, akik érékeik átadására   kényszeríttették áldozataikat.<br><br>2008-05-13. 
+19:04<br>Kést   szorított áldozata nyakához, úgy   vitette el magát taxival egy férfi 
+Miskolcon.<br><br>2008-05-14.   21:57<br>A járőrök kedden este   egy lakatlan háznál értek tetten 
+három gyereket, akik az épületről   lefeszítették a vasrácsokat,   majd a magukkal hozott baltával 
+betörték az ajtókat és ablakokat,   illetve összetörtek egy   szekrénysort. Az okozott kár mintegy 
+600 ezer forint. Egy 14 éves helybeli   fiút gyanúsítottként,   13 éves húgát és egy másik lányt 
+életkoruk miatt tanúként hallgattak ki. A fiú   elmondta, hogy a   vasat el akarták adni, a rácsok 
+lefeszítése közben pedig megtetszett nekik a   rongálás, ezért   szórakozásból kezdtek 
+törni-zúzni.<br><br>2008-05-17. 11:51<br>Rövid úton véget   vetett a helyi   fiatalok 
+vandalizmusának a rendőrség Mezőberényben. A főként fiatalkorúakból álló   csoport azzal   töltötte 
+ideje egy részét, hogy elsősorban pénteken és szombaton éjszaka,   szórakozásukból   hazatérőket 
+támadott meg. Általában hárman-négyen ütöttek &#8222;hobbiból&#8221;   egyetlen embert.   Emellett 
+arra is akadt példa, hogy fényes nappal estek neki a munkából otthonukba   igyekvőknek, s   
+ugyanennek a &#8222;csapatnak&#8221; a tagjai törtek be háromszor az egyik helyi   lángossütőhöz   
+is.<br><br>2008-05-17. 14:23<br>Miskolc - Tíz év fegyházbüntetést kapott elsőfokon az   a miskolci,  
+ Szondy telepen élő férfi, aki több alkalommal megerőszakolta, sőt cimborájával meg is     
+erőszakoltatta feleségét három esztendővel ezelőtt.<br><br>2008-05-17. 14:24<br>A fém     
+csatornafedelek sorozatos ellopása miatt Szandaszőlős egyes részein olyan mázsás "malomkerekek"     
+helyettesítik a fémlopások következtében eltünedező csatornafedeleket, amik rendkívül     
+balesetveszélyesek. A lakók felháborodottan számoltak be a Szoljon.hu-nak a lehetetlen     
+állapotokról.<br><br>2008-05-17. 15:40<br><span style="font-weight: bold;">Hiába mentette meg egy    
+ négyéves epilepsziás kislány életét, nem sokon múlott, hogy az olaszliszkaihoz hasonló lincselés    
+ áldozatává váljon a Borsod megyei kórház főigazgatója, dr. Csiba Gábor, akit a gyermek keresztapja  
+   többször megütött a mentő-autóban, miközben több száz roma fenyegetően vette őket körül. A     
+keresztapa részeg volt, verte a mentő oldalát és a kislány apja is igyekezett őt csillapítani.&nbsp; 
+    A múlt héten történt eseményt az egyébként késve a helyszínre érkező rendőrség még     
+vizsgálja.</span><br><br>2008-05-17. 15:50<br>Pillanatok alatt hatalmasra dagadt az arca és ömlött a 
+    vér K. József (14) tanuló szájából, akit több ökölcsapással vert meg egy fiú a kartali iskola    
+ udvarán. Az iskola nem tett feljelentést sem a rendőrségen, sem az önkormányzatnál, a jegyző csak a 
+    Blikktől értesült az iskolai brutalitásról. Pedig a verést többen látták, de senki sem 
+avatkozott     bele, majd a vérző fiút az egyik tanára vitte haza. Másnap az édesanyja jelentette a 
+rendőrségen az     esetet, amelyet az iskola próbált eltitkolni. Azóta sem történt intézkedés a fiú 
+védelmében, pedig     bántalmazója azzal fenyegeti, hogy megöli, és családjára gyújtja a 
+házat.<br><br>2008-05-18.     16:21<br>Győrszentiván&#8211;Győr - Százötven méter kábelt loptak el 
+pémtek éjjel fél egykor     ismeretlenek, s ezzel lebénították a vonatközlekedést Győrszentiván és 
+Győr között. Az elvágott     vezetékeket a bűnözők csörlővel húzták ki a helyükről. A kár eléri a 
+800 ezer forintot, a vonatok     csak 5 kilométer per órás sebességgel 
+haladhattak.<br><br>2008-05-18. 23:38<br>Kaposvár - Háromszor     raboltak ki, és vertek meg egy 
+férfit Kaposváron. Az erőszakos társaságnak egy 15 éves, terhes lány     is tagja volt. Az ő 
+kivételével valamennyi elkövető előzetes letartóztatását elrendelte a     
+bíróság.<br><br>2008-05-20. 13:28<br><span style="font-weight: bold;">A 19 éves középiskolás     
+vizsgázni indult Újfehértóról nyíregyházi középiskolájába. A vonaton a vizsgatételeket nézte éppen   
+  át, mikor három, vele hasonló korú cigány fiatal lépett hozzá, s mobiltelefonját követelték. A 
+diák     nem engedelmeskedett a fenyegető felszólításnak, mire az egyik támadó elővette kését, s 
+megvágta     vele a fiú hasát.</span><br><br>2008-05-21. 11:16<br>Halálos áldozatot is követelő 
+tűzesetnél lopták     el a zalaegerszegi tűzoltók úgynevezett dugólétráját. Bagyó Sándor, a 
+zalegerszegi tűzoltóság     sajtóreferense elmondta: csütörtökön este a Vas megyei Nagytilajba, a 
+Béke utcába vonultak egy     kigyulladt házhoz. A tűzoltók hajnali négyre fejezték be a munkát, s 
+akkor döbbentek rá, ellopták a     dugólétra két tagját. Azonnal értesítették a rendőrséget, de sem 
+az eszköznek, sem a tolvajnak   eddig   nem akadtak a nyomára. A kigyulladt házban a tulajdonos 
+életét vesztette.<br><br>2008-05-21.     14:08<br><span style="font-weight: bold;">Két roma család 
+tagjai estek egymásnak a pécsi   bíróságon.   Az ellenérdekű fél hozzátartozói hátulról ütni kezdték 
+a tanút, majd pillanatok alatt   tömegverekedés   alakult ki. A rendőröknek kellett megfékezni a   
+randalírozókat.</span><br><br>2008-05-21.   21:43<br>Két 15 éves, hetedik osztályos fiút vettek   
+őrizetbe a rendőrök Zalában, a fiatalok tavaly   október óta zsarolták egyik iskolatársukat. A fiúk  
+ veréssel fenyegetőzve több alkalommal 5-10 ezer   forintot csikartak ki iskolatársuktól. Az 
+őrizetbe   vett fiatalkorúak ellen büntetőeljárást   indítottak.<br><br>2008-05-21. 21:51<br>Mezőtúr 
+- Három   idős embert bántalmazott brutálisan az a   fiatalokból álló banda, amelynek három tagját 
+elkapták a   helyi rendőrök. A 19 és 17 éves fiúra   börtön vár. A harmadik, 12 éves gyerek nem 
+büntethető és a   galeri többi tagját még keresik a   rendőrök.<br><br>2008-05-22. 11:44<br>Siófok: 
+Már a rendőröktől   sem tartanak a bűnözők. Olyannyira,   hogy egy 15 fős banda fejszével és 
+lapátnyelekkel   felfegyverkezve a Siófoki Rendőrkapitányság   parkolójában támadt rá egy helyi 
+férfira és társára,   akik éppen a támadók ellen tettek   feljelentést.<br><br>2008-05-23. 
+21:27<br>Több tucatnyi vasúti   síncsavart ellopó tizenéves lányokat   ért tetten a rendőrség Nógrád 
+megyében.<br><br>2008-05-23.   22:45<br><span style="font-weight: bold;">Egy férfi előzetes 
+szóváltást követően az utcán mellkason   szúrta a 33 éves jászladányi   áldozatát, aki a helyszínen 
+életét veszítette. Az elkövető elmenekült   a helyszínről. A   Jász-Nagykun-Szolnok Megyei 
+Rendőr-főkapitányság Bűnügyi osztálya nagy erőkkel   kezdte meg a   
+nyomozást.</span><br><br>2008-05-23. 22:59<br>Megtalálták pénteken annak a tizenhét   éves nagyatádi 
+  hungarista fiúnak a holttestét, aki még csütörtökön délután tűnt el Kaposváron.   Utoljára a   
+sétálóutcán látták az Európa parknál, amint a Kapos Plaza irányába sétált egyedül. A   szülők 
+azonnal   jelezték a Nagyatádi Rendőrkapitányságnak a fiú eltűnését, majd pénteken a   Kaposvári   
+Rendőrkapitányságon is bejelentést tettek - mondta el Bíró Gábor a megyei   rendőr-főkapitányság   
+szóvivője. Pénteken délelőtt osztálytársak, szülők, tanárok indultak el   keresni a fiút, végül két  
+ osztálytársa találta meg a holttestét a Béla király utca környéki tóban   kora délután és azonnal   
+bejelentést tettek. A helyszínre érkeztek tűzoltók és a Kötél munkatársai   is, a rendőrség pedig   
+lezárta a területet, azonnal megindította az ügy   felderítését.<br><br>2008-05-26. 10:39<br><span style="font-weight: bold;">A gyerekek nem tudnak   tanulni, mert a 12 éves, 38 kilós Bandi állandóan 
+  beszól a tanároknak. Fegyelmezéssel megy az óra,   tanulásra alig jut idő &#8212; mondta az egyik  
+ szülő. Egy anyuka arról beszélt, hogy félnek a   gyerekek Banditól és a bandájától. &#8212; Van   
+3&#8212;4 gyerek, akiknek a szülei tartoznak Bandi   apjának. A gyerek valószínűleg ezzel zsarolja   
+őket, és velük végezteti el a piszkos munkát, a   verekedést. A lányokat fogdossa. Mi lesz 1&#8212;2 
+  év múlva? Nem a tanárt kell hibáztatni. A   gyereket kellene megnevelni, nem pedig arra tanítani, 
+hogy   a származása mögé bújva bármit   megtehet! Van olyan gyerek, aki már iskolába sem akar menni, 
+annyira   fél. Több szülő is elmondta,   erősen fontolgatják, hogy jövőre másik iskolába viszik a 
+gyereküket.   Ennek egyik oka   Bandi.</span><br><br>2008-05-27. 10:34<br>Szeged-Kiskundorozsma - 
+Néhány hónapja   betörésekre   szakosodott rablóbandák tartják rettegésben a dorozsmaiakat. Péntek 
+hajnalban szétverték   a helyi   polgárőrség autóját, majd kirabolták a Szélmalom vendéglőt. Nincs 
+olyan a településen,   akinek   legalább egy ismerőséhez ne törtek volna be ismeretlenek az elmúlt   
+hónapokban.<br><br>2008-05-28.   08:59<br>Mezőkövesd - A nyomozás eddigi adatai szerint két férfi   
+gyakorlatilag Győrtől Ózdig több   bűncselekményt is elkövetett a tavalyi év decemberétől egészen ez 
+  év május 25-éig. A nyomozás   eddigi adatai szerint a két gyanúsított forintban számolva mintegy 
+50   milliós kárt okozott a   sértetteknek.<br><br>2008-05-28. 10:10<br>Hétől hétre több kárt 
+okoznak a   színesfémtolvajok. Az   Invitel rézkábel-hálózatát megkárosító, így a cég számára 
+legalább 50 millió   forint kárt okozott   gödöllői színesfém-tolvajokat elfogták a Gödöllői 
+Rendőrkapitányság     munkatársai.<br><br>2008-05-28. 11:48<br><span style="font-weight: bold;">Előzetes letartóztatásba     helyezte a bíróság azt a 23 éves jánoshalmi és 35 éves mélykúti 
+férfit is, akik egy még körözés     alatt lévő harmadik társukkal együtt, vasárnapra virradó éjjel 
+raboltak ki Mélykúton egy 18 éves     fiatalembert. A fiút leszólították, majd egy hirtelen 
+mozdulattal kicsavarták a kezéből a 20 ezer     forintot érő mobiltelefonját, majd búcsúzóul még 
+arcon is vágták. Jó időre, hűvösre kerül az a     feltételesen szabadlábon lévő fiatal nő is, akit 
+több besurranásos lopással is gyanúsítanak a halasi     rendőrök. Az elkövetők mindegyike 
+cigány.</span><br><br>2008-05-28. 13:34<br>Egy miskolci taxist     fizetés helyett sörösüveggel 
+fejbe vágta az utasa.<br><br>2008-05-28. 15:00<br>Berontott egy tanuló     anyja Pakson szerdán, a 
+déli órákban a Gazdag Erzsi iskolába &#8211; ahová speciális képességű     gyerekek járnak &#8211;, 
+és előbb az igazgatónőt, majd az egyik tanárnőt ütlegelni kezdte &#8211;     közölte a Tolna Megyei 
+Rendőr-főkapitányság sajtóreferense.<br><br>2008-05-28. 16:09<br><span style="font-weight: bold;">Tokodaltáró: Idős nénihez nénihez kopogtattak be a trükkösök. Egyikük egy     telefontársaság 
+képviselőjének adta ki magát és a kert végét akarta megnézni, mondván: oda   oszlopot   
+telepítenének. Míg a hölgy hátrakísérte a férfit, két társa már a lakásban kutakodott, de   az idő   
+rövidsége miatt semmit sem tudott elvinni. A három férfi beszállt egy sötét színű,   feltehetően 
+Audi   típusú személygépkocsiba és elhajtott. A személyleírás szerint az a férfi, aki a   
+telefontársaság   emberének adta ki magát fehér bőrű, 30 év körüli, vékony testalkatú, átlagos   
+magasságú, rövid barna   hajú, szürkés munkaruhát viselő személy volt, míg két társa feltehetően   
+roma származású, szintén 30   év körüliek, kövér testalkatúak, átlagos magasságúak, sötét hajú   
+személyek   voltak.</span><br><br>2008-05-29. 09:01<br>Az elmúlt napokban több alkalommal halálosan  
+   megfenyegették telefonon Szepessy Zsoltot, a Borsod-Abaúj-Zemplén megyei Monok község független   
+  polgármesterét - írta csütörtökön a Népszabadság. A fenyegetések valószínűleg kapcsolatban 
+lehetnek     azzal, hogy Monok képviselő-testülete a napokban úgy döntött: az önkormányzat 
+szigorítja a   szociális   juttatások folyósításának feltételeit.<br><br>2008-05-29. 18:10<br>Két 
+fiatalkorú ült   tegnap a   vádlottak padján Kaposváron súlyos bűncselekmények miatt. Például minden 
+ok nélkül   megtámadtak és   súlyosan bántalmaztak embereket a városban. A két tizennyolc éves 
+fiatalember a   kaposvári Zita   Nevelőotthon lakója volt. Az egyik fiatalnak a bíróság előtt 
+egyebek mellett azért   is kellett   felelnie, mert egy gyermekkorú társát állandóan rettegésben 
+tartotta, heti   rendszerességgel   bántalmazta, zsarolta, és arra kényszerítette, hogy neki 
+élelmiszert, szeszes   italt lopjon. Egy   alkalommal a nevelőotthon egyik irodájából is így lopott 
+pénzt a gyerek, de az   eset lelepleződött.   Tavaly januárban a vádlott egy gyalogos férfit 
+támadott meg minden ok nélkül a   cukorgyár környékén:   ököllel ütötte, rugdosta áldozatát, aki 
+súlyos, töréses sérüléseket   szenvedett. Az már csak a kisebb   turpisságai közé tartozik, hogy a 
+Zita-otthonban befeszítette az   egyik raktár ajtaját, és onnan   élelmiszereket lopott 
+el.<br><br>2008-05-29. 18:13<br>Lebontották a   VIII. kerületi Kálvária téren   álló Városi Színház 
+homlokzatát a napokban, mert a fémtolvajok   állandó látogatásának következtében   életveszélyessé 
+vált az épület portálja és   reklámtáblája.<br><br>2008-06-02. 10:27<br>Két rutinos   rókának 
+számító, Balaton-parti járor   csúnyán pórul járt a minap. Örömükbol ugyanis üröm lett, hiába   
+fogták el a muszaki cikkekre   szakosodott tolvajt. A betöro teljesen egyszeruen feljelentette a két 
+  egyenruhást az ügyészségen,   azért, mert a talicskához bilincselték ot a rendorök. A két járort   
+emiatt el is marasztalták,   mondván méltóságában sértették meg a bunözot.<br><br>2008-06-02.   
+10:33<br>2008. május 29-én a   Csanyik-völgyben a Chinoin átjáró közelében ismeretlen tettesek   
+eltulajdonítottak a vasúti   pályából síncsavarokat, alátétlemezeket.<br><br>2008-06-02.   
+21:52<br>KECSKEMÉT: Három napon belül   elítélte a bíróság Kecskeméten N. Jenőt (46), aki átmászott  
+ egy két és fél méter magas   téglakerítésen május 27-én délelőtt, azaz múlt kedden Kecskemét   
+belvárosában, a Csáky utca egyik   lakóházának kertjében. A teraszon keresztül bejutott a házba, 
+majd   a közlekedő folyosón szembe   találta magát az éppen a fürdőszobából kilépő háziasszonnyal. 
+Épp akkor,   amikor már csupán   karnyújtásnyira volt 70 ezer forinttól. Az első ijedtségéből 
+magához tért asszony   egyrészt a   férjét, másrészt tolvajfogásra betanított kutyájukat hívta. 
+Utóbbi tartotta sakkban a   pórul járt   tolvajt, akit a rendőrök is ismerősként köszöntöttek. Eddig 
+ugyanis kereken 36 alkalommal   ült már   a vádlottak padján N. Jenő, így a mostani balhé miatt 
+&#8211; visszaesőként - egy évi     börtönbüntetést kapott. <br><br>2008-06-03. 13:07<br>Eltört az 
+arckoponyacsontja annak a férfinak,     akit hétfon hajnalban vertek össze támadói a kaposvári 
+Füredi uton. Az 53 éves áldozattól elvették     pénztárcáját mobiltelefonját és szemüvegét is. A két 
+fiatal (17 és 20 évesek) támadót elfogták a     kaposvári rendorök.<br><br>2008-06-04. 
+12:16<br>Kedden délután jelent meg az öt idegen a 76 éves     férfi portáján, a Bács-Kiskun megyei 
+Madarason. Míg ketten elterelték az idős férfi figyelmét, addig     hárman módszeresen átkutatták a 
+házat, s onnan magukhoz vettek 40 ezer forintot. A gazda azonban     észrevette, hogy meglopták, 
+mire az egyik állókupec egy pofonnal leterítette őt, majd mind az öten     elmenekültek. A rendőrség 
+csoportosan elkövetett rablás miatt indított eljárást az ügyben, egyelőre     ismeretlen tettesek 
+ellen - értesült a HavariaPress.<br><br>2008-06-04. 12:20<br>Bócsán &#8211;     helyi információk 
+szerint &#8211; egy általános iskolás, felső tagozatos fiú megerőszakolt egy alsó     tagozatos 
+kislányt. A hírt a rendőrség nem erősítette meg, de nem is cáfolta.<br><br>2008-06-07.     
+13:58<br><span style="font-weight: bold;">Nem kizárt, hogy egy felnőtt családtagja rontotta meg a 11 
+    éves, roma származású B. Mónikát, aki egy héttel ezelőtt hozta világra Miranda névre keresztelt  
+   kislányát.</span><br><br>2008-06-08. 14:21<br>Megtámadtak Miskolcon egy szolgálatban lévő 
+buszsofőrt     a Szemere úti megállónál. A járműre felszálló négy férfi és egy kisgyereket tartó nő 
+először     szidalmazni kezdte a buszvezetőt, majd leöntötték sörrel, végül 
+megrúgták.<br><br>2008-06-09.     12:59<br>Sándorfalva - Néhány napja elhurcolták és megerőszakolták 
+a Sándorfalva és Ópusztaszer     közötti söröző 22 éves, kétgyermekes alkalmazottját. A támadók 
+előtte kirabolták a vendéglátóhelyet.     A fiatal nőt a szegedi új klinika pszichiátriáján kezelik. 
+Úgy tudjuk, azóta többször     életveszélyesen megfenyegették. Többen úgy tudják, két férfit már 
+elfogtak a rendőrök. Azt mindenki     megemlítette, hogy a környéket egyetlen, 40-50 tagúra becsült 
+család tartja     rettegésben.<br><br>2008-06-09. 15:01<br>Ellopták II. Rákóczi Ferenc 
+bronzötvözetből készült     mellszobrát hétfőre virradóra Nagykállóban, a bűncselekménnyel okozott 
+kár meghaladja a másfél     millió forintot &#8211; közölte a Szabolcs-Szatmár-Bereg Megyei 
+Rendőr-főkapitányság     sajtószóvivője.<br><br>2008-06-10. 15:29<br>Ismeretlen tettesek éjszaka a 
+Kunhegyes-Abádszalók     közötti területen szétverték a trafó szekrényt, darabjait a környezo 
+szántóföldön szétdobálták, és a     benne lévo réz és színesfémet vitték magukkal. A rongálási kár 
+megközelítoen 700.000 forint, amely     az EON Zrt-t terheli.<br><br>2008-06-10. 16:21 <br>15 éves, 
+hetedik osztályos - hátrányos   helyzetű,   nehezen kezelhető - fiú az egyik nyírbátori iskolában 
+vágta meg késsel osztálytársát,   aki könnyu   sérülést szenvedett. A súlyos testi sértés kísérlete 
+miatt kihallgatott fiú azt mondta,   hogy hétfon   dulakodás közben vette elo pillangókését, de 
+véletlenül sértette fel osztálytársa     mellkasát.<br><br>2008-06-10. 16:21<br>A 16 és a 17 éves 
+rablót hétfon fogták el, ok Nyíregyházán,     az utcán támadtak rá múlt szombaton egy tizenéves 
+fiatalra: egyikük lefogta, a másik többször     megütötte és késsel is fenyegették. A könnyu 
+sérülést szenvedett fiú végül átadta nekik pár ezer     forintját, de támadói elvették tole az 
+ezüstláncát és gyurujét is.<br><br>2008-06-10. 16:57<br><span style="font-weight: bold;">2008. 
+április 21-én 07. 25 óra körüli idoben egy 16 éves lány az     iskolájába tartott. A Wesselényi 
+utcán leszállt a Sárándról érkezo távolsági autóbuszról, majd     gyalogosan a Varga utca irányába 
+indult. A Varga utca 41. szám elotti útszakaszon beérte ot az addig     utána haladó kreol bőrű 
+férfi, s hátulról csuklójánál fogva megragadta, s &#8222;Gyere bébi, most     lerendezzük!&#8221; 
+felszólítással, maga felé fordította. A fiatal lány összeszedve minden erejét     magas sarkú 
+cipojével támadója lábfejére taposott, majd belerúgva a férfi sípcsontjába, kiszabadulva     a 
+szorításból, futásnak eredt.</span><br><br>2008-06-10. 17:02<br><span style="font-weight: bold;">Egy 
+76 éves no a postaládák előtt letette a földre az élelmiszerrel teli szatyrát, hogy a     ládájából 
+kivegye a kapott küldeményeit. Ekkor az üzletben már nagyon segédkezni akaró erősen kreol     bőrű 
+férfi hirtelen ott termett mellette, s felkiáltott: &#8222;Vigyázzon ég a táskája&#8221;, majd     a 
+szatyor felé nyúlt. A néni megpróbálta a férfit a szatyor eltulajdonításában megakadályozni,   mire  
+ az őt ellökte, s a táska tetejéről levéve a pénztárcát (benne 2000 Ft-tal) kimenekült a     
+lépcsőházból.</span><br><br>2008-06-15 18:39<br>Eszméletlenül találtak lakásában vasárnap reggel egy 
+    83 éves zagyvarékasi férfira. A házban betörok jártak, akik olyan súlyosan megverték az idos   
+embert,   hogy azt a kórház intenzív osztályán ápolják.<br><br>2008-06-17. 11:09<br><span style="font-weight: bold;">Galgagyörkön egy magyar házaspár telkén álló kisházba beköltözött egy   
+népes cigánycsalád, ami   idővel meglehetősen elszemtelenedett, és terrorizálni kezdte a házaspárt.  
+ Egy alkalommal a férfit   úgy megütötték, hogy dobhártyája beszakadt. A férfi ezután feljelentést   
+tett, mire a cigányok   annyira dühbe gurultak, hogy nagyjából 50-en összegyűltek, és kapákkal,   
+kaszákkal felfegyverkezve   üvöltözték a magyar házaspárnak hogy meg fogják őket ölni. A férfi a   
+Magyar Gárdától kért - és   kapott - segítséget. A rendőrök csak a Gárda megérkezése után voltak   
+hajlandóak a helyszínen   megjelenni, aholis igazoltatták a Gárdistákat, ügyet sem vetve a   
+felfegyverkezett fenyegetőző   cigányhordára. A házaspár végül a Magyar Gárda segítségével menekült  
+ el telkéről, örökre otthagyva   azt.</span><br><br>2008-06-19. 11:05<br><span style="font-weight: bold;">Kedd éjjel egy vita hevében   Lakatos László combon szúrta élettársát. Az asszonyt kórházban  
+ ápolják, a szurkálót pedig súlyos   testi sértés megalapozott gyanújával hallgatták ki &#8211;   
+közölte a rendorség   szerdán.</span><br><br>2008-06-19. 23:20 <br><span style="font-weight: bold;">Két fiatal, ittas   állapotban lévő lányt erőszakolt meg két cigány férfi a Margit-szigeten.  
+ A lányok feljelentést   akartak tenni, de erről a rendőrség lebeszélte őket, mondván, a szembesítés 
+  után az elkövetők minden   bizonnyal zaklatnák és fenyegetnék őket.</span><br><br>2008-06-19.   
+23:44<br>Riasztópisztolyt   szorított fejéhez, cigarettát követelt, majd leszállásra kényszerítette  
+ utastársát az ocsényi   ámokfutó. Senki sem sérült meg, az elkövetot a rendorök   
+elfogták.<br><br>2008-06-20. 18:32<br><span style="font-weight: bold;">Három roma kiskorú felelős a  
+ június 11-i besztercei tűzvészért, amelyben   leégett az a XIV. századi evangélikus templom tornya. 
+  A 13-15 év közötti fiatalok réz és ólom   tárgyak eltulajdonítása miatt hatoltak be a templomba, 
+de   később meggondolták magukat a lopást   illetően. Kijövetelükkor egy öngyújtóval játszadoztak, 
+amivel   felgyújtottak egy műanyagfóliát,   amelyről a tűz tovább terjedt a templomot körülvevő 
+állványra és   a   toronyra.</span><br><br>2008-06-25. 10:56<br>Halálos balesetett szenvedett autós 
+tárcáját lopta   el a   huszonéves férfi, majd a benne talált 400ezer forintot 
+eljátékgépezte.<br><br>2008-06-27.     14:16<br>Csernely - Nyolcvan év után nem szól többé a 
+csernelyi lélekharang, mert színesfémtolvajok     leszerelték és elvitték. A helyszínt ismerő, 
+felkészült bűnbanda dolgozott a temetőkápolnánál, mert     négy méter magasból lopták le a súlyos 
+zsákmányt. <br><br>2008-06-27. 17:07<br>Ebben a hónapban     háromszor törtek be a GV területére. A 
+harmadik alkalom már nem is betörés, hanem szabályos rablás     volt, fényes nappal! A hónap elején 
+az összes helyiséget, raktárat irodát feltörték, ajtókat     berugdalták, lakatokat levágták. Akkor 
+kevés mindent vittek el, szerszámkészletet, és vízhűtőket.     Most vasárnap hajnalban 5 db C50-es 
+ütközőt, a tetteseket már elfogták, az ütközők megsemmisültek.     Tegnap délután (június 24.) 
+világos nappal du. fél négy és este nyolc között egy darus autóval     ellopták a C50,5723 mozdony 
+alvázát, az alatta lévő mesztegnyői eredetű forgóvázakkal, 4 db Bak sor.     kocsi forgóvázat, 4 db 
+Bak kerékpár tengelyt. Az utolsó GV üzemvezetője már úgy jár a Fonyódi     Rendőrkapitányságra mint 
+a vasútjára.<br><br>2008-06-27. 19:35<br>Életveszélyesen megfenyegették a     tolvajok azokat a 
+szabadkígyósi gazdákat, akik nem akarták hagyni, hogy szabadon elvigyék a     terményüket. Ez az 
+eset nem számít egyedinek, a környékbeli gazdák valamennyien megéltek már     hasonlót. Kinek 
+harminc, kinek negyven bála szénája tűnt el. A múltkori eset óta őriztetik     földjüket, de 
+továbbra sem érzik magukat biztonságban.<br><br>2008-06-29. 20:23<br><span style="font-weight: bold;">A csíkszéki gazdák a tavalyhoz képest a földjeik 80 százalékát     felhagyták, mert csak a 
+cigányok aratnak.Az egyik idős asszonyhoz betörtek és elvitték az összes     vasat, rezet, 
+alumíniumot, máshonnan kilopták a terményt, egyik istállóban megütötték a borjút és     
+megszurkálták a tehenet, a mezőről elvitték a lekaszált és boglyába rakott sarjút &#8211; sorolja    
+ egy csíkszeredai férfi a Hargita Népe újságírójának. A férfit többször is halálosan megfenyegették 
+-     rendőrök füle hallatára is - azzal, hogy megölik, és a fogyatékos fiukra fogják a tettet, mert 
+őt     úgyis csak pár évre csukják le.</span><br><br>2008-06-30. 18:25<br>Ledöntöttek egy négy méter 
+magas     keresztet és ellopták a vas részeit Ádándon - mondta el Beke Ibolya, a siófoki kapitányság 
+    sajtóreferense. <br><br><div style="text-align: center;">*<br><br></div> </div>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-03-21&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2023&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2023&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2023&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2023&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2023&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2023&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2023&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2023&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment160448"></A>63. Kartács</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2023&id=159740#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-23 21:02:34</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">1.Letöltés:hogy az bűncselekmény-e sokaknál nem tisztázott. Elvileg már akkor jogdíjat vásárolsz amikor megveszed a cd-t.<br />
+<br />
+2.Azok a rohadt arányok ugye. Erről mindig eszembe jut a vicc: Mért kisebbség a ork? Mert a többsége börtönben van.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159930"></A><FONT COLOR="#FF0000">62. </FONT>miller</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2023&id=159740#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-22 11:38:30</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159925"></A>61. <A HREF="mailto:pherenc_@freemail.hu" STYLE="color: #000000">Zebe (Pherenc)</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2023&id=159752#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-22 11:23:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Csináld!A lehetőség adott!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159834"></A>60. Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-03-22 02:18:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">  Én is csak félig olvastam el, viszont lementettem az egészet.<br />
+Az a borzalmas, hogy ez a kimutatás csak a jéghegy csúcsa.<br />
+<br />
+  És van még közöttünk olyan polkorrekt agyalágyult aki kivételekre hivatkozik.<br />
+<br />
+  A kivételeket tényleg semmiképp sem szabadna a többséggel egy kalap alá venni, de a többsgnek ne legyen kegyelem ha tetten érik bármilyen magyarellenes bűnténnyel.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159776"></A><FONT COLOR="#FF0000">59. </FONT>nemtom</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2023&id=159696#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-21 23:15:30</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159773"></A>58. LifestyleX -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-03-21 22:50:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">k*csög sem vagy....dupla szívás... ;D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159772"></A><FONT COLOR="#FF0000">57. </FONT>twoamigos</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2023&id=159761#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-21 22:48:19</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6566.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159771"></A><FONT COLOR="#FF0000">56. </FONT>twoamigos</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-03-21 22:43:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6566.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159770"></A>55. twoamigos</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-03-21 22:42:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6566.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">amikor a blahás maugli rokonainál volt az RTL klub akkor az Erdélyben volt nem?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159769"></A>54. LifestyleX -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-03-21 22:38:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Főnix: kérlek tegyünk egy felajánlást Grafolka számára: szívesen várjuk a 2252 esetet tartalmazó listáját, aminek leközléséhez lehetőséget és helyet biztosítunk itt a bombagyáron  számára.<br />
+Tudjuk ezt részére biztosítani???<br />
+<br />
+Grafolka: tehát nem mondhatod, hogy lehurrogtunk, vagy, hogy egyoldalúan  figyelembe sem vesszük, hogy Te mit mondasz. Várjuk a listádat.....ennyi....részemről ez lezárva....Ameddig pedig nincs lista, addig jobb lenne ha befognád a ......<br />
+(az ilyeneket akasztani kellene + elhatárolódom magamtól....)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2023&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2023&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2023&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2023&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2023&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2023&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2023&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2023&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

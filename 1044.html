@@ -1,0 +1,648 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1044#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A zsidó emancipációról a Pesti Hírlapban, 1844 május 5-én";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=1044#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>A zsidó emancipációról a Pesti Hírlapban, 1844 május 5-én<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 június 13. 00:50:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1044.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify; font-style: italic;">Az     
+Országos Széchenyi Könyvtár hírlaptárából szedtem elő az alábbi cikket, amely a Pesti Hirlap 1844    
+ május 5-i számában jelent meg. Témája a zsidók emancipációjának, azaz polgárjogi egyenlősítésének   
+  korkérdése. A cikk írója a köztiszteletben álló aradi Fábián Gábor ügyvéd, országgyűlési 
+képviselő,     a Magyar Tudományos Akadémia és a Kisfaludy Társaság tagja. Mind ő, mind a lapot 
+szerkesztő, a     cikkre széljegyzetben válaszoló Kossuth Lajos a korszak haladó liberális 
+politikusai közé tartoztak.     Ám a zsidók egyenjogúsításának témájában véleményt formálva bizony 
+nekik sem volt egyszerű dolguk.     Annak ellenére, hogy mindketten maradéktalanul filoszemita álláspontot képviselnek, bizonyos dolgokat kénytelenek elismerni kampós orrú kedvenceikről. Olvassuk el ezt a cikket, okulásul történelmünk egyik csendes 
+fordulópontjáról, amikor a lelkes     emberbaráti naivitás győzött a többség józan belátása fölött, 
+egyes haladó szellemek jogos     aggodalmai ellenére, néhány évtizeden belül véres eredményt hozva a 
+várt felemelkedés helyett. A     cikket betűhíven írtam át.<br></div><br><div style="text-align: justify;"><span style="font-weight: bold;">Vezércikk. </span>(Zsidó-emancipatio.) A' zsidók 
+polgárositását nehány év   óta nálunk is a'     kor fontosb kérdései közé sorozva lenni látjuk, és 
+tekintve a' modort, mellyben az     törvényhozásunk   által már második orsz. gyűlésen tárgyaltatik, 
+alig csalatkozunk, ha hiszszük,   hogy   e' kérdésnek   nemcsak jövendője van, de sőt nem messze az 
+idő, melly neki Messiását, a'   kedvező   fejleményt   biztosan meghozandja. A' feladat nagy és 
+szép, 's kiküzdése minden esetre   becsületére   váland a'   magyar névnek; és ha a' következmények 
+üdvös volta iránt szinte illy   tisztán áll a' dolog     elöttünk: akkor nincs mást mit tennünk, 
+mint hogy az inditványt, melly   fogantatását philantropiai     érzelmeknek köszöni, ne csak mint 
+emberbarátok, de mint honbarátok is   öszszevetett vállakkal     pártoljuk 's létre jőni siettessük. 
+Ez utóbbi pontra nézve azonban két   egymással ellenkező 's ugy     szólván, ellenséges vélemény 
+uralkodik közöttünk; egyik, mellynek   képviselője az országgyűlési     követek többsége, a' 
+zsidó-emancipatioból csak üdvöt, - másik,   mellyet a' nemzetnek törvényhozásba     be nem folyó 
+nagy része vall magáénak, csak vész jósol a'   hazára; és e' nagy részhez tartoznak a'     királyi 
+városok is. Ha immár ez utóbbi vélemény   pártolóihoz, az alsó és felső tábla velök egyetértő     
+nevezetes töredékeit is oda számítjuk, akkor   a' zsidóügy mellett nyilatkozott megyei képviselők    
+ többségével roppant ellenzék, mondhatni, egy   egész nép áll szemközt. A' nép érzelmeit, 
+gondolkodását     törvényhozónak figyelemmel mellőzni nem   szabad; mert olly törvényekben, mellyek 
+amazokba ütköznek,     köszönet lenni nem szokott, 's   ollyanokat hozni, víz ellenebeni úszás, 
+hálátlan sisyphusi   fáradalom.   Ha tehát az emancipatióval   czélt elérni akarunk, nem elég annak 
+az orsz. gyűlésen   többséget vívni   ki, hanem szükség az   eszmét megbarátkoztatni a' néppel is, 
+'s olly köntösben   mutatni föl előtte,   hogy benne többé   ijjedelmes rémalakot látnia oka ne 
+lehessen. A' polgárositott   zsidó képe, ugy, mint   azt most az   emancipatio barátai előnkbe 
+állítják, megmosdatva, tisztázva 's   ajánló oklevelekkel   ellátva,   első tekintetre tetszőnek és 
+kecsegtetőnek látszik ugyan, de bővebb   vizsgálat után   észrevehető,   hogy rajta a' régi megvetés 
+szennyfoltjából, mellyel öltöztetői róla   levenni vagy   elfeledtek,   vagy nem akartak. Én e' 
+foltot jól látom, és mivel róla minden ember   hallgat, ki fogom   mutatni,   hol van az; ki attól 
+a' zsidót megmentendi, az lesz az emancipatiónak   nemcsak Izrael   népétől, de   a' magyar hontól 
+'s egész emberi nemzettől is hálával 's ércz   szobrokkal jutalmazandó   igazi   
+Messiása.<br><br>Azokból, miket eddig mondék, lelkembe pillanthatott   az olvasó, 's rólam már     
+annyit tudhat, hogy 1) én is magamat az emancipatio barátai közé számitom;   - 2) hogy azzal, mit    
+ elvrokonaim ez ügy körül eddigelő tettek, megelégedve nem vagyok. Igaz e az   első? 's igazam van e 
+  a'   másodikra nézve? az a' általam mondandókból ki fog világlani.<br><br>A'   zsidóknak polgári   
+jogokból   történt általános kiszorittatása 's ezzel együttjáró megvettetése, a'   keresztények   
+vallásbeli   türelmetlenségéből veszi első eredetét. E' türelmetlenség igen is gazdag   táplálékot   
+találta magának   az ó-testamentomi szent könyvekben, hol a' zsidóság annyi testi lelki   mocsokkal  
+ rajzoltatik, hogy   egy illy nép iránt csak némi rokonszenvet is érezhetni, a'   kereszténység első 
+  századaiban, ha nem   bűnnek, de valóban olly erénynek nézethetett, mellyre, a'   világ akkori   
+műveltsége mellett, még talán   egy socratesi kebel sem, csupán egy jézusi szelídségű   lélek lehet  
+ vala képes. Az emlitett szent   könyvek t. i. a' zsidó népet tisztátalan, magába   zárkózott, 
+minden   más nemzetet gyűlölő, önző, nyakas   és háládatlan, 's ugyanazért istentől   számtalanszor  
+ elhagyott, elátkozott népnek festegetik.   Természetes, hogy illy népfajnak   világszerte elszórt   
+töredékeitől, mellyekben csak a' szent   könyvbeli isteni átkok megtestesült   példányai tüntek föl  
+ a' képzelődés előtt, vallásos borzalommal   fordult légyen el minden keresztény   nemzet; kivált   
+midőn ez ellenszenv igazolására még az emberiség   tiszta elveit hirdető.   uj-testamentomi szent   
+könyvekbn is számos helyek könnyen alkalmul   használtathattak, mint p. o. 1   Thess 2:15, hol Pál,  
+ mint apostol, mint maga is eredetére nézve   zsidó, 's egyébiránt a' zsidóknak   nem épen 
+ellensége,   rólok illy szenvedélyes hangon nyilatkozik:   <span style="font-style: italic;">"Kik az 
+ur Jezust is   megölték, és az ő saját prófétaikat és minket   is kergettek,   </span><span style="font-weight: bold; font-style: italic;">se istennek nem kellenek,   és mind az   embereknek   
+ellenségeik.</span><span style="font-style: italic;">"</span> Ismét a'   zsidóknak, mint   emberiség 
+  kikiáltott ellenségeinek állandó megvettetése 's számtalan üldöztetése a'   kereszténység   régi   
+faragatlanabb századaiban. Később, midőn az ébredő tudományos műveltség világánál   a' vallási   's  
+ politicai fogalmak tisztulni kezdettek, a' statusok e' népnek tettleges üldözésével   felhagytak,   
+  de a' régi megvetés maig is fenmaradt majd minden keresztény népeknél. És hogy ez,   korunk     
+műveltségének daczára is így van, czégéres erkölcsi tulajdonok, mellyekkel az írás e' népet       
+jellemzi, annak nagyobb részén jelenleg is jobbára feltaláltatók. A' zsidóság ma is minden statusban 
+      egy, a' nép többi részeitől elszigetelt testületet képez; érzésre, gondolkozásra, életmódra   
+nézve     amazzal egészen ellenkező ösvényt követ; közérdeket nem,csak magányhasznot ismer *); a'   
+fenálló     nemzetiséggel sehol össze nem olvad, 's így a' status fentartásának főelvével, az   
+érdekegységgel,     merő ellentétes helyzetben áll. És ezek immár körülbelöl azon nehézségek, mikez  
+ mint másutt, ugy     nálunk is az emancipatio kárhoztatói a' zsidók ellen felhozni szoktak; és hogy 
+  ezek csakugyan     nyomnak is valamit, kitetszik onnét, mert ez észrevételeknél magát a' tényt az  
+ emancipatio barátai     is készek nagy részben elismerni, csakhogy nálok könnyű a' felelet,   
+mellynek, véleményök szerint,     szükség ez oldalról eloszlatni minden aggodalmat.<br><br>Halljuk,  
+ mivel felelnek! Ők az emancipatio     ellenzőihez imigy szólnak: A' vádak, miket ti a' zsidók ellen 
+  felhoztok, fájdalom! nagy részben     igazak; a' zsidók, kevés egyes kivételekkel, erkölcstelen   
+népfaj, mellytől a' haza felvirágzására     jelen helyzetben semmit nem várhatni. De mi ennek valódi 
+  oka? Elnyomatásuk, melly alatt századok óta     sinlenek, - megvettetésök, minélfogva minden   
+polgárjogokból kizárva, polgári jólét hiányát, a'     magány jólét bármi alacsony utakoni   
+megszerzése által kénytelenek pótolni, 's igy magoknak     elnyomóikon legalább némi elégtételt   
+venni; ez tartja bennök elfojtva a' rokonérzetet keresztény -   a'   közérzetet hon iránt; hanem   
+segitsétek csak ki e' népet a' gyalázat mélységeiből, emeljétek   csak őt   fel magatokhoz, 's   
+lerontván az elkülönző korlátokat, állítsátok csak őt az állmomny körén   belől   veletek egy sorba, 
+  és meglátandjátok, hogy mindezek máskint lesznek. A' felszabaditott   zsidóság   hazának,   
+alkotmánynak, nemzetiségnek nevezetes nyereséget fog hozni magával. - Illyformán   beszélnek   az   
+emancipatio barátai. És én részemről legalább, mint szintén emancipatiót pártoló,   örömest     
+megvallom, hogy viszont ezek is nyomnak a' latban, különösen pedig mik a' zsidók megrovott       
+tulajdonaik mentségéül felhozatnak, azok igazságát általában szükség elismerni.<br><br>A' zsidóügy   
+    mellett és ellen harczoló két véleménypárt ezen rövid vázlatából azt látjuk, mikép ez egy 
+pontban,       hogy az emancipatiótól azon esetben, ha a' zsidó mostani jellemét emancipatio után is 
+  megtartaná,     semmi üdvöst a' nemzet nem várhatna, mind a' két párt egyetért, 's köztök a'   
+különbség csak a'   körül   forog, hogy egyik a' magát még ó-testamentomi időkből datáló zsidó   
+természetet az   emancipatio   törvény általi kimondásával egészen a' status érdekében átalakulni   
+reményli; másik   ellenben ezt   magával el nem hitetheti, 's attól tart, hogy a' zsidó lényegében   
+azután is csak az   marad, a' mi   volt régente és mindenha, 's a' minőnek ma magát mutatja. Most   
+tehát azt kell   vizsgalnunk, mellyik   hit alapos e' kettő közül; az e, mellynek kiséretében e'   
+reményt, vagy   mellyében az aggodalmat   szemléljük? És, bár őszinte barátja az emancipationak, az  
+ utóbbit vallom   magaménak, 's merész vagyok   képzelni, hogy e' hitet fogom birni igazolni   
+elvrokonaimmal.<br><br>Ha   a' zsidóság polgárosítása   olly móddal fog létesülni, mikint most az   
+terveztetik *): ugy a'   magunkra vállalt szép feladatnak   csak felig fogtunk megfelelni, 's épen   
+azon felét végeztük be,   melly a' hazát veszélyes crisiseknek   teheti ki; a' másikat pedig, melly  
+ az egész hazára a' koronát   felnyomná, és a' munka áldásit   meghozná, végezetlenül hagytuk.   
+Ugyanis azt kérdem elvrokonaimtól:   valljon azzal, hogy az   emancipatio csak ugy pusztán, minden   
+előzmény vagy járulék nélkül mondatik   ki, le lesz e döntve   minden gyűlöletes korlát, mi a'   
+zsidót tőlünk ekkorig elkülönbözte, 's   jogállapota egenlő leszen e   a' többi népével? Én azt   
+mondom: <span style="font-weight: bold;">nem!</span> Mert mig igy   fenhagyatik megalacsonyitja,   
+melly őt a' statusban megvettetett   páriává 's mig fenáll, addig zsidó   és keresztény, egyebiránt  
+ legkedvezőbb polgári viszonyok között   is, örökké természetes ellenségei   lesznek egymásnak. 
+Midőn   a' korlátok lerontásáról van szó, nemde   a' legnagyobbikon,   legszemetszuróbbon kell 
+kezdeni a'   dolgot? És mégis kinek jutott az emancipatio   hősei közül ekkorig   eszébe megpendítni 
+azt, hogy:   <span style="font-weight: bold;">a' zsidó és   keresztény közti   házasságot tilalmazó 
+törvény   töröltessék el?</span> Ezen tilalmazó törvény az,   mellyben én a'   lerontandó korlátok   
+legnagyobbikát látom, 's melly előttem vészt jósló sötét folt   gyanánt ötlik föl   a'   
+zsidó-emancipatio megállapitott kérdésében. E' törvény ásta meg sírját   először a' zsidó emberi és  
+   polgári méltóságnak; e' tette őt csak valódi páriává a' népek közt;   mert ezzel az volt 
+kimondva,     hogy a' zsidó nép az emberi nemnek egy oly söpredéke, mellyel a'   többinek 
+összeelegyedni   gyalázat,   kárhozat és vétek. - Mellyik emberosztály van ennél már ma   mélyebben 
+lealázva? - Azon   féligvad   emberfajokkal, mellyeket, ugy látszik, maga a' természet   nálunk 
+europaiaknál egy fokkal   alább   sorozott - az amerikai indusokkal, szerecsenekkel   
+összeházasodnunk szabad: csak az egy   zsidófaj az,   mellynek fején a' keresztény törvények 
+általános   anathemája fekszik. Lehet e   csudálni, hogy illy   törvény mellett egymást zsidó és 
+keresztény   kölcsönösen gyűlöli, 's hogy az   emancipatiónak annyi   ellenzői vannak? És valljon 
+remélhető e, hog   daczára ama' törvénynek, melly   e' kölcsönös gyűlöletnek   örök élesztőjéül 
+szolgáland, a' tervezett   emancipatio helyrehozzon   mindent, 's azon üdvös   gyümölcsöket, 
+mellyeket tőle várunk, mellyekért   érette harczolunk,   megteremje a' haza számára? Hisz   igy a' 
+zsidó, elnyert polgárositása után is,   keresztény   polgártársai ellenében csak a' régi lealázott   
+népfaj marad, mellynek a' nemzet többi   részeivel   összeolvadnia nem szabad nem levén, továbbra is 
+  előbbi elszigetelt alacsony körébe kell     szorulnia, oda, hova őt megvetés taszitotta, - azon   
+körülsánczolt térre, hol százados hajlamai és     a' hosszú nyomás alatt elfajult polgári és 
+erkölcseinek   gazdag burjánja tenyészik, - hol, ha     mindjárt akarná is, fajának emelésére semmi 
+sikeres lépést nem   tehetne. A' faj-nemesítésnek     valamint állatoknál, úgy embereknél is 
+legbiztosabb módja a' különfajok   párosítása; korcs ivadék     maga magát soha meg nem nemesíti, és 
+ennek kiáltó bizonysága maga a'   zsidóság. Ime a'     szerencsétlen emberfaj, mellynek eredeti vée 
+soha idegen elemmel föleresztve és   vegyítve nem volt,     arczképének sajátos typusát minden 
+nemzetnél máig megtartotta, ugyhogy arról a'   zsidóra   mindenütt   ráismerhetni. Miért nem 
+tapasztaljuk ezt azonegy országban élő más különböző     népfajoknál? Azért,   mert ezeknél az 
+eredeti typusok egymástól elütő nagy különbségeit a' kölcsönös     párosodás   kiegyenlitette. A' 
+szegény zsidó tehát, ha az említett házasságot tiltó törvény   megmarad,     polgárosittatása után 
+is eltörölhetetlen bélyegét fogja viselni megvettetett   helyzetének 's     páriaságának is a' maga 
+kirívó arczvonásaiban. Sorsa az leend, mi az amerikai   fölszabadított     szerecsené; polgári 
+jogokkal bírand, de a' reá ujjal mutató gúny keserűvé teendi   neki azok     gyakorlatát. Hogy már 
+illy körülmény mellett a' zsidó elem a' nemzeti elemmel   egybeolvadhasson, az     merő lehetetlen; 
+és ha egybe nem olvad, akkor az, maga egész patrificált   zsidó valóságával, előbbi     ellenséges 
+állásában marad, 's ezen állásában a' reá ruházott polgári   jogokkal bizonyosan csak     fegyvert 
+fogtunk adni kezébe magunk ellen. Valóban, akármit okoskodjak,   itt az ohajtott assimilatiót     
+egyedül a' házassági tiltó törvlny megszüntetése képes csak   eszközölni. Ha ezen korlátot   
+lerontottuk,   akkor a' zsidónak nyitva lesz az ut a' nemzet   érdekébeni tökéletes átalakulásra. Ez 
+  által régi   szennye lemosatván, egy rangba fog jőni az   emberiség többi részével; a' 
+rangegyenlőség   közelebb   hozza őt más vallású polgártársaihoz; a'   közel érintődés 
+rokonvonzalmat szülend, mellyből   családi   szövetkezések - a' társas élet e'   legszorosabb 
+kapcsai - fognak keletkezni; és végre a'   családi   erkölcsök módosítni fogják a'   néperkölcsöt a' 
+többség szellemében mind addig, mignem   egyszer, a'   vonszás physicai törvényénél   fogva, a' 
+nagyobb elem végképp elnyeli és felolvasztja   magában a'  kisebbet. Igy fog csak a' zsidó   
+megrögzött különcködő hajlamaiból lassankint kivetkőzni,   's mind   magány, mind közéletben a'   
+status többi polgáraival egy erényt tartani, ugyanazon módokat,   ugyanazon   eszközöket használni,  
+ szóval: a' többiekkel egy testté lélekké   olvadni.<br><br>Szerintünk tehát, az   emancipatiónak,   
+hogy üdvös lehessen, mellőzhetetlen   föltétele: <span style="font-weight: bold;">a'   zsidó és   
+keresztény közti házasság felszabadítása.   </span>De itt már hallom az ellenvetést, hogy t.   i. e' 
+  kérdés valláselvekbe vág, 's ezeket   érinteni polgári törvényhozásnak nem szabad. Én ez     
+ellenvetést, legnagyobb általánosságban véve   is, erőtlennek, különösen a' jelen esetben pedig épen 
+    helyén kívül valónak lenni hiszem. Mert ugy   vagyok meggyőződve, hogy törvényhozásnál legfőbb   
+  tekintet, mellynek minden egyéb alárendelendő: a'   status java és fennmaradása; és ha találkoznék 
+    olly valláselv, melly e' tekintetben szembeötlő   ellenkezésben állana, 's magát a' 
+közállományra     nézve veszélyesnek mutatná: azt, ha mindjárt   dogmai ranggal birna is, a' 
+törvényhozónak nem csak     joga, de kötelessége is volna tetszése szerint   módositni, vagy ha 
+módositást nem tűrne, végkép el   is   törölni. Mi pedig a' jelen kérdést illeti:   ez tudtomra sem 
+a' zsidó, sem a' keresztény vallás   ban   még csak dogmák sorába sem tartozik. Mózes   cerimonialis 
+törvényei tiltani láttatnak ugyan az     idegenekkeli házasságot, de e' törvények   szigoruságát az 
+utóbbi kor sokban lágyította, 's azok     legalább, kiket a' felekezet emberei közül   e' tárgyban 
+megkérdeztem, előttem mind ugy   nyilatkoztak,   hogy már a' zsidó vallás a'   keresztényekkeli 
+házasságot nem tilalmazza. Az   uj-testamentomban egyenes   tilalomnak (mert az 1 Kor   7:39. 2 Kor 
+6:14 nem szólnak világosan   házassági szövetségről) sehol   nyomát nem találom; de igenis   annak, 
+hogy az illy vegyes   házasságok folytonos divatban voltak, 's   nemhogy kárhoztattak volna,   sőt 
+nyilván jóváhagyatták   magok az apostolok által. Pál ezekről szólván,   1. Kor 7:12 - 14 igy   
+nyilatkozik: <span style="font-style: italic;">"Ha valamelly atyafiunak   hitetlen felesége vagyon,  
+ melly ő vele   együtt akar lakni, el ne bocsássa azt; és a' melly asszonyi   állatnak hitetlen 
+férje   vagyon, és   az vele akar lakni, el ne hagyja az asszonyi állat azt; mert   <span style="font-weight: bold;">a'   hitetlen férfiú megszenteltetett az ő feleségében, és a' hitetlen   
+asszonyi állat     megszenteltetett az ő férjében.</span>"</span> Innét a' kereszténység első   
+századaiban is semmi     egyenes, akér egyházi, akár polgári tilalom e' részben soká nem létezett;   
+kereszteltek 's     kereszteletlenek közti házasságnak számos példáira akadunk, mellyekből elég ez 
+egyet   említnünk,     hogy még sz. Ágoston anyja Monica is pogány hitű emberhez ment férjhez. 
+Egyházi tilalom   világos     nyomát csak a' IV. században kelt canonok között látjuk először; de e' 
+canonok is csupán   apróbb     zsinatok, nem pedig ugynevezett <span style="font-weight: bold;">Oecumenicum</span>   conciliumok     által hozattak, s általános alkalmazásukat, ugy látszik, 
+csak a' később kifejlett   szokásos törvény     állapította meg. Azonban még ez egyházi törvény is, 
+olly esetekben, midőn zsidó   házaspár közül     egyik megkeresztelkedik, ezt a' kereszteletlennel 
+további is házasságban élni máiglan   megengedi,     nyilvános bizonyságául annak, hogy illy 
+szövetségben maga, az egyház semmi veszélyest,   semmi     kárhozatost nem lát. - Polgári 
+törvényhozásunk, melly a' házasság körül mindig rendelkezett,   e'     tárgyban az egyház-canonokkal 
+majd összehangzó, majd ellenkező szabályokat állapított meg. Sz.       László I. decretumának 10. 
+fejzete világosan tiltja a' zsidó és keresztény közti házasságot; de több       tilalmazó törvényt 
+nem tudunk felmutatni. A' korát bélátásban sokkal haladott világos fejű   Kálmán     király 
+ellenben, törvénynyel kényszerité a' szinte kereszteletlen <span style="font-weight: bold;">ismaelitákat,</span> hogy leányaikat kereszténynek és ne magok   nemzetségéből való férjnek   
+  adják feleségül. (Colom. D. I. e. 48.) Vannak egyház-canonok, mellyek   még a' keresztények közti  
+   vegyes házasságokat sem tűrik és azokat érvénytelennek nyilvánítják;   de azért ez ellent nem 
+állott,     hogy nálunk az illy házaságokat szentesítő 1791-iki 26-dik   törvényczikkely     
+hozattassék.<br><br>Mind ezek, ugy hiszem, eléggé meggyőző okok arra, hogy   törvényhozásunk azon   
+korlátot, mellyet zsidó 's keresztény közt egyor a' házasságra nézve maga   állított el, ugyan maga, 
+  körén túlhágás és vallás-elvekbe ütközés nélkül, bizvást leronthatja.   Miután tehát, mint már 
+föntebb   megmutattuk, a' szőnyegen forgó emancipatio, ha nevének, czéljának   és a' mellé kötött 
+szép   várakozásoknak igazán meg akar felelni, e' korlát megszüntetését   mulhatatlanul föltételezi: 
+  szüntessük meg azt, töröljük el Sz. László I. decretumának 10.   fejzetét, 's mondjuk ki egy uj   
+törvényben, hogy zsidó és keresztény vérnek ezentul összeelegyedni   szabad, és hogy az emberi   
+méltóságot minden felebarátunkban egyenlően tisztelni kivánván, a'   polgári jogokkal semmi részben  
+ fukarkodni nem akarunk. Csak igy fogjuk azon népet, mellyet   századokig teljes jogtalanság átka   
+nyomott, az emberiségnek visszaadni, hazának, nemzetiségnek   nyereséggel megszerezni és a' nép 
+többi   elemével egészen összeforrasztani, miután róla a' rá sütve   volt legnagyobb 
+szégyen-bélyeget végkép   letöröltük, mint Kálmán fönt idézett bölcs törvénye tett   az 
+ismaelitákkal, kik a' keresztényekkeli   összeházasodás által népünkkel ugy összeolvadtak, hogy   ma 
+többé fajok sem létezik 's csak nevökről   ismertetnek nálunk. Ez lesz aztán az igazi   emancipatio, 
+ez a' zsidók igazi polgárositása, melly   ellen többé semmi kifogás nem tétethetik. -   Ne mondja 
+senki, hogy midőn én az emancipatiót illy   feltétel mellé kötöm, titkon talán hátulsó   kaput 
+keresek; mert ki valamit egészen akar adni, benne   bizonyosan több a' jó szándék, mint ha   csak 
+felét igérné 's még akkor is a' javát tartóztatná   vissza. Ugy, a' mint az emancipatio baráti   az 
+ügyet jelenleg ajánlják, benne én csak tökéletlen   adományt 's az ajánlók részéről, kiknek   
+egyébiránt nemes buzgalmukat tisztelem, még némi   következetlenséget is látok. Mert valljon nem   
+következetlenség e az, hogy az emancipatio síkra   szállt hősei, kik a' haladás szabadelvű pártjához 
+  tartoznak, kik az általános népképviselet elvét   pártolják, életbe léptetni óhajtják, és azt   
+ennélfogva lelkökben a' népnek már a priori megadták:   mind e' mellett most a' zsidó-emancipatiót,  
+ mellyet a' megyék igen nevezetes kisebbsége (kevés hiján   fele), majd mind az 53 királyi város, a' 
+  milliomkint számitandó németlenek, jelen alakban elfogadni   vonakodnak, - melly ellen illy 
+roppant   <span style="font-weight: bold;">közvélemény</span> fennen   kiált, olly csekély többségre 
+  támaszkodva, a' hatalmasan nyilatkozó közvélemény daczára, törvény   által kimondatni jónak vélik? 
+  Alkotmányos országban csupán olly törvények lehetnek üdvösek 's   igazságosak is egyszersmind,   
+mellyek a' nép hajlamával egybehangzók és a' mindig tiszteletben   tartandó közvélemény kifolyásai.  
+ Azért tehát méltányoljuk a' népszavát e' kérdésnél is, 's kisértünk   meg, ha valljon a' zsidók   
+polgárosítása olly alakban, mint én javasolni bátor vagyok, utat fog   találni annak kebeléhez. Én   
+azt hiszem: igen! - Kimutattam a' szennyfoltot, melly a' megyék többsége   által kivívott   
+zsidó-emancipatio eszméjén még ott maradt; ez a' sz. László I. decretumának 10.   fejzete! - ezt   
+kell eltörölni 's akkor - de csak akkor! - a' zsidók polgárositása bizonyosan nem   átkot, hanem   
+áldást terem a' honnak. Ezek e' tárgyban igénytelen 's egyszersmind változhatatlan   nézeteim.   
+Aradon, febr. 29-kén 1844. - <span style="font-weight: bold;">Fábián     
+Gábor.</span><br><br>__________<br><font size="1">* Ezen rajzban igen sok túlzott van; igen sok     
+viszont ollyan, a' mi ha bűn, ha erkölcstelenség, hát gáncsot érdemel, a' zsidók többségének nem     
+mint zsidóknak, hanem mint embereknek a' keresztényekkel közös bűnük, közös tulajdonuk. Sőt mi     
+egyenesen azt merjük állitani, hogy a' mennyiben értekező ur erkölcsiségi gáncsokat említ, vegyen    
+ bár föl egyenvonalba akármelly más vallású felekezetet, a' statisticai arányt egy hajszálnyival sem 
+    fogja másoknál kedvezőbbnek találni, mint a' zsidóknál; ez pedig kimondhatatlan erővel szól a'   
+  zsidók mellett: mert az ő demoralisatiójokra másfél ezredéves hontalanság, üldözés, szolgaság,     
+lealacsonyítás esküdött össze; 's ha ennyi okok közrehatása mellett erkölcsiségük vagy épen nem,     
+vagy csak annyiban áll rosszabbul más felekezetűeknél, a' mennyiben az emlitett hosszas elnyomás     
+őket egy bizonyos jellemsajátságot fejlesztő bizonyos életösvényre szoritotta: az valóban a'     
+zsidóknak igen nagy becsületére válik. Mi tehát az erkölcsiségi hasonlat szempontjából vett minden   
+  okoskodást igen gyöngének, sőt alaptalanak, sőt annyiban szeretetlennek is valljuk; mert 
+bizonyosan     nagy szeretetlenség volna, ha a' zsarnok, ki embertárság nemzedékeken át rabszolgává 
+alacsonyitá,     ennek azt vetné szemére, hogy szolgalelkű; vagy ha annak, kinek tíz ujját 
+összezuzzuk, azt vetnők     szemére, hogy ügyetlen kézműves. A' mi pedig különösen azt illeti, hogy 
+a' zsidó közérdeket nem     ismerne emberszeretet, mint a' közjó mezején találkozni, mintsem hogy e' 
+vádakat tagadni     lelkiismeretes kötelességünknek ne ismernők. - Csak ne feledjük, hogy a' 
+közérdek iránti lelkesedés     köztünk is ép ugy mint a' zsidók között, egyes szebb jellemek vonása, 
+nem a' nagy sokaság   tulajdona.   - Egyébiránt vezérnézetünket a' zsidóügyről ki fogjuk a' czikk 
+végén tartózkodás nélkül     mondani.<br>Szerk.<br></font><br></div><br><div style="text-align: justify;"><span style="font-weight: bold;">Kossuth Lajos szerkesztői kommentárja a vezércikk 
+alatt:</span><br style="font-weight: bold;"><br>A' mi értekező urnak a' keresztények és zsidók közti 
+házasságról     mondott véleményét illeti, azt egészen alaposnak nyilván elismerjük; 's ha e' 
+tekintetben - a' mint     gondoljuk - nem csak a' keresztény törvények, hanem talán a' zsidóságnak 
+legalább nagyobb részénél     a' Talmudból, vagy törvény magyarázó Rabbik tekintélyéből eredő tanok 
+is ellentállanak, azt véljük,     hogy ezen akadály elháritásán munkálkodni, maguknak a' zsidóknak 
+is kötelességük. - Általában   minél   többet gondolkozunk e' tárgyról, minél figyelmesebben 
+szemügyre vesszük a' zsidó-emancipatio   körül   a' népben gyökeret vert érzelmeket: annál több meg 
+több okot találunk azon hiedelemre, hogy   a'   zsidó-emancipatio kérdése, ugy politicai mint 
+socialis tekintetben, Europaszerte bevégezve csak     akkor lesz, ha a' Napoleon által adott 
+utmutatás nyomán, a' zsidóság egy nagy Synedrium utján az     emancipatiót előkészíti. - E' nélkül 
+erőtlen lesz, minden töredékes haladás.<br><br>Ha valaki azt     mondaná, hogy erre szükség nincs; 
+mert a' mi a' zsidók ellen mondatik az balvélemény, 's nekik nincs     mit magukban reformálniok, 
+ugy én azt felelem: vagy balvélemény, vagy nem az, legalább nem egészen     az: ha az utolsó, ugy 
+van reformra szükség; ha az első, ugy nyilt hitvallomásra van szükség, melly     a' balvéleményt 
+eloszlassa. Mindkét esetben tehát egyaránt szükséges a' Synedrium.<br><br>A' mi     minket illet, mi 
+hisszük és valljuk<br><br>1-ör hogy pusztán hitkülönbség miatt, pusztán azért,     mivel valaki a' 
+nagy világ-egyetem istenét más templomban imádja, mint mi, polgári jogokból kizárni,     isten 
+törvényével, igazsággal, politicával ellenkezik.<br><br>2-or hiszszük és valljuk, hogy a'     
+zsidó-emancipatiónak két ága van: politicai és socialis. Amaz egészen a' törvényhozó hatalomtól     
+függ. Ez csak annyiban, a' mennyiben a' socialis egybeolvadásnak törvényes akadályait el kell     
+háritani, hogy a' társadalmi emancipatio lassu menete bekövetkezzék. És igy<br><br>3-or hisszük és   
+  valljuk, hogy a' politicai emancipatio a' kérdést be nem végzendi ugyan, de annak ideje     
+elkövetkezett; hisszük<br><br>4-er hogy minden ok, mi a' zsidók állitólagos erköcstelenségéből     
+ellenhozatik, erőtlen, gyönge, szeretetlen.<br><br>Eddig megy véleményünk, midőn azon szempontból    
+ indulunk, hogy a' zsidóságot, hazánkban nem másnak, mint honunk összes lakosai olly' töredékének    
+ kell tekinteni, melly a' többiektől csak vallásos hitben különbözik. A' zsidók e' szerint hazánkban 
+    egy vallásfelekezet.<br><br>De hátra van egy fontos tekintet. A' zsidókat nem csak mi, hanem a'  
+   zsidók is igy nevezik: "zsidó NÉP". - Nem szoktuk pedig mondani: Papista nép, Kálvinista nép,     
+Lutheranus nép, Unitarius nép. - Innen látszik, hogy e' szó alatt, "zsidó" több fekszik, mint csupán 
+    valláskülönbség, legalább nálunk; valamint mindenütt a' földön, kivéve talán Nubiát, hol, mikint 
+  az   utazók írják, számos zsidó vallásu szerecsen, tehát nem zsidónép ivadek van.<br><br>Ha az   
+emlitett   különbség csak a' faj eredete körül forogna, mint van tót, van német, és van oláh, - nem  
+ szólanánk;   de a' dologban több is fekszik.<br><br>Mózes nem csak vallásalkotó volt, hanem polgári 
+  törvényhozó   is. - Mózes vallása nem csak vallás, hanem egyszersmind politicai organismus is. -   
+Mózes vallása   státusalkotmány, valóságos országlási rendszer, még pedig <span style="font-weight: bold;">theocratiai országlási rendszer.</span> Innen van, hogy Mózes sok szabályt, mellynek csak     
+országlási, tehát politicai tekintetben van értelme, részint dogma, részint vallásos ritus szinébe   
+  öltöztetett. A' boldogtalan zsidónép hontalanná levén, vallásának ezen szabályai elvesztették     
+politicai érvényüket, de mint dogmák, mint rituálék fennmaradtanak; és képesek a' castai     
+elzárkózást, melly a' socialis egybeolvadást szintugy gátolá, mint politicai     
+elnyomattatásuk.<br><br>Ha már most előjő valaki, 's azt mondja: egy országban csak egy országlási   
+  rendszer lehet. A' zsidókat tehát nem lehet emancipálni, mert vallásuk politicai institutio,     
+theocratiai alapokra építve, melly a' fennálló országlási rendszerrel politicai egybehangzásba nem   
+  hozható; - ez minden esetre olly ellenvetés, melly a' hitsorosaik javát szívökön viselő zsidóktól  
+   megérdemli a' cáfolatot, felvilágosítást - vagy reformot.<br><br>Igen is, nézzünk magunk körül, 
+és     sajnálkozva kell megvallanunk, hogy a' zsidó-emancipatio iránti rokonszenv 1840 óta 
+folytonosan     fogyatékban van; szükség tehát, hogy a' lelkesebb zsidók ezen rokonszenv 
+fogyatékának ürügyeit,     mennyire tőlük függ, elháritani igyekezzenek. - Ha moráljokat gyanusitja 
+valaki, megilleti őket a'     nemes indignatio büszke szava, melly komolyan visszautasitja a' 
+rágalmakat, - mert erkölcstanjok     szintolly tiszta, mint akárkié; - de ha az vettetik ellenök, 
+hogy vallásuk nem csak vallás, hanem     politicai organismus is, hogy a' theocratiának polgári 
+érvényességet adni nem lehet; hogy ők nem     csak külön vallásos felekezet, hanem külön nép is, 
+melly ezen népiségi különbséget vallástanná     szentelé; - akkor valóban ezen ellenvetés 
+megérdemli, hogy ha balvéleményen alapszik, jóakaratilag     felvilágositassék, ha pedig valamivel 
+több, mint balvélemény, helyes reformokkal     elhárittassék.<br><br>Ha minket kérdezne valaki, mi 
+által készithetik elé magok a' zsidók     leghathatósabban teljes emancipatiójukat? azt felelnök: 
+"alkalmas reformok által." Tartsanak     egyetemes Synedriumot, nézzék végig, mi vallásukban 
+valóságos dogma, 's annak megfelelő szentesitett     rituale; - mi viszont vallásos szabály szinébe 
+öltöztetett politicai institutio, melly Mózestől a'     nagy statusférfiutól bölcs rendelet 
+lehetett, de mellyhezi ragaszkodás, keresztény statusokban,   csak   a' polgárok többi osztályaivali 
+egybeforrásuknak állja utját; - törüljék ki ezeket   hitágazataik   közül: és eszközlék, hogy külön 
+vallásfelekezet lesznek, de megszünnek lenni külön   nép; 's letették   a' socialis egybeforradás 
+szikla sarkkövét, mellyen, minden rágalom,   szeretetlenség 's üldözés   daczára felemelkedendik 
+politicai teljes emancipatiójuk épülete is, az   emberiség 's lelkismeret   szent szabadsága közös 
+istenének dicsőségére. -<br><br></div>       </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-06-13&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1044&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1044&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1044&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1044&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66964"></A>24. vébermester</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-16 18:25:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_798.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Persze, ez akkoriban így volt, még, tessék megkapaszkodni, Marx is írt erről, mint kortárs ugyebár (bár természetesen univerzális köntösbe bújtatva, a vallás mint társadalomformáló hamis tudat alóli általános "emantipatio" szükségesnek tételezésével). De ne felejtsük el, akkor &#8211; másfél évszádada &#8211; még Magyarországon erőteljesen rendies társadalom volt, választójoga még a századfordulón is a lakosság valami 6%-ának, ha volt. (És azt se felejtsük el, hogy ez az írás még a részben a magyaroroszági nemzetiségekkel "ápolt" viszony miatt elvesztett szabadságharc előtt született.) Mint az alapos és kevésbé alapos előitéletek társadalomtörténeti gyökere, teljesen megáll. Mint a mai állapot indoklása, neadj'isten jellemzése, szerintem elég kevéssé. Egészen egyszerűen komoly világnézeti forradalmak zajlottak azóta, ma már mindenki &#8211; babók is, "gójok" is &#8211; egész másképp gondolkodnak népről, nemzetről, származásról. És persze az elkülönülés sem állja meg a helyét, ennél jóval heterogénebb már régen az asszimilálódott babóság. No nem a cionistákról, és nem is a vérgőzös antiszemitákról beszélek...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66590"></A>23. Marton</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-14 15:20:32</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3453.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha figyelembe vették a Talmudot, miért nem gondoltak arra is, hogy gójoknak szabad hamisan esküdni? Itt el is veszett a bölcsességük...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66548"></A>22. Marton</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-14 05:55:27</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3453.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ameddig eljutottam, úgy tudom értelmezni: "Végzetes hibát követünk el, helyrehozhatatlan hibát követünk el, de a legjobb, amit tehetünk, ha elkövetjük."<br />
+<br />
+Du. folytatom.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66533"></A>21. VeszettA\\\'llat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-13 23:33:16</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Még csak felénél járok, de azt nagyon rosszul látta, hogy a keresztény vallás tanitása, vagy éppen a törvényhozás miatt lettek volna üldöztetve... Nem akarok általánositani, na de, amikor még teljesen sötét voltam a témában, már akkor is ellenszenvesek voltak, igazi sunnyogó tekintet, sötétség áradt belőlük, szóval félelmetesek voltak mindig is számomra, és ez teljsen külső befolyás nélkül tűnt fel nekem. Később felismertem már őket jellem alapján, amikor felettük állasz rangban, kapcsolatokban, akkor nyalnak, kedvesek, de amikor meglátják, hogy a te károdra ők hasznot élvezhetnek, egyből jön az a bizonyos megvető tekintet és a hátba szúrás, nem kegyelmeznek, és természetesen mohók, prolik. Semmi humanitást nem mutatnak, ha gyarapodásról van szó, nincs erkölcs, nincs tisztelet, csakis gyűlölet, kárörvendés, megalázás... Ezek a tipikus rassz jegyekkel ellátott egyének a legveszélyesebbek, korom-fekete göndör haj, sárgásbarna bőrszin, tapasztalataim szerint ez a legrosszabb fajta, és ezt minden előitélet nélkül! Nemtudom ezek a rasszjegyek melyik tipuskra jellemzőek, de ezek kiábránditóak, és undoritóak, kicsit általánositok, de ez jött le. Szóval szerntem ez vagy genetikai, vagy a babó vallás, kultúra beli különbségekre mutat. <br />
+<br />
+Szóval nem nekünk kell hozzájuk igazodni, hanem nekik kell mihozzánk...!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66364"></A>20. <A HREF="mailto:p.daemon@freemail.hu" STYLE="color: #000000">P.daemon</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-13 14:18:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem hiszek igazán a Bibliában (egyáltalán nem) , de amit a babókról írtak bele az már elég hogy szentnek nevezzük.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66349"></A><FONT COLOR="#FF0000">19. </FONT>höm</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-13 13:26:28</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66321"></A>18. 18. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-13 11:55:53</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Liebe Freunde ,<br />
+<br />
+Nehéz írás ez , szövegértésben gyakorlott agy kell hozzá .<br />
+<br />
+Jól teszed Tomcat hogy magasra helyezed a mércét a Gyárunkban ! ! ! <br />
+<br />
+Herzliche Gratulation ! <br />
+ Herr Tanítomcat<br />
+<br />
+P.S. - kíváncsi lennék néhány inkontinentális babó értetlen arcára amikor ezt elolvasta <br />
+<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66265"></A>17. Winnetou</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-13 08:40:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1184.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Igazad van devius, tényleg elképesztő volt a cikk olvasása. Végig bennem volt a hitetlenkedés, hogy ezt így le lehet írni a médiában, hogy erről ilyen nyíltan lehet szólni, pedig én aztán bármikor tudok egy szépet "babózni". Nagyon szokatlan ez egy mai médián felnőtt ember számára.<br />
+Jól működik az agymosó-gépezet.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66255"></A><FONT COLOR="#FF0000">16. </FONT><A HREF="mailto:devius@freemail.hu" STYLE="color: #000000">devius</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-13 08:03:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_602.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment66240"></A>15. Winnetou</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-06-13 06:31:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1184.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Köszönet, hogy begépelted, Tomcat!<br />
+<br />
+Csatlakozom az előttem szóló tomnash-hez: az ilyen és ehhez hasonló anyagok begépelését simán a közösségre lehetne bízni. Szétosztva, pár napos határidőkkel emberenként egy oldal senkinek sem megterhelő, utánna csak össze kell ollózni.<br />
+Ha csak 20-30 ember jelentkezik a feladatra, akkor már rengeteg anyagot tudnánk illy módon digitalizálni.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1044&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1044&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1044&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1044&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

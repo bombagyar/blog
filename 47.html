@@ -1,0 +1,734 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=47#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Ságvári Endre a korabeli sajtó tükrében";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=47#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Ságvári Endre a korabeli sajtó tükrében<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2007 október 4. 02:19:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_47.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><p style="margin-bottom: 0cm;" align="justify">Legutóbbi         
+   &#8211;                   hetedik &#8211; rádióadásunkban szó esett  Ságvári Endréről, a 
+kommunista           terroristáról    (milyen         viccesen         hangzik ez az ista-lista, 
+Pista, kell-e           trappista),  illetve arról,   hogy vajon         valóban hős     volt-e,     
+mint azt  egyesek           asztalt verve üvöltik manapság,   vagy csak  egy   lúzer,       akit 
+lelőttek.     Az adásban               korabeli  újságcikkeket emlegettem,   amelyek   éppenséggel  
+nem       támasztják alá a               legendát. Úgy  illik,     hogy az   elhangzottakat   
+konkrétabban is         alátámasszam.</p>    <p style="margin-bottom: 0cm;" align="justify"><img src="./resources/pictures/tomcat_20071004_sagvari/sagvari000.jpg" style="float: right; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;" border="0">Ságvári  Endre Tibor,           avagy         
+&#8222;Endri&#8221;,           ahogy haverjai emlegették,  manapság a &#8222;modern baloldal&#8221;  
+       &#8211; értsd: azok,   akik              letagadják,       hogy a nagyapjuk lövetett a 
+Kossuth       téren   &#8211; egyik hőse, Che   Guevara magyar     változata,               csupán  
+annyi       különbséggel a   karibi szakállas  doktorhoz   képest, hogy őt     még azelőtt lelőtték, 
+                 hogy     nagyobb   galibát okozott volna. Történt   pedig  ez   1944-ben,   a 
+Budakeszi úti Nagy         cukrászda &#8211;     ma   Remiz    étterem &#8211; kertjében,   ahol   
+Ságvári 1944.    július       27-én egy másik   illegális            kommunistával   találkozott     
+volna. A   kommunisták          azért voltak illegálisak,     mármint a          tevékenységük, mert 
+alig     pár   évtizeddel          korábban   végigdúlták-rabolták      Magyarországot, és ezt       
+  nem vették jó      néven a         magyarok, avagy,   ahogy   ők mondják   a mai   napig  is, 
+&#8222;a fasiszták&#8221;. A                   negyvenes évek elejéig  a   legálisan     működő   
+szociáldemokrata   párt  holdudvarában     bújkáltak,   a             Kéthly Anna és  Peyer   Károly 
+    nevével fémjelzett   párt    pedig     szemet hunyt   agitációs       tevékenységük          
+felett, amit a   szocdemek   rendezvényein,       gyűlésein      fejtettek ki. Az     álszent 
+&#8222;nyolc   óra   munka,     nyolc   óra  pihenés,     nyolc óra       szórakozás&#8221; jogos    
+    követelése mögé   bújva   bizony mindig   is  ott           volt a    vörösterror, a   nemzet    
+   felszámolása,  a     proletárdiktatúra.   Aki ebben       kételkedne,     nézze      meg, mit   
+csináltak a         szociáldemokraták a háború    után:       vezérkaruk szépen       lefeküdt  
+Rákosiéknak,       önként   és     dalolva részt    vettek a     &#8222;munkáshatalom&#8221;     
+kiépítésében,  s     végül ők   pislogtak   a             legdöbbentebben,   amikor  1956-ban   a 
+drága   szép   munkásaik &#8222;fasiszta            csőcselékké&#8221;       alakulva     beleverte 
+az ő fejüket      is a Köztársaság tér         kövezetébe.    De ez     Ságvári     idejében még   
+terv   sem   volt,    Rákosi még Moszkvában       lapított, bár      már két   éve         nyomtatta 
+Sztálin pénzén  a       <i>Szabad   Nép </i><span style="font-style: normal;">első        illegális  
+   számait (amelynek     egyébként a    mai       </span><i>Népszabadság,     </i><span style="font-style: normal;">a   </span>&#8222;<span style="font-style: normal;">modern     
+baloldal</span>&#8221;<span style="font-style: normal;">         szócsöve</span><i> </i><span style="font-style: normal;">a        jogfolytonos   utódlapja).     Egyszóval     Ságvári  elvtárs 
+itt           ücsörgött   és fröccsözött    egy másik   vörös         gazemberrel, Szabados 
+Lajossal,     mire      egyszer       csak ott termett     négy csendőr, és       megkérték,    
+ugyan,   fáradjon már velük, ha     már       egyszer      hadban   áll az ország, a       ruszkik 
+már     lassan Erdélyben  vannak, ő meg   arra     agitálja a           munkásokat,   hogy      szabotálják 
+a   haditermelést. Az     ilyesmit tényleg      minden hadban   álló       országban         rossz   
+néven  veszik, az igazi   fasiszták     például a     helyszínen    agyonlövik, aki         ilyet   
+tesz, de       nálunk akkoriban még  nem ilyen           fasizmus volt.   Ságvári erre hamis         
+igazolványt  mutatott   fel,       mire mondták neki, hogy nem       kéne        szórakozni,     
+mire fegyvert     rántott, és rálőtt  a csendőrökre.         Egy csendőrt         meggyilkolt, egy   
+    másikat    súlyosan     megsebesített, ő a kórházban  halt meg, ám   a               harmadik,   
+  Kristóf László    törzsőrmester       viszonozta a tüzet, és agyonlőtte a  vörös         
+gazembert.             </span>  </p>    <p style="margin-bottom: 0cm;" align="justify"><span style="font-style: normal;">A  jogszerűen eljáró       két csendőrt 1959-ben        háborús       
+bűnösként         kivégezték.    Ságvári Endre emléktáblát kapott        cimboráitól a cukrászda 
+falán,           amit       a      rendszerváltás   idején összetörtek. Az  MSZP     Hiller   István 
+vezetésével           2004-ben      újjáavatta ezt   a       táblát, s Hiller </span>&#8222;<span style="font-style: normal;">követendő     példának</span>&#8221;<span style="font-style: normal;"> 
+nevezte   Ságvári         </span>&#8222;<span style="font-style: normal;">munkásságát</span>&#8221;.<span style="font-style: normal;"> 2006-ban     azonban a     
+Legfelsőbb      Bíróság     rehabilitálta a   kivégzett            csendőröket, egyértelműen 
+leszögezve,     hogy     az  ítélet           politikailag elkötelezett,         koncepciós    
+jellegű volt. Naná, hogy a </span>&#8222;<span style="font-style: normal;">modern               
+baloldal</span>&#8221;<span style="font-style: normal;">     üvöltőkórusa      azonnal       huhogni 
+  kezdett, s   mindenféle önjelölt    megmondóvezérek             követelték mindenkinek a           
+   lemondását, de azok nem   mondtak   le. Azóta is  nagyon fáj ez a </span>&#8222;<span style="font-style: normal;">modern       baloldalnak</span>&#8221;<span style="font-style: normal;">.         Szerintük      ugyanis Ságvári   az </span>&#8222;<span style="font-style: normal;">antifasiszta       harc</span>&#8221;<span style="font-style: normal;"> mártírja  volt.     
+    Emléktábláján   is           ez   állt:</span></p>    <p style="margin-bottom: 0cm; font-weight: bold;" align="center"><i>E   helyen         halt hősi halált Ságvári     Endre a    fasisztákkal 
+vívott fegyveres                   harcban.</i></p>        <p style="margin-bottom: 0cm;" align="justify"><span style="font-style: normal;">Ma  már csak   állt,   mert szerencsére azóta     
+még    kétszer összetörték, harmadjára       csak              nem   erőltetik a   visszahelyezését. 
+Ságvárinak  áll egy       mellszobra is       Tatabányán, azt   még              kezelésbe   lehet 
+venni. Felvetül bennem a kérdés,  hogy vajon             lenne-e már   emléktábla     azon   a       
+  csepeli  lakótelepi házon, ha mondjuk én is       lövöldözni  kezdtem    volna       idén     
+májusban a           rendőrökre, amikor  azok jöttek       cukrot keresni. De én nem     
+lövöldöztem.    Pedig     simán       lehettem       volna az       antikommunista harc mártírja,  
+nem?   Legalább     annyira, mint   Ságvári,   mint      mindjárt               látni 
+fogjuk.</span></p>    <p style="margin-bottom: 0cm;" align="justify"><span style="font-style: normal;">Nosza,  nézzük csak,             mennyi igaz     Ságvári   Endre        legendájából.     
+Antifasiszta harcos? Miért,  mit csinált   azon   kívül,   hogy           rálőtt         a  
+csendőrökre? Ilyet     elég sokan csináltak, mégsem    lettek   mártírok, csak   csendben            
+   elkaparták     őket.  Mi mást     csinált még ez a   sovány,    szemüveges   zsidógyerek? A     
+neves     történész,        Ungváry     Krisztián       foglalkozott a témával    a <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.mult-kor.hu/nyomtatas.php?article=10494">Múlt-Kor   történelmi   portálon,</a>      
+             ebből        idézek néhány sort.</span></p><p style="margin-bottom: 0cm;" align="justify"><span style="font-style: normal;"><br></span></p>      <div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Nem     
+tudhatjuk,   hogy   Ságvári           mit tett volna 1945   után. Családjának többsége     
+kommunistasága miatt 1945     előtt     megtagadta, de   a     háború   után közülük többen is     
+akadtak, akik a totális   diktatúra       szolgálatára adták magukat,   húga       például az MDP    
+ Központi Vezet&#245;ségének   munkatársa, majd       1956 után az MSZMP KB tagja   is   volt. A     
+    sor folytatható volna, de a   Ságvári-történetben   sokkal     fontosabbak azok a   szálak,      
+ amelyek miatt a     Szépilona   kocsiszín mellett a Remíz   vendégl&#245;     falán még   egy     
+márványtáblának   volna helye...       Minden jel szerint err&#245;l a   Ságvári-ügyben   az         
+antifasiszta emlékkultúrát   szorgalmazók   mit sem     tudnak. Fencsik Flóra   azt emelte ki, hogy  
+         Ságvári &#187;legalább     visszalőtt&#171;, Donáth Ferenc szerint &#187;nyilasokkal   
+vívott       kézitusát&#171;,     Sándor   Iván szerint &#187;Ságvári elpusztítói gyilkosok&#171;. 
+Mindegyik           állítás   súlyos tárgyi   tévedés.&#8221;</div>    <p style="margin-bottom: 0cm;" align="justify"><span style="font-style: normal;">Bálványozói  közül   idézem Donáth Ferencet, 
+          aki a 2004-es              emléktábla-avatáson     beszédet mondott. Az    </span><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.es.hu/pd/display.asp?channel=AGORA0532&article=2005-0814-1843-09QLOV"><i>Élet   
+                          és Irodalom</i></a><span style="font-style: normal;">  hasábjain üzente a  
+         következőket     egy           sajtóvita      során Ungváry Krisztiánnak:</span></p><p style="margin-bottom: 0cm;" align="justify"><span style="font-style: normal;"></span><br>            
+  </p><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Nyilván elkerülte       figyelmét az általam 2004. július 27-i     
+          megemlékezésen mondottak: &#187;Ságvári fegyveres   ellenállása     valóban jel volt, a    
+   terrorral     szembeni     ellenállásra való felhívás jele, benne   volt     Bajcsy-Zsilinszky    
+   Endre, Kis János     altábornagy,   Tarcsay   Vilmos tudatában, majd az   56-osok, Angyal         
+  Istvánok, Mécs Imrék     tudatában is. Mert a   rákosista   propaganda &#8211; mielőtt   szájára   
+    vette volna     nevét, nem     fejtette meg Ságvári üzenetét.   Rákosi, Gerő,   Révai moszkovita 
+        szájából, akik elsőként     az     illegális antifasiszta kommunistákat   üldözték, hamisan  
+       csengett   Ságvári Endre neve. Ságvári         Endre emlékére sorsfordító és méltatlan   
+volt, hogy       neve a III.     világháborút előkészítő         sztálinisták eszközévé vált. Hatvan 
+év múltán     meg     kell követnünk őt.&#171;<br>Továbbá az     Ungváry     Krisztián által idézet 
+mondatom nem       Ságvári   Endre és a   csendőrnyomozók   közötti     végzetes harcra,     hanem 
+korábbi a     nyilasokkal     vívott, valódi   kézitusára vonatkozott."</div>      <p style="margin-bottom: 0cm; font-style: normal;" align="justify">Tekintsünk el Donáth nevetséges      
+   magyarázkodási          kísérletétől,       miszerint     Ságvárinak    van valami   
+&#8222;üzenete&#8221;, amelyet     &#8222;meg   kell       fejteni&#8221;, de      természetesen ezt 
+    csak a       kellően     felvilágosult   személyek &#8211;   ők,   antifasiszták &#8211;     
+értik,  és       nem mondják meg     a       megfejtést, mert   ha nem    érted, úgyis     hülye 
+vagy, illetve hogy a               lövöldözés &#8222;jeladás&#8221;     lett     volna bármire is.   
+  Bajcsy-Zsilinszky Endre   vagy       Tarcsay  Vilmos pedig         valószínűleg       jól   
+orrbaverte volna    azt a vörös     gazembert,     aki őket   zsidó  kommunistákkal     helyezi      
+     egy   platformra. De   nézzük   a  tényeket.     Miféle   kézitusáról  beszél   itt Donáth      
+ Ferenc?     Ságvári            verekedett volna?   Kivel?   Mikor? Ez a nyeszlett kis   
+jogászkölyök,  a     hülye             szemüvegével?</p>      <p style="margin-bottom: 0cm; font-style: normal;" align="justify">                Forduljunk egy másik             
+életrajzírójához.  Hegedűs Sándor a   következőt írja Ságvári    Endréről           az       
+<i>Ezredvég</i>         hasábjain.</p><p style="margin-bottom: 0cm; font-style: normal;" align="justify"><br></p>  <div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Mind   gyakoribbá           váltak     a nyilasok    
+ támadásai a       baloldali szervezetek, a   kiránduló   ifik ellen. 1937   nyarán, a               
+  hűvösvölgyi     nagyréten   majálisukat ülő       szociáldemokrata-kommunista fiatalokra   törtek  
+ és                 hasbalőtték       Bonyhádi-Litzmann Jenőt, az   egyik vasas ifit. A     
+merénylet nagy             felháborodást           keltett munkásberkekben, és arra az elhatározásra 
+      juttatta Ságváriékat,   hogy               visszavágnak.   Így     született meg a Tompa utcai 
+  nyilasház   elleni akció   gondolata.                    <br><br>1937.   szeptember 16-án     este 
+-   amikor mintegy   80&#8211;100 nyilas az   Egyesült   Magyar         Nemzeti         Szocialista 
+Párt   szokásos heti       összejövetelén   Lajos Ferenc író     előadását     hallgatta &#8211;     
+        megjelent a ház   előtt 200       munkásifi &#187;Le     Hitlerrel!&#171;, &#187;Üsd a       
+nyilasokat!&#171; jelszavakat             skandálva   és kőzáport   zúdítva a             
+szélsőjobboldaliakra. Tömegverekedés tört ki,             melynek a     rend&#245;rség vetett   
+véget.       Mindkét     oldal súlyos sebeket szenvedett     el. A           karhatalom 
+természetesen   a     nyilasok     oldalára állt.          <br><br>A   Tompa   utcai akció   
+felkavarta         a magyar     közvéleményt. A       jobboldali sajtó   magasztalta a         
+nemzetiszocialisták &#187;bátor             helytállását&#171; és a rendbontók       szigorú     
+megbüntetését   követelte. A KMP az     ifik             hősiességéről beszélt, de       bírálta az  
+ egyedi     fellépéseket, és szélesebb körű                 cselekvésre buzdított. A       Népszava 
+is   kiállt   Ságváriék mellett,   kijelentvén: nem a     szocialista             ifik,   hanem a    
+   nyilasok   provokáltak.      <br><br>A verekedés     másnapján   a rendőrség 123                  
+   baloldali   fiatalt állított elő, tizenkettőt     előzetes   letartóztatásba     helyezett.       
+Ez             utóbbiak között volt Ságvári is, aki     tagadta, hogy jelen lett   volna a     
+verekedés           színhelyén. A         bíróság 8 hónapra   ítélte,   amelyből 3   hónapot 
+betudtak a   vizsgálati             fogházzal, ám   ügyvédje           fellebbezésének   helytadva, 
+a gyanúsítottat   ideiglenesen       szabadlábra       helyezték.     Ügyében a       Budapesti     
+Királyi Ítélőtábla 1938.   október       20-án, majd a   Magyar     Királyi   Kúria       1939.   
+június 20-án     jogerőre emelte az   alsó       fokon hozott 8     hónapos       büntetést."</div>  
+<p style="margin-bottom: 0cm; font-style: normal;" align="justify">    Ó,             csaphat a 
+homlokára a   magyar filmművészetben  járatos olvasó, csak           nem     ezt az   esetet     
+dolgozták        fel az <i>Egy óra   múlva itt vagyok </i>című          tévésorozatban,       amely  
+     egyébként a hős    antifasiszták     tündökletes   internacionalista            igazságosztását 
+volt         hivatott   propagálni  a   történelemben járatlan             nagyközönség      felé, a 
+mozira, mint       legfontosabb   művészeti ágra      vonatkozó lenini       intelem           
+szellemében? De, igen. Adott        tehát az állítás:   Ságvári  Endre   1937-ben         
+tömegverekedést       szervezett     a Tompa utcai        nyilas pártközpontnál.   Igaz-e vagy     
+sem?     Nos,  nézzük, mit       írnak   erről a korabeli           újságok.  Kezdjük mindjárt a     
+    <i>Népszavával,</i>   a      szociáldemokraták, s     ezáltal a       kommunisták      bújtatott 
+      lapjával.</p><p style="margin-bottom: 0cm; font-style: normal;" align="justify"><br></p>  <div style="text-align: justify;"><A NAME="NDTKGWI"><A HREF="./index.php?post=47#NDTKGWI" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari001.jpg', 600, 1149); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari001.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari001_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Nocsak, milyen érdekes! Ebben a  
+                       tudósításban egy   szó sincs a hős  munkásokról, akik elégtételt   vesznek a  
+      gonosz         nácikon   az         állandó kegyetlenkedéseik    miatt. Szó sincs semmiféle    
+   Ságváriról,    sem         semmiféle   majálison         hasbalőtt munkásról.  Helyette egy       
+  nehezen hihető történet   arról,       hogy  a     békés járókelők   úgy        felháborodtak 
+azon,       hogy egy nyilas   beszólt   valakinek,        hogy menten     megostromolták a     
+pártházat.         No    persze! S ez a tömeg akkor   sem   szaladt       szét, amikor a    nyilasok 
+  közibük         lőttek.   Akkor meg     pláne ostromolni    kezdett! Igen,   mert     a   békés   
+járókelőknek  van     egy     ilyen     tulajdonságuk, hogy       lövöldözés  esetén   még     
+aggresszívebbek         lesznek. Sose   lőjünk  békés       járókelőkre, mert       megjárhatjuk. A  
+   cikk     végén       megtudhatjuk     továbbá, hogy  ezek a fránya     nyilasok,   ezek folyton   
+    belekötnek          mindenkibe,   még     plakátot   se tudnak békésen  ragasztani,       bezzeg 
+a szocik,   azok milyen             szépek és    becsületesek,   azok     sose bántanak senkit.   
+Lám,      ugyanezen a     napon       plakátragasztás       közben is  összeverekedtek a         
+járókelőkkel. Ezek a       disznók...      </div>          <p style="margin-bottom: 0cm; font-style: normal;" align="justify"><A NAME="PFTJWSV"><A HREF="./index.php?post=47#PFTJWSV" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari002.jpg', 400, 1385); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari002.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari002_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A kép árnyaltabbá tételéhez      
+                    nézzünk bele más   újságokba is. A  <i>Pesti Hírlap   </i>1937. szeptember 17-i  
+     számában      az     itt           látható cikk jelent meg.   Nocsak, egy független  lap   
+mennyire       máshogy   tudja   a     dolgokat.   Már a   cím        is elárulja a lényeget:   
+<i>Megtámadták   a      nyilasok     Tompa   utcai       párthelyiségét.   </i>Itt már        arról 
+van szó, hogy   hirtelen       megjelent     nyolcvan-száz          ember, és összehangolt   
+támadást   intéztek        a momentán     éppen senkit sem       bántalmazó  nyilasok       ellen.   
+Ezek az   aggresszív     nyilasok persze     nem      átallottak     széklábra-fokosra   kapni a     
+  rájuk  törő,       husángokat lóbáló       komcsik  ellen, és jól el       is   répázták őket.  A 
+Népszava           állításával   szemben nem        is két   rendőr jött a     helyszínre, hanem,   
+mai      kifejezéssel,       csapaterővel       vonultak   fel,   nyolcvanan.       Megtudjuk a 
+valószínű     igazságot a            plakátragasztó   nyilasok     körüli ramazuriról  is. A     
+Teréz   körúton     egy mintegy   negyven-ötven        fős       csoport   &#8211; na,   találjuk 
+ki, hogy   kik &#8211;   nekik   rontottak. Öt  főnek. Ó,   igen,   a           felvilágosult,     
+demokratikus        baloldal, és   az ő akcióik.</p><p style="margin-bottom: 0cm; font-style: normal;" align="justify"><br></p>    <div style="text-align: justify;"><A NAME="HFEWMZS"><A HREF="./index.php?post=47#HFEWMZS" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari003.jpg', 700, 1200); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari003.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari003_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A><A NAME="RCDLROX"><A HREF="./index.php?post=47#RCDLROX" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari004.jpg', 800, 1209); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari004.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari004_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Egy másik lap, a mérsékelt       
+                  jobboldali     <i>Ujság</i>  még részletesebben és kritikusabban számol  be az     
+    eseményekről.       Több,           mint egy teljes     oldalt  áldoztak az eseményeknek. Ők 
+ugyan         leszögezik,  hogy   nem     zárható   ki,         hogy a nyilasok     mégiscsak  
+kötekedtek a         járókelőkkel &#8211; s lássuk   be,      tényleg nem     lehetetlen,       
+hiszen ők sem a             kulturált  tagságukról voltak   nevezetesek &#8211; ám     ez a lap sem  
+    említ semmiféle               Ságvári Endrét.  Hanem     hoppá,   nézzük csak a második     
+lapon az  első     flekket, a   vége       felé, a       kiemelt részt!    </div><br>      
+<i><br></i><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Ugy látszik,           annyira érdekelt   minden egyes idetartozó  
+ nemzeti               szocialistát Balogh     előadása,     hogy a   szokásos kapuőrök sem   
+teljesítettek   szolgálatot, sőt,   a   cirkáló                 járőröket   sem küldték   utcára.    
+"</div><p style="margin-bottom: 0cm; font-style: normal; text-decoration: none;" align="justify"><A NAME="KPFXTZI"><A HREF="./index.php?post=47#KPFXTZI" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari005.jpg', 265, 400); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari005.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari005_thumb.jpg" style="float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Ennyit a Népszava hazugságairól,  
+                       meg a    minduntalan   provokált járókelőkről. A cikkből  egyébként az is     
+kiderült,       hogy   a         kerületi      rendőrség   politikai   osztálya komolyan odafigyelt  
+   a  nyilasok         tevékenységére,   és       nem éppen      bátorítólag, hanem   éppen   hogy   
+   aggodalommal   figyelte       őket, &#8222;kilengésektől&#8221;       tartva.  Vagyis     
+egyáltalán     nem       mondható, hogy    szimpatizáltak     velük &#8211; bár a Népszava és  a     
+  későbbi       &#8222;történészek&#8221;       ezt     állítják.  Azt ugyan ők sem     tudják   
+megmagyarázni,   hogy     ha a        hatóságok   szimpatizáltak a     nyilasokkal,     miért      
+ítélték   1938-ban   több   év   börtönre  Szálasi         Ferencet, és miért hemzsegnek a     
+korabeli      lapok         ennek   vagy   annak a kerületi   nyilasvezérnek   a      fogházra 
+ítéléséről. Itt be is            mutatok   egy     ilyen     cikket,   anélkül is találtam,  hogy    
+   különösebben kerestem volna.   Csak       lapoztam       a      mikrofilmet, és     minden lapban 
+sorra mentek   el     előttem az    ilyen       jelentések,   sokkal         gyakrabban, mint a 
+kommunisták      lecsukásáról         szólók.</p>      <p style="margin-bottom: 0cm; font-style: normal; text-decoration: none;" align="justify">  A         fentiekből kitűnik, hogy   minden       
+valószínűség  szerint a szocik   valóban               megrohamozták     a nyilasok  házát. A   
+dolog persze       oda-vissza   működött,  ilyet a nyilasok     is       csináltak,         de most  
+ maradjunk Ságvárinál,  akit     még     mindig senki sem ismer,     senki sem említ.            
+Nézzük, mi     történt   az   elkövetkező    napokban! Hiszen,     mint     Hegedűs Sándor 
+állította: &#8222;<i>A       Tompa   utcai   akció   felkavarta a   magyar       
+közvéleményt.</i>&#8221;<i>    </i>Valóban felkavarta,         vagy       egyszerűen csak nem a     
+&#8222;modern      baloldal&#8221; találmánya az, hogy       magukat a     közvélemény            
+képviselőjének állítsák     be?    Tényleg   erről beszélt   mindenki         
+buszon-villamoson?</p><p style="margin-bottom: 0cm; font-style: normal; text-decoration: none;" align="justify"><br></p>          <div style="text-align: justify;"><A NAME="AVRPBKZ"><A HREF="./index.php?post=47#AVRPBKZ" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari006.jpg', 600, 884); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari006.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari006_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A Népszava   1937. szeptember    
+                       18-án &#8211; a verekedés  másnapján &#8211; másról sem ír, csak a  Tompa     
+utcáról.        Természetesen   a         nyilasok   a        hibások mindenért, a szociáldemokraták 
+     ott se   voltak!   Érdemes     elolvasni   a       vezércikket,   ilyen        szívszaggató,    
+ náciveszélyező   cikket ma    is ritkán   olvashatunk.           Figyeljük meg a   retorikai        
+    párhuzamokat a   mai, Magyar   Gárda ellen   acsarkodó  balos           médiaszeméttel...        
+</div><br>    <p style="margin-bottom: 0cm; font-style: normal; text-decoration: none;" align="justify"><br></p><p style="margin-bottom: 0cm; font-style: normal; text-decoration: none;" align="justify"><br></p><br><p style="margin-bottom: 0cm; font-style: normal; text-decoration: none;" align="justify"><br></p><p style="margin-bottom: 0cm; font-style: normal; text-decoration: none;" align="justify"><A NAME="YDVFJZB"><A HREF="./index.php?post=47#YDVFJZB" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari008.jpg', 600, 463); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari008.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari008_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A 4. oldalon található ez a kis  
+                     jelentés arról,  hogy a rendőrség felpakolt       egy rakás munkást,  és 
+elvitte       őket,                 megvizsgálandó, nem ők  verekedtek-e a Tompa utcában. Egy       
+részükről        később   kiderült,     hogy           igen. A többit 
+kieresztették.</p><br><br><br><br><br><p style="margin-bottom: 0cm; font-style: normal;" align="justify"><A NAME="VYTNBXZ"><A HREF="./index.php?post=47#VYTNBXZ" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari007.jpg', 285, 600); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari007.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari007_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A 7. oldalon mellesleg           
+                  megtudhatjuk, hogy Kémeri-Nagy Imre, az  ismert nyilas vezető nem csak hogy   
+fokosával             fejbevágott                egy szegény, ártatlan munkásfiút, hanem  még le is  
+ zsidózta.   Pedig   nem   is       tudta, hogy   annak        Klein       György a neve. Durva!</p> 
+   <p style="margin-bottom: 0cm; font-style: normal;" align="justify">    <br>            
+</p><br><br><br><br><br><br><div style="text-align: justify;"><A NAME="SLXDBDB"><A HREF="./index.php?post=47#SLXDBDB" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari009.jpg', 600, 474); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari009.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari009_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Azonban a Hegedűs által jelzett  
+       &#8222;felkavart közvéleménynek&#8221;  nem sok nyoma van más lapokban. A Pesti Hirlap is     
+    beszámol              a         munkások előállításáról,  ismételve, hogy a nyilasházat 
+megtámadták,        mégpedig,     mint     itt   már   le         is   írják, &#8222;<i>jobbára 
+szociáldemokrata       ifjúmunkások."</i>    A   tényszerű     közlésen   kívül         nincs     
+más  nyoma, hogy az       ország egyként felhördülve      követelte volna a &#8222;provokáló&#8221;  
+     nyilasok       &#8222;példás&#8221;   megbüntetését. Ó,    persze a   Népszavának   ehhez is 
+van     kommentárja.              Természetesen     mindenki   nyilas,   vagy a   nyilasokkal 
+szimpatizál!    </div><p style="margin-bottom: 0cm; font-style: normal;" align="justify">  <br>  
+</p><div style="text-align: justify;"><A NAME="UCKVYBK"><A HREF="./index.php?post=47#UCKVYBK" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari010.jpg', 682, 800); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari010.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari010_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Az Ujság szeptember 18-i         
+                számában írottakon  pedig tényleg csak röhögni tudunk. Klein György  azt     adta 
+elő   a     lap                   riporterének, hogy ő csak ártatlanul  sétált a Tompa utcában.   
+<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Mikor a 14. számú ház elé ért, onnét           egy előtte ismeretlen, vitézkötéses,  
+           kucsmás, szőkebajuszos, csizmás férfi rohant ki, és     fokosával       ötször            
+ fejbevágta."</div><br>Hát  persze, a gonosz ellenség bizonyára lesben állt,       és  ártatlan      
+             zsidó textilmunkásokra vadászott  fokossal! A rendőrség ezzel szemben azt         
+közli,         hogy   a            verekedés minden valószínűség szerint  szervezett akció 
+volt.<br><br>            </div><A NAME="AMKYQFD"><A HREF="./index.php?post=47#AMKYQFD" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari011.jpg', 600, 307); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari011.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari011_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Ha kicsit visszaugrunk az        
+               időben,     és megnézzük a  Népszava szeptember 17-i fejlécét, érdekes    adalékot   
+kapunk         ehhez.             1937. szeptember     17-én ugyanis  országos építőipari sztrájk   
+volt.        Munkások     tízezrei   nem     mentek       dolgozni aznap.     Igazán  nem lehetett   
+nehéz ebből     összeszedni         hatvan-hetven      prolit,   akiknek     épp volt kedvük egy kis 
+      ideológiai      balhéhoz. Ezt       persze   állították is     más  lapok,   amire a       
+Népszava eképp     reagált:<br><br>    <div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A napisajtó       
+jobboldali része   azonban természetesen               összeröffen, és boldogan ragadja meg az   
+alkalmat, hogy     a szabadság és a   demokrácia           védelmezőjén, a     szociáldemokrata   
+párton üssön egyet."</div>    <p style="margin-bottom: 0cm; font-style: normal;" align="justify">    
+    Most már tudjuk tehát, hogy a       Tompa utcai           nyilasházat  valóban       
+megtámadták,   bár ezt akkoriban a      vörösök     foggal-körömmel             tagadták.  Rendben, 
+végül is     nevezhetünk     antifasiszta harcnak  egy         primkó utcai   bunyót         is,   
+persze ha   ugyanezt a szocik    székházával tették     volna, azt máshogy              nevezte      
+ volna a     Népszava. De kérem szépen, hol  van   Ságvári Endre? Hol van a             
+munkásosztály              büszkesége, a   jogot végzett doktor Ságvári,  a   hérosz, a csodaember, 
+a         nyilasverő, a                 proletariátus    megmentője? Említi őt legalább a   
+Népszava? A      túrót említi.     És   mi   van az     állítólag          hasba   lőtt 
+munkásifjúval, azzal a       <i>Bonyhádi-Litzmann          Jen&#245;vel,     </i>akit Hegedűs Sándor 
+          emleget? Nos, a      Népszava csak   másnap   jutott   el     odáig, hogy      célozgasson 
+erre az esetre, de ők     még           napokkal később    is azt     szajkózták,     hogy   ezek   
+a gonosz nyilasok, ezek  hogy     megtámadták     őket.         Szegény   Klein György,    a       
+korabeli   Ártatlan Józsika pedig     felismerte  Kémeri-Nagy     Imrében     Mortimer       korai 
+elődjét,         bár    ez esetben     legalább a   &#8222;náci&#8221; jelző   stimmelt. Az    
+állítólag   elfogult       rendőrség   pedig     &#8211;          mint megtudjuk &#8211;   Klein 
+felismerése nyomán eljárást    indított a   nyilasok     ellen         is.         Ejnye...     
+Parancsoljatok, itt van  a Népszava következő   néhány cikke az       1937.      szeptember 19-i     
+        és 21-i     számaiból. Az utóbbiban  említik meg         egyáltalán, hogy volt   valami    
+hasbalövés.         Egyébként     pedig   sírva    hivatkoznak a       nyilasok   korábbi, "véres"   
+ támadásaira, és       arra,     hogy   eszük   ágában  sem     volt       megtámadni a Centrum   
+nyomdát,   ahol a nyilasok      újságját       nyomtatják,   dehogy, ők     nem        olyanok...   
+A hivatkozott     véres támadásokról      nem találtam       információt,         valószínűleg  ott 
+is     előugrott valami       vitézkötéses alak   a   sötét  kapualjból,       hogy       ártatlan   
+járójelőket  vagdosson     fejbe.   Egyúttal   nem     értik, a   rendőrség    miért         dagaszt 
+nagy   ügyet &#8222;mesterségesen&#8221; egy   &#8222;jelentéktelen   utcai           
+verekedésből&#8221;...</p><p style="margin-bottom: 0cm; font-style: normal;" align="justify"><br></p><div style="text-align: center;"><A NAME="ZFEUDYI"><A HREF="./index.php?post=47#ZFEUDYI" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari012.jpg', 800, 1202); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari012.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari012_thumb.jpg" border="0"></A> <A NAME="EWHXHEB"><A HREF="./index.php?post=47#EWHXHEB" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari013.jpg', 600, 1220); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari013.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari013_thumb.jpg" border="0"></A> <A NAME="IHDDKNY"><A HREF="./index.php?post=47#IHDDKNY" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari014.jpg', 401, 640); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari014.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari014_thumb.jpg" border="0"></A><br><br></div><div style="text-align: justify;">  No de   nézzük, mi történt ezzel     a  Bonyhádi-Litzmann Jenővel.    
+                 Kiféle-miféle ő?  Tényleg hasbalőtték     az 1937-es majálison?  Ismét forduljunk a 
+            Népszavához.   Az             1937. május  1-i számban a 14.   oldalon olvashatjuk, hol  
+ lesznek           (voltak)      szociáldemokrata         majálisok.   A lövöldözés    állítólag a   
+Hűvösvölgyben           történt.  Nota bene,     nincs is ilyen   helyszín a       listán! A       
+majálisokról szóló           tudósítások  sem említenek       lövöldözést.<br></div><br><div style="text-align: justify;"><div style="text-align: center;"><A NAME="IPJJCTH"><A HREF="./index.php?post=47#IPJJCTH" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari015.jpg', 299, 700); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari015.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari015_thumb.jpg" border="0"></A> <A NAME="SZKREPM"><A HREF="./index.php?post=47#SZKREPM" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari016.jpg', 700, 1044); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari016.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari016_thumb.jpg" border="0"></A> <A NAME="IOUMKCK"><A HREF="./index.php?post=47#IOUMKCK" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari017.jpg', 321, 600); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari017.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari017_thumb.jpg" border="0"></A><br><br></div>Más   
+                  lapokat itt nem idézek, mert     azok magával a  majálissal sem foglalkoztak. Az   
+      1937-es           majálison       tehát  semmiféle lövöldözés   nem   történt!  Ezzel   
+legyinthetnénk     is, tehát             Bonyhádi-Litzmann      csak   legenda, sosem létezett,     
+vagy ezt   is a     kapualjból    kiugorva   ették       meg   a nyilasok...     Igen ám, de     
+ezúttal  csak a modern       kori     történészek   precizitásával        van a hiba.   A     
+lövöldözés   valódi volt. Ám    nem   a     majálison   történt,     hanem hetekkel   utána.        
+Valóban hasba     lőttek egy     munkásifjút a        Hűvösvölgyben, és     valóban nyilasok       
+tették.    De   nem majális volt,       hanem     gyűlés. A   Népszava 1937. június   29-i számában  
+  több,   mint két     oldalt   szentelt   a     valóban            felháborító ügynek. A   tettest, 
+  Balla István  30   éves sofőrt,   nyilas         aktivistát szinte       azonnal            
+elfogták.<br><br></div><div style="text-align: center;"><A NAME="RGMAOPD"><A HREF="./index.php?post=47#RGMAOPD" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari018.jpg', 800, 1134); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari018.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari018_thumb.jpg" border="0"></A> <A NAME="YDCHSMQ"><A HREF="./index.php?post=47#YDCHSMQ" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari019.jpg', 800, 1196); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari019.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari019_thumb.jpg" border="0"></A> <A NAME="UFXNFIF"><A HREF="./index.php?post=47#UFXNFIF" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari020.jpg', 205, 700); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari020.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari020_thumb.jpg" border="0"></A> <A NAME="JXRRMLE"><A HREF="./index.php?post=47#JXRRMLE" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari023.jpg', 800, 1183); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari023.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari023_thumb.jpg" border="0"></A><br></div><div style="text-align: justify;">Balla     elmondása szerint csupán         szórakozni  akartak a        
+         szocikkal, azért mentek ki a Hűvösvölgybe,      hogy a fákra nyilaskereszteket             
+fessenek,   és           mindent  teleaggassanak papír     nyilaskeresztekkel. Pisztoly pedig&nbsp;  
+   &#8222;nagy    vész                   esetére&#8221; volt náluk. (Beláthatjuk, hogy     amikor    
+ ötven-száz fős     felfegyverkezett tömegek         verekednek   az utcákon, ez egyáltalán nem      
+   mondvacsinált     indok.) A harmadik cikkben azonban már         egyenesen azt   írják, 
+"valamiféle         tömegvérfürdő"      rendezése       volt a szándékuk. Erről         eszembe jut 
+a  mai     Népszava   egyik <a target="_blank"style="color: rgb(0, 0, 0);" href="//www.nepszava.hu/PrintArticle.asp?ArticleID=903303"><span style="font-weight: bold;">ostoba     cikke,</span></a> amelyik tömegesen a      Dunába   zuhanó     halottakat és     
+&#8222;borzalmas    pokolgépes merényletet&#8221;     vizionált valami húsz      kiló       cukrot   
+  tartalmazó &#8222;bombagyár&#8221;  feltalálása   kapcsán. Nocsak, hát     ezeknél  nem            
+ változik   semmi?    </div><p style="margin-bottom: 0cm; font-style: normal;" align="justify">  A   
+      pisztolyos ügy mai             értékeléséhez    tudni kell, hogy akkoriban a       
+fegyverviselés         egyáltalán  nem esett olyan         szigorú     elbírálás alá,    mint ma. 
+Bármely nagykorú               személynek joga volt  revolvert         hordani, nagyjából úgy,     
+ahogyan ma            gáz-riasztópisztolyt.       Ugyanígy nem büntették  a         
+verekedőszerszámok, mint az ólmosbot             vagy a kés    viselését sem,   mert     akkor még 
+nem         kezelték  dedósként az       állampolgárt,   és  tudták,     hogy nem állhat     
+mindenki     mellett egy         rendőr.  Az       ilyen eszközök   jogtalan használatát  büntették, 
+    nem a   viselését.   Ezt a         jogot     a        nyilasok ki is   használták, és bár a  
+Népszava sosem mulasztotta       el, hogy rémülten                      sipákoljon   és revolvereket 
+emlegessen, ha nyilasok  kerültek szóba, a   helyzet       az,         hogy a           nyilasok   
+jogosan és  szabályosan viselhettek fegyvert. Ugyanez a jog   a     szocikat       is                
+megillette, és ugyebár   Ságvárinak is volt  valahonnan   pisztolya.   A nyilas         pártházakban 
+  &#8211; mint              erről a Népszava is ír   &#8211; öt     pengőért a  legújabb   
+gyártmányú német          maroklőfegyvereket is     be           lehetett   szerezni.</p>    <p style="margin-bottom: 0cm; font-style: normal;" align="justify">  A     fegyverek   ellenére         
+ezúttal a   nyilasok csak egy        gyerekes &#8222;akcióra&#8221;       készültek,   és Balla      
+elmondása szerint     nem is       tervezték     használni, a  náluk levő           fegyvert, amikor 
+  belekötöttek    Bonyhádi-Litzmannékba.             Májerkedni   akartak.      Csakhogy azok        
+ sebtiben összefüttyentették az    elvtársaikat,   és mivel     a           nyilasok sem   akartak 
+bevert          orral távozni, hát előkapták a   stukkert.   Aztán          túllépték az       
+önvédelem jogos      mértékét.       Már amennyire persze ez jogos      volt.     Minek     
+emberkedik a marhája? De         ettől ez nem a         nyilasok  szervezett akciója,       hanem 
+egy       kötekedő barom egyéni    jaszkarizása volt a       frissen         beszerzett       
+pisztollyal. Miből      lehet   tudni, hogy   nem szervezett akció volt? Nos, ki az   a              
+    hülye, aki   előre     megtervezett módon     kimegy sok ezer  szoci közé, hogy egyet jól        
+         mellbedurrantson,        miközben jól     megmutatja az   arcát mindenkinek? S ha  a 
+nyilasok   erre           készültek     volna,     vajon úgy      fejezték volna be   az   akciót, 
+hogy beülnek   a      legközelebbi       sörözőbe, gondosan           maguknál  tartva   
+fegyvereiket? Egy       későbbi     riportból az is  kiderül,       hogy   Balláéknál     valóban    
+  volt ragasztó, egy     csomó röplap     és   papír    nyilaskeresztek.         Ilyesmit   az   
+ember nem cipel magával       egy    merénylethez.   Ne     mentegessük őket, de   ebben az          
+ esetben    is sokkal   hihetőbb Balla   verziója,       mint a szociké,    akik   már megint        
+     csontártatlanok,     és elnyomottak,    és megalázottak   és...     vérfürdő, az.</p><p style="margin-bottom: 0cm; font-style: normal;" align="justify"><br></p>    <div style="text-align: justify;"><A NAME="WNPOUCO"><A HREF="./index.php?post=47#WNPOUCO" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari022.jpg', 179, 800); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari022.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari022_thumb.jpg" style="float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Naná, hogy a Népszava mindjárt a  
+       &#8222;felbujtók&#8221;  kinyomozását követeli. Nekik jobban   fekszik a  gondosan 
+megtervezett                     merénylet       ötlete &#8211; nyilván  magukból indultak ki 
+&#8211; mint az, hogy       itt   egy   hülyének  nem         kellett     volna       fegyvert adni 
+a kezébe. Ma is hasonló    a   balosok     hozzáállása,     emlékezzünk        csak, hogy a          
+ Mortimer-ügy kapcsán is     mindenáron     &#8222;fasiszta felbujtókat&#8221;     akartak     
+találni.   Július      1-i számuk           címlapján     nemes egyszerűséggel 
+&#8222;nácilapnak&#8221;   nevezik   a     sajtó minden       más          képviselőjét, akik       
+Balla István verzióját  hitték el a   történetről.           Természetesen a        rendőrség is     
+náci. Meg a       kormány is náci.  Mindenben   a nácik keze     van.     Akkor is,   ha       Balla 
+tizenöt  évet kapott     a       pisztolyos   vagánykodásáért.      Az elmúlt     hetven   évben   a 
+  Népszava   házatáján  tényleg semmi sem             változott.   A   tudósításból        egyébként 
+az   is   kiderül, hogy a korabeli   politikai  rendőrségnek                 egyaránt volt a   bal-  
+   és   jobboldali    szélsőségek ellen küzdő osztálya. Ennyit    az         elfogultságról,         
+  már       megint.<br><br>       </div><div style="text-align: justify;"><A NAME="IRSHVUP"><A HREF="./index.php?post=47#IRSHVUP" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari024.jpg', 300, 1173); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari024.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari024_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Összefoglalóként olvassuk el a   
+                          független  Pesti Hírlap tárgyszerű beszámolóját.  A végén közölt hivatalos 
+          rendőrségi              közleményben       ott áll, hogy a rendőrség  vizsgálja, volt-e   
+felbujtó a         háttérben.  Ezt   a           Népszava lazán   ignorálta,     mert jobban    
+hangzik a         nyilasszimpatizáns rendőrség   meséje.    Ez         aztán remek dramaturgiai elem 
+  lesz majd az         <span style="font-style: italic;">Egy óra   múlva itt         vagyok   
+</span>forgatókönyvében is.          </div><p style="margin-bottom: 0cm; font-style: normal;" align="justify">  <br>  </p>  <br><p style="margin-bottom: 0cm; font-style: normal;" align="justify"><br></p><br><br><div style="text-align: justify;"><A NAME="NGFIMDW"><A HREF="./index.php?post=47#NGFIMDW" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari025.jpg', 600, 357); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari025.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari025_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Nem kell azért olyan nagyon      
+                       elsápadni, hogy micsoda  verekedős banda voltak ezek a nyilasok meg a szocik. 
+        Akkoriban            máshogy           gondolkodtak az emberek a pofon intézményéről.  Csak  
+       mellékesen érdemes     elolvasni       a Pesti   Hírlap          ugyanezen számában megjelent 
+  cikkét       a francia      képviselőház éttermében       lezajlott      eseményekről.       Pedig 
+  ott nem is       voltak     nácik.<br><br></div>  <p style="margin-bottom: 0cm; font-style: normal;" align="justify">Összefoglalva: a nyilasok és a       kommunisták  mifelénk is a   más 
+országokban               megszokott utcai  bunyók       keretében tárgyalták       ki az  
+ideológiai   ellentéteket.     Hol   a         nyilasoknál  borult ki a bili, hol a       
+komcsiknál.       Szép társaság  mind a         kettő.     Fentiek   fényében   azt is mondhatnánk,  
+ha történetesen a               tengelyhatalmak     nyerik a       háborút,    akkor ma Kémeri-Nagy  
+ Imrének lenne emléktáblája    valahol. Már                 persze, ha     valaki     emlékezne rá. 
+De  várjunk csak!   Ságvári   Endrét valahol ott    hagytuk       el,   hogy a           kutya   sem 
+  ismeri. Ságvári! Who the    fuck is   Ságvári?     </p>  <div style="text-align: justify;"><A NAME="RMBBJST"><A HREF="./index.php?post=47#RMBBJST" ONCLICK="openbigwindow('resources/pictures/tomcat_20071004_sagvari/sagvari026.jpg', 500, 385); return true;"><img bigpic="resources/pictures/tomcat_20071004_sagvari/sagvari026.jpg" src="./resources/pictures/tomcat_20071004_sagvari/sagvari026_thumb.jpg" style="float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Nos, a neve végre-valahára       
+                megjelenik a Népszavában!  Egyetlenegyszer, s nem többször, és akkor is       egy    
+    mínuszos         hírben.         Ez pedig az 1938. október 21-i  szám 9. oldalának alján 
+szerepel.       Abból    már             nem lett         kétoldalas vezércikk, hogy a  bíróság 8 
+hónapi börtönre        ítélte a Tompa   utcai         támadókat,             köztük  dr. Ságvári 
+Endrét. Ugyanakkor       felmentették    Kémeri-Nagy Imrét,   mivel       önvédelmét    jogosnak     
+      ítélték. Más lapok       nem írtak    erről az ítéletről. Na,   ennyi   volt   Ságvári      
+szerepe.     Leültették,             szevasz.   Ugyanezen lapszám 7.  oldaláról     származik   
+egyébként a    korábban   idézett           híradás a     háromhavi      fogházra ítélt nyilas       
+lapszerkesztőről. Ő  leülte   a három       hónapját,         Ságvárit  a   felénél   kiengedték.   
+Ja,   és a     nyilas lap  mellesleg be   is       lett tiltva, ami   nem       mondható el a    
+Népszaváról.     Persze,       persze,       Horthy-fasizmus,    tudjuk...      </div><p style="margin-bottom: 0cm; font-style: normal;" align="justify">    Ságvári   tehát nem   volt jobb, 
+      mint ami  ellenfelei,   a nyilasok, azaz             egy   nagyszájú hőzöngő,  egy       utcai 
+balhéharcos, egy       felforgató,   aki     történetesen    jogi       diplomával a   zsebében     
+tevékenykedett. Neve    soha többé nem             bukkant fel a   korabeli     Népszava    
+hasábjain, de   nem     említi őt az 1942-től   illegálisan              megjelenő   Szabad Nép     
+egyetlen száma sem.     Legendája  úgy   szól,     hogy rövidesen       "illegalitásban"        
+kellett élnie,     de vajon ebből   mennyi igaz?   Nos,       annyi, hogy    az       állítólag 
+halálra körözött            kommunista   1944-ben lazán   elüldögélhetett egy        budai       
+cukrászda   kerthelyiségében,              terrorista-társára   várva, miközben pedig az    utcákon  
+       megerősített   katonai- és     rendőrjárőrök              cirkáltak. Akkoriban ugyanis   már 
+javában        bombázták   Budapestet a     szövetségesek,          közeledett   a     front, és   
+minden erőt   bevetettek   a    fosztogatások,     rendbontások         megakadályozására.          
+Megtehette   ezt   például Budaházy   György    2006-os   bújkálása     során?     Nem, pedig   béke 
+   volt, és       manapság   nem   állnak az   utcán  posztos       rendőrök.    </p>    <p style="margin-bottom: 0cm; font-style: normal;" align="justify">            Akárhogy is szépítjük,   
+    Ságvári    teljesen   jelentéktelen     bajkeverő   volt a   maga   idejében,    aki   néhány    
+   izgató     röplap     elosztogatásán  és a Tompa utcai       bunyó   megtekintésén      kívül 
+semmi     mást nem tett,         mint   hogy   1944-ben  lelövette magát.           
+Jelentéktelenségére  mi sem   utal     jobban,   minthogy   a     Szépilona     kocsiszínnél    
+történt         lövöldözést   egyetlen, az  Országos     Széchényi     Könyvtár      hírlaptárában   
+  őrzött   újság      sem       említi meg. A nyilas   Kémeri-Nagy   Imre sem   volt egy      
+észlény,   az   újságírói        pályán     bemutatott       kavarása vagy Horthy Miklós      
+királlyá     kikiáltása (amiért   le is          csukták)   például a         balfaszság tankönyvi  
+példája,   de       legalább elment Finnországba,        vitézül     harcolt a     ruszkik     
+ellen, és   1942-ben   a    szovjet     partizánokkal vívott       tűzharcban esett el.    Ságvári   
+  ezzel       szemben   elkummantotta   a       katonaságot,  és   a     nagy fasisztaellenes   
+harcban esze ágában  sem       volt       valóban   fegyvert     fogni. A         fronton harcoló    
+honvédeket ellátó gyárakban   szabotálni,  meg orvul             a törvény           képviselőjére 
+lőni,      az jobban feküdt   neki. Ilyenféle emberek voltak mindig is      ezek a                   
+vörösök, s   ma se   jobbak.</p>    <p style="margin-bottom: 0cm; font-style: normal;" align="justify">      Talán   még   egy       mondat kívánkozik   ide  Ungváry   Krisztiántól:</p><p style="margin-bottom: 0cm; font-style: normal;" align="justify"><br></p>  <div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A nemzeti    
+           emlékezet és a   jog   oszthatatlan. Ha van antifasiszta   minimum   (amit pl. György 
+Péter   az ÉS         múlt     évi 38.   számában   szorgalmazott), akkor léteznie   kell   
+antikommunista     minimumnak     is.   Szomorú, hogy       erről sokan nem   akarnak tudomást   
+venni. Ságvári       emléktáblája       el&#245;tt minden évben       koszorúznak, de arra senki sem 
+    emlékszik, hogy     a jog         meggyalázásával Ságvárira hivatkozva, az ő nevével és az ő   
+nevében   embereket           akasztottak   fel és családokat tettek tönkre.          "</div><p style="margin-bottom: 0cm; font-style: normal;" align="justify">  <br>  </p>                         
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2007-10-04&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=47&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=47&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=47&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=47&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=47&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=47&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=47&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=47&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment3462"></A>65. <A HREF="mailto:tomnash@tvn.hu" STYLE="color: #000000">tomnash</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-10 03:14:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_739.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kazincbarcikán is van egy Ságvári Endre Gimnázium,<br />
+Múcsonyban meg mező imre út<br />
+<br />
+néha amúgy már az ember nem tudja hol lakik, mert állandóan változtatják az utcaneveket, attól függően, h az "illetékes elvtárs"-oknak mi tetszik...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2840"></A>64. Jabuci</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-06 23:01:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_94.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Jopar eve tortent az alabbi eset, Szarvason. Vizitaborban voltunk, aztan az egyik delutan elmentunk egy haverommal varost nezni. Egyszercsak latom, hogy a srac fotozza a keritest. Kerdem tole, hogy ez mire jo. Erre atszellemult arccal: "Ja, csak az utcatablat fotozom." Nezem, "Sagvari utca". Kiderult, hogy a srac gyujti az ilyeneket. Van mar neki Bajcsy-Zsilinszky sorozat, Kun Béla sorozat, stb. Jo...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2671"></A>63. GYG76</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-05 22:11:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_156.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem rég kajáltam a remizben. Ha akkor tudom, hogy ott lőtték le ez a mocskot, akkor pezsgőt rendelek. A csendőrök emlékére meg egy vörösbort.<br />
+<br />
+Nem meglepő módon a Remiz honlapján, egy szót sem ejtenek Ságváriról.<br />
+<br />
+<B><a href="//www.remiz.hu/kezdetek/tortenet.html" target="_new" style="color: #000000;">http://www.remiz.hu/kezdetek/tortenet.html</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2546"></A>62. Szecső</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-05 16:37:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_271.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">""végső elkeseredésében" lőtte le a csendőr"<br />
+<br />
+Nem elkeseredésből, csak ez volt a munkája. De ha úgy vesszük, lelkiismeretfurdalása se hiszem hogy volt miatta. Elvégre egy bűnöző kommunista hazaárulót lőtt le. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2492"></A>61. Tomcat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=47&id=2461#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-05 13:35:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_14.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Na, azért Ságvárit nem "végső elkeseredésében" lőtte le a csendőr.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2464"></A>60. <A HREF="mailto:rapkay@t-online.hu" STYLE="color: #000000">hassel</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-05 12:42:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">egyetértek Borsoval..mi kb képben vunk a babó-kommunista átveréseket illetően..tényleg azokhoz kéne ilyen felvilágosító írásokat címezni,akiknek a legmélyebb igazságokat tartalmazó cikkük mellől egy orkasszony mutat föl a saját 10emeletes lakótelepi bombagyárukra..</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2461"></A>59. <A HREF="mailto:rapkay@t-online.hu" STYLE="color: #000000">hassel</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-05 12:37:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">ha ma kinyírna vki végső elkeseredésében vmi babót,ugyanilyen háborús hőst csinálnának belőle és min 50 évig tanulhatnának róla a fiatalok  a suliban..</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2455"></A>58. Sacra Corona</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-05 12:23:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_841.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Üdv Mindenkinek!<br />
+<br />
+A régi szép időkben az általános iskolám a Vorosilov utcában volt, és nem értettük, hogy mik azok a "Vörösilovak", egyáltalán milyen magyar ragozási módozat ez, hol vannak az ékezetek, stb. Rajom pedig - ki másról -, mint Ságvári Endréről kapta nevét. Éppen csak úttörő lettem, amikor lefújták ezt az egész "programot", és már nem kellett megtanulnom a 12 pontot. Ráadásul az orosz tanárokból hirtelen (1ik hétről a másikra) angol és némettanár lett... :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2344"></A>57. <A HREF="mailto:greed.b@gmail.com" STYLE="color: #000000">greed</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=47&id=2287#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-05 01:11:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_72.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">'98? hogyne. '97ben már régesrég trefort volt. az erőteljes balosodással sem értek egyet, az egyébként is attól függ, ki tanít.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment2342"></A>56. Mirko</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-05 00:54:39</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_458.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Igen, igen, van szerencsém látni, hogy egyetlen tablón sincs rövidítve... :]</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=47&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=47&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=47&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=47&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=47&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=47&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=47&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=47&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

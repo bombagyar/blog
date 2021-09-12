@@ -1,0 +1,469 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2673#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Nyílt levél a Kuruc.infónak";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2673#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Nyílt levél a Kuruc.infónak<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2010 március 1. 23:36:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2673.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Drága becstelen, névtelen és gerinctelen hazaffyak, kik oly nagyon kiveszitek részeteket a rezsim elleni küzdelemből, hogy többet harcoltok ellenem, mint Gyurcsányék egész bandája ellen együttvéve. Kedves Molnár Balázs, Novák Előd, Kürk Roland, Lipusz Zsolt (utóbbinak legalább neve van, ha már becsülete nincs)!<br><br>Évfordulóhoz közeledünk, lassan egy éve próbáltok engem vérhabot hörögve, erőlködve kikiáltani egy személyben mindennek, ami a Sátántól való. Tudom, hogy fájdalmas, hogy csak saját hiteleteket romboljátok, mert a kusza vádjaitok csak a legprolibb surmók szemében érnek valamit, de figyelemreméltó a gúvadt szemű erőlködés. Ennyi erővel már a kormányt is megdönthettétek volna. Igaz, ti még mindig nem válaszoltatok az olyan kérdésekre, hogy hová tettétek az olvasóitoktól kikövetelt sok millió forintnyi pénzadományt, de ezt most hagyjuk, nem emiatt kapjátok e sorokat.<br><br>Ti állítotok rólam dolgokat - rendben van. Én tagadom ezeket - ez is rendben van. De ha ezek a vádak annyira sziklaszilárdak és cáfolhatatlanok, vajon képesek vagytok-e névvel, arccal felvállalni mindazt, amit rám kiabáltatok az elmúlt évben, választási csalótól NBH-ügynökön át tolvajig és sikkasztóig? Vagy ehhez nincs bátorságotok, mert jól tudjátok, hogy egy korrekt vizsgálattól percek alatt összeomlana a propaganda-hazugságtorony?<br><br>Mert ha ez így marad, akkor bizony rosszabbak vagytok a cigányoknál. A kokeróknál ugyanis ismerik a cigánybíróság fogalmát. Ha két cigány összetűzésbe kerül, vagy akár egy helyi gádzsóval támad nézeteltérésük, nem ölre mennek, hanem a vajda ítéletét kérik. Ilyenkor a cigányok szabályos tárgyalást tartanak, amelyen mindkét felet meghallgatják, van rendes "ügyész" és "védő", végül pedig a vajda dönt és igazságot szolgáltat. Persze, cigány igazság ez, de mégiscsak igazság, nem pedig holmi sunyi kurucinfós megoldás, hogy hátbaszurkáljuk, bemocskoljuk, aki nem tetszik, meg ráuszítjuk a primitívebbjét, oszt' jóvan. Ezt csak azóta csinálják a cigányok, mióta nincsenek vajdák. De ahol még vannak, ott a cigánybíróságok is működnek.<br><br>Vajon ér-e annyit a "nemzeti oldal", mint egy jobb cigányfalu? Annak alapján, amit eddig tapasztaltam, erősen kétlem. De mégis itt az ajánlatom. Hajlandó vagyok minden vádatokra megfelelni, megcáfolni. De nem nektek, ti acsargó kutyák, dehogyis. Az csak szócséplés lenne. Minek birkózzak egy falka zsidó emlőkön nevelkedett senkiházival? Lássuk, képesek vagytok-e felnőni a cigányok szintjéhez, és korrekt bíróság elé állni. Nem a köztársaság bírósága elé, dehogyis. Arra is sor kerül majd, de ez nem gátol titeket abban, hogy tovább hazudozzatok. Inkább lássuk, hogy működik az a híres "nemzeti számonkérés".<br><br>Hajlandó vagyok elfogadni, hogy az általatok tett vádakat egy köztiszteletben álló és mindkettőnk által elfogadott nemzeti radikális személyekből álló tanács, egy becsületbíróság előtt vitassuk meg. Ti megteszitek az állításokat, én pedig cáfolom. Szerencsére rengeteg jogászhoz fordulhatunk, akik nem csak a köztársaság törvényeit, hanem a hagyományos magyar jogrendet is ismerik, és ennek ismeretében képesek megítélni, ki rágalmaz és ki hazudik. Ilyen például Dr. Gaudi-Nagy Tamás, ha elvállalja ezt a kis "showműsort". Természetesen a tárgyalás nyilvános lenne, ha kívánjátok, persze ez nem azt jelenti, hogy bárki bekiabálhat közben, de bárki leülhet, és csendben végignézheti. Akár videófelvételt is készíthetünk. A jogászokon kívül médiaszakembereket is meghívhatunk, mint például Pörzse Sándor vagy Matúz Gábor, akik a mindenkori sajtóetika szempontjából is elbírálhatják lejárató cikkeiteket, hogy vajon megfelelt-e annak az eljárásotok, helyesen tettétek-e, hogy soha nem hallgattatok meg, vagy aljasság volt ennek elmulasztása.<br><br>A becsületbíróság ítéletét mindketten közöljük. Ti a kuruc.infón, én a Bombagyáron, és rendelkezésüket is betartjuk.<br><br><FORM CLASS="poll" NAME="poll154form" ACTION="./postpoll.php" METHOD=POST STYLE="float: right; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;"><input type="hidden" name="convertGET" value="1"><INPUT TYPE=HIDDEN NAME="poll" VALUE="154"><DIV CLASS="pollheader">Becsületbíróság<BR><BR></DIV><DIV CLASS="polltitle">Mit szólsz az ötlethez?</DIV><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer341" ID="answer341" VALUE=1289> Nagyon jó ötlet, szerintem sikerülni fog megszervezni.<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer341" ID="answer341" VALUE=1290> Az ötlet jó, de senki sem fogja elvállalni a bíráskodást.<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer341" ID="answer341" VALUE=1291> Nem jó ötlet, mert a kurucok úgyse mernek eljönni, vagy nem fogadják el a döntést.<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer341" ID="answer341" VALUE=1292> Felesleges, a Kuruc bebizonyította az állításait.<BR><BR><DIV CLASS="polltitle">Kit választanál bírónak?</DIV><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer342" ID="answer342" VALUE=1293> Dr. Gaudi-Nagy Tamást<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer342" ID="answer342" VALUE=1294> ifj. Hegedüs Lorántot<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer342" ID="answer342" VALUE=1295> Vona Gábort<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer342" ID="answer342" VALUE=1296> Bethlen Farkast<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer342" ID="answer342" VALUE=1297> Zagyva Gyulát<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer342" ID="answer342" VALUE=1298> Pörzse Sándort<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer342" ID="answer342" VALUE=1299> Egyiket sem, valaki mást<BR><INPUT TYPE=RADIO STYLE="background: #AAAAAA; border: 0px; width: 10px;" NAME="answer342" ID="answer342" VALUE=1300> Közülük többet is<BR><BR><SCRIPT LANGUAGE="JavaScript">poll154form.url.value = window.location;</SCRIPT><CENTER><INPUT TYPE=SUBMIT CLASS="pollbutton" VALUE="Szavazok!"></CENTER></FORM>Hogy tétje is legyen mindennek, határozzuk meg a büntetést is. Ha rágalmaitok bizonyítása mégis sikerülne, és a rám kiabált rágalmaitok közül a becsületbíróság döntése szerint akár egy is teljes mértékben megfelel a valóságnak, úgy beszüntetek minden közéleti tevékenységet, és örökre visszavonulok. Nem írok blogot, nem szerkesztek hírportált, nem végzek újságírói munkát, sem politikai tevékenységet soha többé. Ám ha rágalmaitok cáfolatra találnak, úgy nektek kell felhagynotok a Kuruc.infó szerkesztésével, hiszen egyértelműen bebizonyosodik hiteltelenségetek.<br><br>Tessék, kurucok, itt a lehetőség: tegyétek mérlegre, amit összehordtatok rólam. Persze, már látom is a választ, hogy ebbe nem mentek bele, mert ez csak trükk. Most mégsem ülhet oda Novák Előd fekete harisnyával a fején, mint a 2007-es Magyar Szigeten, amikor sajtóklubot tartottunk, ugye? Hát akkor keressetek valakit, aki hajlandó képviselni a vádjaitokat. Lipusz úr, ha már felvállalta a nevét - s leügynöközött engem, noha az nem zavarja, hogy a Független Újságírók Szövetségében az a Tőke Péter a főnöke, aki valóban ügynök volt - vajon Önnek van mersze kiállni elvtársai képviseletében?<br><br>Borítékolom, hogy nem lesz. Mert ti kevesebbek vagytok a cigányoknál, kurucok. És ugyanígy nem mernétek kiállni azért, amit Kovács Gézáról, Dósa Istvánról és másokról firkáltatok. Vagy tévedek? Nézzük. Várom a választ. 2010 március negyedike van. Mondjuk legyen egy hét a határidő.<br><br style="font-style: italic;"><span style="font-style: italic;">(Kedves Olvasók, ne örüljetek, sajnos nem támadt fel a Bombagyár... Véleményeteket azért csak nyugodtan írogassátok, nem árt az.)</span><br style="font-style: italic;"><br></div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2010-03-01&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2673&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2673&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2673&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2673&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2673&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2673&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2673&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2673&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2673&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2673&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2673&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=2673&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=2673&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=2673&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=2673&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=2673&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=2673&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=2673&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=2673&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=2673&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194571"></A>184. Montivagus</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2010-11-14 17:37:24</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_507.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><br />
+Ezt írtam a bombahir.hu-ra ,csak ott valamiért nem jelent meg...<br />
+<br />
+"Szia Warhamster-hulladék!<br />
+<br />
+Nagyon-nagyon régóta várok arra ,hogy feltegynm nEKED (készakarva kisbetűvel) a kérdéseimet!<br />
+Nem szégyelled magad???<br />
+Azt írtad egy várandós nőnek ,hogy "milyen babát szopatsz te?"...<br />
+...amikor egy várandós -és nem terhes - nő azt írta ,hogy: "hanem olyankor szoptatom a babát, és hát pont ez volt a háttérzaj... :o)"<br />
+<br />
+Mi a k..... a....at képzelsz te magadról?<br />
+Kurucinfóztok?<br />
+Kik vagytok ti akik ilyet megtűrtök magatok közt?!?<br />
+<br />
+Odaírhattad volna ,hogy félig be voltál baszva (mint most én) ,de nem tetted...<br />
+Nem kértél bocsánatot...<br />
+Mi vagy te ,egy fehér ork?!?<br />
+A nő hozzászólása:<br />
+<B><a href="//www.bombagyar.hu/index.php?post=771&commentstart=19#comments" target="_new" style="color: #000000;">http://www.bombagyar.hu/index.php?post=771&commentstart=19#comments</a></B><br />
+31-es számmal. "hegylakó"<br />
+<br />
+WARHAMSTER nevű fehér ork:<br />
+<br />
+<B><a href="//www.bombagyar.hu/index.php?post=771&commentstart=15#comments" target="_new" style="color: #000000;">http://www.bombagyar.hu/index.php?post=771&commentstart=15#comments</a></B><br />
+"milyen babát szopatsz te?"<br />
+<br />
+Erre én így reagáltam:"Ennek hiába mondod...<br />
+Hozzászólása alapján nem sok anyatejet kaphatott."<br />
+<br />
+<B><a href="//www.bombagyar.hu/index.php?post=771&commentstart=0#comments" target="_new" style="color: #000000;">http://www.bombagyar.hu/index.php?post=771&commentstart=0#comments</a></B><br />
+47-es komment<br />
+<br />
+Ennek két és fél éve ,és ez a genetikai hulladék még nem kért bocsánatot!<br />
+Nem tudom az a nő megbocsájt-e neki ,de én nem...<br />
+<br />
+"Megvan az ideje a szeretetnek ,és megvan az ideje a gyűlöletnek..."<br />
+(Prédikátor könyve)<br />
+<br />
+Montivagus -t halottátok"<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194562"></A>183. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2010-03-28 15:28:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez nem életkortól függ.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194561"></A>182. Dieter Stein</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2673&id=194559#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2010-03-26 22:37:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Generációs ellentét... ;-)))<br />
+<br />
+A "mindenki" kicsit talán túlzás; én azt láttam, hogy az MH cikke, meg Novákék gyors (bár, mint az valószínűleg világos, számomra nem túl hiteles) cáfolata + perrel fenyegetőzése nyomán az ügy villámgyorsan elsikkadt (...mindenki részéről nagy kuss, beleértve emberünket, Vonát, a többieket, és a MH-t). ...Amit még gondolok, hogy a "csámcsogtak" szakkifejezés helyénvaló. Ahogy tapasztaltam, az emberek, ki-ki melyik oldalról, többnyire "hívőként" álltak a történtekhez. ...Aki elkönyvelte, hogy az ügy baromság (...mert a Jobbik, és különösképpen Vona egyébként a megtestesült Messiás, ez a balhé meg egy baromság, egyenesen képtelenség), az azért, aki meg Fidesz- és egyéb fan volt, az meg azért nem vette a fáradságot, hogy végiggondolja, hogy pontosan mit is látott azokon a screenshotokon, mit írt a honlap, mit nyilatkoztak az érintettek, és hogy mindez hogyan áll (vagy hogyan nem áll) össze. ...Az ügy tanulsága számomra annyi, hogy attól, h. valaki meglépte azt a szintet, hogy az MSZP meg az SZDSZ suckol, még nem feltétlenül hajlamosabb a dolgok mélyét keresni, mint... "amazok", akiket szidni kell.<br />
+<br />
+...De nem, százalékban én sem gondolom, hogy az ügy sokat ártott a Jobbiknak.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194559"></A>181. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2673&id=194558#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2010-03-26 21:02:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hú de sokat írsz. :)) Száz szónak is egy a vége: Elérte amit akart, ezen csámcsogott mindenki. <br />
+<br />
+Bár százalékot biztos nem ért.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194558"></A>180. Dieter Stein</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2673&id=194557#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2010-03-26 12:26:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Értem. Arra az esetre gondolsz, hogy a "Vona" leveleit olvasó célszemélyek iwiw-regjei valódiak, olvashatják "Vona" leveleit, és ilyet csak úgy lehet hitelesen hamisítani, ha a küldő reget ellopják (mert különben nyilvánvaló, hogy a küldő nem az "igazi" Vona, azaz eleve nem autentikus).<br />
+<br />
+Ez ellentétben áll Novák verziójával. A nyilatkozat azt taglalja, hogy a screenshotok minimum _két_ (illetve több) ellopott reg közötti levelezésből keletkezhettek, gondosan ügyelve arra, hogy maga a "hamis" levelek címzettje (a címzett reg tulajdonosa) a leveleket ne olvashassa el. A nyilatkozat nem tér ki arra, hogy a "célszemélyek" (P.M. és a többiek) olvashatták-e az "ál-Vona" leveleit, de sugallni azt sugallja, hogy nem.<br />
+<br />
+A való élettel is ellentétben áll, egyébként. Tegyük fel, hogy az "ál-Vona" az igazi Vona feltört regjével levelezget a történet további, valódi szereplőivel. Lehetséges? ...Az, csak gyors lebukás a vége, mivel Vona a való életben is találkozik ezekkel a szereplőkkel, és nem "tudja", hogy tegnap mit írt az iwiw-en.<br />
+<br />
+...Ha pedig nem a valódi szereplőkkel levelezget, hanem a fogadóoldalon is sajátmaga áll (legyen az a célszemélyek feltört regje, amelyből a lebonyolítás után törli az általa küldött leveleket, vagy a saját, erre a célra létrehozott álregje), akkor ott tartunk, hogy a leveleket kizárólag a hamisítást készítő emberke látja, más személy soha.<br />
+<br />
+Azaz a végeredmény nem lesz hitelesebb attól, hogy feltört reggel csinálta (csak rizikósabb és munkásabb), mintha a teljes munka egy "tesztkörnyezetben" folyik. Mivel a végeredmény, amivel "mi" szembesülünk, szükségképpen csak screenshot.<br />
+<br />
+Esetleg lett volna értelme ellopni még a reget, ha olyanokkal levelez, akik az ügynek közvetlenül nem részesei, és a leveleket később nyilvánosságra hozzák. ...Ezek az emberek vissza tudják ellenőrizni, hogy a küldő valóban Vona regje. ...De én nem tudok ilyen, eredeti formában rendelkezésre álló üzenetről. ...És a történet szereplői is mélyen hallgatnak.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194557"></A>179. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2673&id=194556#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2010-03-26 11:21:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem a visszaellenőrzés miatt fontos ez hanem a bizonyítás miatt. Ugyanis ha "Vona" elküldi iwiwen ezt a levelet, be kell bizonyítania hogy nem igaz, amit küldött, illetve, hogy nem ő küldte. Egy kamu loginnal küldött kamu levélről meg azt mondhatja (jogosan) hogy ő ilyet nem küldött és kész.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194556"></A>178. Dieter Stein</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2673&id=194555#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2010-03-25 22:49:16</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szerinted miből lehet visszaellenőrizni egy screenshotról, hogy "igazi" forrásból származik?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194555"></A>177. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2673&id=194551#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2010-03-25 14:37:35</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem azért hogy kotnyeleskedjek de a hamis forrásból származó hamis információ lófaszt sem ér.<br />
+<br />
+Az igazi forrásból származó hamis információ sokkal veszélyesebb, ezért érdemes ezzel vacakolni.<br />
+<br />
+<br />
+A felvetésed ("minek feltörni autentikus idkat ha kamu idval is írhatok kamu levelet?") kb. olyan mintha tesztkörnyezetben létező tesztadatokkal akarnál elkövetni egy bűncselekményt. Na ugye, hogy az éles környezetben leledző idkra lenne szükséged? (Már, ha nem Johnny Mortgage 1111-2222-3333-4444 számú cc-jét akarod feltörni, ami egy tesztszerveren belül, egy fiktív táblán kívül a büdös életben sehol sem létezik :D)<br />
+<br />
+<br />
+Tomcat,<br />
+<br />
+Ha erre jársz: Nem lehet beloggolni a bombahirre, no input file specified :-(, rá tudnál nézni?<br />
+<br />
+Köszi!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194553"></A>176. <A HREF="mailto:garamilster@gmail.com" STYLE="color: #000000">Antifaszok Réme</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2010-03-24 21:54:04</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Vörös Báró. Nyugi, nem a komcsikról lesz szó. Fiatalon német legenda lett, múlt század eleji miliő, remek első vh-s légi csatajelenetek, igazsággal szembesítő és minden kórházban jelen lévő nővérke, szerelem, kurázsi, l' haim, landolás utáni kellemes csevely a kanadai pilótával, lövészárok harc, szenvedély predesztinált végzetes befejezés, végén szomorkás pátosz és babók.<br />
+<br />
+<B><a href="//www.youtube.com/watch?v=TfF4GDlo7Mg" target="_new" style="color: #000000;">http://www.youtube.com/watch?v=TfF4GDlo7Mg</a></B>  </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment194551"></A>175. Dieter Stein</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2673&id=194546#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2010-03-24 01:42:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Stílus: O.K., semmi gond.<br />
+<br />
+Gondoltam, a hsz-ed pontjaira fogok reagálni, de aztán azt gondoltam, valószínűleg nem tiszta, hogy az állítólagos "cáfolatról" (Novák mint szóvivő nyilatkozatáról) miért írtam azt, hogy nem jelent semmit, ezért előbb ezt fogom vesézni... reméltem, hogy röviden, de nem jött össze. ...Más szóval, először azt kívánom megmutatni, hogy Novák nyilatkozata nem cáfolja, hogy konkrétan Vona levelei kerültek ki a netre, miközben valójában azt a látszatot kelti, hogy a kijelentései ezt "bizonyítják".<br />
+<br />
+A nyilatkozat megtalálható itt, ebből szemezgetek: <B><a href="//barikad.hu/node/48614" target="_new" style="color: #000000;">http://barikad.hu/node/48614</a></B><br />
+<br />
+Novák tényszerűen a következő (az ügyhöz közvetlenül kapcsolódó) állításokat teszi. (Másokat is tesz, de ezek egy része nettó hangulatkeltés, más része az ügy részleteihez hasonló, de a Vona-ügyhöz nincs közvetlen köze -- ha kihagytam volna valamit, figyelmeztess).<br />
+<br />
+1.) "Vona Gábor már tavaly megszüntette iwiw-adatlapját."<br />
+2.) "Vona Gábor adatlapját feltörték."<br />
+3.) "P.M. postafiókjának jelszavát megszerezték."<br />
+4.) "P.M. iwiw-adatlapjához a feltört postafiókjának "kódján" keresztül szintén hozzá sikerült férniük."<br />
+5.) "P.M. és "egy másik fantomfelhasználó" "címéről" küldtek (következésképp hamis, kamu) üzeneteket, és ezekről Vona regjével screenshot-okat készítettek."<br />
+6.) "A "hamisító" ezeket a leveleket gyorsan törölte."<br />
+<br />
+7.) "A "hamisító" bizonyítékul IP-címekre hivatkozik, és ez hülyeség."<br />
+8.) "A "hamisító" TC által küldött levélre hivatkozik, és ez hülyeség."<br />
+<br />
+9.) "A Jobbik feljelentést tesz"...<br />
+10.) "Vona kizárólag a Facebook-on van jelen... stb."<br />
+<br />
+Nézzük.<br />
+<br />
+1.) Ezt csabex-szel megbeszéltétek, a screenshot-ok dátuma tavaly őszi; ügyes csúsztatás, de ettől nyugodtan feltörhették.<br />
+<br />
+2.) ...Érdekes svédcsavar ezzel előállni, amikor az előző állításunk épp az volt, hogy Vonának már nincs is regje, és ezért egyszerű földi halandó fel sem törhette (legfeljebb az ÁVÓÓÓ). De O.K., legyen. Biztosan a titkosszolgálat volt, az iwiw-nél visszatöltötték Vona tavaly törölt regisztrációjának adatait, és azzal visszaélve (közben persze vigyázva, hogy a már rég megszüntetett regre a többi, aktuális, feltört regről jelen időben küldött leveleket Vona észre ne vegye, amikor a rég bezárt regjére belép :-D ), készítették a screenshotokat... világos, mint a vakablak.<br />
+<br />
+3.) Ez viszont érdekes momentum, és erre a botrány kirobbanásakor nem is figyeltem fel. Ez az állítás önmagában valószínűleg helytálló. Emberünk másképp nem tehett volna utalásokat arra, hogy mi van P.M. postafiókjában, és még egy csomó más dolog. Azaz emberünk nem dicsekedett el vele, de nagyon valószínű, hogy tört ő mást is (ha tört), vagy ha nem tört, akkor bennfentesként ismerhetett (a hogyanra nincs infóm) -- a lényeg, hogy többet tudott, mint amit önmagáról az oldalán reklámozott.<br />
+<br />
+4.) Ez kb. olyan komoly, mint emberünk híres hivatkozása az IP-számokra. P.M. postafiókjelszavának ismerete semmire sem lehetett jó, mivel nincs ilyen iwiw "kód", kivéve ha itt olyanra gondol, hogy pl. a postafiók és az iwiw-reg jelszavai megegyeztek, vagy ha P.M. a postafiókjában letárolta valahová a jelszavát.<br />
+<br />
+5.) Ez önmagában elképzelhető, de álljunk itt meg egy ásónyomnyira.<br />
+<br />
+Te magad is írod pl., hogy mennyire könnyű iwiw-álreget építeni. Nyugodtan le lehet szedni a célszemély adatait (már ami publikus.. ha nem, egy jól irányzott, sunyi "ismerősnek jelölöm"-mel megoldható, vagy hasraütésből), a fényképeit, bármit. Itt van a gubanc. Emberünk, ha hamisítványokat akar gyártani, akkor ehhez kénye-kedve szerint annyi álreget gyárt, amennyit akar, és szabadon pingpongozhat közöttük kamulevelekkel, miközben buzgón nyomkodja a PrintScreen-t, és ebbe senki nem fogja zavarni. Tegyük fel, hogy nem sikerül mindent "tökéletesre", mert pl. Vona ismerőseinek számát és más apróságokat nehéz lehet reprodukálni... a gond ekkor sem nagy, mert korrigálandó részlet "nincs sok", a Photoshop pedig csodákra képes, ahogy Te is írtad.<br />
+<br />
+Kérdés: emberünk akkor mi a francnak töri fel Vona regjét, és pingpongozik valódi regek között az általa hamisított levelekkel?<br />
+<br />
+Erre ugyanis semmilyen logikus magyarázat nincs. Ha én be akarom feketíteni Vonát, és eszközül azt választom, hogy _hamisítok_, akkor olyan környezetet választok, ahol a melóm a lehető legkönnyebb, és a lehető legkevesebb rizikóval jár. Kérdés: ezek után mi a francnak játszom azzal, hogy feltöröm Vona regjét, és megszerzem P.M. postafiókjának a jelszavát is? Azért, hogy aztán a feltört regek, no meg még egy bonusként általam létrehozott kamureg között pingpongozzak kamulevelekkel, amit a feltöréssel járó pluszmunka és brutális rizikó nélkül is megtehetnék, senki által nem zavartatva, majdhogynem laboratóriumi körülmények között?<br />
+<br />
+Szerintem ez nem logikus. Vagy hamisítani akarok, és akkor hamisítok (aztán a nagyérdemű elé tárom az eredményt), vagy eleve illegálisan és rizikósan, de igazi információt akarok _szerezni_. A rossz hír az, hogy ha nem hamisításra, hanem kényes infók megszerzésére és nyilvánosságra hozására szántam el magam, és sikerült a törés, akkor nem hamisítványt, hanem a kényes infókat fogom nyilvánosságra hozni, és azok teljesen valódiak.<br />
+<br />
+Novák "ötlete" tehát nem lehetetlen, de furcsa. Minek vacakol valaki regek feltörésével, vállalva a lebukás kockázatát, ha amúgy is általa kitalált hazugságot, kamuleveleket akar nyilvánosságra hozni?<br />
+<br />
+6.) Nyilván (ha így történt).<br />
+<br />
+7.) Igaz. De az, hogy emberünk hülyeségre hivatkozik, az általa bemutatott screenshotok, azaz a "Vona-levelek" hamisítottságát nem bizonyítja (legfeljebb emberünk információinak eredetét nem ismerjük, de erről már láttuk, hogy biztosan "többet tudott", mint amit a lapon reklámozott magáról, hiszen ezek szerint P.M. postafiókját is "elég jól" ismerte...).<br />
+<br />
+8.) Igaz. Ezt is, már korábban megbeszéltük itt. Amit emberünk beszél, az hülyeség, de a screenshotot mások is elnézték, és mások is hitték reflexből azt, hogy nahát, ez TC levele. A "perdöntő" maga a screenshot, amelyről világosan látszik, hogy nem TC küldte, hanem egy valóban létező "baráti kör". Ennek az állítólagos "TC baráti körnek" a leveléről, habár Novák erre az apróságra ésszerűen nem tér ki, éppen hogy semmi sem bizonyítja, hogy hamisítvány.<br />
+<br />
+Közbevetőleg egy kérdés: ha a leveleket a tag hamisította, úgy, ahogy Novák előadja, akkor "általában" hogy kerül a képbe egy, a "TC baráti kör" nevében, nyilván senki más, mint emberünk által hamisított levél? Hogy kerül a csizma az asztalra? Azon kívül, emberünk vajon mit csinált? Csak erre a célra, regisztrált egy "TC baráti kör" kamureget, nem is TC-t, hanem kifejezetten TC baráti kört, amivel levelet írt Vona feltört regjének, aztán azt mondta a könnyen leleplezhető screenshotról, hogy ez TC levele? Direkt? Ez nem logikus.<br />
+<br />
+9.) Nettó fenyegetés, nincs ténytartalma.<br />
+<br />
+10.) Annak, hogy most hol van regje, és a reget ki kezeli, kb. semmi köze ahhoz, hogy tavaly ősszel mi történt az iwiw-en. De ügyes ködösítési kísérlet.<br />
+<br />
+Még egy-két kérdés eszembe jut. Pl. ha igaz az, hogy valójában hamisításról, nem levéltitok megsértéséről van szó, akkor miért vacakolt a tag azzal, hogy a hamisított screenshotok egy részét múlt októberre-novemberre datálta, nyilván "ellenőrizhető" járulékos információkkal, más képeket pedig csak most szedett össze? ...Az világos, hogy miért "pont" most tette ki az oldalt, de a "hall of fame" is most jutott eszébe, amihez új screenshotok kellettek?<br />
+<br />
+Aztán, mi a helyzet azzal a shottal, ami március elején készült P.M. lapjáról, és amelyen látszik, hogy a shot készítéséhez használt reg P.M. iwiw-es ismerőse? Ennyi feltört regje volt a szentemnek, és az október-novemberi nagyüzem után még március elején is volt belőlük, senki nem vette észre a visszaélést?<br />
+<br />
+Aztán miért van az, hogy az emberünk által "hamisított" levelek valós helyeket, neveket, időpontokat tartalmaznak? Tegyük fel, hogy emberünk nem bennfentes, hanem Vona, Novák sztorija szerint feltört iwiw-regjének levelezéséből szedi az infókat. Mit csinál? Kínosan ügyel rá, hogy a tényanyag stimmeljen, és az tényleg centire stimmel is? ...Nem lehetetlen, de furcsa. Pláne, ha már láttuk, hogy konspirációban nem túl tökéletes, és egyébként három hibát is csinált, miközben azt a rövid honlapot összehozta (IP-hivatkozás, TC-hivatkozás, P.M. postafiókjára hivatkozás)?<br />
+<br />
+...De ezek már nem Novák nyilatkozatához kapcsolódnak, csak messziről.<br />
+<br />
+Hmmm, továbbiak röviden (remélem), mert leragad a szemem.<br />
+<br />
+A hsz-ed pontjaira reagálok.<br />
+<br />
+1.) Mint fent, és mint csabex.<br />
+<br />
+2.) Alapvetően igen, egy ilyen hamisításosdit, csak a technikai szintről megközelítve korrektül cáfolni v. megerősíteni gyakorlatilag lehetetlen (...ha megnézed, pontosan ezt írtam korábban magam is). ...Mondjuk, Novák részéről ez az általa adott "cáfolat" még ennek a szintnek is messze alatta van, ugyanis a ködösítésével több kérdést generált, mint amennyi a kiadása előtt kint volt. Ha azt mondta volna, hogy emberek, ilyen screenshotokat az hamisít, aki akar, ne vicceljünk már -- és nem kezd el Vona- és a többi jobbikos regjének feltörésével maszatolni --, akár azt mondanám, hogy korrekt, ennél többet az ügy nem érdemel, mert semmit nem lehet bizonyítani, sem cáfolni. ...Persze, ekkor nem kerülhette volna el azt a logikus következtetést, hogy de hiszen tudunk mi "cáfolni", az ügybe belekevert emberek hitelességén keresztül (a kiállásukkal) akkor is, ha technikai szinten nem lehet. A cáfolatával azonban nekem még több kérdésem lett, mint amennyi az elhangzása előtt volt (lásd fent).<br />
+<br />
+3.) Tul.képp én P.M. reglapját nem vizslattam, hogy mi tűnt el róla, mert nem tűnt relevánsnak... én P.Gy. reglapjára utaltam, mert valószínűnek tűnt, hogy ha az ügynek van alapja, akkor (ha valahol egyáltalán), a bili nála fog borulni. P.Gy. képei közül nem tudom, mennyi tűnt el, mert a crack-lapon a képei nem szerepelnek (talán csak egy-kettő?...). A főlapja lett érdekes -- számos hivatkozás, számos, korábbi, Jobbikkal és a feleségével kapcsolatos szenvedélyről tanúskodó önvallomás eltűnt, stb. Ezért a képekkel kapcsolatos gondolatod nemigen tudom "értelmezni" -- ha valaki huncutkodna, az "én" képeimmel, akkor lehet, hogy én leszedném, de ennek nem gondolom, hogy van összefüggése P.Gy. adatlapjával, ahonnan nem tipikusan képek tűntek el.<br />
+<br />
+4.) Korábban beszéltünk már róla, és fent is hivatkozom rá -- attól, hogy a tag hülyeséget beszélt, a screenshotja a szavait cáfolja, de a screenshot hitelességét nem.<br />
+<br />
+Az, hogy miért "írta" azt, hogy a levél "Tomcaté", de eközben neki, magának a "hamisítónak" nem "sikerült" egy ennek az állításnak megfelelő hamisítványt produkálnia, viszont több, mint elgondolkodtató.<br />
+<br />
+Ez ugyanis arra mutat, hogy a screenshotot nem hamisította, hanem "készen kapta" (hiszen ha hamisítja, akkor olyat hamisít, ami erről neki a fejében van). Azaz lehet (valószínűleg) valós screenshot, amiről ő mondott valami végsősoron hülyeséget.<br />
+<br />
+Vona Gábor neje: nem akarom "belekeverni". Csak annyit fűzök hozzá ("elvi síkon"), hogy én már láttam olyat, hogy apuci (különösen, ha egyébként is "sok utazással" járó hivatása van) tudott anyuci tudta nélkül különutakon járni. Ezzel szerintem nem vagyok túlságosan egyedül. ...Ha Vona felesége a botrány kirobbanása előtt jóban volt P.M.-mel, az ezen a ponton nem bizonyít semmit (és még ezt sem állítottuk, csak azt, hogy Vona felesége szerkesztő ott, ahol P.M.-et címlapra választották). A többi érvet (életszerűtlen, stb.) nem tudom megítélni, mivel nem ismerem az érintetteket. Ha azt mondod, hogy így van, O.K.<br />
+<br />
+5.) Átkarolós fényképek -- részemről ezekkel van a legkevesebb gond, nyilvánvaló, hogy sok hasonló fotó készül, ez ilyen, Vonát valószínű, hogy P.M.-en kívül lefotózták még néhány ezer másik emberrel is, sokkal közülük hasonlóan laza helyzetben v. stílusban. Ezek a fotók számomra összesen annyi tényt hordoznak, hogy "már találkoztak". Na és.<br />
+<br />
+De mindettől számomra még nem válik "világossá" a levezetés, mert bizonyos pontokban eredendően egyetértünk (mint iwiw működése és hamisítási lehetőségek), de ettől még nem világos, hogy emberünk miért tört, ha hamisítani akart, és miért hamisított volna, ha valós / kínos adatokat akart nyilvánosságra hozni, és sikerült is neki a törés. (Valamint hogyan "hamisította" a "TC"-levelet, és miért épp olyanra,... stb.) Vagy nem ismertem pl. a Barikád szerkesztésének ilyen részleteit, de az pl. a hsz.-edben nem hangzott el, hogy P.M.-et Vona felesége választotta a címlapra (vagy, ha tf. ő választotta, akkor miből kellett volna tudnia, hogy Vona szempontjából ő volt már "nem érdektelen"...). P.M. címlapon szerepeltetése így a választások előtt néhány héttel amúgy is azt gondolom, hogy a pártlap szempontjából logikus. Annak, hogy a befeketítés alapjának ötletet Vona feleségének interjújából szerezték volna, ellentmond, hogy a screenshotok múlt év végén "készültek", azaz Novák verziója a feltörésre és a hamisításra már nem lehetséges (hiszen egy héttel a botrány kirobbanása előtt Vona rég megszüntetett adatlapját földi halandó már nem törhette fel, tavaly októberben viszont még nem volt ismert Vona feleségének interjúja). Mi volt még? P.Gy. lapja, amiről ezek szerint félreértést tisztáztam (mivel nem a képeket hiányoltam róla).<br />
+<br />
+De én végsősoron nem ezekre a kérdésekre keresem a választ (legfeljebb úgy, mint ahogy segédtételeket "keres" az ember matematikában -- önmagukban semmire sem jók,  de sokszor kulcsfontosságúak). Én arra keresem a választ, hogy "ki Vona Gábor". Erre előbb-utóbb meg fogom kapni a választ, csak úgymond "jobban örülök", ha ezt (ha a balsejtelmeim valakivel kapcsolatban tf. jogosak) "olcsón" és időben sikerül.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2673&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2673&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2673&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2673&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2673&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2673&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2673&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2673&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2673&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2673&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2673&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=2673&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=2673&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=2673&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=2673&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=2673&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=2673&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=2673&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=2673&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=2673&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

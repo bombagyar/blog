@@ -1,0 +1,519 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1303#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Bombagyár buli &#8211; folyamatosan frissítve!";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Bombagyár buli &#8211; folyamatosan frissítve!<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 augusztus 30. 18:14:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1303.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><span style="font-weight: bold;">18.00</span><br><font size="1">tomcat</font><br><br style="font-weight: bold;"></div><div style="text-align: justify;">Megkezdődött a Bombagyár buli a B City   Pubban. Máris vagyunk vagy     
+                                                                    harmincan, plusz     két       
+barátságos       kidobó         (olyan                     rohamrendőr-hajigáló                   
+fajták),   és     jó           kis               káosz,         mert   a   tulaj   nem               
+      vette   komolyan,     hogy       mi   itt               százan   leszünk,     és     csak      
+         egy-két                       asztalt       tartott     fenn         nekünk.   Most         
+                magyaráztam a       pultos               csajoknak,   hogy                 pedig mi 
+ezt             kurvára                 komolyan                 gondoltuk. Kis         vita volt    
+         arról                 is, hogy     hogyan             oldjuk   meg, hogy       csak       a 
+  mi                       bulink             résztvevőitől           szedjünk   500         
+forintos         beugrót,   az                       egyébként                     betévedőktől      
+ pedig     ne...   &#8211;             egyébként   mi a                   különbség a   kétféle      
+     vendég           között?             Ész,       hová               mész. Szóval               
+semmi sincs             rendben,         de           legalább   pia     lesz       elég,            
+         azt   látom a       bárpulton.     Itt         vagyunk               már       vagy       
+húszan, a                     stábból       Blogin,             Főnix,     Greed       és     
+Gabucino,   meg       én.             Ja, és   most       jött         meg Dia,                      
+ Főnix           barátnője.     Az,     a                               zsidóverő.<br></div><br><div style="text-align: justify;">Egy                     kedves     gyárlakó                             
+  hozott           nekem   svájci     katonai         csokit.   Le   is                 
+fényképeztük,   de               pont       most           hülye a     Gyár,   nem       tudom       
+                  feltölteni.               Gabucino   meg     itt           fekszik             
+félrészegen,             úgyhogy   nem     tudja             fixelni.                   Szóval       
+        képzeljetek el       egy             csokit             piros             csomagolásban,     
+fehér               kereszttel,             és az is   rá         van   írva,               hogy     
+                <span style="font-style: italic;">Militär-Schokolade</span>.                     
+Nem     tudom           megkóstolni,       mert       elszállna   a           cukrom,       de       
+    majd           kiosztjuk             díjnak       a                                           
+darts-versenyben.<br></div><br><span style="font-weight: bold;">18.44</span><br><font size="1">blogin</font><br><div style="text-align: justify;"><br>Megkaptam az első ajándék söröm.   
+      Még                                 ígért   valaki,         majd     behajtom.     Én is       
+                kaptam         svájci         csokit.   Közben               kiderült,   hogy a      
+     dartshoz               nincsen     tű,   de       nem       baj,         nem               
+szeretem a                 dartsot.   Csak     így     kinek adjuk     az             ajándékokat,   
+            amelyeket             hoztunk?               Mindegy,               talán lesz           
+                csocsóbajnokság is   (a       csocsót     is         utálom). A       kidobók még   
+mindig                             nagyon                             nagyok.<br><br style="font-weight: bold;"><span style="font-weight: bold;">18.56</span><br><font size="1">blogin</font><br><br>Az egyik           csapos         lány,       Barbi                   
+éppen   azt       nézi,     hogy     mit írok.                       Alapvetően     semmit.       
+Dragon64 még       nem             érkezett       meg.         Egy       másik         csapos   lány 
+nem         szeret     minket                   túlságosan.   Egy         civil srácot               
+        kínunkban             beengedtünk, mert     úgy         megszokta   a           
+játékgépezést,     hogy                 hiányzott                     neki.           Közben   én    
+     már egyszer     kiöntöttem, egyszer       pedig       eleve         magamra             
+öntöttem   a         piát.                         Mindenki jó       arc.<br><br><span style="font-weight: bold;">19.04</span><br><font size="1">blogin</font><br><br>Még       kétszer     
+                      kiöntöttem a   sört,       amelyet     szintén       ajándékba               
+kaptam.   A                     búzasört itt       sokan             szeretik, azt       viszont     
+nem,       aki a napokban azt                         állította, hogy           megivott         két 
+    nap           alatt     140           fröccsöt, ezt   nem         hisszük   el neki.             
+        Megérkezett           Gyilkosgalóca     is.   Aki       nincs             itt,     annak     
+        rossz.   Lehet,   hogy a                   napokban         meg is   hal                 
+emiatt.<br><br><span style="font-weight: bold;">19.16</span><br><font size="1">blogin</font><br><br>Dragon mindjárt         érkezik, de a       vonat                      
+   vonalán           valamiféle               karambol volt     (reméljük,       hogy sokan          
+   meghaltak,         szörnyű             halállal). A vécé                       kulturált;         
+    ilyen helyeken én     mindig           tartok           egy   kissé ettől   a         
+helyiségtől.         Tudni   kell,   hogy   elég                           kellemetlen,         
+amikor           egy       talponállóban     elmész a   piszoárhoz,   majd a               melletted 
+levő                 távolba                     révedő       tekintettel rád   néz,     aztán az 
+addig           másra             használt         kezét   feléd       nyújtja:   te     tényleg     
+    a     Blogin             vagy?!               Itt   ilyen         nincs.<br><br><span style="font-weight: bold;">19:30</span><br style="font-weight: bold;"><font size="1">tomcat<br></font><br>Lassan annyian               vagyunk,       mint           egy         
+      átlagos           antifasiszta           nagygyűlésen.   Valaki épp       most   szólt be      
+     Bloginnak, hogy           úgyis   az                 asztal     alá       issza.         Blogin 
+pedig           lebaszta   Gabucinót, hogy   nem   fog         rendesen           berúgni,     ha    
+   csak       sört           iszik.             Gabucino   Xenophobe-t mutat       neki   az         
+MP3           lejátszóból. Blogin           ideges, mert egy           haverja               nem   
+jött   el,       pedig     megígérte.         Aki           hazudik,     azt   megöljünk.     
+Gabucino és Gergő             (korábban                   terrorista,     de                 
+megszüntették     az     eljárást)     Lovecraftot       tárgyalják     ki. Bent, a             
+belső           teremben             körbetolt                   asztaloknál     részegednek a 
+mocskos         horthysták.               Durva.<br><br><span style="font-weight: bold;">19.32</span><br><font size="1">blogin</font><br><br>&#8222;Rendezvényre?&#8221; &#8211;       
+      kérdezik a   legjobb                               kidobók.                 
+&#8222;Gy<code></code>ilkosgalóca&#8221;     &#8211;                   válaszolja                   
+megilletődve   Gyilkosgalóca.           &#8222;Az         valami         titkos       jelszó?&#8221; 
+          Tény,   nem               mondtunk el mindent     elég       részletesen.   De             
+a buli         csodálatos,   épp   most               lépett         ide         hozzám valaki:   
+&#8222;Köszönöm,     hogy         megcsináltátok   ezt   a         bulit, a                   
+legjobb,               amin valaha     voltam.&#8221;   Bár ez       nyilvánvaló   túlzás,     azért 
+      mégis   jó         érzés,         hogy   bárkivel                         szóba   állhatsz,   
+itt   biztosan   mindenki   a       barátod.     (Kaptam még                                 
+innivalót.)<br><br><span style="font-weight: bold;">19.38</span><br><font size="1">blogin</font><br><br>Megérkezett Dragon64,             tapsot       kapott. Csak tudnám,    
+   miért.                             (Szerencsére ő   sem tud   inni, ahogyan Tomcat   sem,         
+      engem tehát         többen     hívnak meg                 ;))<br><br><span style="font-weight: bold;">19.40</span><br style="font-weight: bold;"><font size="1">tomcat<br></font><br>Annyira    
+       megörültem Dragonnak,         hogy       mindjárt     belekaroltam,   hogy a                  
+   nagy       terembe     vezessem. A mozdulat           során     könyököm találkozott     Gabucino 
+    poharával,             amiből   éppen                   ivott,   így         pofánsöröztem. 
+Gabucino   most csöpög és             anyáz.<br><br>Egy         kedves             olvasónk,     
+<span style="font-style: italic;">zebraman</span>     kérdezte   itt a                       
+kommentekben,     miért     jó az     embereknek,           hogy   berúgnak. Nos, erre     nem tudom 
+a         választ,       mert                 én   nem iszom.     Blogin válasza az volt erre,   
+hogy                       <span style="font-style: italic;">kuss,         </span>de ő   már elég 
+részeg. Megkérdeztem hát a                 csapos                     csajokat, hogy         nekik 
+mi a     véleményük a   kérdésről. Az     egyik   azt     mondta,             azért     jó nekik   
+berúgni,     mert             akkor be   lesznek       rúgva.   A           másik   kicsit           
+gondolkodott, majd beismerte,   hogy nem     tudja.         Pedig   neki                   értenie   
+  kellene             hozzá.<br><br>Épp most     jöttek meg a <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//naczivadasz.blogspot.com">Náczivadász</a> szerkesztői.     Hurrá.        
+ Meg   Number           is.                           Szia, Number.<br><br>A harmadik pultos csaj    
+   megkérdezte,       mivel               foglalkozunk.             Mondtam, hogy             
+terroristák         vagyunk,     amit tudomásul     vett, és nem       kérdezte   meg   se           
+azt, hogy     viccelek-e,   se             azt,   hogy           miért. Aztán     elárultuk, hogy    
+ újságírók         vagyunk,       és     ezek     itt   az     olvasóink.     Meg   hogy   van     
+egy         polóboltom.   Mire a   hölgy             éleslátóan             
+megjegyezte:<br><br>&#8211; Aha,     szóval       ti   sok   mindennel         foglalkoztok,         
+            akkor ti     ilyen     politikusok     vagytok!<br><br>Na, ez     jól         meg     
+lett   állapítva.                   Üdvözlet.<br><br><span style="font-weight: bold;">19.59</span><br><font size="1">blogin</font><br><br><div style="text-align: justify;"><div style="text-align: justify;">A                           legrészegebbre,     Slayerre       rábíztam 
+a       csocsóbajnokság   szervezését           (fontos           megjegyezni:   utálom   a          
+   csocsót).   Elvileg       22-en jelentkeztek, de   még       meglátjuk. Jelenleg a                
+ nyeremények           elosztása   is     nehéz   feladatnak       tűnik,     pedig el sem kezdődött 
+    még a                 verseny.<br><br><span style="font-weight: bold;">20.06</span><br style="font-weight: bold;"><font size="1">tomcat</font><br><div style="text-align: justify;"><br><div style="text-align: justify;">Dragon ma 44 éves. Ezt a számot                   
+nyugodtan   írhatjuk úgy, hogy <img src="./resources/pictures/blogin_sskicsi.gif" style="border: 0px solid rgb(0, 0, 0);" border="0">                       éves. Ugye, róla is kiderült             
+végül.<br>Greeddel nagyon   utálunk           csocsózni, ezért         csapatot                   
+alakítottunk.     Mi vagyunk a Dupla Nigger   nevű                           
+csapat.<br></div></div></div><br><span style="font-weight: bold;">20.31</span><br><font size="1">blogin</font><br><br>Tomcat épp most             csocsózik     (&#8222;Polgár Tamás, Dupla  
+       Nigger,                 jöjjön&#8221; &#8211;   szólították).       Kaptam még         
+innivalót,     közben     pedig láttam   egy       fiút (Daveyt)             leánnyal     
+csókolózni. (Winnetou jó       fej.     Igen.)       Bevallom:           ittam.<br><br><span style="font-weight: bold;">20.36</span><br><font size="1">blogin</font><br><br>A       Dupla 
+Niggert         elpicsázták     3:9-re. Mert         szarok.               Juhhé!<br><br><span style="font-weight: bold;">20.50</span><br><font size="1">blogin</font><br><br>Roadin kérte, hogy  
+     viccből tiltsam           ki.   Kiderült,   hogy       érvénytelen             adatokat adott 
+meg a regisztrációnál,             úgyhogy       örökre kitiltottuk.         Éljen!<br><br><span style="font-weight: bold;">21.00</span><font size="1"><br style="font-weight: bold;">főnix</font><br><br>Beszélgetés           közben Slayer   táskájából         előkerült egy   
+húszcentis     tőr. Azt     nem mondta el mire       használja.       Csakúgy mint       Wolverine,  
+ aki egy kalapácsot   hord az     övében. Végüli s             stílusosabb mint egy     boxer.       
+Egyébként jó a   buli, sok   embernek örültem     (Mázlista,         Wolverine,     Werrwolf, 
+Kagami). Meg           a többieknek is,     csak őket nem   ismerem         nickről. Hiába, 4600   
+regisztrált     tagot   már igen     nehéz           nyilvántartani. Na   megyek     vissza   
+gyűlöletbeszélni.<br><br style="font-weight: bold;"><span style="font-weight: bold;">21.07</span><br><font size="1">blogin</font><br><br>A             csocsóverseny         
+győztese       Crowley és Gyula, akik   egyébként ittak is   rendesen, mivel a   buli       első     
+  érkezői       voltak       (van ennek értelme   magyarul?). Van már két   talajrészeg   srác,      
+   akiken csúnyán     sírósra       röhögjük         magunkat. Azon röhögnek,   hogy másokat hogy   
+oltok, pedig       őket       oltom             igazán.<br><br></div></div>      <span style="font-weight: bold;">23:11</span><br><font size="1">tomcat</font><br><br><div style="text-align: justify;"><A NAME="DPJPRDG"><A HREF="./index.php?post=1303#DPJPRDG" ONCLICK="openbigwindow('resources/pictures/blogin_nni1.jpg', 346, 358); return true;"><img bigpic="resources/pictures/blogin_nni1.jpg" src="./resources/pictures/blogin_nni1_thumb.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Na, ez           is   megvolt. 
+          Kijött a       BRFK megerősített rohamjárőre, saját       bevallásuk     szerint 30     fő 
+          egyenruhással és a nyakukban           a Nemzeti Nyomozó Iroda plecsnijét       viselő     
+            nyomozókkal.   Parancsnokuk történetesen pont   az   a   fószer     volt, aki     
+Csepelről   elvitt             tavaly.     Bezúdultak a   B Citybe, mindenkit       felállítottak,   
+    igazoltattak,       lenyomoztak.         Állításuk   szerint ez       "rutinellenőrzés", és      
+       ilyet minden nap   csinálnak. No   persze,           teljesen normális,   hogy annyi         
+rendőrautó     álljon         meg egy kocsma   előtt, ami egy   jobb     népfelkelés     leveréséhez 
+  is   elég. És     igen,         ez az NNI         feladata. Az egyik   egyenruhás     paraszt 
+azzal   indított, hogy       könyékkel     beleütött   Blogin                 sörösüvegébe, miközben 
+      ivott, majd ártatlanul     közölte,   hogy véletlen   volt.   Aztán     azt is,     hogy       
+    szájba       fogja vágni, ha     ugrál. A   parancsnok világosította fel, hogy   ezt     most    
+   nem   kéne. A         sorszáma         12389     volt. A "rutinellenőrzés" mintegy   háromnegyed  
+ órán át   tartott,         mert               mindenkit egyenként     ellenőrizni   kellett,     
+körözött személyek után   kutatva. Végül csak                       elmentek. Blogin, már kissé      
+ nyomás   alatt, de   bátran   kiosztotta őket, kitérve       arra,   hol   is           lenne     
+helye ennyi   rendőrnek, mi     lenne a   dolguk, és   kinek   a     szemét lövöldözzék     ki. A    
+ pékek         kisebb   hányada   csúnyán nézett,   viszont           nagyobb hányadukon   látszott, 
+    hogy     kicsit azért           szégyelli magát. Kiváló           fényképek készültek a     
+Zichy   utcát ellepő         járőrkocsikról és                   
+csapatszállítókról.<br></div><br><span style="font-weight: bold;">23:32</span><br style="font-weight: bold;"><font size="1">tomcat<br></font><br><div style="text-align: justify;">A   
+            rendőrök     ugyan   elmentek, de jött   helyettük néhány           érdekes pofa.     
+Beállított         közénk egy       zsidó nő és két     cigány férfi, kértek egy sört         
+(hárman       egyet),   és   most     bent     üldögélnek,     várva, hogy ki köt     beléjük. 
+Szánalmas. Közben         Roadin   épp               kilencedszer hány. Mekkora       szar! Minek 
+iszik, ha nem     bírja?   Gabucino   is           tajtrészeg,     de azért     az   imént 
+megfixelte a     Novarán a   MySQL   hibákat. Mondjuk           ez   is     egy     kockaság, 
+kocsmaasztalnál     szervert         hackelni.<br></div><br><span style="font-weight: bold;">00.19</span><br><font size="1">blogin</font><br><br><div style="text-align: justify;">Utolsó  
+           információm   szerint         Roadin tizedszer   hányt.       Azóta nincs meg. A sörrel 
+leöntött         laptoptöltő   működik.   Bovvert mindenki               zaklatja,   mert lány. A 
+kidobók épp     elmennek.<br><br style="font-weight: bold;"><span style="font-weight: bold;">00:35</span><br><font size="1">blogin</font><br><br>Kagami nem normális.               
+Józanon sem,   de akkor, amikor   bejöttek     a     rendőrök, elborult az agya.   Fölugrott,     
+hogy megveri a           rendőröket,   és kereste a     nuncsakuját.     Nem találta,   a rendőrök   
+  közben megszeppenten nézték.       Állítása       szerint     úgyse értették.   Engem     
+szerintem     értettek, elég érdekes fejet   vágtak,   miután   vázoltam       nekik,     hogy   
+kinek hol   a       helye.<br><br><span style="font-weight: bold;">01:11</span><br><font size="1">tomcat</font><br><br>A       kocsma előtt,   az utca túloldalán egy     faszi ácsorog,      
+ biciklivel.     Biztos valami   újfajta   sport ez,     biciklivel ácsorogni az utcán   éjszaka.    
+     Szemtanúk szerint a bent       üldögélő   zsidó nővel   érkezett,   elköszöntek, majd a nő és a 
+    két     cigány   bejöttek, ő meg   ott   maradt.       Kisvártatva, történetesen   pont akkor,   
+amikor   öten-hatan     voltunk az   ajtó   előtt,       felbukkant egy   cigánysuhanc, odarohant a  
+   biciklishez, és   sűrű     köcsögözés és         árnyékbokszolás   közepette fenyegetni   kezdte, 
+  hogy agyonveri.   Teljesen       abszurd jelenet,       ráadásul a   bringás   szemrebbenés nélkül 
+  állt   tovább, mintha mi se lenne           természetesebb,     hogy a szeme előtt egy     cigány  
+ ökle suhog. Amikor azonban   látták, hogy mi   nem             avatkozunk közbe, tehát csak nem 
+lesz       verekedés, a cigány balra, a bringás     jobbra   oldalgott         el.   Ki érti   
+ezt.<br></div><br><span style="font-weight: bold;">03:04</span><br style="font-weight: bold;"><font size="1">tomcat<br></font><br><div style="text-align: justify;">Szerencsésen hazaértünk 
+      Dragonnal.     Most épp Athinával   okoskodnak mindenféle         gyógyteákról     és 
+füvekről.   Félútig, a   Clark   Ádám   térig     velünk tartott _Neo és         orange_vs_reds. 
+_Neo egy     korsó sört     szorongatott,   és   különféle     történelmi nótákat     énekelt 
+üvöltve,       némelyiknek   helyben költve     szöveget,   illetve       dallamot is spontán     
+rögtönözve. A   Lánchídon     találkoztunk   egy szintén nem       egészen józan       társasággal, 
+akik       legénybúcsút ünnepeltek. Nagyon     megörültek   nekünk,   összevissza         ölelgettük 
+  egymást,       végül _Neo leheveredett a Lánchíd úttestére a         vőlegénnyel, de ennek nem     
+      homoerotikus       vonzalom, hanem a gravitáció és az alkohol   közös hatása   volt     az 
+oka.     Remélem,   a         NNI-ben még most   is virraszt néhány   pöcsfej, és lelkesen próbálja  
+   összerakni,       miféle           terrorcselekményre készült   ma   az a nagyjából hetven fiatal 
+  szélsőséges.   A kidobók   &#8211;   akik             pedig nem ma   kezdték a   szakmát &#8211;   
+mondták, hogy ekkora razziát   évek   óta   nem   láttak.   Olyan       megesik,     hogy egy-két    
+ pék kijön körülnézni, de harminc paraszt       még   aratáshoz is         sok.<br></div><br><div style="text-align: justify;">Aki nem volt ott   Dragon64         negyvennegyedik         
+születésnapján, sajnálhatja.     Remek buli   volt, mindenki   jól berúgott,       és ha   nem     
+pofátlankodtak     volna a rendőrök, még jobban     éreztük volna     magunkat.       Elbúcsúztattuk 
+  a     nyarat. Rövidesen ismét       jelentkezünk!<br><br style="font-weight: bold;"><span style="font-weight: bold;">6.04</span><br><font size="1">blogin</font><br><br>Jó       reggelt,   
+indul ez     a nap is! Este buli,     de ilyen jó   biztosan ilyen jó nem lesz. Sok remek         
+emberünk     van!<br></div><br>       <div><span class="Apple-style-span" style="font-weight: bold;">12.14</span></div><div><font size="1">gabucino</font></div><div><br></div><div style="text-align: justify;">Kiváló, a   filmszakadás után   hajnalban egy taxiban tértem magamhoz,  
+         cipóra vert bal arccal. Még mindig   érzéketlen. Nem emlékszem,   mi történt, azt hiszem    
+ csöppet       elájulhattam kint. Egész jó volt   ez a buli, de ha valaki mégis   összevert, az     
+értesítsen a       történtekről, miértekről, biztosan   érdekes.       
+Köszi.</div><div><br></div><div><span style="font-weight: bold;">15.31</span><br style="font-weight: bold;"><font size="1">tomcat<br></font><br><div style="text-align: justify;">Jó   reggelt. Gabu, 
+  az   arcoddal       szerintem az történt, hogy hazaindultál biciklivel, és közben   átszálltál   
+taxiba.   Sajnálom a       bringádat, jó kis gép volt... A kesztyűd és a két lámpád a B   Cityben   
+maradt,   mindjárt megyek oda és       elhozom.<br><br></div><div style="text-align: justify;"><span class="Apple-style-span" style="font-style: italic;">(Nem valószínű, egyrészt mert részegen is jól vezetek, másrészt meg a   
+fenti felszerelés nélkül nem mentem volna sehova. Ja, és már elmentem értük. Egyébként azt   
+eltaláltad, hogy a biciklim valóban nincs meg. Tehát aki rendelkezik információval arról, hogy   
+hogyan kerültem én egy taxiba, az ne tartsa magában. Egyébként a személyim sincs meg, gyanítom nem 
+kértem vissza a fakabátoktól. Nem volt unalmas a buli, ez elmondható. - G)</span></div></div><div><span class="Apple-style-span" style="font-style: italic;"><br></span><span style="font-weight: bold;">16.41</span><br><font size="1">blogin</font><br><br><div style="text-align: justify;">A       
+fokozott rendőri készültségnek az     is oka lehetett egy informátorunk szerint, hogy pontosan a     
+  kocsmával szembeni lépcsőházban lakik     Hiller fiacskája. Talán azt hitték, megint valami 
+hasonló       flash mobot szervezünk, mint <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=923">Kóka     villájánál</a> (az egy másik nagy       
+Bombagyár-buli volt)...<br></div><br></div>        </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-08-30&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1303&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1303&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1303&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1303&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1303&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1303&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1303&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1303&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1303&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1303&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1303&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1303&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1303&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1303&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1303&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1303&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1303&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1303&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1303&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1303&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1303&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1303&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1303&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1303&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1303&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=1303&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> <A HREF="./index.php?post=1303&commentstart=250#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>26</B></A> <A HREF="./index.php?post=1303&commentstart=260#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>27</B></A> <A HREF="./index.php?post=1303&commentstart=270#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>28</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment94001"></A>279. rward</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1303&id=93789#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-09-02 17:58:48</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4878.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">a kusarigama egy sarlóhoz hasonló harci eszköz volt a nindzsáknál. a nyelére kötél volt erősítve, a kötél másik végén pedig nehezék volt található. ezt rásuhintották az áldozatra, majd maguk felé rántva a pengét beleb*szták  az illetőbe. félelmetes fegyver :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93970"></A>278. Fuckame\'</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1303&id=93949#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-09-02 15:07:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Úriember biztosra nem tesz...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93949"></A>277. <A HREF="mailto:kiss.anna.bettina2@gmail.com" STYLE="color: #000000">Ravenheart</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-09-02 13:08:40</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4966.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hát, örülök, hogy mindenki jól érezte magát! Desdemonával nagyobb összegeket mertünk volna feltenni, hogy a rohamrandőrök is véletlenül arra járnak:) </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93922"></A>276. <A HREF="mailto:takacsgabor@hungary.org" STYLE="color: #000000">takacsgabor</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-09-02 11:50:13</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">De Kár hogy nem tudtam elmenni....váááááá<br />
+De dolgozni kell mert nem lessz akkor segílyke:(</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93818"></A>275. Mázlista</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1303&id=93712#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-09-01 22:38:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_50.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">kobutan. ennyi :D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93812"></A>274. <A HREF="mailto:werrwolf@freemail.hu" STYLE="color: #000000">werrwolf</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1303&id=93567#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-09-01 22:33:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3525.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Crowley, Bocs hogy megszakítottam a videó felvételt a lámpakapcsolgatással... BD<br />
+<br />
+Egyébként jók lettek a videók, a lámpa tükröződésével is, a bábúk a csocsóban nem panaszkodtak!!!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93809"></A>273. toa88 -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1303&id=93463#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-09-01 22:24:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5421.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">most miért is lettem kitiltva?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93789"></A>272. 272. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1303&id=93712#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-09-01 20:30:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A Kusari-gama az a szájdárda, vagy mi a szösz? Vagy azok ilyen pici nyílszerű bizbaszok? Ja, és képeket is szeretnénk. És türelmetlenfaszfejvagyok avatárt.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93712"></A>271. Borisz</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-09-01 15:19:43</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1718.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha tudom hogy fegyverrel kell jönni, akkor legközelebb hozok bokkent meg kotachit. Bár a kusarigama is kimagyarázható lenne, végülis a sarlópenge nem 10centi:D Aki érti, érti...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93704"></A><FONT COLOR="#FF0000">270. </FONT>270. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-09-01 14:35:01</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1303&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1303&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1303&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1303&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1303&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1303&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1303&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1303&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1303&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1303&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1303&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1303&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1303&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1303&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1303&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1303&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1303&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1303&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1303&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1303&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1303&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1303&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1303&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1303&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1303&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=1303&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> <A HREF="./index.php?post=1303&commentstart=250#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>26</B></A> <A HREF="./index.php?post=1303&commentstart=260#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>27</B></A> <A HREF="./index.php?post=1303&commentstart=270#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>28</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

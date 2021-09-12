@@ -1,0 +1,523 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2560#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Pataki bíró úrból kibújt a civil";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2560#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Pataki bíró úrból kibújt a civil<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 szeptember 22. 20:34:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2560.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Nem szép dolog, hogy a címben 
+tényállítást teszek, de hát Pataki Árpád bíró úr, akinek többek között a Gárda feloszlatását is 
+köszönhetjük, nem is beszélve arról az ítéletéről, amely szerint nem jogsértő, ha egy feltörekvő 
+ifjú újságírópalánta azt állítja az országos sajtóban, hogy fekete bőrdzsekis verőlegények úgy 
+elagyalták a lépcsőházban, hogy még az ajka is felduzzadt, a mai tárgyaláson igencsak kivetkőzött 
+bírói minőségéből, olyannyira, hogy azt akár elfogultságként is értékelhetnék, persze szigorúan csak 
+a szabad véleménynyilvánítás keretei között. Ma volt ugyanis a Gál J. Zoltán ellen indított 
+személyiségi jogi perem első tárgyalása, mint azt nyilván tudják a Bombagyárat szoros figyelemmel 
+kísérő olvasók.<br><br>Előételnek Gadó Jánost, a <span style="font-style: italic;">Hetek</span> című 
+szennylap újságíróját tekintettem meg a PKKB-n, egy rágalmazási ügyben tartott személyes 
+meghallgatás keretében. Gadó úr, nyilván a fajtájára jellemző sziporkázó fantázia melléktermékeként, 
+fekete ruhás neonáci hordákat vizionált, amelyeket csak a civil összefogás tudott kiszorítani a 
+sokat szenvedett Újlipótvárosból, mielőtt rágyújtották volna a zsinagógát minden egyes ott lakóra, 
+egyenként. Őt is az a Dr. Kárpáti képviselte, aki a múltkor Demszky Gábor ügyében prókátorkodott. 
+Különös módon mindjárt azzal nyitott, amit a Demszky-ügyben első- és másodfokon is elutasítottak, 
+hogy tudniillik nekem nincs jogalapom a tüntetők nevében perelni, mert csoportot nem képviselhetek, 
+csak saját magamat.<br><br>- Erről már egyszer döntött a bíróság - szúrtam közbe.<br>- De az egy 
+másik ügy!<br>- Jó, akkor majd leírják magának még egyszer.<br><br>Gadó János kifejtette, hogy ő nem 
+kíván velem békülni, sem bocsánatot kérni, mert igenis bizonyítani tudja náci mivoltomat.<br><br>- 
+Ennek keretében engedjen meg a tisztelt bíróság, hogy a feljelentőtől idézzek...<br>- A bizonyítás 
+nem tárgya a személyes meghallgatásnak.<br>- De csak ezt az egy mondatot...<br><br>Erre felolvasta, 
+mit mondtam a tolakodó HVG-s kollégájának arra a hülye kérdésére, hogy mi lesz akkor, ha én leszek a 
+miniszterelnök. (A válasz: <span style="font-style: italic;">"Romhalmaz lenne, tele lenne minden 
+zsidó hullákkal és falhoz csapkodott  csecsemőkkel, illetve a másvéleményűeket karóba húznák fekete 
+ruhás  halálbrigádok."</span> Hülye kérdésre nyilván hülye válasz jár, hadd sírjanak hetekig azok, 
+akik komolyan veszik.) Gadó, ez a szerencsétlen hírhamisító azzal a szent mártírtekintettel hagyta 
+el a tárgyalótermet, amellyel a küldetéstudattól eltelt, igazi mártírok lépdelnek az akasztófa alá. 
+Mondott valami olyasmit is, hogy itt a szólásszabadság vége, ha őt egy ilyen pitiáner hazugság miatt 
+elítélik. Ezek mindig ezt képzelik.<br><br>Bár a meghallgatás főleg Kárpáti doktor úr tirádái miatt 
+elhúzódott, nem késtem le a 10:30-kor kezdődő tárgyalást a szomszédos Fővárosi Bíróságon. 
+Ellenkezőleg, még egy fél órát csúszott is, mert előrehívták az utánunk következő per résztvevőit, 
+amit ripsz-ropsz be is fejeztek. Ennek eredményeképpen több órás szájtépésre volt lehetőség Gál J. 
+Zoltán hazudozásai ügyében. Az államtitkár elvtárs nem bírt eljönni, egy középkorú ügyvédnő 
+képviselte, s vele egy fiatalabb hölgy, gondolom, gyakornok.<br><br>Mint ismeretes, Gál J. 
+államtitkári minőségében azt nyilatkozta 2007 október 22-én este az ATV-ben, hogy engem és társaimat 
+az aznapi zavargások során autófeltörés és benzinlopás közben tetten ért a rendőrség. Ebből annyi 
+volt igaz, hogy néhány túlbuzgó sün minden ok nélkül zaklatott és előállított bennünket, amiről 
+annak idején <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.bombagyar.hu/showpost.php?post=127"><span style="font-style: italic;">Könnygáz, 
+páncél, eső</span></a> című írásomban beszámoltam. Másnap feljelentettem őt rágalmazás, 
+becsületsértés és hivatali hatalommal való visszaélés miatt, amiről a HírTV is tudósított, mire Gál 
+J. a másnapi Mokkában megismételte rágalmait, és közölte, hogy nyugodtan pereljem be. Hát, így 
+kezdődött. Mindössze két évbe telt, mire bíróság elé került az ügy.<br><br>A lassú beszédű Pataki 
+Árpád ismertette keresetemet, majd az alperesi ellenkérelmet, ami csak ma érkezett a bírósághoz. 
+Biztos nem ért rá írni az alperesi képviselő. A kisebb telefonkönyvnyi kötethez minden szart 
+hozzácsatoltak, a Stop.hu teljesen irreleváns tudósításaitól kezdve a rólam szóló Wikipedia-oldalig 
+és a különféle televíziócsatornák nézettségi adataiig. Lényegét tekintve az alperesi érvelés annyi, 
+hogy az alperest nem terheli semmiféle felelősség a kijelentései miatt, mert a rendőrségtől kapta az 
+értesüléseit.<br><br>Leírva nem sok ez, de aki járt már Pataki bíró úrnál - például a Gárda-peren - 
+tudhatja, hogy a bíró úr valami egészen lehetetlenül személytelen, monoton hangon tudja lediktálni a 
+magnónak a tárgyaláson elhangzottakat, amitől rövid időn belül még ő maga is elalszik, nemhogy a 
+hallgatóság. Ahogy Ghostmissing a szünetben megjegyezte, az öngyilkosság igen durva módja az, ha az 
+ember fél órán át nem vesz levegőt, de most már tudja, hogy ez lehetséges. A három oldalnyi kereset 
+és a érdemben alig öt oldalas ellenkérelem ismertetése jó másfél órába telt.<br><br>Az alperes 
+egészen érdekes ténymegállapításokat próbált tenni ellenkérelmében. Először is úgy vélte, az a nagy 
+nyilvánosság előtt tett tényközlés, hogy én autófeltörő és benzintolvaj lennék, illetve az a 
+kijelentés, hogy se jóhírnevem, se becsületem nincs, nem alkalmas a jóhírnevem megsértésére, sem a 
+társadalmi megítélésem rombolására. Tehát az alperes nem csak hogy nem felelős, de kárt sem okozott. 
+Továbbá egy államtitkár nyilatkozata voltaképpen alkalmatlan a közvélemény befolyásolására, hiszen a 
+közvélemény köztudomásúlag nem foglalkozik a politikusokkal, illetve az ATV nézettsége olyan 
+alacsony, hogy az ott elhangzottak semmiképpen sem tekinthetőek nagy nyilvánosság előtti 
+kijelentésnek. (Ezért voltak csatolva a tévécsatornák nézettségi adatai.) Azt ugyan elismerte az 
+alperes, hogy a TV2 nézettsége nagy, de a reggeli műsorokat "köztudomásúlag" kevesen nézik, tehát 
+megint csak nem nagy nyilvánosság előtt beszélt, amikor a Mokkának nyilatkozott.<br><br>Ezen előadás 
+alatt az alperesi képviselőnek nem rebbent meg a szempillája. Ezt tanúsítom. Durva, de 
+tényleg.<br><br>Mi több, a Bombagyárat többen olvassák, mint ahányan tévét néznek ebben az 
+országban. Ezt is az alperesi képviselőtől tudom. Olvasta ugyanis valahol, hogy ma már többen 
+interneteznek, mint amennyien a hagyományos médiát figyelik. Az Interneten pedig csak a Bombagyár 
+van. Köztudomásúlag. Na persze, meg telefonon is többen beszélnek, mint ahányan a Kossuth rádiót 
+hallgatják, akkor a telefon tömegmédium, vagy a rádiót nem hallgatja senki?<br><br>- Két közszereplő 
+egymás közti vitája nem alapoz meg kártérítési igényt - közölte végül.<br><br>Vitája? Nem, kedves, 
+az államtitkár elvtárs konkrét tényállítást tett, amit tiltakozásom ellenére többször megismételt. 
+Miről beszél ez?<br><br>De már tovább is léptünk, és az alperesi képviselő nemes egyszerűséggel 
+letagadta, hogy az alperes valaha is megszólalt volna a tévében rólam, merthogy "nem tudom 
+bizonyítani", hogy ez megtörtént. Erre válaszul odatettem a bíró elé a DVD-t, amelyen nem csak az 
+ominózus nyilatkozatok, hanem a HírTV tudósítása is rajta van. Indítványoztam, hogy nézzük 
+meg.<br><br>Az alperesi képviselő még néhányszor elmondta, hogy a védencét nem terheli felelősség, 
+mert a rendőrségtől vette a téves adatokat, és úgy járt el, ahogy az adott helyzetben elvárható, 
+majd zárt tárgyalást kért. Az iratok között szerepelt ugyanis az Országgyűlés Mentelmi Jogi 
+Bizottságának zárt ülésén készült jegyzőkönyv, amelyben nem szavazták meg Gál J. Zoltán mentelmi 
+jogának felfüggesztését.<br><br>Pataki bíró úr megállította a tárgyalást, kizavarta a hallgatóságot, 
+és ismertette a nagy titkot. Semmi érdekes nem volt benne, mint ahogy ő maga is megállapította, csak 
+formai okokból volt erre szükség. A közönség visszajöhetett, a jegyzőkönyvet pedig vissza kellett 
+adnom.<br><br>Kérdeztem, mi van, ha mégis elmondom valakinek, mi állt az iratban? Se nem államtitok, 
+se nem szolgálati titok, tehát ki és mivel szankcionálhatja, ha elárulom, mi állt benne. <br><br>- 
+Hát, ezt nem tudom... Nem nyilvános, tehát az Országgyűlés adatkezelési elvei vonatkoznak rá.<br>- 
+De az mit jelent?<br>- Azt, hogy nem szabad nyilvánosságra hozni.<br>- Jó, de ha mégis megteszem, 
+akkor mi van?<br><br>Homlokráncolás volt a válasz. Ilyet legutóbb akkor láttam, amikor egy bírót 
+megkérdeztem, hogy mi van akkor, ha egy tizenöt centis késből levágok nyolc centit, és úgy hordom 
+magamnál.<br><br>- Nem tudom. De nem szabad ilyet.<br>- Nem szabad  kézen állnom sem a 
+tárgyalóteremben, de mégis, mit valósít meg, ha megteszem?<br>- Hát, talán a rosszhiszemű 
+pervezetést.<br><br>További kérdéseimmel az adatvédelmi biztoshoz lettem irányítva, és folytattuk a 
+tárgyalást. Elővettem a Polgári Törvénykönyvet, és felhívtam az alperes figyelmét két alapvető jogi 
+elvre a jóhírnév megsértésének tárgykörében.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A hírnévrontással megvalósuló 
+jogsérelem megítélése kapcsán nincs jelentősége annak, hogy a híresztelő nem tudott az általa 
+közöltek valótlanságáról és azt az általa megismerteknek megfelelően adta tovább, ugyanis 
+híresztelésnek kell tekinteni más személy nyilatkozatának, állításának, tájékoztatásának a közlését, 
+továbbítását, közreadását akkor is, ha híven közli más személynek valótlan nyilatkozatát (Legfelsőbb 
+Bíróság Pf. IV. 20 427/1977.)."</div><br>Illetve:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A jogsértés megállapíthatósága 
+szempontjából közömbös, hogy az alperes  az általa közölt adatokat a nyomozati iratokból - akár a 
+nyomozóhatóság  egyetértésével és segítségével - vette, ha egyértelműen  bebizonyosodott, hogy 
+valótlanok (Fővárosi Bíróság 47. Pf.  24.091/1988.)."</div><br>Ezeket a mértékadó ítéleteket a Ptk. 
+magyarázatai tartalmazzák. Érdemben tehát Gál J. Zoltán nem hivatkozhat arra, hogy helytelen 
+információkat kapott. Már csak azért sem, mert egy operatív törzs vezetőjeként, fontos felelős 
+tisztséget betöltve kötelessége lett volna a kapott információkat felelősséggel kezelni. Még ha 
+olyan belső információt kapott is a rendőrségtől - amit egyébként nem is kapott meg hivatalosan, 
+csak véletlenül meghallotta a rádión - hogy engem valamiféle bűncselekmény miatt elfogtak, akkor sem 
+nevesíthetett volna, amíg jogerősen el nem ítélnek, vagy nem vonnak körözés alá, tehát csak azt 
+mondhatta volna, hogy <span style="font-style: italic;">"elfogták P. Tamás budapesti lakost, akit 
+azzal gyanúsítanak, hogy..."</span> Azzal a közléssel azonban, ahogyan azt megtette, még akkor is 
+sértette volna a jogaimat, ha történetesen igaz az értesülése.<br><br>Az alperesi képviselő felállt, 
+és ismét előadta, hogy szerinte nem jogsértő a közlés, mert itt csak "véleménynyilvánításról" és 
+"felfokozott hangulatú kritikáról" van szó, ami különben sem bizonyított, hogy az ország egész 
+közvéleményéhez eljutott. Túl nagy eséllyel azonban nem érvelhetett, hiszen a jogsértés egyértelműen 
+megtörtént, már csak az elégtételadás feltételeiről tárgyalhattunk.<br><br>Alperes ezután 
+elővezette, hogy a kért elégtétel teljesítése "lehetetlen". Azt nem mondta, melyik része: a 
+nyilvános bocsánatkérés vagy a 2 millió forintos nem vagyoni kártérítés megfizetése? Felszólított 
+továbbá, hogy tételesen igazoljam, hogy engem valóban ekkora értékű kár ért, mert különben ezt nem 
+tudja elfogadni. Pataki bíró úr egyetértett, és megkért, hogy a kártérítési összeg kirívóan magas 
+voltára tekintettel igazoljam káromat.<br><br>- Nem kell igazolom - feleltem, és megint felolvastam 
+egy idézetet a Ptk-ból.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A személyre vonatkozó, objektíve valótlan tényállítást kifejező közlés 
+csak akkor eredményez jogsértést, ha alkalmas arra, hogy az érintett társadalmi megítélését 
+hátrányosan befolyásolja. Ennek megállapíthatósága ugyanakkor elegendő is a jóhírnév sérelmének 
+kimondásához. Nincs tehát szükség például arra, hogy a hátrányos eredmény bekövetkezzék. <span style="font-weight: bold;">Ezért ilyenkor nem kell vizsgálni, hogy a közlés hatására az egyén 
+megítélése valósan hogyan változott: bekövetkezett-e annak hatására valamilyen különös további 
+érdeksérelem vagy sem. Nincs jelentősége annak sem, hogy a közlés az egyén hírnevének milyen súlyú 
+lerombolására volt alkalmas. </span>Olyankor tehát, ha az a közmegítélés szempontjából jelentéktelen 
+körülményre vonatkozott, ugyanúgy megalapozott a jogvédelem iránti igény, mint ha jelentős 
+jogsérelem következett volna be. E körülményeknek a jogsérelemhez fűződő jogkövetkezmények 
+alkalmazhatósága körében van csak jelentősége."</div><br>- Hivatkozom továbbá egy, a bírói 
+gyakorlatot nagyban befolyásoló ítéletre is. Hernádi Judit 2003-ban beperelte a Star Magazin 
+kiadóját, amiért az valótlanságokat állított róla...<br>- Ó, igen, ismerem, arról éppen ez a bírói 
+tanács hozott ítéletet - mondta Pataki bíró úr.<br>- Igen? Akkor idézek a saját ítéletéből, amelyben 
+4,5 millió forintot ítélt meg Hernádi Juditnak.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A Főv. Ítélőtábla indoklásában 
+kiemelte, hogy nem kell a kárt  tételesen bizonyítani. A bíróságnak a Pp. 163. § (3) bek.  szerint 
+külön bizonyítás nélkül el kell fogadnia az olyan  hátrány bekövetkeztét, amely köztudomású ténynek 
+tekinthető,  tekintettel arra is, hogy az elszenvedett kár immateriális jellegű,  amelynek 
+bizonyítása rendkívül nehéz, a Legfelsőbb Bíróság  gyakorlatának megfelelően.<span style="font-style: italic;"><br><br>A fentiekre figyelemmel bizonyítás nélkül is elfogadható és  
+köztudomásúnak tekinthető az a körülmény, hogy az alperesi  kitételek, a felperesre vonatkozó 
+megállapítások az I. r.  felperesnek, mint közismert, a művészeti életben részt vevő  szereplőnek 
+hátrányt jelentenek.</span>  <p style="margin-bottom: 0mm; font-style: italic; font-weight: normal;" align="JUSTIFY" lang="hu-HU">A nem vagyoni kár összegének meghatározásakor a 
+II. fokú  bíróság mérlegelte a jogsértés tárgyi súlyát, azt, hogy a  cikk az I. r. felperesnek 
+elsősorban a magánéletét mutatta be  valótlan módon, hamis színben, amely kétségtelenül magában  
+hordozta azt az objektív veszélyt, hogy mindez művészi  pályafutására is kihathat. Eközben azonban 
+értékelni kellett  azt is, hogy az I. r. felperes közéleti-művészeti tevékenységének  
+folyamatossága, sikere nem tört meg.<span style="font-style: italic;">"</span></p></div><br>- Ez nem 
+is az én ítéletem!<br>- Ó, bocsánat, tényleg. Ez a Fővárosi Ítélőtábla másodfokú ítélete ugyanebben 
+az ügyben, akik az Ön által megítélt 4,5 millió forintot leszállították 3 millió forintra, azzal az 
+indoklással, hogy az ítéletnek igazodnia kell a bírói gyakorlatban kialakult kártérítési 
+összeghatárokhoz. Én sem kérek mást. Talán csak azt, hogy ha egy balliberális közszereplő esetében 
+nem kell bizonyítani a nem vagyoni kár összegét, akkor egy nemzeti érzelmű közszereplőnek se 
+kelljen, mint amilyen én vagyok. Már csak a jog előtti egyenlőség elve kedvéért sem.<br>- Na jó, de 
+ez azért nem ilyen egyszerű! Emlékszem erre a perre, több tárgyaláson át csak arról volt szó, hogy 
+megalapozott-e a kártérítési igény...<br>- Igen, és a végén kiderült, hogy nem is kellett volna ezt 
+vizsgálni. Ez áll az ítéletben. Tehát kérem, hogy az én káromat is tekintsék köztudomásúnak. 
+Egyébként éppen Ön volt az, bíró úr, aki egy dolgozatában szorgalmazta, hogy a bíróságok 
+állapítsanak meg magasabb nem vagyoni kártérítési összegeket...<br>- Ki? Én?!<br>- Igen, Ön. 
+Tévedek?<br>- Én ilyet nem írtam.<br>- Pedig meg lehet találni az Interneten. Bemutassam? Itt a 
+laptop, hoztam modemet is.<br>- Hát, ööö, lehet, hogy mondtam ilyet, de nem emlékszem 
+már...<br><br>Nem tévedtem sokat. Nem dolgozat volt, de valóban Dr. Pataki Árpád nyilatkozta a 
+Népszabadság 2006 július 3-i számában, az <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//nol.hu/archivum/archiv-406152"><span style="font-style: italic;">Üzleti célú 
+jóhírnév-sértés</span></a> című cikkben a következőt:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A jogkereső közönség évek óta 
+szorgalmazza, hogy a személyiségi jogi  perekben állapítsanak meg nem vagyoni kártérítés címén az 
+eddiginél  magasabb kártérítéseket, és kötelezzék olyan összegek kifizetésére a  károkozókat, 
+amelyeknek valódi visszatartó erejük van."</div><br>Isten neki, hát elfelejtette, de az is lehet, 
+hogy nem gondolta komolyan.<br><br>A kártérítési összeg körüli polémia lekerült a napirendről, 
+helyükre kerültek az alperes egyéb kijelentései, amelyeket szintén per tárgyává tettem. Nevezetesen 
+a "notórius rendbontó" és a "megátalkodott gyűlöletkeltő" fordulatok, amelyek egyértelműen nem 
+vonatkoznak Gál J. Zoltán édesanyjára, aki nem közszereplő. Az alperesi képviselő kijelentette, hogy 
+a "rendbontó" kifejezés nem sértő és nem negatív jelző.<br><br>- Ez nem feltétlenül jelenti, hogy az 
+illető bűncselekményt követett el.<br>- Igen? Akkor miért van a Btk-ban "Rendzavarás" nevű 
+bűncselekmény, amely szankcionálni hivatott?<br>- Az más... A rendbontás az nem feltétlenül az. 
+Például rendbontás lehet az is, ha valaki mondjuk egy családi ebédnél rendetlenkedik az 
+asztalnál.<br>- Erre gondolt az alperes?<br>- Nem... hát... A rendbontás az minden olyan viselkedés, 
+ami a hétköznapi élet rendjétől eltér. Az utca rendjével kapcsolatosan az ott elfogadottól eltérő 
+magatartást folytat.<br><br>Türelmesen megvártam, míg Pataki bíró úr magnóra mondja az alperesi 
+képviselő szó szerinti nyilatkozatát, és feltettem egy keresztkérdést.<br><br>- Nos, amennyiben Ön 
+így vélekedik, meg kell kérdeznem, mi az alperesi oldal véleménye a melegfelvonulásról?<br><br>Puff, 
+odalett a tárgyalóterem rendje. A már-már elbóbiskolva a padlóra csúszó bíró szeme felpattant, és 
+mielőtt az alperesi képviselő egy szót szólhatott volna, ráförmedt:<br><br>- Erre nem köteles 
+válaszolni! Nem köteles!!<br>- Én viszont kérem, hogy válaszoljon.<br>- Nem köteles válaszolni! Nem! 
+Nem köteles!<br>- De kérem, ez egy logikus kérdés, hiszen az előbb az alperes azt mondta, rendbontás 
+minden, ami a hétköznapi élet rendjétől eltér, és az utca rendjével kapcsolatosan az ott 
+elfogadottól eltérő magatartást folytat.<br>- Ilyet az alperesi képviselő nem mondott!<br>- De 
+mondott! - szólt közbe Ghostmissing és KeCseG.<br>- A hallgatóság hallgasson!<br>- Mondott bizony, 
+ha nem hiszi, hallgassa vissza a magnót, most mondta rá.<br>- Kérem, én... - kezdte volna az 
+alperesi képviselő, de Pataki ismét letorkollta.<br>- Nem köteles válaszolni!!<br>- Jó, akkor 
+kérdezek mást. Ön szerint a Magyar Gárda közterületi avatóünnepsége rendbontás?<br>- Igen! - vágta 
+rá Pataki bíró úr.<br>- A kérdés az alperesi képviselőnek szólt, de akkor Önt kérdezem, miért 
+az?<br>- Mert be van tiltva!<br>- Na és amikor még nem volt betiltva, az volt?<br>- Igen, 
+az!<br><br>Eszem-faszom megáll ezen a csávón, mondaná Ford Fairlane, és ezt mondtam én is. Persze 
+csak halkan és befelé, nehogy valami baja essék a független bíróság tekintélyének.<br><br>Az 
+alperesi képviselő is végre szóhoz jutott, és hosszú monológot vágott le a rendbontás fogalmának 
+mibenlétéről. Bár a politikai állásfoglalástól tartózkodott, mondván, ő csak jogilag képviseli az 
+alperest, véleményt nem alkothat a nevében, így a melegfelvonulást sem minősítheti, azt azért 
+megtudtuk, hogy a Critical Mass egy rendbontás, hiszen az utca rendjéhez nem tartozik hozzá, hogy 
+egyszerre százezernyi biciklis közlekedjen.<br><br>A tárgyalást ezután Pataki bíró úr elnapolta. Az 
+alperesi képviselő bizonyítási indítványként beterjesztette, hogy a bíróság hallgassa meg a 2007 
+október 22-én ellenem eljáró rendőröket. Én ezt elleneztem, hiszen teljesen mindegy, hogy az 
+alpereshez eljutott helytelen információk milyen előzménnyel keletkeztek. A következő tárgyaláson 
+fogunk videót nézni, amelynek napja 2009 december 2. lesz, 13:00. A helyszín azonos, a 243. 
+terem.<br><br>Pataki Árpádról keveset tudunk. Nem tudom, ebédelt-e már együtt Baja Ferenccel, 
+szokott-e palesztin kendőt viselni, melyik sportcsatornát nézi, vagy hogy rokona-e bizonyos Pataki 
+Károly nevű partizánnak, aki 1956-ban sokadmagával a háztetőkről lőtte a Kossuth téren gyülekező 
+tömeget. Hogy a nála folyó polgári perekben rendre a balliberális oldalhoz tartozó peres fél győz, 
+amit aztán másodfokon feltűnően sok esetben <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.jog-vita.hu/metes/tart/vegzes-09-27.htm">súlyos hibákra</a> hivatkozva máshogy ítél 
+meg a fellebbviteli bíróság, nem tisztem értékelni. Tény azonban, hogy nagy számban hozott olyan <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.gondola.hu/cikkek/42701">furcsán 
+szakszerűtlen ítéleteket,</a> amelyek közfelháborodást váltottak ki. Kíváncsian várom ennek az 
+eljárásnak a kimenetelét.<br><br> </div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-09-22&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2560&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2560&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2560&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2560&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2560&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187231"></A>33. Oroszlánszív</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2560&id=187217#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-09-24 21:19:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5585.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">jó megállapítás, hehe:):):)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187217"></A>32. Belmont</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-24 16:42:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Haha. Pataki bíró eftárs kamingautolt.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187202"></A><FONT COLOR="#FF0000">31. </FONT>Qdi Ace</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2560&id=187115#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-09-24 13:28:59</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2996.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187168"></A><FONT COLOR="#FF0000">30. </FONT>Andris</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-23 23:49:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_132.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187153"></A><FONT COLOR="#FF0000">29. </FONT>Oroszlánszív</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-23 20:57:22</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5585.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187143"></A>28. Val</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-23 19:33:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Lehetett volna egy kis derültséget kelteni azzal a kérdéssel, hogy hol a bíró, nem találjuk. Ja hogy ön az? Azt hittem ön az alperes ügyvédje.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187129"></A><FONT COLOR="#FF0000">27. </FONT>saltib</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2560&id=187098#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-09-23 18:30:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187128"></A>26. Akbar</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-23 17:44:57</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1498.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Pataki bíró elftás kanolja habosra a jó, édes anyukáját.<br />
+Az ilyen faszoknak eszébe sem jut, hogy jó vastagon alá van húzva a nevük bizonyos listákon...?<br />
+És egyszer bevasalják a tartozást.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187122"></A>25. borshun</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-23 13:45:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2752.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Azt én is megnézném,ahogy egy nemzeti bíróság előtt a dagadék Patakiról patakzik az izzadtság. Nem szabad hagyni, hogy elhúzza a belét az országból. Utánamenni, megkeresni, elítélni! Bezárni a orkok és a bolsik közé egy munkatáborba! Büdös disznaja,hogy lehet az ilyen bíró?! Az egész magyar társadalmat felháborító és megbotránkoztató ítéleteket hoz. Tényleg TC nem lehet más bírót kérni? Esélyed sincs ennél a homoki-pártinál!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment187120"></A><FONT COLOR="#FF0000">24. </FONT>szergej</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-23 13:21:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2560&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2560&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2560&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2560&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2560&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

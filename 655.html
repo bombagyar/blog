@@ -1,0 +1,527 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=655#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A muzsika és a zsidókérdés";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>A muzsika és a zsidókérdés<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 február 29. 07:56:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_655.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Ünnepelt zongoraművészünk és   
+      zeneköltőnk, Liszt Ferenc jól megérdemelt trónjáról tekint alá a Zeneakadémia épületéről.   
+Tisztelt       és elismert művésze ő a magyarságnak, akinek megadatott a csoda, hogy életében is   
+elismertté       válhatott. Liszt az előkelőségek között dolgozhatott, meghívást kapott a   
+legelőkelőbb társadalmi       körökbe, a legválasztékosabb társaságokba. Már életében ünnepe<A NAME="PTUSKTK"><A HREF="./index.php?post=655#PTUSKTK" ONCLICK="openbigwindow('resources/pictures/blogin_ludwigvanbeethoven.jpg', 702, 800); return true;"><img bigpic="resources/pictures/blogin_ludwigvanbeethoven.jpg" src="./resources/pictures/blogin_ludwigvanbeethoven_thumb.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>lték, tehetsége     
+    révén pedig elnyerte a kor másik nagy zeneművészének barátságát; Liszt Ferenc és Richard Wagner  
+       kölcsönösen nagy hatást gyakoroltak egymásra.<br><br>Ludwig van Beethoven, a zene másik 
+óriása         szintén Wagner személyes ismerőse volt. Az ő és Chamberlain beszámolója szerint is 
+gyakran tett         zsidóellenes kijelentéseket, de az antiszemitizmus terén Wagner sem fogta 
+vissza magát. Ő még   arra       is vállalkozott, hogy a zsidóság muzsikára mért hatását is 
+tanulmányozza, így jelent meg   <span style="font-style: italic;">Judaizmus   a     zenében</span> 
+című munkája, melyben a következőket is olvashatjuk:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Nem csupán a 
+      művészet &#8211; különösen a zene &#8211;   tisztelete indít arra, hogy megmagyarázzam a nép   
+körében   a   mai napig élő, zsidó természet   iránti ellenszenvet. Hajlamosak vagyunk könnyedén   
+túllépni e     politikai és vallási jelenségen.   A szó szoros értelmében vett politika mezején   
+sohasem mertünk     konfliktusba keveredni a   zsidókkal. Sőt, megadtuk nekik a Jeruzsálemi 
+Királyság   felemelkedésének     lehetőségét, később   pedig már megbántuk, hogy Rothschild úr 
+túlságosan is éles   elméjű volt ahhoz,     hogy önmagát a   zsidók királyának kiáltsa ki, előnyben 
+részesítve &#8211; mint   jól tudott &#8211;     azt, hogy   &#187;a királyok zsidaja&#171; 
+maradjon.&#8221;</div><br>Wagner   azonban tovább is ment,     azt is   megvizsgálta, miért 
+képtelenek a zsidók a valódi művészet   átérzésére és művelésére jó       kommunikáció képességük 
+dacára:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A zsidók   &#8211;   akiknek     közismerten saját istenük van 
+&#8211; mindenekelőtt már külső megjelenésükkel   zavart   keltenek a     mindennapjainkban. Az 
+ilyen külső, függetlenül attól, hogy melyik európai   nemzethez   tartozunk,     valahogy 
+kellemetlenül idegen minden nemzetnek. Ösztönösen úgy érezzük,   hogy semmi   közünk nem lehet     
+valakihez, aki így néz ki. (&#8230;) Ami még súlyosabb, sőt talán a     legdöntőbb vizsgálódásunk    
+ szempontjából, az a hatás, amelyet a zsidók beszédei okoznak. Ez az az     alapvető pont, ahonnan   
+  ráláthatunk a zsidók zenei befolyására. A zsidó annak a nemzetnek a     nyelvét beszéli, amelynek  
+   körében generációk óta él, s mégis olyan, mintha valamilyen idegen     nyelven szólna. (&#8230;) 
+Ha egy     zsidót hallgatunk beszélni, önkéntelenül is érezzük az egész     emberi kifejezőkészség 
+megsértését     beszédében; e sajátságos fecsegés hideg közönye soha sem     képes egy magasabb, 
+szívből jövő szenvedély     lelkesedéséig emelkedni. (&#8230;) Az elmondottak     nyomán úgy vélem, 
+hogy a zsidó tulajdonképpen     képtelen a művészet szavaival kifejezni az     érzéseit (&#8230;), a 
+zene világában mért lehetőségei     pedig, éppen ezért, határtalanul     alacsonyak. A dal a 
+leghevesebb szenvedélyeket ébreszti föl: a zene     e szenvedély kifejezésére     alkalmas 
+nyelv.&#8221;</div><br><A NAME="PAGISAF"><A HREF="./index.php?post=655#PAGISAF" ONCLICK="openbigwindow('resources/pictures/blogin_richardwagner.jpg', 498, 600); return true;"><img bigpic="resources/pictures/blogin_richardwagner.jpg" src="./resources/pictures/blogin_richardwagner_thumb.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Wagner a zsidók     
+    művészetidegenségével kapcsolatban jóval megelőzte a nemzetiszocialista Németország Führerének   
+      eszméjét, aki Wagnerhez hasonló módon hívta föl a figyelmet az <span style="font-style: italic;">entartete Kunst</span> (elfajzott művészet) általában zsidó képviselőire vagy támogatóira.  
+       (Elég csupán az olyannyira érthetetlen és élvezhetetlen minimalista, dadaista stb. művészeti  
+   ágakra     vagy a közelmúlt nagy vihart kavart &#8222;művészeti&#8221; eseményeire <a target="_blank"style="color: black; font-weight: bold;" href="//bombagyar.hu/index.php?post=262">gondolnunk</a>: megkínzott,     megölt     állatok, 
+fajtalankodó gyermekek, nemi szervek pornográfiába hajló ábrázolása, mind-mind   a   hamis     
+művészet oltárán.)<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A zsidók művészet iránti     érzéketlensége sohasem  
+   engedte meg, hogy képzőművészek nőjenek ki közülük; szemüket örökké a     gyakorlatiasabb dolgok  
+   kötötték el, mint a formák világának szépsége és spirituális tartalma. A     zsidó veleszületett  
+   tulajdonsága, hogy képtelen kifejezni magát a művészet szintjén (&#8230;),     így sohasem volt 
+képes     arra, hogy szellemet vigyen a zenébe, és befolyásolhassa a zenei     
+közízlést.&#8221;</div><br><A NAME="ELANIWD"><A HREF="./index.php?post=655#ELANIWD" ONCLICK="openbigwindow('resources/pictures/blogin_petofisandor.jpg', 300, 441); return true;"><img bigpic="resources/pictures/blogin_petofisandor.jpg" src="./resources/pictures/blogin_petofisandor_thumb.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Wagner nem nevezhető mai   
+      korunk divatjának megfelelően fasisztának vagy nácinak, hiszen 1883-as halálakor ezek a 
+fogalmak     nem     is léteztek. Fröcsögő antiszemita, bigott vagy gyűlölködő sem lehet az elismert 
+  zeneszerző,   hiszen     ezen írásában sem olvashatunk gyűlölettől eltorzult mondatokat. Valójában 
+  Wagner csak a   korában     komoly problémát jelentő kérdéseket, így a zsidókérdést is vizsgálta,  
+ éppen úgy, mint a   magyarok     között Babits Mihály, Berzsenyi Dániel, Bethlen István, Csoóri   
+Sándor, Illyés Gyula,   Kodolányi     János, Kossuth Lajos, Kosztolányi Dezső, Kölcsey Ferenc,   
+Mikszáth Kálmán, Móricz   Zsigmond, Szabó     Lőrinc, Széchenyi István, Vörösmarty Mihály, stb. stb. 
+  A sort sokáig   folytathatnánk. Ezek az elismert     gondolkodók mind fennmaradt szavaikkal 
+bírálták   a zsidókat, az   pedig, hogy nem kortársak     mindannyian, csak bizonyítja a probléma 
+állandósult   jellegét. Sértő   Kálmán <span style="font-style: italic;">Petőfi és a zsidók</span> 
+című versében   azt állítja, hogy a   zsidóság azért kedveli úgy     Petőfit, mert nem zsidózott, 
+mert akkor még nem   látta át a zsidóság   veszélyét. Pedig a még oly     visszafogott költőóriás is 
+megengedett magának   néhány kemény   megjegyzést a zsidókra nézve <span style="font-style: italic;">Széphalmon</span>   című versében, de   1847-ben ezt is írta:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Mert ha az ember már egy   hete csak zsidó kocsmában   hentereg.   
+  &#8211; Emberbarátok egyike vagyok, de a zsidókat csak   kikergetném a világ végére.   Mert, ami 
+ronda,     az csak ronda kérem.&#8221;<br>Petőfi Sándor:   Útilevelek Kerényi   
+Frigyeshez</div><br>Ilyen emberek     mind problémát láttak az egyre növekvő   hatalmú és gonosz   
+szándékú zsidóságban, ám korukban még nem     jelentett lemoshatatlan bélyeget,   ha valaki őszinte  
+ szót követelt a zsidósággal kapcsolatban. Az     idézetekből látszik, hogy itt   (és valóban hosszú 
+  oldalakon keresztül lehetne egyre-másra újraközölni     magyar és nemzetközi   írók, költők 
+szavait,   mondatainak százait) egyáltalán nem faji kérdésről,   hanem   morálról,   erkölcsiségről 
+van szó.   Ahogyan a Francia Akadémia nagyszótárának első öt   kiadásában (több     mint száz éven 
+keresztül!) a   &#8222;<span style="font-style: italic;">Juif</span>&#8221;, azaz   zsidó   szó 
+melletti magyarázat:   <span style="font-style: italic;">&#8222;olyan ember, aki sóvárog a   pénz 
+után, uzsorakamatra ad   kölcsönt vagy   túlzóan magas árakon   kínál&#8221;.</span> Nem lehet 
+véletlen,   hogy Wagner a pénz és a   zsidó kapcsolatáról   is   értekezik:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Társadalmi   evolúciónk   ama fordulópontjától kezdve, mikor a 
+pénz     egyre kevésbé palástolt módon a nemesség   virtuális   szerepébe emelkedett, a zsidók 
+&#8211; akinek   a   tényleges munka nélküli pénzcsinálás,   vagyis   az uzsora maradt az egyetlen 
+foglalatosságuk   &#8211;   (&#8230;) nem tagadhatták meg többé az   új   társadalom elismerését, 
+amelyhez semmi másra,   csupán   aranyra volt szükség, amit magukkal hoztak     a zsebeikben. 
+(&#8230;) Egyvalamiben biztos   vagyok: az a   befolyás, amit a zsidók mentális     életünkre 
+gyakorolnak, legmagasabb   kultúrairányaink eltérítésében   és meghamisításában   jelentkezik.   
+Noha kultúránk bukását csak az   akadályozhatja meg, ha erőszakkal   kiközösítjük a   romboló idegen 
+  elemet, képtelen vagyok dönteni,   mivel ez olyan erőket követelne meg,   amelyek   létezéséről 
+nincs   tudomásom. (&#8230;) Abba a   helyzetbe kényszerültünk, hogy a zsidóktól   való   
+szabadulásunkért kell   küzdenünk. (&#8230;)   Gondolják el, hogy egyetlen módszer létezik az     
+önöket terhelő átok   leküzdésére: Ahasvérus   megváltása &#8211; a   
+megsemmisítés.&#8221;</div><br><A NAME="FFLCGKS"><A HREF="./index.php?post=655#FFLCGKS" ONCLICK="openbigwindow('resources/pictures/blogin_hanssachs.jpg', 641, 800); return true;"><img bigpic="resources/pictures/blogin_hanssachs.jpg" src="./resources/pictures/blogin_hanssachs_thumb.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Hm, micsoda kemény szavak  
+ a zene óriásától... Pedig még nem is       ismerkedtünk meg a Wagner által mélyen tisztelt Hans   
+Sachs mesterdalnokkal, akinek Wagner <span style="font-style: italic;">A nürnbergi   
+mesterdalnokok</span> című zeneművében emléket állít. Sachs       több mint 6200 darabjának jelentős 
+  része a zsidókkal foglalkozik, általában pedig sarlatánoknak   és     gonosztevőknek nevezve   
+őket.<br><br>A Wagnerrel fűződött szoros barátság miatt már sejthető   is,   hogy   Liszt is   
+hasonlóan vélekedett a zsidókról. <span style="font-style: italic;">Des   Bohémiens et   de   leur   
+musique en Hongrie</span> című munkájában a Wagneréhez hasonló   végkövetkeztetéshez jutott:   a     
+zsidóság teljes kirekesztése mellett tört lándzsát. Liszt   vallotta, hogy a vallásos zsidóság       
+esztelen kereszténygyűlölete miatt a &#8222;szerencsétlenség   tanyájává&#8221; akarják tenni a      
+ világunkat azzal, hogy &#8222;dögvész mérget lövellnek   ki&#8221;. Legfőbb céljukról így vall 
+Liszt       Ferenc:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A   félelemnek, hogy ne mondjuk a babonás 
+aggodalomnak egy neme       akadályozza őket abban, hogy egy oly   földön, amely nem az ő örökük, az 
+ekét a kezükbe vegyék       (&#8230;), másokat azonban szívesen   hagytak szántani s napszámosaikat 
+örömest tanították, hogyan       kell barázdát húzniuk. Persze a   föld nem adja meg az ipar gyors 
+nyereményeit, sem a kereskedelem       roppant nyereségeit. A zsidók   azonban csak nyereséget 
+akarnak és sehol sem elégszenek meg a   mezei     gazdászat csekély,   fáradságos, mérsékelt 
+kilátásaival. Hisz a 2%, a 3% jó lehet a   bennszülötteknek,     az ország   fiainak, &#187;Isten 
+népének&#171; azonban 200%, 400% kell, hogy   valamit szerezhessen,     aminek   segítségével a 
+szerencsétlenséggel dacolni lehessen, ha egy   válság pillanatában a rablott       vagyont ki kell 
+neki adni. A zsidó önszántából sohasem hagy el   valamely országot, amelyben még egy       fűszál 
+szakítható le, amelyben még egy rézpeták szedhető   fel a földről.&#8221;</div><br>A   zsidóságot    
+ parazitának, ártó, idegen éknek vagy sáskarajnak   tekinteni régi szokása volt a   gondolkodó 
+elitnek.     Ha évszázadok, sőt ezer évek során nem   történt változás (hiszen ugyanúgy   vélekedett 
+a zsidóságról     Claudius az I., Celsus a II., I.   Gergely az V., Immanuel Kant a XVI.,   
+Bonaparte Napóleon a XVII. és     Winston Churcill a XX.   században stb.), fölmerül a kérdés, hogy  
+ lehetséges-e változást, javulást     remélni egy ilyen   tömör kővé száradt néperkölcsben? Liszt   
+vonatkozó meglátásai:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;E nemzetnek   lényege egy paránnyal sem változott   
+&#8211; valóságos     zsidók ma is ugyanazok, akik voltak   valaha. Mindenütt látjuk őket komoran a  
+ mesterkélt beszédesség     álarca alatt, mindig ugyanolyan   rosszakaratúak, gyűlölségesek, színre  
+ azonban szolgálatkészek,     ármánnyal teltek, de   alázatosak, dacára minden esküvel való   
+bizonyítgatásnak s dacára tettetett     közeledésnek,   valódi jellemüket megőrizve, komorak,   
+ellenségesek s mindamellett vonzók, mint ama     mesebeli   baziliszkusz fénytelen, halált hozó   
+tekintete.&#8221;</div><br>Már Liszt is ismerte     bizonyos   szakmákban a zsidóság a társadalomban 
+  megszokott számához képest meglepően nagyarányú       jelenlétét:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;(...) az   
+irodalmi termelés és kritika minden mezejére bevessék       magukat. Birtokba vették a szépirodalom 
+és   az újságírás terét. Mint sáskasereg rohanták meg a       sajtót, hatalmukba kerítették az 
+időszaki   iratokat, magukhoz ragadták a gondolatok vezérlését s       megfészkelni látszottak 
+magukat a   közvélemény-árulásban. Végre a keresztények kezdték belátni,   hogy     ők saját 
+országukban a   gazdaság és hatalom mindkét fő forrásától el lettek űzve: a       pénzkereskedéstől, 
+a bankoktól s az   eszmék kicserélésétől, a sajtótól, elűzve lettek pedig azok       által, akik 
+francia, angol, német   stb. polgároknak nevezték magukat s továbbra is zsidók       
+maradtak.&#8221;</div><br>Szörnyű bélyeg   manapság, ha valakit antiszemitának neveznek, de       
+elfeledkeznek a nagy gondolkodók és művészek   szemitaellenes megnyilvánulásairól. Nem lehet, hogy   
+    ennyi elismert egyéniség mind véletlenül   éppen ugyanazt a népcsoportot találja károsnak, s     
+  mindannyian tévedjenek. Akárhogyan is   próbálják elmosni az antijudaista kijelentések eredeti   
+céljait     és valódi jelentőségét, az   évszázadok során túl sok bizonyíték és forrás maradt ránk,  
+ melyekből     láthatjuk, hogy a probléma   valós és ősi: megfelelő kezelésének, a nyílt beszéd   
+lehetőségének hiánya     miatt pedig   romló.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A zsidók a művészetet is 
+  ápolták, hogy azt     legtávolabb teréig   hatalmukba kerítsék. (&#8230;) Ők sohasem tudták azt,   
+miképp termett a művészet     inspirációk   által. (&#8230;) Az izraeliták új dallamokat nem tudtak  
+ feltalálni, mert ők sohasem a     maguk   érzelmeit dalolták. (&#8230;) Ők sem építészetet, sem   
+zenét nem teremtetettek. Ők sem dalokat,       sem költeményeket nem hozta létre, amelyeket mint   
+nemzetieket lehetne tekinteni. Ők csak utánoztak       másokat.&#8221;</div><br>A zsidók művészeti   
+sivárságát Wagnerhez hasonlóan Liszt is érzékelte.       Szintén markáns véleménye volt a   
+liberalizmusról:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A bölcsészet     azt   képzelte magában, hogy az   
+egyenlőség, testvériség a zsidó gyűlöletet lefegyverzi, hogy a   zsidó     megszűnik zsidó lenni,   
+hogy franciává, németté, olasszá legyen. Ezek egyike sem lett. A     bölcsészeti   filantrópia a   
+vaknak naivságával bír. A héberek, akiknek ősei nem évszázadok, hanem     évezredek   szerint   
+számítanak, nem alázták meg magukat annyira, hogy franciákká, németekké,     olaszokká legyenek.     
+Izrael fiai maradtak ők, s ez a tény problémává lett, egy oly nép ez, amely     mindig készen van az 
+    egyesek, a kormányok gonosz ösztöneit kizsákmányolni, azokéit, akik     engedelmeskednek, s   
+azokéit,   akik parancsolnak. A törvényhozók, akik nem hisznek a pszichologikus     tényekben,   
+amelyeket számba   venniük kell &#8211; azt gondolták, hogy az európai állam polgáraivá     lett   
+zsidó megszűnik a   középkori uzsora, a családfiaknak pestise, az ellenséges tábor kéme, a       
+népnek magát folyton   teleszítt vámpírja, minden kereskedelmi ág monopolizálója, a háborúknak       
+láthatatlan rugója s bíró a   békében lenni.&#8221;</div><br>Liszt szavai megegyeznek a ma       
+antiszemitának nevezett szereplők   szavaival: síkra száll velük az adósrabszolgaság kiépítése és az 
+      üzleti monopolizálás ellen. Liszt   ismeri a média zsidó befolyásoltságát, a tőkeerős érdekek  
+     nemzetellenes, sőt életellenes jellemét.   Liszt Ferenc és sokan mások, akikről ma tereket 
+neveznek       el, szobrokat avatnak, éppen azt gondolta,   mint mi; ha pedig ma élne, szinte 
+biztosan szívesen       publikálná írásait éppen ezen az   oldalon.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A zsidó nem   szűnt meg a     pénzt monopolizálni, sőt odáig ment, 
+hogy   valamely országot a veszély pillanatában   megfojthat     azzal, hogy a pénzeszacskó 
+zsinórját előre   megfontolt szándékkal össze- vagy   széjjelhúzhatja, mint     Pandora szelencéjét. 
+A hajdani kisipart, a   kereskedelmet a   nagykereskedéssel, a bankiparral     váltotta fel, 
+amelyeknek megdöbbentő gyorsasággal   korlátlan   urává lett.&#8221;</div><br><A NAME="VBTLUOD"><A HREF="./index.php?post=655#VBTLUOD" ONCLICK="openbigwindow('resources/pictures/blogin_lisztferenc.jpg', 400, 567); return true;"><img bigpic="resources/pictures/blogin_lisztferenc.jpg" src="./resources/pictures/blogin_lisztferenc_thumb.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Nálunk is sokszor vizsgált 
+        jelenség a tőkemachináció, mely a magyarság történelmét sajnos más népeknél súlyosabban     
+terhelte.   A   szabadkőművesség világállamának megteremtéséért folytatott harcában a totális banki  
+   és   kereskedelmi   hatalom megszerzése a pénz révén válik elérhető céllá.<br><br>Liszt szerint a 
+      zsidóság számáras a   trón az első s csak aztán következhet az oltár, azaz a politika a vallás 
+elé       kerül. Annyiban szorul   pontosításra ez a felismerés, hogy a judaizmusban a kettő össze 
+is forr   a     cionizmusban. A <span style="font-style: italic;">Die Israeliten</span>-ben így   
+ír:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Ők, a   zsidók, meg sem érzik, ha pár milliócskát elrabolnak tőlük 
+      vagy egy-két palotájukat felgyújtják! A   Rue Lafitte felégetésének ötletén csak kacagnak; a   
+    petróleum parfümként hat csőreiknek, a dinamit   robbantása finom melódia füleiknek! Ki 
+rabolhatja       el tőlük az ő Tórájukat meg Talmudjukat?   Nincsenek-e ők ahhoz szokva, hogy 
+mindenükből       kifosztassanak, hogy azután minden kincseket és   hatalmat újra 
+meghódítsanak?&#8221;</div><br>A       párizsi Rue Lafitte 21. a Rothschild Bank címe, a   
+nemzetközi zsidó pénzügy egyik főhadiszállása.       Az 1848-as párizsi vörös forradalom idején 
+(amely   mögött ismerten főleg zsidókat találunk) a       csőcselék felgyújtotta és kifosztotta 
+Párizs több   utcáját, a Rothschild-paloták és bankjaik       azonban érintetlenek maradtak. A 
+kommunisták legfőbb   anyagi támogatója egyébként nem meglepő módon       James Rothschild 
+volt.<br><br>Zeneszerzőnk   a társadalombomlasztó zsidó alakját is       ismeri:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Ők azok, akik a   társadalom minden megrázkódtatása mögött       
+megbújnak, valamint minden erkölcsi epidémia alakját is ők   képezik. (&#8230;) Nem mintha ők saját  
+     személyükben küzdenének, ehhez csak az eszközöket adják.   Megszerzik a háború nervusát, olajat 
+      öntenek a tűzre tinta alakjában. Ők írják és fizetik ama hadi   gépeket, ama modern 
+katapultákat,       amelyek a hit és az evangéliumi morál citadelláit szétrombolják.   Jól tudják, 
+hogy az       erkölcstelenség választóvize erre legerősebb adagjának csakúgy, mint a tökéletes   
+értelmi       demoralizáció halált hozó enervációjának semmiféle társadalom sem állhat   
+ellen.&#8221;</div><br>A       hasonlóan gondolkodók ismerik az eretnek történelmet, a 
+történelemkönyvek   apokrif iratait,       melyeket nem tanítják az oktatók: tudják, hogy milyen 
+gazdasági megfontolások,   milyen nevek       állanak a világháborúk vagy akár a trianoni tragédia 
+mögött. Az ősi divide et impera   elvét, a       viszályok keltését, az összezavaró hazugságok 
+terjesztését senki sem értette meg és   használta       jobban, mint a Liszt által is megvetett 
+zsidó nép.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Semmi         kétség, minekután ők sokáig védelmezték magukat, 
+most maguk támadnak. Ez a dolog természetében és a         rendeltetésének szükségszerűségében 
+fekszik. Másrészt viszont a keresztényeknek joguk van tőlük         telhető módon magukat e bajtól 
+megóvni. Erre pedig csak egy mód van, hazát kell szerezni a         zsidóságnak. Ajánlatos dolog 
+nekik visszaadni Palesztinájukat és Jeruzsálemüket. (&#8230;) A dolog         természetével 
+ellenkezik ugyanis, hogy egy nép élősdi állat módjára, más nép rovására éljen,   annak       belei 
+redői közé fészkelje magát. A végzet azt akarja, hogy a keresztények ezt az idegen   fajt       
+keblükből letépjék, őket valódi országukba visszavigyék. Ha a zsidók vonakodnának, akkor   
+erőszakkal       kell őket odaszállítani, szükség esetében pedig a határáig hajtani   
+őket.&#8221;</div><br><div style="text-align: center;"><A NAME="EHNTIUC"><A HREF="./index.php?post=655#EHNTIUC" ONCLICK="openbigwindow('resources/pictures/blogin_azorokzsido.jpg', 243, 350); return true;"><img bigpic="resources/pictures/blogin_azorokzsido.jpg" src="./resources/pictures/blogin_azorokzsido_thumb.jpg" style="border: 0px solid rgb(0, 0, 0);" border="0"></A><br><br></div><div style="text-align: center; font-style: italic;">Az örök     zsidó     
+&#8211; náci propagandaplakát<br></div><br>Liszt Ferenc ugyanazt vallotta, mint a     későbbi Magyar 
+    Antiszemita Párt alapítója, Istóczy Győző vagy maga Joseph Goebbels. Egyikük sem     sejthette,  
+ hogy   évekkel később, a II. világháború után Izrael néven megszületik ez a haza, de a     zsidó    
+ mentalitáson mit sem változtat. Kétezer év mocskát nem mossa le a régen várt saját ország, mert     
+a     pénzrajongás, mai korunk falloszimádata hatalomvággyá aljasul.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A pillanat         nincs messze, amelyben valamennyi keresztény 
+nemzet, amellyel a zsidó ma együtt lakik,   felismeri,       hogy rájuk nézve az egészség vagy az 
+örökös betegség, a társadalmi béke vagy a   folytonos   senyvedés     kérdésévé, az élet és a halál 
+kérdésévé vált a zsidókat maguknál megtűrni   vagy pedig       elkergetni.&#8221;</div><br>Lisztet a 
+történelem később csak látszólag igazolta:   szavai még ma is       éppen olyan aktuálisak és 
+fontosak, mint első papírra vetésekor.   <br></div><br>     </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-02-29&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=655&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=655&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=655&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=655&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=655&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=655&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=655&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=655&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=655&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=655&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=655&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment81786"></A><FONT COLOR="#FF0000">96. </FONT>Dawee</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-07-29 19:03:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4949.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment35788"></A>95. Fuckame\'</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-04 11:12:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Vagy még durvább, hogy elmentek, de basztak a generál pauzéra direktből...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment35659"></A>94. effendi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=655&id=35127#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-03-03 22:25:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2016.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Dehogynem fasisztázták Karajant. Ez a bélyeg rajta volt a haláláig, egyes babó muzsikusok meg is tagadták, hogy vele koncertezzenek.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment35433"></A>93. <A HREF="mailto:junkieboy@azet.sk" STYLE="color: #000000">Takika</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=655&id=35427#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-03-03 12:09:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1062.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem hát, mert mivan, ha azt mondaná, hogy "Nem is tévedtek!" ? :-)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment35427"></A>92. Fuckame\'</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-03 11:55:16</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem mindegy?...:-)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment35384"></A>91. <A HREF="mailto:junkieboy@azet.sk" STYLE="color: #000000">Takika</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-03 09:09:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1062.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Sziasztok! Nagyon jó cikk lett, gratula.<br />
+"Szörnyű bélyeg manapság, ha valakit antiszemitának neveznek, de elfeledkeznek a nagy gondolkodók és művészek szemitaellenes megnyilvánulásairól. Nem lehet, hogy ennyi elismert egyéniség mind véletlenül éppen ugyanazt a népcsoportot találja károsnak, s mindannyian tévedjenek." - ez legjobb megállapítás. Vajon mit szólna egy babó erre?!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment35237"></A>90. VeszettA\\\'llat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=655&id=34884#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-03-02 16:51:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves Number!<br />
+<br />
+Szerintem a válasz egész egyszerű, valamit tenni szeretnénk ezellen az állapot ellen. Nemtudom, hogy ez miért kérdés...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment35127"></A><FONT COLOR="#FF0000">89. </FONT>-reednow- -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-01 23:15:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1251.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment35019"></A>88. Ceres</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-03-01 18:08:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1917.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bonaparte Napoleon a XVIII. században!!! alkotott, és nem a tizenhetedikben. Remek post! Így tovább!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34988"></A>87. pusztuljárulózsidesz</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=655&id=34946#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-03-01 14:53:22</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2671.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">idézetek:<br />
+<B><a href="//l88.hu/post-2109.html" target="_new" style="color: #000000;">http://l88.hu/post-2109.html</a></B><br />
+<B><a href="//href.hu/x/4uxa" target="_new" style="color: #000000;">http://href.hu/x/4uxa</a></B><br />
+és kiegészítésképp:<br />
+<B><a href="//www.hazankert.com/05apr4.html" target="_new" style="color: #000000;">http://www.hazankert.com/05apr4.html</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=655&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=655&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=655&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=655&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=655&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=655&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=655&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=655&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=655&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=655&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=655&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

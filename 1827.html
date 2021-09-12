@@ -1,0 +1,699 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1827#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Nabazmeg, "Péter", gratulálok - avagy a leleplező videó valósága";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=1827#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Nabazmeg, "Péter", gratulálok - avagy a leleplező videó valósága<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 január 19. 13:38:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1827.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Néhány napja közöltem itt egy  
+       <a target="_blank"style="font-weight: bold; color: black;" href="//www.bombagyar.hu/index.php?post=1805">személyes üzenetet</a> egy bizonyos "Péternek".   
+      Ez a Péter egy videófelvételt küldött nekem DVD-n, s hozzá egy hosszú levelet. Ebben a 
+levélben         leírta - tessék jól fogódzkodni, mert hihetetlen, hogy ilyen van! - hogyan csalta 
+el Novák Előd   a       IX. kerületi választást, és hogyan juttatott el hamis kopogtatócédulákat más 
+pártokhoz,   köztük       hozzám is, pusztán azért, hogy bűncselekmény vádjába keverve lejárasson a 
+"nemzeti   oldal" előtt. A       videón elmondja a lényeget röviden, a 7 oldalas levélben pedig 
+részletesen. Én   ezt megköszöntem       szépen, és nem tettem közzé, mert úgysem hinné el 
+senki.<br><br>Mert lássuk   be, bizonyíték, az       nincs. Csak ez a DVD és ez a levél itt nálam, 
+és néhányan, akik láttuk ezt   a "Pétert". Az okoskodók       ezt percek alatt szétcincálják, és 
+kórusban röhögnek (élen a Novák   Előd szerkesztette     Kuruc.infóval,   nahát), és már a 
+szalagcímet elolvasva magabiztosan   kijelentik, hogy "ez kamu".     Olyan jó csengése   van ennek a 
+"kamu" szónak, vagány, benne van az   erő, összerezzen, akire     rámondják, és nincs   apelláta, 
+ami kamu, arról kimondatott a népítélet,   az kamu és kész. Aki     kimondta, az meg egy kicsit   
+hős lehet.<br><br>Pedig Péter igazat mond. Ez   benne a szomorú. De hogy     miért kellett pont a   
+Kuruc.infónak elküldenie a videót? Naná, hogy   azonnal kilométeres cikket     üvöltöztek össze 
+arról,   hogy az egészet én csináltam. Ami, lássuk   be, nem meglepő egy olyan     oldaltól, amit 
+Novák Előd   személyesen főszerkeszt. A szkeptikusok   kedvéért tessék, a következők a     
+lehetőségek.<br><br style="font-weight: bold;"><span style="font-weight: bold;">1.</span> Lehet,     
+hogy én csináltam, és   tényleg kamu az egész.   Valóban nincs bizonyíték az ellenkezőjére. Csakhogy 
+    semmi értelme sem lenne.   Ha én csináltam   volna a felvételt, már rég a televíziók adnák 
+"Péter"     kitakart arcát, ha egyáltalán   ki lenne   takarva, és nem a Kuruc.infó. Elég lenne csak 
+az ATV-nek     elküldeni, olyan ajvékolást kapna   a   Jobbik, hogy győzzön magyarázkodni. Van itt 
+pár ember, akit     bármikor meg tudok kérni arra, hogy     menjen el X vagy Y tévéhez, és mondja, 
+hogy ő Péter. Nem azzal     szórakoznék, hogy előre     bejelentem,&nbsp; mire készülök, és főleg 
+nem juttatnám el a Kuruchoz a     felvételt. Nem is most     csinálnám, hanem már a választás előtt 
+megtettem volna. Arról nem is     beszélve, hogy a történet     jelentős részét akár bíróság előtt 
+is tudom igazolni. <br><br>Ilyen   bonyolult és körmönfont   történetet egyébként azért sem érdemes 
+"leleplezésként" a publikum szemébe   vágni, mert a tömeg   90%-át kitevő birkák el sem olvassák, 
+csak az elejét, majd bámulnak homályos   szemekkel az   orákulumnak megválasztottakra (lásd pl. 
+Kuruc.infó), és várják a kinyilatkoztatást,   hogy mit kell   hinniük.<br><br><span style="font-weight: bold;">2.</span> Lehet, hogy a videót   "Péter" csinálta,   mert látta, hogy 
+Emőke   lejáratókampányt   kezdett ellenem, és egy nagy ötlettel   ki akart ebből   húzni. De ha így 
+van, az nem   magyarázza meg,   honnan tudta Emőke a választás során   mindig, hogy   pontosan mit 
+kell   megvizsgáltatnia, és miért nem   tudta ezt rajta kívül egyetlen más   párt   képviselője sem. 
+Emőkét   egyébként elmarasztalta a választási   bizottság a választás     titkosságának megsértése 
+miatt,   tudtátok?<br><br><span style="font-weight: bold;">3.</span> Lehet,     hogy a felvételt nem 
+"Péter"   csinálta, hanem valaki, aki kívülről akart   bekavarni. De miért     tenne bárki 
+ilyet?<br><br>"Péter"   vallomását nem tudom sem bizonyítani, sem   cáfolni. Azt viszont     igen, 
+hogy járt nálam, gyűjtött   nekem, mert többen is találkoztak vele. A   rendőrség nyilván ki     fog 
+hallgatni az ügyben, és el   fogom mondani, mint ahogy valamennyien. Ha   "Péter" valaha     
+előkerül, amit kétlek, mivel súlyos   ügyben lett tettestárs, akkor bizonyítható ez az   egész,     
+egyébként pedig csak egyértelmű. Egyébként   pedig úgy vélem: "Péter" kitálalása többet ártott       
+mindenkinek - a Jobbiknak és nekem is - mint   használt, mert ezek olyan dolgok, amiket tényleg      
+ kulisszák mögött kellene rendezni. Nem a   Jobbikkal van baj, hanem azokkal, akik körülötte vannak, 
+    s   nem a nemzeti gondolat, hanem az emberi   kicsinyesség játszik itt.<br><br>A Kuruc.infó 
+mellesleg hazudott, amikor azt állította, hogy "egy besokallt gyárlakó" küldte el nekik a felvételt, 
+az "újabb bűncselekményt" megakadályozandó. Ki volt ez a gyárlakó? Arra nincs válasz. Ez így jobban 
+hangzik, és a birkák lelkesebben ismétlik. A videó a YouTube-ra január 16-án, azaz a múlt héten 
+került ki, nem pedig a Kuruc.infóra most.<br><br>Az alábbiakban itt     a   videó, a végén pedig 
+letölthető Péter   levele, ahogy az a <a target="_blank"style="font-weight: bold; color: black;" href="//www.youtube.com/watch?v=WFvfiaPzl04">leleplezopeter.blogspot.com</a>-on     olvasható, 
+és     ahogy én is megkaptam. Tudom, hogy úgysem olvassátok el, mert hosszú. Pedig főleg     
+fanatikus     jobbikosoknak ajánlott. Vegyék már észre, hogy a Jobbikban is úgynevezett     
+"politikusok" ülnek. Azok,   akiket pedig annyira szoktak utálni.<br><br><div style="text-align: center;"><object width="425" height="350"><param name="movie" value="http://www.youtube.com/watch/v/WFvfiaPzl04"></param><param name="wmode" value="transparent"></param><embed src="//www.youtube.com/watch/v/WFvfiaPzl04" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object><br><br><div style="text-align: justify;"><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Sokan nem fogják megbocsátani nekem amit tettem, de a történtek után ez  
+        már nem érdekel. Ha bárki türelmesen végigolvas és nem csak a videó  üzenetet látja, az     
+beláthatja     miért vállaltam el dolgokat és a végére  azt is, hogy miért szántam rá magam mégis    
+ erre a mostani     lépésre.<br>Nem  szeretnék ezzel helyrehozhatatlan kárt okozni és a     
+jóhiszeműségem miatt  sem hozok     nyilvánosságra semmit a választás előtt. Kivárom még azt a  tíz  
+   napot, nehogy majd a szokásos   bűnbak   keresés miatt ürügyként  szolgálhassak.<br><br>És akkor  
+   álljon itt az elmúlt hetek nagy   port kavart   története, amennyit én tudok vagy láthattam 
+belőle,     mint egyik résztvevője.<br><br>A   ferencvárosi   időközi választásról lesz 
+szó.<br><br>A  Jobbik     számára élet-halál kérdése volt, hogy   ezen a   választáson nem  elég 
+csak jelöltet indítani, de     eredményt is kell elérni, legalább  5%-ot.   A kudarc   csak azt 
+erősítené, hogy nem szabad a kis     pártokra  szavazni, mert csak elveszik a   szavazatokat a   
+biztos befutó elől.<br><br>A  lecke fel     lett adva: a minimum öt, de inkább 10%-os   eredmény 
+elérése    volt a cél. Ehhez egy szimpla     Jobbikos kampány kevésnek tűnt. Ehhez  arra volt   
+szükség, hogy a   Fidesz mellett más, a Jobbikon     kívüli  jobboldali vagy rivális jelölt ne   
+indulhasson.<br>Egyetlen   módszer volt  ehhez amit a     választási ügyekben járatos Novák Előd 
+talált   ki, és  aminek a   végrehajtásában én is eszköz     voltam.<br><br>A módszer lényege  az 
+volt, hogy a   jelöltállításba   beavatkozni csak egyféleképpen     lehet: a  kopogtatócédulákon 
+keresztül. Ez az   egyetlen rés a   rendszerben amit  szinte   lehetetlen   észrevenni vagy 
+utánajárni. Ráadásul az elmúlt   évek    választásain nagy számban   történtek hasonló   esetek, így 
+még válogatni  is lehet az   ötletekből.<br>A   Novák-féle hadicsel   lényege az volt,   hogy  az 
+induló szervezetek közül a Jobbik   számára konkurenciát   jelentő MIÉP,    MDF és Tomcat,   illetve 
+a Zöld párt ajánlószelvényei közé kell   rosszakat      bejuttatni.<br><br>Fiktív cédulák   
+eljuttatása a pártok jelöltjeihez nem  látszott jó     megoldásnak,   mert egy ilyen provokáció   
+kibukna a legvégén  az ellenőrzés során, ha nagy számban   és   ugyanazok az   érvénytelen    
+ajánlószelvények futnának be mindenhová. Ráadásul gyanú esetén az      interneten is   elérhető   
+programmal már menet közben is könnyen  ellenőrizhetik a pártok, hogy     létező személyről   vagy   
+személyiszámról  van-e szó, és így hamar kiderülhet az   átverés.<br><br>Ezt   a trükköt úgy      
+kellett megcsinálni, hogy ne legyen semmi gyanús és   lehetőség szerint  csak a   legvégén 
+derüljenek   ki   a hibák, ezért létező személyek  érvénytelen   ajánlásait kellett eljuttatni   a 
+pártokhoz. Ez   menet   közben  nem tűnik fel senkinek, mert   leellenőrizhetetlen.<br>Ez a módszer  
+ jónak  tűnt   arra, hogy az   utolsó pillanatban csak a   Jobbik maradjon talpon a  jobboldali 
+indulók   közül.   Tudtuk jól ez nem   tisztességes dolog de    beláttuk, hogy a többiek számára 
+nincs olyan     jelentősége ennek a    választásnak mint nekünk,   ezért a cél érdekében én is bele 
+mentem a  terv     kivitelezésébe.<br><br>Az   MDF és a MIÉP   szemszögéből nem voltak  erkölcsi 
+fenntartások, Tomcattel     kapcsolatosan, pedig ő közel   állt a    Jobbikhoz, elfogadtuk Novák 
+Előd magyarázatát, hogy     szeptember óta nagy  fordulatot tett, és     eddig sem lehetett őt 
+egyértelműen a jobboldalhoz      sorolni. A Zöld párttal való lepaktálása és a     Jobbikkal 
+szembeni éles  támadásai is egyértelműen     bizonyítják, hogy ő ügynökként lett   ráállítva  a   
+radikális oldalra és bomlasztó tevékenységet     folytat.<br>A feladat az  volt, hogy   a Novák Előd 
+által   biztosított ajánlószelvények az      útmutatásoknak megfelelően feltűnés   nélkül, életszerű 
+módon   jussanak el  a konkurens pártok     ajánlásai közé.<br>Az én feladatom   Tomcat volt.<br>A  
+lényeg az   volt, hogy Novák elkészíti az     üres, az eredetivel megegyező    ajánlószelvényeket, 
+aztán majd azokra a   megbízható emberek átírják     az  Előd általa beszerzett   listákból az 
+ajánlást adó lakosok nevét, címét    és személyi számát meg     a párt és a jelölt   nevét, akinek 
+szánjuk az  adott cédulacsomagot. Minden   pártra más volt a   terv,   külön voltak    kezelve, 
+külön lista is volt amit Novák állított össze a saját   módszere      szerint.<br><br>Annak   
+érdekében hogy elkerüljük a provokáció gyanúját  még utólag is   amikor majd     kiderülnek a   
+dolgok, a módszer lényege az  volt, hogy a személyi szám alapján mindenki       leegyeztethető   
+létező  személy, de közöttük nagy számban lesznek olyanok akik már nem ott  laknak,       tehát   
+érvénytelen jelölést adnak majd. Így mindenki egyből arra  fog gondolni, hogy régi adatbázis         
+segítségével készítettek hamis  ajánlószelvényeket, amit az tud mégnyílvánvalóbbá tenni, ha ezek     
+nem     is  eredeti ajánlószelvényeken vannak.<br><br>Abból indultunk ki, hogy a  tapasztalatok     
+alapján a     kis pártoknak a kopogtatócédula gyűjtés  nehézséget jelent, ezért senki nem fogja     
+magát   túlgyűjteni,   nem fog  dúskálni a beérkező cédulákban. Ezért ha szépen beszivárogtatjuk a   
+   Novák   által   összeállított kopogtatócédula csomagokat, akkor ezzel azt a  hamis illúziót   
+keltjük,   hogy   lassanként   össze fog jönni a szükséges  mennyiség a jelöltállításhoz.<br>Arról   
+fogalmuk sem   lesz a   cédulák    leadása utáni ellenőrzésig, hogy ezek egy része érvénytelen, és   
+ha  kellően   elhúzzuk a   beadagolás   idejét, akkor erre csak a leadási  határidő végén, az utolsó 
+  pillanatokban   derülhet   fény. Akkor   pedig már  lehetetlen összeszedni a hiányzó mennyiséget,  
+ legfeljebb   trükközéssel  vagy     cédulaátvétellel valahonnan, de az akkor már nem túl hihető,    
+könnyen   kiderülhet és megbukhatnak     rajta.<br><br>Ezután megindult a  munka, és legyártásra   
+került kb.   háromezer darab üres     kopogtatócédula,  amit végül nem használtunk fel, mert mielőtt 
+    hozzákezdtünk volna listák      átírásához, Novák leállította az egészet, mert kapott valami 
+jobb      ötletet.<br>Újra legyártatott     cédulákat, de jóval kevesebbet, aminek  szemmel 
+láthatóan     halványabb volt a nyomása mint az előző     szériának,  majd ezután elkezdtük erre 
+megcsinálni a     Zöld párt ajánlásait.<br>Később  Előd külön     hozta az MDF-nek szánt biankó 
+ajánlószelvényeket is,     amik  ránézésre is különböztek az addigiaktól,     mintha fénymásolóval 
+csinálták      volna.<br><br>Akkor nem sokat értettünk az egészből, de utólag     persze  kiderült, 
+hogy mindennek     meg volt a logikája és magyarázata, mégpedig  az, hogy ne     derülhessen ki, 
+hogy ugyanolyan     cédulán egy helyről jönnek  az egy kaptafára készült rossz     ajánlások. Ezért 
+állította le először     a  munkát Előd, nehogy a riválisokat nagymennyiségben     elárasztó 
+egyforma  hamis   kopogtatócédula   miatt azt feltételezzék, hogy a Jobbiknak bármi  köze     lenne 
+hozzá, hiszen   ebből előnye leginkább   neki származna, neki  fűződhet ehhez érdeke a jobb     
+eredmény elérése   miatt.<br><br>És a    történetet én akkor még csak eddig ismertem, és nem 
+gondoltam,     hogy  ennél   sokkal többről és   sokkal mocskosabb dolgokról van szó, mert Novák  
+túllőtt a     célon.<br>Ugyanis   azt gondolta (vagy   azt súgták neki?), a  Jobbik érintettségét 
+úgy kell elkerülni,     hogy az   igazság pártjaként rá    kell majd mutatni, hogy itt kérem óriási 
+csalások vannak. Mert ezzel        nem csak az időközi   választáson számíthatunk majd több 
+szavazatra,  hanem a népszerűségünk is     nőhet,   ellentétben a   gyanúba kevert konkurens  
+pártokkal, akiket ezzel a módszerrel és a     kuruc.info   segítségével    igyekeznek majd teljesen 
+lejáratni.<br><br>Október 23-án nyilvánvalóvá      vált, hogy   Tomcat   elindul a ferencvárosi 
+időközi választáson a Zöld  párt színeiben. Ha a Zöld     párt   szavazóbázisa   sem jelentőségében, 
+sem  orientációjában nem is fedi a Jobbik   szavazótáborát,   azért   azt tudtuk,    hogy Tomcat 
+széles körben ismert és elfogadott nemzeti   radikális  személyiség   és   szavazatokat   tud 
+elvinni Szegedi Csanád elől.<br>Tudomásom  szerint   Tomcat kereste a   kapcsolatot a   Jobbikkal   
+amiatt, hogy álljanak  mellé, és akkor mint független   jelölt elindulna   több párt    
+támogatásával,   de ez a Jobbik számára nem volt elfogadható, mivel   csak  önálló   jelölttel lehet 
+erőt   felmutatni,   Tomcattel szemben pedig  egyébként is   fenntartások vannak.<br>A   választás 
+Szegedi   Csanádra    esett, de tudtuk hogy ez önmagában kevés   lesz az eredményes    szerepléshez, 
+mert az   ismertsége   nem nagy.<br><br>Sosem értettem, ha   valakit nem szeretünk azt   miért kell 
+egyből hülyének   is   nézni.<br>Amit Tomcattel szemben   tettem azt sajnálom, de Novák   Elődben 
+akiben eddig megbíztam     most nagyot csalódtam.<br>A    Jobbik vezetését sem értem, miért   
+hagyták hogy idáig fajuljon egy   olyan    sikamlós ügy, amiben   jócskán érintettek vagyunk. Hiba 
+volt   ezt a  helyzetet túllihegni,   mert csak a   bolond számára   nem világos, hogy  Novák áll az 
+egész téma   kipattanása mögött, és már   mindenki erről      beszél.<br><br>Ha a Jobbik helyzetbe 
+hozása, nem pedig   Novák Elődnek a    Tomcattel szembeni   egyéni   sérelmeinek orvoslása lett 
+volna a célja  ennek a zűrös   történetnek,   most egy szavam se   lenne, de   Előd húzásai  
+mostanra csömört okoztak nekem is. Már   akkor   elpattant bennem valami,    amikor a   
+nyilvánvalóan ügyeskedő liberális Humanista párt és az      őskommunista Munkáspárt   
+nyilvántartásba   vételét nem vétózta meg Előd,  és az ő kopogtatócéduláik     vizsgálatát nem kérte 
+  a sok kettős ajánlás    miatt, csak az elhíresült három párttal szemben     kardoskodott.<br>Pedig 
+   az tényleg nagy dobás lett   volna és óriási pozitívum a Jobbiknak, ha az      indulók több mint  
+ feléről pártállásától függetlenül   neki köszönhetően  derült volna ki, ha tényleg     csalnak. De  
+ így, hogy csak a konkurenseket  támadta   be, eléggé átlátszóvá vált     minden.<br><br>Visszatérve 
+  a cédulák történetéhez, az ajánlószelvényes   trükk minden párt     &#8222;csomagjánál&#8221; 
+külön   csapattal lett megoldva.<br>A  MIÉP-nél az volt a   lényeg, hogy     olyan ajánlókat kellene 
+  találnunk, akik  később majd mást nyilatkoznának, de ebben nem   tudtam     segíteni, mert nem    
+voltak megbízható IX. kerületi kapcsolataim.<br>Az MDF esetében nem  volt       nehéz dolga a másik  
+ csapatnak, mert ők a közismertségük miatt  könnyen elhitték, hogy az emberek       maguktól   
+támogatják a pártot úgy,  hogy egyszerűen besétálnak az ajánlószelvényeikkel vagy bedobják          
+hozzájuk. Az adagolás tekintetében kellett csak óvatosnak lenni, hogy  ne fedezzék fel a       
+provokáció   szándékát, bár az idő rövidsége miatt a  végén egyszerre nagyobb mennyiségek       
+célbajuttatását is meg   kellett  kockáztatniuk.<br><br>Novák Elődnek mint kiderült volt még egy     
+  ravasz  ötlete, már ha az   övé volt. Az MDF-nek a gyengébb minőségben legyártott  üres       
+ajánlószelvényeket azért találta ki,   mert ő eredetileg is azt  tervezte, hogy a nagy mennyiségű    
+   érvénytelen ajánlás mellett a  választási   bizottság tagjaként majd a cédulák minőségébe is bele 
+      fog  kötni és ezzel tud majd elkaszálni   másokat is.<br>Mivel biztos volt  abban, hogy egy    
+   hivatalos cédulavizsgálatra a legjobb esetben is   csak  akkor lehet rávenni egy választási       
+bizottságot, ha egyértelműen és  szemmel is jól láthatóan   nem eredeti szelvényeket mutat fel,      
+ ezért a  2006-os szombathelyi MIÉP-Jobbikos eset   tapasztalataiból kiindulva a  fénymásolós       
+módszerrel készült MDF-es kopogtatócédulákat kereste ki a    paksamétából ehhez       
+ürügynek.<br><br>Előd nagyon jól tudta hogy mit kell  nézni rajtuk, így aztán   hamar kiverte a      
+ balhét és kénytelen volt  mindenki elismerni az igazát, mert csak a vak nem látta a   különbséget.  
+      Egyébként meg minden szervezet füle mögött elég sok a vaj ahhoz, hogy  annak örüljenek   
+inkább,       hogy nem az ő szelvényeit vizsgálják az Állami  Nyomda szakemberei.<br>Innentől már 
+nem volt     nehéz     ugyanilyen  vizsgálatba bevonni a másik két rivális pártot is a náluk 
+található  hibás     jelölések     nagy száma miatt. Előd biztosra ment itt is, hisz  nagyon jól 
+tudta a MIÉP és Tomcat     esetében is     hogy miújság az  ajánlószelvényeikkel.<br>Hiába 
+érintették a kettős jelölések a      Humanista   pártot   és a Munkáspártot, és hiába tudta nagyon 
+jól Előd hogy  mindkettőnél, de   különösen   a   Humanistáknál   nagy bajok lennének egy  vizsgálat 
+esetén, velük nem foglalkozott és   így     megmenekültek a    lebukástól.<br>Ezután már ment minden 
+mint a karikacsapás. A pártok        ajánlószelvényeinek jelentős   részéről megállapították, hogy 
+azok nem az  Állami Nyomdában     készültek.   Ez különösen a Zöld párt   esetében volt  kirívó, ami 
+persze nem a véletlen műve, és ki     fog derülni   hogy miért.<br><br><br>Az    első alkalommal 
+legyártott nagymennyiségű   ajánlószelvény   amiatt sem    került bevetésre, mert az   MDF végül a 
+gyengébb minőségű cédulákat   kapta  meg, a Zöld   pártnál pedig   az újraelkészített   kissebb adag 
+szelvény  került   felhasználásra. Így azok nálam   maradtak, amiből   eljuttatok pár    százat 
+néhány   helyre.<br><br>Tomcat illetve a Zöld párt   esetében nekünk  nem volt   könnyű dolgunk,   
+mivel ő   volt egy személyben minden: a jelölt,  a   kampány irányítója és szervezője   is. Ráadásul 
+a   Zöld   pártnak egy  helytől eltekintve &#8211;   ahol egyébként szinte sosem volt senki,   de 
+még egy      postaládájuk se &#8211; nem voltak   kampányirodái vagy gyűjtőhelyei, mindössze  egy   
+postafiók   címe,   így csak Tomcattel tarthattunk   kapcsolatot.<br>Ezért nem volt egyszerű 
+végrehajtani   a   tervünket   úgy, hogy ne derüljön ki semmi   a felállított 
+csapdából.<br><br>Mindent  a lehető       legtermészetesebben kellett csinálni, ezért   megvártuk 
+amíg  felhívást tesz közzé a honlapján, hogy       segítőket keres a    kopogtatócédula-gyűjtésére. 
+Mint tapasztalt cédulagyűjtők tudtuk előre    hogy ez     nem lesz könnyű   feladat, ezért az első 
+alkalomra nem mentünk  el, tudván hogy úgyis   kudarc lesz a     vége és elmegy   majd a kedvük. 
+Csak  másnap kerestem meg személyesen őt a   boltjában.<br>Felajánlottam     hogy  két   társammal 
+együtt szívesen gyűjtenénk ajánlószelvényt   neki, aminek  persze nagyon örült.     Azt   mondta 
+hogy aznap menjünk is el együtt  gyűjteni, mert   elég lassan fog menni, ha az előző napi       
+tapasztalatokat  veszi alapul.<br><br>Így is történt,   délután visszamentünk két  társammal a       
+boltjába. Az ott lévő haverjait megkérdezte jönnek-e   velünk  gyűjteni, de szerencsére nemet 
+mondtak,       így csak négyesben mentünk az  eredeti tervem   szerint. A két társam külön indult én 
+pedig     Tomcattel    maradtam, de velük előre megbeszéltem,   hogy a végén az előre  elkészített 
+tizennyolc     darab   ajánlószelvényt átadják majd. Tomcattel    végig beszélgettünk és közben csak 
+négy darab       ajánlószelvényt sikerült    összegyűjteni.<br>Mindvégig próbáltam a bogarat a 
+fülébe tenni, hogy        mennyivel könnyebb lenne   úgy gyűjteni ha az embereknek csak alá kellene  
+írni a kezükbe adott         ajánlószelvényeket.<br><br>Mert a legtöbben már  tényleg kidobták vagy 
+nem találták, esetleg meg sem         kapták. Tomcattől  sem állt távol ez a gondolat hiszen ebbe 
+ütköztünk sok helyen, és mint        elmondta,   2006-ban látta ő is hogy micsoda 
+ajánlószelvény-cserebere  folyt a választások során.       Aztán hiába   adtak be ezügyben 
+feljelentést,  semmi nem történt.<br>A végére javasoltam neki, hogy       nyomdásszal    
+csináltassunk üres ajánlószelvényeket, és ha valakiben a szándék megvan  de a       szelvény 
+hiányára   hivatkozik, akkor csak elő kell venni és  kitöltetni vele. Ezt ő is célszerűnek       
+látta, én pedig azt   ígértem, hogy  megkérdezek egy nyomdász ismerőst, mennyiért gyártana nekünk    
+      ajánlószelvényt.<br><br>Este mikor a többiekkel összefutottunk ők  átadták a megbeszéltek   
+szerint   az     ajánlószelvényeket, mintha most  gyűjtötték volna. Ők is panaszkodtak egy sort   
+ahogy   megbeszéltük,     hogy  azért nehéz mert sokan vagy nem kapták meg vagy kidobták az      
+ajánlószelvényt. Ezzel   mégjobban   megerősítettük Tomcatben, hogy így  sokkal könnyebben és     
+gyorsabban tudunk majd gyűjteni   és hogy   megbízhat  bennünk.<br>Ezt erősítenünk kellett benne,    
+ hogy ne fogjon gyanút és  elhiggye,   a gyűjtést   azért fogjuk tudni jól csinálni, mert az üres    
+  szelvények egyszerűsítik és gyorsítják a   munkát. A   kezébe adott cédulák  pedig meggyőzték őt,  
+   hogy a srácok nagyon hatékonyak, hisz az   előző nap    nyolcan vagy kilencen összesen nem     
+gyűjtöttek ennyit.<br><br>Másnap  elmentem hozzá és   elmondtam,   hogy a nyomdász 25 000 forintért  
+   gyártana  pár száz üres ajánlószelvényt. Ezt   elfogadhatónak   tartotta és mondta  hogy 
+csináljam     meg. Aznap szerencsére nem tudott velünk jönni,   de örült  annak   hogy mi elmegyünk 
+nélküle is     cédulát gyűjteni.<br>Pár nap múlva  kerestem meg újra   és átadtam kb.   ötven 
+ajánlószelvényt.     Kérdezte hogy  mitől ment ilyen jól a gyűjtés és én mondtam,   hogy az üres   
+szelvények  sokat     segítenek. Rákérdezett arra is, hogy a szelvények biztos rendben    vannak-e, 
+amire   persze a     válaszom az volt hogy igen.<br><br>Ekkor ő  arra kért biztos ami biztos   
+alapon, hogy   segítsek     neki leellenőrizni a  cédulákat. Ezt úgy csinálta, hogy az MVSZ 
+honlapján   található        személyiszám ellenőrző opcióba egyesével bediktáltatta velem a  
+számokat. Mivel   mindegyik rendben       volt nem volt számára kérdéses, hogy  tényleg nincs semmi 
+átverés. Kifizette a   nyomdásznak   ígért     huszonötezer  forintot is és látni akarta az 
+elkészült szelvényeket.<br>Mondtam   neki    hogy   háromszáz   darab lett legyártva, de nem 
+készültem úgy hogy hozzak  belőle. Azt ígértem   ha     legközelebb jövök   akkor hozok.<br><br>Két 
+nap  múlva jelentem meg nála 35 ajánlószelvénnyel,       hogy ne legyen túl    feltűnő a 
+hatékonyság, és vittem mutatóba az üres szelvényekből is egy        köteget, hogy láthassa.   Abban 
+maradtunk hogy rendszeresen átadom majd  neki az összegyűjtött       ajánlásokat. Ennek nagyon   
+örült, mert a boltban  egyedül dolgozott és nem sok ideje volt a       cédulagyűjtésre, nekünk meg  
+ez   volt a legjobb, mert mégkissebb volt az esélye annak hogy       rájöjjön,  az ajánlások mind   
+&#8222;előregyártottak&#8221;, és ezzel nem tünhetett fel neki az        se, hogy minden jelölés   
+ugyanolyan előrenyomott szelvényre készült.<br><br>Nem  kockáztathattunk       mert nem lehetett 
+tudni,   hogy szúrópróbaszerűen mikor  és mit ellenőriz le a szelvények közül.       Jeleztem Novák 
+Elődnek is,   hogy  minden adatnak rendben kell lenni mert Tomcat néha átnézi és        
+beleellenőriz a személyi számok   alapján a szelvényekbe.<br>Hogy ne  legyünk gyanúsak, az       
+elkészített ajánlószelvényekből két-három    naponként 30&#8211;50 darabokat vittem be a pólóboltba. 
+      Novák iránymutatásai  szerint a cél az volt,   hogy Tomcatnek is az utolsó hétre kellene      
+időzíteni   az érvényes mennyiség elérését, hogy a leadás   után már ne  tudja helyrehozni a     
+problémát.<br>Hogy   ne csak mi legyünk képben és más  csatornán is   jusson a nagy     
+szelvénymennyiségből Tomcathez, a   Zöld  pártnak a ferencvárosi újságban megjelent   postafiókjára  
+   rendszeresen  küldtünk leveleket   különböző postákról feladva, alkalmanként öt-tíz    darab     
+ajánlócédulával.<br><br><br>A   cédulagyűjtés végén Novák Előd azt  találta ki, leteszteli       
+mennyire biztos a MIÉP és Tomcat a   dolgában az  ajánlószelvényeiket illetően. Ezért megjelentetett 
+      egy hírt a  kuruc.infon, miszerint   kemény ellenőrzést fog kérni a jelöltek    
+ajánlószelvényeivel     kapcsolatban, különösen a MIÉP és   Tomcat esetében.  A cél a meghátrálásra  
+ késztetés volt ha     tisztában vannak azzal, hogy  baj lehet   az ajánlószelvényekkel.<br>Ha pedig 
+  ez nem így lesz az     annyit  jelent, hogy sikerült az   ajánlásokat úgy célba juttatni hogy nem  
+  kelltett feltűnést.   Novák   kérésére próbáltuk megtudni   Tomcattől, hogy  más csatornákon 
+milyen   hatékonysággal folyik   a gyűjtés.   Erre ő  egyértelmű   választ sosem adott de érezhető 
+volt, hogy   csak ránk épít,  meg a   meghírdetésre   került bombagyáras   akcióknál is a brigádok  
+tudomásunk   szerint csak a   plakátozásban és a   matricázásban vettek   részt.<br><br>Ez  
+megkönnyítette és   egyszerűsítette is a   helyzetünket, de akkor   még nem  gondoltam   hogy Előd 
+számára nem az volt a   legfontosabb hogy   Tomcat ne  induljon és ezzel ne   veszélyeztesse   
+Szegedi Csanád és a Jobbik    eredményes   szereplését, hanem hogy megpróbálja   elhitelteleníteni   
+ Tomcatet. Mert az történt,   hogy az utolsó   napokban miután a MIÉP, az  MDF majd a   végén Tomcat 
+is   leadta a céduláit, a   nagy számú hibás    ajánlások miatt a jelöltek az érvényes határ   alá 
+kerültek.   Mivel Tomcat  el   sem érte az érvényes   750-es határt, a jelölése meghiúsult az 
+eredeti    tervek   szerint.<br>De   Nováknak ez nem volt elég   és csak ezután derült ki számomra, 
+hogy a Tomcattel   való   személyes   leszámolás volt az igazi   célja.<br><br><br>Az  MDF az első 
+terv módosulása miatt csak     késéssel   kapta meg a láthatóan    gyengébb minőségű Novák-féle 
+cédulákat, de ez még épp elegendő lett        ahhoz, hogy a szelvényeik   leadásakor a nagy számú 
+érvénytelen cédula  miatt a 750-es határ alá       kerüljenek.<br>Miután ez   kiderült, az addigra  
+nagyobb számban a gyűjtőládákba bekerült újabb       Novák-szelvényekkel    próbálták menteni ami 
+menthető.<br>Így túljutottak a lécen, de éppen  ezért   nem     bízott Novák   Előd semmit a 
+véletlenre. A választási bizottság  ülésén a szelvények gyenge     minőségére   és a sok   hibás és 
+kettős  ajánlásra hivatkozva sikerült rábírnia az ottlévőket, hogy      vizsgáltassák   meg   azokat 
+az Állami Nyomdával a másik két sok hibás  szelvényt produkáló     szervezettel     
+együtt.<br><br>Mivel a cédulák  minősége csak az MDF esetében volt feltűnő és     jelentősége is 
+csak     náluk  volt, mert éppen megvolt a szükséges ajánlásuk, nem értettem miért   volt    erre 
+szükség a   másik   két pártnál. A Zöld párt mellett természetesen  Előd a régi MIÉP-es     
+kapcsolatai által   tudta, hogy   ott is kiderül majd,  hogy nem csak azokat a szelvényeket   
+használták   amiket a   Választási  Iroda   bocsátott ki, de nem gondoltam arra, hogy neki ez az   
+egész a már    megkezdett   hecckampány miatt volt   fontos.<br>Élvezte a helyzetet mert ő  volt a   
+karmester a hamis     ajánlószelvények célba juttatásának   folyamán  és azoknak a nyilvánosság elé  
+ teregetésében is, ahol     bizonygathatta  ország-világ előtt,   hogy micsoda csalásról és 
+csalókról   van szó,  miközben ő   volt   az igazság bajnoka.<br><br>Én ennek   egyáltalán nem  
+örültem, mert   ugyan Tomcat személyét   előtte   fenntartásokkal kezeltem, a  vele való   néhány 
+találkozás nem azt   erősítette meg bennem,   amit Novák    Előd és propagandagépezete sulykolt.   
+Ezt az egészet   egyébként sem azért  vállaltam   fel, hogy   Tomcatet ellehetetlenítsem, hanem az   
+indulásának    megakadályozásával Szegedi Csanádot   illetve a   Jobbikot erősítsem.<br><br>Mivel  
+ezt   sikerült   elérni, nem értettem hogy miért van   szükség erre a    cirkuszra. Egyértelművé 
+vált számomra   hogy   Nováknak ebben a játszmában  az volt   a legfontosabb,   hogy Tomcatet 
+padlóra küldje. A MIÉP és az     MDF  már csak hab volt neki a tortán,   de a   komunikációjában jól 
+észrevehető  hogy csak Tomcat,   mint   magánember volt a fő célpont, hisz   a Zöld   pártot  alig 
+hozta szóba. A másik két párt   esetében meg ez   pont fordítva volt,  mert a   jelölteket   alig 
+említi, csak a pártjaikat   ostorozza.<br>Szerintem    Novákot nem az érdekelte hogy   Szegedi   
+Csanád jó eredményt érjen el,    mert ha így lenne, nem   gerjesztené a hangulatot, ami már   kezd a 
+  Jobbik  számára is károssá   válni. A személyisége egyébként   is megosztja a  tagságot, és   amit 
+most   a kuruc.infon keresztül   művelt az túl sok   volt.<br><br>Emellett  a célba vett Tomcat a   
+szememben   nagyot nőtt, mert   ahelyett hogy  letagadott   volna mindent, ő volt az egyetlen aki   
+mellébeszélés   nélkül    elismerte, hogy valóban voltak előre   elkészített üres ajánlószelvények,  
+  bár arról fogalma   sem   volt, hogy az összes ajánlás amit mi    &#8222;gyűjtöttünk&#8221; neki, 
+az   mind ilyen cédulára     készült.<br>De ezt mi sem  gondoltuk előre és   még Novák Előd se 
+számított   arra, hogy végül csak      ránk fog hagyatkozni a gyűjtésben. Tomcat még a   mai napig 
+nem jött rá    arra, hogy igazából mi   is   történt az ajánlószelvényei körül, vagy hogy  azok   
+valójában Novák   Előd megbízásából   készültek   neki.<br><br>Én csak  abban akartam segédkezni, 
+hogy a   látszat   ellenére ne tudja   elérni a  750-es   érvényességi küszöböt, és szemrehányást 
+sem tehetett   volna,   mert  a gyűjtést   teljes mértékben   elhanyagolta. Ha nem csináltuk volna 
+ezt a  trükköt, akkor   még   a közelébe se   került volna annak   hogy jelöltként  elindulhasson. 
+De azt előre nem tudhattuk,     hogy Novák   Elődnek csak a  személyes   bosszú és a lejáratás volt 
+a célja.<br><br>Nehéz feldolgozni      hogy   olyasmiben segédkeztem, ami   választási csalónak 
+állít be valakit,  és ezt pont az az ember       súlykolja aki az egészet előre   kitervelte.<br>Azt 
+ ugyan még most sem hiszem, hogy a Jobbiknál a       jelenlegi hatalom  érdekeinek   kiszolgálása is 
+megjelent volna, de az biztos hogy sokszor  rossz       irányból jönnek impulzusok. És   ezt akkor 
+lehetett volna  mérsékelni vagy megakadályozni, ha nem       hagyjuk a nyár végén hogy Dósát    
+eltávolítsák csak azért mert ki mert mondani   dolgokat.<br>Talán   még   nem  késő, és beismerésem 
+is   annak reményében született, hogy az utolsó    pillanatban vagy   történik   valami 
+megtisztulás, vagy ez   a hajó is elmegy  a nemzeti   radikálisok orra előtt, a   legőszintébb   
+sajnálatomra.<br><br>Azért    döntöttem így, mert jobb   időben megelőzni a bajokat. A   
+megtisztulás    érdekében nyilvánosságra kell   hoznom mindezt   tanulságul, mert ha a  
+példamutatás,   a tettek és a   módszerek olyanok mint amit az   elmúlt pár    hétben átélhettem 
+Novák Elődnek   köszönhetően, akkor úgy   gondolom nagyon  rossz irányba   fog   fordulni a Jobbik   
+  szekere."<br></div></div><br><div style="text-align: justify;">(Egy kis utólagos adalék a cikkhez <a target="_blank"style="font-weight: bold; color: black;" href="//www.bombagyar.hu/index.php?post=1828">itt.</a> Jogerős határozat igazolja, hogy Novák Előd alaptalanul próbált csalás gyanújába keverni legalább egy pártot.)<br><br></div></div></div>     </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-01-19&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1827&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1827&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1827&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1827&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1827&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1827&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1827&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1827&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1827&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1827&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1827&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1827&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1827&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1827&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1827&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1827&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1827&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1827&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1827&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1827&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1827&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1827&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1827&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1827&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1827&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=1827&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> <A HREF="./index.php?post=1827&commentstart=250#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>26</B></A> <A HREF="./index.php?post=1827&commentstart=260#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>27</B></A> <A HREF="./index.php?post=1827&commentstart=270#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>28</B></A> <A HREF="./index.php?post=1827&commentstart=280#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>29</B></A> <A HREF="./index.php?post=1827&commentstart=290#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>30</B></A> <A HREF="./index.php?post=1827&commentstart=300#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>31</B></A> <A HREF="./index.php?post=1827&commentstart=310#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>32</B></A> <A HREF="./index.php?post=1827&commentstart=320#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>33</B></A> <A HREF="./index.php?post=1827&commentstart=330#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>34</B></A> <A HREF="./index.php?post=1827&commentstart=340#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>35</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment151582"></A>342. saltib</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-02-13 20:20:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Nem a Jobbikkal van baj, hanem azokkal, akik körülötte vannak, s nem a nemzeti gondolat, hanem az emberi kicsinyesség játszik itt."<br />
+<br />
+Hát ez az.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment146035"></A>341. <A HREF="mailto:mordred88@gmail.com" STYLE="color: #000000">Mordred</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1827&id=145845#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-21 18:30:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5520.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Egy kislány becsönget az MSZP kisvárosi székházába. <br />
+<br />
+-Csókolom, szerencsesütit árulok, az iskolának lesz!<br />
+-Na mutasd csak!- szól az MSZP-s, megnézegeti, megrázogatja, majd visszaadja.- Menj szépen innen, nem veszünk semmit.<br />
+<br />
+Bentebb vonul, s így szól politikustársának:<br />
+-Látod, pajtás, meg akartak minket mérgezni a Fideszesek. Nagyon körültekintőek voltak, látszik, hogy mesteri szervezőmunkát végeztek, minden nyomot eltakartak, kínosan pontos munka volt.<br />
+-Mivan?<br />
+-Hát nem láttad? Az a kislány! NEM AZ ISKOLÁNAK GYŰJTÖTT! A fidesz akart minket megmérgezni, ezért egy ciános sütit tartalmazó dobozt küldettek el az egyik orbánbérenc lányával, imigyen tőrbe csalva minket. Még arra is figyeltek, a kislány masnija nehogy sárga legyen, még a végén gyanakodnánk. Sőt, bizonyára ma reggel órákon át gyakoroltatták vele a "sütiárulást", nehogy észrevegyük, hogy most először "árul sütit" élesben. Nagyon pontosan kivitelezett, mesteri terv volt, de szerencsére lebuktak. Én ugyanis észrevettem, hogy a lány sűrűbben pislog mint azt egy átlagos ember szokta. <br />
+- Hogy én ezt nem is sejtettem! És tényleg, hiányzott a lelkesedés a hangjából, mintha már unná amit csinál. Igazad lehet, szólok a szomszédoknak, állítsák meg. A tervük pontosan kidolgozott, ezért biztos ügyeltek rá, hogy a lány a szomszédba is becsöngessen, imigyen leplezve valódi feladatát, persze a szomszédnak másik fajta sütiből adnak el. <br />
+<br />
+Kirohannak, a kislány két házzal arrébb éppen csöngetni készül, mikor lerohanják.<br />
+<br />
+-Állj csak meg, te kislány! Most szépen elmondod, ki küldött!<br />
+-Az iskola, hogy...<br />
+-Csendet, te fattyú. Tudunk a tervetekről! Nesze, itt van 2000 forint, most szépen megeszed az összes sütit a táskádban! Az összeset!<br />
+<br />
+A kislány pedig eltette a pénzt, megette az összes sütit, visszament a suliba, leadta a pénzt, és vidáman hazasétált. <br />
+<br />
+<br />
+<br />
+<br />
+Légyen ez kritika Neilnek, és mindenkinek aki úgy érzi, megsértettem legyűrhetetlen logikai fellegvárát.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment145845"></A>340. Neil McCauley</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-21 09:52:34</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5953.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szerintem mestermű "Péter" írása. Látszik, hogy néhány százezer mondatot papírra vetett már, aki írta. Nagyon kellett figyelni a szándékosan bennthagyott helyesírási hibákra is. Aki beszél, és aki a szöveget írta, mindenesetre nem ugyanaz. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment145814"></A>339. <A HREF="mailto:mordred88@gmail.com" STYLE="color: #000000">Mordred</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-20 23:15:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5520.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Utószó RKS-nek:<br />
+<br />
+Szerintem akár egy felületes olvasásból is kiderülhet, a srác összecsapta a levelet. Leírta ami eszébe jutott, nem szerkesztette és nem olvasta újra, örült, hogy túl lehet rajta és kész. Ha szerkesztette volna, összeszedettebb lenne, következetesebb és pontosabb. <br />
+<br />
+Szerintem ne akarj részletesen kielemezni egy olyan levelet, ami össze lett csapva. Ha ezt teszed, semmilyen más következtetésre nem juthatsz. Kérem, a politikai beszédeken el lehet csámcsogni részletes elemzéssel, azonban egy döntően emocionális alapon íródott levéllel ez a módszer semmilyen logikus eredményre nem vezet, csak azt bizonyítja, hogy pongyolán lett fogalmazva. <br />
+<br />
+Ez e levél egy kötél, egy politikai beszéd pedig egy cérna. Míg előbbi tele van hibával és szerkesztési baklövéssel, mint általában minden emocionális levél, az utóbbiak le vannak csupaszítva minden felesleges résztől. A tű az a rosta, amin ha átfér a cérna, akkor megfelelő stílusú, terjedelmű és kidolgozottságú a politikai beszéd. <br />
+<br />
+Konklúzió: Ne próbálj egy kötelet áterőszakolni egy varrótűn. Ha így teszel, az egyetlen jogos következtetés, hogy a kötél nem cérna. Ebből a tényből azonban már semmilyen alapod nem lehet további következtetéseket levonni részletesebb ismeretek nélkül.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment145812"></A>338. <A HREF="mailto:mordred88@gmail.com" STYLE="color: #000000">Mordred</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1827&id=145680#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-20 23:05:01</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5520.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Képzeld, ez történik, ha valaki nincs hozzászokva a nyilvánossághoz. A csalás sunyiban történt, ott nem volt félnivaló. Lámpaláz egy kis egészségtelen félelemmel vegyítve. <br />
+<br />
+Képzeld, én még mindig ott tartok, hogy ha közvetlen felszólalás keretében több embernek beszélek mint 100, görcsöl a hasam és elfelejtek mindent amit mondani akartam. Aztán nagy nehezen elillan a pánik, és beszélek rendesen. <br />
+<br />
+Ne feledd, ha igaz, "Péter" a börtönt kockáztatta ezzel a videóval, te nem pánikolnál be? Jelentős felkészülés után (amibe beletartozik 1-2 feles) sem lehet teljesen kiküszöbölni a lámpalázat és a félelmet egy olyan embernél, aki életében nem beszélt még ország-világnak. <br />
+<br />
+Ha nem hiszed, teszteld le. Csinálj egy videót, amin beismered a Kiskunlacházi gyilkosságot, mintha te lennél a tettes. Takard el az arcod, aztán tedd fel a Youtube-ra. A két eset között nagyságrendbeli különbség van, de te májerebb vagy, neked jobban menne. <br />
+<br />
+Jobban menne? </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment145809"></A>337. <A HREF="mailto:mordred88@gmail.com" STYLE="color: #000000">Mordred</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1827&id=145580#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-20 22:53:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5520.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A kommentárjai miatt? Ha jól tudom fel van tüntetve az oldalon, hogy a kommentek tartalma nem feltétlenül egyezik a szerkesztőség véleményével... <br />
+<br />
+"Beteg faszok..."<br />
+<br />
+Blogin, le kéne védetned xD </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment145738"></A>336. <A HREF="mailto:gbw@freemail.hu" STYLE="color: #000000">GutBesserWasser</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-20 18:47:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_637.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"[...] az MVSZ honlapján található személyiszám ellenőrző opció [...]"<br />
+TC (vagy aki ismeri az oldalt), szeretném kipróbálni ezt, de nem találom. Mi a pontos link? Köszönöm!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment145698"></A>335. RKS</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1827&id=145543#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-20 16:44:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6478.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Arminas, ha nem haragszol reagálnék a válszodra (302-es komment).<br />
+Igen, a Jobbik az "Igazság pártja" szerepében akart tetszelegni (ami sikerült is). De továbbra is azt mondom, hogy egyrészt az EREDETI céljuk is az volt, hogy csak a jobboldali riválisokat golyózzák ki. Hisz ha a "bal"oldalon megtartják az összes induló pártot, azzal megoszlik a szavazat közöttük, tehát százalékosan kisebb eredmény érnek el, ami a Jobbik szempontjából ismételten jól mutat.<br />
+Ugyenehez a gondolatkörhöz: Az eredeti terv az volt, hogy mindenkit, akinél felmerül a csalás lehetősége, azt megvizsgáltatják. Szerinted felmerült a csalás lehetősége a Humanisták, Szdszesek és Munkáspártiak esetén? Megválaszolom helyetted: Nem. Nem merült fel. Miért? Mert csak 5-6 darab érvénytelen ajánlat volt közöttük. Azt meg azért gondolom elfogadod, hogy az nem elég a csalás gyanújára, hogy "hamar" gyűjtötték össze a cetliket. (Más kérdés persze, hogy más módon kiderült az Szdszről, hogy csalt. De az jóval később történt, és nem olyan módon, amit a választási bizottság is kideríthetett volna.)<br />
+<br />
+Azt írod, hogy szerinted nem volt eldöntve az elején a lejáratósdi. Én továbbra is úgy érzem, hogy igen. Hisz a Jobbik egy csalássorozat leleplezésével akart az igazság bajnokaként feltűnni. Azt gondolom elfogadod, hogy médianyílvánosság nélkül ezt nem lehet. Ha pedig csalást leplezel le, akkor ott csalónak is kell lenni, akit megnevezel. Tehát a leleplezősdi igen is előre ki volt tervelve.<br />
+<br />
+Azt írod: <i>"SEHOL nincs a szövegben, hogy újra gyártottak Tomcatnek. Annyi van, hogy Tomcatnek azt mondják, hogy nyomdásszal csináltatják. De azt semmi sem bizonyítja, hogy nem a 3000 szelvényből adtak neki.</i><br />
+Javaslom az <i>"Ezután megindult a munka,.."</i> és az <i>"Az első alkalommal legyártott nagymennyiségű ajánlószelvény..."</i> kezdetű bekezdések újraolvasását.<br />
+<br />
+Az számomra ellentmondás, hogy Tomcat nem sz ÖSSZES kopogtató cédulát szerette volna látni, hanem csak látni szeretett volna belőlük párat (legalábbis a srác emlékei alapján ez ellentmondásos).<br />
+<br />
+<i>"Tomcatnak 300-at adtak úgy oda, hogy Nesze, ezt Neked nyomattuk. A többi meg "igazi" ajánlás volt. Legalábbis Tomcatnak úgy tűnhetett."</i><br />
+Félreértettél. Ha figyelmesen elolvastad a levelet, akkor láthattad Novák Előd célja Péter szerint az volt, hogy átbillentsék Tomcatet a 750-es határon. Ráadásul nem számítottak rá, hogy csak ők gyűjtenek neki, hanem azt gondolták, hogy más gyárlakók is. Ehhez képest 1152 "hamis" cédula volt Tomcat ajánlói között. Tehát 1152 hamis cédulával akarták átbillenteni Tomcatet a 750-s határon. Ezt remélem te sem hiszed el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment145680"></A>334. RKS</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-20 16:06:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6478.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Még a 294-es kommentemhez azt szeretném hozzáfűzni, hogy az is gyanússá teszi számomra az egész történetet, hogy a srácnak a videón remeg a hangja, de minden probléma nélkül végig tudott játszani egy ilyen összeesküvést. Ne feledjük, órákat töltött Tomcattel. Ha ott meg tudta játszani magát úgy, hogy ne legyen gyanús, az azt jelenti, hogy igencsak van vér a pucájában. Érdekes módon ez a vér elillant, amikor egy videokamerával beszélgetett. Nekem ez is ellentmonás.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment145613"></A>333. tetra</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-20 14:18:29</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2814.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha csak a videót néztem volna meg, azt mondám, hát oké, megesik, alja egy világban élünk tibor. De a levéllel együtt nekem baromira hihetetlen Péter. Azt mondja, nem akarja, hogy lebukjon. Ehhez képest olyan dolgokat ír le, ami által tomcatnak és Nováknak is teljesen egyértelmű lesz, hogy ki ő.<br />
+(most nézem, hogy Tamás már nagy T-vel írja a nevét, szóval Tomcat)<br />
+Ettől függetlenül, kritizálta már más is a BGy jelenkori stílusát, erre azt mondtam, leszarom milyen módszerekkel teszi valaki a dolgát, amíg a céljai tiszták. Nehéz megmondani, kinek mi a célja, de eddig Tomcat tűnik a legértelmesebb alternatívának. Hajrá.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1827&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1827&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1827&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1827&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1827&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1827&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1827&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1827&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1827&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1827&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1827&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1827&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1827&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1827&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1827&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1827&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1827&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1827&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1827&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1827&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1827&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1827&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1827&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1827&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1827&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=1827&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> <A HREF="./index.php?post=1827&commentstart=250#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>26</B></A> <A HREF="./index.php?post=1827&commentstart=260#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>27</B></A> <A HREF="./index.php?post=1827&commentstart=270#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>28</B></A> <A HREF="./index.php?post=1827&commentstart=280#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>29</B></A> <A HREF="./index.php?post=1827&commentstart=290#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>30</B></A> <A HREF="./index.php?post=1827&commentstart=300#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>31</B></A> <A HREF="./index.php?post=1827&commentstart=310#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>32</B></A> <A HREF="./index.php?post=1827&commentstart=320#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>33</B></A> <A HREF="./index.php?post=1827&commentstart=330#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>34</B></A> <A HREF="./index.php?post=1827&commentstart=340#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>35</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

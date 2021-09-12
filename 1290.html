@@ -1,0 +1,895 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1290#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A szent inkvizíció: mítosz és valóság";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>A szent inkvizíció: mítosz és valóság<BR><DIV CLASS="postheader_small">Blog - Főnix</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 augusztus 26. 18:54:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1290.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Mikor vallásról vitázunk, a    
+ keresztényellenesek első &#8222;<span style="font-style: italic;">ellenérve&#8221;</span> hogy 
+Isten     léte tudományosan nem bizonyított, tehát nem létezik. Elfelejtik azonban hogy Isten 
+nemléte sem     bizonyított tudományosan. Továbbá azt sem veszik figyelembe, hogy egy pusztán 
+szellemi síkon létező     lény (legyen az akár Isten, szellem, démon, vagy angyal) létének 
+bizonyítása anyagi síkon     lehetetlen, legfeljebb filozófiával magyarázható.<br><br>A vitát 
+azonban többnyire mindig ugyanaz     zárja le, a végső érv, az inkvizíció. Mert hogy az inkvizíció 
+milyen volt, és mit tett, azt mindenki     tudja. Tudjuk hogy emberek ezreit, kínozták meg a 
+legbrutálisabb, legkegyetlenebb módon, hogy     félőrült papok sokszor kitépték a kínmester kezéből 
+eszközeit, és az Úr nevében, ők maguk folytatták     a kínzást. Spanyolcsizma, madzagnyeletés, élve 
+megfőzés, elevenen elégetés, és rengeteg más szárad     még a szörnyűséges inkvizíció lelkén. Ezeket 
+tudjuk. <br><br>Ugyanúgy tudjuk, mint hogy a nácik     hatmillió zsidót megöltek, hogy szappant 
+készítettek belőlük és lámpabúrát, hogy elgázosították és     harci kutyákkal tépették szét őket, és 
+hogy vérgejzír tört fel a földből ahol zsidók százezerit     gyilkolták le különös kegyetlenséggel. 
+Ezeket is <span style="font-style: italic;">tudjuk</span>. És     talán pont annyira igazak ezek a 
+már megdőlt hazugságok, mint az inkvizícióról terjesztett     szörnyűségek.<br><br>Mindannyian 
+tudjuk hogy a történelemhamisítás általános, és értjük is ennek     indokait. Azonban mégis sokan 
+úgy hisszük, vannak dolgok, amiket teljes mértékben elhihetünk az     iskolai történelemkönyveknek, 
+a párszáz forintos szennylapoknak, vagy a multik polcairól figyelő     ismeretlen szerzőjű akciós 
+könyveknek.<br><br>Öntsünk hát tiszta vizet a kehelybe, és lássuk mi is     volt az a szent 
+inkvizíció.<br><br><div style="text-align: center;"><font style="font-family: Times New Roman,Times,Serif;" size="5"><span style="font-family: Times New Roman,Times,Serif; font-weight: bold;">A szent inkvizíció: mítosz és valóság</span><br><br></font></div>  A XX. századi     
+gondolkodásmód számára ellentmondásnak  tűnik a szentet és az inkvizíciót egy napon említeni.  Nincs 
+    még egy ilyen téma, amiről ennyit írtak volna,  vagy amit ennyiszer próbáltak volna tisztára   
+mosni,    mint a szent inkvizíciót. A modern mentalitás nehezen  tud megérteni egy olyan intézményt, 
+  mint az   inkvizíció,  mivel az inkvizitórikus eljárás nem a XVIII. század  folyamán, a nyugati   
+kultúrában   elterjedt liberális  tanokon, pl. a gondolat szabadságán alapult. A mai gondolkodásmód  
+  számára   nehéz a vallási meggyőződést objektívnek,  a szabad, egyéni döntésen kívülállónak    
+tekintenie. Mint   ahogy a Katolikus Egyházat sem egy tökéletes,  független társadalomnak látja,   
+ahol az igaz hitet   minden  áron fenn kellene tartani.<br>  A vallási intolerancia nem a középkor   
+egyedülálló  terméke:   a múltban mindenütt, és mindig is úgy  gondolták az emberek, hogy semmi sem  
+ háborítja jobban  a   közjót és a békét, mint a vallási  széthúzás és a viszály. A középkorra  a   
+legnagyobb válságnak azt   tekintették, ami a Latin  Egyház egységét és biztonságát  veszélyeztette, 
+  és ezért, ha a keresztény   társadalom  nem lép fel az eretnekek ellen minden rendelkezésére  álló 
+  eszközzel, az nemcsak   ostobaságnak, de Krisztus  elárulásának is tűnt volna. A mai modern 
+felfogás    a világi államról,   amely mindenfajta vallással  szemben semleges, megbotránkoztatta 
+volna a   középkori  elmét.<br>  A   mai ember nehezen érti meg az inkvizíció intézményét,  mert 
+elfeledkezett   három tényről. Először is:   a vallási  meggyőződést már nem tekinti objektívnek, 
+Isten ajándékának,    s így a szabad, egyéni   döntésen kívülállónak.  Másodszor számára az Egyház 
+már nem a  tökéletes   és független állam, amely   szilárdan  a tiszta és hiteles kinyilatkoztatáson 
+alapul, s amelynek   első  és legfőbb feladata   természetesen ennek az eredeti hitnek a  makulátlan 
+megtartása kell   legyen. Az igaz hit megtartása    úgy tűnik, magától értetődő volt a középkori  
+ember számára. Az   eretnekség, mivel a lelket támadta,    veszélyesebb bűn volt, mint a gyilkosság, 
+hiszen a lélek    örök élete sokkal többet ért, mint a test   halandó  volta.<br>  Végül: a mai 
+ember már nem képes   olyan társadalmat  elképzelni, amely az Egyház   és az állam szoros  
+kapcsolatán alapul. Az egyházi   hatalom elválaszthatatlanul  egybefonódott a   világival, nagyjából 
+úgy,  mint ahogy a lélek egybe   van fonódva a testtel. Elképzelhetetlen  lett   volna két teljesen 
+különálló részre  szétválasztani   őket. Az állam nem lehetett közömbös  alattvalói   lelki 
+boldogulása iránt anélkül,  hogy ne követne   el árulást legfőbb uralkodója,  a mi Urunk, Jézus   
+Krisztus ellen. A XVI. századi vallási    forradalom előtt ezek a nézetek minden keresztény számára  
+  magától értetődőek voltak.<font color="#ff0000"><small><small>1</small></small></font><br>  Mint   
+ahogy William Thomas Walsh a   Characters of the Inquisition (Az Inkvizíció  sajátosságai) című   
+művében írja: a keresztény    társadalomban az eretnekség elfojtása mind az egyházi,  mind a világi  
+ hatalom részéről olyan régi,   mint  az egyistenhit. (A vallás nevében Mózes több embert  öletett 
+meg,   mint Torquemada.)<font color="#ff0000"><small><small>2</small></small></font>&nbsp;  Az 
+inkvizíció,   mint különálló   egyházi  törvényszék, jóval későbbről származik.  Történelmileg a 
+római jog néhány   elemét  átvevő   egyházi törvénykezés fejlődésének  egy időszakában működött. A 
+maga idejében   semmiképpen  sem úgy   tekintettek rá, mint ahogy azt ma gondolják.<font color="#ff0000"><small><small>3</small></small></font> Edward Peters mérföldkőnek  számító írásában, 
+    az Inquisition-ben  (Inkvizíció) rámutat arra, hogy az &#8222;inkvizíció&#8221;  a XVI. század   
+  vallási és politikai vitáinak és  konfliktusainak &#8222;kitalálmánya&#8221;. Csak később     
+alkalmazták  a XVII-XVIII. századi vallási tolerancia, valamint a filozófiai  és politikai     
+felvilágosodás indítékainak  szolgálatára. Ez a folyamat, amely mindig is katolikus-ellenes,  és     
+általában spanyolellenes volt, egyetemessé  vált. Így az inkvizíció végül minden  olyan elnyomó     
+vallás jelképe lett, amely ellenzi a szellem  szabadságát, a politikai szabadságot és a filozófiai   
+   felvilágosodást.<br>        <div style="font-family: Times New Roman,Times,Serif;" align="center">            <h4><font size="4">1. Mítosz</font></h4>        </div>        <div align="justify"><b>Mítosz:</b> A középkori  inkvizíció a Katolikus Egyház által fenntartott,      
+centralizált, mindent behálózó, teljhatalmú  elnyomó szervezet volt.<br>        <b>Valóság:</b> Az   
+  inkvizíció, mint egyedüli,  teljhatalmú, félelmetes törvényszék, &#8222;amelynek  ügynökei 
+mindenütt     a vallási igazság, az intellektuális  és a politikai szabadság útjában álltak,  
+mindaddig, míg a     felvilágosult XIX. században meg nem  döntötték&#8221;, a képzeleten kívül nem 
+létezett.  Az     inkvizíció mítoszát &#8222;a XVI. századi  spanyolellenes vallási 
+reformerek&#8221;<font color="#ff0000"><small><small>4</small></small></font>&nbsp;  teremtették. Ez 
+az elképzelés, amely     mítoszok  és legendák sokaságából állt össze,  a XVI. századi nagyfokú 
+vallásüldözés  kontextusában     öltött alakot. A propaganda célpontja,  amely az inkvizíciót a 
+protestantizmus elleni     legjellegzetesebb  és legveszélyesebb katolikus fegyvernek állította  be, 
+a legnagyobb európai     hatalom, Spanyolország volt, amely  magára vette a katolicizmus védelmezője 
+szerepet. A későbbiekben      - bármilyen vallásüldözés bírálatáról  legyen is szó - ezt a terminust 
+használták.<br>  Valójában     nem egy, monolitikus, hanem három különböző  inkvizíció volt.<br>     
+   <b>A középkori     inkvizíció</b> 1184-ben Dél-Franciaországban  kezdődött válaszul a katharok 
+eretnekségére, s  a XIV.     század végén, a szekta kihalásával  szűnt meg. A modern kutatások 
+meggyőzően mutatják, hogy nincs      egyértelmű bizonyíték arra nézve, hogy a középkori  Európában 
+az emberek az inkvizíciót a   kormányzat    centralizált intézményének tekintették  volna. A kor 
+pápáinak nem állt szándékában    egy állandó   törvényszéket felállítaniuk.<font color="#ff0000"><small><small>5</small></small></font>&nbsp;   Példának  okáért, 1367-ig, amikor a   
+domonkos Albericet Lombardiába  küldték, a titulus inquisitor   hereticae pravitatis meg sem   
+jelenik.        <br>  IX. Gergely pápa az inkvizíciót nem egy   különálló,  független   
+törvényszékként állította  fel, hanem bírákat jelölt ki, akik a pápa nevében    tanítóhivatali   
+funkciókat láttak el. Ahol ők  üléseztek, ott volt az inkvizíció. Az egyik   legkárosabb,    
+századokon át szőtt legenda a mindentudó és mindenható  törvényszék képe, amelynek   ujjai a föld   
+minden  sarkára elértek. Az inkvizítorok kis száma, s  korlátozott hatáskörük messze   megcáfolja az 
+   eltúlzott retorikát. A XIII. század végén  egész Languedoc-ra (az albigens eretnekség   egyik   
+melegágya)  kettő, Provence-ra kettő, s Franciaország többi részére  négy-hat inkvizítor     
+jutott.<font color="#ff0000"><small><small>6</small></small></font><br>  Ami azt a vádat illeti,     
+hogy az inkvizíció a keresztény  világban mindenütt jelenlevő testület volt, az inkvizíció  nem is   
+  létezett Észak-Európában, Kelet-Európában,  Skandináviában, vagy Angliában, Walesben, Írországban  
+    illetve Skóciában. A XIII. században a legtöbb  eset a dél-franciaországi albigensek ellen 
+irányult.      Velencében 1289-ig létre sem jött, s a város levéltári  iratai azt mutatják, hogy a 
+szekuláris     hatalom mindössze  hatszor szabott ki halálos büntetést annak teljességében  
+(&#8222;in     totu&#8221;).<font color="#ff0000"><small><small>7</small></small></font><br>        
+<b>El Santo     Oficio de la Santa Inquisition</b>, ismertebb nevén  a spanyol inkvizíció, 1478-ban 
+állami     intézményként  alakult, hogy feltárja az igaz hit elleni eretnekséget és  devianciát. 
+Ferdinánd és     Izabella azért is alapította,  hogy megvédjék a megtérteket (conversos), az új  
+keresztényeket, akik     áldozatul estek a közméltatlankodásnak,  előítéleteknek, félelmeknek és 
+irigységnek.<font color="#ff0000"><small><small>8</small></small></font> Fontos megjegyeznünk,  hogy 
+az inkvizíciónak     csak a megkereszteltek felett volt hatalma,  a nem megkereszteltek - hacsak nem 
+a természet     törvényeit  szegték meg - nem estek a fegyelmi intézkedések hatálya  alá.<br>  
+Végezetül: a római     <b>Szent Hivatal</b> (Sacrum Officium)  1542-ben alakult, s a három változat 
+közül a legkevésbé      aktív, ugyanakkor a legemberségesebb volt.<font color="#ff0000"><small><small>9</small></small></font>&nbsp; John Tedeschi  nemrég megjelentetett    
+ tanulmánya, The Prosecution of Heresy  (Az eretnekség vádja), a római inkvizícióval,  s annak XVI.  
+   század közepi újraszervezése után  alkalmazott eljárásokkal foglalkozik; azt vizsgálja  hogyan    
+ küzdött a hit megtartásáért, s az eretnekség  gyökeres kiirtásáért. Tedeschi tanulmányának      
+jelentősége abban áll, hogy olyan, a reneszánsz óta  fennálló feltételezéseket dönt meg, mint  pl. a 
+    római inkvizíció korrupciós volta, embertelen  erőszakossága, igazságtalansága - feltételezések, 
+     amelyekkel Tedeschi terjedelmes munkája kezdetén maga is foglalkozott,  azonban lassan rájött, 
+hogy     az inkvizíció nem volt  &#8222;rögtönzött bíróság, kínzókamra,  vagy olyan jogi labirintus, 
+  amelyből   nincs menekvés&#8221;. Tedeschi rámutat  arra, hogy az inkvizíciós eljárás védőügyvédet 
+   is   biztosított. Továbbá a vádlottnak joga volt  jogi tanácsot kérni, sőt hitelesített másolatot 
+   kapott   az egész tárgyalás menetéről (a vád  tanúinak feltűntetése nélkül), hogy felkészülhessen 
+ a     válaszra. Ezzel szemben a kor világi törvényszékein  a védőügyvédnek csak szertartásos 
+szerepe   volt,    a bűnösnek nem volt joga jogi tanácshoz (1836-ig), az ellene  felhozott 
+bizonyítékokat csak   a   tárgyaláson ismertették,  s védelmét ott helyben kellett ellátnia. 
+Tedeschi arra  a   következtetésre   jutott, hogy a római inkvizíció  a korai modern európai 
+jogtudomány szempontjából    törvényes   igazságot szolgáltatott, sőt &#8222;nem túlzás  azt 
+állítani, hogy több szempontból a   Szent Hivatal    a jogi reformok úttörője volt.&#8221;<font color="#ff0000"><small><small>10</small></small></font><br>        </div>        <h4 style="font-family: Times New Roman,Times,Serif; font-weight: bold;" align="center"><font size="4">2. Mítosz</font></h4>        <div align="justify"><b>Mítosz</b>: Az inkvizíció  a katolikus 
+    Egyház által uralt középkori világ  bigottságából, kegyetlenségéből, intoleranciájából    
+fakadt.<br>          <b>Valóság</b>: Az inkvizíció egy nyugodt,  megfontolt, körültekintő   
+kísérletből ered,   amelynek  célja az összhangnak, az egységnek olyan jogi eszközét  létrehozni,   
+amely kiküszöbölné a   tömeg  önfejűségét, indulatát, bigottságát.  A középkori inkvizítorok nemcsak 
+  a teológiai, hanem  a   társadalmi veszélyek ellen is küzdöttek. Az inkvizíciót  a XII. század 
+végén   Dél-Franciaországban    alapították, válaszul az albigensek eretnekségére;  ez a szekta 
+különösen   erős volt Lombardiában és    Languedocban. Fontos kihangsúlyoznunk azt a társadalmi 
+veszélyt,    amelyet ez a csoport jelentett az   egész társadalom számára,  s amely nem pusztán a 
+mai korban   népszerű protestáns  fundamentalizmus   prototípusa volt. Az albigens elnevezés a  
+kathar szekta   központjának számító dél-franciaországi    Albi városából ered. A katharok (a név a 
+szekta    követőinek görög elnevezésére utal: cathaaroi  =   tiszták) úgy tartották, hogy két 
+istenség,  egy   materiális és gonosz, s egy immateriális és  jó   harcol az emberek lelkéért. 
+Minden anyagi   teremtmény  gonosz, az ember kötelessége az, hogy ezt   elkerülje, s elutasítsa  
+azokat, akik ezt   jónak tartják. Az Ószövetség  Istenét, aki a gonosz   világot teremtette, 
+elutasították.  A katharok   által értelmezett Újszövetség<font color="#ff0000"><small><small>11</small></small></font>&nbsp;   szolgált  útmutatóként ahhoz, hogy 
+az   ember megszabadítsa  lelkét az anyagi dologtól, a testtől.   Egy XIII. századi  szaktekintély, 
+Rainer   Sacconi, így összegezte a katharok  hitét:<br>    &#8222;Minden kathar közös hite a 
+következő:<br>  Az   ördög alkotta a világot, s mindazt, ami benne   található.  Valamint az Egyház 
+minden szentsége,   nevezetesen a vízzel  való keresztség, s más   szentségek, nem szolgálják  az 
+üdvösséget, nem Krisztus   és az Ő Egyházának  valódi szentségei,   hanem hamisak, ördögiek a gonosz 
+ Egyházához tartoznak. A   katharok általánosan  elfogadott hite   szerint a testi házasság mindig 
+is halálos  bűn volt, s az   elkövetkezendő életben a törvényes    házasság nem kisebb büntetést von 
+maga után,  mint a   házasságtörés, vagy a vérfertőzés,  sőt   egyikért sem kaphat az elkövető 
+szigorúbb büntetést.  A   katharok tagadják továbbá a test   feltámadását.  Úgy tartják, hogy húst, 
+tojást vagy sajtot enni,    még a legnagyobb szükség esetén   is halálos  bűn, mivel coitus útján 
+nemződtek. Esküt tenni semmi   esetben  sem engedélyezett,   következésképpen halálos  bűn. Továbbá 
+a világi hatóságok az eretnek    gonosztevő megbüntetésével   halálos bűnt követnek  el. Valamint 
+senki sem nyerheti el az üdvösséget,   csak a  felekezetén   belül.&#8221;<font color="#ff0000"><small><small>12</small></small></font><br>    A katharok tehát a   szentmisét 
+bálványimádásnak,  az Eucharisztiát ámításnak, a megváltást    képtelenségnek tartották.   Haláluk 
+előtt a követők  vigasztalásban (consolamentum) részesültek, az   egyetlen  engedélyezett   
+szentségben, amely lehetővé tette a lélek  számára, hogy megszabaduljon az   anyagtól, s   
+visszatérjen  Istenhez. Éppen ezért fulladás, vagy koplalás  általi öngyilkosság nem   csak   
+megengedett, de egyenesen  dicséretre méltó is volt.<br>  Azt tanítani, hogy a házasság gonosz,     
+hogy mindenféle  eskü tilos, hogy a vallási öngyilkosság jó,  hogy az embernek nincs saját akarata,  
+   tehát a tetteiért  nem felelős, hogy a világi hatalomnak nincs joga a bűnösöket  megbüntetni, az  
+   országot fegyverrel megvédeni, a középkori  társadalom gyökerét ért támadás volt.  Példának 
+okáért,     az eskütétel egyszerű  viszszautasítása aláásta volna az egész  feudális rendszer 
+jogrendszerét,     amelyben a kimondott szónak  éppen olyan, ha nem nagyobb súlya volt, mint az 
+írottnak.  Még Charles     Henry Lea, egy, az inkvizícióval foglalkozó  protestáns amatőr történész, 
+aki keményen  szemben áll     a katolikus Egyházzal, is elismerte: &#8222;Ami az ortodoxiát  okozta, 
+okozta a haladást és a     civilizációt.  Ha a kathar szekta domináns lett volna, vagy egyenlő 
+feltételekkel  létezhetett     volna, hatása végzetes lett volna.&#8221;<font color="#ff0000"><small><small>13</small></small></font><br>  Válaszul az északi franciák     
+keménységére,  gyakori brutalitására, amellyel az albigensek elleni keresztes  hadjáratot     
+folytatták, melyben sok eretneket szabályos  tárgyalás vagy meghallgatás nélkül öltek  meg, III.     
+Ince olyan nyomozati eljárást hozott létre,  amelynek célja a titkos szekták feltárása volt.  A     
+másik probléma, amivel a pápaságnak szembe  kellett néznie, a laikusok azon hajlandósága volt, hogy  
+    az eretnekek ellen a legkomolyabban fellépjenek, nem törődve  azok megtérésével, üdvösségével.  
+A     középkori intézmény igazi atyjának IX.  Gergely pápát tartják, Szt. Ferenc és Szt. Domonkos    
+  barátját, aki az újonnan alapított kolduló  szerzetesrendekhez fordult, hogy vállalják el az     
+inkvizítorok  veszélyes, fáradságos, s nem kívánt feladatát.<br>  IX. Gergely pápa olyan rendkívüli  
+   törvényszéket  hozott létre, amelynek az eretnekséggel vádolt személyek  leleplezése és elítélése 
+    volt a feladata.  Az albigensek előre nem látható dél-franciaországi  térhódítása nyilván     
+közrejátszott  ebben. Az Egyháznak Észak-Franciaországban is szembe  kellett néznie a szórványosan   
+  előforduló tömeges  erőszakkal, amelynek gyakran ártatlanok estek áldozatul. Az  eretnekek máglyán 
+    való elégetése is feltételezhetően  egy meghonosodott szokás erejének volt köszönhető.  A pápát  
+   szintén nyugtalanították a Németországból  jövő hírek, egy titkos társaságról, a 
+luciferániusokról      szóló jelentések, melynek meghatározott szertartásai  profanizálták a Szent 
+Ostyát. <font color="#ff0000"><small><small>14</small></small></font><br>  Világi síkon a pápa 
+félelmetes erővel     állt  szemben; II Frigyes császárral, az állítólag  &#8222;modern&#8221; és 
+&#8222;liberális&#8221;     Hohen-staufen uralkodóval, aki  teljesen nyilvánvalóan közömbös volt az 
+Egyház  lelki gazdagsága     iránt, s állandóan szemben állt  a pápasággal. A csak nevében 
+keresztény uralkodót,  II. Frigyest,     erősen befolyásolták az asztrológusok  s a muzulmán 
+szokások (háremet tartott); két  keresztes     háborút vezetett, s kétszer közösítették  ki. Már 
+1224 márciusában elrendelte, hogy a Lombardiában      bűnösnek talált eretnekeket elevenen égessék 
+el  (az ókori Római Birodalomban felségsértésért  járt     ez a büntetés), vagy kisebb büntetésként  
+a nyelvüket tépjék ki. Gergely pápa attól  tartva, hogy     Frigyes nemcsak eretnekeket, hanem 
+személyes ellenségeit  is elégetteti, megpróbált a probléma     kezelésére  megfontoltabb módszert 
+keresni.<br>  1233-ban IX. Gergely pápa megtalálta a maga     megoldását:  a lincselő törvényt a 
+kolduló ferencesek és domonkosok  által vezetett szabályos jogi     eljárás váltotta  fel. 
+Speciálisan az eretnekek leleplezésére, illetve  megtérítésére képzett     vizsgálók  és bírók 
+voltak, akik szegénységi fogadalmuk  folytán védelmet élveztek az irigységtől, a     
+megvesztegetéstől,  és elkötelezték magukat az igazság szolgálatára.<br>  Az első dolog tehát,   
+amit   a kolduló inkvizícióról  meg kell jegyeznünk, hogy létrejötte egy határozott  szükségre   
+adandó   válasz volt. Az eretnekség  esetében jogot, rendszert vezetett be, sőt pártatlanságot  ott, 
+  ahol a   politikai féltékenység elégtételének,  a személyes rosszindulatnak, a közutálatnak   
+határtalan  tere   volt. Ha olyan történésszel találkozunk, aki  az inkvizíció bevezetését a   
+&#8222;jogelmélet    előrelépésének&#8221; tartja, ebben az értelemben kell  értenünk.<font color="#ff0000"><small><small>15</small></small></font>&nbsp;  Az Inquisitio szó nyomozást jelent, s 
+    ez volt a pápa  érdeke is: valódi nyomozás, törvényes eljárás  a nyílt lincselés, a tömeg     
+irracionális érzelmei  és a személyes bosszú által fűtött tettek  helyett.<br>  A második dolog,     
+amit meg kell jegyeznünk, hogy a kolduló  szerzetesrendeknek a hit integritásának megőrzése éppúgy   
+   feladata volt, mint a társadalom biztonságának megvédése.  Ha az eretnekség eme áradatával nem    
+ tudtak volna szembeszállni,  az a nyugati kereszténység összeomlásához  vezetett volna. Az egész    
+ történelem folyamán az  egyik legsikeresebb törvényszék volt, amelynek sikerült  az albigensek     
+társadalom-ellenes mérgét teljesen kiirtania,  s így Európa morális egységét további  háromszáz évig 
+    megőriznie.<br>        </div>        <h4 style="font-family: Times New Roman,Times,Serif;" align="center"><font size="4">3. Mítosz</font></h4>        <div align="justify"><b>Mítosz</b>: Az    
+ inkvizíció  borzalmas eljárásai igazságtalanok, kegyetlenek, embertelenek  és barbárok voltak. Az   
+  inkvizíció tűz fölött  megsütötte áldozatainak lábát, befalazta őket,  hogy az örökkévalóság után  
+   sóvárogjanak,  kalapáccsal törte össze csontjaikat, kerékbe törve  megnyúzta őket.<br>            
+<b>Valóság</b>: Az ellenállhatatlan gótikus  fikció ellenére a bizonyítékok egészen  más     
+következtetés levonására késztetnek  bennünket. Az inkvizíció folyamatáról pápai  bullák egész     
+sorozata és más hiteles okmányok  számolnak be, de legfőképpen olyan formulárékon  és kézikönyveken  
+   keresztül ismerhetjük meg,  mint amilyeneket Szt. Raymond Penaforte (c.1180-1275), a nagy spanyol 
+    kánonjogász,  és Bernard Gui (1261-1331), a XIV. század elejének legünnepeltebb  inkvizítora     
+készített. Az inkvizítorok természetesen  vallatók voltak, de mindemellett teológiai szakértők  is,  
+   akik lelkiismeretesen betartották a szabályokat és  követték az utasításokat, s akiket   
+elbocsátottak    és megbüntettek, ha nem viseltettek tisztelettel az igazság  iránt. Amikor például  
+ 1223-ban   Bourger-i Robert ujjongva  bejelentette, hogy célja az eretnekek megégetése és  nem azok 
+    megtérítése, IX. Gergely pápa azonnal  felfüggesztette és életfogytiglani börtönbüntetésre      
+ítélte.<font color="#ff0000"><small><small>16</small></small></font><br>  Az inkvizíciós eljárások   
+  meglepően igazságosak,  sőt elnézőek voltak. A kor más európai törvényszékeivel  ellentétben egész 
+    felvilágosultnak tűnnek. A folyamat  az Egyház híveinek egybehívásával kezdődött,  az inkvizítor 
+    fennkölt prédikációt mondott,  az Edit de foi-t. Minden eretneknek előre kellett mennie 
+bevallania a     bűnét.  Ez az idő a &#8222;kegyelem ideje&#8221; volt, amely 15-30 napon át 
+tartott, s  amely idő     alatt a vétkesnek nem volt mitől tartania, hiszen ígéretet  kapott arra, 
+hogy bűne bevallása és a     megfelelő büntetés  után újra bebocsáttatik a hívők közösségébe.  
+Bernard Gui szerint a kegyelemnek     ez az ideje a legüdvösebb és  legértékesebb intézmény volt, 
+mely által  sokan megbékéltek,<font color="#ff0000"><small><small>17</small></small></font>  hiszen 
+az eljárás elsődleges célja az     eretnek Isten  kegyelmébe való visszavezetése volt, csak kitartó  
+konokság esetén lettek az     Egyházból kitagadva,  s a kevésbé irgalmas állam gondjaira bízva. Az  
+inkvizíció elsődlegesen és     legfőképpen bűnbánati  és térítő hivatal, nem pedig büntető 
+törvényszék  volt. Ha ezt nem látjuk     tisztán, az inkvizíció  értelmetlen, céltalan borzalomnak 
+tűnhet. Elméletben  a bűnös, és nem a     bűnöző állt az inkvizítor  előtt. Ha az elveszett bárány 
+visszatért a nyájba,  az inkvizítor sikeres     volt, ha nem, és az eretnek Isten elleni  nyílt 
+lázadásban halt meg, az inkvizítor küldetése      kudarcba fulladt.<br>  A kegyelemnek ezen ideje 
+alatt a hívőket kötelezték, hogy  teljes körű     információt nyújtsanak az inkvizítornak  minden 
+általuk ismert eretnekről. Amennyiben az inkvizítor      úgy találta, hogy kellő alapja van az 
+illető elleni eljárás  megindításához, idézést küldtek neki,      hogy egy megadott napon jelenjen 
+meg az inkvizítor előtt, mindig mellékelve  az inkvizítor által     ellene felhozott bizonyítékok  
+írásos ismertetését. Végezetül hivatalos  elfogatóparancs kiadására     került sor. Ha a vádlott  
+nem jelent meg, ami csak ritkán fordult elő, kiközösítetté,  száműzötté     vált, azaz csak 
+kiátkozás  terhe mellett nyújthatott neki bárki menedéket, adhatott  neki     élelmet.<br>  Habár a 
+tanúk nevét a vádlott előtt titokban  tartották, hogy a hamis vádaktól     megvédhesse  magát, 
+személyes ellenfeleiről részletes listát  adhatott. Ezáltal bizonyos ellene tett     vallomásokat 
+meggyőzően  megsemmisíthetett. Joga volt felsőbb hatóságokhoz, ha  kellett a pápához     
+fellebbeznie.<font color="#ff0000"><small><small>18</small></small></font>  A vádlott utolsó előnye  
+   az volt, hogy a hamis tanúkat  könyörtelenül megbüntették. Bernard Gui például  leír egy olyan    
+ esetet, amelyben egy apa hamisan eretnekséggel  vádolta a fiát. A fiú ártatlanságára  hamar fény    
+ derült, az apát letartóztatták,  és életfogytiglani börtönre ítélték.<br>  1264-ben IV. Orbán     
+további intézkedése folytán  az inkvizítornak be kellett mutatnia a vádlott ellen felhozott      
+bizonyítékokat a periti vagy bona viri testületnek, s  meg kellett várnia annak véleményét, mielőtt  
+    ítéletét meghozta volna. Többé-kevésbé  esküdtszéki minőségében a csoport 30, 50, sőt,  akár 80  
+   tagból is állhatott, s az inkvizítor  személyes felelősségének enyhítését  szolgálta. Fontos     
+ismételten hangsúlyoznunk, hogy ez  egy egyházi bíróság volt, amely nem formált  és nem is gyakorolt 
+    jogot a hívőkön kívül,  azaz a meggyőződéses hitetleneken és a zsidókon. Csak  azok estek a     
+középkori inkvizíció igazságszolgáltatása  alá, akik előbb keresztény hitre tértek, majd ezt     
+követően  tértek vissza korábbi vallásukhoz.<font color="#ff0000"><small><small>19</small></small></font><br>  A kínzást IV. Ince pápa engedélyezte    
+ először  az 1252. május 15-én kiadott Ad exstirpanda bullájában  azzal a megszorítással, hogy az 
+nem     veszélyeztetheti  a vádlott életét, nem okozhatja végtagjának  elvesztését, s csak egyszer 
+és   abban   az esetben alkalmazható,  ha a vádlottat sokrétű, kétségtelen bizonyítékok  alapján   
+gyakorlatilag   már elítélték. Mai  tudósok által írt némely objektív tanulmány  amellett érvel,   
+hogy a középkori   inkvizíciós  eljárásban a kínzás gyakorlatilag ismeretlen  volt. Bernard Gui,   
+Toulouse 6 éven át   működő inkvizítorának  naplója szerint, aki több, mint 600 eretneket hallgatott 
+  ki,  kínzást   egyetlen egy esetben alkalmaztak. Az 1307. és  1323. között lejegyzett 930 ítélet   
+esetében  (és   érdemes megjegyeznünk, hogy a feljegyzéseket  civil bíróságoktól választott,   
+fizetett  írnokok   lelkiismeretesen készítették), a vádlottak  többségét börtönbüntetésre, a   
+kereszt  viselésére, és   vezeklésre ítélték.  Mindössze 42 esetben lettek a világi hatalomra bízva, 
+   s elégetve.<font color="#ff0000"><small><small>20</small></small></font><br>  Az inkvizíció   
+brutalitásáról szóló    legendákat, a börtönbüntetésre ítéltek,  s a világi hatalom által máglyán   
+elégetettek  számát   figyelembe véve, az évek során  erősen eltúlozták.<br>  Professzor Yves Dossat 
+  a fennmaradt   nyilvántartások és  az elérhető dokumentumok tanulmányozása után  úgy becsülte, 
+hogy   1245-1246.   között a toulouse-i egyházmegyében  5000 embert hallgattak ki, ezek közül 945 
+esetben   találták  a   vádlottat eretnekségben, vagy abban való érintettség  okán bűnösnek. Habár 
+105 embert     börtönbüntetésre  ítéltek, a többi 840 kisebb büntetést kapott.  Az összes elérhető 
+adat alapos     elemzése után Dossat  arra a következtetésre jutott, hogy a XIII. század közepén  az 
+inkvizíció     által elítéltek mindössze  1 százalékát adták át kivégzésre  a világi hatalom kezébe, 
+s csak 10-12     százalékukat  küldték börtönbe. Sőt, az inkvizítor gyakran  csökkentette a büntetés 
+mértékét, vagy      átváltoztatta azokat.<font color="#ff0000"><small><small>21</small></small></font>&nbsp;  A     különböző történetek által 
+részletezett  égetések nagy száma okmányokkal nem igazolható,  a későbbi     századok 
+katolikusellenes propagandájának  szándékos kitalációja. Az egyre gyarapodó  bizonyítékok     
+alapján biztonsággal kijelenthetjük,  hogy a Szent Hivatal egyedülállóan magas szinten - jóval      
+magasabb szinten, mint a kortárs világi törvényszékek  - őrizte meg mindenre kiterjedő     
+feddhetetlenségét.<br>        </div>        <h4 style="font-family: Times New Roman,Times,Serif;" align="center"><font size="4">4. Mítosz</font></h4>        <div align="justify"><b>Mítosz</b>: A     
+spanyol inkvizíció  volt az, amely felülmúlt minden barbárságot, zsarnoki  és kegyetlen     
+gyakorlatával az egész társadalmat  terrorizálta.<br>        <b>Valóság</b>: 1994. november 6-án a   
+  londoni  BBC adásában, &#8222;A spanyol inkvizíció mítosza&#8221;  című dokumentumfilmjében     
+hihetetlen tanúvallomás  hangzott el ezen állítások cáfolatára.  Történészek ismerték el, hogy     
+&#8222;ez a kép  hamis. Ez egy 400 évvel ezelőtt elterjesztett ferdítés,  amelyet mind a mai napig   
+  elfogadnak. A spanyol inkvizíció 300  éves történelmében minden egyes esetnek saját  dossziéja     
+volt.&#8221; Ezeket a dossziékat most összegyűjtötték,  s végre először alaposan áttanulmányozták.   
+   Professzor Henry Kamen, aki szakértője a témának, nyíltan  elismerte, hogy ezek az iratok     
+részletesek, kimerítőek, és  a spanyol inkvizícióról egészen más képet  mutatnak.<br>  Ezt a     
+propagandát a protestáns ellenszenv táplálta  a Katolikus Egyház és a Habsburg dinasztia hatalmas    
+ vezetője,  V. Károly szent római császár ellen, aki Európa  legerősebb hadserege felett     
+rendelkezett. Félelmeik különösen  az 1547-es mülburgi csata után erősödtek, ahol Károly      
+gyakorlatilag megsemmisítette ellenfeleit.<font color="#ff0000"><small><small>22</small></small></font>&nbsp;  II. Fülöp spanyol trónra lépése, s    
+ elszánt  protestánsellenessége csak felszította ezeket a félelmeket.  Amint azt Fülöp római     
+nagykövetének írt  1566-os levelében olvashatjuk: <br>  &#8222;Biztosíthatja Őszentségét, hogy     
+inkább elvesztem  minden birodalmamat, s ha volna, száz életemet, mintsem a vallás,  vagy Isten     
+szolgálata kárt szenvedjen. Mert nem tervezem, s  nem is vágyom eretnekek vezetője     
+lenni.&#8221;<font color="#ff0000"><small><small>23        </small></small></font><br>  Míg azonban  
+   a spanyolok a csatatéren gyakran diadalmaskodtak,  a propagandaháborúban inkább megalázott   
+vesztesek    voltak. Nem védekeztek a spanyol kegyetlenség és barbárság  legendája ellen, amelyet   
+azért találtak   ki, hogy Európa  a holland protestáns felkeléssel szimpatizáljon. A cél  elérése   
+érdekében az   inkvizíció  bemocskolása tűnt a legtermészetesebb eszköznek.<br>  A XVI. század óta   
+rengeteg   pamfletet és brosúrát  írtak - túl sokat és borzalmast, hogy itt most felsoroljuk  őket.  
+ Elég csak   néhányat megemlíteni: Orániai  Vilmos bocsánatkérése, amelyet 1581-ben a francia   
+hugenotta  Pierre   Loyseleur de Villiers írt, az elmúlt negyven év  összes inkvizíció-ellenes   
+propagandáját  egy olyan   politikai iratba zárta, amely &#8222;szentesítette&#8221; a holland    
+felkelést. 1567-ben Renaldo   González Montano kiadta Sanctae  Inquisitionis Hispanicae Artes   
+aliquot detectae ac palam traductae   című  művét, amelyet hamarosan Nyugat-Európa főbb nyelveire   
+lefordítottak  és széles körben   terjesztettek. Ez döntően hozzájárult  ahhoz, ami később   
+&#8222;Fekete Legendaként&#8221; vált   ismertté,  amely az inkvizíciót a kínzókamrák szörnyűségével 
+   társította.<small><small><font color="#ff0000">24</font></small></small>&nbsp;  Hasonló 
+leírásokat   más protestáns írók  is   hosszasan taglaltak, mint például a XIX. században  Ingram 
+Cobain   tiszteletes, aki a kínzás egyik   képzelt  eszközét a következőképpen ábrázolta:  egy 
+gyönyörű ember   nagyságú baba, amely ezer késsel    vágta fel áldozatát, ha azt arra 
+kényszerítették,  hogy   megölelje. A mítoszt megteremtették és   hatalmas  méreteket öltött, az 
+irodalmi képtelenségektől    kezdve útleírásokon, szabadkőműves   elbeszéléseken,  szatírákon 
+(Voltaire, Zaupser), színdarabokon   és  operákon (Schiller, Verdi),   valamint történelmi 
+regényeken  (Victor Hugo) át a későbbi   századok rémregényeivel  bezárólag.<font color="#ff0000"><small><small>25</small></small></font><br>    Ami a kínzást illeti, Professzor 
+Kamen   nemrégiben azt  állította, hogy &#8222;valójában az   inkvizíció  nagyon ritkán alkalmazott 
+kínzást.   Valenciában  az általam vizsgált 7000 eset   mindössze két százalékánál  fordult elő a 
+kínzás   bármiféle formája,  s az sem tartott 15 percnél   tovább. Egyetlenegy esetben sem  találtam 
+jelét   annak, hogy valakit kettőnél többször  kínoztak   volna.&#8221; Professzor Jaime Conterras   
+egyetértett: &#8222;A  spanyol inkvizíciót a többi   törvényszékkel  összehasonlítva úgy találtuk,   
+hogy a spanyol inkvizíció  lényegesen kevesebbszer   alkalmazott kínzást. Ha a spanyol  inkvizíciót  
+ más országok törvényszékeivel  hasonlítjuk össze, a   kínzás terén a spanyol  inkvizíció 
+gyakorlatilag   tiszta.&#8221;<font color="#ff0000"><small><small>26</small></small></font>        
+<br>  Ugyanezen   időszak alatt   Európa többi részén a borzalmas  fizikai kegyetlenség megszokott 
+dolog volt. Angliában   köztéri    bokrok megrongálásáért, vadorzásért,  egy nő zsebkendőjének 
+ellopásáért, vagy öngyilkossági      kísérletért halálbüntetés járt.  Franciaországban, aki bárányt 
+lopott, kibelezték.  VIII. Henrik     uralkodása alatt a mérgező bevett büntetése  katlanban való 
+megfőzése volt. Még 1837-ben is     Angliában  egy év alatt 437 személyt végeztek ki különböző  
+bűnökért, s a Reform Bill elfogadásáig     hamisításért,  pénzhamisításért, lótolvajlásért,  
+rablásért, a postával való összeütközésért  és     szentségtörésért halál járt.<font color="#ff0000"><small><small>27</small></small></font> Világos,      hogy nagy körültekintéssel 
+kell eljárnunk, ha a spanyol  inkvizíciót a fizikai kegyetlenség és az     érzéketlen  durvaság 
+sajátos vádjaival illetjük.<br>  A spanyol inkvizíció határtalan hatalmáról  és     felügyeletéről 
+szóló mítosz szintén  alaptalannak bizonyult. A XIV. századi Spanyolországban az      inkvizíciót 
+húsz törvényszékre osztották,  melyek mindegyikének a hatásköre többezer négyzetmérföld      volt. 
+Mégis csak egy-két inkvizítor és néhány  adminisztrátor dolgozott az egyes bíróságokon.      
+Professzor Kamen megjegyezte: &#8222;Ezeknek az inkvizítoroknak nem volt  erejük a társadalmat úgy   
+  ellenőrizni, ahogy azt a történészek  elképzelték. Nem volt hatalmuk, nem ez volt a feladatuk, s   
+   nem volt semmiféle eszközük hozzá. Ennek a képnek  az erőltetésével olyan eszközt adtunk a 
+kezükbe,      ami sohasem létezett.&#8221;<font color="#ff0000"><small><small>28</small></small></font><br>      Valójában részben az inkvizíciónak 
+a néppel  való korlátozott kapcsolata volt az egyik oka annak,     hogy a  spanyolok nem viselkedtek 
+ellenségesen velük szemben. A nagyobb  városokat kivéve a többi     település tíz,  sőt volt hogy 
+csak százévente egyszer látott inkvizítort.  Az egyik ok, amiért az     emberek az inkvizíciót 
+támogatták,  az pont az volt, hogy nagyon ritkán találkoztak vele, s még      kevesebbszer hallottak 
+róla. Kamen megjegyzi, hogy a történelem  minden periódusában erős kritikai     és ellenzéki  
+feljegyzéseket találhatunk. Mégis, az inkvizíciós  iratok először Llorente, majd Henry     Charles 
+Lea általi kivizsgálását  alapul véve a tudósok elkövették azt a hibát,  hogy az   inkvizíciót   a 
+spanyol kultúrától  és társadalomtól elszigetelten tanulmányozták,  mintha az a   vallásban, a   
+politikában, a kultúrában  és a gazdaságban központi szerepet játszott volna,  s   bárminemű   
+szembenállás vagy kritika tilos lett volna.<font color="#ff0000"><small><small>29</small></small></font>&nbsp; Ezt a nézetet  támasztja alá Menendez  
+   y Pelayo szatírája azokról,  akik Spanyolország minden bajáért a törvényszéket  okolták: <br>     
+ &#8222;Miért nem volt Spanyolországban ipar? Az inkvizíció  miatt. Miért lusták a spanyolok? Az     
+inkvizíció  miatt. Miért vannak bikaviadalok Spanyolországban? Az inkvizíció  miatt. Miért     
+sziesztáznak a spanyolok? Az inkvizíció  miatt.&#8221;<font color="#ff0000"><small><small>30</small></small></font><br>  Az inkvizíció nem tehető felelőssé     
+&#8222;a spanyol műveltség  és irodalom dekadenciájáért&#8221; jelenti ki Peters  ünnepelt, objektív 
+    tanulmányában, az Inkvizícióban,  a protestáns történész Charles Lea és a  katolikus Lord Acton  
+   állításai ellenére. &#8222;Az  1559-es Index váratlan csapása után, amely elsősorban  a népies    
+ jámborság ellen irányult&#8221;, állítja  Peters &#8222;a spanyol irodalom ellen nem indult több    
+ támadás,  s száz spanyol íróból egynek sem volt konfliktusa  az inkvizícióval. Sőt, az 1558-59-es   
+  intézkedések  után Spanyolországban, egy minden más európai  nemzetnél kiterjedtebb világi     
+ismereteken alapuló, továbbra  is aktív intellektuális élet folyt.&#8221;<font color="#ff0000"><small><small>31</small></small></font><br>  Egy utolsó és legfontosabb mítoszt kell 
+    még megvizsgálnunk.<br>        </div>        <h4 style="font-family: Times New Roman,Times,Serif;" align="center"><font size="4">5. Mítosz</font></h4>        <b>Mítosz</b>: Az 
+ember szabadabb és      boldogabb, ha az állam vagy a nemzet nem tesz hivatalos nyilatkozatot  
+egyetlen igaz vallás     érdekében sem. Ezért tehát  az igazi haladás az állam és Egyház 
+szétválasztásában  áll.<br>            <b>Valóság</b>: Ez a kérdés kritikus pontja.  Ennek 
+legdinamikusabb eleme, leglényegesebb pontja az     emberi léleknek  a valláshoz és a filozófiához 
+való hozzáállása.  Hogy ezt a választ teljesen     megértsük, szükséges  néhány feltevést 
+tennünk.<br>  A katolikus történelemfelfogás azon a tényen     alapul,  hogy a Tízparancsolat az 
+emberi viselkedés alapvető normája,  amely a természeti     törvényekkel összhangban van.  Azért, 
+hogy az embert gyengeségében megsegítse,  irányítsa, vezesse,     saját rosszra való hajlamától  és 
+az eredendő bűnből származó hibáktól  megőrizze, Jézus Krisztus     tévedhetetlen Tanítóhivatalt  
+(Magisterium) adott az Egyháznak, hogy a nemzeteket tanítsa  és     vezesse. Az Egyház eme 
+Tanítóhivatalának  elfogadása a hit gyümölcse. Hit nélkül az ember  nem lenne     képes kitartóan 
+ismerni és teljes egészében  gyakorolni a Tízparancsolatot.<br>  Következésképpen,     amint az 
+ember a kegyelem sugalmazására,  az erények gyakorlásával a kegyelem rendjébe  emeli   magát,   a 
+természeti törvények alapvető és  változatlan elveivel összhangban álló kultúrát,    politikai,   
+társadalmi és gazdasági rendet alakít  ki. Az így kialakult szokásokat és ezt a   kultúrát  
+együttesen   keresztény civilizációnak nevezhetjük.  Továbbá, a nemzetek és a népek csak a   
+keresztény    civilizáció keretén belül, a kegyelemmel való  kapcsolat által és a hit igazságain   
+keresztül   valósíthatják  meg a tökéletes civilizációt, a civilizációt,  amely a természeti   
+törvényekkel   tökéletes  harmóniában áll.<br>  Az embernek tehát szilárd meggyőződése kell legyen,  
+  hogy a   Katolikus Egyház Isten egyetlen igaz Egyháza, és  annak valódi egyetemes Tanítóhivatala   
+  tévedhetetlen.  Ezért a katolikus hitet ismernie, megvallania és gyakorolnia  kell.<br>  Felmerül 
+a     kérdés, történelmileg ez a keresztény  civilizáció mikor létezett. A válasz lehet, hogy      
+megdöbbentő, sőt sokak számára talán irritáló  is. Volt idő, amikor az emberiség nagy része ismerte  
+   a tökéletesség  eme ideálját, ismerte, és őszintén, odaadóan  haladt felé. Ez a korszak, amelyet 
+a     kereszténység aranykorának  is neveznek, a XII-XIII. század időszaka, amikor Európában  az 
+Egyház     befolyása csúcsán volt. A keresztény  alapelvek sem előtte, sem azóta nem látott módon 
+uralták  a     társadalmi viszonyokat, s a keresztény állam ekkor  állt a legközelebb teljes 
+kibontakozásához.     XIII.  Leó a következőképpen utalt erre a korszakra Immortale  Dei (1885) 
+enciklikájában: <br>      &#8222;Volt idő, amikor az evangélium filozófiája vezérelte  az államokat. 
+Ebben a korszakban a     keresztény bölcsesség  befolyása és annak isteni bölcsessége átjárta  az 
+emberek törvényeit,     intézményeit, szokásait,  a civil társadalom minden osztályát és viszonyát.  
+A Jézus Krisztus által     alapított vallás szilárdan  állt minden őt megillető méltóságában,  
+virágzott mindenütt, hála az     uralkodók pártfogásának  és az elöljárók legitim védelmének.  Ezen 
+időszakban a papság és a     birodalom boldog egyetértésben  és a jó hivatalok baráti 
+kölcsönösségében  kapcsolódott össze. Az     így szerveződött civil társadalom  minden várakozást 
+felülmúló gyümölcsöt  termett, emléke megmarad     és tovább él, s ellenségének  semmiféle 
+mesterkedése sem tudja azt elrontani és     elhomályosítani.&#8221;<br>  A katolikus társadalom 
+leírása mindenekelőtt egy helyes  elképzelést     foglal magában arról, hogy az Egyház  és a világi 
+társadalom közti kapcsolatnak milyennek  kell     lennie. Az államnak elvben kötelessége a katolikus 
+ hit igazságát hivatalosan megvallania, és ennek     következtében  az eretnekek működését és térítő 
+ tevékenységét megakadályoznia. Mert nemcsak az      Egyház, de az egész társadalom lelkünk 
+üdvösségére  teremtetett, amint azt Aquinói Szt. Tamás     meggyőzően állítja  De Regimine Principum 
+című művében. Ebben Szt. Tamás  megmutatja, hogy minden     Isten által teremtett dolog feltétlenül  
+lelkünk üdvösségére teremtetett és kétségtelenül      megszentelésünk eszköze kell, hogy legyen. Az 
+emberek maguk  is egymás üdvösségére teremtettek,     ezért  élnek társadalomban. Ennélfogva mind az 
+egyházi,  mind a világi társadalomnak elő kell     segítenie az ember  létének elsődleges célját, 
+örökkévaló  lelkének üdvösségét.<br>  A társadalom     eme magyarázata magában foglalja az értékek  
+hierarchiáját, ahol is a szellemi értékek értékesebbek,      mint az anyagiak. A Summa 
+Theologica-ban (II, II, ii, 3), például,  Szt. Tamás megjegyzi, ha     igazságos egy hamisítót  
+halálra ítélni, akkor egyenesen szükségszerű  halálra ítélni azokat, akik     egy még nagyobb bűnt,  
+a hit meghamisítását követték el. Hiszen  az örök üdvösség fontosabb, mint a     világi  tulajdon, s 
+a közösség jóléte fontosabb, mint  az egyéné.<br>  Napjaink liberális szelleme     számára ezek az 
+állítások  fájdalmas következményekkel járnak. Hiszen ha az  állam kijelenti, hogy     egyetlen 
+vallás az igaz vallás,  akkor elvben köteles az eretnek szekták elterjedését      megakadályozni. 
+Magától értetődő, hogy a katolikus  társadalomban az állam legmagasabb rendeltetése     a katolikus  
+Egyház elismerése, annak védelme, szolgálata,  törvényeinek alkalmazása. Egy katolikus     
+társadalomban  a pápának minden, az Egyházat érintő dolog felett  indirekt hatalma van. Ily módon   
+a   pápa minden világi  hatalom fölé emelkedik. Ha az állam feje eretnek, a pápának  joga van     
+megfosztani őt trónjától, mint ahogy azt a  franciaországi IV. Henrik, a jogos francia trónkövetelő  
+    esetében tette. Más szavakkal, eretneknek nincs joga katolikus  országot vezetni.<br>    
+Főtisztelendő   Denis Fahey írja The Kingship of Christ (Krisztus királysága)  című művében: a   
+középkorban az állam   eleget  tett azon kötelezettségének, hogy az Isten által  alapított vallást,  
+ a katolikus vallást,   amelyen keresztül  Őt akarata szerint csodáljuk és imádjuk, megvallja.    
+Amikor a katolikusok a nem   katolikusok inkvizícióval kapcsolatos  kifogásaira válaszolnak, úgy   
+tűnik, megfeledkeznek a  rend   korábbi alapelvéről, amely a középkori társadalmat  vezérelte. Ha az 
+  állam kijelenti egy vallásról,    hogy az az igaz vallás, akkor elvi kötelessége az eretnekség  és 
+  az eretnek szekták elterjedésének a   megakadályozása.  A liberális mentalitásnak ezen   
+kötelezettséget  a legnehezebb elfogadnia. Az   eretnekség azért volt bűn, mert  az állam a   
+katolikus vallást annak ismerte el, ami objektíven  az:   az egyetlen Isten által alapított igaz   
+vallás, és  nem egy egyszerű, ideiglenes, ma létező, holnapra   elenyésző  rendelkezés.<br>    
+Krisztus királyságának társadalmi alapelveiről  Denis Fahey tisztelendő   a következőket mondja:   
+&#8222;Az igazság az,  hogy az állam akkoriban megértette a fennálló    világban elrendelt   
+társadalmi szerkezet alapelveit, és  hogy az inkvizíciót pont azért hozták létre,    hogy megvédje a 
+  világ befolyását a rend felett,  a rendetlenségre uszítók ellen. Isten szándéka    szerint 
+ugyanezen   elv szolgál mintául az elkövetkezendő  korok új dolgaihoz, körülményeihez. A   
+társadalmilag    szerveződött, Urunk által megváltott világi ember  nem lesz olyan, mint amilyennek  
+ Isten szánta,   hacsak nem fogadja el  a természetfeletti, a nemzetek felett álló katolikus  
+Egyházat.   A modern   világ elfordult a rendtől, és most  bűnhődik hitehagyásáért és zűrzavaráért.  
+Ezt a nagy   igazságot   egyértelműen ki kell jelentenünk,  hogy elmélyülhessen benső életünk, 
+amellyel Krisztus      királyságát ünnepeljük. Határtalanul  jobb a teljes igazságért megküzdeni, 
+mintsem látszólagos      győzelmet aratni annak lefarigcsálásával.&#8221;<font color="#ff0000"><small><small>32</small></small></font><br>  A szent inkvizíció nevének befeketítése 
+     nyilvánvalóan gyökereket talált ebben a széles  körben elterjedt irányzatban, a katolikus     
+társadalmi rend  ezen alapelveinek &#8222;lefarigcsálásában&#8221;, még az  Egyház elöljárói körében 
+    is. Míg  alapjában a szent inkvizíció problémáját  filozófiai szinten kell megvizsgálnunk, nem 
+fér     kétség  ahhoz, hogy évszázadokon keresztül az &#8222;inkvizíció&#8221;  a tényekhez képest   
+  aránytalanul nagy méreteket  öltött. A mítosz-készítő eljárást  a reformáció alatt protestáns     
+propagandisták  tollforgatói kezdték el azáltal, hogy az inkvizíciót  Róma gonoszságának egy újabb   
+  példájaként  festették le. Munkáikban a törvényszéket  az intolerancia legfőbb eszközének mutatták 
+    be. Azt állították,  hogy bárhol, ahol a katolicizmus diadalmaskodott, nem csak a vallási,  de a 
+    polgári szabadságot is elnyomták. Eme értelmezés  szerint a reformáció szabadította ki az emberi 
+    szellemet  a sötétség és a babona béklyójából.  Az erre irányuló propaganda rendkívüli mértékben 
+     hatásosnak bizonyult.<br>  Azonban, ahogy az elmúlt évtized tudósai elkezdték  a levéltári 
+iratok     vizsgálatát, tanulmányaik  azt mutatják, hogy az igazság érdekében az inkvizíciót  valódi 
+méreteire     kell redukálnunk. Jelentőségét  erősen el lehet túlozni, ha a felvilágosodás, a 
+romantika  és az   azt   követő liberalizmus propagandistái és  filozófiái által bemutatott, jórészt 
+alaptalan      elképzelésekre támaszkodunk. Ezek az írók,  még Lord Acton is, hamisan azt 
+feltételezték, hogy az      inkvizíció része volt a nyilvánvaló intolerancia  és kegyetlenség egy 
+speciális filozófiájának.      Valójában a társadalomnak volt a terméke, amelyet  szolgált. 
+Összegezve, mindazon objektív katolikus     gondolkodó,  aki a liberalizmus és korunk 
+modernizmusának hibái ellen  küzd, és aki csodálattal     tekint a Hit korának szellemére  és 
+szokásaira, egészséges csodálattal  nézhet a szent     inkvizícióra.<br><font size="1"><br><br>1.&nbsp;&nbsp;&nbsp; A lutheránus eszmény, amelyet az     1648-as westphaliai 
+békében fogadtak el, minden protestáns állam számára engedélyezte, hogy az állam     egy 
+minisztériumaként maga szervezze meg saját vallási formáját. Denis Fahey tisztelendő szerint   ez   
+a &#8222;béke a világ katolikus rendjének a temetését jelentette. A Keresztény és a Polgár   Luther  
+ általi különválasztása előkészítette az utat az állam istenítéséhez, mely a modern időkben   
+valósult   meg, és a protestáns társadalom szociális befolyása megkönnyítette a modern közéleti   
+ember   megjelenését, aki magánemberként lehet katolikus, ugyanakkor közéleti emberként protestáns   
+  istentiszteleten képviselteti magát, sőt alkalmanként rész is vesz rajtuk.&#8221; The Kingship of  
+   Christ, 3. kiadás, (Palmdale, Ca: 1990), 40-41.<br>2.&nbsp;&nbsp;&nbsp; (Rockford, III: 1987), 
+x-xi.     <br>3.&nbsp;&nbsp;&nbsp; 1230-ra gyökeres változás állt be a jogi gondolkodás és eljárás 
+terén     Nyugat-Európa nagy részén, amely magában foglalta a római jog által ösztönzött inquisitio  
+   (nyomozati) eljárás bevezetését, s amelyet több szempontból is a kor joggyakorlatának     
+modernizációjának tekinthetünk. Edward Peters, Inquisition, (New York, London: 1988)     
+52-57.<br>4.&nbsp;&nbsp;&nbsp; Peters, Inquisition 231,3 <br>5.&nbsp;&nbsp;&nbsp; Kieckhefer     
+rámutatott arra, hogy középkori szövegösszefüggésben helytelen lenne az inkvizícióról még akár csak  
+   beszélni is. A források maguk azt mutatják, hogy az inkvizítorikus eljárás regionális és helyi    
+ intézmé-nyesítése részleges és igen gyenge volt, attól függően, hogy az adott inkvizítornak milyen  
+   ajánlása és szervezői hatalma volt, és hogy az adott időben és helyen milyen konkrét lépésekre 
+volt     szükség. Richard Kieckhefer, &#8222;The Office of Inquisition and Medieval Heresy: The 
+Transition     from Personal to Institutional Jurisdiction,&#8221; in Journal of Ecclesiastical 
+History, 46 (1995.     Január), 59; Kieckhefer, Repression of Heresy in Medieval Germany, 
+Philadelphia-Liverpool: 1979,     5.<br>6.&nbsp;&nbsp;&nbsp; A. L. Maycock, The Inquisition from its 
+Establishment to the Great Schism     (New York: 1969), 117.<br>7.&nbsp;&nbsp;&nbsp; Ibid, 
+100<br>8.&nbsp;&nbsp;&nbsp; Történtek     incidensek a csőcselék erőszakossága folytán 1449-ben 
+Toledóban, polgárfelkelés 1470-ben     Valladolidban, és három évvel később három conversost 
+gyilkoltak meg Jaénban és Cordobában. Minden     esetben az erőszak közvetlen eszköze a csőcselék 
+volt. Henry Kamen, Inquisition and Society in     Spain, (Bloomington, Ind.: 1985) 
+30-31.<br>9.&nbsp;&nbsp;&nbsp; A XVIII. századra a Szent Hivatal     Kongregációjának a pápai 
+államon kívül gyakorlatilag nem volt hatalma, befolyása. Legfőbb feladata a     klérus és a könyvek 
+cenzúrázása volt, amely részben fedte az Index Kongregációjá-nak feladatkörét.     1809-1814 a pápa 
+Itáliából való száműzetése alatt, a működését szüneteltették, azt követően   hatalmát   csökkentve 
+indították újra. 1965-ben VI. Pál pápa a nevét Hittani Szent Kongregációra   változtatta,   1966-ban 
+pedig megszüntette az Indexet.<br>10.&nbsp;&nbsp;&nbsp; The Prosecution of   Heresy:   Collected 
+Studies on The Inquisition in Early Modern Italy, Medieval and Renaissance Texts   and   Studies 
+Vol. 78, (Binghampton, NY: 1991), XI-XIV, 7-9.<br>11.&nbsp;&nbsp;&nbsp; Albert Clement     Shannon 
+részletes magyarázattal szolgál a katharok hitét és a század vége felé írott albigens     
+tanulmányok egyikéből vett bibliai bizonyítékaikat illetően. Például annak bizonyítására, hogy az    
+ ember a gonosztól származik, a katharok János 8,44-et idézték: &#8222;A te apád a gonosz&#8221; és  
+   1János 3,8-at: &#8222;Az ember, aki bűnt követ el, a gonosz gyermeke.&#8221; in The Medieval     
+Inquisition, (Washington D.C.: 1983) 2-19.<br>12.&nbsp;&nbsp;&nbsp; Rainerius Sacconi, Summa,     
+fordította Walter L. Wakefield és Austin P. Evans, Heresies of the High Middle Ages, (New York:     
+1969), 330. <br>13.&nbsp;&nbsp;&nbsp; H. C. Lea, A History of The Inquisition in the Middle Ages,    
+ Vol. I, (New York: 1906-08), 1064.<br>14.&nbsp;&nbsp;&nbsp; Maycock, The Inquisition. 77, 52-53;    
+ Walsh, Characters of the Inquisition, 41-3.<br>15.&nbsp;&nbsp;&nbsp; Gustav Schnürer, Kirche und    
+ Kultur in Mittelalter, (Paderborn, 1926), II, 434<br>16.&nbsp;&nbsp;&nbsp; Maycock, The 
+Inquisition,     128-29.<br>17.&nbsp;&nbsp;&nbsp; 1323-ban az inkvizítor Bernard Gui (igazságtalanul 
+becsmérelve     Umberto Eco: A rózsa neve című regényében) megalkotta a Practica officii 
+inquisitionis heretice     pravitatis-t, egy kidolgozott és kiegyensúlyozott inkvizi-tórikus 
+kézikönyvet. Az inkvizítorok     doktrínája és eljárása éppúgy a teológiából és a kánonjogból ered, 
+mint az egyházatyák, a zsinat és     a pápák korai munkái. Peters, Inquisition, 
+60-64.<br>18.&nbsp;&nbsp;&nbsp; A fellebbvitel     nyilvánvaló tilalma ellenére IX. Gergely, és 
+utóda IV. Ince is ismételten foglalkoztak a panasztevők     fellebbezésével, s az igazságtalan 
+döntéseket érvénytelenítették. Úgy tűnik, az egész időszakon át   a   jogorvoslatért való folyamodás 
+megtalálta az útját Rómáig. Valójában a rég elfelejtett     Jusztinianus-féle kódex rendelkezéseit 
+mintául véve, az inkvizíciós folyamaton keresztül az Egyház a     fellebbviteli eljárást a középkori 
+törvényszéki eljárás körébe hozta, minthogy a helyi, feudális,     földesúri bíróságokon a 
+fellebbezés egyáltalán nem volt jellemző. Az egyházi igazságszolgáltatási     rendszer sikere a 
+világi uralkodókra is hatott, akik végül a maguk által újjászervezett,     központosított 
+törvényszéki rendsze-rükben a fellebbvitelt általános eljárásként alkalmazták.     Shannon, The 
+Medieval Inquisition, 139-40. <br>19.&nbsp;&nbsp;&nbsp; Hamilton, Inquisition, 150-51,     130-33, 
+140-41.<br>20.&nbsp;&nbsp;&nbsp; Ibid., 160<br>21.&nbsp;&nbsp;&nbsp; Ives Dossat, Les   Crises   de 
+l'inquisition toulousaine au XIIIe siecle (1233-1273), Bordeaux: Impriimerie Biere,   1959,   
+247-268.<br>22.&nbsp;&nbsp;&nbsp; Kamen, The Spanish Inquisition,   252-54<br>23.&nbsp;&nbsp;&nbsp;  
+ Peters, Inquisition, 131.<br>24.&nbsp;&nbsp;&nbsp; Foxe, The Book   of Martyrs, London: 1863, 1060; 
+  Peters, Inquisition, 133; Kamen, The Spanish Inquisition, 254;   Peters, Inquisition,   
+152-4.<br>25.&nbsp;&nbsp;&nbsp; Részletesebben arról, hogy a mítosz miként   alakult az irodalomban 
+l.   Peters, Inquisition, 152-262.<br>26.&nbsp;&nbsp;&nbsp; &#8222;The Myth   of the Spanish   
+Inquisition,&#8221; a BBC dokumentumfilmje, 1994. nov. 6, <br>27.&nbsp;&nbsp;&nbsp;   Maycock, The   
+Inquisition 41, 259.<br>28.&nbsp;&nbsp;&nbsp; &#8222;The Myth of the Spanish   Inquisition,&#8221; a 
+  BBC dokumentumfilmje, 1994. nov. 6,<br>29.&nbsp;&nbsp;&nbsp; Kamen, The   Spanish Inquisition,   
+257-58.<br>30.&nbsp;&nbsp;&nbsp; La Ciencia Espanola, Madrid 1953,   102-3.<br>31.&nbsp;&nbsp;&nbsp; 
+  Peters, 260-61.<br>32.&nbsp;&nbsp;&nbsp; Kingship of Christ   according to the Principles of St.   
+Thomas Aquinas, (Palmdale, Ca: 1931, 1990 rep.)   </font><br><br>(A tanulmány eredeti címe: Marian 
+T.   HORVAT, &#8222;The Holy Inquisition: Myth and   Reality&#8221;, in Catholic Family News, vol. 
+5, no.   3, (March 1998) p. 1, 21-26.)<br></div><br style="font-weight: bold;"><div style="text-align: right; font-weight: bold;">Fordította: Rochlitz   Andrea<br></div><div style="text-align: justify; font-weight: bold;"><br></div><div style="text-align: right; font-weight: bold;">Marian T. Horvat a   középkori történelem   doktora.<br></div><div style="text-align: justify;"><br></div>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-08-26&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1290&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1290&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1290&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1290&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1290&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1290&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1290&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1290&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1290&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1290&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1290&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1290&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1290&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1290&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1290&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1290&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1290&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1290&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1290&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93414"></A>178. 178. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-31 11:36:39</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Sz*rmosdatás.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92429"></A>177. Ancsi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-28 13:55:48</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hmm nah ezt a valtozatot meg nem hallottam :) Elegge erdekes hazaertem attanulmanyozom jobban. Az inkvizicio csak egy dolog annal tobb is van...<br />
+<br />
+Nem ertek egyet veled, nekem magaval a valassal semmi bajom, hiszem, hogy van egy nagyobb hatalom, DE az egyhaz miatt volt sotet a kozepkor, mert ugy viselkedett mint a mai "tudomanyos vilag " : marpedig a fold lapos. Nem fogadott el ujjitasokat, a majak osi kodexeit elegettette, ma mar esely sincs a megfejtesukre. <br />
+<br />
+Egyhazi tized mondd valamit? A vagyon miatt volt akkora hatalma az allamra. Meg hol hisznek az emberek? Ahol nagy a szegenyseg. Miert erdeke az allamnak hogy higyjenek? A kozepkori ember megelegedett ha jol dolgozott szolgalta urat es a papoktol meg hallgatta hogy majd a Mennyben megpihen es boldogsag beke lesz. (ne lazadj a foldi letben, mert a vegen pokolra jutsz!) <br />
+<br />
+A vallas a legnagyobb nepbutitas, erdekes hogy nem veszik eszre sokan... <br />
+<br />
+Nehez pontosan fogalmazi ugy hogy lejojjon a lenyeg, nem a vallassal van a baj hanem a hatalommal ami visszael vele. (marpedig a hatalommal mindig vissza elnek...)  En nem Isten csak kereszteny ellenes vagyok.  </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92370"></A>176. Főnix</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1290&id=92063#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-28 02:24:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha akar. De miért akarna? És mi számít megdönthetetlen bizonyítéknak? Ezen pont akkor gondolkoztam el, amikor annak a lánynak a történetét mondtam el nektek, akit megkéseltek a orkok. Sokan voltak akik nem hittek neki/nekem. Miután mindent elmagyaráztam, és még mindig nem hittek nekem, megkérdeztem mivel tudnám nekik bebizonyítani hogy igazat beszélek? Azt mondták SEMMIVEL!<br />
+<br />
+Vannak akiket nem lehet meggyőzni. Sosem fognak hinni neked. Mert nem akarnak.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92248"></A>175. 175. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1290&id=92242#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-27 19:27:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">a címkék a könnyebb eligazodást szolgálják, és kiváló szűrők, nem mellékesen. Valóban nem szükséges a beskatulyázás, viszont hasznos.<br />
+<br />
+Az izmusok szellemi irányzatokat jelentenek. Sem a túlzott darabolás, sem az egybemosás nem vezet valódi eredményre, ezért itt is a jelszó: mértékkel (+ ahol szükséges). Nyilvánvaló, hogy ha valaki a kereszténységre utal, akkor nem kell az összes krisztiánizmust (christianism) felsorolni, de a liberális eszmék taglalásánál pl. fontos különbséget tenni az egyes *liberalizmusok között (* mint joker-karakter). <br />
+<br />
+nem, nem megosztó uralkodópolitika - gondolkodás finomítása és a világ sokszínűségének megismerése. <br />
+<br />
+Nincs veszélyesebb, mint az uniformizált gondolkodás...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92242"></A>174. Raznor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1290&id=92187#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-27 19:17:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_970.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem tudom, nekem kicsit meredek minden gondolkodó elmét beskatulyázni valamelyik irányzatba. Valójában lényegtelen, hogy ki számít ateistának, s ki nem.<br />
+<br />
+Sőt, azt is megkérdőjelezem, hogy szükség van-e erre a sok "izmusra". Pontosan annak okán, amit te jeleztél többször, vagyis hogy egydimenzióssá válhat a gondolkodás. Ateista - Teista, Evolucionista - Kreacionista, Kommunista - Fasiszta, Demokrata - Extremista, Anarchista - Monarchista... stb.<br />
+<br />
+Oszd meg, és uralkodj?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92208"></A><FONT COLOR="#FF0000">173. </FONT>Manitou</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1290&id=92105#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-27 16:17:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_517.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92206"></A>172. 172. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1290&id=92196#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-27 16:12:39</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">valóban. Tökéletes példája a bipoláris (egydimenziós) gondolkodásnak: "ha azokat szívatja valaki, akiket utálunk, akkor aztat szeressük jól".<br />
+<br />
+Bármely szervezet nyugodtan tekinthető terrorszervezetnek, amely félelemkeltéssel, szélsőséges esetben halálbüntetéssel igyekszik a szabad (és nem szabados) gondolkodást elnyomni.<br />
+<br />
+Ez áll az inkvizícióra, de áll a Szcientológia "egyházra" is, ahogy még sok más szervezetre, szerveződésre is.<br />
+<br />
+Egyébként a mórokat is baszogatták, pedig azok aztán hűdetényleg gonoszgazösszeesküvők voltak...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92196"></A>171. Főnix</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1290&id=92034#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-27 15:27:55</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"A holokausztot tagadják sokan, mer' a babók hazugok, de az őket baszogató spanyolországi inkvizícióról összehordott mocskot elhiszitek."<br />
+<br />
+Ezt kellene tízszer aláhúzni.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92187"></A>170. 170. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1290&id=92166#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-27 14:49:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">az ateisták a természeti istenségek létét is elvetik. Azért kell a vagy-vagy, mert vannak olyan alternatív isten-felfogást képviselők is, akiket azért neveznek ateistának, mert nem a hagyományos értelemben vett isten-képzetet vallják, vagy éppenséggel egyáltalán nem foglalkoznak istenekkel - ezért nevezik ateistáknak a buddhistákat is pl.<br />
+<br />
+Ősi kérdés, hogy a rendező elv elkülöníthető (platonista vonal) vagy nem különíthető el (arisztoteliánus vonal) a természettől, illetve a rendező elv csupán névleg létezik (nominalisták) vagy tényleges léttel bír-e (realisták).<br />
+<br />
+Ebből már egy szép kis mátrix is felrajzolható, de adjunk hozzá egy z tengelyt is: a rendező elv öntudatlan, vagy tudatos (értsd: a rendező elv valójában tudatos rendező).<br />
+<br />
+A taoizmus ezért is érdekes: a Tao (legfőbb rendező elv, Világtörvény) által működik minden, mégsem tudatos (vagy tudattalan) elv, mivel nem mondhatunk róla semmit anélkül, hogy ne egy nómenről beszélnénk. A megismerése tehát konvergens pályán haladhat, azaz lényegét tekintve soha meg nem ismerhető, viszont hatása révén mindenütt és mindenben megtalálható.<br />
+<br />
+Magyarán a taoizmus több évezrede használja az egyesítő elméletet, anélkül, hogy akár a leírásával is megpróbálkozott volna - pontosabban csak körülírta.<br />
+<br />
+Ateista-e a taoizmus? Nem ismer el egyetlen transzcendens Istent sem, sőt, egy tudat nélküli Világtörvényt helyez az abszolutum helyére. Ebből a szempontból bizony ateista. Ugyanakkor számos istenséggel bír a taoizmus hitvilága, ebből a szempontból tehát teista.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92166"></A>169. Raznor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1290&id=92134#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-27 13:38:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_970.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ateista az, aki elveti a létét bármilyen természetfeletti istenségnek. Tehát nem kell oda a vagy-vagy kapcsolat. Aki csak a keresztény istenképet veti el, az nem ateista.<br />
+<br />
+Én nem tartom magam ateistának, bár abban az értelemben ateista lehetnék, hogy míg rendező erőben/elvben hiszek, természetfeletti, a világtól elkülöníthető lényben nem.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1290&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1290&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1290&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1290&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1290&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1290&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1290&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1290&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1290&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1290&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1290&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1290&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1290&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1290&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1290&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1290&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1290&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1290&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1290&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

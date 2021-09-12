@@ -1,0 +1,472 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1676#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Antináci gyűlés egy tragédia kapcsán";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Antináci gyűlés egy tragédia kapcsán<BR><DIV CLASS="postheader_small">Blog - Főnix</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 december 12. 00:31:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1676.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: center;"><font style="font-weight: bold;" size="6"><span style="font-family: Times New Roman,Times,Serif;">Antináci gyűlés egy tragédia kapcsán</span></font><br><br><div style="text-align: justify;"><span style="font-weight: bold;"></span></div></div><div style="text-align: justify;"><span style="font-weight: bold;"></span><br><span style="font-weight: bold;">Zsidó</span>: Kedves barátaim! Azért hívtam össze 
+ezt a különleges     gyűlést, mert szörnyű   hírt kaptam. <a target="_blank"style="color: black; font-weight: bold;" href="//index.hu/politika/belfold/nacivf12/">A nagy és hatalmas Simon Wiesenthal Központ MEGBUKTATTA Magyarországot nácivadászatból!!!</a> Értitek elvtársaim?! Megbuktunk!<br><span style="font-weight: bold;">Antifasiszta</span>: Ó jaj!<br><span style="font-weight: bold;">Zsidó</span>: <span style="font-style: italic;">(kezébe temeti az arcát)</span><br><span style="font-weight: bold;">Humanista</span>:  
+     <span style="font-style: italic;">(sírni kezd)</span><br><span style="font-weight: bold;">Zsidó</span>: Ez felháborító! GYALÁZAT! Hát   
+idáig     süllyedtünk? A világ szégyene vagyunk! Mármint izé, nem mi, hanem a magyarok.<br><span style="font-weight: bold;">Liberális</span>: Én azt szeretném mondani...<br><span style="font-weight: bold;">Zsidó</span>: Zsidó vagy, fiam?<br><span style="font-weight: bold;">Liberális</span>: Ki, én?<br><span style="font-weight: bold;">Zsidó</span>: Igen       
+te.<br><span style="font-weight: bold;">Liberális</span>: Persze, természetesen.<br><span style="font-weight: bold;">Zsidó</span>: Akkor jó, folytasd csak.<br><span style="font-weight: bold;">Liberális</span>: Tehát hogy valóban a magyarság a világ szégyene...<br><span style="font-weight: bold;">Zsidó</span>:<span style="font-style: italic;"> (közbevágva)</span> Átkozott gój barbárok.<br><span style="font-weight: bold;">Liberális</span>: Nos szóval a magyarság a világ szégyene, de éppen 
+      ezért a mi feladatunk lenne, hogy mégiscsak tegyünk valamit. Elvégre a mi feladatunk a       
+náciknak megálljt parancsolni.<br><span style="font-weight: bold;">Vén kommunista</span>: <span style="font-style: italic;">(Böfög)</span>    
+   Krhm. Miről van itt szó?<br><span style="font-weight: bold;">Liberális</span>: Hát hogy       
+megbuktunk nácivadászatból. <br><span style="font-weight: bold;">Vén kommunista</span>: Nácik?       
+Vannak még nácik?<br><span style="font-weight: bold;">Liberális</span>: Hogyne lennének?       
+Minden magyar náci.<br><span style="font-weight: bold;">Antifasiszta</span>: Kikérem magamnak! Én is 
+      magyar vagyok!<br><span style="font-weight: bold;">Zsidó</span>: Szemétláda.<br><span style="font-weight: bold;">Antifasiszta</span>: De, de én nem olyan...<br><span style="font-weight: bold;">Zsidó</span>: Mind egyforma.<br><span style="font-weight: bold;">Antifasiszta</span>: De..    
+   de... <span style="font-style: italic;">(sírásra görbülő szájjal)</span> de én nagyon szégyellem!<br><span style="font-weight: bold;">Zsidó</span>: Attól még az vagy. Büdös gój. Paraszt magyar.<br><span style="font-weight: bold;">Antifasiszta</span>: De én egészen kicsi korom óta harcolok a fasizmus ellen!<br><span style="font-weight: bold;">Vén kommunista</span>: No! Már fasiszták is?<br><span style="font-weight: bold;">Liberális</span>: Náci, fasiszta, nyilas, ugyanaz.<br><span style="font-weight: bold;">Vén 
+kommunista</span>: Ja, akkó' mán értem.<br><span style="font-weight: bold;">Antifasiszta</span>: Már 
+az iskolában se vettem fel soha kokárdát, és megvertem a kicsiket ha       énekelték a 
+Himnuszt!<br><span style="font-weight: bold;">Liberális</span><span style="font-style: italic;"> (a 
+zsidóhoz       fordulva)</span> Azért ez nemes cselekedet, ezt el kell ismernünk.<br><span style="font-weight: bold;">Zsidó</span><span style="font-style: italic;"> (pajeszát 
+csavargatva)</span> Hmm... hm... talán még nincs teljesen elveszve a       gyerek.<br><span style="font-weight: bold;">Antifasiszta</span> <span style="font-style: italic;">(felcsillanó, 
+könnyes szemekkel)</span>       Köszönöm! Köszönöm! <span style="font-style: italic;">(A zsidó lába 
+elé borul, s cipőjét csókolgatja.)</span><br><span style="font-weight: bold;">Liberális</span>: Nos, 
+ha az elvtárs befejezte a tiszteletadást, talán folytathatnánk a       beszélgetést.<br><span style="font-weight: bold;">Vén kommunista</span>: Tehát akkó' most megin'     gyünnek   a 
+nácik?<br><span style="font-weight: bold;">Humanista</span>: Bizony jönnek! Masíroznak!       
+Fenyegetnek! Gyűlöletkeltenek!<br><span style="font-weight: bold;">Vén kommunista</span>: Oszt?      
+ Mé' nem akasszák fel őket?<br><span style="font-weight: bold;">Liberális</span>: Azt       
+kéne!<br><span style="font-weight: bold;">Humanista</span>: Hát, sajnos manapság ilyesmit nem       
+lehet.<br><span style="font-weight: bold;">Vén kommunista</span>: Nem-e?<br><span style="font-weight: bold;">Liberális</span>: A demokrácia hátulütője.<br><span style="font-weight: bold;">Vén kommunista</span>: Franc egye a demokráciájukat! Kádár idejében jobb       volt!<br><span style="font-weight: bold;">Liberális</span>: Ó, azok a régi szép idők! Akkor     még   tiszteletben 
+tartották az emberi jogokat!<br><span style="font-weight: bold;">Humanista</span>:   Kivéve, ha 
+nácikról volt szó!<br><span style="font-weight: bold;">Liberális</span>: És ez így   helyes! A 
+náciknak nincsenek jogaik!<br><span style="font-weight: bold;">Zsidó</span>: <span style="font-style: italic;">(Vigyorogva   egy aranypénzt dob a liberális ölébe, aki     elpirulva 
+fogadja azt)</span><br><span style="font-weight: bold;">Liberális</span>: Szóval mint     mondtam, 
+megbuktunk nácivadászatból. Ez ellen már nincs   mit tenni. Ez a szégyenfolt örökre rajtunk     
+marad...<br><span style="font-weight: bold;">Vén   kommunista</span>:<span style="font-style: italic;"> (Az orrába túr, és egy   méretes,   sárga takonygombócot csap az asztalra)</span><br><span style="font-weight: bold;">Liberális</span>: Tehát én azt javaslom, kezdjük el megbeszélni,  
+ hogy mit tehetünk   azért, hogy jövőre jobban   szerepeljünk.<br><span style="font-weight: bold;">Vén     kommunista</span>:<span style="font-style: italic;"> (Vizsgálgatni kezdi a   
+fikadarabot)</span><br><span style="font-weight: bold;">Antifasiszta</span>: Több PiCSa 
+koncertet!<br><span style="font-weight: bold;">Liberális</span>: Az jó, azt szeretem.<br><span style="font-weight: bold;">Humanista</span>:     Meg Sziámi is kéne már!<br><span style="font-weight: bold;">Vén   kommunista</span>: És <a target="_blank"style="color: black; font-weight: bold;" href="//naczivadasz.blogspot.com/2008/09/antifa-nyugdjasok-j-zenekar-lthatron.html">Antifa     
+nyugdíjasokat!</a><br><span style="font-weight: bold;">Liberális</span>: Az is jó!<br><span style="font-weight: bold;">Antifasiszta</span>: <span style="font-style: italic;">(énekelve)</span> 
+Minden náci ostobaaa, ostobaaa, jaj de       ostobaaaa!<br><span style="font-weight: bold;">Zsidó</span>:<span style="font-style: italic;"> (az asztalra csapva)</span> Kuss legyen, a    
+   kurvaistenit! Itt most fontos megbeszélés megy, nem koncert.<br><span style="font-weight: bold;">Antifasiszta</span>: Izé, de a kannásboromat azért elővehetem? Anélkül nem tudok küzdeni a    
+   fasizmus ellen. Ez ad nekem erőt!<br><span style="font-weight: bold;">Vén kommunista</span>:      
+ Szerintem engeggyük meg neki.<br><span style="font-weight: bold;">Zsidó</span>: Jól van, vegyed, 
+csak kussoljál.<br><span style="font-weight: bold;">Vén kommunista</span>: Add csak ide aztat! <span style="font-style: italic;">(bök a kannásborra)</span><br><span style="font-weight: bold;">Antifasiszta</span>: Nem adom! Az enyém!<br><span style="font-weight: bold;">Vén 
+kommunista</span>:<span style="font-style: italic;"> (Az idáig ujjai közt gyúrogatott fikagolyót az 
+antifasiszta tarajába       pöcköli, majd elveszi tőle a kannásbort, és meghúzza)</span> Mostmár a 
+párté!<br><span style="font-weight: bold;">Antifasiszta</span>:<span style="font-style: italic;"> 
+(sír)</span><br><span style="font-weight: bold;">Zsidó</span>: Valaki vigye már       innen ezt a 
+szart, mert elhányom magam. Egyébként is, hogy lehet valaki ennyire büdös? Szoktál te       
+fürödni?<br><span style="font-weight: bold;">Antifasiszta</span>: A PANKOK NEM FÜRDENEK!<br><span style="font-weight: bold;">Humanista</span>: Én tolerálom a másságod, ez a te       döntésed, de 
+tényleg lábszagod van.<br><span style="font-weight: bold;">Liberális</span>: Most       már én 
+is érzem.<br><span style="font-weight: bold;">Zsidó</span>: Akkor talán folytathatnánk a       
+megbeszélést?<br><span style="font-weight: bold;">Antifasiszta</span>: Nem tudom, én már kezdtem     
+  unni. Inkább menjünk ki az Örsre piálni.<br><span style="font-weight: bold;">Zsidó</span>:<span style="font-style: italic;"> (A bal       szeme rángani kezd, és héberül káromkodik)</span><br><span style="font-weight: bold;">Liberális</span>: Tényleg jó lenne folytatni már, a kirekesztés 
+elleni harcban nincs       tűzszünet!<br><span style="font-weight: bold;">Humanista</span>: Gyönyörű 
+mondat volt! Ezt fel is       írom.<br><span style="font-weight: bold;">Liberális</span>: Köszönöm, 
+négyszázezer forint   lesz     ha csak mondani akarja, kétmillió-ötszázezer ha kiírja 
+valahova.<br><span style="font-weight: bold;">Humanista</span>: Ugyan kérem, ne sértsen meg, ez a 
+nagyszerű mondat   ennél többet is megér     nekem. Elvégre a magyarok adójából fizetjük ezt ki 
+magának.<br><span style="font-weight: bold;">Zsidó</span>:<span style="font-style: italic;"> (kezét 
+dörzsölgeti és tekintete a két üzletelő között   ugrál)</span><br><span style="font-weight: bold;">Liberális</span>: Szerintem ezt majd később   beszéljük meg, de     mindenesetre 50 
+millió alatt nem adom.<br><span style="font-weight: bold;">Humanista</span>: Rendben. Tehát hol is 
+tartottunk?<br><span style="font-weight: bold;">Vén       kommunista</span>: Hogy Kádár idejében 
+jobb volt!<br><span style="font-weight: bold;">Antifasiszta</span>: Hát még Rákosiéban!<br><span style="font-weight: bold;">Vén       kommunista</span>: Azok voltak a szép idők! Csak ittunk, és 
+ütöttük a fasisztákat.<br><span style="font-weight: bold;">Antifasiszta</span>: Az csodálatos érzés, 
+mi is szoktuk.<br><span style="font-weight: bold;">Vén kommunista</span>: Mi a francot ütsz te? A 
+pöcsöm vastagabb mint a te       karod!<br><span style="font-weight: bold;">Antifasiszta</span>: 
+Hát, múltkor is jöttünk   koncertről,     és láttunk egy srácot, aki kopasz volt, és hátulról 
+széttörtünk a fején egy   sörösüveget, aztán     elszaladtunk.<br><span style="font-weight: bold;">Vén kommunista</span>:   Miért nem tapostátok     meg?<br><span style="font-weight: bold;">Antifasiszta</span>: Túlerőben   voltak, hiszen mi csak     nyolcan voltunk, neki meg ott 
+volt még egy haverja.<br><span style="font-weight: bold;">Humanista</span>: <span style="font-style: italic;">(a vén kommunistához fordulva)</span> Hagyja békén, szerintem   nagyon bátrak voltak     a 
+fiúk!<br><span style="font-weight: bold;">Zsidó</span>: Igen! Így kell   ezt csinálni! Ha   
+fasisztát   látsz, bumm bele a sörösüveget az arcába!<br><span style="font-weight: bold;">Antifasiszta</span>:<span style="font-style: italic;">   (csillogó szemekkel)</span> Igen, 
+mester.<br><span style="font-weight: bold;">Liberális</span>: Valóban csodálatos lehet így küzdeni a 
+nácizmus   ellen, de úgy vélem,   más eszközökkel hatásosabb   eredményeket érhetnénk el.<br><span style="font-weight: bold;">Vén   kommunista</span>: Ja. Mondjuk ha   felakasztanánk mindet.<br><span style="font-weight: bold;">Humanista</span>: De hát embereket   felakasztani azért mégiscsak   
+túlzás.<br><span style="font-weight: bold;">Vén kommunista</span>: <span style="font-style: italic;">  (fintorogva)</span> Maga se tudja, mi a   jó.<br><span style="font-weight: bold;">Liberális</span>: Tehát összegezzük mi az, amit   eddig elértünk a   fasizmus elleni 
+harcban. Jó úton haladunk afelé, hogy az árpádsávos zászlót   betiltsuk. Minden   történelemkönyv 
+részletesen tárgyalja a nácik által   elkövetett bűnöket, és a   legtöbben még azt is   leírják hogy 
+Hitler elmebeteg volt.<br><span style="font-weight: bold;">Zsidó</span>: Várjon csak!   Mi az hogy 
+részletesen? Hát arról mért nem   írnak azok a   könyvek, hogy a nácik megették a   kisgyermekek 
+agyát? És hogy a csontjaikból hintaszéket   faragtak   Hitlernek? Meg hogy mind   állatokkal dugtak, 
+és retardáltak voltak egytől-egyig? Meg hogy   Hitler   halottakat dugott, és   taknyot evett? Meg 
+hogy zsidó nőket dobáltak izzó magmába? Az   ilyenekről   mért nem írnak?<br><span style="font-weight: bold;">Liberális</span>: Őszintén   szólva én   ilyesmikről még soha nem   
+hallottam.<br><span style="font-weight: bold;">Zsidó</span>: Na, hát   most hallott. Írja föl,   
+jövőre szeretném, ha ezek is benne lennének a tankönyvekben.<br><span style="font-weight: bold;">Liberális</span>: Á, értem. Úgy lesz!<br><span style="font-weight: bold;">Vén   
+kommunista</span>: <span style="font-style: italic;">(meghúzza a borosflakont) </span>Kádár idejében 
+jobb volt!<br><span style="font-weight: bold;">Liberális</span>: Továbbá sikerült az emberek fejébe 
+vernünk, hogy     aki szereti a   hazáját, az rohadt náci, és tömeggyilkos, és meg kell ölni. 
+Továbbá mindenki náci     fasiszta disznó,   aki valami olyat nem szeret, amit mi igen.<br><span style="font-weight: bold;">Vén     kommunista</span>: És azok mik? Mert én csak a vodkát meg Sztalin 
+elvtársat   szeretem.<br><span style="font-weight: bold;">Liberális</span>: Nos, hosszú lenne 
+felsorolni a   liberális     értekeket, de engedje meg, hogy ízelítőként mondjak párat. Drogok, 
+abortusz, pénz,   négerszex,     homoszexualitás, reggae zene, pénz, négerek, cigányok, zsidók, 
+pénz,   csokipuding...<br><span style="font-weight: bold;">Zsidó</span>: Jól van, szerintem ennyi 
+elég lesz,   folytassuk tehát a     beszélgetést.<br><span style="font-weight: bold;">Liberális</span>: Igenis. Szóval, mint     mondtam, egészen jók az eredményeink. Főleg ha 
+számba vesszük, hogy mennyi   koszos magyart vertek     agyon a rendőreink az elmúlt nemzeti 
+ünnepeken.<br><span style="font-weight: bold;">Vén     kommunista</span>: Mármint úgy érti, az 
+ÁVH?<br><span style="font-weight: bold;">Liberális</span>: Igen, úgy.<br><span style="font-weight: bold;">Vén   kommunista</span>:     No azé'! Mert abba' én is benne vagyok, és én hogy őszinte 
+legyek, szarok a   rendre. Én csak a pártért     ütök.<br><span style="font-weight: bold;">Humanista</span>: Helyes. A   rend amúgy is fasiszta     dolog.<br><span style="font-weight: bold;">Antifasiszta</span>: Ja, ja!   Anarchiááááát!<br><span style="font-weight: bold;">Liberális</span>: A jövőre nézve pedig   szerintem hamarosan sikerül     bevezetnünk a 
+gyűlöletbeszéd-törvényt.<br><span style="font-weight: bold;">Vén kommunista</span>:     Azegmá' 
+megin' micsoda?<br><span style="font-weight: bold;">Liberális</span>: A gyűlöletbeszéd-törvény 
+abból a célból jött létre, hogy az európai értékek védelmének érdeké...<br><span style="font-weight: bold;">Zsidó</span>: Röviden   annyi, hogy aki rosszat mond ránk, azt szájbaverjük,     és 
+takarodhat a börtönbe.<br><span style="font-weight: bold;">Humanista</span>: Ahol majd jól     
+megerőszakolják a cigányok!<br><span style="font-weight: bold;">Liberalizmus</span>: A liberalizmus  
+   jegyében!<br><span style="font-weight: bold;">Vén kommunista</span>: Ez jó! Ilyen volt Kádár     
+idején!<br><span style="font-weight: bold;">Zsidó</span>: Be kell már fogni a koszos magyarok     
+pofáját, az nem   járja, hogy itt holmi szólásszabadságra hivatkozva bármit mondhatnak.<br><span style="font-weight: bold;">Humanista</span>: De a liberálisoknak nem kellene kiállniuk a     
+szólásszabadság mellett   minden körülmények között? Meg az alkotmány is azt mondja hogy...<br><span style="font-weight: bold;">Zsidó</span>: Telibeszarom az alkotmányt.<br><span style="font-weight: bold;">Liberális</span>: De igen, kivéve ha valaki zsidókról, cigányokról, melegekről,       
+pedofilokról, bűzözőkről, tehát rólunk rosszat akar mondani. Mert az gyűlöletkeltés, és onnan már    
+   egy lépés a Dunába lövés.<br><span style="font-weight: bold;">Vén kommunista</span>: Kádár 
+idejében       akkor is jobb volt!<br><span style="font-weight: bold;">Zsidó</span>: Aztán fontos 
+lenne még       meghozni a törvényt holokauszt-tagadás ellen.<br><span style="font-weight: bold;">Liberális</span>: Ó, igen! Ez nagyon sürgős probléma!<br><span style="font-weight: bold;">Humanista</span>: Ez a törvény miért is kell?<br><span style="font-weight: bold;">Zsidó</span>: Azért, mert aki a holokausztot nem hiszi el pontosan úgy ahogy mondjuk, az      
+ büdös náci, és ki akarja irtani a zsidókat, ezért tömlöcbe kell vetni.<br><span style="font-weight: bold;">Humanista</span>: De izé, a hite az nem mindenkinek szabad?<br><span style="font-weight: bold;">Zsidó</span>: Figyeljen, kedves. Engem kurvára nem érdekel, hogy ki hisz Istenben, a       
+holdraszállásban, vagy a középkor létezésében. Felőlem tagadhatják is. De aki egy rossz szót szól a  
+     holokausztról, és leszarom hogy történész, azt meg kell ölni.<br><span style="font-weight: bold;">Humanista</span>: Jó, így értem már, teljesen jogos, bocsánat uram.<br><span style="font-weight: bold;">Liberális</span>: Tehát akkor holokauszttagadás-törvényt meg kell   
+    hozni.<br><span style="font-weight: bold;">Humanista</span>: Ez okból talán jó lenne visszahozni 
+a       halálbüntetést.<br><span style="font-weight: bold;">Vén kommunista</span>: Mint Kádár       
+idejében!<br><span style="font-weight: bold;">Zsidó</span>: Jó gondolat!<br><span style="font-weight: bold;">Antifasiszta</span>: Énnekem van egy gondolatom. Szerintem tiltsuk be a   
+    kopasz fejet.<br><span style="font-weight: bold;">Liberális</span>: Nem rossz, ezt       
+felírom.<br><span style="font-weight: bold;">Humanista</span>: Nekem is lenne pár ötletem.<br><span style="font-weight: bold;">Liberális</span>: Mondja kérem.<br><span style="font-weight: bold;">Humanista</span>: Szóval azt kellene csinálni, hogy kezdjük el lebontatni a turulszobrokat.   
+    Adóztassuk meg nagyon a magyarokat, és adjuk a pénzüket a cigányoknak, akiknek pedig engedjük 
+meg, hogy verjék és kirabolják a magyarokat. Verjük szét az egészségügyet. Hozzunk olyan 
+törvényeket, amelyek alapján azt ítélhetünk el, akit akarunk. Vegyük teljesen uralmunk alá a 
+rendőrséget.   Formáljuk     át úgy a közoktatást, hogy az a mi nézeteinket verje bele minden gyerek 
+fejébe, és aki   ezeket nem     fogadja be, arról állapítsák meg, hogy hülye, és ne lehessen belőle, 
+csak   gyári munkás... és     és még...<br><span style="font-weight: bold;">Zsidó</span>: <span style="font-style: italic;">(unott arccal   bámulja a     humanistát)</span><br><span style="font-weight: bold;">Liberális</span>: <span style="font-style: italic;">(az asztalra   
+borul)</span><br><span style="font-weight: bold;">Vén kommunista</span>:<span style="font-style: italic;"> (a hónalját szaglássza)</span><br><span style="font-weight: bold;">Antifasiszta</span>: 
+<span style="font-style: italic;">(fikázik)</span><br><span style="font-weight: bold;">Zsidó</span>: 
+<span style="font-style: italic;">(végül megtöri a csendet)</span> Maga fasz!<br><span style="font-weight: bold;">Humanista</span>: Mi? Hogy én?<br><span style="font-weight: bold;">Zsidó</span>: Igen. Maga       szerencsétlen, hülye fasz!<br><span style="font-weight: bold;">Humanista</span>: De most miért?   Nem     jó ötletek ezek?<br><span style="font-weight: bold;">Liberális</span>: Dehogynem,   baszd meg,     <span style="font-style: italic;">(emeli 
+fel a fejét az asztalról)</span> ezért is csináltuk már meg mindet.<br><span style="font-weight: bold;">Zsidó</span>: Ezeken dolgoztunk az elmúlt években.<br><span style="font-weight: bold;">Humanista</span>: Tényleg? De, de hát ha ezek már mind megvannak, akkor a   miénk a     
+győzelem.<br><span style="font-weight: bold;">Zsidó</span>: Az már régen a   miénk.<br><span style="font-weight: bold;">Liberális</span>: Csak hát ugye vannak még   ellenállók.<br><span style="font-weight: bold;">Antifasiszta</span>: Igen, pár ilyen szittya köcsög   
+nácifasiszta.<br><span style="font-weight: bold;">Liberális</span>: Azok.<br><span style="font-weight: bold;">Zsidó</span>: Na, azokkal kellene kezdeni valamit.<br><span style="font-weight: bold;">Humanista</span>: Az öregeket szerintem elítélhetjük háborús   
+bűnökért.<br><span style="font-weight: bold;">Liberális</span>: Ez nem is rossz ötlet! 
+Keressünk valami szerencsétlen kisnyugdíjast, és jelentsük fel, amiért   mondjuk anno     kenyeret 
+adott a náciknak. Úgyis be fog ijedni, a jogot nem ismeri, ügyvédre   pedig nem lesz     
+pénze!<br><span style="font-weight: bold;">Zsidó</span>: Zseniális ötlet! Simon   Wiesenthal büszke  
+   lenne magára.<br><span style="font-weight: bold;">Liberális</span>: <span style="font-style: italic;">(könny szökik szemébe)</span>     Gondolja?<br><span style="font-weight: bold;">Zsidó</span>: Igen,   gondolom.<br><span style="font-weight: bold;">Humanista</span>: <span style="font-style: italic;">(vágyakozva nézi a   liberálist)</span><br><span style="font-weight: bold;">Liberális</span>:<span style="font-style: italic;"> (ránéz a humanistára, és   büszkén 
+kihúzza     magát)</span><br><span style="font-weight: bold;">Humanista</span>: <span style="font-style: italic;">(csillogó     szemekkel)</span><span style="font-weight: bold;"> 
+</span>Én szeretem magát.<span style="font-weight: bold;"><br>Liberális</span>: Tudom.   De 
+sajnálom, én     szabadelvű ember vagyok. Egy igazi liberális! Maga pedig egy nő.<br><span style="font-weight: bold;">Humanista</span>: <span style="font-style: italic;">(huncut 
+mosollyal)</span> Nem voltam én mindig az...<br><span style="font-weight: bold;">Liberális</span>: <span style="font-style: italic;">(örömittasan)</span> Szeretlek! Te 
+vagy a     legcsodálato...<br><span style="font-weight: bold;">Zsidó</span>: <span style="font-style: italic;">(túlkiabálva őket) </span>Tehát akkor ott   tartottunk, hogy azt a 
+maradék ellenállót fel kéne számolni. A tömegeket   úgyis meggyőzzük a     médián keresztül, illetve 
+kezük-lábuk meg van kötve a pénzügyi dolgok   által.<br><span style="font-weight: bold;">Vén 
+kommunista</span>: Nekem, BÖFF, nekem lenne egy   javaslatom. És ha     felakasztanánk 
+őket?<br><span style="font-weight: bold;">Antifasiszta</span>:   Igen, igen! Gégen     
+náciz!!<br><span style="font-weight: bold;">Zsidó</span>: Higgye el, én örülnék   neki. De ezt így 
+nem     lehet.<br><span style="font-weight: bold;">Vén kommunista</span>: Fene   már ebbe a szar   
+rendszerbe!   KÁDÁR IDEJÉBEN JOBB VOLT!<br><span style="font-weight: bold;">Liberális</span>: <span style="font-style: italic;">(A humanista fülébe suttogva)</span>  Letöltöttem   egy filmet. A 
+címe:<span style="font-style: italic;"> Kanos négerek az   állatkertben</span>... <span style="font-style: italic;">(Huncutul benyal a zsíros   szőrszálak   közé)</span><br style="font-style: italic;"><span style="font-weight: bold;">Humanista</span>: Jaj, te kis hamis! De 
+én azt   már láttam!   Nézzük inkább <span style="font-style: italic;">A dicsőséges francia 
+forradalom     pornóváltozat</span>át. Abban még hüllők   is vannak!<br><span style="font-weight: bold;">Vén     kommunista</span>: <span style="font-style: italic;">(Hátradobja az üres   
+borosflakont, majd az asztalra ugrik, fejére helyezi a     lámpaburát, s énekelni kezd.)</span> 
+Köszööönjük   nééked Rákosi elvtárs!...<br><span style="font-weight: bold;">Antifasiszta</span>: 
+<span style="font-style: italic;">(A saját ölébe   hány)</span><br><span style="font-weight: bold;">Zsidó</span>:     Akkor a gyűlésnek itt vége, legközelebb a   jövő hónapban találkozunk, 
+amikor majd megvitatjuk, hogy egy     gyerekkórházat, vagy egy iskolát adjunk el,   hogy legyen új 
+bárszekrénye a klubnak. A viszontlátásra!<br><br></div><div style="text-align: justify;">Azzal a 
+liberalizmus élharcosai, ezek a névtelen     hősök, felálltak, s kisétáltak az <a target="_blank"style="color: black; font-weight: bold;" href="//lehetmas.hu/">LMP</a> helyi székházának ajtaján, hogy újra 
+felvegyék a harcot a soha     ki nem haló, a történelem szemétdobjára került ordas   
+eszmékkel...<br></div><br>     </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-12-12&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1676&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1676&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1676&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1676&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1676&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1676&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1676&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1676&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1676&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1676&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1676&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1676&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1676&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1676&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129838"></A>120. Főnix</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1676&id=129477#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-12-14 23:08:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szerintem pont hogy kóser ez az oldal. Vagyisizé. Namindegy. Amúgy van saját oldalam. fonix.blog.hu</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129477"></A>119. szubotaj</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-14 11:51:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Főnix! Vicces az irásod! Elég reális, uh ajánlom, csinálj saját oldalt, mert ez a hely hmm, kezd nemkóser lenni, de az ilyen jellegű irásaidat örömmel olvasnám ezentúl is..</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129321"></A>118. Tanarur</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-13 17:35:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Főnix, olvastál a cikk alján lévő linken lévő dolgokból? Nekem azokból egyelőre nem az jön le, amit a paródiád sugall... de cáfolj meg, ha van olyan idézeted _az_LMP_honlapjáról_, ami a fentieket támasztja alá.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129280"></A>117. tetra</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-13 13:18:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2814.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hatalmas :D<br />
+Főnix még :D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129270"></A><FONT COLOR="#FF0000">116. </FONT>Lako</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-13 12:48:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129223"></A>115. <A HREF="mailto:devius@freemail.hu" STYLE="color: #000000">devius</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-13 10:41:57</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_602.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Emmá'  jóféle....valami ütős animációt kéne belőle csinálni</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129214"></A>114. <A HREF="mailto:kovi@externet.hu" STYLE="color: #000000">shaq23</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-13 10:20:32</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">nagyon jó:) végigröhögtem:D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129204"></A>113. Walaky</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-13 10:04:05</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1706.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Óriási!<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129191"></A><FONT COLOR="#FF0000">112. </FONT>GaBRIeL</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-13 09:43:01</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_482.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment129185"></A><FONT COLOR="#FF0000">111. </FONT>GaBRIeL</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-13 09:29:43</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_482.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1676&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1676&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1676&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1676&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1676&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1676&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1676&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1676&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1676&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1676&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1676&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1676&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1676&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1676&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

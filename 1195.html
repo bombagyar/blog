@@ -1,0 +1,566 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1195#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Diagnosis Judaica";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Diagnosis Judaica<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 július 24. 10:19:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1195.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">A baloldali média által        
+       büszkén bemutatott, az igazságügyi miniszter által támogatott Nácivadász Szövetség írországi  
+             alapítójával megesett telefonbeszélgetés <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=1194">egyszerűen hihetetlen</a>: hallható, hogy a férfi 
+    mentális           betegségtől szenved, s vélhetően az ebből eredető gyűlölet és kétségbeesés    
+ fordult parttalan           gyűlöletbe. Nem ismeretlen azonban, hogy a zsidóság hajlamosabb a     
+mentális betegségekre &#8211;   s ez         nem valamiféle antiszemita propaganda.<br><br>Makkai a  
+   zsidóság betegségének az   izgatottságot         találta: hogy még a játékokban sem képesek     
+nyugodtak, békések maradni, képesek   idegesen küzdeni   a       győzelemért.<sup>1</sup> Makkai nem 
+    volt orvos, megfigyelései nem   mérvadóak. Szerencsére   azonban       voltak olyan szakemberek, 
+    akik kutatták a kérdést, s ezek   nagy része maga is zsidó   volt: miközben   a     bizonyítékot 
+    keresték önnön felsőbbrendűségükre,   valami egészen mást   találtak.<br><br>2001-ben   egy      
+   izraeli cég askenázi zsidók vérmintáit   gyűjtötte bizonyos   genetikai betegségek megelőzése     
+      érdekében.<sup>2</sup> A hivatalos   magyarázat szerint azért   éppen az övékét, mert ők 
+genetikai           integritásuk miatt a   legmegfelelőbbek. A valóság ezzel   szemben az, hogy 
+olyan   betegségekre   kerestek       gyógyírt,   amely leginkább az askenázi zsidóságra   jellemző. 
+A   teljesség igénye   nélkül ilyen   például     az   úgynevezett Gaucher-betegség, amely egy   
+enzim   inaktivitása miatt   alakul ki.   Infantilis G-kórként       általában csecsemőknél 
+jelentkezik és     gyermekkori halált   okoz. Ha ez nem   következik be,   juvenilis     G-kórként 
+végtagi   idegbántalmakat   és dementiát,   azaz elbutulást okoz. A     Gaucher-betegség     
+autoszomális   recesszíven öröklődő   kórkép, azoknál   jelentkezik, akik   vérvonalába   askenázi 
+zsidó       kapcsolódott.<sup>3</sup>   Hasonló betegség a     Canavan-kór<sup>4</sup>,     
+Niemann&#8211;Pick-betegség és     még számos másik   öröklödő     baj.<sup>5</sup><br><br>A zsidók  
+   évezredes vallási megfontolásait   szokták   a valódi   okként     megnevezni: egyesek a   
+cukorbetegséget a   kóser étkezés következményének       tartják<sup>6</sup>,     mások pedig a   
+szexuális útmutatások miatt   gondolják úgy, hogy a zsidóságot       kevésbé sújtja a       
+méhnyakrák.<sup>7</sup> <br><br>Nem   elhanyagolható azonban a zsidóság évszázados         
+társadalmakba   ékelődött helyzete: túlélési   szempontból nélkülözhetetlen képességeket       
+sajátítottak   el, így   nem meglepő, hogy a zsidóság által   érintett társadalmakban őket mint      
+ kereskedő, a pénzzel     foglalkozó népcsoportként ismerték meg.   Werner Sombart a legmagasabb     
+  emberségként és a   legmagasabb   intellektualizmusként jellemzte a   zsidóságot, majd később ezt  
+     írja:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Gyakran úgy találjuk,   hogy a zsidóknál elcsenevészesedett minden 
+          ösztönös megértés, éppen úgy, ahogy lényegesen nem   változott a világhoz való érzelmi     
+    viszonyulásuk   sem.&#8221;<sup>8</sup><br></div><br>Roderich   Stoltheim szerint sikereiket     
+    leginkább egyféle   erkölcsi alsóbbrendűségben kell keresni, amely   éppen ebből és 
+életvitelükből         táplálkozik: mivel   folyamatos vándorlásuk során csak mozgó javakkal   
+foglalkozhattak (például         állattenyésztés vagy   növénytermesztés helyett kereskedelmi 
+foglalkozás),   hamar előnyhöz         jutottak, ha erkölcstelen módon   cselekedtek (túlzott 
+kamatkérés           stb.).<sup>9</sup><br><br>1969-ben C. P. Snow a Hebrew Union   College-ben 
+tartott előadásában a           zsidó belterjesség miatt a zsidóságot &#8222;minden más élő népnél   
+felsőbbrendűnek&#8221;           nevezte.<sup>10</sup> A hetvenes években erősödött ez a vélemény, 
+így több   könyv foglalkozott           azzal, hogy a judaizmus puszta struktúrája miatt Isten 
+kiválasztott népe jobb,   mint a           többi.<sup>11 12</sup> <br><br>A zsidósággal 
+rokonszenvező újjászületett pünkösdi keresztény             Charles Darwin a fajok fennmaradásáról 
+szóló kutatásaiban<sup>13</sup> megágyazott a mai             szociobiológiának is. Dr. Edward 
+Wilson hetvenes évekbeli munkájában (Szociobiológia: Egy új             szintézis<sup>14</sup>) 
+bemutatja az élőlények kódolt ösztönét arra vonatkozóan, hogy a             genotípusukat 
+megőrizzék, megmagyarázza a csoporthűség és altruizmus létezését. A szociobiológia és             
+viselkedésgenetika bebizonyította, hogy még a fejlett társadalmakon belül is a különböző             
+embercsoportok olyan csoportstratégiát alkotnak, amely megakadályozza az asszimilációjukat,   így    
+       megőrzik genotípusukat (egyszerűsített példaként: a tudományos álláspont szerint a   
+cigányság   ősi         túlélési ösztöne miatt nem akar maradéktalanul beolvadni egy más   
+népcsoportba). A   zsidóság         hányattatott történelme, kialakult alkata és vallási   
+meggyőződései miatt különösen   ellenezték a más         népcsoportokkal való keveredést.   
+Szupremácista világfelfogásuk (a   kiválasztottság érzése     keveredik   a   felsőbbrendűség és   
+üldözöttség állandó érzésével) és   csoportstratégiájuk jó példája     Geyla Frank     cikke,   
+amelyben egy antropológiai magazinban a   zsidó faji felsőbbrendűséget     dicsérte, de       
+megjegyezte, hogy a zsidó fajiság öntudata   titkolandó, mert antiszemitizmust       
+szülne.<sup>15</sup> Ez     az öntudat zsidó homogenitást   eredményezett: a vándorló életmód és a   
+    vallási előírások miatt a     legtöbb zsidó hosszú időn   keresztül (és sokan még ma is) 
+származás       alapján választ párt.<br><br>A     homogenitás miatt   könnyedén megállapítható a 
+különbség a   zsidóság     és például egy európai népcsoport     között. Az   ilyen genetikai 
+variánsok teszik   lehetővé, hogy     olyan, csak a zsidókra veszélyes     betegségek   
+létezhessenek, mint példáula   Tay-Sachs     betegség.<sup>16 17</sup> Bat Miriam és Sachs       
+kutatásaik során döbbenetes   hasonlóságot fedeztek     föl Észak-Afrika, a Közel-Kelet és   
+Közép-Európa     zsidósága között, de   óriási különbséget az   adott   terület zsidó és nem zsidó   
+    lakosságában.<sup>18</sup> Több   kutatásban vizsgálták a   zsidók   egymáshoz való 
+hasonlóságát, és   azt     találták, hogy a világ   különböző pontjain élő   zsidók   legalább 
+kétszer, de akár ötször   több     hasonlóságot mutatnak   egymáshoz tizennégy   polimorf locus   
+vizsgálatát figyelembe véve,   mint a velük     egy helyen   élő nem zsidó   lakosság.<sup>19</sup>  
+ Háromezer éves zsidó csontvázak   vizsgálata is azt     mutatta, hogy     háromezer éve élt zsidók  
+ közelebbi rokonságot mutatnak a mai   zsidókkal, mint a     jelenleg a   vizsgált   populációval 
+egy   területen élő nép.<sup>20 21 22 23   24</sup> Az     érinthetetlenül   önmagában álló zsidóság 
+így csak a   zsidók genotípusára   speciálizálódott   betegésekben     szenvedhet.<br><br>Miután 
+Nahum Goldmann, a   Cionista   Világszövetség volt elnöke       kijelentette<sup>25</sup>, hogy 
+kétféle zsidó van: aki   elismeri,   hogy több ezer éves   történelme     miatt külön, erősebb fajt 
+alkot, és az, aki becstelenül   nem,   világossá vált, hogy   a cionista     zsidóságban igény van a 
+saját felsőbbrendűségük         bizonyítására. Az utóbbi   években a zsidó kutatók egyre-másra 
+álltak elő a zsidók magasabb   intelligenciahányadosára   vonatkozó kutatási eredményeikkel. A 
+vizsgálatok szerint akkor, ha az   emberi IQ átlagát 100-nak   vesszük, az askenázi zsidóké 
+107&#8211;113.<sup>26</sup> Más kutatások   részletesebb adatokkal   szolgálva arra a 
+következtetésre jutottak, hogy a zsidóság verbális   intelligenciája valóban   magasabb az átlagos 
+európaiénál, de absztrakt, térérzékelő képességük az   átlag alatt marad.<sup>27   28</sup> Ez 
+egybevág a zsidóság evolúciós stratégiájával is, amelyet   fentebb taglaltunk.<br><br>A   fentiek 
+alapján láthattuk, hogy a zsidóság hosszú időn át kialakult   alkata, vallási sajátosságai   miatt 
+önálló tömbként éltek, fejlődtek. Ilyen módon egyéni képességeik   és erősségeik alakultak ki,   de 
+világosan látható az is, hogy gyarlóságban és betegségekben is   találhatunk csak rájuk   
+jellemzőeket. Makkai izgatottságnak nevezte, amit a Psychosis Judaica   túlfeszített idegbajnak,   
+félvérekre jellemző idegállapotnak.<sup>29</sup> Egy bécsi orvos kutatásai   során kimutatta, hogy   
+örökölt gyengeelméjűségben a keresztények 0,7%-a, míg a zsidók 0,98%-a szenved   (ez majdnem minden  
+ századik zsidó).<sup>30</sup> Hihetetlen, de Fishberg és Oppenheim is elismeri,   hogy a zsidók   
+hajlamosabbak az elmezavarra: előbbi szerint a zsidók agya a legcsekélyebb izgalomtól   is   
+megzavarodik, utóbbi szakember szerint pedig a szerzés vágyába bolundulnak bele ezek az     
+emberek.<sup>31</sup> Nem teljesen világos, hogy a kriminalisztikában fölhasználhatók-e ezek a     
+tapasztalatok, de megfigyelték, hogy az 1892&#8211;1901-es időszakban Németországban a csalás (úgy   
+  is mint okirathamisítás, uzsora stb.) legfőképp zsidók által elkövetett bűn volt: közel kétszer    
+ annyi zsidó követett el ilyen jellegű bűncselekményt, mint katolikus vagy evangélikus.<sup>32</sup> 
+    Ilyen kimutatás azóta nem készült.<br><br>A fönti hevenyészett összeállítás igazolja eddigi     
+megfigyelésünket: nem nevezhető véletlennek, hiszen statisztikusan igazolható, hogy a zsidó gének    
+ megjelenése főként mentális, patologikus betegségek megjelenését eredményezhetik. A korábbi 
+fajvédők     többek között ezért ellenezték a zsidókkal való házasságot. Ilyen kijelentések nélkül 
+is     beláthatjuk, hogy nem lehet a puszta véletlen műve, hogy a pszichés zavarokban, de például a  
+   homoszexualitásban is nagyobb arányban találhatunk zsidó származású embereket. Hiába tabu ez a 
+téma,     kell róla beszélni, mert ránk is hatással van.<br><br>___________________<br><ol class="references" style="font-size: 85%; -moz-column-count: 2; -moz-column-gap: 2em;"><div style="text-align: left;"><font size="1"><sup>1</sup> Makkai János: Urambátyám       
+országa</font><br><font size="1"><sup>2</sup>       Origo: Zsidók génjeivel a betegségek nyomában,   
+2001.     december 17. (http://www.origo.hu/tudomany/<br>elet/20011217zsidok.html)<br><sup>3</sup>  
+Vitalitás.hu (http://www.vitalitas.hu/konyvek/<br>genetika/gen5b.htm)<br><sup>4</sup> Mount Sinai    
+           (http://www.mssm.edu/jewish_genetics/<br>diseases/canavan.shtml)<br><sup>5</sup> Jewish 
+Virtual               Liberary: Ashkenazi Jewish Genetic Diseases               
+(http://www.jewishvirtuallibrary.org/jsource/Health/<br>genetics.html)<br><sup>6</sup> Jewish        
+       Diabetes.org (http://www.jewishdiabetes.org/)<br><sup>7</sup> Patika Magazin Online: A   
+méhnyakrák             (http://www.patikamagazin.hu/index.php?cikk=155)<br><sup>8</sup> Werner   
+Sombart: Die Juden   und     das     Wirtschaftsleben<br><sup>9</sup> F. Roderich Stoltheim: A zsidó 
+  siker     titka<br><sup>10</sup>       Pittsburg Post Gazette, 1969. ápr. 1., 26.   
+o.<br><sup>11</sup> N. Weyl     &amp; S. Possony:   Geography     of Intellect   
+(1963)<br><sup>12</sup> E. Van den Haag: The Jewish     Mystique<br>13 C.   Darwin: The     Origin   
+Of Species By Means of Natural Selection, Or The     Presevation Of Favored Races   In The Struggle  
+     For Life (1982-es kiadás)<br><sup>14</sup> E.     Wilson: Sociobiology: A new   Synthesis.      
+ (1975)<br><sup>15</sup> Geyla Frank: Jews,     Multiculturalism, and Boasian Anthropology   (The   
+American     Antropologist, 1997. 99/4,     731</font>&#8211;<font size="1">745.     
+o.)<br><sup>18</sup> G. A. Chase     &amp; V. A. McKushick:     Founder Effect in Tay-Sachs Disease  
+   (American Journal Of Human Genetics,     1972.     35:339</font>&#8211;<font size="1">352.)<br><sup>18</sup> A. L. Fraikor: Tay Sachs Disease:         Genetic Drift Among The    
+ Ashkenazi Jews (Social Biology, 1977. 24:117</font>&#8211;<font size="1">134.)<br><sup>18</sup> L.  
+   Sachs &amp; M. Bat-Miriam: The Genetics Of Jewish Populations         (American Journal Of Human  
+   Genetics, 1957. 9:117</font>&#8211;<font size="1">126.)<br><sup>19</sup>   A. E. Mourant, A. C.   
+  Kopec &amp; K. Domaniewjka-Sobzak: The     Genetics Of The Jews   (1978)<br><sup>20</sup> B.     
+Bonné-Tamir, S. Ashbel &amp; R. Kenett: Genetic     Markerers, Bening And   Normal Traits Of   
+Ashkenazi   Jews In Genetic Diseases Among Ashkenazi Jews     (1977)<br><sup>21</sup> S.   Karlin,   
+R. Kenett &amp;   B. Bonné Tamir: Analysis Of Biochemical     Genetic Data On Jewish Populations     
+II.   (1979)<br><sup>22</sup> S. Mille &amp; E. Kobyliansky:     Dermatoglyphic Distances Between   
+Israeli     Jewish Population Gropus Of Different Geographic     Extraction (Human Biology, 1985.    
+   57:97</font>&#8211;<font size="1">111.)<br><sup>23</sup> E.     Kobyliansky &amp; G. A. Livshits: 
+      Morpological Approach To The Problem Of The Biological     Similarity Of Jewish And Non-Jewish 
+      Populations (Annals Of Human Biology, 1985.     12:203</font>&#8211;<font size="1">212.)<br><sup>24</sup> J. A. Smith Soafer &amp; E. Kaye:     Affinities Between   
+Contemporary     And Skeletal Jewish And Non-Jewish Groups Based On Tooth     Morphology (American   
+Journal Of Physical     Anthropology, 1986. 70:265</font>&#8211;<font size="1">275.)<br><sup>25</sup> Attack (1976), a     Cionizmus I. Theory no. 42-ben Goldmant       
+idézik<br><sup>26</sup> Magyar Demokrata: ANTIDOGMA &#8211; A bűntudat-komplexus, 2008. május 22.    
+ (http://www.demokrata.hu/heti-hir/<br>antidogma-a-buntudat-komplexus)<br><sup>27</sup> Journal Of   
+  Genetic Psyhology (1962. 100. sz. 55</font><font size="1">&#8211;68. o.)<br><sup>28</sup> Olyan    
+ kutatók, mint: B. M. Levinson, W. E. Mosse, Richard Swartzbaugh, R. Lynn stb.<br><sup>29</sup>      
+Méhely Lajos: A magyar faj önvédelmi harca<br><sup>30</sup> A. Pilcz, Geistesstörungen bei den     
+Juden; Wiener klinische Woclhenschrift, 1901, 888</font><font size="1">&#8211;</font><font size="1">890, 908</font><font size="1">&#8211;</font><font size="1">910. l. M.     
+Marcuse<br><sup>31</sup> H. Oppenheim, Zur Psychopathologie d. russ.</font><font size="1">&#8211;</font><font size="1">jüd. Bevölk.; Journ. f. Psych. u. Neurol., XIII,     
+1908.<br><sup>32</sup> Fr. Lenz, Baur</font><font size="1">&#8211;</font><font size="1">Fischer</font><font size="1">&#8211;</font><font size="1">Lenz, Menschl. Erblichkeitslehre, 
+    I, 1925, 567. l.<br><br></font>   </div></ol></div>        </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-07-24&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1195&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1195&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1195&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1195&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1195&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1195&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1195&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1195&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1195&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1195&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1195&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1195&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1195&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1195&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1195&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment103089"></A>135. effendi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-01 21:25:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2016.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Konrád György pár őszinteségi rohama, arról hogy hogyan gondolkodik egy magyar babó értelmiségi:<br />
+<br />
+"A babók nem lesznek utcaseprők, mert a sok évezred alatt felhalmozódó intellektuális tőke tovább öröklődik az utódokra. Az érzékenységet, az alkatot és valószínűleg intelligenciánk természetét is összeadjuk abban a génkoktélban, amik a gyerekeink."<br />
+<br />
+Bővebben: <B><a href="//href.hu/x/72zr" target="_new" style="color: #000000;">http://href.hu/x/72zr</a></B><br />
+<br />
+[a babók] "Kitüntetett szerepet vállaltak a világ kommunikációs összekapcsolásában, a hírközlésben, a kereskedelemben, az intellektuális dialógusban, a Föld és a rajta élők világgá változtatásában."<br />
+<br />
+Bővebben: <B><a href="//href.hu/x/72zt" target="_new" style="color: #000000;">http://href.hu/x/72zt</a></B><br />
+<br />
+"Szinte az egész földön vannak babók, egy nép sincs, amely így szétszóródott, így irtatott és mégis így megmaradt volna, ez a különössége. Ez az egyetlen világnép, és ebbôl fakad a rendeltetése is."<br />
+<br />
+Bővebben: <B><a href="//href.hu/x/72zu" target="_new" style="color: #000000;">http://href.hu/x/72zu</a></B><br />
+<br />
+Dehogy is rasszisták ezek a szövegek, alig süt belőlük a felsőbbségtudat, á... :)<br />
+<br />
+Egyébként érdemes elolvasni, mert olyan megállapításokat is tesz, amire az átlag babó, ha egy "gójtól" (aki nyilván legalább látensen antiszemita) hallana, akkor elkezdenek fröcsögni, tiltakozni, gúnyolódni, idiótázni, ahogy Merivale teszi.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment100667"></A>134. <A HREF="mailto:david.merivale@yahoo.com" STYLE="color: #000000">Merivale</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1195&id=93790#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-09-24 22:18:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kar volt ilyen hosszura venned. Semmiben sem kulonbozik a sok, tudatlan tinedszer gyerek altal orrzehordott szamarsagtol. A buta gyerekek nagy resze persze kinovi: elmulnak huszevesek, olvasnak, tovabbtanulnak, stb. Marad persze par jobb sorsra erdemes szerencsetlen, akik tovabb folklorizaljak a butasagot. Sot, meg hirdetik is.<br />
+Reszvetem.<br />
+<br />
+Nos, nezzuk csak. Babo vagyok. Rendben, nemcsak 3/4 reszben, hanem mondjuk egeszben. Vallasos azonban nem vagyok - akkor a logikad szerint a nemzet ellensege vagyok vagy nem?<br />
+Es ha igen, melyike?<br />
+A magyar vagy a svajci nemzet ellensege?<br />
+<br />
+Ugyanakkor magyar is vagyok. A rokonsagnak es neveltetesemnek koszonhetoen a magyar nyelvet anyanyelvi szinten beszelem (a Bombagyaron nyomulok tobbsegenel mindenesetre messze jobban), magyar allampolgarsagom is van, magyar karitativ szervezeteknek is dolgozom rendszeresen. Es nem szorulok ra, hogy tudatlan hozongoknek ezt bizonygassam. Egyertelmu.<br />
+<br />
+A legviccesebb szoveg azonban ez:<br />
+<br />
+"Amelyik babó veri a mellét, hogy márpedig ő magyar, mert itt született és magyarul beszél és magyar állampolgár is, még az sem magyar. Hogy miért nem? Mert a szó elszáll, az írás megmarad, ergo, ha majd bizonyítja tettekben, akkor talán elhiszi az ember, de mint mondottam, minden babó potenciális veszélyt jelent bármely országra, fanatizmusuknak köszönhetően."<br />
+<br />
+Ha ezt komolyan veszem, akkor ebbol az (is) kovetkezik, hogy a nem babo magyaroknak nem kell "bizonyitaniuk tettekben, hogy magyarok".<br />
+Tenyleg? Csak a babok magyaroknak kell? Tettekben? Hogy "magyarok"?<br />
+<br />
+Es vajon mi lenne az a "tett"?<br />
+<br />
+Ez jobb, mint egy kabare.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93790"></A><FONT COLOR="#FF0000">133. </FONT>BiggyBoy</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-09-01 20:51:28</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment81111"></A>132. <A HREF="mailto:david.merivale@yahoo.com" STYLE="color: #000000">Merivale</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1195&id=81060#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-07-27 12:29:41</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Amennyiben viszont kussoltál volna, tizedannyian nem kattintottak volna arra az antiszemita linkre, te buta babó. Garantálom, hogy tenmagad egyedül több forgalmat eredményeztél, mintha én egy hétig ennek propagálásával foglalkoztam volna."<br />
+<br />
+Ha ez igy van, az orvendetes.<br />
+<br />
+Szegenykem, csak te nem fogod fel, hogy minel tobben jutnak el kedvenc irodalmadig, annal jobban egeted magad. Mind tobben lathatjak, hogy ez TENYLEG ilyen butasagokban utazik, ennek TENYLEG ilyen szennyirodalom a taplaleka.<br />
+<br />
+Olyan vagy, mint a szcientologusok, akik vitahelyzetben keptelenek ervelni, kozben konyvtarnyi irodalmat hoznak fel annak bizonyitasara, hogy thetanok vannak, Xenura, stb. Vagy barmire. Nem ertik, hogy minel jobban csinaljak, annal nevetsegesebbek.<br />
+<br />
+Te eppen ezen a Douglas Reeden csungsz. Onmagaban sokat elarul rolad, es vilagismeretedrol, hogy egy ilyen szemet elolvasasa utan kezded ugy gondolni, hogy "AHA--megertettem, mi megy a mai Magyarorszagon". De hivatkozhatnal meg tobbezer mas szerzore is, hiszen az antiszemita szennyirodalom forrasai kimerithetetlenek.<br />
+<br />
+Hogy itt, a Bombagyaron megtalalod-e az akolmeleget, az az itt jelenlevok emberanyaganak fuggvenye. Mindenesetre erdemes elgondolkodnod azon, hogy a Bombagyar szerkesztoi deklaraljak, hogy nekik semmi kozuk az antiszemitakhoz, a rasszizmushoz, illetve az osszeeskuves-elmeletekhez. Ez persze csupan deklaracio--a valosagrol az itt archivalt munkassaguk ad kepet.<br />
+<br />
+Veled es a hasonlok kapcsan az ember csak szanakozni tud. Egyutterezni mar nehezebb, persze. Ahhoz kepesnek kell lenni mindazon megalaztatasok aterzesere, amiken egy ilyen nehez sorsu gyerek atment. Mindenesetre biztos rossz lehetett normalis emberi kapcsolatok nelkul felnoni, a tobbiektol felni, tul sok embert irigyelni. Egy ido utan ez a frusztracio es irigyseg komolyan gatolni kezdte a vilag megismereset.<br />
+<br />
+Maradj csak abban a hitben, hogy "neked a babok miatt szar". Igen, neked tenyleg EZ ALL JOL.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment81060"></A>131. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-07-27 07:34:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Figyelj rám, te Magyar-Svájci háromnegyedbabó!<br />
+<br />
+Én azért járok ide többek között, hogy elkerüljem a hozzád hasonlókat. Azért is járok ide, hogy rámutassak, hogy a párhuzam az 1930-as évek Douglas Reed által megfigyelt és általam napi szinten szemlélt XXI. század Magyarországa/Európája között döbbenetes. És köszönöm, hogy jelenléteddel, hozzászólásaiddal tagadhatatlanná tetted a tényt, Svájci-Magyar háromnegyedbabó. Ez a kis intermezzó közöttünk egy fejezete lehetne Reed antiszemita esszéjének.<br />
+ Szóval asszondod, van a Magyar fordításban egy helyesírási hiba? Lehet, nem az én kenyerem, nekem régies nyelvhasználatnak tűnik, de legyen meg a te akaratod uram, hiszen te is legalább 75%-ban kiválasztott vagy: egy hiba van csak benne, és az nem a szerző tévedése.<br />
+<br />
+Hogy nektek babóknak mennyire nincs semmiféle arányérzetetek, azt meg az mutatja meg ebben a mi kis tereferénkben, hogy nem tudod kihülni hagyni a dolgot. Először is, mivel nem találtál hibát vagy tévedést az esszé tartalmában, jött az antiszemita jelző. Jid módszer numero uno. Amennyiben viszont kussoltál volna, tizedannyian nem kattintottak volna arra az antiszemita linkre, te buta babó. Garantálom, hogy tenmagad egyedül több forgalmat eredményeztél, mintha én egy hétig ennek propagálásával foglalkoztam volna. Ezért köszönettel tartozom.<br />
+<br />
+És az, hogy mindezt te teszed, te Magyar Svájci háromnegyedbabó, az csak Douglas Reed zsenialitását, esszéjének tárgyilagosságát, megfigyeléseinek időt álló jellegét bizonyítja.<br />
+<br />
+De mint mondottam volt - azért is ide járok , hogy alkalomadtán tiszta levegőt szívhassak, úgyhogy pá.<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment81054"></A>130. <A HREF="mailto:david.merivale@yahoo.com" STYLE="color: #000000">Merivale</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1195&id=81016#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-07-27 02:10:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B><a href="//betiltva.com/new/douglas-reed-kivalasztott-nep-e-a-babo/" target="_new" style="color: #000000;">http://betiltva.com/new/douglas-reed-kivalasztott-nep-e-a-babo/</a></B><br />
+<br />
+A reklamozott antiszemita pamflet magyar ("" ?) forditasaban szerpel ez a mondat:<br />
+<br />
+"Ne higyjük (sic!) ezt! Bolondot csinálunk magunkból, ha ezt elhisszük. Próbáljuk megérteni, hogy azoknak a babóknak a legnagyobb része, akik Hitler uralomra jutásakor Németországban voltak, most is ott vannak."<br />
+<br />
+A hinni felszolito formajanak helyesirasa tbsz. 1. szemelyben ugye HIGGYUK - de hat nem meglepetes, hogy a masokat Magyarsagrol Magyarsagbol kioktatokat keruli el legnagyobb ivben a magyar nyelv elfogadhato szintu ismerete.<br />
+<br />
+Ne higgyuk, hogy ez veletlen.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment81049"></A>129. <A HREF="mailto:david.merivale@yahoo.com" STYLE="color: #000000">Merivale</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1195&id=81016#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-07-27 01:27:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Istenem, ezek a hungaristak. Szinte megesik az ember szive, ahogy egetik magukat.<br />
+<br />
+"ha egy babónak mozog a szája, akkor hazudik"<br />
+<br />
+Netan eszik, ugye?<br />
+<br />
+Amellett, hogy reklamozod a hungarizmust meg a buta antiszemita szennyirodalmat, igazan elmondhatnad, hogy mit birsz a bombagyarosokban. Vagy Tomcatben. Ok ugye a FAQ-jukban elhataroljak magukat mindenfele rasszizmustol, kirekesztestol.<br />
+<br />
+A tapasztalat persze az, hogy a blogjuk szerzoi es a forumjaik hozzaszoloi kozott tulsulyt kepviselnek a primitiv, rasszista paneleket szoro frusztraltak. <br />
+Kozuluk joparan 5-10-15-20 ev mulva majd szeretnek letagadni, hogy miket irkaltak ide. A web persze kegyetlen. Minden visszakeresheto.<br />
+<br />
+Szoval: hogy is kerul ennyi naci, hungarista erre a deklaraltan nem rasszista platformra? Ahol hazirendben is rogzitik:  "Az alapszabály az, hogy azt zárunk ki, akit akarunk. Akarni általában azt szoktuk, aki:<br />
+<br />
+- másokat mocskol, fenyeget<br />
+- fölényeskedő, kötekedő modorban zavarja a fórum kulturált hangvitelét<br />
+- faszparasztkodik, azaz ostobaságok ismételgetésével húzza le a színvonalat<br />
+- floodol, azaz szándékosan sokszor ismétli ugyanazt a szöveget<br />
+- törvénybe ütköző módon másokat rágalmaz, valótlanságot állít<br />
+(...)"<br />
+<br />
+Hogyan is kerulsz pl. te ide? Es hogy-hogy nem zartak meg ki?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment81016"></A>128. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-07-26 22:46:40</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Gyerekek, nem hiába raktam be azt a Reed linket. A vége felé erős Magyarországra vonatkozó megállapítások lelhetők. Olvassátok el annak fényében, amit ez a babó állít. Semmit nem változtak módszereik, csak a szemantikájuk. Magyarabbak a Magyarnál, angolobbak az Angolnál, a mai napig megpróbálják az észt osztani - csak a nép hozzászokott, hogy ha egy babónak mozog a szája, akkor hazudik.<br />
+<br />
+<B><a href="//betiltva.com/new/douglas-reed-kivalasztott-nep-e-a-babo/" target="_new" style="color: #000000;">http://betiltva.com/new/douglas-reed-kivalasztott-nep-e-a-babo/</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment81008"></A>127. <A HREF="mailto:david.merivale@yahoo.com" STYLE="color: #000000">Merivale</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1195&id=81007#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-07-26 20:52:46</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">a (3)-hoz: "a" babok tehat sem nem homogenebbek, sem nem heterogenebbek genetikailag mint "a" magyarok (hogy egyesek konnyebben felfogjak: a Magyarok).<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment81007"></A>126. <A HREF="mailto:david.merivale@yahoo.com" STYLE="color: #000000">Merivale</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1195&id=81006#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-07-26 20:47:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A tobbivel kapcsolatban azt, hogy<br />
+<br />
+(1) ami a "genetikat" illeti: zart, a keveredest gatlo korulmenyek kozott elo barmely nepcsoportnal elofordulnak az egeszsegre artalmas mutaciok (pl. az arisztokrata csaladok kozott);<br />
+<br />
+(2) bizonyos kockazati tenyezok gyakoribb elofordulasahoz meg csak beltenyeszet sem szukseges (pl. a verzekenyseg egyes afrikai nepeknel gyakoribb, stb.);<br />
+<br />
+(3) "a" babok genetikai ertelemben nem erosebben heterogenebbek mint pl. "a" magyarok - a tortenelem soran jelentosen keveredtek, a "babosag" (mint "etnikum", ha ugy tetszik) ugyanugy nem "versegi leszarmazas", hanem identitas kerdese (is), mint a "magyarsag" - ha a "magyarsag" kriteriuma verseg volna, akkor pl. a mai magyarok donto tobbsege nem volna "magyar", ugyanis mar reg nem a kelet-europai / nyugat azsiai szyeppek nepeinek genotipusa a dominans;<br />
+<br />
+(4) ha lennenek "magyar" (mikent "babo") genek-na jo: genkonfiguracio-, az csak ugy volna lehetseges, ha mi, magyarok beltenyeszet volnank: ez viszont (a beltenyeszet kozismert kovetkezmenyei miatt) azt jelentene, hogy genetikai defektusokkal rendelkeznenk--nincs "nemzeti genotpius", ha volna, az eleg bajjal jarna az erintettek szamara;<br />
+<br />
+<br />
+(4) az iras csupan erotlen kiserlet arra, hogy egyes, az itt jelenlevok jo resze szamara valami oknal fogva kipecezett csoport velt alsobbrenduseget, defektusat bizonyitsa. Egyfajta frocsoges--a sok, lelkes kommentar mutatja, hogy a buta gyulolkodes jo tapanyaga. Mindez elsosorban azert szanalmas, mert EGY HELYBEN FORGO, kiszamithato tarsalgast eredmenyez: elore lehet tudni, hogy az itteni, "nagyit szolo" meglatasok, revelaciok ugyanazt hivatottak bizonyitani: egyes csoportok alavalosagat, alsobbrenduseget, kartekonysagat.<br />
+<br />
+Kb. 12-16 eves kor kozott sokan beszelnek ezen a szinvonalon. Jo reszuk kinovi: tovabbtanul, olvas, jarja a vilagot. Vannak, akik nem novik ki--de meg ok is szerencsesebb eset azoknal, akik valami egyeni frusztraciojukat kompenzalva gyulolkodnek. Lenyegtelen, hogy babok, orkok vagy orknaok, homoszexualisok, stb. ellen. A gyulolkodes az, ami egysegesen serult szemelyisegre utal.<br />
+<br />
+Reszvetem.<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1195&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1195&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1195&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1195&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1195&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1195&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1195&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1195&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1195&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1195&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1195&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1195&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1195&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1195&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1195&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

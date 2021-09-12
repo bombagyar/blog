@@ -1,0 +1,408 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=989#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Mit kíván most épp a nemzet?";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Mit kíván most épp a nemzet?<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 május 27. 11:27:00<BR><DIV CLASS="postheader_small"></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">A Jobbik Magyarországért 
+Mozgalom által kiadott legújabb tizenkét ponttal kapcsolatban nem kívántunk sokat szólni: ennek nem 
+valamiféle ellentét lenne az oka, csak úgy gondoltuk, hogy egyértelmű, a pontok mire utalnak. 
+Jómagam úgy hittem, mindenki számára világos a pontok java részének oka és célja, csak legföljebb 
+utópisztikusnak kiáltja ki, ezért nem foglalkozik vele. Most kiderült, hogy megint tévedtek, 
+minduntalan ugyanabba a hibába esem bele: azt feltételezem, hogy más ember, aki véleményt formál, 
+ír, publikál, legalább alapjaiban ismeri a dolog hátterét.<br><br>Mivel a Kuruc.info is hivatkozott 
+rá, az Indexen pedig gyakran címlapos, ezért jogosnak érzem, ha kicsit szétszedem Rékuci mostani 
+bejegyzését, amelyet úgynevezett fikázó blogjában írt. Nem vizsgálom Réka személyét, az okot, amiért 
+valaki bevallottan fikázó oldalt indít valódi építés helyett. Bár ő megengedi magának, hogy a mi 
+érveinket egészen egyszerűen meg se hallgassa valamilyen homályos indok miatt (mert még akkor is 
+lehetne igazunk, ha az ég zöld színe mellett erősködnénk, akár erőszakosan is, <span style="font-style: italic;">ignoratio elenchi</span> lenne erre hivatkozva nem figyelembe venni 
+például hadászati megállapításainkat), én nem fogom magát a személyt támadni. Személyes megjegyzésem 
+azonban, ha az erkölcsről és etikáról szó esik majd: önmagához képest színvonaltalannak érzem, ha 
+egy hölgy ilyen stílusban és agresszióval ír, érvel.<br><br>Bár munkafeltételemnek állítottam az 
+<span style="font-style: italic;">argumentum ad hominem</span> kerülését és általánosságban 
+szeretnék beszélni a gyakori tévedésekről és a nemtudáson alapuló érvelésről, mégis a nőkkel 
+kapcsolatban fontosnak tartom megjegyezni azt, ami e bejegyzésről eszembe jutott. A nők politikához 
+való viszonya manapság is még a passzivitásban maradt. Történelmi hozadék, hogy a nők inkább a 
+hátországban biztosították a visszatérők életét, katonát neveltek, háztartást vezettek, de a 
+politikában nem vettek részt. Személyiségjellemzőik így alakultak ki, így ma is gyakoribb, hogy egy 
+hölgy azt mondja, ő nem foglalkozik a politikával, mert az rossz dolog. A politika az ország bel- és 
+külügyével, közvetetten tehát a saját, de még inkább utódaid életével való aktív foglalkozást 
+jelenti. Ilyen módon jogot formálhatnak rá a nők (és ma már ezzel valójában nem is lehet gond), hogy 
+ne csupán a gyermek nevelése során formálják annak jövőjét mint anya, hanem mélyebben is 
+foglalkozhassanak az ország problémáival. Előttem nem ismert, hogy általában tehetségükben vagy 
+érzékükben mennyire alkalmasak erre a feladatra, illetve milyen területeken tudnák leginkább 
+hasznosítani ezeket a lehetőségeiket, de elképzelhetőnek tartom a női szerepvállalás ilyetén 
+kiterjesztését. Ám az ismert társadalmi berendezkedés és a női politizálás múltja miatt úgy 
+gondolom, érthető, hogy kisebb arányban politizálnak a nők a mindennapokban: míg a férfi a kocsmában 
+egy sör mellett az aktuális kormányt szidja, addig a nő a műkörmösnél másról beszél. Mindkettő példa 
+kiragadott, és vérmérsékletünk szerint előítéletesnek vagy csak általában jellemzőnek nevezzük. 
+Álláspontom szerint az említett bejegyzés szerzője még nem alkalmas a politikai kapcsolatok 
+társadalmi-történelmi értékelésére, a gazdasági és nemzeti érdekek összehangolásáról szóló vitákban 
+még alulképzett, nem fejlesztette magát ilyen írásokból, tanulmányokból, könyvekből. 
+Véleménynyilvánításával a soviniszta hangokat erősíti.<br><br>A konkrét vitaindító bejegyzés a 
+Jobbik tizenkét pontjáról <a target="_blank"style="color: black; font-weight: bold;" href="//fika.blog.hu/2008/05/27/mit_kivan_a_magyar_nemzet_6">ide kattintva</a> elolvasható. 
+Kérlek, olvasd át, ezután pedig én válaszomban pontról pontra, de felületesen reagálok. Nem 
+feltétlenül az adott posztra, mert annak minősége szerint nem vitára készült, csak <span style="font-style: italic;">fikázásra</span>, de a tévedések sokakban élhetnek. A válaszaim azért 
+felületesek, hogy könnyedén továbbadhatók legyenek saját vitáitokban, hiszen az ilyen tévedésekben 
+élő emberek nem elég türelmesek, hogy minden összefüggést és a felismeréshez vezető roppant hosszú 
+utat végigjárják velünk.<br><br><span style="font-weight: bold;">1. A nemzetközi tőke előnyben 
+részesítése helyett nemzeti érdekérvényesítést.</span><br>Mivel nem értek hozzá, nem akarok 
+gazdaságpolitikai eszmefuttatásba bonyolódni. Az azonban tévedés, hogy itt valamiféle kommunista 
+vagy hasonló rendszer feléledéséről lenne szó. Nem lehet egyetlen már ismert szóba sűríteni a 
+végcélt: rásüthetnéd például a merkantilizmus bélyegét egy hasonló gazdaságfilozófiai váltásánál a 
+próbálkozásra, de ez éppen olyan szűklátókörűség, mint a XXI. századi Magyarországon fasisztákat és 
+30-as évekbeli nemzetiszocialistákat vizionálni. A pont lényege a hazánkban működő kisebb 
+vállalkozások életben tartása: felháborító, hogy a Tescóban csak Kínából érkezett fokhagymát kapunk. 
+A több mint 7000 kilométerről érkező növényről nem feltételezhető, hogy jobb, mint a magyar. A kínai 
+akácméz minőségében, sőt árában is távol marad a magyarországitól. A vízigesztenyét aranyért hozzuk 
+be, mi sulyomként ismerjük mint kárpát-medencei őshonos növény. Ez a pont csak a folyamatosan 
+küszködő kisvállalkozókon segítene, nem jelent teljes export-import tilalmat, ezt hol olvashatta? 
+Egyetlen mondat volt csupán, mégis kemény és hibás előítéletekből építkezve teljes levezetést 
+olvashattunk attól, aki nyilvánvalóan bennünket tart végzetesen előítéletesnek.<br><br><span style="font-weight: bold;">2. A vidék tudatos pusztításának megszüntetését, a magyar föld 
+védelmét.<br></span>A vidék valóban aktívan pusztítja önmagát, de ennek oka van. Érdemes eggyel 
+tovább is gondolni, és okokat keresni. Nem azért termel igénytelen búzát a paraszt, mert ez élvezi, 
+hanem azért, mert úgy gondolja, ez hoz hasznot. Figyelni kell a mondat első felét: a pusztítás 
+tudatos, ezt kell megakadályozni. Az első ponttal ez is összefügg, hiszen a nemzeti termelést 
+előtérbe kell helyezni: amit megtermelhetünk magunknak, azt érdemes is megtermelni. Ha valamivel 
+olcsóbb is az import áru, annak minősége sokszor elmarad a hazaitól, illetőleg a hazai munkaerő 
+puszta léte közvetetten hasznot hoz. A Kárpát-medence egyik nagy értéke a föld: ezt nem kihasználni 
+őrültség.<br><br><span style="font-weight: bold;">3. A magzai élet védelmét.<br></span>Rékuci 
+állításaival nem kell vitázni: alapvető érvtechnikai hiba valamiféle XXI. századiságról beszélni, 
+mert nincs a XXI. századnak kollektív értékrendje, ha van is, azt én nem követném. A többieknek 
+hozzátenném, hogy az abortusztilalom nem jelenti a beteg, torz vagy erőszakból fogant gyermekek 
+védelmét is, azonban a magzatvédelem többet is jelent puszta abortusztilalomnál, hiszen nem ez volt 
+a pontban, érdemes arra reagálni, amit olvasunk: a magzatot születése után kell óvnia az államnak, 
+például úgy, hogy gondoskodik az olyan csecsemőkről, melyek alkalmatlan szülőhöz születtek. Az 
+alábbi kijelentés pedig nőietlen, és akkor, ha egy ilyen súlyos átok egy XXI. századiságról beszélő 
+nőtől elhangozhat, többé nem akarok XXI. századi lenni:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;(...) 
+kivánom a kitalálójának, hogy a lányát erőszakolja meg négy vandál, majd a kislány legyen öngyilkos 
+amikor megtudja: a hazai törvények szerint kénytelen kihordani a magzatot.&#8221;</div><br><span style="font-weight: bold;">4. A család- és gyermekvédelem megteremtését, gyermekközpontú 
+jövedelemelosztást, családi adózást, családi nyugdíjrendszert.</span><br>Nehéz itt is vitára kelni. 
+Demográfiai válságban élünk, az emberek nem mernek elég gyermeket vállalni. Ennek következménye 
+hosszabb távon beláthatatlan. Ahogyan Réka is jól látja, a cigányság gyermekvállalási kedve 
+lényegesen nagyobb, viszont éppen ezért a magyar családok hasonló kedvét kell növelni: ha 2012 
+környékére több embert kell majd eltartani, mint ahányan az eltartók vannak, társadalmi-gazdasági 
+összeroppanás történhet, amely eredménye a válságokon túl akár még etnikai alapú polgárháború is 
+lehet. A gyermekvédelem szó magában foglalja azt is, hogy jövedelmet (támogatást) csak akkor kap 
+valaki a gyermeke után, ha megfelelően neveli, a pénzt igazolhatóan a neveltetésére fordítja. 
+Nevetséges, hogy a családi nyugdíjrendszer elvét nem ismerve azt nem is vizsgálja a hölgy, csak 
+megszellőzteti, hogy talán kacsa az egész. Ha valaki a véleményét olyan fontosnak érzi, hogy 
+közreadja, jó volna, ha készülni is rá, mert pusztán azért nem válik axiómává egy mondatunk vagy 
+hitelesség a véleményünk, mert létezik. Az Indexet természetesen a bejegyzés főoldalivá választása 
+is minősíti.<br><br><span style="font-weight: bold;">5. Korrupció-, csalás- és hazugságmentes 
+közéletet.</span><br>Ennyi, ezzel mindenkinek egyet kell érteni. Az író hozzáállását jellemzi, hogy 
+itt is rosszindulatú megjegyzést volt a válasz. Ez minősíti az egész írást, s mindazokat, akik 
+feltételek nélkül egyetértenek vele.<br><br><span style="font-weight: bold;">6. Vallás- és 
+erkölcsoktatást az elemi, közép- és felsőoktatásban.</span><br>Réka jól látja, hogy a vallásokról (és 
+vélemény szerint minden hozzáférhető vallásról!) szóló mindenféle tájékozódás műveltségi kérdés, de 
+ennél is több: magában foglalja az erkölcsiséget és a legtöbb vallás remek tanításokat tartalmaz az 
+életre vonatkozóan. Semmi gond nem lenne a leendő fizikusok hitoktatásával, hiszen az igazán magas 
+szinten gondolkodó és képzett tudósok a társadalmi arányokhoz képest nagyobb számban térnek meg 
+valamiféle istenséghez. Mégis elfogadhatónak és védhetőnek tartom a felsőoktatással kapcsolatos 
+ellenvéleményt, és a jelenlegi hitoktatási rendszert is egyoldalúnak, elfogultnak és 
+színvonaltalannak gondolom. Mindezek ellenére az nem érv, hogy egy fizikusnak nem kellene a 
+vallásokat tanulmányoznia. Ahogyan a történelmet is kell okulására, úgy a vallásokat is, melyek oly 
+sokszor befolyásolták a világ alakulását.<br><br><span style="font-weight: bold;">7. Egészségtan-oktatást az elemi, közép- és felsőoktatásban.</span><br>Ha létezne egészségtan-oktatás évente több százan nem halnának meg. Nagyjából ezt takarja, de ez kiegészíthető háztartási ismeretekkel és egyéb fontos tantárgyakkal.<br><br><span style="font-weight: bold;">8. Egységes, kötelező társadalombiztosítást.</span><br>Korrekt követelés. Aki nem fizet, kidobni a fenébe. Visszacsatolva a családi támogatáshoz: a nagycsaládosok kevesebb társadalombiztosítási járulékot kell, hogy fizessenek.<br><br><span style="font-weight: bold;">9. A magyar nyelv és kultúra törvényes védelmét.</span><br>Ha valamit nem véd a törvény, akkor azon tobzódhatnak az olyan emberek, akiket nem zavar például az, ha egy országosan fogható televízióban értelmezésnehezítő helyesírási hibák jelennek meg. Ahhoz, hogy megértsük egymást, bizonyos fokú nyelvi tisztánlátás szükséges. A törvényi védelem lehetőséget adna a büntetésre olyan esetekben, ha valaki visszaesően, többször sért alapvető helyesírási elveket, például a muszáj szót elipszilonnal írja egy országos napilapban. Ez nem hipernacionalizmus, több országban működik efféle szabályozás, olyan ez, mint a médiatörvény.<br><br><span style="font-weight: bold;">10. Törvényben szabályozott médiaegyensúlyt a frekvenciaelosztásban.</span><br>Teljes tájékozatlanságra vall, hogy valaki feltételezi: a frekvenciahelyet adják, ha valaki tesz érte. Tenni érte csak pénzt kell. Egy televíziós frekvencia megszerzéséhez több mint háromszázmillió forintot (!) kell letenni, erre pedig csak gazdasági és politikai érdekszervezeteknek lehet lehetőségük, amelyek remekül használhatják propagandacélokra a médiaszócsövet. Egyébként sem megfelelő vitastílus az alaptalan minősítési hullám.<br><br style="font-weight: bold;"><span style="font-weight: bold;">11. Új alkotmányt.</span><br>Újabb tájékozatlanság. Ahogyan ez köztudott (vagy annak kellene lennie) jelenlegi Alkotmányunk a preambuluma szerint ideiglenes, az egy elnyomó, szerintünk nemzetellenes (és nem csak mint magyarnemzet-ellenes, hanem minden nemzetet ellenző) kormány alkotta fércmunka. Illik tájékozódni ilyen kijelentések előtt, mert az ember önmagát hitelteleníti el értő társaságban. Sajnálatos, hogy oktatási rendszerünk szándékos megváltoztatása révén már azt is eredménynek szokás tekinteni, ha valaki egyáltalában képes és hajlandó véleményt mondani. Az már nem is érdekes, hogy van-e mögötte tartalom, tudás, alap?<br><br><span style="font-weight: bold;">12. Állampolgárságot a határon kívül élő magyarok számára.</span><br>Nem igaz, hogy könnyedén kaphat egy határon túli magyar magyar állampolgárságot: olykor megalázó a procedúra, mikor afrikaiak, kínaiak, héberek stb. között kell bizonyítania, hogy tud magyarul beszélni és írni. Ez a téma részletesebb átbeszélést igényel, érdemes elolvasni a nemzeti érveket is, hogy valódi vita legyen indítható.<br><br>Réka demagógiáról szóló sorokkal zárja írását. Ez szórakoztató. Ahogyan az is különleges, hogy épp nekem kell fölhívnom az ő figyelmét arra, hogy a világ nem bipoláris, nem csupán fekete és fehér dolgokból áll. Nem minden jobbikos náci (sőt, szerintem nehéz lenne ilyet találni), nem minden zsidó támogatja a fajgyűlölő, háborúpárti tömeggyilkos anyaországát. Aki a fönti pontok után diktatúráról kezd beszélni, az ezt rosszindulatból vagy az agymosás utáni tudatlanságból teheti ezt. Mindkettő veszélyes és súlyos hiba. Aki a magyar nemzet évszázados értékeit, egy működőnek nevező rendszert diktatúrának bélyegez, nem tudja, hogy ijesztőbb diktatúrában él a mindennapok során a színes áruktól és ígéretektől elkábítva.<br><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><br> </div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-05-27&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT>&nbsp;</TD><TD WIDTH=5%>&nbsp;</TD></TABLE></TD></TR>
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

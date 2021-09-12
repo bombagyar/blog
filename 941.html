@@ -1,0 +1,603 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=941#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Marx lázálmai az ember biológiai természetének tükrében";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_448.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Marx lázálmai az ember biológiai természetének tükrében<BR><DIV CLASS="postheader_small">Blog - Molnárgörény</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 május 15. 14:50:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_941.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">A baloldaliak legáltalánosabb 
+mentegetőző szövege a valaha létrejött  "létező szocializmusokról" - melyek mind embersanyargató 
+diktatúrák  voltak, legfeljebb a kezükre tapadó vér mennyiségében volt különbség -  az, hogy "a 
+marxizmus egy pozitív ideológia, csak a végrehajtás  csúszott félre, az ideológia megalkotói nem így 
+akarták".<br><br>Ugyanakkor  tény, hogy eddig demokrácia vagy legalább nagyjából humanista értékeket 
+ valló állam marxista talajon soha nem jött létre.<br><br>Fel kell tenni  a kérdést: Vajon ez 
+véletlen, vagy szükségszerű? Lehet-e marxista elvek  mellett demokratikus, humanista államot 
+működtetni?<br><br>A választ  akkor kapjuk meg, ha a "társadalomtudós" Marx nézeteit az ember  
+alapvető biológiai természetének ismeretében vizsgáljuk meg - érdekes,  hogy efféle összevetésekről 
+nemigen van tudomásunk. Az én eredményem: a  marxizmus az ember biológiai természetétől idegen; 
+részben annak  legalantasabb vonásait mozgósítja, illetve olyan elvárások mentén épül  fel, 
+melyeknek az ember biológiai lény léte miatt képtelen megfelelni  (illetve: az emberek nagy többsége 
+mindenképpen képtelen).<br><br>A  marxizmus tehát nem egy szép és jó ideológia, amit dilettánsok  
+torzítottak el; hanem egy dilettánsok által fabrikált eszmerendszer,  melyet gazemberek használtak 
+ki saját hatalmi céljaikra.<br><br>Marx alapvetően nem is volt társadalomtudós: csak afféle 
+félművelt tudósparódia. Mély elismerésem (bizony ám!) Shadainak <a target="_blank"style="font-weight: bold; color: black;" href="//www.judapest.org/190-eve-szuletett-karl-marx/">ezért a posztért</a>,  melyben 
+Marxot egyszerűen és nagyon igaz módon letalmudistázza, és oda  teszi, ahová való: a 
+szemétideológiákat barkácsoló kóklerek közé. A  poszt erre vonatkozó részletét érdemes szó szerint 
+idézni:<br><br><blockquote><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">Paul Johnson brit történész úgy jellemzi Marxot, mint 
+akinek egyéniségében &#8220;egy bizonyos fajta tudós&#8221;, nevezetesen a talmudista jellemző 
+vonásai fedezhetőek fel: &#8220;benne is megvolt a hajlam arra, hogy óriási mennyiségű félig 
+megemésztett tudásanyagot gyűjtsön össze, és enciklopédikus műveket tervezzen, amelyek aztán sosem 
+készültek el, ő is mélységesen megvetette a nem tudósokat, s rendkívül magabiztosnak és 
+ingerlékenynek mutatkozott tudóstársaival szemben.&#8221; Mi több, folytatja Johnson, 
+&#8220;jóformán egész életműve talmudista jellegű, mert lényegében nem más, mint a szakterületen 
+működők munkáinak a kommentálása, bírálata.&#8221;</div></blockquote><br>Csak halkan, de nagyon 
+határozottan  jegyzem meg: ennyit a "minden zsidó baloldali, minden zsidó  Talmud-párti", és hasonló 
+sztereotípiákról. A Paul Johnson-idézet amúgy  telitalálat, minden szava pontosan ül!<br><br>Nos, 
+társadalomtudományi  alapon a formális logikát jól, néhol extrém jól alkalmazó Marxot  legyőzni 
+szinte lehetetlen. A baj ott van, hogy a marxi cél premisszái  teljesen hibásak. Mit is akart ő 
+elérni? A kommunizmust, a szükséglet  szerinti elosztást, az emberek teljes egyenlőségét - mindazok 
+kiirtása  vagy beolvasztása után, akik ebből a világméretű prokrusztészi ágyból  valahol 
+kilógnak.<br><br>Akkor vegyük elő a biológiát. Van-e olyan  klasszikus társadalmi előírás, ami 
+masszív normaként élt évezredekig,  de mégsem tartották be, mégpedig biológiai okból? Erről már 
+írtam  korábban is, de most röviden megismétlem a lényeget, mert fontos.<br><br>Van  bizony a 
+biológiai temészetünkbe ütköző társadalmi (mondhatni  ideológiai) előírás: és éppen a 
+zsidó-keresztény vallások által  megkövetelt monogámia parancsa. Mind a zsidó, mind a keresztény  
+vallások monogám házasságot írnak elő, szexuális hűséggel. Helyenként  hihetetlenül szigorú 
+büntetésekkel, gondoljunk a biblikus megkövezésre  - és mégsem működött a dolog! A legszigorúbb 
+rendszerben is mondhatni  tömeges volt a félredugás, a házasságon kívüli szex; olykor a szó  szoros 
+értelmében halált megvető bátorsággal. Persze erről valósághű  statisztika nincsen, de azért elég jó 
+képet ad a probléma  fontosságáról-gyakoriságáról, hogy lényegében erről szól az egész  
+világirodalom.<br><br>Egyszerűen arról van szó, hogy ahogyan az  emberszabású majmok sem, úgy az 
+ember sem monogám alaptermészetű.  Afféle fakultatív monogámia talán a legmegfelelőbb számunkra: 
+állandó  társsal, de időnként máshol szerezve friss élményeket és  változatosságot nyújtó 
+kielégülést (a csimpánz is nagyrészt így él).  Nemrég egy tudományos kutatás az állatoknál 
+kimutatta, hogy a  testméretek és a testdíszek mutatják, hogy az adott fajon belül melyik  ivar 
+hajlamosabb a poligámiára (lásd pl. a szarvast, ahol a bika  nagyobb és agancsa van). Embernél a 
+díszek körülbelül egyenlőek - a  szakáll-bajusz a cicivel ki van egyenlítve -, a méretek pedig a 
+férfiak  nagyobb poligámiáját mutatják. Ez nagyjából meg is felel a valóságnak -  több vallás kezeli 
+is a kérdést, aszimmetrikusan többnejűséget engedve.<br><br>A  monogám házasság az egészségügyi 
+forradalom előtt úgy-ahogy (legalább a  felszínen) működőképes volt: a házasfelek ugyanis átlagosan 
+meglepően  rövid ideig élhettek együtt. Egyszerűen azért, mert jó eséllyel egyikük  hamar meghalt: 
+jött a török, a tatár, a pestis, a kolera, a  vakbélgyulladás, a tüdőgyulladás, a fosást okozó 
+talajvíz, a koszos  kezű bába, vagy akármi más, ami ma banalitásként kikezelhető. Mondhatni  afféle 
+időbeli házaspárcserélő promiszkuitásra volt lehetőség: a túlélő  fél hamar újraházasodott. Ahogy a 
+nyolcszázas években gyorsan nőni  kezdett az átlagéletkor, rögtön ki is kellett venni az egyházak 
+kezéből  a házassági ügyeket, mert a válás irányába (Biblia ide vagy oda) akkora  feszítőerő volt, 
+hogy az államnak közbe kellett lépnie.<br><br>Az  emberre saját biológiai természete másban is 
+jellemző. Az egyetlen  állatfaj, amely akár tömegméretekben hajlamos fajtársai leölésére elvi  
+okokból; mert egy átlagos állat legfeljebb étel, szex, élettér vagy  esetleg rangsorbeli hely miatt 
+hajlandó küzdeni, és a fajok döntő  többségénél a küzdelem soha, vagy csak nagyon ritkán halálos  
+kimenetelű. Azt nehéz lenne megmondani - és túl is nyúlik a tárgyalt  témán - hogy az emberből a 
+fajtárs megölésére vonatkozó gátlás  kiterjedt hiánya vajon eleve be van kódolva, és az élővilég 
+többi  részét védi a legfejlettebb faj túlzott térhódítása ellen (egyelőre  sikertelenül), vagy 
+tanult dolog - de elég valószínűen nagyon ősi  lehet, mert elvi okoból (is) vívott háborúkat már a 
+nagyon korai  történelemből is ismerünk.<br><br>Mármost ha Marx fejével gondolkozunk  tovább, akkor 
+szükségképpen el kell fogadnunk a darwini evolúciós  elméletet - hiszen Marx a vallást humbugnak 
+mondta, márpedig elfogadott  materialista életelmélet jelenleg Darwinén kívül nincsen (ez most nem  
+jelenti a szerző ideológiai álláspontját, csak Marx saját logikáját  alkalmazom az ő rendszerére 
+biológiai oldalról, konzekvensen).<br><br>No,  akkor lássuk: lehet-e kommunizmust csinálni a 
+biológiai emberek  közösségében? Aligha! Először is: a létért való, fajon belüli  versengést, ami a 
+fejlődést előreviszi, hogy a fenébe lehet fenntartani  egy prokrusztészi jelleggel egyenlősítő 
+társadalomban? Mi a fenének  tanuljak én, ha ugyanúgy megkapok mindent, amire csak szükségem van? A  
+megvalósuló kommunizmus, ha mindenkinek alanyi jogon minden luxus jár,  maga a céltalanság: azonnali 
+féktelen dekadencia alakulna ki,  önmegvalósítási lehetőség nélkül. Kicsiben már láttunk hasonlót:  
+például amikor az ókori Róma már az egész akkori világ ura volt, az  akkori viszonyok szerint szinte 
+korlátlan gazdagságú uralkodó réteg  gyorsan elkorcsosult annyira, hogy aztán elsöpörték őket a még 
+éhes  népek. A Marius idején történt germán támadás vagy a pun háborúk  esetében az ellenség ereje 
+relatíve nagyobb volt - de akkor Rómának még  volt miért küzdenie, még feljövőben volt. A céltalanná 
+váló társadalom  törvényszerűen megsemmisül - márpedig a kommunista társadalom céltalan.<br><br>A  
+céltalanság azért is súlyosabb dekadenciába visz, mert az ember képes  saját halálát felfogni és 
+annak szükségszerűségét felismerni (ha  elfogadni nehezen is). Nos, egy materialista, a halál utánra 
+semmit se  kínáló, belső versennyel nem rendelkező, mindenkinek mindent a segge  alá toló kommunista 
+társadalomban mi lehet az egyén életcélja? Megdugni  még több nőt? Naponta száz osztrigát bezabálni? 
+Vagy marad a pia és a  kábítószer, az egyén borzalmas fölöslegesség-tudatának levezetésére?...  
+Tartok tőle, hogy az utóbbi...<br><br>Ha a kommunizmus szükséglet  szerinti elosztását némileg az 
+érdemekkel színezzük (hogy legyen  motiváció), akkor meg szépen eljutunk előbb-utóbb Huxleyhez (Szép új világ - köszi Demo). 
+Merev  kasztok, a dupla-alfa-pluszoknak teniszpálya, az epszilonoknak  rabszolgaság. Nos, egy ilyen 
+társadalomban a kizsákmányolt epszilonokat  éppenséggel a marxi eszmékkel lehetne mozgósítani, hogy 
+az alfákat  leölve vívják ki a szabadságukat - ámde ha a marxi eredményt maga a  marxizmus verné 
+szét, az akkora sikertelenségi paradoxon, hogy további  bizonyításra nem szorul az ideológia 
+képtelensége.<br><br>A kommunizmus  tehát kilőve. Vizsgáljuk meg, hogy az odavezető út lejátszható-e 
+ tisztességesen: vagyis, a marxista elvek mentén történő  hatalomátvételből kijöhet-e bármi 
+jó?<br><br>A marxi elmélet lényege az  osztályharcos ideológia; ez jogosítja fel a "kizsákmányolt"  
+munkásosztályt a küzdelemre. Először is: Marx ezzel elkésett. Az igazán  embertelen és voltaképpen 
+öngólt lövő kapitalizmus ugyanis korábban  végződött - addigra rájöttek, hogy kereslet nélkül profit 
+sincs, tehát  a "kizsákmányolás" hosszú távon sikertelen. Nem csak a munkások állandó  lázongása és 
+elégedetlensége miatt, de azért is, mert a fizetőképes  kereslet hiánya alapjaiban kérdőjelezi meg a 
+tőkés sikerét. Téves tehát  az a hit, higy a mai "emberarcú kapitalizmus" az osztályharc eredménye;  
+az bizony magától is létrejött volna, szimpla racionális alapon. Már  megvoltak a csatornák a 
+tehetséges szegények érvényesülésére is: a  nyolcszázas évek egyházi ösztöndíjaitól a tanulmányi 
+sikereken alapuló  támogatásokig.<br><br>Az osztályharccal az a hatalmas baj, hogy  voltaképpen 
+kőkeményen antidarwinista. Materialista elmélettől ez elég  csúnya hiányosság... Miért is? Hát 
+egyszerű belátni: ugyanis az  "elnyomott" munkásosztály általában nem véletlenül elnyomott. Ki a  
+munkás? Aki nem képes tanulni, aki nem tud bonyolult dolgokat  megérteni, aki gyengébb képességű 
+azoknál, akikből értelmiségi lesz.  Fanyalgóknak: tudom, hogy vannak kisemmizett tehetségek, tudom, 
+hogy  nem minden értelmiségi okos! De azért nagy átlagban igaz, hogy  (különösen a mai társadalmi 
+mobilitás, ösztöndíjak, stb. mellett) az  marad fizikai munkás, aki nemigen tud többet, mint a 
+lapátot markolni.  Ez nem baj, elvégre lapátos emberekre szükség van. Az emberiség  IQ-átlaga annyi, 
+amennyi, mindig lesznek jobb és gyengébb képességűek -  ezeket egyformává nyírni több mint bűn: 
+hiba! Mindenki ott legyen, ahol  teljesíteni tud. A lapátosok nagyon rosszul teljesítenek az  
+államvezetésben - és ez nem véletlen.<br><br>A leggyengébb képességű  rétegből élcsapatot csinálni 
+természetellenes és a társadalomra nagyon  is veszélyes kísérlet. Ebből jó nem sülhetett ki - mint 
+ahogy nem is  sült ki semmi hasznos eredmény...<br><br>A lapátos és a könyves ember  között eleve 
+van egy alapvető különbség. Én egy nagymúltú munkás  (mondhatni, munkásarisztokrata) 
+horgászegyesület tagja vagyok: annak  idején ide egyetemistaként nagyon nehéz volt bejutni. Az öreg 
+vasasok  rendre az orrom alá dörgölték: "nem muszáj tanulni, lehet ide jönni a  gyárba!". Csakhogy 
+Auschwitztól Recskig mindenhol kiderült, hogy a  könyves emberek némi akklimatizáció után egész jól 
+elboldogultak a  lapátosok szerepében - míg fordítva erről szó nem volt. A 85-ös IQ-val  rendelkező 
+kubikost hiába állítják a műtőasztalhoz, nemhogy fél, de  húsz év alatt se fogja tudni azt, amit az 
+orvos...<br><br>Nos, a  marxista munkásfelszabadító osztályharccal az a legnagyobb baj, hogy az  
+átlagosan leggyengébb szellemi képességű réteget privilegizálja.  Márpedig a gyengébben gondolkodók 
+befolyásolhatóbbak, erőszakra  hajlamosabbak, a szervezési-vezetési képességeik pedig értelemszerűen 
+ gyengébb. A forradalmaik véresebbek a szükségesnél, majd ha a hatalmat  átveszik, vezetőik (szintén 
+a képességdeficit miatt) hajlamosabbak az  üldözési mániára, a szék féltésére, mindenáron való 
+őrzésére. Hová  vonulhatott volna vissza Dzsugasvili elvtárs, ha demokratikusan  elküldik? Elvégre 
+mégse mehetett vissza Grúziába postát rabolni... Így  aztán gyorsan kinyírt mindenkit, aki húsz 
+kilométer közelségbe  kerülhetett a székéhez - és ez bizony minden szocialista országban  elfogadott 
+gyakorlat volt...<br><br>Egyszerűen és törvényszerűen torz  az a fejlődés, amit az átlagosan 
+leggyengébb képességű réteg vezényel.  Ha pedig kialakul itt a "krémből" valamiféle értelmiség: az 
+egyrészt  elszakad a munkásoktól, és ugyanolyan kizsákmányoló lesz, legfeljebb  nem a tőke, hanem az 
+állam nevében - ahogy ez meg is történt minden  egykor létező szocialista országban. Marx nevében 
+voltaképpen nem  hoztak létre új rendszert; csupán a tőkés helyébe a személytelen  államot 
+állították, melynek a munkásokkal szemben még szemetebb módon  kizsákmányoló vezetőit a munkásságot 
+elhagyó hivatásos forradalmárok,  illetve a benyalási alapon kooptált cinkos értelmiségiek 
+állították ki.  Ezeknek a vezetőknek viszont a tisztességes gondolkodókkal szemben  vaskemény 
+zsarnoksággal kellett fellépniük (azonnal eltiporva a szólás-  és sajtószabadságot), nehogy azok 
+leleplezzék a rendszer elnyomó voltát.<br><br>A  privilegizált réteg képességhiánya törvényszerűen 
+vezet az ideológia  abszolutizálásához: elvégre milyen más indoka lehetne a képesség  nélküli 
+hülyének arra, hogy vezető maradjon, mint egy ezt  "munkáskáder"-alapon előíró ideológia? Elvégre a 
+tehetség ellen valamit  fel kell hozni, hogy miért nem kerülhet oda, ahol a helye lenne - a  legjobb 
+és kivédhetetlen, hogy nem alkalmas a származása.<br><br>A  létező szocialista államok voltaképpen 
+nem voltak egyebek, mint  elcseszett kapitalista országok, ahol a tőkét állami kézbe vonták  össze, 
+és hozzá nem értő, bürokratikus idióták működtették - vaskos  ideologikus felhanggal. A munkások 
+sorsa nem jobb lett, hanem rosszabb:  ugyanolyan szar életszínvonal mellett még szeretniük is 
+kellett az őket  változatlanul elnyomó rendszert. Ebből táplálkozott például az 1956-os  forradalom 
+elementáris ereje: mert ha már enni nincs mit, legalább  hagyjanak békén heverni az ünnepnapokon, 
+nem igaz?<br><br>Mi tehát a  marxista munkásfogalom? Fajelmélet. Az bizony. A mellesleg antiszemita  
+zsidó Marx volt a fajelméletek legfőbb elvi megalapozója. Teljesen  mindegy, hogy a foglalkozás vagy 
+egyéb alapján, de a tömeges születési  kiváltságok (illeve hátrányok) és az ezekre alapozott 
+ideológia az  szimpla fajelmélet. Tökmindegy, hogy zsidók, munkások, cigányok vagy  bárók képezik az 
+adott ideológia előnyben vagy hátrányban  részesítettjeinek táborát: ez akkor is ugyanolyan 
+fajelmélet. Marxnak  nem csupán Sztálin, de Hitler is a következménye.<br><br>Egyszóval, Shadaival 
+egyetértve: Fuck you, Marx!<br><br> </div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-05-15&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=941&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=941&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=941&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=941&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=941&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=941&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=941&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=941&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=941&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=941&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60162"></A>80. Petur</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=941&id=59628#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-20 09:07:24</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3497.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Agelina67.<br />
+Tökigaz,és tökgáz ez a dolog.<br />
+Aqrwa életbe... :-(((</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59711"></A>79. 79. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=941&id=59638#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-18 11:35:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Miért, te azt teszed, amit a médiában nyomatnak?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59638"></A>78. <A HREF="mailto:roth_adam@citromail.hu" STYLE="color: #000000">Vincenzo/axe</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-05-17 23:41:28</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2252.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A média gazdag babók kezében van, tehát egyáltalán nem más kérdés, hogy mit nyomat!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59631"></A>77. 77. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=941&id=59628#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-17 23:05:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hol tiporják és miféle babók ezeket az évezredes értékeket? Vagy a tiédet lehet? Csak mert néhány hülye azt mondja, hogy mondjuk drogoztasd a gyereked, te máris azt fogod tenni?!<br />
+<br />
+Csak annak az értékeit lehet sárba tiporni, aki hagyja. <br />
+<br />
+Amúgy a babók (értsd: zs. vallású emberek) nagyon-nagy többsége szó szerint évezredes társadalmi normák és értékek szerint él, amelyekből számosat átvett és beépített a kereszténység és az ún. európai értékrend is.<br />
+<br />
+Az meg, hogy a média mit nyomat, más kérdés. <br />
+<br />
+Továbbá minden értékrendet meg lehet és kell is kérdőjelezni. Már persze, ha gondolkozó lény vagy és nem egy tekintélyelvű társadalomban élő programozott agyú droid. Akkor nem kell, sőt, nem is szabad megkérdőjelezni semmilyen értékrendet, normát, szokást, hagyományt.<br />
+<br />
+A felülírás pedig rendszerint alapos és nyomós okokból következik be. Te, vagy én hiába írnánk felül bármilyen szabályt, a többséget nem hatná meg.<br />
+<br />
+Sztálin születésnapja sem írhatta felül a karácsonyt...<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59628"></A><FONT COLOR="#FF0000">76. </FONT>Angelina67</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-05-17 22:58:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1952.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59473"></A>75. Eltiron</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=941&id=59466#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-17 12:27:30</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2620.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Egy pici különbség:<br />
+Amit Te írsz, aza a tibeti buddhizmusra ("klasszikus") vonatkozik.<br />
+A Zen egészen máshogy él.<br />
+De gondolom, nem vagy egy hülye ember, így ezt magadtól is tudod.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59466"></A>74. 74. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=941&id=59444#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-17 11:50:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">szeritnem ne menjünk ebbe a promisztkuitásos dologba jobban bele, ha a világvallásokat en bloc nézzük, mert hasonló eredményekre teljesen más okból kiindulva, lényeges eltérésekkel jutnak el.<br />
+<br />
+Továbbá a buddhizmus szerint minden élőlénynek ugyanúgy lelke van, és csak a karma és a bardoban történtek határozzák meg, hogy mivé születsz újjá: démonná, állattá, emberré vagy istenné.<br />
+<br />
+A buddhizmus embereszménye pl. csak azért tekinti legtöbbnek az embert, mert szerintük annak van egyedül lehetősége kilépni a körforgásból, a szamszárából. <br />
+<br />
+Az önfegyelem, mint olyan, már a legősibb prototársadalmakban alapvető képesség volt, még ha nem is nevezték annak. Önfegyelem nélkül nincs csapatmunka, sem eredményes közösségi élet.<br />
+<br />
+"Nem azért kaptunk Istentől értelmet és lelket (megint ez a szó), hogy ösztönlényként éljünk."<br />
+<br />
+A végkövetkeztetéssel egyetértek, az indoklással nem. Ha ugyanis Isten azt akarta volna, hogy ne ruhában, hanem meztelenül éljünk, akkor meztelennek teremt minket. Jaaa, hogy annak teremtett? <br />
+:D :D érted, ugye? ;)<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59444"></A>73. Eltiron</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-05-17 10:55:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2620.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hm.<br />
+Lényegében egy szociáldarwinista esszét olvashattunk MG tollából, aminek nagy részével egyetértek.<br />
+<br />
+Valóban: egy olyan ideológia, ami kiöli az emberből az ambíciót (hiszen mi a faszra törekedjek, ha úgyis megkapom, ami Nekem -elméletileg- jár?), az emberellenes, és hosszú távon a faj (márhogy az emberi) kihalásához vezet.<br />
+<br />
+Azonkívül olyan elemi szükségleteket is elvesz a (gondolkodó) embertől, mint a hatalomvágy, a dominancia. (Ebbe nem akarok belemenni; tessék Jungot olvasni.)(Freudot nem annyira, inkább csak összehasonlítási alapként; egy drogos szexmániás babó/fúúúú! antiszemitizmus!/ne akarja nekem megmondani a tutit.)<br />
+<br />
+Szóval, valóban elbaszott premisszái voltak Marxnak.<br />
+<br />
+Nem is ezzel akarok vitázni; védje Marxot az, akit fizetnek érte.(Van belőle pár...)<br />
+<br />
+Amivel vitázni akarok, az MG vallásértelmezése. A "babó-keresztény vallás" ugyebár tiltja a promiszkuitást; ez súlyos csúsztatás, mert a legtöbb vallás ugyanúgy tiltja.<br />
+Miért?<br />
+A keresztény (muzulmán, buddhista, etc.) vallás azt mondja, h mi azzal állunk az állatok felett, h lelkünk van. Egy delfin lehet okos, egy csimpánz is, de nincs LELKÜK. Ők párosodnak; mi szeretünk. A szeretet viszont (Pál 1. levele a Korinthusbeliekhez) más sztori. Ha én szeretek, akkor nem akarok mással "párosodni", mert a lelkünk köttetik össze. A fajfenntartás és a hit ebben a kérdésben kéz a kézben jár.<br />
+Azonkívül: a legtöbb "major" vallásnak egyik legfontosabb része: az önfegyelem. Nem azért kaptunk Istentől értelmet és lelket (megint ez a szó), hogy ösztönlényként éljünk.<br />
+Szóval amikor a férfin kitör a biológia, akkor legyen szíves befelé fordulni, kontrollálni magát, és azon gondolkodni, ha enged a biológiai kényszernek, akkor kárt okoz egy másik ember érzelmeiben.<br />
+<br />
+Ez szép hosszú eszmefuttatás lett.<br />
+<br />
+NEM vagyok vallási fanatikus, egyébként.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59379"></A>72. Ungi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=941&id=59263#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-17 01:30:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">a flamen Dialis: &#8222;Tudom, az ember megérti. De attól még életben akar maradni. Az örök emberi tulajdonságról pedig a legtalálóbban: Kurt Vonnegut: Az ötös számú vágóhíd&#8221;<br />
+Én annak ezt mondom: &#8222;Miért nem ír helyette inkább egy gleccserellenes könyvet?&#8221;<br />
+Tartóztassuk fel a gleccsereket, úgyis olvadófélben vannak. De ez nem annyira fontos, vagy legalábbis nem így, hanem úgy, mint a globális felmelegedés kérdése.<br />
+Nem szeretem az &#8222;ez lehetetlen, ne is tegyünk semmit&#8221; mentalitást; elérni mindig csak azok fognak valamit, akik megpróbálják, mert akkor az már két esélyes, tehát vagy sikerül, vagy nem. Viszont ha nem próbálják meg, akkor garantáltan csak egy esély valósul meg.<br />
+<br />
+&#8222;Bevallom, továbbra sem vagyok kibékülve teljesen a következő hívószavakkal: optimumkeresés, legmagasabb létszámú egyed (legéletképesebb egyed kifejezés helyett).&#8221;<br />
+Végül is, nem kibékülni kell, hanem továbbgondolni ezeket, ez a fejlődés, és biztos, hogy van még hová fejlődni.<br />
+A legmagasabb létszámú egyed pongyola megfogalmazás tőlem, végül is az egyed az mindig csak 1; a legmagasabb létszámú túlélő (egyed) a pontosabb.<br />
+A legéletképesebb egyeddel pedig az a probléma, hogy nehéz pontosan meghatározni, hogy ki-kik lennének azok, ugyanis pl. a hosszú éhezéseknél a leginkább éhségtűrők a legéletképesebbek, és nem a legizmosabbak, és nem a legkövérebbek, pedig lehetne így is gondolni &#8211; és mert a szerencsefaktor is alaposan bele szokott játszani, hogy ki marad életben.<br />
+Végül is mindenki azt tesz &#8211; a természetben is &#8211;, amit a legjobbnak gondol, de a statisztika azt fogja mutatni, hogy a legjobb &#8222;sakkozók&#8221; győznek az élet nevű játékban, vagyis azok, akik a legkevesebbet, és legkisebb mértékűt hibáznak a helyzetfelismerésben, az alkalmazkodásban, és a problémamegoldásban. Ezt már nevezhetjük optimumkeresésnek.<br />
+<br />
+Van (jó)néhány ehhez kapcsolódó könyv is, amit érdemes elolvasni, ha valakit komolyan érdekel, hogyan működik az élővilág, és az ember. Az egyik Benedek István: Az ösztönök világa (Minerva, 1987), ahol az állati és emberi ösztönök vannak górcső alá véve, és pl. ilyenek fordulnak elő benne:<br />
+<br />
+Mélylélektani ösztönök:<br />
+Hatalmi (érvényesülési) ösztön<br />
+Nyájösztön<br />
+/Adler/<br />
+<br />
+Hatalmi (kriminális) ösztön<br />
+Önalávetési (alkalmazkodási) ösztön<br />
+/Stekel/<br />
+<br />
+Hatalmi (függetlenségi) ösztön<br />
+Tartozási (kapcsolódási) ösztön<br />
+/Rank/<br />
+<br />
+<br />
+Aztán vannak a Gondolat zsebkönyvek:<br />
+E. Thomas &#8211; H. Thomas: A négymilliárd éves élet (1978)<br />
+Kis etológia (1980)<br />
+Berend Mihály: Genetikai ábécé (1980)<br />
+Erich Lange: Metamorfózisok az állatvilágban (1988)<br />
+<br />
+<br />
+Ez egy jó könyv, pro és kontra is tárgyalja a dolgokat:<br />
+Volker Storch &#8211; Ulrich Welsch: EVOLÚCIÓ <br />
+A származástan eredményei és mai problémái<br />
+Springer Hungarica Kiadó Kft., Budapest, 1995<br />
+<br />
+Vannak fontos tudományos problémák és elméletek, melyeket a tudósok csak szűk körökben tár-gyalnak és bizonyítanak anélkül, hogy a szélesebb nyilvánosság erről tudomást szerezne. Vannak azonban olyan elméletek is, amelyek széles körben szenvedélyes állásfoglalásra ösztönöznek. Ilyen szellemi konstrukció volt Kopernikusz világképe, mely kitaszította a Földet a középpontból; ez a helyzet az evolúció- vagy származástannal is, mely a feltételezések szerint az emberi méltóságot sértette, és még a falusi kocsmákban is tárgyalták:<br />
+<br />
+<br />
+A technikában létezik egy fejlesztési irányzat, amely az evolúciós tényezők lemásolásával igyekszik technikai rendszereket optimalizálni. Kiindulópontja a következő: az evolúció olyan szervezeteket hozott létre, amelyek mind egészükben, mind részleteikben igen nagy teljesítőképességűek. Az evolúciós tényezőket technikai rendszerekre alkalmazva azokat is optimalizálhatjuk. Az eljárást már több esetben sikerrel kipróbálták. Lássunk három példát!<br />
+1. A lehető legkisebb falsúrlódású áramvonalas testet keresték. A feladat számítással nem volt megoldható. Rugalmas próbatestet építettek, melynek körvonalait a test belsejében elhelyezkedő fogaskerekek és fogaslécek segítségével változtatni lehetett. Ezek beállítását véletlenszerűen változtatták &#8211; a legegyszerűbb esetben kockadobás alapján, illetve kísérleti (&#8222;optimalizációs&#8221;) automata segítségével. Az eljárás tehát az evolúció mutációs folyamatainak felelt meg, és ahhoz hasonlóan semmiféle trendet nem mutatott. Ha egy véletlenszerű változtatás nagyobb súrlódást eredményezett, azt a &#8222;mutánst&#8221; nem használták többet, tehát &#8222;letálisnak&#8221; tekintették. Ha a változtatás a súrlódás csökkenéséhez vezetett, a továbbiakban ezzel dolgoztak (&#8222;pozitív mutáció&#8221;), vagyis ez szolgált a következő változtatás (&#8222;mutáció&#8221;) alapjául. A kiválogatás adott irányban folyt &#8211; tehát a szelekciót utánozták. A fenti egyszerű alapelv folyamatos alkalmazásával sikerült egy igen alacsony súrlódású, ideális alakot kifejleszteni.<br />
+2. A kérdés az volt, hogy egy vízvezetékcső, amely először függőlegesen, majd vízszintesen fut, optimális konstrukciónak tekinthető-e, mivel a két csövet összekötő derékszögű szakaszban igen nagy a súrlódás. Ennek csökkentése gyakorlati szempontból fontos.<br />
+Hajlékony negyedkör-idomokból kiindulva a fent vázolt mutációs-szelekciós mechanizmussal sike-rült egy &#8211; mintegy 2%-kal alacsonyabb összsúrlódású &#8211; optimális alakot találni.<br />
+3. Újabb probléma merült fel egy tengelyszimmetrikus fúvóka esetében, amelyre egy űrjárművekre tervezett atomerőműben volt szükség: folyékony és gőz alakú fémek áramlását kellett megkönnyíte-nie és gyorsítania. A bonyolult áramlási folyamatok számítással történő modellezése nem volt lehetséges.<br />
+Számos különböző átmérőjű szakaszt tartalmazó konvergens-divergens fúvókából indultak ki. Mind be-, mind kiáramlási részét tekintve meglepő alakú rendszer lett az eredmény, amelynek hatásfoka azonban lényegesen jobb volt, mint a kiindulási formáé.<br />
+<br />
+<br />
+Az emberi kultúra fejlődése elképzelhetetlen háziállatok és kultúrnövények nélkül. A népesség gyors növekedése egyre önzőbb célok agresszív követését kényszerítette ki, amely végül a magas fokon automatizált ipari állattenyésztéshez vezetett. Ezzel egy időben túlzó mértékűvé vált a teljesítményfokozás: míg a vadon élő bankivatyúk évente kb. 10 darab, egyenként 35 grammos tojást rak, a jelenlegi házityúkfajták naponta tojnak egy 50-71 grammos tojást. A vadon élő szarvasmarhafélék a szoptatási időszakban összesen 600 liter tejet adnak, a közép-európai jó teljesítményű tehenek ezzel szemben évi 6000 litert, de a rekordot jelenleg 20000 liter felett jegyzik.<br />
+Hasonlóképpen döntő változások játszódtak le az elmúlt évtizedben a baromfitenyésztés és tartás területén. Alapjában véve hús és tojástermelő rasszokat különböztetünk meg. A hústermelésben mindkét nemet felhasználják: mozgásszegény nevelés és automatikus táplálás mellett maximális a növekedés, így az állatok hat héttel kikelésük után már a vágóhídra kerülnek. A tojástermelésre szelektált rasszok esetében a nőivarú csibéket kiválogatják; a hímeket elégetik vagy felaprítják majd takarmánynak dolgozzák fel. Egy pillantás a múltba: 1870 körül tyúkonként évi 80 tojás termelésére lehetett számítani: hasonló mértékben fejlődött a táplálék hasznosítása is. Valószínűleg azonban még mindig nem értük el a teljesítőképesség határait, és &#8211; ami az evolúcióbiológia szempontjából fontos &#8211; nem jött létre új faj. Szintén evolúcióbiológiai szempontból fontos, hogy észrevegyük: egy előnybe került faj &#8211; az ember &#8211; másokat kihasznál, sőt kizsákmányol, esetenként tönkre is tesz saját faja érdekében. A világon kifogott halak egyharmadát trágyának és állati takarmánynak dolgozzák fel.<br />
+<br />
+Evolúcióbiológiai szempontból hihetetlen, hogy a növényeket és az állatokat sok tekintetben óriási mértékben korlátozó Homo sapiens maga &#8211; össznépességét tekintve &#8211; szinte korlátok nélkül szaporodik. Ezt a szemléletmódot (az egyik oldalon az ember, a másikon az állatok, növények és mikroorganizmusok) a rasszizmus alapján specieszizmusnak nevezik; jellegzetessége a saját faj túlzó nagyrabecsülése az összes többi semmibevétele mellett.<br />
+<br />
+<br />
+Felismerő apparátusunk valós környezetün-ket érzékeli és értelmezi: képes a természet érzékelésére, hiszen maga is annak része. Ha nem alko-tott volna reális képet környezetünkről, a hominidák már evolúciójuk korai szakaszában kihaltak volna. A földi törvényszerűségekről alkotott irreális kép nem lett volna összeegyeztethető a túléléssel.<br />
+<br />
+Nyilvánvaló, hogy az evolúciós ismeretelmélet számos kulcsfontosságú kérdésben szemben áll az ember lényegéről, az emberi tudat és szellem eredetéről alkotott egyéb felfogásokkal. A gyökeresen más jellegű meggyőződések, amelyek minden nép történetében megjelennek, igen hamar elérték csúcspontjukat &#8211; mint Karl Jaspers nevezte &#8211; &#8222;mértékadó személyiségekben&#8221;, mint Buddha, Konfuci-usz, Szókratész vagy Jézus. Amit róluk és más nagy emberekről tartanak, természetesen nem hamis vagy túlzott. A filozófia vagy a teológia területén nem következtek be olyan mélyreható változások, mint a technikában.<br />
+A ma gondolkodó emberének feladata, hogy feloldja egy racionális, tudományos eredetű felfogás és egy filozófia vagy egy irracionális eredetű kinyilatkoztatáson alapuló hit közötti feszültséget.<br />
+<br />
+- - - - -<br />
+<br />
+Egyik könyv sem maga a teljesség és a mindentudás, hanem elgondolkodtató, és továbbgondolandó.<br />
+<br />
+<br />
+Az eredeti témánál, a marxizmusnál, és a judaista babók dolgainál maradva, az állapítható meg, hogy ők az orruktól néhány centire alaposan feltérképezték a dolgokat, pl. a pénz és hatalom megszerzésének módját, de onnantól már a csukott szem, a struccolás, és a hazudozás következik. A végtelen mennyiségű csalás mint rendszer azért nem működik, mert mindig minden embert becsapni nem lehet, tehát ez véges rendszer. Heller Ágnes &#8222;filozófus&#8221; pl. azt jelentette ki, hogy a holokausztnak semmi ésszel felfogható oka nincs. A valóság az, hogy persze hogy van &#8211; ennek van aztán igazán &#8211;, és elegendő lenne a megértéséhez pl. elolvasni Hitler Harcom-ját, amiben A. H. leírja, hogy miért gyűlölte meg a babókat &#8211; az elkövetett aljasságaik miatt &#8211; de H. Á. inkább a legbiztosabb természettörvényt, a kauzalitás törvényét tagadja, és struccol, és hazudik, csak hogy ne kelljen szembenéznie az igazsággal. Persze ha ezt ők is kimondják, akkor dől az egész judaista rendszer, amiből élnek, tehát inkább eljutnak vele holokauszt II.-ig, mintsem hogy belássák, véges rendszerről van szó, ahol a véget érés békétlen módja a &#8222;sárkányirtás&#8221;, a békés módja pedig a mindenkire vonatkozó, szélsőségek elleni törvény, ahol nem a szélsőségek mondják meg, hogy ki a szélsőséges. A papírforma pedig az, hogy mind a kettő meg fog valósulni, mert a judeonácik egyiket sem akarják elfogadni.<br />
+Ezen kell túljutni, és akkor nagyságrendekkel normálisabb, és élhetőbb lesz a Föld bolygón az élet.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment59337"></A>71. 71. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=941&id=59312#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-16 20:53:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kor: érted is, amit bekopipasztáztál? a 4 arra vonatkozik, hogy párkapcsolatban az egyik fél pont annyira birtokolja a másikat, mint a másik az egyiket. Ennek egyszerű oka van: abban a korban az asszony kvázi rabszolgának számított, de legalábbis sokkal kevesebbet ért, mint a férj. <br />
+<br />
+az 5 pedig arról szól, hogy lehetőleg közös döntésből fakadjon a szexualitás szüneteltetése, hogy a vallásgyakorlatot ne zavarja meg.<br />
+<br />
+Egyik sem arról szól, hogy a szexualitás a gyönyör, vagy az öröm forrása volna, csupán javaslatok arra, hogy minél surlódás mentesebb legyen a párkapcsolat (5) és hogy kezeljék egymást egyenlő felekként az ágyban is (4).<br />
+<br />
+Péld: ez is lényegében a monogámiáról szól. Sehol semmi " aszexualitás = gyönyörforrás". Az öröm forrása itt a másik személy, és nem a másik személlyel folytatott hancúr. (a valódi szexualitás természetesen személyről ÉS cselekményről szól).<br />
+<br />
+Énekek Éneke: ez Isten és Izráel kapcsolatáról szól. Ez azon kevés állítások egyike, amelyben babók és keresztények tökéletesen egyetértenek. Csak persze mindkét fél magára érti a menyasszony szerepét.<br />
+<br />
+<br />
+<br />
+Summa Summarum: egyik példád sem cáfolja azt, amit lentebb írtam.<br />
+<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=941&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=941&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=941&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=941&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=941&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=941&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=941&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=941&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=941&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=941&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

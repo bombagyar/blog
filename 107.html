@@ -1,0 +1,675 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=107#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Újfajta könnygáz: a CR";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=107#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Újfajta könnygáz: a CR<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2007 október 18. 05:52:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_107.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;">Nézzük, mire számíthatunk pártunktól és kormányunktól a          
+           hétvégén!<br><br><div style="text-align: justify;"><img src="./resources/pictures/tomcat_konnygaz_0.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0">A magyar rendőrség a közelmúltban 
+                    újfajta könnygázt rendszeresített, az ún. <span style="font-weight: bold;">CR</span>                   (dibenz-oxazepin) jelölésű anyagot. Ez az anyag   
+hatszor&#8211;tízszer hatékonyabb,   mint   a       tavaly           beszerzett <span style="font-weight: bold;">CS</span>         (klórbenzilidén-malononitril), és ennek               
+megfelelően hatvan- szor&#8211;százszor erősebb,         mint a tévéostromnál is alkalmazott <span style="font-weight: bold;">CN</span>     (klór-acetofenon).     Erről egy rendőr hallgatónktól   
+szereztem             tudomást. Ez a rendőr     azt is elmondta, hogy     hallomásból tudja, hogy a  
+ BRFK Egészségügyi             Szolgálatának     osztályvezetője, Dr.     Patarcsics Éva nemrég   
+tiltakozott ezen anyag rendszeresítése                 ellen, mert állítólag nem     teljesen   
+ismertek az élettani hatásai, nincs egészségügyi minősítő         lapja,         és nem került       
+hozzá rendszeresítésre ellenanyag, amellyel a gáz hatása alá   került       rendőröket               
+elsősegélyben lehetne részesíteni. (Hogy a gázzal beterített     állampolgároknak meg     pláne   
+nincs             ellenanyaguk, az nem érdekes, már tavaly sem volt     az.)<br></div><div style="text-align: justify;"><br>Mi ez a CR gáz? Megnéztem a <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/CR_gas">Wikipedián,</a> aztán felhívtam Dr.       
+Patarcsics           Évát.       Parancsoljatok, hallgassátok meg a beszélgetést.<br><br><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="./resources/musics/tomcat_crgaz_1.mp3">MP3   
+letöltés</a><br><br>Dr.   Patarcsics Éva tehát határozott                   igennel felelt arra,   
+hogy a CR gáz rendszerbe állt   a rendőrségnél, és ő azt a   hivatalos                 tájékoztatást 
+  kapta, hogy ezt az anyagot   vízzel semlegesíteni lehet, ki   lehet mosni az     ember             
+  szeméből. Noha ez nem igaz!   Aztán észbe kap, és azt állítja,   mégsem egészen ezt     mondták   
+neki,   hanem           mást, de   ezt most nem mondja el. Végül   leteszi. De amit megtudtunk,      
+       megtudtuk!<br><br>Legközelebb        a BRFK egészségügyi   szolgálatánál próbáltam 
+érdeklődni,   a     vezetőt        keresve.   Korábban ezt az   osztályt   Dr.   Balogh Sándor 
+ezredes vezette. A      párbeszéd   önmagáért         beszél...<br><br><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="./resources/musics/tomcat_crgaz_2.mp3">MP3 letöltés</a><br style="font-weight: bold; color: rgb(0, 0, 0);"><br>A következő próbálkozásra sikerült elérnem az    
+ egészségügyi osztály vezetőjét,                 de...<br><br><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="./resources/musics/tomcat_crgaz_3.mp3">MP3 letöltés</a><br style="font-weight: bold; color: rgb(0, 0, 0);"><br>Végül  a BRFK sajtóosztályánál próbálkoztam. Ők sem tudták 
+megmondani, ki az      illetékes,                 de az iménti két beszélgetésről volt 
+véleményük.<br><br><a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="./resources/musics/tomcat_crgaz_4.mp3">MP3     letöltés</a><br style="font-weight: bold; color: rgb(0, 0, 0);"><br>A BRFK tehát továbbirányított az     ORFK-ra, és annak kommunikációs osztályán 
+végül   azt                 javasolták, írjak levelet a     www.police.hu címen található központi 
+e-mail címre, és   akkor     majd             egyszer, a     távoli jövőben, 60 nap múlva 
+válaszolnak. Senki sem tudta   megmondani,   ki   és   milyen     módon         szerzi be   azokat a 
+harceszközöket, amelyeket időnként   ellenünk   vetnek   be. De   mivel   is         állunk     
+szemben?<br><br><span style="font-weight: bold;">1. Mi a     CR?</span><br>A     CR   valójában   
+nem     gáz,     hanem szilárd, halványsárga,   kristályos anyag,     amelynek       
+propilén-glikolos oldatát     alkalmazzák       könnyfakasztó   hatású vegyi harcanyagként,         
+elsősorban   gázgránátokba töltve,     permetként szétterítve.         Az ötvenes-hatvanas években   
+      fejlesztették ki   brit tudósok, elsősorban     tömegoszlatási   célokra. Nem       csak erős  
+       irritáló, könnyfakasztó   anyag, hanem idegrendszerre     ható, ún.   antipszichotikus ágens  
+   is.           Belélegezve   pszichomotoros irritációt, azaz heves       izgalmat, pánikrohamot 
+vált   ki,   különösen       azoknál,       akik életükben először vannak kitéve       könnygáz 
+hatásának.     Bőrfelülettel   érintkezve     kémiai   égést, a     szemhéjak görcsös   záródása 
+révén       időleges   vakságot, akár     mozgásképtelenséget,     illetve mellkasi       szorítást, 
+fulladási   rohamot, a       nyelv és a száj     égő fájdalmát, hányást,   nagyobb     mennyiségben 
+kémiai       égést,       szaruhártya-gyulladást     okoz.<br><br>Mindezt olvasva   nehéz   
+elképzelni,   milyen   lehet, de   fújd         magad arcon egy     mezei gázspray-vel, és képzeld 
+el     azt tízszeres   hatással.   Na,   ez olyan.<br><br><a target="_blank"href="./resources/pdfs/tomcat_Potential-Military-Chemical-Biological-Agents-Compounds.pdf" target="_new"><img src="./pic/pdf_icon.gif" style="float: left; margin-right: 5px;" title="Letöltés    
+                   PDF-ben" align="absmiddle" border="0"></a>A dibenz-oxazepin nagyobb mennyiségben  
+     halálos.       Zárt           térben percek alatt megöli az embert, aminek fulladás vagy ödéma  
+     (hörgőgörcs,       tüdővizenyő)   lehet   az       oka. Az Egyesült Államok Egyesített 
+Vezérkara       által 2005 januárjában       kiadott, vegyi     harcanyagok       hatásairól szóló 
+oktatóanyag is       említi a CR-t, és annak   111.     oldalán megemlíti a     könnyfakasztó       
+harcanyagok halálos       hatását is: <span style="font-style: italic;"><br><br></span><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"When released       indoors, they     cause serious illness or           
+  death."</div><br>Itt emlékezzünk meg a tavaly       októberben     lakások ablakán belövöldözött   
+          könnygáz-gránátokról, vagy a Nyugatinál       elfogott srácról,     akit 
+&#8222;szórakozásképpen&#8221;       belöktek egy       rendőrautóba,   és     utánadobtak egy     
+gázgránátot, majd rázárták az ajtót. De a       halálos mennyiséget           szabad   térben való   
+  alkalmazás esetén is be lehet lélegezni, mint arra volt       is példa   más     országokban 
+&#8211; de     erről később.<br><br>A nagyobb mennyiségű CR permetet       belélegző       áldozatok 
+      cselekvésképtelenné     válhatnak. Ezeknek azonnali orvosi segítség   kell,          különben  
+ maradandó     légúti   károsodást     szenvedhetnek, vagy akár    megfulladhatnak. Az     orvosi    
+ segítség   hasonló     az   asztmarohamban      szenvedőkéhez:   azonnali oxigén-inhaláció,     
+súlyos esetben            szteroid-injekció.   Igen ám, de ha egy       tömegoszlatásnál több tucat  
+   ember  kerül hirtelen         súlyos   állapotba, vajon   kéznél   lesz-e mentőautó és      
+megfelelő     felszerelés? S vajon a         pánikban   menekülő tömeg nem   fogja-e   agyontaposni  
+     őket?<br><br>Molnárgörény szerint a         pszichoaktív   hatásnak más   eredménye is lehet: a 
+  CR     gázzal   lefújt, ítélőképességét részlegesen         elvesztett     személy azt fog 
+bevallani a     rendőröknek,   amit azok   akarnak. Hiszen rokon   azokkal     az       
+antidepresszánsokkal, amelyek     épp ilyen hatással   bírnak.<br>  <br>      Légúti       
+betegségben       szenvedőkre (pl.     asztmásokra), illetve gyerekekre    fokozottan veszélyes a   
+CR,         hiszen az ő       hörgőik     érzékenyebbek, könnyebben rándulnak görcsbe az   anyag   
+hatására, mint   a   felnőtt     vagy           egészséges embereké. Ez akár szabad térben is   
+tüdővizenyőt,     asztmarohamot,   fulladást okozhat.     A         CR külföldi országokban történt  
+  használatánál ez   sajnos   bizonyítást   is   nyert,     mint később   szó       lesz   
+róla.<br><br>A világ legnagyobb,   tömegoszlató vegyi     anyagok     gyártásával     foglalkozó   
+cége,   a   <a target="_blank"style="color: rgb(0, 0, 0); font-weight: bold;" href="//www.zarc.com/english/tear_gases/crdibenzoxazepine.html">Zarc   International Inc.</a>   
+                  weboldalán a következők olvashatóak a CR ismertetésénél:<br>    <br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A CR       viszonylag         mérgező anyag, és az emberek számára 
+        halálos mennyiség nagyjából azonos       nagyságrendű, mint egyéb         harci gázok        
+ esetében.&#8221;<br></div><br>A CR nem oldódik vízben,       és nem semlegesíthető vízzel,          
+   ellentétben     például a természetes anyagból készült OC-val       (Oleum Capsaicum, avagy <span style="font-style: italic;">pepper </span>vagy <span style="font-style: italic;">mace</span>), amely 
+            szintén     rendszerben áll a magyar       rendőrségnél. Ha a CR vízzel érintkezik, az   
+    egyébként   is   heves,   égető érzés     még jobban       fokozódik. Ezek után próbálja valaki  
+     kimosni a   szeméből... Nem   lehet   lúgos anyaggal           (szappan, hamu) sem 
+semlegesíteni,       mint az OC-t,   a CS-t vagy a CN-t.   Ráadásul   akár 60 napig is           
+megtapad bárhol, de       különösen porózus   felületeken, mint például az   emberi bőr.   A     
+harcanyaggal   való           érintkezés után még 48   órával is heves, égő fájdalmat okozhat,   ha 
+a       szennyezett         bőrfelületet víz     éri. A   szakirodalom CR-rel való érintkezés esetén 
+azonnali   bő,             szappanos   vizes mosakodást   javasol,     illetve a CR-rel szennyezett 
+ruházat azonnali             levételét. De   el   lehet   képzelni, mennyi lehetőség van     erre 
+olyan körülmények között, mint             amilyenek tavaly       ősszel uralkodtak Budapest utcáin. 
+Meg úgy     egyébként is az   utcán,               általában...<br><br>Fentieket   nem a kisujjamból 
+szopom, hanem az Országos       Kémiai     Biztonsági           Intézet adatbázisából. Az OKBI   
+Egészségügyi Toxikológiai   Tájékoztató     Szolgálatának     és           Információs Központjának 
+éjjel-nappal   hívható zöld   számán bárkinek     felvilágosítást adnak a               CR-ről, vagy 
+bármilyen más veszélyes vegyi     anyagról: <span style="font-weight: bold;">80             
+201199.</span> Érdeklődéshez mondjátok   be az anyag   CAS     számát: 257-07-8   
+(CR).<br><br>Mindezek           mellett a   CR-nek   feltételezett karcinogén, azaz       rákkeltő 
+hatása   is van. Az Egyesült Államok           rendőri   erői   például épp ezért nem     
+alkalmazzák. A   rákkeltő   anyagok nemzetközi listáján nem             szerepel.<br><br>A   CR-nek  
+   <span style="font-weight: bold;">nincs dokumentált     ellenanyaga.</span>         Vagyis még az  
+     alkalmazójára is veszélyes       lehet.<br><br>Végezetül   idézzük ismét a Zarc         
+International     ismertetőjét,   annak   utolsó     mondatát:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A CR-t     
+perzisztens         és hosszú távú   hatásai miatt kevés         felelősségteljes szervezet 
+használja             napjainkban.&#8221;</div><br>A   magyar rendőrség, úgy     látszik,     
+távolról sem       felelősségteljes.     De   vannak-e még ilyenek a világban?   Nos, nem     
+sokan.<br><br><span style="font-weight: bold;"></span><span style="font-weight: bold;">2. A   CR     
+alkalmazása más           országokban</span><br>A       CR-t napjainkig egyedül a dél-afrikai 
+rendőrség     vetette   be,   a     nyolcvanas     évek végén, a     feketék   lakta negyedekben, 
+ahol ezek az akciók     számos     halálos     áldozatot követeltek.     Igaz,     hogy az   
+áldozatok boncolása soha nem történt         meg, ezért   nem   egyértelműen bizonyított, hogy   a   
+    CR okozta   halálukat, de tény, hogy         mielőtt   kilőtték rájuk a   gázgránátokat, még 
+éltek, utána       pedig   már   nem. A vegyi         fegyverek   fejlesztésének a Nemzetközi   
+Vegyifegyver Egyezmény 1993-as       aláírása és a             Nelson   Mandela-féle hatalomátvétel 
+vetett   véget.<br><br><a target="_blank"href="./resources/pdfs/tomcat_Gould-PhD.pdf" target="_new"><img src="./pic/pdf_icon.gif" style="float: left; margin-right: 5px;" title="Letöltés   PDF-ben" align="absmiddle" border="0"></a>Az 1976-ban                   kezdődött johannesburgi   zavargások 
+rosszul   dokumentált történetében nehéz   megtalálni   a     halálos           áldozatokkal   járó 
+eseteket. Az egyik hasznos   forrás Chandré   Gould, a   Rhodes     University 2005             
+augusztusában írt doktori disszertációja, mely a     <span style="font-style: italic;">Dél-Afrika    
+     vegyi-   és biológiaifegyver-programja         1981</span>&#8211;<span style="font-style: italic;">1995</span>   címet viseli. <br><br><img src="./resources/pictures/tomcat_konnygaz_1.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0">Ebben   részletesen ír a CR                 dél-afrikai gyártásának 
+és     fejlesztésének programjáról is. Eszerint a   dél-afrikai     hadsereg   és   a         
+rendőrség a CR-t     NGT-nek, azaz <span style="font-style: italic;">New       Generation   Tear     
+    Gas</span>-nek     (új   generációs könnygáz) nevezte. Főleg   kézigránátok   és lövedékek,     
+például           aknavetőgránátok     tölteteként alkalmazták. A   rendőrség a   nyolcvanas évek 
+végén       valószínűleg     több     helyen,   1992-ben   pedig   biztosan bevetette   az anyagot 
+Phola Park-ban,         Johannesburg   egyik       külvárosában.   Ezekről a   külvárosi   
+csatározásokról, akárcsak a ma     Párizs     környékén   zajló         zavargásokról, kevés pontos  
+   tudósítás maradt fenn. Mi több, a       dél-afrikai kormány   a   CR         alkalmazását, sőt,   
+egyáltalán a   birtoklását is titokban       próbálta tartani, nehogy a     feketék         
+valamilyen   ellenanyagot szerezzenek   hozzá. Ez persze       az emberi jogok   súlyos   
+megsértése, de a           dél-afrikai kormányt akkoriban nemigen       érdekelte   az   
+ilyesmi.<br><br>A CR   (vagyis NGT)   hatásáról         természetesen több tanulmány is     készült  
+     akkoriban. Gould   dolgozatának   126. oldalán olvashatjuk   a       következő       
+sorokat.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;A CR gázt a     dél-afrikai   hadsereg a tömegoszlatás             
+  leghatékonyabb   eszközének tartotta. 1993-ban   Knobel   azt mondta a   védelmi miniszternek, 
+hogy   ha             Dél-Afrika elismeri   CR   készleteinek létét a   Vegyifegyver   Egyezmény 
+januári       aláírásakor,   &#187;a       zavargások   szervezői   esetleg tippeket   kaphatnak   
+külföldi       tanácsadóiktól a gáz   semlegesítésére, és         így a hadsereg   elveszítené   
+leghatékonyabb         fegyverét, amellyel belső   zavargásokat       elháríthat.&#171;   A hadsereg 
+azon     törekvése,   hogy     a   CR-t titokban tartsák,   és ezáltal       megakadályozzák, hogy 
+az anyag     áldozatává   vált       emberek   megtudhassák, mit   vetettek   be ellenük, az     
+emberi jogok egyértelmű       megsértése.     (...) Knobel     [Daniel Knobel     tábornok, a 
+hadsereg     egészségügyi   szolgálatának   akkori       vezetője] a következőket       mondta a   
+védelmi miniszternek       1993-ban:        <br><br>&#187;A     hadsereg két   új anyaggal     
+rendelkezik,     amelyek   1993-ban     fegyverként is   megjelennek.     Ezek az anyagok a     
+célszemélyek   agyi     funkcióira hatnak,   és     megváltoztatják   érzelmeiket,     nyugtató 
+hatást   váltva ki.   Ezek       kétségkívül előnyösebbek, mint az       NGT (azaz   CR),   mert   
+ha az NGT-t   helytelenül   alkalmazzák       nagy tömegek ellen, az pánikot okozhat, és           
+olyan     behatárolt terepen,   mint egy nagyváros   utcái,     kárt tehet az emberekben és az       
+  épületekben,         létesítményekben. Az új anyagok nem   rendelkeznek   ilyen   hatással, ezért  
+       egyszerűbbé     teszik a tömeg       kezelését...&#171;&#8221;</div><br>Tessék:   ez a CR 
+hatása a         tömegre.   Akik     kipróbálták, nem       javasolják.<br><br>Wouter Bassont, a   
+dél-afrikai           vegyifegyverprogram     vezetőjét többek   között a   CR   gáz gyártása és 
+alkalmazása   miatt is         háborús   bűnösként   vonták   felelősségre.   A dél-afrikai   
+legfelsőbb   bíróság még     tárgyalja     az   ügyet, mely     volumenében a   nürnbergi   perhez 
+mérhető.   (Korrektségében   persze       nem.)   Érdekes,   magyar   vonatkozású   szála a     
+történetnek, hogy<cite><span style="font-style: normal;"><span style="text-decoration: none;"><span style=""> a  Dél-Afrikának CR       alapanyagokat     szállító  Jerry     Brandt-ot és kollégáját,   
+Grant      Wentzelt 1990-ben     letartóztatták az     USA-ban,   amiért    katonai   projectekben 
+használatos           mikrochip-gyártáshoz  szükséges   szerszámokat   próbált      csempészni       
+  </span></span></span></cite>&#8211;<cite><span style="font-style: normal;"><span style="text-decoration: none;"><span style=""> magyar                   
+megrendelésre.</span></span></span></cite>.. (<i>United States of    America vs Jerry Brandt, United 
+                  States District Court Eastern  District of New York, Judgement   including 
+sentence       under     the          Sentencing Reform Act, Case No CR 90-0919, Conspiracy to 
+violate    Export           Administration Act,   2     June   1992.) </i><p style="margin-bottom: 0cm;" align="justify">    </p>          <br><span style="font-weight: bold;">3. Egy amerikai   
+szakdolgozat</span><br><a target="_blank"href="./resources/pdfs/tomcat_RiotControlAgents.pdf" target="_new"><img src="./pic/pdf_icon.gif" title="Letöltés PDF-ben" style="float: left; margin-right: 5px;" border="0"></a>A valószínűleg                   magyar származású Eugene J. Olajos és Harry Salem, a 
+  US Army   Edgewood Chemical and       Biological           Center   kutatóinak 2001-ben   
+megjelent<cite><span style="font-style: normal;">       <span style="font-style: italic;">Riot    
+Control Agents: Pharmacology,   Toxicology, Biochemistry     and                 
+Chemistry</span></span></cite> című dolgozatából részletesen   tájékozódhatunk a     CR és   más     
+          könnyfakasztó harcanyagok hatásairól. Ezt a Wikipedia is forrásként       említi. A     
+dolgozat igen             részletesen és pontosan leírja a CR mindenféle tulajdonságait     és   
+kísérleti     állatokra   gyakorolt           hatásait. Aki kívánja, olvassa végig részletesen,      
+ én itt   összefoglalom a       lényegét.<br><br><span style="font-style: italic;"><span style="font-weight: bold;">Mérgező       hatás:</span> </span>A CR         nagyságrendekkel       
+alacsonyabb mérgező hatással   bír, mint a CN vagy     a CS.   Az ember által   tolerálható          
+   mennyiség (0,7 mg köbméterenként   és percenként)     kétszázszorosa még az   anyag   hatásának   
+    naponta     kitett   patkányokban,   egerekben vagy     nyulakban sem okozott mérgezési          
+ tüneteket. Ám a 13. oldalon     kezdődő     részből megtudhatjuk,     hogy a CR az állatok egy      
+ részében     légzési rendellenességeket       okozott.   Előfordultak     izomgörcsök, rángatózás,  
+     általános   idegrendszeri   tünetek és   hörgőgörcs     okozta halál.   Még     szerencse, hogy 
+ez       nem   mérgezés...<br><br>Az ember számára     halálos mennyiséget     csak becsülni         
+tudjuk,     hiszen mióta   szegény Mengele a tengerbe   fulladt, már   csak gyanútlanul e       
+bolygóra         született     állat-társainkat boldogíthatjuk   olyan ostoba kísérletekkel,   mint  
+ például:           <span style="font-style: italic;">na, vajon mi   történik, ha egy nyúllal 
+hetente   ötször   vegyi               harcanyagot itatunk? </span>A   27.   oldalon olvasható, hogy 
+a becsült   emberi LD50 érték:   100     000           mg percenként és   légköbméterenként.   Nem 
+valami sok,   egy könnygáz-gránátban   épp   ennyi van.   A           patkány   például ennek a 
+négyszeresét is     megbírja, de a   tengerimalac is   ránk ver 169   000             milligrammal. 
+<span style="font-style: italic;"></span><span style="font-style: italic;"><br></span><span style="font-weight: bold; font-style: italic;"><br>Genotoxicitás és               karcinogenecitás:  
+ </span><span style="font-weight: bold;"></span>Magyarul öröklődő defektusokat               okozó   
+hatás és   rákkeltő hatások. A   dolgozat 18. oldalán   kezdődő szakasz szerint nagyon     kevés     
+          információ áll   rendelkezésre mindkettőről. Egyetlen kísérlet   történt   emlősállatok    
+       örökítőanyagának         CR-rel való kezelésére, ez pedig negatív eredményt hozott,   de   ez 
+  kevés         tudományos   bizonyíték       ahhoz, hogy kijelenthessük, a CR nem mutagén, a     
+kísérlet           megismétlésére   lenne szükség.   Ugyanakkor     a szerzők egyértelműen   
+kijelentik,   hogy a CR         karcinogén     hatása ismeretlen, mivel   sohasem     vizsgálták,   
+okoz-e daganatos     sejtburjánzást vagy       más   hosszú távú   hatást. Igaz, Marrs   egy 18      
+ hónapos   kísérletsorozat   során <span style="font-weight: bold;">a   hörgőkben kialakult   rákos  
+       daganatokat mutatott ki a   kis   illetve       nagy mennyiségű CR-nek kitett   egerekben   
+egyaránt.     </span>Ezt     azért emelem   ki     félkövérrel,     hogy az is észrevegye, akinek   
+észre   kell.   Igaz, ez a   fajta     tüdődaganat       gyakori a fehér     egereknél mindenféle   
+behatás nélkül is,   és   nagyban eltér az   emberi           tüdőben kialakuló     daganatoktól. Ez 
+  azonban már elég   volt az Egyesült Államok   rendőri         erőinek, hogy     az anyagot       
+kockázatosnak minősítse   és betiltsa           használatát.<br><br>Összefoglalva, a CR gáz          
+ veszélyességét nem a   mérgező hatása okozza,       hanem a     hörgőkre gyakorolt hatása és       
+valószínűsíthető       rákkeltő hatása.<br><br><span style="font-weight: bold;">4. Nemzetközi       
+szerződések<br></span><a target="_blank"href="./resources/pdfs/tomcat_vegyifegyver_1972.pdf" target="_new"><img src="./pic/pdf_icon.gif" title="Letöltés PDF formátumban" style="float: left; margin-right: 5px;" border="0"></a> Már tavaly             ősszel is hallani lehetett hébe-hóba, hogy a     rendőrség   
+által     bevetett tömegoszlató       gázok       nemzetközi egyezmények tilalma alá esnek,   
+bevetésük     háborús     bűntett. Nos, ez       valóban így   van: ezen     anyagok beszerzését,   
+birtoklását és   felhasználását az       1972-es       <span style="font-style: italic;">A     
+bakteriológiai (biológiai) és   mérgező fegyverek               fejlesztését, előállítását és     
+felhalmozását tiltó   és megsemmisítésüket   előíró egyezmény               </span>kategorikusan   
+tiltja.<a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.opbw.org/convention/conv.html"></a>   Magyarország 1972     április 10-én           
+      csatlakozott ehhez az egyezményhez, és 1972 december 27-én   ratifikálta. Természetesen        
+ mindmáig             érvényes. A világon körülbelül egy tucat ország nem   csatlakozott ehhez az    
+ egyezményhez,   de               többségük azért, mert még a vezetőik sem tudnak       
+írni-olvasni.<span style="font-weight: bold;"><br></span><br>Ezen Egyezmény a következőket mondja ki 
+    &#8211; angolból   általam fordítva,       mert a         magyar verzió nem áll     
+rendelkezésemre.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;<span style="font-weight: bold;">I. rész        
+</span><br><br>Minden,   a   jelen Egyezményhez csatlakozó Állam       soha, semmilyen             
+körülmények között nem   fejleszt ki, állít   elő, vagy más módon nem   szerez     meg és nem     
+birtokol:              <br><br>(1) Mikrobiális vagy más   biológiai ágenseket   vagy     mérgeket,   
+  eredetüktől vagy       előállításuk     módjától függetlenül olyan   formában és       
+mennyiségben,     amely nem magyarázható       orvosi, védelmi vagy más     békés céllal.        
+<br><br>(2)         Fegyverek, felszerelés vagy   más célba     juttató eszközök, amelyek ilyen      
+ ágensek vagy         toxinok   hordozására   alkalmasak ellenséges céllal     vagy fegyveres 
+konfliktus                   során.&#8221;</div><br>Fentiek bizony vonatkoznak a nem halálos     
+harcanyagokra, így a             könnyfakasztó       anyagokra is. Az Egyesült Államokban <a target="_blank"style="color: rgb(0, 0, 0);" href="//www.sunshine-project.org/publications/pr/pr080503.html"><span style="font-weight: bold;">óriási botrány tört                 ki,</span></a>       amikor 2003-ban a hadsereg egyik 
+fejlesztőműhelye egy kézifegyverekhez                 használható       könnygázgránát-kivető 
+eszközt szabadalmaztatott. A szabadalmat ugyan nem   vonták               vissza, de az eszköz       
+gyártása elmaradt. (A szabadalom száma: US Patent     #6,523,478.)       Teljesen       mindegy 
+volt, hogy mit       akarnak kilőni ezzel az eszközzel:     létezése sértette       volna a fenti    
+   szerződésrészlet (2) pontját.       Alkalmas ugyanis más     vegyi anyagok célba       
+juttatására       is.<br><br>Felmerül a kérdés, hogy akkor   miért         alkalmaznak ilyen eszközt 
+a       rendőri erők szinte       minden országban, így Magyarországon is?       Nos,   azért,   
+mert az   aláíró     országok szemet   hunynak     efölött. Még senki sem   fordult   az ENSZ-hez,   
+amiért a       rendőrség     könnygázgránátokat   használ. De       Magyarországon   tudtommal a 
+Honvédségnél is     rendszerben   áll       hasonló eszköz, a     tömegoszlatásra       kiképzett 
+alegységeknél.<br><br><div style="text-align: center;"><img src="./resources/pictures/tomcat_konnygaz_3.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"><br><img src="file:///C:/DOCUME%7E1/tomcat/LOCALS%7E1/Temp/moz-screenshot-4.jpg" alt=""><br><span style="font-style: italic;">A rendőrségnél rendszeresített RWGL-3 könnygázvető. Jól 
+          megfigyelhető, hogy a magyar fejlesztésű AMD-65/5 gépkarabélyból lett átalakítva. Ez az   
+eszköz       sérti   az 1972-es nemzetközi egyezményt.</span><br></div><br>Maguk a   könnyfakasztó   
+    harcanyagok       pedig     elvileg az (1)     bekezdésbe ütköznek, hiszen birtoklásuk nem       
+magyarázható orvosi,       védelmi   vagy     más békés     céllal. No de várjunk csak: az angol     
+eredetiben     &#8222;védelem&#8221; szó   gyanánt   nem   az egyértelműen       katonai önvédelemre 
+    (honvédelemre)     vonatkozó <span style="font-style: italic;">defensive,</span>     hanem a 
+<span style="font-style: italic;">protective   </span>szó     szerepelt. De mit   jelent ez     
+esetben     az, hogy <span style="font-style: italic;">protective?</span>   Ki véd mit és kitől? Na, 
+az         ilyen szavak miatt       tréfás   szakma a     jogászoké. Nem ártana egy   állásfoglalást 
+kérni az         egyezményt gondozó       kormányoktól, azaz       Nagy-Britannia, Oroszország és az 
+  Egyesült     Államok     kormányaitól e   szó     pontos jelentését   illetően.   A   dokumentum 
+szövege angolul,       oroszul, kínaiul,       spanyolul   és   franciául egyaránt   hozzáférhető és 
+    hiteles,   azokban   vajon hogyan   szerepel   ez a         mondat?<br><br>A faramuci   helyzet 
+tehát jelenleg   az,       hogy fegyveres konfliktusban     háborús         bűntett akár egyetlen   
+könnygázgránát   kilövése, de   a     fegyvertelen ünneplőket   nyugodtan el           lehet 
+gázosítani, az     valószínűleg belefér a   <span style="font-style: italic;">protective</span>      
+         kategóriába.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;<span style="font-weight: bold;">IV. rész        
+</span><br><br>Minden,   a         jelen Egyezményt aláíró     Állam   köteles mindent megtenni,     
+hogy   területén, illetve az   ellenőrzése     alatt     tartott     területeken   megakadályozza az 
+    I. részben   körülírt ágensek,   toxinok, fegyverek,     felszerelés         és egyéb célba      
+ juttató módozatok   kifejlesztését,   előállítását, felhalmozását,         megszerzését és          
+ birtoklását.&#8221;</div><br>Puff neki, nálunk   ez is jól meg van     akadályozva.     Szíves     
+örömest   leadom a       gázpisztolyomat, ha az állam is   megteszi     ugyanezt.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;<span style="font-weight: bold;">VIII. rész                
+</span><br><br>Ezen     Egyezmény semmilyen része nem     értelmezhető úgy, hogy az a   Genfben 1925 
+            június 17-én létrejött     Fojtó, Mérgező és Egyéb Gázok és     Biológiai Fegyverek   
+Háborús             Felhasználását Tiltó Jegyzőkönyv     előírásait csorbítsa vagy                 
+hatálytalanítsa.&#8221;</div><br>No, igen,   merthogy van egy ilyen     egyezmény is. Tetszik        
+     figyelni? &#8222;<span style="font-style: italic;">És Egyéb   Gázok.</span>&#8221;<span style="font-style: italic;"> </span>Benne     van ebben a könnygáz is? Ja, hogy az     nem is gáz.   
+          Nézzük csak egy részletet   abból, hogy, mit ír     ez az <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.opcw.org/html/db/cwc/more/geneva_protocol.html">1925-ös       
+          jegyzőkönyv!</a> Rövid,     bár   elég nyakatekert szövegecske.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Az alulírott               Méltóságok,     képviselt kormányaik   
+nevében:      <br><br>Mivel a fojtó, mérgező vagy   más         gázok, és     azokkal     egyező   
+hatású folyadékok, anyagok vagy   eszközök háborúban   való         felhasználását okkal ítéli       
+el a     nagyközönség és a civilizált világ, és        <br><br>Mivel   az       ilyenek   
+használatának tilalmát         Egyezmények rögzítik, melyekhez a   világ Hatalmainak             
+többsége csatlakozott, és    <br><br>Végül e         tiltás legyen   általánosan elfogadott,   mint  
+ a       Nemzetközi   Jog része, a nemzetek közfelfogásának   és         gyakorlatának része.        
+(...)          <br><br>A Magas Szerződő   Felek mindent megtesznek, hogy     más       Államokat   
+ezen   Jegyzőkönyvhöz       való csatlakozásra késztessenek. A   csatlakozási   szándékot   a     
+Francia       Köztársaság       Kormányának kell jelezni, amely pedig ennek hírét     továbbítja a   
+többi       aláírónak. A           csatlakozás a Francia Köztársaságnak küldött kérelem   napjától   
+        érvényes.&#8221;</div><br><img src="./resources/pictures/tomcat_konnygaz_2.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 0px; margin-bottom: 0px;" border="0">Na     bumm: ez is csak háborús           felhasználásról   rendelkezik. Magyarország     
+egyébként   1952. október     11-én ezt a     jegyzőkönyvet   is       aláírta. Tehát ez sem     
+alkalmazható jelen esetben. Jó,       mi?<br><br>A     történet vége: igen,     a magyar         
+rendőrségnek jogában áll súlyosan egészségkárosító           anyagokat rendszerbe   állítani   és az 
+        állampolgárok ellen felhasználni. Igen, ellened is. Minek         mész az   utcára, ugye. 
+Vagy       minek nyitod ki     az ablakot, amikor odakinn   könnygázaznak.           
+Vagy...<br><br>Vagy   minek   élsz   egyáltalán. De a     rendőrség erről is   gondoskodik. Csak     
+  lélegezz           mélyeket.<br><br><br><br></div><div style="text-align: justify;">            <span style="font-weight: bold;">Kiegészítés: A fenti cikk tartalmára
+vonatkozó, az ORFK által kiadott "cáfolattal" a Bombagyár Rádió pénteki
+adásában részletesen foglalkozunk.<br><br></span>
+</div></DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2007-10-18&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=107&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=107&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=107&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=107&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=107&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=107&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=107&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=107&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=107&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=107&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=107&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=107&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=107&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=107&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=107&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=107&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=107&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment99865"></A>154. saltib</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=107&id=99325#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-09-22 17:49:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Egyet értek. De én akartam elöször beírni :P<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment99325"></A>153. 153. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-09-21 19:03:43</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tisztelt  Országgyűlés!<br />
+Tisztelt  Alkotmánybíróság!<br />
+Tisztelt  Köztársasági  elnök  úr!<br />
+Tisztelt  Kormány<br />
+Tisztelt  Miniszterelnök  úr!<br />
+Tisztelt  Államügyész  úr!<br />
+Tisztelt  EP!<br />
+Tisztelt  médiák!<br />
+<br />
+A  jó  kurva  anyátokat.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5547"></A><FONT COLOR="#FF0000">152. </FONT>baloo</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=107&id=5334#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-19 13:47:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1170.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5541"></A><FONT COLOR="#FF0000">151. </FONT>Avernus</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=107&id=5456#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-19 13:22:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_968.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5487"></A><FONT COLOR="#FF0000">150. </FONT>150. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-19 08:03:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5481"></A>149. Aradi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-19 07:18:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Adjon Isten, erős gerincet<br />
+<br />
+No, az utcai harc  győzeleme után mit tennénk kérdésekre én sem itt válaszolnék.<br />
+Viszont egy tanulságos "vicces" történetet (tanmesét ) had engedjek meg magamnak ami a hozzáállás mikéntjének fontosságát emeli ki legalábbis számomra.<br />
+<br />
+Az öreg székely ember nagyon beteg lesz s hívja a fiát:" No, fiam itt a bicskám fogd s majd vigyáz Rád mint rám is eleddig!"- A fiú elteszi s elmegy a dolgára. De az öreg székely jobban lesz s hívja a fiát."No, fiam a boldogságos szűzanyánk segítségével még élhetek egy keveset s most a bicskám kérem vissza! Erre a gyerek beleveresedve kissé dadogva elővesz egy zsebórát: "Nézze édesapám mivel nekem már volt saját bicskám a magáét elcseréltem egy ezüst zsebórára amit ha megnézek mindíg édesapám jut az eszembe." Nézi az öreg az órát erősen még  a ránc is összeugrik a homlokán  majd fiárnak szegezi a kérdést: No , fiam ha bémész a kocsmába s kérsz egy pofa sert s valaki azt kívánja mondani a K..va anyádat - akkkor mit teszel majd ? Bemondod a pontos időt ,hogy fél nyolc??" -<br />
+<br />
+Szóval a szánkba köpte Fletó pld. a K.országot s ennek már több mint 1éve ! S van még aki erre azt mondja ,hogy fél nyolc?<br />
+<br />
+<br />
+ </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5457"></A>148. Hungarista -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-19 01:38:52</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_235.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">tény hogy főleg én szétoffoltam a topicot<br />
+de mivel ez volt ma az egyetlen bejegyzés így ide írtam<br />
+de irtam pl az aids-estémához is csak nem látszik frissültek e a kommentek<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5456"></A>147. 147. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-19 01:34:55</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hiszek neked és veled vagyok.<br />
+<br />
+A kormánydöntési ötleteket én is várom. Ami érdekes lenne, ha mind egyszerre kezdenénk érdeklődni a külföldi munkalehetőségekről. Kitűznék egy dátumot, aznap mindenki bemenne a saját munkaügyi kirendeltséghez, és kérdezne mint egy ovis. Kíváncsi lennék, hogy felkeltené-e ez bárki figyelmét, kicsit jobban meglepődnék ha igen.<br />
+A baj csak az, hogy mint úgy általában semmire, erre se lehetne jelentős létszámot összehozni.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5455"></A>146. TOC -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=107&id=5454#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-19 01:32:46</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_360.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szebb jövőt!<br />
+Ezért lenne tényleg célszerű, egy fórum kialakítása...<br />
+<br />
+- csak a postokhoz kapcsolódó kommentárok születnének.<br />
+- egy-egy érdekesebb témát sokkal könnyebben kilehetne vesézni.<br />
+- sokkal nagyobb lenne az oldal közösségépítő hatása.<br />
+- egy érdekes, sokakat foglalkoztató téma nem lenne áldozata az idő múlásának... (alternatív megoldás: lista a legtöbbet kommentált postokról)<br />
+- ez nem az index.hu, nincsenek állatok, remélhetőleg nem alakulna ki flame war... <br />
+( <B><a href="//hu.wikipedia.org/wiki/Flame_war" target="_new" style="color: #000000;">http://hu.wikipedia.org/wiki/Flame_war</a></B> )<br />
+- zárt közösség, akár szobaszinten lehetne publikus/nempublikus kialakítás.<br />
+- ha a postok kommentárjai is elérhetők lennének a fórumban, nem válna nagyon külön a két dolog...  <br />
+( nagyon remek megvalósítása ennek a <B><a href="//pdamania.hu" target="_new" style="color: #000000;">http://pdamania.hu</a></B> - fóruma ) *reklám nélkül<br />
+<br />
+ez csak 1 ötlet!<br />
+üdv!<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5454"></A>145. Hungarista -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-19 00:52:46</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_235.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">alex engem már irritál a turbómagyarkodás tüntetés útlezárás stb stb<br />
+azt mondják meg az okosok: mikor kire hol lőjünk!!!<br />
+a tököm se fog már plakátháborúsdit, tüntetősdit játszani<br />
+<br />
+a fiam szokott a kádban tüntetőst jáccani<br />
+kiabálja hogy durcány takaroggy vesszen tlijanon<br />
+no a fiam még csak 2.5 éves<br />
+ez nálla teljesen renben is van Tomcat szerint néha dobhatnék be neki könygázgránátot is... márhogy szokja :))<br />
+<br />
+szóval itt már lopikulát sem ér a tüntetés.<br />
+de már az sem érne sokat ha lőnénk<br />
+sajna már hivatalosan is elismert gyarmata vagyunk izrájelnek lásd seron bejelentése.<br />
+én fölösleges dolognak tartom a tüntetősdit<br />
+nincs egy kiállítható kormány!!!<br />
+nincs egy miniszterelnök jelöltünk<br />
+<br />
+oké tegyük fel 22én 23án megint felmegyünk és lenyomjuk gyurbánékat<br />
+és? hogyan tovább?morvaikrisztizünk? uszticsmátyásozunk?<br />
+<br />
+mik az alternatívák "győzelem" esetére?<br />
+szóval 1 éve volt rá a "magunkfajtáknak" hogy kiállítsanak egy árnyékkormány... hol vannak az emberek? a jelöltek?<br />
+1 van csak Drábik pénzügyminiszternek<br />
+és? ez qrvára kevés hosszasan elmélkedhetnék itt lenne mit irnom<br />
+lehet csinálok énis egy blogot :ĐĐ<br />
+de előtte megtanulok hejesen irní ((:<br />
+épeszű embereknek észre kellene már venni<br />
+nemhogy ebből az országból de európából is szinte menekülni kell<br />
+a jelenlegi gazdaság helyzet.....<br />
+ugye emléxünk még?<br />
+harc a világ gazdasági felosztásáért<br />
+harc az ujrafelosztásért....<br />
+<br />
+tényleg nem lehet itt kifejteni a gondolotokat<br />
+kommentelek itt de nincs pro és kontra<br />
+mindegy<br />
+uff én beszéltem :Đ</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=107&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=107&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=107&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=107&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=107&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=107&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=107&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=107&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=107&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=107&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=107&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=107&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=107&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=107&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=107&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=107&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=107&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

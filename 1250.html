@@ -1,0 +1,512 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1250#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A finnugor mítosz";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4023.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>A finnugor mítosz<BR><DIV CLASS="postheader_small">Blog - DaVinci</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 augusztus 14. 02:41:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1250.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Úgy tűnik, a KURULTAJ kapcsán előkerült néhány örökzöld téma is, melyekről némi vita is kibontakozott. Tegyük hát helyre őket, és kezdetnek induljunk el a talán egyik legfontosabbal, legnagyobb kincsünkkel: az anyanyelvünkkel. Ehhez kapcsolódva pedig lebonthatjuk a világ legnagyszerűbb dolgához, a MAGYAR NYELVHEZ 1867-ben odaláncolt nevetségesen primitív finnugor mítosz.<br><br>Igen, a dátum nem véletlen, ezeréves gyarmati sorsunk újkori fejezetének egyik leggyászosabb éve ez, mikor is a ránk telepedett, a világ legaljasabb élősködőit és szarkeverőit magába foglaló habsburg uralkodóház a területi és közigazgatási gyarmatosítás után nagy erőkkel megkezdhette a szellemi elnyomást is hazánkban &#8211; és tehették mindezt akkor is &#8222;vezetőink&#8221; legnagyobb örömére, ahogy ezt sajnos megszokhattuk már 1008 éve.<br><br>Miután a Magyar Tudományos Akadémia ajtaja leginkább az idegenek és a gerinctelenül behódoló lakájok számára állt csak nyitva (mind a mai napig), nem volt nehéz elindítani a kulturális leigázást. Miért volt erre szükség?<br>Ahogy ezt a világtörténelem folyamán &#8211; sajnos a végtelen türelmünk és toleranciánk miatt, mint a legtöbbet szenvedő nép &#8211; már ezerszer megtapasztalhattuk, az alacsonyrendű (vagy nevezzük primitívnek, ha így szalonképesebb) és folyton kisebbségi komplexussal küzdő népek igyekszenek a leigázott, de mégis szellemi és kulturális fölénnyel bíró társadalmakat maguk alá gyűrni oly módon, hogy a legfontosabb értékeiket próbálják megsemmisíteni: tradíciók, vallás, kultúra, történelmi és más emlékek stb. Amikor pedig a tiszta forrásba, a nyelvbe és a történelembe is belerondítanak, akkor kezdődik a vég&#8230;<br><br>És ez meg is indult nagyüzemben 1867-ben, mely terror kezdetét kiegyezésnek hazudják a mások által írt, és emiatt hamis magyar történelemben. Ezen sajátos előzmények miatt mélyen nem is kívánkozok belemenni abba, hogy a magyartalan és tudománytalan (v)akadémia idiótáinak baromságait analizáljam. Hihetetlen az a fanatikus együgyűség, ahogy &#8222;tudósaink&#8221; védik az értelmetlen és érthetetlen álláspontjukat. A finnugor rokonságot semmilyen eredet, konkrét történelmi illetve kulturális lelet illetve hagyaték, vagy bármilyen írásos emlék nem támasztja alá, ellenben a meglévő valós tárgyi illetve történelmi emlékek és bizonyítékok egészen másról szólnak. <br><br>1867-ben úgy gondolták, az ország szellemi és tudományos bástyáinak kisajátítása a legjobb módszer ahhoz, hogy elvágják a nemzetet a gyökereitől, hogy elfeledtessék vele azt, hogy honnan és miért is jött a Kárpát-medencébe. Akkoriban még &#8222;csak&#8221; a történelmünk át- és újraírásával próbáltak kibillenteni bennünket a nemzettudatunkból, a kultúránkból, a hitünkből és az eredendő tudásunkból.<br>Akkor még nem is sejtették, hogy lesznek ennél sokkal egyszerűbb és hatékonyabb módszerek is ahhoz, <br>hogy megfosszanak egy népet az öntudatától, mert kit érdekel ma a dicső múltunk vagy a történelmünk, esetleg az egyedülálló magyar nyelv, amikor van ehelyett győzike sónk&#8230;<br></div><br> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-08-14&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1250&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1250&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1250&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1250&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1250&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1250&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1250&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1250&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1250&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1250&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1250&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1250&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1250&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1250&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1250&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1250&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1250&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1250&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1250&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1250&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1250&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1250&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1250&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1250&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1250&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=1250&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment89954"></A>244. tartós</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1250&id=89868#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-23 14:31:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3339.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ja, és egyébként - a tudomány nem egyéb, mint AZ EDDIGIEK CÁFOLATA :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment89868"></A>243. tartós</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1250&id=86884#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-23 13:36:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3339.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">224. Raine<br />
+<br />
+1) Azért helytelen, mert nem létezik. Pontosabban szólva: mára már csak finn-ugor nyelvészeti elmélet létezik, a származási elmélet, ami nemrég szerves részét képezte egy egységes elméletnek, a genetikai kutatások fényében elavult hirtelen. Béke poraira. Helyes pedig az lenne, ha nem KIZÁRÓLAGOS elmélet létezne, hanem komplex nyelvészeti összehasonlításon alapuló olyan származási elképzelés, ami nem dől meg rövid 15ö év alatt. mint pl. a mostani finn-ugor..<br />
+<br />
+2) Nem szégyen, pusztán kellemetlen - mert NEM igaz  ! <br />
+ Nem foszt meg nemzeti értéktől, csupán csak törekszik erre.<br />
+<br />
+3) Milyen alapon beszél a tudomány bármilyen elméletről is "kizárólagossággal" , ha az egyszer s mindenkorra lejáratódott a nyugati szakmai világ szemében is ? Lásd : Alinei professzor etruszk elmélete, vagy a finn tudományos akadémia nyelvészeinek kihátrálása a finn-ugor elmélet mögül, stb. Alternatíva mindig van, csakhogy ezt zárták ki a Magyar Tudományos Akadémia finn-ugor kizárólagosságot hirdető fura urai..</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment88729"></A><FONT COLOR="#FF0000">242. </FONT>Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1250&id=88512#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-21 04:13:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment88512"></A>241. minime</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-20 21:49:43</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2395.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><b>Tudom kissé későn reagálok, de kerüljenek a dolgok a helyükre! Engem &#8222;letaglózott Caratusra 140. hozzászólása,  &#8222;tanulmánya&#8221;. Kénytelen vagyok megismételni, s bold-okkal jelezni az észrevételeimet. Előre is bocs , ha túl hosszú.</b><br />
+<br />
+<br />
+140. Caratusra	2008.08.14 21:20:43  [Privát üzenet] 	 <br />
+	<br />
+Lássuk a tényeket! <br />
+<b>Ugye ez csak &#8222;költői&#8221; túlzás? <br />
+Mert az elkövetkezendő írományodban nyomai sem nagyon vannak a tényeknek, hivatkozásoknak, forrásoknak úgyszintén.</b><br />
+<br />
+A mai magyar népesség genetikai állománya:<br />
+<br />
+Egy japán tudós, akire a turanisták<b>(persze turanisták,fasiszták, hungaristák,jóskapisták stb,stb)</b> szoktak hivatkozni (én is így találtam rá) végzett egy kutatást, ami során azt az elméletét akarta igazolni, hogy szerinte, a magyarok, eredetileg egy mongolid nép leszármazottai. <b>(Itt valószínű Hideo MATSUMOTO alábbi cikkére kívántál hivatkozni -<br />
+<B><a href="//studentorgs.utexas.edu/husa/origins/matsumoto.lecture.html#text" target="_new" style="color: #000000;">http://studentorgs.utexas.edu/husa/origins/matsumoto.lecture.html#text</a></B> , ami 1990-ben kelt, ráadásul 1966-os hivatkozás is van benne!!! Javíts ki ha nem így van! Ám ha mégis erre gondoltál , érthető miért nem kötötted a gyárlakók orrára a forrást. Így, ugyebár mindenki ellenőrizhette volna. (tekintettel arra ,hogy a genetika kb.hasonló gyorsasággal fejlődik mint a számítástechnika, hol tartott a genetika 1966-ban?) </b>  Ezért hát fogott egy markert ami csak a mongolid nagyrasszra jellemző, és elkezdte ezt keresni a mai magyar populációban. Egy ilyen kutatás úgy történik, hogy az ország különböző pontjain, nem túl nagy létszámú embert, pl. 10 x 100 embert megvizsgálnak, és az ő adataikat alakítják át egy arányszámmá. Ez természetesen minimális szintű hibafaktort jelent, de azért 1000 fő esetében, már nem túl valószínű, hogy pont csak olyanokat fogjanak ki akikre ez jellemző, vagy pont hogy egyáltalán nem.<br />
+Ezeknek a markereknek van egy olyan jellemzőjük, hogy csak akkor lehet őket ilyen formában kimutatni, hogy ha az adott ilettő génálománya egy bizonyos szerkezetet produkál, ezért remek módszer, ilyen fajta kutatások elvégzéséhez, mivel ezzel 1 db "cucc" kimutatásával, gyakorlatilag egy nagyobb részlet felépítését is be tudod határolni.<br />
+Így hát el is végezte a japán úr ezt a kísérletet, és az eredményekben közzé tette, hogy ő a magyar népesség 5%-ban megtalálta ezt a gént. Van olyan hely (megye) az országban ahol gyakorlatilag semennyire nem fordul elő, van ahol ezt az 5%-ot eléri. Átlagosan tehát ez az 5% a kimutatható, és a japán tudósunk azt is ki meri jelenteni, hogy ugyanakkor a magyar népesség 95%-a kétségtelenül Európai.<br />
+Levonja hát a konklúziót: a magyar nép és a mongolid nagyrassz között kétségtelenül kellett lennie kapcsolatnak, ám azt, hogy ez térben és időben hol és mikor történt, nem tudjuk meghatározni.<br />
+<b>Javaslom elolvasásra az alábbi cikket,bár ez sem a legújabbak közül való , de cáfolata még nem született:<br />
+<B><a href="//hpgl.stanford.edu/publications/Science_2000_v290_p1155.pdf" target="_new" style="color: #000000;">http://hpgl.stanford.edu/publications/Science_2000_v290_p1155.pdf</a></B> </b><br />
+<br />
+A honfoglalás kori sírokban talált csontvázak génvizsgálata:<br />
+<b>Mit nevezel te &#8222;honfoglalás kori&#8221; síroknak?</b><br />
+<br />
+A honfoglalás korából származó csontvázak azért is jelentenek jó forrást, mert mint minden nép esetében, a magyarok is főleg előkelőiket temették el olyan "fejlett" és gazdagon elhalmozott sírokba, amiket ma is könnyebb megtalálni és elemezni.<b>(Hát, ha figyelembe vesszük ,hogy kb .   százezer sírt tártak föl az un. &#8222;császár-kor&#8221; és Szt.István kora közötti időből s ennek rendkívül kis töredéke az általad említett típus, meglehetősen merész dolog a következtetések általánosítása) </b>   Ezek a fő emberkék többnyire magyarok voltak, hisz mint a magyar nép neve is mutatja, népünk legjelentősebb és legtöbb tagjait a magyarok adták. Így tehát nagy valószínűséggel azzal számolhatunk, hogy az általunk kiásott csontváz egy "magyar" lesz.<b>Mi a &#8222;magyar&#8221;? </b> Mindettől függetlenül tudjuk, hogy a magyarok pont, hogy nem egyedül érkeztek foglalni a hont. Más népek is jöttek velünk, török és szláv fajták, akik csatlakoztak dicső elődeinkhez,<b>(Most képzeld el ezeket a hülye török ás szláv fajtákat! A besenyők által tönkre vert, több ezer km-n keresztül üldözött szerencsétlen magyarokhoz csatlakoztak! A jó sok zsákmány reményében)</b>  hisz velünk új hazát,<b>(Nekik minek kellett új haza?) </b>és valószínűleg jó sok zsákmányt nyerhettek ők is, mi pedig nagyobb haderővel rendelkeztünk. Ezt alátámasztják régészeti leletek <b>(Na ezt egyáltalán nem támasztják alá a régészeti leletek.!! Forrás?!)</b> és a magyar nemzetségek nevei is különböző eredetre utalnak (pl. fejből meg nem mondom melyikek, de több nemzetség is finnugor névvel büszkélkedhetett, míg mások tipikusan törökös nevet kaptak).<b>(Ezt jól teszed , mert még az sincs tisztázva ,hogy amit ma &#8222;honfoglaló törzseknek&#8221; tanítanak azok valóban törzsnevek, vagy a vezetők nevei, vagy egyszerüen csak katonai rangok megnevezései)</b><br />
+Tehát visszatérve jó eséllyel magyart vizsgálunk<b>(Mégegyszer mi a &#8222;magyar&#8221;?) </b>A szegedi kutatás kimutatta, hogy a honfoglaló sírok embereinek 3/4-énél ugyanez a marker módszer<b>( melyik is azaz &#8222;ugyanez&#8221;?)</b>, egy tipikusan uráli markert tud kimutatni.<b>Itt valószínü a RASKÓ -féle kutatásra gondolsz, de mivel nem vagyok gondolatolvasó javíts ki ha nem erre gondoltál: <B><a href="//www.mta.hu/fileadmin/2006a/04/genetika_eloadasok/genetika_Rasko.ppt" target="_new" style="color: #000000;">www.mta.hu/fileadmin/2006a/04/genetika_eloadasok/genetika_Rasko.ppt</a></B><br />
+(Raskóék mérési eredményeit nem vitatom viszont a &#8222;hozzáköltött&#8221; interpretációt nagyonis!!!)</b><br />
+Ez eddigi elméleteinkkel teljesen egyezik, hisz a török nemzetségnek is kellett hogy legyen főura, meg előkelői <b>(Most akkor a török finnugor vagy mit is akarsz mondani?)</b>. Egy korábbi kutatás azt találta, hogy a magyar honfoglalók 2/3-a európai volt <b>(melyik is ez a kutatás?) </b>. Ez több évvel a szegedi kutatás előtt készült, és antropológiai jellegű volt, viszont ennek ellenére az eredmények többé kevésbé igazolják egymást. Azért fogadjuk el az újabb kutatási eredményeket, tehát a 3/4-et.<br />
+<br />
+Most tehát tudjuk, hogy a magyar nép <b>(melyik &#8222;magyar nép&#8221; ? Amelyik már itt élt  - talán &#8222;SAMU&#8221; óta -  s a ma magyarnak nevezett nyelv ősét beszélte , száma pedig legalább  másfél két millió lehetett a &#8222;honfoglalás&#8221; korában ( a sírok s egyéb leletek alapján) vagy pedig az Árpáddal jövő &#8222;betelepülők&#8221; kiknek nyelvét nem ismerjük ,s  számuk legfeljebb 2-3 százezer lehetett)</b> a honfoglalás korában inkább európai (finnugor) <b>(hát ez is fordítva igaz: a ma finnugor népeknek  hívottak pontosan    a náluk meglévő, ázsiai keletkezésű TAT-C haplocsoportban különböznek pl. tőlünk, ill.általában az őslakos európaiaktól.A RASKÓ cikk szerint a finnek  63.2% -a ilyen )</b> volt a kutatások szerint, manapság pedig még inkább az.<br />
+(ez külföldön is ismeretes tény úgy tűnik, mivel egy youtube kommentem alá - ami szintén ezt a témát feszegette - érkezett egy angol komment hogy ő úgy tudja a magyarok 90%-ban európaiak, a finnek meg 95%-ban, tehát az adatok itt is többé kevésbé egyeznek)<b>( te, azt hiszem a youtube nem egy autentikus forrás a magyar genetikai állomány szempontjából -  &#8222; noha fennáll természetesen a lehetősége, hogy mégis az...csak valószínűtlen&#8221;).</b><br />
+<br />
+Most pedig (bomba)gyártsunk két elméletet arra, hogy mi igazolhatja, a kutatási eredményeket.<br />
+<b>(Na innentől &#8222;vérhülyeség&#8221; az egész!)</b><br />
+1. elmélet:<br />
+<br />
+A magyarok márpedig mongolidok. Hát ez lehetséges, habár nagyon kicsi az esélye. Ennek az az oka, hogy ma ugyebár 5%-ban mutatható ki<b>( egy 18 évvel ezelőtti cikk szerint! Vagy tudsz mai kutatásról, ilyen eredménnyel?)</b>, és a honfoglalás korában sem ez a marker volt a jellemző. Tehát ezek alapján ha mongolok voltunk, akkor az idők során annyira kellett keverednünk, hogy már ez csak ilyen kis részben mutatható ki. Ha gondolkodunk, hogy a mongol térségekből a kárpát medencébe érkezés ideje alatt 100%-ról 25%-ra kellett elvileg csökkennie a mongol származásnak, akkor a másik verzió, miszerint 100% europidról 75% europidra csökkent az arány, sokkal valószínűbbnek tűnik. Ehhez jön hozzá, hogy az idők során, ahogy szaporodott a magyar nép, a mongol elmélet értelmében a magyar "népességen" belül a magyar "nép" mégis csak fogyott. Hisz a végeredmény az 5%, míg a másik verzió szerint, a szaporodás tényleg szaporodást jelentett.<br />
+Az elmélet értelmében az eredeti magyar nép ( tehát ha mongolid volt) gyakorlatilag kipusztult, és jelenleg már inkább csak kulturálisan létezik.<br />
+<br />
+Nézzük a másik verziót!<br />
+<br />
+2. elmélet:<br />
+<br />
+Vannak a magyarok, ez az aranyos nép ott az urál déli lejtőinél.<b>(Egészen pontosan hol is van? Mert a finnugrizmus szerinti időben és helyen nem hogy ember, de talán még fű sem termett, mivel fagyos tundra volt) </b>Jól eléldegélnek ott, néha hideg van eléggé, néha nem annyira, halásznak vadásznak, gyűjtögetnek...stb <b>(és közben általában éhenhalnak meg kicsit megfagyogattak)</b>. Esetleg télen a nagy hideg elől délebbre vándorolnak<b>(pár ezer km-t, aztán nyáron meg vissza, még mielőtt lovuk lenne, vagy megépítenék a transzszibériai vasutat ugye?),</b> ahol ilyenkor haverkodnak az ottani sztyeppei népekkel. És vesznek tőlük lovat, mert a ló az jó<b>(Hát ez már csak így megy.Mondd csak hitelre vették ,mert pénzük, csere alapjuk nemigen volt) </b>. Később más népek hatására, vagy talán éghajlatváltozás miatt, elindulnak délnyugat felé a magyarok, míg rokonaik közül van aki északnyugatnak indul, van aki északkeletnek, és kevesen ugyan, de vannak olyanok is akik helyben maradnak (ők konzervatívok lehettek<b>( ÁÁÁ ! A törzsfőnökök biztosan üveget forgattak mindenki ment amerre az üveg szája mutatott a hülye konzervatívnál meg eltörött a  &#8222;whiskey's&#8221; palack nem?).</b> A finnugor magyarság vándorlásai során (mint azt tudjuk is<b>( természetesen az előkerült sok-sok útinaplóból)</b> sok török/mongolid fajtával találkozik, tőle többnyire déli szomszédságban. Velük végig kereskedelmi kapcsolatot tart fenn, van olyan királyság is, ahova bérkatonákként, alattvalókként is beállnak, akárcsak később a kunok hozzájuk<b>(Annyira nincs fogalmad a lovasnépek kultúrájáról ,hogy elgondolkodtat a dolog nem egy ált.iskolás &#8222;pajtásra&#8221; pazarolom az időmet)</b> . Évszázadokon keresztül megy ez így, mígnem elérnek a Kárpátokhoz. Nosza átkelnek rajta, pár hozzájuk verődött néppel befoglalják, mert kemények, és van egy szép nagy országuk. Ezek után ugrunk az időben, jönnek a tatárok, kunok, jászok, később pedig 250 évre a törökök is benéznek. Ez azt hiszem kellő alkalom egy kis török/mongolid vér elhintésére (na meg a magyar is folyt rendesen).<b>A török és mongoloid teljesen eltérő genetikai állománnyal és antropológiai jellemzőkkel rendelkezik!</b><br />
+Elméletünk szerint ennek a sok, hosszabb-rövidebb kapcsolatnak eredménye a ma is kimutatható 5% (ami mint már említettem könnyen lehet hogy az egész népességen végzett kutatás volt, mert a japánok ugye nem rasszisták). Meg kell itt még jegyeznem hogy a orkok is <b>(és még kik is?)</b> úgy döntöttek a legtoleránsabb nemzeten (köszi istván <b>(Szt.István intelmei teljesen másról szólnak, ha tudsz latinul légyszives fodítsd le meglátod :nem a toleranciáról szól)</b>) fognak élősködni, és elszórtak ők is jelentős mennyiségű mongolid vért népünk tagjai közt.<br />
+<br />
+Tehát itt van a két elmélet. Ezekhez tartoznak a kulturális emlékeink (forrásaink ) illetve a nyelvészet.<b>Hooogy? A régészeti leletek tartoznak az elméletekhez? A tények tartoznak az elméletekhez? Hát neked fogalmad nincs a gondolkodás mibenlétéről! Az ember a tényekhez, a leletekhez igazítja elméletét és NEM fordítva!!!</b><br />
+A nyelvészet, a már említett módszereket használva (hangtani rendszeres megfelelések, nyelvtani szerkezet, a nyelv korai fajtáinak nyelvtani szerkezete, alapszókincs egyezése) arra a következtetésre jutott, hogy az amúgy is valószínűbbnek tűnő 2. elmélet a helyes,<b>NA ,ezt Angela Marcantonio: Az urali nyelvcsalád  c. könyvében tételesen, nyelvtudományi eszközökkel , éles logikával, teljességgel MEGSEMMISÍTETTE! Tessék szíves lenni olvasni!</b> ugyanis pl. a törököktől tipikusan pl. állattartással kapcsolatos szavakat vettünk át<b> Na ez megint téves! Törökből max.a 150 éves hódoltság alatt vehettünk át szavakat előbb nemigen.Tudod -é , hogy már legalább egy tucat ótörök nyelvet alkottak a nyelvészek mindenféle forrás nélkül</b>,míg a vadászattal, hóval, hideggel, gyűjtögetéssel, rokonságokkal kapcsolatos szavaink (és számaink nagyon nagy része) egyértelműen finnugor.<b>Hát ezt is rosszul tudod! Már nem finnugor-t hanem PREfinnugor nyelvet mondanak.Amit persze még kevésbé tudnak rekonstruálni !</b> <br />
+Ettől függetlenül kétségtelen tény, hogy a magyar nyelv több mint 1000 szót vett át a töröktől<b>Honnan veszed ? Forrás? Ott voltál? Osztán , mit fizettünk az ezer szóért? Vagy loptuk? Vagy ajándok?</b>. Ugyanakkor fontos kiemelni itt az átvétel jelenségét. Ez akkor történik hogyha hangtani megfeleltetés nem mutatható ki, egyszerűen jött a török volt nála egy ökör, azt mondta "hé gyaur, ez egy ökör, kell 5 kreditért?" mi meg vettünk ökröt, és nem neveztük át, mer minek, van annak neve.<b>Természetesen ebből a mondatból csak az &#8222;ökör&#8221; szó ismeretlen a többi szót már előbb elloptuk mi?</b><br />
+<br />
+Végezetül pedig megjegyezném még, hogy a Hungaria, Hungria, Ungria szót, eddig az On-ogurból származtatták, ma azonban (és jóval korábban is) jópáran azt gondolják hogy ez a Yugria szóból ered, amit európában a urál melléki vidékekre értettek. Magyar nevünk pedig valószínűleg kapcsolatban van a Manysi névvel. A két szótő lehet a Many illetve a Magy. Megfigyelhető hogy a magyar nyelv ahogy telt az idő, egyre "durvább, keményebbb" lett. Pl. elvesztette szóvégi magánhangzóra végződését. Ez a folyamat okozhatta hogy a Many (vagy valami hasonló nevű) nép emberei később Maggyá váltak, aztán Magyarrá (míg barátaink Manysikká).<b> Erre a szófejtésre már csak: &#8222;ajajajaj&#8221; nagy a baj </b><br />
+Még azt szeretném kiemelni, rengeteg konkrétan 'fontos' szavunk egyezik a finnugor szavakkal, olyanok mint: élet, menni, el(menni), ló, jég, hal, szem, szív, vér, kéz, apa, anya..stb. <b>Forrás?   Egyébként ilyet számtalan nyelvből lehet említeni a magyarral kapcsolatban  pl. Szlovák:  apo= apa, bába=kisbaba, beseda=beszéd, dojka=dajka,hrca`harcsa,cík=csík (halfajta), laba`=láb(állaté)  stb,stb</b><br />
+<br />
+Ennek függvényében álláspontomat indokoltnak találom, noha fennáll természetesen a lehetősége hogy nem igaz...csak valószínűtlen.<br />
+<b>Hát ekkora arccal zárni, csak és kizárólag a téma TELJES TUDATLANSÁGÁNAK  birtokában lehet.<br />
+<br />
+Még egykérdést föltennék: Hogyan tanult meg az &#8222;itt talált&#8221; szláv??? népesség 100-120 év alatt &#8222;magyarul&#8221; a beérkezőktől, ha legalább 5-8 szor többen voltak és zárt tömbben letelepedetten éltek itt? Sőt nem volt Rtklub,TV2 és társai egyéb népnevelők! <br />
+<br />
+Végezetül egy kis irodalomjegyzék:<br />
+Czuczor-Fogarasi : A magyar nyelv szótára ( Arcanum Kiadó CD-ROM)<br />
+Angela Marcantonio: Az urali nyelcsalád<br />
+Varga Csaba : A magyar szókincs titka<br />
+Varga Csaba : A szlovák nyelv eredete ( <B><a href="//www.varga.hu" target="_new" style="color: #000000;">http://www.varga.hu</a></B> )<br />
+Mellár Mihály : A magyar nyelv gyökrendszerének alapjai (<B><a href="//www.leventevezer.extra.hu/" target="_new" style="color: #000000;">http://www.leventevezer.extra.hu/</a></B>)<br />
+Marácz László: Nyelvi és képi gyökök (<B><a href="//www.epa.oszk.hu/00000/00005/00020/betu2.html" target="_new" style="color: #000000;">http://www.epa.oszk.hu/00000/00005/00020/betu2.html</a></B>)<br />
+ Elrettentésképpen ill. ha hülyeségsűrítményt akarsz olvasni:<br />
+ Magyar Történeti Etimológiai Szótár ( A legendás TESZ) </b></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment88378"></A>240. minime</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-20 13:27:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2395.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">bocs ,csak elütöttem</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment88300"></A>239. Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1250&id=87610#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-20 02:12:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">#235. KaraSaraqan:<br />
+<br />
+Kezd ez a téma itt lecsengeni. Szeretném pontról-pontra megvitatni észrevteleidet, magyarázataidat, hogy más is tanúlhasson belőle, de igy nem éri meg az időbefektetést. Talán máshol folytathatjuk egyszer. Kár, hogy érdekesebb és állandójellegü témákra nem ad itt az adminisztráció egy fórumot ahol nem kellene tartani a lecsengéstől, archiológiai réteggéválástóll.<br />
+<br />
+Azért mégis megpróbálok röviden reagálni.<br />
+<br />
+1.) Igazad van, hogy kifogásolni látszol a "szumér"<br />
+névhasználatomat, de épp úgy kifogásolhatók az éltalad felsoroltak is. Ha a "sumér" akkádnak van nyilvántartva (egyes körökben), akkor szinte biztos hogy vagy az akkádban jövevényszó a sumérból, ahol viszont jövevényszó kell hogy legyen a magyarból. Az is lehet hogy közvetlen a magyarból került az akkáda, Padányi vette észre, hogy nagyon sok közös szavunk van az akkédokkal közvetenül is.<br />
+A lényeg a név mássalhangzóvázában van: SMR, de figylembe kell vennünk az SBR és SVR változatokat is mert a az M, B, V nagyon könnyen át mehet egymásba, nyelvek között de nyelven beül is.A<br />
+székely-magyr rovásirás M betüje is ezt látszik érzékeltetni, ugyanis a B betüvel szinte azonos jel. Ha már rovásnál tartunk akkor meg kell jegyeznünk, hogy sok közeli és távolabbi nyelv vette át ezt az ósi Kárpáát-medencei szót: "RAVAS"(román), "RABUS", "REBUS" (Fel-Csikban és Gyergyóban), "ROVAS", "RABOS" (sserb), "RABUS" (szintén szerb, de délen az albániai határnál), ROVAS (kaj-horvátok, szlovének, csehek, oroszok), "RABISCH", "RABUSCH" (bajorok, osztrrákok), "RABASZI" (görög, népies szóhasználatban), "REBUS", "RUBRICA" (latin, etruszk közvetitéssel). Végül a "RUNA" (német, melyben a RÓ szógyök viágosan felismerhető. (A runa irás ABC-je ugyan nagyban latin eredetü, de a germánok is ismerték a fába való rovást).<br />
+<br />
+A feni példákhoz teljesen hasonló a  SZAMIR-SZABIR, SUMER-SUBER, SZAVÁRD, SZABARTO, SZUBARTU, SZAMARA, SZAMRIA, SZAMÁR (állatnév), SZIBÉRIA, SAVARIA (Szombathely régi neve, amit ha a rómaiak adtak akkor kétség nélkül a SZABIR, vagy sokkal régebbi SZEMERE őstürzsünk neve rejtőzik mögötte). Ezek nem meritik ki az összes SMR variációkat, oldalakon lehetne folytatni anélkül, hogy a fogalomkörből kiütnének.<br />
+<br />
+A fentieket figyelembe véve hajszálhasogató értelmetlen (úgyis mondhatnám "értelmiségi") akriba a szumér-sumer, vagy a szumir-szabir népnevek helyességét vitatni.<br />
+<br />
+Bátorkodom megjegyezni, hogy az SZ  és az I használata egyáltalán nem az angol/német S és E hibás átvétele. Az SZ és I helyességét jópárezer évvel az anatóliaiak és szumérek elött taléljuk meg a Kárpát-medence déli Szerémség vidékén, ahol Magyar Adorján ismertetésében a legősibb (tudom csúnya szó) gabonatermelő őstörzsünk a SZEMERE törzs élt. E örzs (egy a 15 Kárpát-medencei őstörzsek közül, ami itt most mellékes).  A Szemere törzs szimolikái között a legfontosabb a gabonaszem volt, a gabona MAG, de a SZEM is. Ma is ismerjük a MAGSZEM kifejezést.<br />
+A csirke is szemezget amikor magot eszik.<br />
+<br />
+Érdekes, hogy szumérül a MAG=SZAM<br />
+<br />
+Továbbá a magot ha szétvágjuk, megtaláljuk benne az IR-t. (Sajnos hosszú "i"-m nincs ezen az átkozott XP-n). A mag teste csak táplálék az új élethez ami az IR-ben vann kódólva. Tehát ha meg akar valaki semmisiteni egy magot, ajánlatos az IR-t is elpusztitani, hogy IR-MAG-ja se maradjon.<br />
+<br />
+Tehát ha egy ősi nép magát annak is tartja, azaz MAG-népnek és annak is az eszenciájának,, teljesen logikus a MAG-IR és SZAM-IR de a SZEM-ERE (mint a magszem ERE-je) is.<br />
+<br />
+A MAGIR lágyabb hangzósitása a MAGYAR, de mint tudjuk ennek is mint a fentebbi példáknak vannak ismert variációi: MEGYER, MOGYER (nálunk), de MADZAR, MAZAR, MECSER, MADJAR (!!!) is (Ázsiában), MAGOR (Ókorban, Nimród atyja Magor-Tana).<br />
+<br />
+A SZAMIR is az IR-SZAM pontosabban IR-MAG változata. Illetve a SZEMERE kozvetlen változata. Ők is elsősorban gabonatermelők voltak, addig mig a sok csatornaöntözéstől egész dél-Mezopotámia el nem szikesedett.<br />
+<br />
+Akit tovább érdekel, messze vezetnek a szálak, tömeges bizonyitékokat lehet találni, de az eddig leirtakból is viláágos kell legyen, a MAGYAR ugyanaz mint a SZUMIR ugyanaz mint a SZABIR.<br />
+Átfogó értelemben. Temészetesen voltak más népekkel kisebb-nagyobb keveredések hiszen ezért is a sok variáció az alaptól.<br />
+<br />
+2.) Igazad van, a "sumer" nem lehet ősnyelv. A modernebb gondolkodás szerint már csak azért semm mert túl so benne a magyar jövevénzszó. Hogy a magyar (lehetne szemere, szabir, éppen pannon is) nyelv és földműves kultúra impulzusai hogyan gyűrűztek az Indusvölgyig, de kis szóvadászattal kimutathatóan Kináig, sőt Japánig is (SZAMURAI, SZAKAÚR, stb.), nem kétséges, tovább kellene kutatni. Nem kellene Anatóloiánál abbahagyni.<br />
+<br />
+3.) Itt határozottan tévedsz, vagy rossz forrásból tanúltál !<br />
+Igaz, a szumérok (szándékosan használom a variációkat), tényleg beleolvadtak az akkádokba, de csak azok akik nem tudtak vagy nem akartak elmenekülni. Zömben azonban elmenekültek oda ahová az akkádok keze nem ért el, főleg a Kaukázus és Turkisztán térségbe, de aztán gyűrüztek jóval tovább. Nem haltak ki ! Az világos, hogy a Szabirok sem.<br />
+Igazad van,, a török nyelvről is ki lehet mutatni sumer hasonlóságot, pontosan ezért oltári marhaság a msgyar nyelvet a törökből száármaztatni.<br />
+<br />
+Azt meg már ne mond, hogy a magyar soha nem tenné a jelzöt a főnév elé. Éppen az van , hogy a régi magyar nyelvben e jelenség szabadon fordúlt elő: Németvész (helynév), párszáz év elött Vésznémet. Aztán zöldleves de monják egyes vidékeken leveszöldnek is. Valahol van egy gyüjteményem ilyesmiről,  legalább két tucat példával.<br />
+<br />
+A szókergetés jó játék. Ebben igazad van. Szerintem hasznos is ha tudjuk mit csinálunk. Ahhoz pedig tudni kell, hogy a ragozó nyelvekben a szavak váza mássalhangzókon alapszik, a szemantikai variációkat a magánhangzók váltásával érik el, ezért ezekben a nyelvekben a váz évezredek alatt sem változik semmit.<br />
+Ide belefér az egyes mássalhangzók közötti ide-oda hangtani átmenet mint már fentebb lázhattuk az M-B-V esetében.<br />
+Nem tudom miért ajánlassz a szókergetéshez "egy mértékadó sumer nyelvkönyvet". Gondolom itt mértkadó szótárra gondolsz, ami csakis Deimel szótárára vonatkozhat, mert a többi már nagyon büzlik a kultúrpoitikai indittatásoktól. (Pl. szemita kultúrprioritás ig<br />
+nye, halévizmus stb. A korszerü szókergetésben nem okvetlenül szükséges egy sumer szótár. A magyr szógyökök ismeretével már csak azért is hozzá lehet nyúlni mertl a magyar-szamir szógyökök zömében egyeznek<br />
+<br />
+4.) "Fontos-e, hogy a magyar legyen az ősnyelvek ősnyelve?<br />
+<br />
+Nem. Pláne úgy, hogy az ausztrál aboriginálok és a busmanok nyelve áll még mindig legközelebb az ősnyelvhez - az pedig hemzsegett a csettintésektől rövid füttyszerű hangoktól, stb."<br />
+<br />
+Ha letisztitom a rosszondulatu fogalmazást egy alapkérdésre:<br />
+<br />
+Fontos-e, hogy  a magyar egy ősnyelv legyen?<br />
+<br />
+NEM FONTOS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<br />
+De ha már igy van, vagy óvatosabban fogallmazva, igy lehetne, akkor mi a frásznak kell kézzel-lábbal  ellene fikázni? Azistenfáját !!!<br />
+<br />
+Ténleg vannak más ősnyelvi nyomok . Ausztráliában is, ahogy irod, de Afrikában is, méghozzá olyan jellegzetességekkel mint irod, csettintés, füttyszerü hangok. Hozzáadom, hogy Afrikában van még olyan nyelv is ahol máe értelme van ha valamit normális kilégzéssel mondanak, vagy légvétellel. Problja ki vakaki. Baroomi hülyén hangzik nekünk de talán egy többmillióéves evolúcionáris ősnyelvmellékágként elmegy. Természetesen az marad meg ami a legtökéletesebb, legéletképesebb.<br />
+<br />
+Irod még, hogy:<br />
+<br />
+"Páran írtuk már, hogy a kisebbrendűségi komplexus, a tehetetlenség és jelentéktelenség legékesebb bizonyítéka bármely népnél az, ha minél ősibb és dicsőbb múltat hazudik magának."<br />
+<br />
+Kérlek mondjad meg, mi van akkor ha egy nép nem akar hazudni, de még keresni sem, de bármerre néz belebotlik lépten-nyomon abba amiről itt szó volt, és sok másba is amiről még nem.<br />
+<br />
+Irssz: tévedésről, tévképzelgésről, tudatos hazúgságról.<br />
+<br />
+Aztán ugyanebben a sorrendben:<br />
+<br />
+Varga Csabáról,,<br />
+<br />
+a 9 csavaros sziriuszi dns-ről,<br />
+<br />
+"Badiny"-ről. (Különben Badiny Jós Ferenc professzor)<br />
+<br />
+Varga Csaba határozottan nem tévelyeg. Igen kutat valamit amit mások találtak, ő nem végzett ásatásokat. Gondolatai, kiétrtékelései döbbenetesen realisztikusak. Azokat a 60e.-évre is visszamenő jelrendszereket igenis formailag nagyon jól elemzi. Megfejtésekkel nem foglalkozik, csúsztatás lenne ráfogni, hogy ezeket magyrnak vallja. Igen foglalkozik a magyar nyelvvel is, és ő is rájött, mint sokan mások, hogy nyelvünk európai ősnyelv.<br />
+Minnél többen következtetnek erre rá egymástól függetlenül, annál hülyébben néznek  ki az ellendrukkerek. Ez ugyanis haladás, 2008 van nem 1868 vagy 1960.<br />
+<br />
+A sziriuszi dologról én is olvastam egyyszer, nem lehet komolyan venni, még "kisebbrendüségi kompllexussal" sem, amit viszont már régóta tölcsérrel tömnek a fejünkbe: kalandozó barbárok, pogá<br />
+ny, kis nemzet, utolsó csatlós. Folytassam?<br />
+<br />
+Badiny Feri bácsit személyesen is jól ismertem. Amerikai útjai alkalmával többször volt alkalmam elbeszélgetni vele kettesben, Clevelandban, Kanadában. Egy clevelandi kongresszuson társelőadója voltam, mint rovásirás kutató.<br />
+Privátban, emlékezetem szerint, sikerült meggyőzni a Kárpát-medencei őshonosságról, de már túl idős volt ahhoz, hogy a nyilvánosság elött is váltson. Hihetetllen szellemi energiát, szellemi tőkét fektetett bele a sumir eredetünkbe, egyszerüen nem tudott ellszakadni ettől. Sebaj, mégis rengeteg sumir-magyar vonatkozásu dolgot hozott napfényre, annak ellenére, hogy a fától nem akarta látni az erdőt.<br />
+<br />
+A babókat nem gyűlöllte, egyszerüen haragudott rájuk. Miindenkinek az volt itt a véleménye, hogy első, illetve Amerikábani felesége babó volt, aki késöbb meghalt. Újra megnősült, miután hazaköltözött, emerre meg azt mondták otthonról, akik ismerték, hogy szintén babó.<br />
+Nagy ellensége volt Komoróczy Gáza, akivel nyirták is egymást rendesen.<br />
+<br />
+Azt nem mondta soha az öreg, hogy a szumirok keresztények voltak, de rengeteg ősvallási elem került be a kereszténységbe, ami annak idején a sumerba is bekerűlt. Az útirány is valószinü az IRMAGot követte.<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment88072"></A>238. Klizen</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1250&id=88060#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-19 15:36:46</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">najó, de az őskontinens jópár millió évig egyben maradt, egy nyelv meg párszáz év alaltt meg utd annyira változni, hogy érthetetlen lesz, így ha teszem azt őseink a nyelv kialakulásakor még egy helyen éltek, akkor beszéltek egy ungabunga nyelvet, de kétszáz évvel később mkor még mindig együtt éltek, már nem tudnánk magunkat megérteni az ungabunga nyelvvel, és akkor most melyik is az ősnyelv? a szétválás előtti, vagy a legősibb beszélt nyelv? Egyáltalán mi az hogy nyelv? Bizonyos szinttű kommunikációra az állatok is képesek egymás között<br />
+<br />
+A nyelvcsaládba sorolást úgy értettem, hogy akkor most kik is lennének a nyelvrokonaink? Vagy egyedülállóak vagyunk (mint a japán?)?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment88060"></A>237. Arminas</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1250&id=87918#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-19 14:39:28</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1148.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Akkor olyan, mint Őskontinens sem volt, mert már megváltozott? :) Vagy Ősleves? Vagy Ősember? :)<br />
+Mellesleg a magyar nyelv nem változott számottevően az elmúlt jónéhány évszázadban. :)<br />
+<br />
+Például kárpát-medencei, a finnugor helyett. Vagy magyar eredetű, vagy hun, szkíta, sumér, stb.<br />
+<br />
+A lényeg az, hogy nem vagyunk rokonai a finneknek, annak ellenére, hogy a nyelveink lehetnek rokonok. (Pl. ahogy sok magyar beszél angolul, mégsincs sok közünk hozzájuk. :))</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87918"></A>236. Klizen</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-18 23:17:20</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">csak egy gyors, ha olvassa még valaki, ha nem akor késpbb is felteszem: ha nem finnugor, márpedig tudjuk, hogy nem az, akkor mi? Tudni ezt? <br />
+<br />
+Amúgy szerintem olyan hogy ősnyelv nem volt, mert minden folyamatosan változik, a nyelv is, így ez csak egy adott időpillanatban lenne érthető, párszáz, ezer évvel később már nem</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87610"></A>235. 235. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1250&id=87581#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-18 11:01:19</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Pár gondolat újra:<br />
+1. sumer, sumér, sumír, szumér, szumír?<br />
+<br />
+Sumer vagy sumér. S-sel, nem sz-szel. Ez egy akkád szó, a sumer eredeti: kiengir. Az sz és í betűk használata az angol/német források hibás átvételéből ered.<br />
+<br />
+2. sumer volt-e az ősnyelv? Nem. Mire a sumer kialakult (i.e. 5.-4. évezred), addig már fölépült egy magaskultúra Anatóliában, amelynek telepesei ekkora már Észak-Afrikába, Dél- és Közép-Európába és feltehetően egészen az Indusvölgyig is eljutottak. A sumer nyelv is számos olyan szót őriz, amely idegen átvétel, de az anatóliai őskultúrához köthető.<br />
+<br />
+3. sumer-e a magyar? Nem. A sumerek utolsó virágzása az i.e. 18. század volt, azután végleg beolvadtak a babilóniai és asszír hódítók társadalmába. Pont ahogy az egyiptomiak a görög, a római és később az arab hódítókkal elvegyülve HELYBEN maradtak, ugyanúgy nincs okunk feltételezni, hogy kisebb embercsoportokon kívül bárki is elhagyta volna Mezopotámia területét. Éppen a III. Ur-i dinasztia esete bizonyítja, hogy akkor már több, mint félezer éve akkád, illetve babilóni uralom alatt éltek. <br />
+A nyelvünk szerkezete hasonlít a sumerre, de a török nyelvről ugyanúgy kimutatható a hasonlósága a sumerrel. Ugyanakkor vannak alapvető különbségek. Pl. a magyar soha nem tenné a jelzőt a főnév mögé, kivéve, ha teljesen új szót akar létrehozni. A sumer ezzel szemben mindig a főnév mögé teszi a jelzőt: LU-GAL: Nagy ember (átvitt értelemben: főnök, király). <br />
+<br />
+A szókergetés jó játék, de alaptétel itt is, hogy nem lehet érdemben összehasonlítani két nyelvet, ha 4000 év különbség van közöttük. Persze, ha valaki szeretné, megteheti - de szerezzen be egy mértékadó sumer nyelvkönyvet is hozzá.<br />
+<br />
+4. Fontos-e, hogy a magyar legyen az ősnyelvek ősnyelve?<br />
+<br />
+Nem. Pláne úgy, hogy az ausztrál aboriginálok és a busmanok nyelve áll még mindig legközelebb az ősnyelvhez - az pedig hemzsegett a csettintésektől rövid füttyszerű hangoktól, stb. <br />
+<br />
+Páran írtuk már, hogy a kisebbrendűségi komplexus, a tehetetlenség és jelentéktelenség legékesebb bizonyítéka bármely népnél az, ha minél ősibb és dicsőbb múltat hazudik magának. <br />
+<br />
+Itt azonban tegyünk különbséget jószándékú tévedés, tévképzelgés és tudatos hazugság között. <br />
+<br />
+Az első eset az, ami Varga Csabáékat jellemzi: bár találtak valamit, ami határozottan érdekes, mindenképpen azt akarják kihozni belőle, hogy csakis a magyar lehet. <br />
+<br />
+A második eset a szíriuszi 9 csavaros dns-es emberkéké, akik mindenféle sületlenséget kitalálnak, csak hogy még különlegesebbnek tüntessék föl magukat. (ja, bocsánat, a magyarokat).<br />
+<br />
+A harmadik eset az, amikor valaki tudatosan másítja meg az eredményeket, szándékosan csúsztat és ad el hamis következtetést igazként, persze, a saját céljai szolgálatában.<br />
+Ilyen volt pl. Badinyi, aki képes volt sumernek hazudni az akkádokat (kb. mintha valaki a románokat magyarnak hazudná, vagy pont úgy, mint a székelyeket románnak hazudni a dákoorknisták által), és őskereszténynek a sumereket.<br />
+<br />
+Persze, nála érthető, miért találta ki az őssumírkereszténységet: rettenetesen gyűlölte a babókat, meg akart szabadulni az Ószövetségtől, csakhogy akkor a kereszténység minden tézise semmivé foszlik. Ezért kitalálta, hogy nemaddiga', már a sumerek is keresztények voltak, a gonoszgazbabók csak ellopták az ötletet.<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1250&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1250&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1250&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1250&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1250&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1250&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1250&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1250&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1250&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1250&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1250&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1250&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1250&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1250&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1250&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1250&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1250&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1250&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1250&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1250&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1250&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1250&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1250&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1250&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1250&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=1250&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

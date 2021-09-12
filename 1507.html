@@ -1,0 +1,590 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1507#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Vhailor: A szlovák gazdasági reformok";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=1507#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Vhailor: A szlovák gazdasági reformok<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 október 26. 16:01:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1507.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><span style="font-style: italic;">Szeretettel bemutatok nektek egy új embert, aki a Vhailor névre hallgat itt, a Bombagyáron, 
+  amúgy Laci, és felvidéki. Elküldte néhány írását nekünk, mi pedig közöljük az elsőt, mert úgy   
+látjuk, van miért. Ha nektek is tetszenek Vhailor írásai, meghívjuk őt állandó   
+szerzőnknek.</span><br><br><span style="font-weight: bold;">A szlovák gazdasági   
+reformok<br><br></span>Magyarországon most sokan hozzák fel a szlovák példát. Viszont ahogy a   
+különböző magyar sajtótermékeket olvasgatom, akkor egyre inkább azt veszem észre, hogy az újságírók  
+ csak nagyon felületes információikkal rendelkeznek a nálunk lezajlott reformokról. Mivel én is   
+Szlovákiában élek, gondoltam, egy cseppet rávilágítok a már olyan gyakran emlegetett szlovák   
+gazdasági reformokra. <br><br>Szlovákia nem sokkal az ország megalakulása után Vladimír Mečiar   
+kezébe került, aki 1994-től egészen 1998-ig uralta. Ezeket az éveknek főleg a vadprivatizáció   
+jellemezte, amikor haveri alapon juttattak különböző, akkor még állami cégeket a kormánypártokhoz   
+közeli "vállalkozók" kezébe. A maffia éppen ebben az időben vált közismerté és szorosan   
+összefonódott a politikával, a titkosszolgálat pedig gyakran politikai megrendelésre   
+dolgozott.&nbsp; Mivel a bankok állami kézben voltak, kénytelenek voltak rengeteg hitelt nyújtani a  
+ "vállalkozóknak", aminek következtében egy rakás rossz hitel halmozódott fel. A kormány   
+természetesen semmiben sem maradt hátra - szó szerint szórta a pénzt. Ami a szociális politikát   
+illeti, akkor sok mindenben hasonlított a jelenlegi magyarországi gyakorlatra &#8211; a munkanélküli 
+  nyugodtan megélt abból a pénzből, amit kapott, gyereksegély járt mindenkinek és abszolút nem volt  
+ semmilyen ellenőrzés, vagy visszacsatolás, hogy az ember mire is költi   
+tulajdonképpen.<br><br>Természetesen az ilyenfajta költekezésnek megvolt az ára. 1998-ban a médiának 
+  és külföldi nyomásnak köszönhetően hatalomra került egy széles jobb-baloldali kormánykoalíció, 
+amely   nehézkesen ugyan, de elkezdte az ország gazdaságának helyreállítását a szükséges reformok   
+segítségével. Elsőként a bankok (és néhány nagyvállalat, például a VSŽ) konszolidációja ment végbe,  
+ amelyeket aztán privatizáltak. Ehhez pénzre volt szükség, amit különböző adóemelésekkel (főleg   
+forgalmi adók), kiadáscsökkentésekkel (főleg szociális kiadások) és pár nagyvállalat   
+privatizálásával oldottak meg (pl. a Slovenské Telekomunikácie, Transpetrol). Az ország lakosságának 
+  a helyzete ebben az időben viszont egyáltalán nem javult, sőt inkább ellenkezőleg &#8211; egy pár  
+ bank tönkrement, a munkanélküliség valahol 20% körül mozgott, a reálbérek csökkentek, és közben   
+mindenki szidta a kormányt. Dzurinda első kormányzását belharcok és kisebb-nagyobb botrányok   
+kísérték, volt viszont egy fiatal közgazdászokból álló csapata, amely nem veszett el a részletekben  
+ és nagyjából rendbe tudta rakni az országot 2002-re. A bankok elkezdtek működni, a nagyobb   
+vállalatok úgy-ahogy rendbejöttek, de a lakosság rosszabbul élt, mint   
+1998-ban.<br><br>Lehetne elemezni a 2002-es választásokat, de ez most nem fontos. 
+  A választások után egy liberális-jobboldali koalíció alakíthatott kormányt az akkori baloldali 
+párt   (SDĽ) nélkül. Ennek köszönhetően még jobban nekikezdtek a reformoknak. Például jelentősen   
+csökkentették a munkanélküli és a szociális segélyt, a gyereksegélyt pedig adókedvezményekre   
+változtatták. Ennek természetesen megvoltak a <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.youtube.com/watch?v=-iGNKKPsVVc">következményei.</a> Sikerült bevezetni az   
+egykulcsos adórendszert és privatizálták az egészségügyet, létrehozták a magánnyugdíjpénztárakat. A  
+ 2002-2006-os időszakban adták el nyugati befektetőknek a villamos- és a gázműveket. Ami a gazdasági 
+  fejlődést illeti, akkor csak a második Dzurinda kormány utolsó két évében kezdett erőteljesebben   
+növekedni, de ez éppen annak volt köszönhető, hogy egy pár évvel ezelőtt konszolidálták a bankokat,  
+ bevezették az egykulcsos adórendszert és a segélycsökkentéssel hozzájárultak ahhoz, hogy az emberek 
+  akarva-akaratlanul kénytelenek legyenek munkát keresni maguknak. Ezen kívül óriási külföldi   
+tőkebefektetések történtek, főleg az autóiparban (KIA - Zsolnán, Peugeot &#8211; Nagyszombaton),   
+amelyek lényegében megszüntették a munkanélküliséget az ország nyugati felében.<br><br>2006-ban a   
+második Dzurinda kormány megbukott, viszont nem a vizitdíjak miatt, ahogy ezt sokan hangsúlyozták.   
+Maga a kormánykoalíció már az utolsó évben sem volt stabil, gyakran merült fel a gyanú, hogy   
+szavazatvásárlás történik, amit viszont soha sem sikerült bebizonyítani. A jelenlegi szlovák   
+kormányt talán nem kell nagyon bemutatni, egy nemzeti-szocialista koalícióról van szó, amely   
+megválasztása óta egyre népszerűbb. A dolgok természetesen másképp néznének ki, ha a gazdaság nem   
+fejlődne ilyen gyorsan, de ők ezt nagyon jól tudják, ezért inkább nem nyúlnak nagyon hozzá a   
+rendszerhez.<br><br>Mi a tanulság ebből az egészből? Szlovákia GDP növekedési üteme nem az égből   
+pottyant. Hat éven keresztül az emberek helyzete romlott és nem ismertek mást csak megszorításokat.  
+ Kórházakat zártak be, és sikerült nekik bevezetni a többbiztosítós rendszert, ami ellen   
+Magyarországon olyan erősen tiltakoztak. Fiatal vagyok, engem nem érint annyira, viszont volt már   
+tapasztalatom a jelenlegi szlovák egészségüggyel &#8211; amikor edzésen eltörték az orromat, a   
+műtétet saját zsebemből fizettem. Az átlagmunkás nem él sokkal jobban, mint tíz évvel ezelőtt, talán 
+  annyiban jobb a helyzet, hogy talál munkát, ha akar &#8211; a munkanélküliség azért mégsem 20%-os  
+ már. A gazdasági reformok nyertesei viszont a vállalkozók és a szakmunkások voltak. Egy szakmunkás  
+ gyakran keress ugyanannyit, vagy többet, mint egy diplomás. Ami a vállalkozókat illeti, akkor a   
+reformok kimondottan nekik kedveztek, az egykulcsos adórendszer számukra adócsökkentést jelentett és 
+  sok olyan adminisztratív akadály egyszerűen megszűnt, amely azelőtt akadályozta őket. Az iparűzési 
+  engedélyt ki lehet váltani 2 héten belül, Kft-t alapítani dettó, míg a kilencvenes években még 
+jobb   esetben is el kellett telnie pár hónapnak, és egy pár ezresnek be kellett találnia a 
+megfelelő   zsebbe. A szakmunkások esete egy cseppet más. Főleg a nagy autógyáraknak és az 
+építkezéseknek   köszönhetően sok ágazatban szakmunkáshiány van, és a munkaerejük felértékelődött. A 
+szomszéd városba   például Bulgáriából és Magyarországról hozzák be a hegesztőket, mert a környéken 
+már nem találnak   senkit.<br><br>Ha most Magyarországon valaki azt gondolja, hogy a jelenlegi 
+helyzeten csupán   adócsökkentéssel lehet javítani, az téved. Az adócsökkentés talán nem csökkenti a 
+bevételeket,   Szlovákiában például az egykulcsos adórendszer bevezetése után enyhén nőttek az 
+adóbevételek, de ez   önmagában nem elég. Magyarországon közel <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.mfor.hu/cikkek/Oriasi_csalodas_lesz_a_nyugdij_2_millio_magyarnak.html">3 millió   
+nyugdíjas él,</a> és ez óriási teher az ország szociális rendszerére. Viszont nem tudom elképzelni   
+azt a magyar kormányt, amelyik hozzá merne nyúlni a nyugdíjakhoz. Szlovákiában ez az arány nem olyan 
+  drámai, mert a nyugdíjak is <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.youtube.com/watch?v=-tEXu8roJEQ">alacsonyabbak,</a> itt nem lehet választásokat   
+nyerni azzal a szlogennel, hogy &#8222;emeljük a nyugdíjakat&#8221;. A lakosság fiatalabb, és a   
+növekedése csak 2002-2003-ban kezdett stagnálni, míg a magyarság már majdnem 30 éve fogy. Valamivel  
+ nagyobb mozgástere lenne az országnak a különböző más segélyezési formáknál (GYES, munkanélküli   
+segély), de itt is biztosan akadnak erők, amelyek ennek <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//hungary.indymedia.org/node/8027">nekimennek.</a> A vasúti szárnyvonalak   
+megszüntetésére, iskola- és kórházbezárásokra talán éppen azért került sor, mert a kormány nem mert  
+ hozzányúlni a szociális rendszerhez. Kérdéses, hogy meddig tartható még fenn ez a rendszer, mert ha 
+  ez így megy tovább, előbb-utóbb úgyis minden összeomlik. A magyar lakosság nem kezdhet el napról   
+napra gyarapodni, és ha igazak azok az előrejelzések, miszerint az óvodások fele cigány, akkor az   
+összeomlás talán már közelebb van, mint gondolnánk. <br><br>A jelenlegi magyar gazdasági helyzet   
+rosszabb, mint Szlovákiáé a kilencvenes évek végén. A reformok gyümölcsei csak hosszú távon jelennek 
+  meg, ha egyáltalán megjelennek. Nemrég beszélgettem egy magyar közgazdász professzorral. Szerinte, 
+  ha most nekikezdenének a szükséges reformoknak, akkor talán 8-10 éven belül javulna a helyzet,   
+viszont kérdéses, hogy a magyarok képesek lesznek-e eddig várni. A végére szeretnék valami jót is   
+mondani, de sajnos nem tudok, mert nem látom azokat az embereket, akiknek volna elképzelésük arról,  
+ hogyan kell rendberakni a magyar gazdaságot. Remélem, hogy akadnak majd egy páran, mert másképp   
+hosszú távon tényleg egy polgárháború fenyeget.<br><span style="font-weight: bold;"><br></span><span style="font-style: italic;">(Van ilyen párt, de megígértem, hogy a Bombagyárból nem lesz 
+kampányoldal... - Tomcat)<br></span><span style="font-weight: bold;"><span style="font-style: italic;"><span style="font-weight: bold;"><br></span></span></span>   </div>  </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-10-26&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1507&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1507&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1507&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1507&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1507&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1507&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1507&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1507&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1507&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1507&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1507&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment122775"></A>95. parittya -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-11-22 23:54:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Egészen elképesztő!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!                                                                       <br />
+<br />
+Ez a cikk, a magyar nemzet, már így is végletekig kizsákmányolt, egyébként is elesett rétegeinek, még további kizsákmányolására buzdít!!!!!!!!!!!!!!!!!!!!!!!!!!!!!                                 <br />
+<br />
+Ez egyszerűen gusztustalan!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!       <br />
+<br />
+Ennél már csak az az undorítóbb, hogy ennyien egyetértenek ezzel a förtelmes neoliberális maszlaggal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!           <br />
+<br />
+Most értettem meg, hogyan juthatott el Magyarország idáig.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment114048"></A>94. 94. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-30 21:49:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bocsi, ez lemaradt:<br />
+<br />
+"Ki lehetne bocsájtani állampapírokat, csak azok most kinek kellenének? Az állampapír nem annyit ér amennyi rá van írva, hanem annyit amennyit adnak érte. Ki lehet bocsájtani X trillió névértékű állampapírt, viszont ha senki sem veszi, akkor nincs pénz. Most olvastam, hogy az állampapírokat árvereztek MO-n, és a kutyának sem kellettek, mert a befektetők nem bíznak a magyar gazdaságban."<br />
+------------<br />
+Igazad van, amennyiben a mai "piaci" viszonyok között képzeled el.<br />
+De az átalam írt aspektus pont az lenne, hogy a banki tartalékrátát (feles törvény) felemelem 5%-ról 100%-ra és a maradék 95%-ot pótlom az állampapírral, mintegy ne változzon semmi sem, de mégis. A fedezetet innentől az állam adta, Ő tarozik feleősséggel, mintahogy most is kapálódzik, csak fedezet nélkül. Nem érzed ennek a fonásságát?<br />
+Tehát.<br />
+Érdekes módon mindig a bankszektor kapja a "konszolidációt", sohasem az agrárium, vagy a szoftver piac, vagy bármi. Mindig a bankok. Persze, ez világjelenség, beismerem. Csak miért mindig Ők?<br />
+Amikor arról van szó, hogy piac, akkor szép csendesen elviszik a hasznot. Amikor baj van, akkor "segíts állam", tehát az adófizetők. Mindig arra hivatkoznak, hogy "dehát a finanszírozási rendszer". Részben igazuk van, mert hagytuk.<br />
+<br />
+Én azt az álláspontot képviselem, hogy fejezzük be a kettős mércét. Ha piac, akkor legyen piac. Tönkre ment, akkor tönkre ment. Legfeljebb a betéteseket kártalanítom, mint állam, mert garanciát vállaltam (hogy a fenébe ne, hiszen minden vállalkozást, magánembert én kényszerítettem be a bankvilágba törvényileg), de nem nyújtok mentőövet a tönkrement bankoknak. De lehet azt is, hogy igen, elfogadom. De akkor ne tegyönk kivételt a szektorok között. Akkor a piac legyen piac. Félreértés ne essék, nem szeretem a picon az egyenlőeket az egyenlőbbeknél. Nincs kockázat, csak üzlet (profit, ami garantált, az meg nem piac.).<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment114030"></A>93. 93. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1507&id=113891#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-30 21:17:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szia Vhailor.<br />
+Köszönöm válaszodat, én megtisztelve érzem magam.<br />
+Amiket írtam, azokat ne kötözködésnek vedd, hanem vitának, eltérnek véleményeink. Ez nagyon rendben van, szerintem ez visz előre.<br />
+Sokmindenre nem reagáltál, amiket "firkálgattam", de sebaj.<br />
+Én megpróbálok reagálni azokra, amiket felvetettél:<br />
+<br />
+"Drábikhoz annyit, hogy nem közgazdász, amit eddig láttam youtube-on és olvastam tőle neten elég zavarosnak tűnt. "<br />
+---------------<br />
+Teljesen igazad van. Nem közgazdász, viszont legalább 20 éve evvel foglalkozik, elég nagy kitekintése van a világra. <br />
+<br />
+Én sem vagyok közgazdász. Ha valakinek nincs bőrpapírja valamiről, de érdemes odafigyelni a véleményére,  tanulmányaira stb.., akkor az már mehet a levesbe? Csak kérdezem. Aztán itt van Milton Friedman babó, Nobel díjas közgazdász. Neki viszont papírja van. Akkor Ő is hülye? Pedig Drábik tőle "plagizált", csak átültette Magyar viszonyokra.<br />
+<br />
+"El lehetne adni a MNB tartalékait, viszont a külfölddel nem forintban egyenlíti ki az állam a számláit hanem euróban. <br />
+Ezt csak államcsőd esetében tenné meg a kormány."<br />
+---------------<br />
+Itt félreértettél valüszínűleg. Ezt nem kell eladni, ez konkrétan van euróban. Egyébként a mai kormány évek óta államcsődben leledzik.<br />
+<br />
+"Amúgy a kölcsönökhöz k.b. ennyit - ha be mész egy bankba, akkor ha van valamilyen fedezeted, kaphatsz kölcsönt."<br />
+---------------<br />
+Egyetértünk, ebben nincs vitánk, bár ez sem ilyen kerek, szerintem. Sokminden befolyásolja azt, hogy milyen feltételekkel kapod és mennyi kamatra. Én pl. évekkel ezelőtt szerettem volna felvenni 2 milla hitelt az Erste-nél. Az ingatlan fedezetem Ő szerintük (tudjuk, hogy nem annyi) 16 millát ért. Nem adták meg, de ez nekem 130.000 Ft-ba került.<br />
+No, fletó pont ebben a szar helyzetben van. Mivel elqrta, kedvezőtlen feltételekkel kap hitelt az ország, ellentétban Veletek. Viszont adó formájában rajtunk veri le. A tőkét és annak kamatait.<br />
+Erről ennyit.<br />
+<br />
+A végéről: én sohasem beszéltem a orkok által "delejezett" uzsorakamatról. Nem is értem, hogy hogyan jött ide?<br />
+<br />
+Visszatérve Dr. Drábikra, mégegyszer megadom a linket, mert nem tudom elfogadni azt az érvelést, hogy egyébként valakinek igaza van, de azért nincs, mert nincs róla papírja:<br />
+<B><a href="//tdyweb.wbteam.com/Drabik.htm" target="_new" style="color: #000000;">http://tdyweb.wbteam.com/Drabik.htm</a></B><br />
+<br />
+Én komolyan állok elébe minden olyan vitának, amelyek tényekről, állításokról, akár dogmákról szól és nem az Ember személyéről, papírjáról. És mindezt nem azért teszem, mert Dr. Drábik nekem szimpatikus. Hanem azért, mert amit mond, annak én utánanéztem, sok anyagot elolvastam, valamint ennek történelmi hátterének is utánanéztem.<br />
+Ebből a témából állok elébe minden "mai, fősodratú" közgatdásznak, végzettség nélkül. Ahogy írtam, ez ált.isk. matek. Összeadás, kivonás, osztás, szorzás. A különbség abban rejlik, hogy ki hogyan áll a kérdéshez.<br />
+<br />
+A szerkesztőségnek küldtem egy hosszabb levelet (eMailt), amely egy novella. Ez a pénzről és annak kialakulásáról szól, mindenki által emészthető, közérthető formában. Remélem, hogy hamarosan közlésre kerül.<br />
+Ha gondolod, Neked is megküldhetem privátin.<br />
+A kapcsolatom nem titok: <B><a target="_new" style="color: #000000;" href="mailto:lacafacamsn@hotmail.com">lacafacamsn@hotmail.com</a></B>.<br />
+<br />
+Tényleg Baráti üdvözlettel: lacafaca<br />
+<br />
+UI: a következő cikkedhez sok sikert kívánok. Ha a gazdaságról szól, részemről számíthatsz kommentre, akár potitív, akár negatívra.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment113891"></A>92. Vhailor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1507&id=113723#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-30 15:03:22</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Na, pont most írok egy másik cikket.<br />
+<br />
+Drábikhoz annyit, hogy nem közgazdász, amit eddig láttam youtube-on és olvastam tőle neten elég zavarosnak tűnt. <br />
+<br />
+Ki lehetne bocsájtani állampapírokat, csak azok most kinek kellenének? Az állampapír nem annyit ér amennyi rá van írva, hanem annyit amennyit adnak érte. Ki lehet bocsájtani X trillió névértékű állampapírt, viszont ha senki sem veszi, akkor nincs pénz. Most olvastam, hogy az állampapírokat árvereztek MO-n, és a kutyának sem kellettek, mert a befektetők nem bíznak a magyar gazdaságban.<br />
+<br />
+El lehetne adni a MNB tartalékait, viszont a külfölddel nem forintban egyenlíti ki az állam a számláit hanem euróban. Ezt csak államcsőd esetében tenné meg a kormány.<br />
+<br />
+Amúgy a kölcsönökhöz k.b. ennyit - ha be mész egy bankba, akkor ha van valamilyen fedezeted, kaphatsz kölcsönt. Ha viszont nem tetszik, akkor elmész máshová. Pl. a orkuzsorások így működnek. Kapsz x Ft-ot és a kamat ennek heti, vagy napi y%-a. Ha nem fizetsz megvernek és mindenedet elveszik. Az, hogy az adott összeget a magyar állam már x-szer visszafizette, az talán igaz, de nem ez a fontos. Az a fontos, hogy mi szerepelt az adott szerződésben - milyen feltételek mellett jutott kölcsönhöz. Ha pl. az áll benne, hogy az összegre 50%-os kamat van, akkor fizetni kell - mese nincs, no jó, van - be lehet jelenteni az államcsődöt, de el sem akarom képzelni, hogy mi lenne akkor MO-n, talán egy polgárháború is kitörhetne.  <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment113723"></A>91. 91. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1507&id=113111#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-30 02:43:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"85. Vhailor (előzmény) 2008.10.28 08:02:05<br />
+Lényeg: Magyarország el van adósodva (akár az államot, akár a lakosságot nézzük) és a pénzt vissza kell fizetni. Ezért van szükség megszorításokra, ezért fog minden drágulni, ezért fog csökenni a reálkereslet. Más megoldás nincs."<br />
+--------------<br />
+Félreértés ne essék, nem baszogatni akarlak, csak a tények helyes rögzítését. Előttem már többen leírták, de többek között Dr. Drábik János, Dr. Bogár László és Csath Magdolna is többször említette, leírta: azt az adósságot többszörösen visszafizettük már, mégis a tőke és annak kamatterhei egyre csak növekednek.<br />
+Az is köztudott tény (persze, az agymosottaknál nem), hogy a '90-es évek elején a nyugat fel volt készülve a Magyar államadósság teljes leírására, csak a balfasz antall-kormány nem kérte, hanem büszkén fizette tovább a mi zsebünkből (ja, ha fizetik, akkor fogadjuk a lóvét). Amikor azt hallom "jobbról", hogy "Antalli örökség" és mindezt nem pejoratíve, hanem büszkén odavetve, olyankor kinyílik a bicska a zsebemben, pedig nincs is nálam. Ilyenkor mindig eszembe jut a kedvenc állatorvosi lovam, a TUNGSRAM. Ez a Magyar cég világviszonylatban is az elsők között volt az izzó gyártás terén, a fél ázsiai és ausztrál piac a zsebében volt, de a büszke antalli államunk eladta telekáron a konkurenciának (General Electric). Mecsoda adóbevételeink lennének ezekből (és még sorolhatnám a cégeket, pl. IKARUS, stb..).<br />
+Mindig az a vaker megy, hogy "az állam rossz gazda". Dehogy is. Csak annyira rossz, amilyen managgert tesz az élére és amilyen formában számon kéri, illetve, hogy milyen érdekek képviseletére teszi oda.<br />
+Ezen az alapon a magántulajdonos is rossz gazda, ha hülyét tesz a cége élére, vagy okosat azzal a céllal, hogy a konkurenciának (közel-keleti agresszív horda) legyen jó.<br />
+<br />
+Az sem igaz, hogy nincs más megoldás.<br />
+Te magad írtad le, hogy:<br />
+"Tökmindegy, hogy mekkora egy országban a monetáris bázis - ami fontos, az a viszonya az árszinvonalhoz - magyarán: mekkora a pénznek a vásárlóereje. Ha a gazdaság jól teljesít és bíznak benne, akkor nő a pénz értéke, ha viszont nem bíznak benne, és rosszul teljesít akkor az adott ország pénze a kutyának sem kell, legdrámaibb esetben az adott ország lakossága sem bízik már a pénzben, ezért kezdenek valami mást használni helyette (arany, ezüst, ló, tehén ... pl. MO a háború után).<br />
+<br />
+Ami most MO-n megy akkor az éppen az, hogy az állam (na meg a devizahitelekkel a lakosság is) eladósodott külföldön. Ezeket az adósságokat kell most visszafizetni. Ha az embereknek nincs pénzük, akkor próbálnak eladni valamit, ha az államnak nincs, akkor privatizál. Ha az embernek kell valamit visszafizetnie, akkor csökkenti a kiadásokat, ugyanezt csinálja az állam is az adott esetben. Egyszerű logika - másképp nem megy."<br />
+------------<br />
+Egyetértek, kivéve azt, hogy "nincs más megoldás".<br />
+De van és ezeket megint nem én találtam ki, hanem Milton Friedman közgazdász.<br />
+Az 5%-os banki tartalékrátát fel kell emelni 100%-ra, ennek fedezeteként ki kell bocsájtani ugyanennyi állampapírt, forintot, mindegy, ezt az állam beteszi az MNB-be fedezetként a mai ker.bankok számlájára és ez pont fedezi a mai államadósságot. Feles törvény, még 2/3 sem kell hozzá. Nem teszik, csak a további terheket a vállunkra.<br />
+<br />
+Még egy nagyon fontos dolog.<br />
+Ma az MNB deviza tartaléka 17 milliárd euró. Ez uszkve 4.700 milliárd Ft, ami a teljes államadósság cirka harmada, negyede. Óriási könnyebbség lenne ebből a tőketörlesztést megtenni, már ha csak a lecsökkent kamatterheket nézem. Évente többszáz milliárd Ft. Ma az éves kamattörlesztés 1.200 milliárd Ft, ami egyenlő az éves eü. kasszával szinte (1.500) és az államháztartás negyede kb.<br />
+<br />
+Az sem az ördögtől való, hogy tárgyaljunk a hitelezőkkel. Persze, a mai politikában ez forrón izzó parázs, senki sem mer hozzányúlni. Lehet, hogy rövidtávon lennének rossz hatásai, de szerintem közel sem akkorák, mint hosszútávon a mostani IMF hitel 5 milliárd eurós hitelgaranciája.<br />
+<br />
+Aztán ott van a helyi pénz kibocsájtásának törvényi lehetősége (eu-s) is. A világon mindenhol működik, nálunk a pénzszűke ellenére nem, ott gáncsolják, ahol csak lehet, pedig itt is létezik, csak kizárólag a multiknál. Ilyen pl. a shop-kártya is.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment113568"></A>90. 90. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1507&id=113536#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-29 21:03:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Köszi Nyitottszem !!!<br />
+Nem gondolnám magamat tutibbak, csak megpróbálok nyitott szemmel járni a világban. "Elemzésem" sok ismert ember (Dr. Drábik János, Dr. Bogár László és mások, többek között a saját tapasztalásaim) talaján állnak. Nem gondolnám, hogy én tudom a TUTIT. Csak azt, hogy amit én is vallok, azt mások, nálam sokkal okosabb emberek már "felfedezték". Ennél újabbat szerintem nem kell kitalálni, elég, ha alkalmazzuk azokat.<br />
+lacafaca<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment113536"></A>89. Nyitottszem</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1507&id=113111#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-29 20:30:20</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2733.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Azt hiszem, Lacafaca sokkal érthetőbben fogalmazta meg azt, amit mondani akartam. Ezúton is köszönet neki érte.<br />
+<br />
+Jó látni, hogy vannak emberek, akik hajlandóak gondolkodni és érdemi vitát folytatni a legfontosabb dolgokról. Ez a biztosíték arra, hogy igenis van még kiút.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment113500"></A>88. 88. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-29 18:33:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bocsi a tördelésért, így jött ki, nem én akartam így.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment113486"></A>87. 87. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-29 17:51:28</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szia Vhailor !<br />
+Nagyon örültem gazdasági elemzésednek, még ha sokmindennel nem is értek egyet, hiszen erre vállalkozni nem kis <br />
+<br />
+feladat, nem is sokan teszik meg. Külön az írásod miatt regisztráltam, hogy válaszolhassak, noha régi Bombagyár <br />
+<br />
+olvasó vagyok (külön köszönet Pokolgépnek (-:))))))).<br />
+Előljáróban annyit, hogy nem volt időm átolvasni az összes hozzászólást, úgyhogy ha olyat olvasol tőlem, ami már volt, <br />
+<br />
+elnézésedet kérem.<br />
+Több jelentős eltérést látok a két ország gazdasági (ezáltal politikai) mechanizmusa között, amiért nem <br />
+<br />
+összehasonlítható a kettő "egy napon".<br />
+Az egyik:<br />
+78. [HUN]Salvaje	2008.10.27 15:11:05<br />
+írta, idézem: "Egy kül9önbség azért van még: Szlovákiából nem akarnak második Izraelt csinálni".<br />
+Ez önmagában is megérne egy "misét".<br />
+A másik: A GDP-hez mért eladósodottság és annak kamatterhei. Ennek kapcsán a két ország gazdasága nem <br />
+<br />
+összehasonlítható, hiszen az egyik eleve hendikeppel indul.<br />
+A harmadik: A teljesítmény nélkül segélyezettek aránya (remélem, finoman fogalmaztam).<br />
+A negyedik: Az összes Közép-Kelet európai országban (beszéljünk a környező országokról) a pártok először <br />
+<br />
+Nemzetiek és csak azután liberálisok, szocdemek, konzervatívok stb... Nálunk ez fordítva van.<br />
+Az ötödik: Idéznék egy nemrég megjelent publicisztikából, cikkből, ami jól bemutatja azt, hogy mi miért tartunk itt:<br />
+"A jelenlegi helyzet kialakulása Magyarországon<br />
+(...)<br />
+A cégek piacvesztése a szomszédos országbeli cégekkel szemben ugyan a belső konkurencia háttérbe szorulását <br />
+<br />
+jelentette, de ugyanakkor a vállalkozások elmenekülését is eredményezte: 30 és 50 ezer közé lehet tenni azokat a <br />
+<br />
+vállalkozásokat, amelyek a magyar állapotokhoz képest &#8222;adóparadicsomnak&#8221; tekinthető Szlovákiába és Romániába <br />
+<br />
+menekítették a jövedelem kivételüket. Ez a magyarországi működő középvállalkozások 30 százaléka.<br />
+(...)"<br />
+<B><a href="//gondola.hu/cikkek/61888" target="_new" style="color: #000000;">http://gondola.hu/cikkek/61888</a></B><br />
+A hatodik: Cikkedben írod, hogy "Ha most Magyarországon valaki azt gondolja, hogy a jelenlegi helyzeten csupán <br />
+<br />
+adócsökkentéssel lehet javítani, az téved."<br />
+Részben egyetértek. Sok minden más is kell hozzá, de ez az egyik első lépés, mintahogy az ember elindul a lépcsőn <br />
+<br />
+fokról-fokra. Csak az a nemmindegy, hogy lefelé, avagy felfelé.<br />
+<br />
+Először tisztázzunk pár dolgot. Nem az emberek vannak a gazdaságért, a pénzvilágért, hanem fordítva (a'la Bogár <br />
+<br />
+László). Készséggel elhiszem, hogy ideig-óráig az általad vázolt neoliberális (valljuk be, hogy az) nézet ma a világon <br />
+<br />
+uralkodó. Ennek történelmi szálai is vannak, de nem utolsó sorban egyéni érdekek mentén alakult ki (elég csak <br />
+<br />
+utalnom a FED bank tulajdonlására). Ennek semmi köze a társadalmakhoz, az emberhez. Ez jól felfogott magánérdek <br />
+<br />
+mások kárára, semmi más. Ezt a részt tovább nem ragoznám, mert oldalakat lehetne erről írni, akit érdekel: <br />
+<br />
+<B><a href="//tdyweb.wbteam.com/Drabik.htm" target="_new" style="color: #000000;">http://tdyweb.wbteam.com/Drabik.htm</a></B><br />
+Itt minden megtalálható, megnézhető, meghallgatható és elolvasható, amit a pénzvilágról tudni kell. Nem egy <br />
+<br />
+ördöngős dolog, egyszerű matek, ált.isk. Az összefüggésekben van elrejtve az az emlős, amelyik fürdeni készül.<br />
+<br />
+Még annyit tennék a végére: A sokat szidott kádár érában 20 mrd USD adósság mellett tellett kórházakra, utakra, <br />
+<br />
+EÜ-re, "teljes foglalkoztatásra", volt agrár termelés, élelmiszer és néha pult alatt egy-két dolog. Félreértés ne essék, <br />
+<br />
+nem azt a kort sírom vissza.De számoljunk:<br />
+Az ország fele immel-ámmal dolgozott, a másik fele meg előteremtette azt, ami alsó hangon kellett, 20 mrd USD <br />
+<br />
+adósság mellett.<br />
+Ma van 100 mrd USD adósság, gyakorlatilag nincs állami vagyon, nincs adófizető réteg és "csodálkoznak" a ma <br />
+<br />
+hatalmon lévők. Megy az ötletelés, de átgondolt koncepció nincs. Ezt megint hosszas lenne elemezni, hogy ez miért <br />
+<br />
+van. Legyen elég annyi, hogy a gulyáskommunizmusban nevelkedettek zsebibabájának méretét senki sem sejti, csak <br />
+<br />
+becslések vannak, de mindenesetre nagyságrenddel nagyobbak, mint bármelyik másik ország vezetőié.<br />
+Ma, ha egy "vezető" lebukik, akkor "na és?". Nem tudom, hogy Nálatok ez hogyan megy, de azt tudom, hogy "A <br />
+<br />
+NYUGATON" hogyan megy. Lemond, hogy a pártját ne rántsa magával, ezt el is várják tőle. Nálunk ilyen nincs. Nálunk <br />
+<br />
+a fősodrató média (útálom az elterjedt kifejezést, hogy médium, pedig sokan használják, még "újságírók is", pedig az <br />
+<br />
+mást jelent) kimosdatja, fasisztázik egy jót és minden el van intézve, a manusz le van írva. Pedig csak Magyar <br />
+<br />
+szeretett volna lenni. Miért írom ezt? Mert ez szervesen hozzá tartozik ahhoz a részhez, hogy mond-e valaki valami <br />
+<br />
+értelmes dolgot, avagy sem. Ha igen, akkor fasiszta. Innentől meg mit várjunk a gazdaságtól, ha egy "fasiszta" <br />
+<br />
+mondja, hogy szerinte mi lenne a helyes.<br />
+Kicsit hosszúra "nyúltam", úgyhogy zárom soraimat.<br />
+Ha van kedved, szívesen várom válaszodat:<br />
+lacafaca</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment113206"></A>86. kopizoli -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-28 16:08:01</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3879.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Valaki lője le Huncík Pétert, mert már nem lehet tovább tűrni, ahogy ez a magyarságot gyalázza itt. Ráadásul őt választotta ki a komcsi kormány is a Felvidéket képviselni.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1507&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1507&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1507&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1507&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1507&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1507&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1507&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1507&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1507&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1507&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1507&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

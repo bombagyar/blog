@@ -1,0 +1,575 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=587#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Izrael és Nigéria";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=587#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Izrael és Nigéria<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 február 6. 21:04:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_587.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Fekete Pákó emlékezetes     
+szereplése óta tartozom ezzel a cikkel. Mint emlékezhettek, a Bombagyár Rádió XXI. adásában arról    
+ beszélgettünk a nigger neménekessel, hogy Nigéria szegénységének fő oka Izrael, mert fillérekért    
+ felvásárolják az ország olaját, és hagyják szegénységben a niggereket, egy megfelelően korrupt     
+katonai junta uralma alatt (mikor melyik alatt). Egyesek szerint ez nem így van, szerintük Nigéria   
+  olajából csak igen kis mennyiségben vásárol Izrael, és a fő exportpartnerük az Egyesült Államok.   
+  Nos, mindjárt meglátjuk, hogy is van ez.<br><br></div><div style="text-align: justify;">Ha     
+elővesszük a CIA World Factbook-ot, és fellapozzuk <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.cia.gov/library/publications/the-world-factbook/geos/ni.html">Nigériát,</a>   
+  azt olvashatjuk, hogy az ország 1960-ban szabadult fel az angol gyarmati uralom alól. 1999-ig     
+katonai diktatúra uralkodott az országban, s a niggerek biztos nagyon szabadnak érezték magukat ez   
+  idő alatt. 1999-ben új alkotmányt iktattak be, és az új kormány nekilátott, hogy a korrupcióval    
+ fertőzött országot demokratikussá formálja. Ez nem nagyon megy, mint ahogy meghívott     
+Nigéria-szakértőnk is jelezte, arrafelé még csak nem is gumilövedékkel lőnek, ha valaki kritizálja a 
+    "demokratikus" kormányt. Az elnökválasztások rendszerint utcai mészárlásokkal járnak, 2003-ban 
+és     2007-ben legalábbis ez történt. 2007 óta van először civil kormányuk, erkölcsi megtisztulás,  
+   tejjel-mézzel folyó, hurrá. Na, csak várjuk ki a végét.<br></div><br><div style="text-align: justify;">Az ország jó nagy: 910 ezer négyzetkilométer a szárazföldi területe, és 135 millió nigger  
+   lakik benne. A népsűrűség tehát nagyjából akkora, mint Magyarországon. Tele vannak 
+ásványkincsekkel     - az olaj és gáz mellett réz, vas, szén, nióbium, ólom, cink - de ezeket szinte 
+egyáltalán nem     bányásszák. Az ország területének 33%-a művelhető, ami Afrikában kifejezetten 
+jónak számít     (Magyarországnak 49,58%-a művelhető). Minden lehetőségük meglenne tehát a 
+gazdagodásra, ennek     ellenére tele vannak betegségekkel (élen az AIDS-szel), a születéskor 
+várható élettartam 47,44 év     (Magyarországon 72,92), és a 135 millió niggerből 3,6 millió 
+biztosan AIDS-es. (Ez a lakosság     2,66%-a, Magyarországon ez 0,028%.) No, de ezt már tényleg ne 
+varrjuk a zsidók nyakába, nem a Moszad     mondta nekik, hogy dugják meg a majmokat, ők meg nem 
+tudták, hogy attól ilyet lehet kapni. A     lakosságnak csak 68%-a tud írni-olvasni. A niggerek egy 
+főre eső jövedelme a CIA szerint 2 200     dollár volt 2007-ben, míg Magyarországon 19 500 dollár. 
+Azért ez nem rossz egy olajban dúskáló     országtól, amelyik 2,203 millió hordó olajat exportál 
+naponta. (Hogy emellett miért <span style="font-style: italic;">importálnak </span>is napi 167 900 
+hordót, azt már kérdezzétek meg     valami közgazdasági szakértőtől.)<br><br>Pusztán a számokból 
+kiderül, hogy egy kiválóan     félremenedzselt és korrupcióban fuldokló afrikai országot vizsgálunk. 
+Pedig ez még Afrika jobb     helyei közé tartozik, arrafelé ez már kész Svájc. No, és most nézzük, 
+hogyan profitálnak ebből a     katyvaszból a zsidók, és miért érdekük ezt az állapotot fenntartani. 
+Zsidók alatt értjük ez esetben     egyrészt Izrael államot, másrészt a gonosz nemzetközi 
+zsidó-szabadkőműves összeesküvést, ami     természetesen nem létezik.<br><br>Kezdjük pedig a 
+történetet Ádámtól és Évától, egészen pontosan     akkortól, amikor még se Nigéria, se Izrael nem 
+létezett: 1936-tól. Egy bizonyos Alhaji Umaru     Abdurrahman Dikko nevű helybéli születése ugyanis 
+még éppen belecsúszott ebbe a jeles évbe, ami     nekünk Európában legfeljebb a berlini olimpia 
+miatt lehet jelentős. Igaz, Umaru Dikko december 31-i     születése akkoriban még ott se nagyon 
+számított közérdeklődésre. Egy kis nigger (vagyis: niglet)     volt, aki egy Wamba nevű falucskában 
+szaladgált és növögetett, majd hirtelen a BBC hausza nyelvű     adásának szerkesztője lett. Amúgy 
+még ettől se lett volna érdekes, még a Bombagyár Rádiót is többen     hallgatják, és Dikko nevét se 
+ismerte senki, egészen az 1960-as évekig, amikor az angolok elunták a     sok olajat, és otthagyták 
+a niggereket, termeljék ki ők maguknak. Ez a Dikko srác ekkor jött rá,     hogy neki itt volna mit 
+tennie, és sikeresen szembefordította Nigéria északi részének nagyközönségét     a Johnson 
+Aguiyi-Ironsi tábornok vezette katonai diktatúrával, majd pedig egy politikai párt     főtitkáraként 
+jól meg is győzte ezeket az északiakat, hogy szavazzanak rá, mert ő ilyen civilizált     nigger, ez 
+az Aguyi-Ironsi meg csak összevissza lövöldöz és lop. 1979-re sikerült is elérni, hogy     rend és 
+demokrácia legyen. Ekkorra Umaru Dikko már tapasztalt politikus volt, és sose használt olyan     
+kifejezéseket, hogy "kurva ország" vagy "koszos niggerek".<br><br>Az 1980-as években aztán Nigéria   
+  lakói feltalálták a korrupciót. Azazhogy már addig is tudták, mi az, csak nem volt nekik miből.   
+1979   és 1983 között, Alhaji Shehu Usman Shagari elnök uralma alatt 16 milliárd dollárnyi   
+olajbevétel   veszett el a korrupció miatt. (Mit nekik Flaisz Ferenc!) Pénzért minden kapható volt,  
+ de olyan   szinten, amire egy jól nevelt kaukázusi maffiózó is csak elismerően füttyentene. A   
+főniggerek   halandósága magasba szökött, egyes kormányhivatalok pedig sűrűn leégtek, különösen,   
+ahol korrupciós   ügyek kivizsgálása folyt. Shagari elnök állítólag többször is kérte a   
+minisztereit, hogy ne   csinálják ezt, de csak csinálták. Umaru Dikko barátunk, mint közlekedési   
+miniszter, élen járt ebben   a népi mozgalomban, nála egy Kóka János ipari tanuló se lehetett volna. 
+  Feljegyezték például, hogy   egyszer egy amerikai útépítő cég képviselője személyesen fordult 
+hozzá,   mert a nigériai kormány   notóriusan nem teljesítette a szerződésük rájuk eső részét. Dikko 
+  figyelmesen végighallgatta, majd   átment egy másik szobába, visszajött egy táska készpénzzel, ami 
+  ránézésre vagy félmillió dollár   volt, és megkérte az üzletembert, hogy tekintsen el ennek az   
+"apróságnak" a feszegetésétől. Az   amerikai egyébként nem fogadta el a zsetont, inkább kivonultak   
+Nigériából, talán ez is   közrejátszott, hogy a három németországnyi Nigériában ma is csak 60 ezer   
+kilométer aszfaltozott út   van. (Magyarországon 70 ezer.) Dikko ötlete volt a mesterséges   
+élelmiszerhiány előidézése is azzal,   hogy import rizzsel terítette be a piacot, ezzel felsrófolva  
+ az árakat. Az így teremtett légkörben   aztán csak a pártjához közel álló üzletembereknek adott   
+kereskedelmi jogot. Amikor finoman jelezték   neki, hogy ez így nem lesz jó, mert kezd éhen halni az 
+  istenadta nép, nyilvánosan kijelentette: a   szegénység nem nevzehető súlyosnak, hiszen még nem   
+minden nigériai kénytelen guberálni. Végső soron   Dikko úgy vált a korrupció jelképévé, ahogy   
+nálunk Torgyán József, és nagyjából annyira volt   közkedvelt, mint Horváth Ágnes. Azonban Dikko   
+elmozdíthatatlannak bizonyult, s ráadásul, mint   Shagari elnök sógora, az elnöki poszt várományosa  
+ is volt.<br><br>A niggerek végül 1984-ben untak rá   Dikko és bandája működésére. Január elsején,   
+reggel hét órakor egy különös beszéd hangzott el a   rádióban egy addig ismeretlen katonatiszttől,   
+Sani Abacha dandártábornoktól. Ez az ürge megmondta a   frankót, nevezetesen hogy azok ott Lagosban  
+ elkúrták, nem csináltak semmit négy évig, és a többi,   ezért most megalakul a Szövetségi Katonai   
+Kormány, és az egész, eleddig kormánynak nevezett banda   adja meg magát, amíg szépen vagyunk.   
+Mellesleg mindezt teljesen jogszerűen tette, mert az 1979-es   nigériai alkotmány felruházta a   
+hadsereget a kormány hatalma felfüggesztésének jogával, akárcsak az   Aranybulla egykor a magyar   
+nemeseket. Jelzem, egy ilyen beszéd ráférne már a magyar közszolgálati   rádióra is. De hát van még  
+ mit tanulnunk Fekete Pákó hazájától.<br><br>Az új kormány elrendelte a   határok lezárását, a   
+gyülekezési tilalmat, a pártok betiltását, odalett az a fene nagy demokrácia,   és körözést adott ki 
+  az összes tolvaj szemétládára, az élen Dikkóval. Ő azonban már lelépett egy   táska pénzzel, és 
+meg   se állt Londonig. De hát ott már nem volt mit lopnia, és ha elfogyott a pénze,   mehetett 
+mosogatni   valami pizzériába. Ám nem minden nigériai olyan hülye, mint Fekete Pákó, ez a   nigger 
+feltalálta   magát. Emigráns csoportot alakított, és sivalkodni kezdett a brit médiában arról,   
+hogy milyen szar   most otthon, mert ezek a hülye katonák elkúrják a demokráciát, jaj, istenem, 
+éhezik   a nigger,   küldjetek még rizst, és orrba-szájba rágalmazta Muhammadu Buhari tábornok, az 
+új elnök   rendszerét.   Több se kellett a tábornoknak, bepipult és ráküldte a machetés fiúkat. 
+Innen kezdődött   csak igazán   a haddelhadd! És itt lépett a képbe Izrael és a Moszad.<br><br>A 
+hidegháború éveiben   ugyanis az   Egyesült Államok, a Szovjetunió és Izrael egyaránt igyekezett 
+befolyást nyerni Afrikában.   Izrael   főleg Dél-Afrikával ápolt jó kapcsolatokat, véletlenül pont 
+akkor, amikor a világon senki nem   állt   velük szóba az apartheid-rendszerük miatt. De hát 
+kollégák egymás közt, ugye... Köztudott, hogy     Dél-Afrika és Izrael ezer szállal kötődtek össze, 
+s kötődnek mind a mai napig például a hadiipar     terén. A Moszad szakemberei képezték ki a 
+dél-afrikai BOSS tisztjeit, nem csak a hagyományos     hírszerzés, hanem például a pszichológiai 
+harc és a vallatás terén is, ami kiderült, és emiatt     Izraelre meglehetősen nehezteltek szinte 
+minden feketék lakta országban, különösen, ha még muszlim     is a lakosság. Nigéria ezek közé 
+tartozott. 1973-ban Nigéria hivatalosan megszakította diplomáciai     kapcsolatát Izraellel. Ennek 
+ellenére a háttérben virágzó kereskedelmi kapcsolatokat ápoltak, és a     hetvenes években Izrael 
+vásárolta fel a nigériai olajtermelés mintegy 50%-át, főleg fegyverekért     cserébe. El lehet 
+képzelni, milyen hatással volt ez az üzletelés a régió amúgy sem túlzott     stabilitására, de hát 
+kit érdekelnek a gójok, a lényeg, hogy legyen elég olaj Izraelben, mert a     tankok meg a repülők 
+sokat fogyasztanak.<br><br>1984-ben, amikor a puccs híre elért Izraelbe, a     zsidók aggódni 
+kezdtek, hogy az új kormány - amelyet ráadásul egy muszlim tábornok vezetett - a     
+korrupcióellenes harc részeként elveszi az olajukat. Más olajforrása a zsidó államnak akkoriban     
+nemigen volt, az arab országok értelemszerűen nem adtak nekik, a Szovjetunió szintén, az Egyesült    
+ Államok pedig csak igen kis mennyiségben és drágán tudott volna nekik eladni. A Yitzhak Shamir     
+vezette izraeli kormány <font face="Verdana">megpróbált kapcsolatba lépni az új nigériai vezetéssel, 
+    de azok nem álltak szóba a zsidókkal. Ekkor a </font> <font face="Verdana"><i><span lang="EN-US"><font size="2">ha-Mossad le-Modiin         ule-Tafkidim     
+Meyuhadim</font></span></i><span lang="EN-US"></span>, azaz a Hírszerzési és Speciális Feladatok     
+Intézete, rövid nevén Moszad - azaz Intézet - kapta a feladatot, hogy valahogy győzze meg a     
+niggereket, hogy rá ne tegyék a koszos mancsukat az olajcsapra.</font> Nahum Admoni, a Moszad     
+igazgatója személyesen utazott Lagosba, hamis kanadai útlevéllel, hogy felkeresse Buhari tábornokot. 
+    A találkozó létre is jött, és az az egyezség született, hogy a Moszad segít Umaru Dikkót elfogni 
+  és   visszajuttatni Nigériába, cserébe az olaj továbbra is folyik. <br><font face="Verdana"><br>Dikko   elrablása hasonló sémát követett, mint Adolf Eichmanné. Hónapokig folyt   
+az adatgyűjtés a <span style="font-style: italic;">szajanimok,</span> azaz az Izraelen kívül élő   
+zsidók segítségével. A   Moszad előírásai szerint egyébként csak olyan szajanim vonható be egy   
+akcióba, aki száz százalékig   fajtiszta zsidó. Egy kicsit rasszisták a srácok, de oda se neki,   
+szakmailag tényleg prímák. A   szajanimok hálózata egész Európában figyelni kezdett. Orvosokat   
+riasztottak, hogy észleljék, ha   Dikko plasztikai sebész útján próbálná megváltoztatni arcvonásait. 
+  Az autókölcsönzők és repülőtéri   jegyirodák alkalmazottai valamennyien őt lesték. Szállodások   
+fürkésztek minden betérő fekete   vendéget. Szabók megkapták a méreteit, cipészek a lábméretét,   
+hátha így sikerül elkapni. Robert   Maxwell sajtómágnást is bevonták, s megkérték, magas   
+kapcsolatait megmozgatva próbáljon híreket   szerezni Dikko hollétéről. Mindez nem egy kémregény,   
+hanem történelmi tény. <br><br>Lábjegyzet.   Gondoljunk bele, hogy nyilván Magyarországon is   
+rengeteg szajanim él, akik bármikor hűségesen   szolgálják a Moszadot, ha megkérik őket. Ennek a   
+hálózatnak minden zsidó származású személy   potenciális tagja. Emlékeztek, mi történt, amikor a   
+Dózsa György téren egy zsidó faszi elhajította a   biciklimet? Később ő maga mondta, hogy   
+megdöbbenésére még aznap felhívta egy csomó biztonsági cég,   és ingyen védelmet ajánlottak fel   
+neki, pusztán azért, mert zsidó. Ezek szerint valakinek valahol   pontos listája van a magyarországi 
+  zsidókról, akár be vannak szervezve, akár nem, és bármikor elérik   őket. Hány mozgosítható 
+ügynököt   jelent ez? Belegondoltunk? Ne, jobb, ha nem. Még a végén gyűlöletet   keltünk. És akkor 
+még nem is   emlegettük az In-Kal Security-t.<br><br>1984 nyarán végül sikerült   megtalálni Umaru 
+Dikkót London   nyugati részében, Bayswaterben. A Moszad ügynökei napokig figyelték a   házát, majd 
+beindították az   akciót. Nigériai részről Mohammed Ahmadu Jarfa Yusufu nyugalmazott   őrnagy, a 
+nigériai követség   diplomáciai fedésében dolgozó titkosügynöke, a Moszad részéről pedig   három 
+ember, Dr. Levie-Arie   Shapiro, a tel-avivi Hasharon kórház aneszteziológusa, illetve   
+</font><font face="Verdana">Alexander Barak és </font><font face="Verdana">Felix Abithol speciális   
+ügynökök   vettek részt az akcióban. A doki közreműködése több, mint érdekes, egyszersmind jól   
+példázza az   izraeli néplélek működését. Képzeljük el, hogy egy magyar aneszteziológus-orvoshoz   
+beállítana a   János kórházban az NBH tisztje, és közölné, hogy a jövő héten el akarnak rabolni,   
+teszem azt, egy   kubai emigránst Brazíliában, és szeretné megkérni a doktor urat, hogy jöjjön 
+velük,   mert   szakszerűen el kéne altatni a faszit. Ugye, vajon mit mondana erre egy magyar orvos? 
+De ez     Izraelben a jelek szerint majdhogynem természetes. Hív a haza. Vagyis a havrosz. Szóval a 
+kis csapat     összeállt, és uccu neki. <br><br>Az akciót július ötödikére időzítették. A londoni 
+Stansted     repülőtéren ezen a napon leszállt egy Boeing 707-es szállítórepülőgép, hivatalosan 
+azért, hogy     diplomáciai futárcsomagokat kézbesítsen. Ehhez kellett eljuttatni az elaltatott 
+Dikkót. Az akciót     meglepő egyszerűséggel hajtották végre: megálltak egy furgonnal Dikko mellett, 
+aki épp egy ghánai     újságírónak adott interjút, zsupsz, berántották a kocsiba, és padlógázzal 
+elsöpörtek. Egy kis     galibát okozott, hogy két sarokkal arrébb lerohadtak, mert a nigériai 
+titkosszolgálat elfelejtette     feltankolni a kocsit. De a helyzet végül is megoldódott. Dikkót a 
+Regent Parkba szállították, ahol     Dr. Shapiro beadta neki az altató injekciót, és átrakták őt egy 
+teherautóra, ami a repülőtérre     vitte.<br><br>A sebészi pontossággal végrehajtott akcióba azonban 
+hiba csúszott. Dikko titkárnője,     Elizabeth Hayes ugyanis látta a ház ablakából, hogy Dikkót 
+elrabolják, és azonnal hívta a     rendőrséget. Az elrabolt személy fontossága miatt a hívás után öt 
+perccel a teljes brit kémelhárítás     rajta volt az ügyön, még Margaret Thatcher miniszterelnök is 
+személyesen kísérte figyelemmel az     eseményeket. A repülőtereket és kikötőket lezárták, minden 
+határőrizeti szerv utasítást kapott, hogy     szigorúan figyeljék az összes nigériai légi és tengeri 
+járművet.<br><br>Aztán becsúszott még egy     hiba. </font><font face="Verdana">Banfa repülőezredes, 
+a nigériai légierő korábbi parancsnoka, az     akció idején pedig az Air Nigeria elnöke feladata 
+lett volna, hogy a csapattal az akció előtt     találkozzék, és átadja azokat az okmányokat, amelyek 
+biztosították volna a Dikkót tartalmazó láda     diplomáciai sérthetetlenségét, vagyis azt, hogy a 
+brit hatóságok ne nyithassák fel. Banfa azonban     nem ment el a találkozóra. Ez lett a csapat 
+veszte. A repülőtéren ugyanis egy angol határőrtisztnek,     Charles Morrow-nak feltűnt a ládából 
+érződő erős gyógyszerszag - az altatáshoz használt     nátrium-pentotát szaga - és az időnként 
+kihallatszó különös neszezés. A diplomáciai iratok hiányára     hivatkozva, Yusufu őrnagy 
+tiltakozása ellenére felnyitotta a ládát, és láss csodát, egy megkötözve     szundikáló niggert 
+talált benne. A másik ládából pedig két megszeppenten pislogó Moszad-ügynök,     Barak és Abithol 
+kerültek elő. Dr. Shapiro erre rezignáltan kitette az asztalra a fecskendőit és a     maradék 
+altatót, és szomorúan tűrte, hogy a britek megbilincseljék. A nagy Moszad pofára esett.     
+<br><br>Barak tizennégy, Yusufu tizenkettő, Shapiro és Abithol tíz-tíz év börtönt kaptak. A     
+bíróságon ugyan tagadták, hogy a Moszad ügynökei lettek volna, de a bíró sem volt hülye. Nigéria     
+tagadta, hogy tudomása lett volna az akcióról, a hivatalos közlemény szerint "a kormány által nem    
+ támogatott, hazafias érzelmű emigránsok" hajtották végre. A brit kormány erre két évre 
+megszakította     a niggerekkel a diplomáciai kapcsolatokat. <br><br>Dikko még tizenkét évig élt 
+békésen Londonban,   és   ügyvédi diplomát szerzett. 1995-ben hazahívta őt Sani Abacha tábornok, az 
+az Abacha, aki 1984   újévén   a hatalomátvételt bejelentő rádióbeszédet tartotta, és büntetlenséget 
+garantált neki.   Hazatért,   pártot alapított, és ma is éli világát, mint köztiszteletben álló 
+politikus. 2001-ben   még volt   pofája bíróság elé rángatni az elrablásában részt vevő személyeket, 
+de azoknak meg volt   pofájuk nem   elmenni, és az eljárás érdektelenségbe fulladt.<br><br>És 
+Izrael? Hát, ők megoldották   ezt az   olajdolgot máshogy. 1992 szeptemberéig ugyanis a niggerek 
+szóba sem álltak velük, se   hivatalosan, se   máshogy. Helyben bányászott olajpalából kezdtek 
+olajat kinyerni, és dél-amerikai   országokkal   próbáltak üzletelni. Szerencséjükre sikerült 
+összehaverkodniuk Egyiptommal, illetve   Mexikóval és   Venezuelával.<br><br></font><font face="Verdana">Nigériában ma is diktatúra   uralkodik. 1985-ben   megdöntötték az 1984-es kormányt. 
+1993-ban szabad választásokat tartottak,   amit persze mindenki   elcsalt, a hatalmon maradni kívánó 
+kormány érvénytelennek nyilvánította, mire   a niggerek lövöldözni   kezdtek. Érdekes módon a 
+korrupció szintje akkor érte el az abszolút   történelmi csúcsot, amikor   hivatalosan 
+bejelentették, hogy megszűnt. Végül lett új kormány, de   néhány hónap múlva ezt is   megdöntötték, 
+ezúttal Sani Abacha tábornok. 1998-ig véres terrorral   uralkodott, amíg egy napon is őt   is vérbe 
+fagyva találták, de hát ez megesik az ilyen országokban.   1999-ben Umaru Yar'uda került   
+hatalomra, s elsőként az ország történetében nem fegyverrel, hanem   választási csalással tartja 
+magát   pozícióban azóta is. Az országot azonban gyakorlatilag az   olajcégek uralják, szinte 
+rabszolgaként   dolgoztatva a helybélieket.<br><br></font><font face="Verdana">Hivatalosan 
+</font><font face="Verdana">ma </font><font face="Verdana">Izrael nem   vásárol olajat Nigériából. 
+Azt azonban   mindössze <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.commodityonline.com/news/topstory/newsdetails.php?id=5272">két napja   jelentette   
+be</a> Moshe Ram, a lagosi izraeli nagykövet, hogy Izrael segítséget nyújt Nigériának   egy országos 
+  mezőgazdasági öntözőrendszer megépítéséhez. Nyilván csupa szívjóságból teszik ezt egy   muszlim   
+országban, ahol 2006-ban <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.jihadwatch.org/archives/012455.php">milliók vonultak az utcákra,</a> izraeli     
+zászlókat égetve és dzsihádot hirdetve a Libanont lerohanó Izrael ellen. A csirketenyésztés tuti     
+jobb üzlet, mint az olaj, ugyan, minek is fektetne ilyesmibe   Izrael. És a nigériai kormány is   
+biztos, hogy nem érdekelt semmiféle ilyen együttműködésben, például saját hatalma biztosítása   
+végett. Választást csalni, az igen, meg tömegbe lőni is, de Izraellel stikában kereskedni, na, azt   
+nem.<br><br></font></div>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-02-06&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=587&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=587&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=587&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=587&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=587&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=587&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=587&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=587&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30691"></A>62. Csorfab</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=587&id=30581#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-07 23:14:05</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">STFW<br />
+<br />
+Amúgy ha már itt tartunk, nem az AIDS terjed, hanem a HIV (Human immunodeficiency virus), aminek tünete az AIDS (acquired immunodeficiency syndrome). Ez ugyanolyan, mintha azt mondanád, hogy elkaptam valakitől a fejfájást...<br />
+<br />
+Források az állításod ellenkezőjéről, ha te nem tudtál felmutatni semmit:<br />
+<br />
+<B><a href="//www.searo.who.int/LinkFiles/World_AIDS_Day_2.pdf" target="_new" style="color: #000000;">http://www.searo.who.int/LinkFiles/World_AIDS_Day_2.pdf</a></B><br />
+"HIV cannot be contracted from faeces, nasal<br />
+fluid, saliva, sweat, tears, urine, or vomit of HIV-infected persons"<br />
+<br />
+<B><a href="//www.sfaf.org/aids101/transmission.html#other_fluids" target="_new" style="color: #000000;">http://www.sfaf.org/aids101/transmission.html#other_fluids</a></B><br />
+"HIV is not transmitted by saliva."<br />
+<br />
+<B><a href="//www.thebody.com/sowadsky/answers/quest407.html" target="_new" style="color: #000000;">http://www.thebody.com/sowadsky/answers/quest407.html</a></B><br />
+"Simply put, there is no evidence worldwide, that HIV has been transmitted by saliva alone."<br />
+<br />
+<B><a href="//www.thebody.com/content/art6119.html" target="_new" style="color: #000000;">http://www.thebody.com/content/art6119.html</a></B><br />
+"but no documented cases of HIV have been caused by sweat, saliva or tears. "<br />
+<br />
+<B><a href="//en.wikipedia.org/wiki/HIV" target="_new" style="color: #000000;">http://en.wikipedia.org/wiki/HIV</a></B><br />
+"HIV has been found at low concentrations in the saliva, tears and urine of infected individuals, but there are no recorded cases of infection by these secretions and the potential risk of transmission is negligible."<br />
+(Lifson AR (1988). "Do alternate modes for transmission of human immunodeficiency virus exist? A review". JAMA 259 (9): 1353&#8211;6. PMID 2963151. )</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30596"></A>61. Fuckame\'</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-02-07 15:06:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szerintem a XV. sz-i Angliát badarság katonailag erősebb államnak beállítani, mint I. Mátyás magyar államát. Még népességben is alulmúlta - pláne, ha hozzávesszük a bubópestis ny-eu-i koncertkörútját.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30594"></A>60. 60. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=587&id=30580#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-07 14:07:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"># 50 M_Vendak<br />
+<br />
+Hát elég rázós lenne a valós dolgokat álhírként kiszivárogtatni, mert az elemzés ilyesmire is kiterjed. Olyan is lehet, hogy az olajdolgokat mint kisebb jelentőségű, de létező ügyet hagyják felszínre kerülni. <br />
+A helyzet az, hogy ilyesmibe csak a nagyon mélyen benne lévők látnak bele - beleértve idegen orságok titkosszogálatait is -, de a szereplők egyike sem lehet soha biztos abban, hogy a kép, ami előttük van, mennyire valós. Esetleg csak a végén. <br />
+Nekem mindenesetre gőzöm sincs, de rendszerint érdemes az érdekek mentén vizsgálódni.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30593"></A>59. 59. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=587&id=30583#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-07 13:56:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Én nem mondtam hogy az oszmánok hogy le tudták volna igázni európát,akkor már én is felteszem a kérdést annak az esélye hogy európa elfoglalja arábiát,törökországot és keresztény hitre térítse ugyanúgy 0,minthogy európa iszlám legyen. Én csak azt tudom a török sok évszázadon át fehérek lakta földet uralta,és hiába balkán,vagy magyarország mi is fheér népek vagyunk,akiket szaracénok taszítottak rabszolgasorba. <br />
+<br />
+A lényeg az hogy teljesen nem tudtuk volna egymást leigázni.<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30589"></A>58. Ellenzéki Jósda</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-02-07 13:40:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ami a fajokat illeti, találtam egy érdekes cikket.<br />
+Az a baj, hogy én nem értek a genetikához, de ha a babók ekkora hátast ugrottak elolvasni biztos érdemes.<br />
+<B><a href="//magtudin.org/balogh_bertalan.htm" target="_new" style="color: #000000;">http://magtudin.org/balogh_bertalan.htm</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30587"></A>57. Number "STFU" -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=587&id=30584#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-07 13:26:22</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_825.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha létezne olyan hogy egyesített Európa az ma is gazdagabb és erősebb lenne az Usánál, mert maga az EU is erősebb gazdaságilag...<br />
+Az összes Ázsiai állam szerintem fele olyan erős összevéve mint az EU.<br />
+Kína jelenleg kb. ötször gyengébb, Kína és Japán együttvéve harmad olyan erős.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30586"></A>56. Number "STFU" -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=587&id=30584#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-07 13:18:20</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_825.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hunyadi János származásáról anynit hogy apai ágon Kun, anyai ágon Magyar származású volt, ugyanis abban az időben Havasalföldön az volt a módi hogy uralkodó csak külföldi lehet.<br />
+Basarab sem vlach volt hanem minden bizonnyal besenyő.<br />
+Az apa aki havasalföldi fejedelem volt, mellesleg kun származású, elvett egy Magyar asszonyt és így született meg Hunyadi János.<br />
+A kunok történelmét tekintve, és a Magyar anyát, kb százszor több jogunk van Magyarnak mondani Hunyadit mint bárki másnak, mert ő Magyar volt.<br />
+Egyébként A mongol birodalom tényleg könyebben legyőzte Kínát mint Magyaroroszágot, bár közelebb is voltak hozzá...<br />
+Az Oszmán birodalom Magyaroroszággal sem nagyon bírt el, az hogy végül elfoglalta a felét annak köszönhető hogy közben a Habsburgokkal is háborúztunk.<br />
+És nem mellesleg akkor mi már túl voltunk a tatárjáráson, tehát már nem tartoztunk Európa 5 legerősebb nemzete közé.<br />
+Más kérdés hogy Mátyás idejében meg megint oda tartoztunk.<br />
+Érdemes megnézni hogy Mátyás uralkodása idején mennyi babér termett az oszmán birodalomnak...<br />
+Ezek után nehezen tudom elképzelni hogy a nálunk erősebb Angliával, Itáliával, Franciaországgal hogyan bírt volna el a török...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30585"></A>55. Bokor Gyuri</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=587&id=30577#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-07 13:17:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_793.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Radical, igen a legtöbb babó hazaáruló. Nem az országhoz ragaszkodnak ahol élnek, hanem a babósághoz (nem csak vallási értelemben).<br />
+Másrészt a troll szó valszeg inkább a feka Spanyol/Portugál megfelelője. Nigéria pedig a Niger folyó miatt kapta a nevét. Az meg honnan kapta a fene sem tudja, de valszeg nem a negro szóból.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30584"></A>54. Bokor Gyuri</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=587&id=30583#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-07 13:09:24</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_793.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Numbernek szerintem igaza van. Az újkorig egyetlen igazi központilag kormányzott, erős birodalom volt csak, és ez a római. Az ókori görögöknek nem volt még országuk sem, annak ellenére, hogy a földközi tenger partjai mentén elég sok települést hoztak létre.<br />
+A mongol birodalom, habár azt nevezik a legnagyobb szárazföldi birodalomnak, nem volt egy igazi egységes birodalom. Maguk a mongolok olyan kevesen voltak, hogy az magyarországi prezentációjukat is tatárjárásnak hívják (hívjuk).<br />
+A török - oszmán - birodalom viszonylag rövid életű volt és tényleg csak környékbeli, "gyengébb" országokra terjedt ki. Magyarországnak lett volna lehetősége, hogy megállítsa őket még külföldi segítség nélkül is, csak akkor is az ment mint ma, hogy a vezérek csak a hasznot- és nem az ország javát nézték. A "mi lett volna ha" nagykönyvbe beférne az is, hogy ha Hunyadi János - aki annak ellenére, hogy nem volt magyar születésű, mégis a magyar történelem pozitív szereplőinek nem túl népes csapatában valahol az első helyen van számomra - nem hal meg 1456-ban, hanem Nándorfehérvár után odabaxott volna a törököknek (akik ott is sokszoros túlerőben voltak, mégis messzire futottak, mikor kezdett szarrá válni a helyzet), akkor lehet, hogy most nem is lenne Törökország.<br />
+Kínáról meg annyit, hogy annyian voltak már akkor is mint az "oroszok", mégsem, hatalmas falakkal vették magukat körbe, marha nagy hadihajókat építettek, a mongolok mégis úgy vették be őket, hogy öröm volt nézni.<br />
+A náci Németország egy elég érdekes dolog volt, mivel kb. 4 éven keresztül szivatták egész Európát ahol szintén fehér emberek laktak (ma már egyre kevésbé...)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment30583"></A>53. Number "STFU" -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=587&id=30571#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-07 12:49:59</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_825.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez a létharc nagyon erős kifejezés.<br />
+Elég jól ismerem a történelmet, és erről a részréről elég sokat beszélgettem egy barátommal aki nálam is sokkal jobban ismeri.<br />
+Neki az volt a véleménye hogy az Oszmán birodalom soha nem jelentett tényleges veszélyt európára, tehát annak az esélye hogy leigázzák az egészet és bevezetik az iszlámot szinte a nullával egyenlő.<br />
+Az Oszmán birodalommal szemben soha nem volt egységes fellépés.<br />
+Szinte egész terjeszkedésük alatt csak Oroszországgal, Magyaroroszággal és a fejletlen balkáni államokkal háborúztak, Anglia, Franciaország, a Német-római császárság csak érintőlegesen került velük konfrontációba, szó sem volt az ő esetükben közvetlen fenyegetettségről.<br />
+Egyébként a barátom szerint még a Mongol horda sem volt elég erős ahhoz hogy az akkori Európát leigázza.<br />
+Emlékeztetnélek hogyha Barbarossa Frigyes anno nem hal meg és 200 ezres seregével eljut a szentföldre akkor minden bizonnyal végső sebet kapott volna az egész iszlám világ...<br />
+<br />
+Azt továbbra is tartom hogy Kína katonailag nem volt soha olyan erős mint egy európai nagyhatalom, legalábbis katonailag.<br />
+A 13. században már haditechnikailag sokkal fejlettebb volt európa mint Kína, valószínűleg nagyon csúnya vége lett volna egy totális háborúnak, dehát ehhez akkor még nagyon messze voltunk egymástól, nem alakulhatott volna ki ilyesmi.<br />
+<br />
+De ahhoz hogy a fehér faj dominanciáját kiemeljük elég a Náci németországra gondolni, akik egyedül is elég erősek lettek volna egész Afrika, Kína és az iszlám világ legyőzéséhez.<br />
+És akkor még nem vettük bele az egyesült államokat, Oroszországot, Nagy Britanniát, ahol szintén elég sok fehér ember élt...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=587&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=587&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=587&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=587&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=587&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=587&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=587&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=587&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

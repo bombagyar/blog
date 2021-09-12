@@ -1,0 +1,530 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2502#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Ennyi baromságot - azaz az eltévedt blogger "elemez"";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2502#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Ennyi baromságot - azaz az eltévedt blogger "elemez"<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 augusztus 27. 05:06:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2502.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Ritkán szólok hozzá más 
+blogokon megjelent szövegekhez, már csak azért is, mert más blogokat a kutya sem olvas. Ez kissé 
+nagyképűen hangzik, de tény, hogy a Bombagyáron rémülten nézünk össze, ha napi 12 ezer alá süllyed a 
+látogatottságunk (csendes nyári hétvégéken előfordul ilyen rettenet), addig más blogok napi ezres 
+látogatószámmal már egekbe ünnepelhetik magukat, és még különdíjat is kapnak, amitől aztán úgy 
+elszáll az agyuk, hogy a következő évi belterjes verseny idejére már nem is emlékeznek rájuk. Ezekre 
+a kis blogocskákra&nbsp; és közönségükre az is jellemző, hogy ha szerzőjük valami észbontóan vaskos 
+ökörséget hord össze, de megfelelően hosszúra nyújtja, akkor az olvasói ámulattal gratulálnak a 
+"remek íráshoz", és bízvást el is hiszik, ahelyett, hogy kinéznének a buta fejükből. Van mit tanulni 
+a szcientológusoktól: Ron Hubbard rendszeresen tartott több órás előadásokat tömény halandzsából, 
+majd megkérdezte, elhitték-e, és aki igen, azt kiröhögte. Nem volt hülye az öreg.<br><br>Dobjuk meg 
+egy kicsit az olvasottságát a kolléga úrnak: a <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//konzervatorium.blog.hu/2009/08/26/mersekelt_realista_koalicio">Konzervatórium</a> című 
+hej de nagyon okos blog közölt ma egy cikkecskét az úgynevezett "jobboldal" és "szélsőségesek" 
+kapcsolatáról, elemezve az ún. "radikális szélsőjobboldal" viszonyait is, ahogy ő bírni látja. Én is 
+írhatnék hasonló elemzést a szomszédom családi viszonyairól az átszűrődő hangok alapján, s 
+valószínűleg az lenne az eredménye, hogy a szomszédban maga Kronos lakik, aki reggelente ledarálja 
+és felfalja gyermekeit, a sivalkodás ugyanis erre utal, este pedig újból megszületnek. A 
+rendelkezésemre álló információk alapján biztosan helytállónak hihetném hipotézisemet, csak semmi 
+köze nem lenne a valósághoz. A Konzervatóriumnak sincs.<br><br>A tehetséges BékésMárton (így, egybe) 
+mindjárt az elején RPG-vel lövi a bakot, merthogy aszongya:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Az egymáshoz közeledő 
+&#8222;nemzeti radikális&#8221; párt és a szélsőjobboldal szervezetei <i>nem jobboldaliak a szó 
+semmilyen értelmében sem</i> és <i>a konzervativizmussal semmilyen szinten nem állnak 
+kapcsolatban</i>."</div><br>Ezzel megvan az alaphang is, mégpedig az újbaloldaliság azon tézise, 
+hogy a jobboldal az, amire ők azt mondják, és ha a jobboldal nem viselkedik megfelelően 
+(baloldaliként), akkor irgumburgum, kitagadjuk őket a politikai palettáról, és nem veszünk róluk 
+tudomást, lehet pályázni a betöltetlen helyükre. Szomorú, drága BékésMárton, hogy itt minden tele 
+lett a fent említett bak beleivel és egyéb véres cafatjaival, sőt, még a darabokat is egyenként 
+felaprítottad géppisztollyal. <br><br>Az általad idézőjelbe tett "nemzeti radikális" párt - 
+nyilvánvalóan a Jobbik, más nemzeti radikális pártról nem tudok, amely tényező lenne - nem érdemel 
+idézőjelet, ugyanis az, ami: nemzeti, radikális. Mely jelzőt vitatnád el? BékésMárton egy "hülye 
+fasz", mondhatom, ugye? A jobboldaliságról valóban vitatkozhatunk a Jobbik esetében, szerintem sem 
+azok, de esetükben ez a kifejezés nem is értelmezhető, mert a Jobbik, csakúgy mint a nemzeti 
+radikalizmus - figyelj, lassan írom, hogy megértsd, hátha politológus vagy - <span style="font-style: italic;">nem a nagy francia forradalom politikai talaján áll.</span><br style="font-style: italic;"><br>Húha, durva, mi? Tagadják ezt az egész Bastille-rombolósdit, 
+felvilágosulósdit, szabadkőművesesdit, köztársaságosdit. Mi több, az egész nemzetiradikál társaság 
+így gondolkodik. Sötét középkoriak, azok, persze. Akkor biztosan buták is. Nem baj, ha így 
+folytatod, lehetsz te még prominens antifasiszta.<br><br>Egy Horthy Miklóst eszményképül állító 
+pártról és a mögötte álló szubkultúráról pedig azt kijelenteni, hogy "a konzervativizmussal 
+semmilyen szinten nem állnak kapcsolatban", megint csak akkora elégtelen a politológia rovatban, 
+hogy megszúr az indexed, ha kinyitod. Mert a konzervativizmust is te mondod meg, micsoda, mi? És ki 
+lehet konzervatív, kedves BékésMárton? Hovatovább, érdekes: a Jobbik ezek szerint határozottan nem 
+jobboldali, de nem is konzervatív, tehát akkor micsoda, reformer baloldali? Az lenne, ha reform 
+lenne az a pár ezer éve működő rendszer, amit vissza akar hozni, és baloldaliságnak nevezhetünk 
+mindent, ami nem jobboldaliság. De sajnos ehhez még tanulnod kell.<br><br>Huszár Károlyt nyugodtan 
+emlegetheted, biztos nagyszerű ember volt, mint három hónapig regnáló ideiglenes ügyvezető 
+miniszterelnök. De emlékezz meg Horthy Miklós azon mondásáról is, miszerint <span style="font-style: italic;">"a földre szabadult poklot nem lehet angyalszárnyak legyezésével eloltani."</span> A 
+nemzeti radikalizmusnak ez a jelmondata, nem holmi idealista álhumanizmus.<br><br>Na, de lapozzunk 
+tovább, és megtudjuk, kik az igazi "konzervatív jobboldaliak": hát persze, hogy a szerző úr, és 
+senki más, mégpedig azért, mert bír idézni Széchenyitől, ó, de fain, s tessék mondani, a zsidókról 
+alkotott véleményét is ismerni tetszik, vagy az nem számít? Persze hogy nem, hiszen egy igazi 
+konzervatív jobboldali felvilágosult bölcsességgel válogat nemzeti nagyjaink mondatai közt, és nem 
+ám csak úgy meghonosít egy Széchenyit a XXI. században. Hogyisne! Hogy ki a Széchenyi, azt mi 
+mondjuk meg. Mármint mi, konzervatív jobboldaliak. Igazi konzervatív jobboldaliak.<br><br>Szerkesztő 
+úr drága! A jobboldaliság nem más, mint a francia forradalom után kialakult burzsoázia 
+érdekrendszere. Annak pedig nincsenek értékei, következésképpen konzervatív irányzata sincs. Ha ezt 
+cáfolná, kérem, írjon le 1, azaz egy darab polgári értéket a Fidesz által sokat emlegetettből. A 
+színházba járás nem számít. Értéket, nem külsőséget. A jobboldalisággal szemben pedig az úgynevezett 
+baloldaliság áll, amely a burzsoáziával szemben ugyanazon társadalmi rendszerben a néptömegek 
+érdekeit képviseli, így például a munkásokét. Nincsenek további oldalak, mert a francia forradalom 
+talaján nincs létjogosultsága másnak! A jobb- és baloldal tehát valójában nem oldal, hanem frakció. 
+Aztán lehet magunkat konzervatívnak, nemzetinek, újnak vagy reformernek titulálni, de a helyzet az, 
+hogy 1789 óta ezek a szavak értelmetlenek, mert van az egyik értéknélküliség, és van a másik, 
+amelyek közt a párbeszéd kizárólag anyagi érdekekről folyik, magasról leszarva a szellemi, erkölcsi 
+és társadalmi értékek őrzését, illetve azokat eme anyagi érdekeknek alárendelik. És itt a teljes 
+kép: mind a bal-, mind a jobboldal a liberalizmus egy-egy szárnyát képviselik. Bingó? Na, így tessék 
+jobboldalinak lenni.<br><br>Hopp, de észbe kap Márton kolléga, mert azt írja, hogy:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A 
+képbe bejövő Jobbik a jobbközép establishmentet érő kritikájában  lassan a baloldalon is túlmenve 
+ún. radikális irányba megy, amelynek se  nem jobb-, se nem baloldali karaktere többek között abból 
+is fakad,  hogy a nemzeti retorika felfokozott használatán kívül nincs igazán  programja. Sokan 
+leírták már, de erősítsük meg: a Jobbik a  társadalomban jelen lévő égető problémákra ad olyan 
+válaszokat, amelyek  valóra váltásához sem nem elég erős, sem nem képes, s egyáltalán nem  biztos az 
+sem, hogy ezek mind jó válaszok."</div><br>Ebben igaza van a kollégának: a Jobbik fordítva közelíti 
+a dolgokat, nem a programjához választ arculatot, hanem az arculathoz programot. Ezt így mondanák 
+modern korunkban, holott ennél egyszerűbb a képlet. A Jobbik a nemzeti érdek képviseletét tűzte ki, 
+csak egészen mostanáig fingja sem volt, hogyan kezdjen hozzá. Az EP-siker óta azonban muszáj, így 
+gyorsan hegesztettek egy programot. Aztán vagy jó lesz, vagy nem, de nemlétezőnek tekinteni 
+elementáris hiba. Megint fröcsögnek a bakbelek.<br><br>Azért az alapvető politikai folyamatok 
+felismerése megyeget a művész úrnak: helyesen állapítja meg, hogy a Jobbik azért népszerű, mert a 
+kormányzás egy rakás szar. Igen. És még egy csomó más miatt is. A Jobbik egyébként addig nem fog 
+bukni, amíg kormányra nem kerül, de akkor baromi nagyot.<br><br>Na figyi, most jön az, amikor Márton 
+mester elemzi a "szélsőjobboldalt".<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A jobbratolódás <i>túlzói</i> (értsd jobbikos 
+&#8222;nemzeti radikálisok&#8221;), sőt <i>veszettjei</i> (értsd szélsőjobb) velünk élnek, és 
+jelenlétükkel leginkább a <i>mérsékelt</i> jobbközép s a konzervatív közélet dolgát nehezítik 
+meg."</div><br>Ez lesz a kedvenc körmondatom.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Nyugtalanító például, hogy a Jobbik és 
+pártmilíciája 2009 kora nyarán  Szegeden szövetségre lépett a HVIM-mel és a nem olyan régen Domokos  
+Endre János Vér és Becsület Mozgalmában tevékenykedő Tyirityán Zsolt  vezette 
+Betyársereggel."</div><br>Az. Ez ugyanis olyan politikai amatörizmus, amit egy 16%-os párt nem 
+engedhetne meg magának. De hát ők tudják, kire van szükségük. Domokos Endre János mozgalma egyébként 
+nagyjából negyven főt számlál, talán kétszázat, ha minden nyilast összetrombitálunk, és egytől egyig 
+kultúremberek, ami nem mondható el például a Szigeten fetrengő vadliberális csürhéről. Tyirityán 
+Zsolttól félni tetszik? Miért, hangosan pattogtat a karikás ostorával? Édes Istenem, hát ki az a 
+Tyirityán Zsolt, hogy így be kell tőle szarni? <br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Toroczkai Lászlónak (HVIM) sikerült a 
+szélsőjobboldalról kiszorítania  riválisait (ld. Tomcat esetét) és mivel Budaházy is elfogásra 
+került, a  szélsőjobboldali komplexum potenciálisan vezetése alatt 
+áll."</div><br>Háttezhülyebazmeg...<br>Toroczkai Lászlónak az életben nem voltak "riválisai". Én 
+pláne nem. Toroczkai a Hatvannégy Vármegye Ifjúsági Mozgalom alapítója, tiszteletbeli elnöke, és 
+csinál X dolgokat. Én meg egy blogger, aki Y dolgokat, időnként egyetértésben és nagyjából - de nem 
+egészen - közös ideológiai alapon ezzel a szervezettel. Olyan meg nincs, hogy "szélsőjobboldali 
+komplexum", amit egy ember vagy akárki irányítana. Körök vannak és klikkek, akik egyébként 
+rendszeresen összerúgják a port, így például én is Toroczkaival, de ennek tessék mögénézni, és 
+észrevenni, milyen zsarolási potenciálok húzódnak a háttérben, nem nehéz, segítek, egy hírportál az. 
+<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Ez a komplexum számos honlap, fórum, orgánum (pl. Szent Korona Rádió, 
+<i>Magyar Jelen</i>,  kuruc.info, HunHír) hálózatából fonódott és egy szubkulturális  kvázi-egység 
+talaján áll. A Jobbik ezen erőkkel kötött szövetsége a  széljobbos erőeloszlást eldöntő meccsek 
+paktumának megszületésén túl  azt jelzi, hogy Vona Gábor ténylegesen hisz abban, hogy a 
+&#8222;nemzeti  oldalt&#8221; egyedül pártja és az abban hívők, vagy az azzal szövetségre  lépők 
+alkotják."</div><br>Aha, hát ha ezeket mind egységes "komplexumnak" tekinted, akkor tényleg nem vagy 
+képben, például ami a HunHír és a Kuruc "kapcsolatát" illeti. Az viszont igaz, hogy a Jobbik a TMRSZ 
+kivételével csak ebben a körben érzi jól magát, és keres szövetségeseket, ami elégtelen és megint 
+csak amatőr hozzáállást tükröz.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A Jobbik és a szélsőjobb közötti átfedés több személyen, 
+fórumon  keresztül mára valósággá vált, de sajnos meg kell jegyeznünk, hogy a  Jobbik és az elvileg 
+ellenséges jobbközéphez tartozónak gondolt fórumok  között is több esetben jelöletlen a határ, és a 
+zöldhatáron (<i>Demokrata</i>, <i>Kárpátia</i>, barikad.hu) naponta többen kelnek át, köztük 
+publicisták, újságírók."</div><br>Mivel ezek a lapok nem is tartoznak az általad "komplexumnak" 
+titulált körhöz. A Kárpátia magazinnak például annyi köze van a Kuruchoz, mint a Népszabadsághoz. 
+Igen, egyes szerzői a Demokratába is írnak, de Szentmihályi Szabó Péter például helyre kis dadaista 
+verseket faragott egykor a Párt nagyságáról a Szabad Népnek is, tessék elemezni ezt az átjárást 
+is.<br><br>Történelmi pillanathoz érkezünk, amikor a vak tyúk szemet talál, nem is akármekkorát. 
+Idézzük ide.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Noha a tulajdonképpen tét nélküli <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//konzervatorium.hu/cikkeink/koezeletpolitika/191-atigazolok" target="_blank">EP-választásokon szavazó &#8222;jobbikosok&#8221;</a>  közül nem biztos, hogy 
+2010-ben is mindenki a párt mellett teszi majd  le a voksát, a Jobbik előreláthatólag be fog kerülni 
+a parlamentbe. Ha  így lesz, 2010-től identitása felépítésében bizonyosan nagy része lesz  annak, 
+hogy önmagát &#8211; feltehetően a Vona-féle kapkodó, hebehurgya ki-  és beszólásokkal &#8211; 
+megkülönböztesse a jobboldali kormánytól, azaz nem  azt a magatartást fogja tanúsítani, mint amit 
+1998&#8211;2002 között a MIÉP.  További differencia a két frakció között, hogy a MIÉP a választóinak 
+ nem ígért olyasmit, amit nem tudott teljesíteni, de ha tett is ilyet,  az akkori &#8222;nemzeti 
+radikális&#8221; tábor nem kívánta felelősségre vonni  pártját országgyűlési tevékenységéért. (Ebben 
+nagy része volt a MIÉP  tekintélyelvűségét elfogadó, idősebbekből álló szavazóbázisnak és a  
+net-használat akkori alacsonyabb fokának.)"</div><br>Jó. Helyes. Ez valószínűleg csakugyan így lesz. 
+Erről szólt a <span style="font-style: italic;">Miért lufi a Jobbik?</span> című írásom is. Na de 
+figyuzzátok, a Mester megoldást is javasol ám!<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Mindezek után a konzervatív 
+korszakváltásban érdekeltek számára tehát  az eredmény az, hogy a jobboldali térfélen egyetlen egy 
+olyan  párt(szövetség) jöhet számításba, amelyik képes lehet a politikai  hatalom megszerzésére, 
+megtartására és a konzervatívoknak tetsző reális  programot készíthet az eljövendőre. Ez pedig a 
+Fidesz."</div><br>Apukám, még egyszer: a Fidesz jobboldali párt, nem képes és nem is szándékozik 
+nemzeti értékeket megjeleníteni, sem semmiféle értéket! Jelenleg egyetlen párt van az országban, 
+amely értéket és nem érdeket képvisel, ez pedig a Jobbik! Éppen azért nem lehet értelmezni a 
+programjukat, mert nem érdekeket képvisel, legalábbis nagyrészt nem azt, hanem értékrendet. Ami 
+természetesen pukkasztott nulla érdekek nélkül. A Fidesz programja azonban ha meggebedünk, sem fog 
+értéket alkotni vagy védeni, hiába nyomtatnak szolid nemzetiszín szalagocskákat a borítóra, a 
+marketingstratégiai szempontok szerint mosolygó család fölé. Érték és érdek csak együtt ér valamit, 
+de míg az érdek nem szül értéket, fordítva viszont megtörténik ez. Ezért ér többet a Jobbik, mint 
+bármely bal- vagy jobboldali párt, hiába az agymosott birkák millióinak szart sem érő 
+véleménye.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Molnár Tamás nagyszerű meglátása szerint a jobboldal még akkor is  
+látványosan hanyagolja a kultúra területét, amikor hatalmon van.  Utazásai alatt látott példákból 
+kiindulva írja, hogy <i>&#8222;a színvonalas jobboldal általában elhanyagolja nemcsak</i> [&#8230;] 
+<i>a propagandát, hanem általában az eszmék világát is&#8221;</i>, így nem változik az a helyzet, 
+hogy <i>&#8222;korunk  kultúráját a baloldaliság jegyzi, de ehhez a tényhez egy bizonyos  jobboldali 
+paralízis erősen, talán döntően hozzájárul.&#8221;</i>"</div><br>A kultúra szó jelentése viszont ez 
+esetben nem az, hogy mit nézünk, ha elmegyünk a színházba. Így van, a jobboldaliság hanyagolja a 
+kultúrát, vagyis a tömeg közvélekedését, s tudod, miért? Mert a burzsoázia érdekei nem kívánják meg 
+sem a tömeg jólétét, sem érdeklődését, csak a pénztőke támogatását. A kultúra, a propaganda és 
+hasonló dolgok nem érdekesek. A baloldalnak azonban elemi érdeke a kultúra felfuttatása, maga mellé 
+állítása, mert azzal tud tömegeket megszólítani. Lásd: munkáskirándulások, televízió, továbbá 
+"Számunkra a legfontosabb művészet a film", ezt Lenin mondta, találd ki, miért. A jelenlegi 
+"baloldal" - a gyurcsányizmus - fából vaskarika, ugyanis valójában szélsőséges jobboldal - egy 
+burzsoá elit elefántcsonttornya - amely azonban a párt korábbi baloldaliságából fakadóan örökölte 
+annak kulturális intézményeit. Jól nézzük meg, ilyen csak egyszer van minden száz 
+évben.<br><br>Szóval az a helyzet, Márton úr, hogy az a szeretett Fidesz, amitől Ön konzervatív 
+értékeket és kulturális paradigmaváltást bír várni, mindössze egy burzsoá fekáliát fog az Ön 
+fejebúbján elhelyezni, amitől Ön megkeseredett és kiábrándult lesz, mert az itt leírt 
+összefüggéseket soha nem érti meg, és el is utasítja, mint szélsőjobboldali mételyt. Már csak azért 
+is, mert minden szélsőjobboldal, ami nem bal- vagy jobboldal. Egyeseknek. Az iszlám fundamentalizmus 
+például micsoda? Nem lesz semmilyen állandósult összecsapás a egyfelől a balliberális, másfelől a 
+"szélsőjobboldali" sajtó és a "konzervatív jobboldal" között. Bár az első kettő valóban torka 
+szakadtából hörögni fog, de ez is olyan lesz, mint a viccbeli juhászbojtár és a sas közötti 
+összefüggés, nevezetesen, hogy a sas kurva magasan repül, a juhászbojtár meg kurvára 
+leszarja.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"<i>Eljött a konzervatív korszakváltás ideje, megoldást &#8211; a 
+politikai  szélsőségesekre is &#8211; csak a konzervatív jobboldal kínálhat, politikai  közösséget 
+formálva társadalmunkból és a nemzetnek visszaadva államát.</i> [&#8230;] <i>A  két világháború 
+között a bethleni konszolidáció fogta ki a szelet a  jobboldali radikálisok vitorláiból &#8211; most 
+is a polgári jobbközépre  hárul ennek végrehajtása. A baloldal nyelvét pedig egyre kevesebben  
+fogják használni, mert az egyszerűen alkalmatlan a valóság leírására.</i>"</div><br>Ha már Egedy 
+Gergely fenti sorai zárják a cikket, hadd vegyem kölcsön én is. Így igaz, a baloldali nyelvezet 
+alkalmatlan a valóság leírására. Mint ahogy a jobboldali is. Mivel mindkettő a természetes 
+világrenden erőszakot tevő, az erőszakos egyenlősítésen, a népirtáson és a hitelrabszolgaságon 
+alapuló forradalmi rend gyermeke. A BékésMártonhoz hasonló "konzervatív jobboldaliak" húsz év múlva 
+hüledezve fognak ülni egy csésze kávé fölött, ha még lesz rá pénzük, és nem értik, miért van most 
+pont olyan, mint Gyurcsány alatt, holott azt legyőztük, és a "szélsőségeseknek" sem engedtük át a 
+hatalmat. Kedves Márton, amíg az általad szélsőségesnek nevezett kört nem ismered mélységében, és 
+csak a falon átszűrődő zajok alapján próbálod elképzelni a szomszéd családot, sosem leszel képben. 
+Nem szégyen az, vannak ezzel így pár milliárdnyian. Éppen azért képezik idestova háromszáz éve a 
+hozzád hasonló okostojásokat, hogy a merengéseikkel még vastagabbra húzzák a hályogot a nyugati 
+világ szemén, és még távolabb vigyék az anyagi boldogság pillanatnyi illúzióját. Ahogy a rendszer 
+csak külsőségeiben ismer értékeket, úgy ti magatok is. Semmi baj, hiszen megmondta egyszer egy okos 
+ember, hogy mi a teendő. Tanulni, tanulni, tanulni. A kommunizmust, természetesen. De nem csak a 
+vörös fajtáját, mert az már csak a végkifejlet. Tessék még egyszer nekirugaszkodni annak a fránya 
+történelemkönyvnek.<br><br> </div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-08-27&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2502&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2502&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2502&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2502&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2502&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2502&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2502&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2502&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2502&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2502&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2502&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184242"></A>95. 95. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=184112#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-31 11:36:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem csak a szerencsétlen csírák menetelnek aznap, hanem mi is. Igaz, mi egy kicsit többet, és nem Budapesten:<br />
+<br />
+<B><a href="//gorogkatolikus.hu/?muv=hir&hir_id=115" target="_new" style="color: #000000;">http://gorogkatolikus.hu/?muv=hir&hir_id=115</a></B><br />
+<br />
+A gyalogos zarándokokon kívül várják a lovas, kerekesszékes, babakocsis zarándokokat is...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184209"></A>94. <A HREF="mailto:loydi@doyle.hu" STYLE="color: #000000">LyD</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=184112#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-30 17:16:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_468.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><br />
+De biciklit sem :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184181"></A>93. orhan</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=183975#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-30 14:09:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1938.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Don, te nagyon hülye vagy.... </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184112"></A>92. Tomcat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=184089#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-29 18:04:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_14.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">LOL! Tényleg.<br />
+<br />
+<B><a href="//www.mmszke.hu/esemenyek" target="_new" style="color: #000000;">http://www.mmszke.hu/esemenyek</a></B><br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184090"></A>91. 91. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=184053#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-29 13:19:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Jó lenne néhány dolgot kitisztázni. Lehet, hogy az alábbi tézisek nem igazak, de akkor elsősorban azokat illene megcáfolni, nem azt, hogy mi lesz, mert arra csak tippelhetünk.<br />
+<br />
+1. A Jobbik politikai párt, tehát alapítói elfogadták a politikai írott (sztalini alkotmány) és íratlan szabályok nagy többségét. Persze csalhatnak ők is, de akkor mi a különlegességük? Azzal, hogy parlamenti erővé válnak (hacsak addig a beépített robbanófejeket nem aktiválják titkos támogatóik), elfogadják a pártfinanszírozást (na jó, tiltakozva, és majd futnak még egy kört, mint a kis tyúk, hogy a kakas ne nézze kurvának), beülnek a különböző parlamenti- és felügyelő-bizottságokba, igazgató tanácsokba, kuratóriumokba. <br />
+<br />
+2. Az ország gazdasága a több évszázados folyamatos eszközkivonás (gazdasági gyarmatosítás) következtében rossz állapotban van, a világválságok emiatt még jobban hatnak, és a világgazdaság úgymond kedvező tendenciái sem érvényesülnek. A következő kormány (függetlenül összetételétől) nem lesz képest a dinamikusan fejlődő Moldova színvonaláról a "rothadó" Svédország vagy a pangó Svájc színvonalára átállítani az életszínvonalat. <br />
+<br />
+3. Az erőszakosan megszerzett hatalmat akkor lehetne megtartani, ha az azonnali és jelentős életszínvonal-emelkedést, látványosan javuló köz-, jog- és létbiztonságot tudna biztosítani. Ma nincs olyan legális erő, ami erre képes lenne (kivéve azt, amelyik állítólag már fel is vásárolta Magyarországot). Ahogy azt már valaki összefoglalta, nálunk már mindenkinek elege van abból, hogy állandóan azt próbálják lenyomni a torkunkon, hogy már nemsokára jó lesz nekünk is, csak előtte még szopjunk egy kicsit. Ez ma már a tinilányoknál sem jön be mindig állítólag...<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184089"></A>90. 90. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-08-29 13:16:22</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">OFF!<br />
+<br />
+Megnéztem a homoki felvonulás honlapját és képzeljétek tilos vizipisztolyt bevinni a köcsögök közé.<br />
+<br />
+T.C! Szerintem ehhez neked van közöd. Majd leestem a székről úgy röhögem.<br />
+<br />
+ON.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184088"></A>89. Don</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=184049#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-29 13:12:46</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1046.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bizony jól látod, Lendvai sipánka többek között azért vágott a szokásosnál is undorítóbb fejet a választási eredmények láttán, mert rájött, hogy ők nem ilyen lovat akartak, ők nem azért akarták a Jobbikot felfuttatni, hogy aztán tőlük is elvegyen szavazókat.<br />
+<br />
+De nyugodj meg, nem ez volt a terv.<br />
+Engem meg nem zavar a Jobbik megerősödése egészen addig, amíg a Fidesz 2/3-át nem tudják megakadályozni. Sőt, inkább legyen ezer Jobbik, mint egy MSZMP meg SZDSZ, úgyhogy felőlem akár a parlamenti mandátumok maradék 1/3-a mind a Jobbiké lehet, sőt, drukkolok is, hogy így legyen.<br />
+<br />
+Nem mondtam, hogy meg fogják őket venni, de annyit mondtam, hogy simán el tudom képzelni az eddigi tapasztalataim (jó sok) alapján.<br />
+<br />
+A zsideszezést meg inkább töröljük a jegyzőkönyvből, mert túl primitív ahhoz, hogy vitatéma legyen.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184053"></A><FONT COLOR="#FF0000">88. </FONT><A HREF="mailto:f.adam@citromail.hu" STYLE="color: #000000">Starkiller</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=184052#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-29 00:33:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5950.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184052"></A>87. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=184051#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-29 00:24:59</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nnna, akkor a zsideszes hazug prominensek listájára ezennel ünnepélyesen felvehetjük a 359. helyre a friccet..</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184051"></A><FONT COLOR="#FF0000">86. </FONT><A HREF="mailto:f.adam@citromail.hu" STYLE="color: #000000">Starkiller</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2502&id=184049#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-29 00:16:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5950.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2502&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2502&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2502&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2502&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2502&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2502&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2502&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2502&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2502&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2502&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2502&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

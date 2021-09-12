@@ -1,0 +1,444 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1776#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Tüntetés szombaton az izraeli brutalitás ellen";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=1776#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Tüntetés szombaton az izraeli brutalitás ellen<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 január 9. 17:17:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1776.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Szombaton, 14 órakor az Oktogonnál pártfüggetlen tüntetés lesz a Gázai-övezetet ért izraeli aggresszió és háborús bűntettek ellen. A résztvevők innen a Hősök terére vonulnak. A tüntetést a Magyarországon élő palesztinok és szervezeteik szervezik.<br><br>Mindenkit szeretettel várunk. Akinek van palesztin kendője, nyilván nem is kell mondanom, hogy viselje.<br><br></div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-01-09&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1776&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1776&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1776&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1776&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1776&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1776&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1776&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1776&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1776&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1776&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1776&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1776&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141934"></A>103. Ronin206</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-10 21:16:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Azért az érdekes és biztos véletlen, hogy sok országban babó a külügyminiszter vagy csak a babók fizetett barátja..<br />
+<br />
+Frank-Walter Steinmeier Német külügyminiszter<br />
+David Miliband brit külügyminiszter<br />
+Bernard Coushner francia külügyminiszter: Bernard Levi, a great friend of Bernard Coushner&#8217;s<br />
+<br />
+Ezek hárman már bőven elégségesek arra, hogy láthassa az ember miért oly hallgatag az EU<br />
+<br />
+Érdekes lenne egyszer egy ilyen anyagot összeállítani.<br />
+<br />
+<br />
+<br />
+Több tízezres Izrael-ellenes tüntetés Londonban<br />
+<br />
+<br />
+A gázai harcok kirobbanása óta nem látott méretű, több tízezres, helyenként összecsapásokba torkolló Izrael-ellenes megmozdulás volt Londonban; a rendőrök és a tiltakozók közül is sokan megsérültek. A Hyde Parktól a londoni izraeli nagykövetségig tervezett, előre bejelentett felvonuláson a Scotland Yard szerint 15-20 ezren, a szervezők és a BBC egybehangzó számításai szerint azonban legalább 60 ezren vettek részt. A háborúellenes, muszlim és palesztin szolidaritási szervezetek által meghirdetett tömegdemonstráció békésen indult. Ahogy azonban a menet az elegáns nyugat-londoni Kensington negyedben lévő izraeli képviselet elé ért, több csoport összecsapott a nagy számban kivonult karhatalommal. A tömeget lovas- és rohamrendőrök próbálták kordában tartani. Az összetűzésekben öt rendőr sérült meg, egyikük súlyosan, és számos tüntetőt is kórházba szállítottak. Komoly károk keletkeztek a környékbeli üzletekben; több bolt kirakatát összetörték, a negyed utcáit szombat este törmelék és üvegcserepek borították.<br />
+<br />
+Vasárnapra a 300 ezres brit babóság legfőbb képviseleti szerve, a Board of Deputies of British Jews szervez Izrael melletti szolidaritási megmozdulást a brit fővárosban.<br />
+ <br />
+A The Sun - a legnagyobb brit tömeglap - a héten olyan szakértői véleményeket idézett, amelyek szerint babó származású brit politikusok és közéleti személyiségek kerülhetnek terroristák célkeresztjébe Izrael gázai hadműveletei miatt. Egy szélsőségesek által használt iszlám honlapon már fel is tűnt a lehetséges célpontok listája.<br />
+ <br />
+Közöttük van David Miliband, a kelet-európai babó bevándorlók gyermekeként született fiatal brit külügyminiszter, Lord Levy, Tony Blair előző brit kormányfő egykori legfőbb politikai bizalmasa és közel-keleti megbízottja, Sir Alan Sugar nagyvállalkozó és televíziós személyiség, Amy Winehouse énekesnő és producere, Mark Ronson, valamint Anthony Julius sztárügyvéd, a néhai Diana hercegnő válóperes ügyvédje.<br />
+ <br />
+<br />
+A végére még egy anyagot adnék :)<br />
+<br />
+<B><a href="//209.85.129.132/search?q=cache:0OzigftjXccJ:www.dejanlucic.net/THE%2520ROTHSCHILD%2520OCTOPUS.html+Bernard+Coushner+jewish&hl=hu&ct=clnk&cd=1&gl=hu&client=firefox-a" target="_new" style="color: #000000;">http://209.85.129.132/search?q=cache:0OzigftjXccJ:www.dejanlucic.net/THE%2520ROTHSCHILD%2520OCTOPUS.html+Bernard+Coushner+jewish&hl=hu&ct=clnk&cd=1&gl=hu&client=firefox-a</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141920"></A>102. Ronin206</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-10 20:49:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Olvasónapló II. - Ungváry Krisztián és Tabajdi Gábor III/III-as könyve<br />
+<br />
+<B><a href="//209.85.129.132/search?q=cache:SUMK7kPFhpgJ:molnargoreny.blog.hu/tags/%C3%A1vh+G%C3%B6ncz+Kinga+zsid%C3%B3+sz%C3%A1rmaz%C3%A1su&hl=hu&ct=clnk&cd=6&gl=hu&client=firefox-a" target="_new" style="color: #000000;">http://209.85.129.132/search?q=cache:SUMK7kPFhpgJ:molnargoreny.blog.hu/tags/%C3%A1vh+G%C3%B6ncz+Kinga+zsid%C3%B3+sz%C3%A1rmaz%C3%A1su&hl=hu&ct=clnk&cd=6&gl=hu&client=firefox-a</a></B><br />
+<br />
+ez egy érdekes könyv lehet :P nézzétek meg az oldalt és olvassátok el</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141911"></A>101. <A HREF="mailto:kornelpesti@yahoo.com" STYLE="color: #000000">grün jakab</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-10 20:20:35</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szia TC!<br />
+ Nincs a boltodban palesztin kendő? Vennék egy párat, komolyan.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141908"></A>100. Ronin206</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-10 20:11:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Budapesten is tüntettek a babóterror ellen + képgaléria + videó<br />
+<br />
+<B><a href="//kuruc.info/r/1/33230/" target="_new" style="color: #000000;">http://kuruc.info/r/1/33230/</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141879"></A>99. Ronin206</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-10 18:32:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Aki "néhány" fényképet akar nézni Gázáról és a röhögcsélő babó csoportról a dombon azt itt megteheti.<br />
+<br />
+<br />
+<B><a href="//portail.islamboutique.fr/gaza2008/" target="_new" style="color: #000000;">http://portail.islamboutique.fr/gaza2008/</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141855"></A>98. Ronin206</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-10 17:15:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez a cikk nagyon ott van :)<br />
+<br />
+<br />
+Mark Steel: Már megint miről panaszkodnak a palesztinok?<br />
+2009-01-10. 16:35<br />
+<br />
+Egyenlő felek közti konfliktusként ábrázolni a történteket némi képzelőerőt igényel.<br />
+<br />
+Amikor izraeli és amerikai politikusok közleményeit olvasod, és próbálod összehasonlítani a szörnyű pusztítást mutató képekkel, akkor ezekre csupán egy magyarázat lehet. Valószínűleg attól a betegségtől szenvednek amit valahogy úgy hívnak, hogy &#8220;Vizuális Vérontás Felelősség Kifordítva Fejjel Lefele Mészárlási Rendellenesség&#8221;.<br />
+<br />
+Például Condolezza Rice, megtudván, hogy több mint 300 a palesztin halottak száma (dec. 31-ei adatok - megjegyzés Kuruc.info), ezt mondta: &#8220;Mi igazán nyugtalanok vagyunk az egyre súlyosbodó erőszaktól és súlyosan elítéljük az Izraelt sújtó támadásokat és a Hamaszt tartjuk felelősnek&#8221;.<br />
+<br />
+Valaki megkérhetné, hogy nyilatkozzon a tinédzserek közti késeléses bűntényekről, hogy lássuk hátha azt mondja: &#8220;Súlyosan elítélem a leszúrt embereket, és addig ameddig abba nem hagyják azt  a rossz szokásukat, hogy kint mászkálnak a vérző oldalukat fogdosva, nincs remény a békére&#8221;.<br />
+<br />
+Az izraeli kormány rettenetesen szenved ettől a zavarodottságtól. Náluk a tévé biztos olyan hirdetéseket mutat, hogy egy férfi ordítva leesik a létráról és a narrátor kérdezi: &#8220;Okozott Ön balesetet a munkahelyén az elmúlt 12 hónapban?&#8221; , és az, aki lelökte kap 3000 fontot.<br />
+<br />
+A különbség az izraeli F-16 bombázók és Apache helikopterek, valamint a palesztinok katapultos micsodája között olyannyira nevetséges, hogy ahhoz hogy a két oldalt egyenlő felekként ábrázoljuk, egy gyerekmese-író képzelőerejére lesz szükségünk.<br />
+<br />
+A tízórás hírek riportere azt mondta, hogy &#8220;ugyan a rakéták hatástalanok, de SZIMBOLIKUSAK.&#8221; Tehát ugyan fegyvereik nincsenek, de szimbolizmusuk van, ravasz kis állatok.<br />
+<br />
+Így nem csoda, hogy az izraeli légierő le kellett, hogy bombázzon néhány lakótelepet, különben a Hamasz biztos megpróbálta volna kigúnyolni Izraelt valami kifejező táncmutatvánnyal.<br />
+<br />
+A rakéták ugyan képtelenek olyan mértékben ölni mint az izraeli légierő, mondta egy szóvivő, de ezeket &#8220;ölésre szánták&#8221;.<br />
+<br />
+Lehet, hogy úgy folytatta: &#8220;És bizonyítékaink vannak, hogy a Hamasz támogatóknak vannak álmaik is, és ezekben az álmokban rossz dolgok történnek izraeli polgárokkal, kipukkadnak, vagy kaktusszá változnak, vagy átszaladnak a Woolworth-on meztelenül, szóval az nem fontos, hogy ez megtörténhet- e valaha, ami számít az az, hogy azt AKARJÁK, hogy ez megtörténjen és ezért felrobbantottuk az egyetemüket.&#8221;<br />
+<br />
+Vagy ott van a sértés, hogy Irán támogatja a Hamaszt. Hát, az már szabályszegésnek minősül. Merthogy mondj amit akarsz az izraeliekről, ők nem kapnak fegyverellátmányokat, anyagi és politikai támogatást egy náluk jóval erősebb országtól, ők a maguk módján csinálják, és az összes fegyverüket egy jeruzsálemi hobbiműhelyben állítják össze.<br />
+<br />
+De legtöbbször Izrael egy kiábrándítóan hiányos képzelőerővel indokolja magát, mint például, amikor azt mondták, hogy azért kellett megsemmisíteniük egy mentőautót, mert a Hamasz cinikusan mentőautókba rejti a fegyvereit.<br />
+<br />
+Ennél lehetnének kreatívabbak is, mondjuk, hogy a Hamasz úgy tervezte, hogy izraeli epileptikusokat célozna meg a villogó kék fénnyel, amitől ezek rohamot kapnának, elszédülnének és elcsámborognának Szíriába ahol foglyul esnének.<br />
+<br />
+De ők jobban szeretik az egyenes megközelítést, mint például Ofer Schmerling, az Izraeli Polgári Védelem egyik hivatalnoka, aki azt nyilatkozta az Al-Jazeera-n, hogy &#8220;Zenét fogok játszani és ünnepelni fogom azt amit az izraeli légierő csinál&#8221;.<br />
+<br />
+Talán rögtön nemzeti ünneppé nyilváníthatnák, díszítéssel meg süteménnyel, és a boltokon a kiírással: &#8220;Bárcsak minden nap lebombázhatnánk Gázát!&#8221;<br />
+<br />
+Hasonló hangnemben utalt Dov Weisglas, Ariel Sharon egyik legfőbb vezetője, Gáza ostromára, ami a mostani konfliktus előzménye volt. Ebben az ostromban Izrael megakadályozta, hogy Gáza lakói alapellátáshoz jussanak, mint peldául étel, gyógyszer, villany és víz, Weisglas így nyilatkozott: &#8220;Kis diétára fogjuk őket&#8221;.<br />
+<br />
+Ez a gengszterek arroganciája, tehát nem lenne meglepő, ha az izraeli miniszterelnök sajtótájékoztatója úgy kezdődne, hogy: &#8220;Jaj, jaj. Úgy látszik ezek a palesztinok egy kis, khm..., balesetet szenvedtek. Az összes épületük összedőlt &#8211; lehetnének kicsit óvatosabbak, hi hi.&#8221;<br />
+<br />
+És majdnem teljesen biztos, hogy mindez azért történik, mert a kormány keménynek akar tűnni a közelgő választások előtt. Lehet, hogy tipikus izraeli őszinteséggel, majd olyan választási kampányfilmeket fognak mutatni, amiben Ehud Olmert azt mondja: &#8220;Ezért szavazzon rám!&#8221; És bejátszik egy gázai képsort, majd hozzáteszi &#8220;Juhee, az a muki a sarokban LÁNGOL.&#8221;<br />
+<br />
+Condolezza Rice és kollégái pedig, valamint a külön kijelölt Közel-Keleti Béke Követ ennek láttán rázhatnák a fejüket, mondván: &#8220;Szégyenletes. Ahogy ott hadonászik, még a végén csúnya balesetet okoz.&#8221;<br />
+<br />
+Mark Steel - Independent  Fordította: Irisz<br />
+<br />
+<br />
+Mark Steel: So what have the Palestinians got to complain about?<br />
+<br />
+To portray this as a conflict between equals requires some imagination<br />
+<br />
+Wednesday, 31 December 2008<br />
+<br />
+When you read the statements from Israeli and US politicians, and try to match them with the pictures of devastation, there seems to be only one explanation. They must have one of those conditions, called something like "Visual Carnage Responsibility Back To Front Upside Down Massacre Disorder".<br />
+<br />
+For example, Condoleezza Rice, having observed that more than 300 Gazans were dead, said: "We are deeply concerned about the escalating violence. We strongly condemn the attacks on Israel and hold Hamas responsible."<br />
+<br />
+Someone should ask her to comment on teenage knife-crime, to see if she'd say: "I strongly condemn the people who've been stabbed, and until they abandon their practice of wandering around clutching their sides and bleeding, there is no hope for peace."<br />
+<br />
+The Israeli government suffers terribly from this confusion. They probably have adverts on Israeli television in which a man falls off a ladder and screams, "Eeeeugh", then a voice says, "Have you caused an accident at work in the last 12 months?" and the bloke who pushed him gets &#163;3,000.<br />
+<br />
+The gap between the might of Israel's F-16 bombers and Apache helicopters, and the Palestinians' catapulty thing is so ridiculous that to try and portray the situation as between two equal sides requires the imagination of a children's story writer.<br />
+<br />
+The reporter on News at Ten said the rockets "may be ineffective, but they ARE symbolic." So they might not have weapons but they have got symbolism, the canny brutes.<br />
+<br />
+It's no wonder the Israeli Air Force had to demolish a few housing estates, otherwise Hamas might have tried to mock Israel through a performance of expressive dance.<br />
+<br />
+The rockets may be unable to to kill on the scale of the Israeli Air Force, said one spokesman, but they are "intended to kill".<br />
+<br />
+Maybe he went on: "And we have evidence that Hamas supporters have dreams, and that in these dreams bad things happen to Israeli citizens, they burst, or turn into cactus, or run through Woolworths naked, so it's not important whether it can happen, what matters is that they WANT it to happen, so we blew up their university."<br />
+<br />
+Or there's the outrage that Hamas has been supported by Iran. Well that's just breaking the rules. Because say what you will about the Israelis, they get no arms supplies or funding or political support from a country that's more powerful than them, they just go their own way and make all their weapons in an arts and crafts workshop in Jerusalem.<br />
+<br />
+But mostly the Israelis justify themselves with a disappointing lack of imagination, such as the line that they had to destroy an ambulance because Hamas cynically put their weapons inside ambulances.<br />
+<br />
+They should be more creative, and say Hamas were planning to aim the flashing blue light at Israeli epileptics in an attempt to make them go into a fit, get dizzy and wander off into Syria where they would be captured.<br />
+<br />
+But they prefer a direct approach, such as the statement from Ofer Schmerling, an Israeli Civil Defence official who said on al-Jazeera, "I shall play music and celebrate what the Israeli Air Force is doing."<br />
+<br />
+Maybe they could turn it into a huge nationalfestival, with decorations and mince pies and shops playing "I Wish We Could Bomb Gaza Every Day".<br />
+<br />
+In a similar tone Dov Weisglas, Ariel Sharon's chief of staff, referred to the siege of Gaza that preceded this bombing, a siege in which the Israelis prevented the population from receiving essential supplies of food, medicine, electricity and water, by saying, "We put them on a diet."<br />
+<br />
+It's the arrogance of the East End gangster, so it wouldn't be out of character if the Israeli Prime Minister's press conference began: "Oh dear or dear. It looks like those Palestinians have had a little, er, accident. All their buildings have been knocked down &#8211; they want to be more careful, hee hee."<br />
+<br />
+And almost certainly one of the reasons this is happening now is because the government wants to appear hard as it wants to win an election. Maybe with typical Israeli frankness they'll show a party political broadcast in which Ehud Olmert says, "This is why I think you should vote for me", then shows film of Gaza and yells: "Wa-hey, that bloke in the corner is on FIRE."<br />
+<br />
+And Condoleezza Rice and her colleagues, and the specially appointed Middle East Peace Envoy, could then all shake their heads and say: "Disgraceful. The way he's flapping around like that could cause someone to have a nasty accident."</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141806"></A>97. Gábriel angyal</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-10 14:34:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2610.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha ebből a képből csinálnék Transzparenst, mit szólnának vajon hozzá a népek?? :((<br />
+<br />
+<B><a href="//portail.islamboutique.fr/gaza2008/06-01/new1/3174047876_9dbb97236a.jpg" target="_new" style="color: #000000;">http://portail.islamboutique.fr/gaza2008/06-01/new1/3174047876_9dbb97236a.jpg</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141771"></A>96. <A HREF="mailto:pherenc_@freemail.hu" STYLE="color: #000000">Zebe (Pherenc)</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1776&id=141719#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-10 13:44:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szerintem ne adj ötleteket, mert még a végén tényleg elkezdenek hápogni, hogy vegyék le a kereszteket. A másik oldalon meg természetesen az lesz, hogy minden fehér bőrű ember járjon szoláriumba mert kisebbségi érzést kelt a orkokban, hogy túlságosan elüt a színünk tőlük....</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141742"></A>95. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-10 12:44:38</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Mán meg is csináltam a transzparensemet:<br />
+<br />
+======Arabok haza!======= <br />
+<br />
+A szabad és független Palesztínába.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment141740"></A><FONT COLOR="#FF0000">94. </FONT>Roadin</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1776&id=141716#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-10 12:28:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5413.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1776&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1776&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1776&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1776&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1776&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1776&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1776&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1776&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1776&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1776&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1776&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1776&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

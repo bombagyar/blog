@@ -1,0 +1,493 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2485#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Csendőrség és rendőrség a számok tükrében";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2485#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Csendőrség és rendőrség a számok tükrében<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 augusztus 19. 22:30:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2485.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">1945-ig a Magyar Királyi       
+  Csendőrség látta el a közrend védelmét és általában a karhatalmi, rendészeti feladatokat         
+Magyarországon. Csak Budapesten működött külön rendvédelmi erő, a Rendőrség. Ma az egész országban   
+      Rendőrség a karhatalom neve, bár ismerjük őket ÁVH és Sündőrség néven is. Ez a szervezet évről 
+    évre     több anyagi támogatásért, több emberért, több felszerelésért könyörög, szinte már 
+sajnáljuk     is   őket.   Ám hasonlítsuk csak össze a Magyar Királyi Csendőrség hatékonyságát a 
+Rendőrségével a     számok   és   tények tükrében.<br><br><span style="font-weight: bold;">1. 
+Létszám</span><br><br style="font-weight: bold;">A Csendőrség létszámát Ravasz Istvánnak a <span style="font-style: italic;">Magyar Csendőr</span> című lapban megjelent cikkéből 
+ismerhetjük.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Az         1922:VII.tc. a csendőrség létszámát 12 000 főben (ebből 600 
+tiszt) állapította meg, és karhatalmi         célra két tartalék-zászlóalj felállítását tette 
+lehetővé. A két tartalék-zászlóalj nagyobb   része       közbiztonsági szolgálatot nem teljesítő 
+újoncokból állt, ezért Egyesített Csendőriskola   néven még       1922-ben 
+összevonták."</div><br><A NAME="FLFLXMD"><A HREF="./index.php?post=2485#FLFLXMD" ONCLICK="openbigwindow('resources/pictures/tomcat_csendorok.jpg', 426, 618); return true;"><img bigpic="resources/pictures/tomcat_csendorok.jpg" src="./resources/pictures/tomcat_csendorok_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Ez a létszám       
+többé-kevésbé állandó maradt egészen 1944-ig, a   Csendőrség felhígulásáig, ami egyben a szervezet   
+    renoméján is súlyos csorbát ejtett. Fontos   tudni, hogy ez nem a tényleges létszám volt, hanem 
+a       keret, amelyet valójában sokáig nem   töltöttek fel teljesen.<br><br>Ezzel szemben a 
+Rendőrség       létszámát 2009-ben 45 ezer főben   határozta meg a kormány, amelyből 43 ezer 
+álláshely betöltésre       került. A Rendőrség létszáma   tehát több, mint háromszorosa a valamikori 
+Csendőrségnek. (<a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.kozszolga.hu/hirek/rend%C5%91rs%C3%A9g-felt%C3%B6lt%C3%B6tt-l%C3%A9tsz%C3%A1ma-43-ezer-f%C5%91">Forrás
+    itt.</a>) A számok csak ott csalnak egy kicsit, hogy a Csendőrség csak vidéken működött, a       
+  székesfőváros közbiztonsága a Rendőrség dolga volt már akkor is. 1922-ben a budapesti Rendőrség    
+     létszáma 5819 fő volt, irodistákkal és tisztekkel együtt. (<a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.rendeszet.hu/documents/A125evesel%C5%91szoval.doc">Forrás itt.</a>)  
+       A mai 45 ezer fővel szemben tehát 1922-ben mindössze kb. 18 ezer fő vigyázta Magyarország     
+    közrendjét.<br><br><span style="font-weight: bold;">2. Költségvetési támogatás</span><br><br style="font-weight: bold;">Milyen anyagi támogatást kapott a Csendőrség és a mai Rendőrség? Nehéz    
+     összehasonlítani, hiszen akkoriban pengőben, ma pedig egyre értéktelenebb forintban számolunk. 
+A         pengő 1930 körüli értékéről korrekt kis értékelés olvasható az <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.irodalmijelen.hu/?q=node/607">Irodalmi Jelenben.</a> Az 
+        összehasonlításhoz számoljunk kenyérben. 1929-ben egy kiló kenyér ára 24 fillér, azaz 0,24 
+pengő         volt. 2009-ben egy kiló kenyér kb. 240 forintba kerül. 10 mai forint tehát 1 pengő 
+fillért ér, egy         pengő pedig 1000 forintot.<br><br>A Csendőrség költségvetéséről nehéz pontos 
+adatokat előásni,     mert     akkoriban még nem volt szokás beszámolni az adófizetők pénzének 
+költéséről, azon egyszerű     okból,     hogy senki sem sikkasztott milliárdokat. A csaknem pontos 
+összeg azonban elhangzott   Peyer   Károly     felszólalásában 1931 május 12-én, az Országgyűlés 
+503. ülésén, amit az   <span style="font-style: italic;">Országgyűlési   Napló</span> híven     
+megőrzött. Peyer a minisztériumok költségvetését elemezve így   szólt:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Ebben  
+     az évben a tárca költségvetése 122 1/2 millió pengő, s ha   megnézzük, hogy ez a 122 1/2 millió 
+  pengő     mire megy, azt látjuk, hogy ebből 33,3 millió pengő   megy a csendőrségre, 41,9 millió 
+megy   a     rendőrségre, és 4,8 millió pengő megy a folyamőrségre,   vagyis 122,4 millió pengőből 
+kereken 80       millió pengő megy e testületek kiadásának   fedezésére...  "</div>&nbsp;<br>A 
+Rendőrség   költségvetési     támogatása természetesen   egyszerűbben megtudható. Az <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.origo.hu/itthon/20090312-evek-ota-csokken-a-rendorseg-letszama-es-koltsegvetesi-tamogatasa.html">origo</a>
+    a következőt írta ez év márciusában:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Az ígéretek ellenére 2008-ban a         
+rendőrség kevesebb pénzt kapott mint  korábban a két szervezet együttvéve: tavaly a költségvetés     
+    211,7  milliárd forintot szánt az egyesített rendőrségre, míg egy évvel  korábban a határőrség 
+és   a       rendőrség együtt 233,7 milliárdot  költhetett. Igaz, hogy 2007 kiemelkedően jó év volt 
+a     rendészet     számára  - a schengeni csatlakozás miatt, mintegy 40 milliárd forintot  
+költhettek     fejlesztésre -,     de a tavalyi költségvetés a 2006-os szintet  is alulmúlja több, 
+mint 12 milliárd     forinttal.      <p>A 2009-es költségvetés 189,3 milliárd forintot szán a 
+rendőrségre,  ami         hárommilliárddal kevesebb, mint amennyit a rendőrség és a  határőrség 
+összesen elkölthetett         2005-ben. Azzal a 14 milliárdnyi  többletforrással tehát, amelyet 
+Gyurcsány ígért a rendőrségnek, a          rendőrség büdzséje éppen hogy meghaladja a 2005-ös 
+szintet, de még  mindig alatta marad a     2006-os     támogatásnak."</p></div><br>A Rendőrség tehát 
+nagyjából 200 milliárd forintot kap     évente, míg a     Csendőrség és más korabeli karhatalmi 
+szervezetek 80 millió pengőt, azaz mindössze     80 milliárd     forintot. A mai Rendőrség ezek 
+szerint éppen két és félszer   annyi költségvetési     támogatást kap,   mint a 
+Csendőrség!<br><br><span style="font-weight: bold;">3.   Felszerelés és       
+fegyverzet</span><br><br>A korabeli Rendőrség és Csendőrség felszereléséről szintén   az <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.csendor.com/jogszab/torvenyek.doc">1922. évi VII. törvénycikk</a>         
+rendelkezett.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"4. § Lőfegyverül minden csendőr puskát vagy karabélyt viselhet. Azok,    
+     akik csak karddal vannak felszerelve, hadseregbeli ismétlőpisztollyal fegyverezhetők         
+fel.<br>Hadifegyvernek nem tekinthető rövid pisztollyal vagy revolverrel az egész személyzet         
+felszerelhető.<br><br>5. § A rendőrség tagjai lőfegyverül pisztolyt vagy revolvert viselnek. A       
+  rendőri létszámnak 1/20 része erejéig géppisztolyok szerezhetők be."</div><br><A NAME="QCHNPVE"><A HREF="./index.php?post=2485#QCHNPVE" ONCLICK="openbigwindow('resources/pictures/tomcat_csendor_letartoztat.jpg', 800, 508); return true;"><img bigpic="resources/pictures/tomcat_csendor_letartoztat.jpg" src="./resources/pictures/tomcat_csendor_letartoztat_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A törvény nem ír   
+      elő pontos fegyvertípusokat, de a puskák főleg Mannlicher-karabélyok, a pisztolyok Frommer- 
+vagy         Mauser-típusúak voltak, géppisztolyokat pedig csak igen kis számban rendszeresítettek a 
+        rendőrségnél. A törvényben írt "hadifegyvernek nem minősülő" revolverek az akkoriban 
+általános         önvédelmi fegyverként civilek számára is engedélyezett zsebpisztolyok voltak, 
+amelyek rendszerint         kis torkolati energiájú, 6,35 vagy 9 mm-es maroklőfegyverek voltak. 
+Ezekre nem vonatkoztak a         trianoni békeszerződés fegyverzetkorlátozó előírásai. Minden 
+csendőr viselt szúró- vagy   vágófegyvert       is, rendszerint kardot, lovassági szablyát vagy 
+puskaszuronyt. Különleges   fegyverzetet nem       rendszeresítettek egyik testületnél 
+sem.<br><br><A NAME="SKKKXHY"><A HREF="./index.php?post=2485#SKKKXHY" ONCLICK="openbigwindow('resources/pictures/tomcat_rendor_granatvetovel.jpg', 300, 450); return true;"><img bigpic="resources/pictures/tomcat_rendor_granatvetovel.jpg" src="./resources/pictures/tomcat_rendor_granatvetovel_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: left; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A mai         
+Rendőrség fegyverzetéről a <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//net.jogtar.hu/jr/gen/getdoc.cgi?docid=A0900032.IRM">32/2009. (VIII. 19.) IRM         
+rendelet</a> tájékoztat. Ez felsorolja a Cég dolgozói által alkalmazható valamennyi "kényszerítő     
+    eszközt". A teljesség igénye nélkül szemezgetve a listából: 7,62-es gépkarabélyok 
+(Kalasnyikovok),         könnyű és nehéz géppuskák, különféle mesterlövész-puskák, kézi 
+páncélelhárító gránátvetők és         páncéltörő gránátok, 40 mm-es puskagránát, közelharcra pedig 
+gumibot, "változtatható méretű         (összetolható) rendőrbot", sokkoló, tőrök és kések. Ez a 
+lista nemrég még jóval hosszabb volt, <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//net.jogtar.hu/jr/gen/hjegy_doc.cgi?docid=A0700063.IRM">2007-ig</a> szerepelt rajta      
+   például a BTR-80 lövészpáncélos is, amelyeknek emlékét ma már csak a "14,5 mm-es tölténnyel 
+működő         toronygéppuskák" pont őrzi.<br><br><span style="font-weight: bold;">4.   
+Járműállomány</span><br><br style="font-weight: bold;"><A NAME="NAMBFMI"><A HREF="./index.php?post=2485#NAMBFMI" ONCLICK="openbigwindow('resources/pictures/tomcat_kerekparos_csendor.jpg', 800, 495); return true;"><img bigpic="resources/pictures/tomcat_kerekparos_csendor.jpg" src="./resources/pictures/tomcat_kerekparos_csendor_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Nem sok pontos     
+    adat maradt fenn a Csendőrség géperejű járműveiről, de el lehet képzelni, hogy egy olyan korban, 
+        amikor még az országgyűlési képviselők is csak vonattal jártak, mennyi autójuk lehetett a    
+     rendfenntartóknak. A csendőr inkább lovon vagy gyalog járőrözött. A M. Kir. Csendőrség 7 lovas  
+       alosztályának keretét 200 tiszt és 900 közcsendőr alkotta. Budapesten 208 lovas rendőr 
+teljesített         szolgálatot. Ez azt jelenti, hogy legalább ennyi ló is volt, vagyis a két 
+testületnél körülbelül         1300-1400 darab. Szolgálati gépjárművet vagy motorkerékpárt csak a 
+Budapest-Bécs műút   forgalmát       felügyelő közlekedésrendészeti szakszolgálat - az 
+autópálya-rendőrség elődje -   használt elenyésző       számban, illetve a főtisztek és tábornokok 
+szolgálati utazáshoz. (<a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.csendor.com/iratok/irasok/magyar/K%F6zleked%E9si%20szakszolg%E1lat.doc">Forrás      
+   itt.</a>) Budapesten a rendőrautók 1922-től jelentek meg az utakon - mindössze 12 darab. Motoros  
+       rendőrök 1926 óta vannak, amikor a rendőrség 252 fős kerékpáros osztályának tagjai közül 
+néhányat         Indian motorokkal szereltek fel.<br><br>A mai Rendőrség járműállományát pontosan 
+tudhatjuk <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.police.hu/uvegzseb/jarmu/08_III_jarmu">weboldalukról.</a> A megyékre lebontott      
+   kimutatást összegezve a következő adatokat kapjuk:<br><br>Személygépkocsi: 2617         
+db.<br>Tehergépkocsi: 267 db.<br>Autóbusz: 178 db.<br>Motorkerékpár: 274 db.<br><br>Ez a járműpark   
+      nagyobb, mint Magyarország teljes gépjárműállománya 1922-ben.<br><br><span style="font-weight: bold;">5. Technikai háttér<br><br></span><A NAME="PCAVNGG"><A HREF="./index.php?post=2485#PCAVNGG" ONCLICK="openbigwindow('resources/pictures/tomcat_felszamolok.jpg', 640, 588); return true;"><img bigpic="resources/pictures/tomcat_felszamolok.jpg" src="./resources/pictures/tomcat_felszamolok_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: left; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Különösebb statisztikai   
+      elemzés nélkül is nyilvánvaló, hogy ma sokkal komolyabb technikai lehetőségek állnak a 
+Rendőrség         rendelkezésére, mint amit csaknem száz évvel ezelőtt a Csendőrség használhatott. 
+Csupán néhány         eszközt felsorolva: személyi rádió adó-vevők, számítógépes nyilvántartás, DNS 
+profilalkotás,         térfigyelő kamerák, biometrikus azonosítás, helikopterek, TETRA hírközlési 
+rendszer, golyóálló         mellények és páncélzat, kamerás autók, megfigyelő- és 
+lehallgatóeszközök, műholdas felderítés...         Ezzel szemben a Csendőrség detektívje csak a két 
+szemére és a logikára hagyatkozhatott.   Ráadásul a       Csendőrségnek tiltva volt, hogy a 
+gyanúsítottból hamis ígérettel, fenyegetéssel,   bántalmazással   vagy     más csalárd módon 
+csikarjanak ki vallomást, amit a mai Rendőrség gond   nélkül   gyakorol.<br><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="font-weight: bold;"><br><span style="font-weight: bold;">6. És akkor most lássuk a         
+hatékonyságot!<br><br></span></span></span></span>A bűnügyi statisztikák összevetése pontosan        
+ megmutatja, mennyit ér a mai Rendőrség és a csaknem száz évvel ezelőtti Csendőrség. A <span style="font-style: italic;">Csendőrségi Zsebkönyv</span> című éves kiadvány rendszeresen közölte az  
+       elmúlt esztendő statisztikáit. Az 1907-es évben például a következő volt az eredmény - ne     
+feledjük,     ez még Nagy-Magyarország, vagyis a jelenlegi országnál két és félszer nagyobb       
+terület!<br><br><table style="width: 620px; height: 100px;" border="1" bordercolor="#000000" cellpadding="2" cellspacing="2"><tbody><tr><td style="text-align: center; font-weight: bold; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Bűncselekmény</font></td><td style="text-align: center; font-weight: bold; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Előfordult</font></td><td style="vertical-align: top; text-align: center; font-weight: bold; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Kiderített<br></font></td><td style="vertical-align: top; text-align: center; font-weight: bold; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Elfogott   egyén<br></font></td><td style="vertical-align: top; text-align: center; font-weight: bold; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Feljelentett         
+egyén<br></font></td></tr><tr><td style="vertical-align: top; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Emberélet ellen<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">3     
+    308<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">3 250<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">1 460<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">3         
+180<br></font></td></tr><tr><td style="font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Rablás és zsarolás<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">1 618<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">1 582<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">672<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">2 180<br></font></td></tr><tr><td style="vertical-align: top; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Szemérem ellen<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">833<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">832<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">151<br></font></td><td style="vertical-align: top; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">868<br></font></td></tr></tbody></table><br>E szűkszavú statisztikából kiderül, hogy a      
+   Csendőrség hatékonysága az életellenes bűncselekmények felderítése során 98,24%-os, a komolyabb   
+      vagyon elleni bűncselekmények terén 97,77%, az erőszaktevők pedig jobb, ha nem is gondolkodtak 
+  azon,       amire gondoltak, mert az ország összes esetében csak egyetlenegyszer nem sikerült   
+felderíteni az       elkövetőt, vagyis a felderítési mutató gyakorlatilag 100%-os.<br><br>A   
+police.hu-ról nagyon       részletes statisztikákat tölthetünk le, amelyek megmutatják, milyen   
+felderítési mutatókat produkált       a Rendőrség 2006-2008 évek során. Bennünket leginkább az <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.police.hu/statisztika/bunugy/ismfelder0608.html"><span style="font-style: italic;">Ismeretlen tettes ellen indult nyomozások számának és felderítési        eredményességének  
+ alakulása rendőri eljárásokban 2006-2008. I-VIII.</span></a> című dokumentum       érdekel. A fenti 
+  táblázathoz hasonló értékeket kiemelve, ahhoz hasonló kategóriákat felállítva az       eredmény a  
+ következő:<br><br><table border="1" bordercolor="#000000" cellpadding="2" cellspacing="2"><tbody><tr><td style="font-weight: bold; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Bűncselekmény</font></td><td style="font-weight: bold; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Előfordult</font></td><td style="font-weight: bold; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Kiderített<br></font></td><td style="font-weight: bold; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Elfogott         
+egyén<br></font></td><td style="font-weight: bold; text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Feljelentett         
+egyén<br></font></td></tr><tr><td style="font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Emberélet ellen<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">101<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">82<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">?<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">?</font></td></tr><tr><td style="font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Rablás és   
+zsarolás<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">1913<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">936<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">?</font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">?</font></td></tr><tr><td style="font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">Szemérem ellen<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">252<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">128<br></font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">?</font></td><td style="text-align: center; font-family: Verdana,Arial,Helvetica; color: rgb(0, 0, 0);"><font size="2">?<br></font></td></tr></tbody></table><br>Hogy a két statisztika összevethető legyen, a   
+"rablás és       zsarolás" sorban összegeztem a következő bűncselekményeket: Rablás, Kifosztás,   
+Zsarolás, Jármű       önkényes elvétele. A szemérem elleni bűncselekményekhez a következőket   
+soroltam: Erőszakos       közösülés, Szemérem elleni erőszak, Megrontás, Vérfertőzés,   
+Szeméremsértés.<br><br><A NAME="LSKBVRO"><A HREF="./index.php?post=2485#LSKBVRO" ONCLICK="openbigwindow('resources/pictures/tomcat_rendor_vipera.jpg', 480, 320); return true;"><img bigpic="resources/pictures/tomcat_rendor_vipera.jpg" src="./resources/pictures/tomcat_rendor_vipera_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Mi derül ki ebből? 
+        Az, hogy a Csendőrségnél két és félszer nagyobb állományú, két és félszer akkora támogatást  
+   húzó,   száz év   minden technikai előnyével felszerelt Rendőrség minden téren gyengébb. Az     
+életellenes     bűncselekmények terén 81,1%-os, a durva vagyon elleni bűncselekmények terén     
+mindössze 48,9%-os, a szemérem     elleni bűncselekmények felderítésében pedig 50,7%-os felderítési  
+   mutatókat ér el. Érdemes     egy pillantást vetni a bűncselekmények számára is: a "boldog     
+békeidőkben" harmincszor annyi     életellenes bűncselekményt követtek el, mint ma (azaz     
+Csonka-Magyarország területére vetítve csak     kb. tizenkétszer annyit, de az se     
+kevés).<br><br>Kérem szépen, hova teszi a rendőrség azt a temérdek     pénzt, és mit csinál, amikor  
+   "szolgál és véd"?<br><br>A mai rendőrségi statisztikában vannak     érdekességek is. Így például 
+a     választási rend elleni bűncselekményből 6 eset fordult elő 2006-2008     között, és ebből 10 
+maradt     ismeretlen. Hasonló anomália tapasztalható a Közúti közlekedés   biztonsága   elleni bcs. 
+vagy a     Közveszélyokozás esetében is. A betöréses lopásról nem is beszélve:   6096 esetből   
+20382     felderítetlen... Ennek köszönhetően például a vagyon elleni bűncselekmények   
+összesítésében 30       ezerrel több a felderítetlen esetek száma, mint ahány eset ismertté vált. A  
+ rendőrség nem fűz       magyarázatot ehhez a furcsasághoz. A Közlekedési bűncselekmények rovat 
+egyenesen   szégyen: 1655       esetből 1116 felderítetlen maradt. Az is érdekes, hogy 2006 és 2008 
+között a jelek   szerint nem       történt Bántalmazás hivatalos eljárásban bűncselekmény. 
+<br><br>Egyedül a szerzői és   szomszédos       jogok védelme éri el ma a Csendőrségnél elvárható 
+nívót: kiugróan sok, 21830 esetből   mindössze   290     maradt felderítetlen, ami 98,7%-os 
+eredmény. Ennyi warezkalóz tobzódik   Magyarországon?   Hiszen ez   azt   jelenti, hogy három éven 
+át legalább naponta húsz bukik le! A   hitelsértés   felderítési   mutatója is   96,7%-os. Úgy 
+látszik, ha szoftverkiadó multicégek vagy bankok     érdekeiről van szó, a   rendőrség is   tud 
+igazán hatékony lenni. Félek, ez nem sokat javít a   Fakabát   Zrt.   renoméján.<br><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="font-weight: bold;"><br></span></span></span></span> </div>         </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-08-19&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2485&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2485&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2485&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2485&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2485&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2485&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2485&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183396"></A>59. <A HREF="mailto:foximaxi79@hotmail.com" STYLE="color: #000000">skywalker</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-08-22 20:42:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Sziasztok nem fogok itt semmilyen hosszú sztorizásba belekezdeni.<br />
+Csak annyit,hogy a számok azok tények nem jobb oldali nem bal oldali a szám az szám és tény.<br />
+Az arányok magukért beszélnek ma és a múlt van a mérlegen.<br />
+A mérleg nyelve pedig a múlt felé mutat csak ennyi.<br />
+Ébredjetek magyarok.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183159"></A>58. Molekula</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-08-20 21:07:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tökmindegy, hogy rendőrnek vagy csendőrnek hívjuk, az a lényeg, hogy kapja el a tolvajt.<br />
+<br />
+De ha nekiáll pofára büntetni a végrehajtó szerv, akkor még annyi erkölcsi alapja sem lesz az egésznek, mint a orkok nagyátlagának.<br />
+<br />
+Szerény véleményem szerint a probléma ott kezdődik, hogy a rendőr nem hogy a bűnözőt nem ismeri, de még a tisztességes kereskedőt, mérnököt, orvost sem. <br />
+<br />
+Fingja nincs hol álljon neki a munkának, és ha lenne is fogalma, hogy ki követ el bizonyos dolgokat, hát akkor azért sem merne intézkedni ellene, mert még a szomszéd is ráburítja a szennyesét.<br />
+<br />
+Mert nálunk menő utálni a rendőrt, meg sünözni, meg ugatni rá. De ha ellopják a bicajt, akkor bezzeg megy a rinya, hogy nem érnek semmit.<br />
+<br />
+Voltam a tengerentúl és innen is olyan környezetben, ahol a rendőr a közösség egyik pillére. Nálunk még a kukások is szívják a vérüket.<br />
+<br />
+Az egész eszmefuttatás, miszerint '44-ben jobban mködött a jogállam egy butaság, véleményem szerint naív gondolkodás.<br />
+<br />
+<br />
+Amilyen a mosdó, olyan a törülköző.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183156"></A>57. thieringpeti</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-08-20 20:32:38</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A bűnügyek felderítettségéről:<br />
+Pár hónapja történt a közelben, Kerepesen, hogy az egyik ott lakó barátom éjszaka kiabálásra lett figyelmes az utcáról:<br />
+ - Tolvaj, fogják meg, fogják meg! Szólt több felől is.<br />
+Erre az utcában lakó termetes ácsmester egy szál fecskében kiugrott az ágyból, és épp azt látta, hogy a hátsó kertjébe a kerítésen át beugrik egy - feltételehzetően kisebbségi - betörő egy nagy szatyor eszközzel, amit épp behajított egy bokorba.<br />
+A mester úr rávetette magát a tolvajra, hiszen kiabáltak az utcában, majd a felesége kihívta a sündőrségnek nevezett szervezet tagjait.<br />
+A kiérkező járőrök a tolvajt előállították - majd "nagy meglepetésükre" másnap szabadon engedték valamilyen ombudsman régebbi ajánlására hivatkozva. <br />
+Közben napvilágnál megtalálták az elhajított zsákot is: benne feszítővasak, gázspray, elemlámpa, álkulcsok, valamint ultrahangos kutyariasztó volt. <br />
+A szatyrot bevitte a mester úr a rendőrségre, ahol megköszönték, de mivel nem volt pontosan kapcsolható a tolvajhoz (nem a rendőr orra előtt hajította be a bokorba), így nem volt felhasználható bizonyítékként.<br />
+Nem tudom, hogy a csendőrök mit tettek volna a kerepesi rendőrök helyében, de állítólag a fickót már személyesen ismerték az örsön, több ízben "vendégeskedett" a fogdán, majd szabadon engedték. Bizonyíték hiányában eddig eljárást nem tudtak ellene indítani.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183145"></A>56. faszagyerek</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2485&id=183137#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-20 19:54:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2260.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Erre az illetékes elvtárs közli, hogy nincs szükség évi 40-50 tisztnél többre. Fasza. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183137"></A>55. PYG</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2485&id=183133#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-20 17:40:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">ÁÁÁ! Ugyan nem egészen ide tartozik, de épp most néztem a Hír tévét, ahol az egyik híradóban mondták, hogy a tisztavatáson !több száz! statisztát illetve öreg katonát avattak "tiszté" a látvány kedvéért! Kérdem én, hogyha a Magyar Gárda avatását nem tiltják be, vajon hány statiszta kellett volna? Egy sem! Úgy is meglett volna a látvány! Azért elgondolkodtató, hogy egy Trianon utáni sajnos csak tíz milliós országban, többen jelentkeznek egy civil kezdeményezésű gárdába, mint ahány tisztet öö statisztát avatnak!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183133"></A>54. Tomcat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2485&id=183122#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-20 16:51:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_14.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha a helyszínen agyonlőtték volna, nem lett volna szükség egy autóra se. Legfeljebb egy idő után arra, amelyik a lőszert hordja.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183132"></A>53. Tomcat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2485&id=183130#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-20 16:49:57</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_14.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Semennyi. Az egész Gárdából talán két tucat ember felelne meg korban, végzettségben, pszichikai és fizikai alkalmasság terén a Csendőrség felvételi követelményeinek. És még akkor is csak talpas járőrök lehetnének, tisztek nem.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183130"></A><FONT COLOR="#FF0000">52. </FONT>eZola</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-08-20 16:26:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_7514.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183127"></A><FONT COLOR="#FF0000">51. </FONT><A HREF="mailto:mcl@freemail.hu" STYLE="color: #000000">VJack</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-08-20 16:09:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3520.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment183122"></A>50. Miso</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2485&id=183120#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-08-20 15:38:13</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_7228.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ebben teljesen egyetértek. Pont a hétköznapi bűncselekmények felderítésében mutatott töketlenség az, amit a morál és a vezetés számlájára írok. A komolyabb ügyek viszont tutira plusz erőforrásokat igényelnek, épp úgy, mint a vidék. Azt, hogy létszámban ezt meglehetne-e oldani pusztán átszervezéssel, nem tudom, mert nem ismerem a rendőrség ilyen szintű működését. Mindenesetre az, hogy amikor elkapott egy zsebes orkgyereket két járőr, majd a központba beszólva egy rabomobil és három másik autós egység jött a helyszínre, nos, az azt mutatja, hogy csak át kéne szervezni bizonyos dolgokat.<br />
+<br />
+OFF: amúgy rohadt vicces volt az eset, mert miközben a hülye purdé menekült egy lopott pénztárcával (Öreg úr kiabál utána, hogy tolvaj, fogják meg!), és közben nézett hátra, mintha bárki is kergette volna, pont a két teljesen véletlenül arra járó rendőrnek futott.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2485&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2485&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2485&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2485&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2485&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2485&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2485&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

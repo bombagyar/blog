@@ -1,0 +1,941 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1412#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Először magyarul: A Playboy interjúja George Lincoln Rockwellel";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Először magyarul: A Playboy interjúja George Lincoln Rockwellel<BR><DIV CLASS="postheader_small">Blog - Főnix</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 október 5. 00:44:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1412.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">George Lincoln Rockwellről <a target="_blank"style="color: black; font-weight: bold;" href="//bombagyar.hu/index.php?post=972">már írtam     
+                nektek</a>. Ő az az ember, akit a fehér fajvédő körökben ismert, és nagyon elismert  
+ dr.       David       Duke,       egyszerűen csak úgy emlegetett, mint a valaha élt legnagyobb      
+   amerikait.<br><br>Bár       Rockwell     tábornok   rendkívül fontos személyiség mind a 
+történelem,         mind a fehér fajvédelem, a           nemzetiszocializmus, a   mozgalom 
+szempontjából, művei   alig       olvashatók magyar nyelven. Az     egyetlen       tőle, amit 
+magyarul is   olvashatunk, az   <a target="_blank"style="color: black; font-weight: bold;" href="//www.liveleak.com/view?i=4a2_1211582323">a         <span style="font-style: italic;">Tyúkok és a Kacsák</span></a> című remekmű, melyet               már       bemutattam 
+nektek a Bombagyáron.<br><br>Kevesen tudják, és még kevesebben hiszik el,     hogy   a               
+Playboy magazinban szerepelt először, (1966-ban) egy Rockwellel készített     interjú. Az           
+interjút       készítő, pedig egy Alex Haley nevű néger volt. Úgy gondoltam   ezen   írás   sokakat  
+       érdekelhet, ezért is       választottam ennek lefordítását az általam   alapított <a target="_blank"style="color: black; font-weight: bold;" href="//bombagyar.hu/index.php?post=1190">B</a><a target="_blank"style="color: black; font-weight: bold;" href="//bombagyar.hu/index.php?post=1190">ombagyár     
+    Fordítóbrigád</a>     első   feladatának. Az       interjú olvasásakor azonban végig szem előtt 
+kell         tartanunk, hogy       Rockwell nem is számított rá, hogy       az interjút lehozzák 
+majd.   Számtalan       alkalommal   készítettek     már vele interjút, de mindig       visszaléptek 
+a zsidó   médiahatalom         nyomására. Ezért is nem   szabad   élesen kritizálnunk Rockwellt az   
+      interjúban     elmondottakért,     illetve a hangnemért,   ugyanis ő   biztos volt benne, hogy 
+ezen   beszélgetés           sosem kerül     napvilágra, csakúgy mint az     azelőttiek.<br><br>De 
+mint azt   látjátok,   mégis így     történt.         Most pedig, a <span style="font-weight: bold;">Bombagyár       Fordítóbrigádjának</span>   jóvoltából,         először magyar     nyelven, 
+itt olvashatjátok ezt az       interjút, a   Bombagyáron.<br></div><br><div style="text-align: justify;"><div style="text-align: center;"><img src="./resources/pictures/fonix_rockwell%20among%20coons.jpg" style="border: 2px solid rgb(0, 0, 0); width: 403px; height: 274px;" border="0"><br></div><br><span style="font-weight: bold;">Haley ezt    
+           írja:</span><br><br>&#8222;Felhívtam Rockwellt a   Virginiában,     Arlingtonban 
+található           főhadiszállásán     és közöltem vele, hogy a   PLAYBOY felkérte őt     egy 
+exkluzív interjúra. Miután           megbizonyosodott róla,     hogy nem   vagyok zsidó, óvatosan    
+ bár, de belement. Nem mondtam meg   neki,         hogy néger vagyok. Öt     nappal   később, amint 
+a     taxim beállt Rockwell   &#8222;Nemzetközi           Főhadiszállása&#8221;, egy   kilencszobás, 
+    fehér   gerendázatú arlingtoni   ház (amelyet azóta           lelakatolt a Adójövedelmi 
+Szolgálat     [IRS,   amerikai   adóhatóság], amely   jelenleg a   nácik anyagi         
+támogatásainak labirintusát     vizsgálja)   elé, a háztetőn   egy     hirdetőtábla-méretű feliratot 
+  láttam       meg, amely így     szólt: &#8222;FEHÉR EMBER   HARCOLJ     &#8211;   ZÚZD SZÉT A 
+FEKETE     FORRADALMAT!&#8221;     Nem     tudtam másra gondolni, mint hogy   vajon     milyen   
+fogadtatásban lesz     részem, amikor         megpillantják az én nem-árja   fizimiskámat. Nem   
+kellett   soká várnom   &#8211; a     kekibe     öltözött     ügyeletes őr az   ajtónál szinte kővé  
+ meredt, amint kiszálltam   a taxiból és           felmentem az bejárati       lépcsőn. Amikor   
+azonosítottam magam, bizonytalankodva   betessékelt és         mondta,   hogy   várjak abban   a   
+közeli   helyiségben, amit ő   &#8222;szentélyszobának&#8221;         nevezett,   egy kis,   fekete 
+falú       kamrában, amit pislákoló piros   gyertyák világítottak   meg   alig       áthatva a 
+homályt,   amerikai és       náci zászlókkal volt díszítve,   valamint a   falakon     függtek     
+Adolf Hitler és George     Washington     egymás mellé állított portréi, és         Rockwellről 
+magáról egy     valamivel nagyobb és   idealizált   portré     &#8211; egy önarckép. A       székem  
+ melletti asztalon   volt   egy nem túl   igényesen nyomtatott és     kötött   könyv     &#8211;   
+Rockwell saját   kiadású   önéletrajza,   a <span style="font-style: italic;">This Time     the   
+World;</span> épp lapozgattam     benne,   amikor két   egyenruhás     rohamosztagos alakja     
+feltűnt   az   ajtóban,     nácimódra tisztelegtek,   és   hűvösen     közölték velem, hogy Rockwell 
+      parancsnok parancsot   adott nekik,     hogy a Párt   használatában       lévő autók egyikében 
+      vigyenek engem az új személyes         főhadiszállására.<br><br>Tizenöt     perccel   később 
+velem       és a magnómmal hátul, két kísérővel       elöl a   kocsi befordult egy szűk,     fákkal  
+       szegélyezett útra, lelassított, amint maga mögött       hagyott egy   &#8211; halálfejjel     
+      megpecsételt   &#8211; &#8222;TILOS AZ ÁTJÁRÁS&#8221; táblát   és     egy pórázon   tartott    
+     dobermann   őrkutyát, és végül   megállt egy fehér, 16 szobás tanyaház   előtt,     amely a     
+      földszinten és a   második emelet magasságában   négy láb magas, vörös   horogkeresztekkel     
+volt         ékesítve.   Úgy egy   tucat náci bámult rám jeges   tekintettel, mialatt   az őrök 
+elvezettek             mellettük, fel Rockwell     ajtajáig, ahol egy rohamosztagos   fegyverrel az  
+ oldalán nagy             szakértelemmel a fejem búbjától a     talpamig átmotozott. Karnyújtásnyi   
+  távolságon   belül ott       volt     egy fából készült tároló   alkalmatosság,   amely 
+közelharcra alkalmas       hosszúságúra       fűrészelt     vascsöveket tartott. Engem   
+&#8222;tisztának&#8221;   találva az   őr       ünnepélyesen     kinyitotta az     ajtót, belépett,  
+ tisztelgett, &#8222;Sieg   Heil!&#8221;-t     kiáltott     &#8211;     ami nyersen     
+visszhangzott belülről   &#8211; aztán   arrébb lépett az   ajtóból és egy           bólintással 
+megadta nekem     az engedélyt, hogy     belépjek. Úgy is   tettem.<br><br>Mintha csak a       
+drámai hatás     kedvéért tette     volna,   Rockwell   ott állt a   szoba túloldalán kezében a      
+ kukoricacső pipájával, egy     Adolf Hitler       arckép alatt.     Figyelmeztetve lévén a       
+négerségemről, nem mutatott meglepettséget, ahogy       nem is       mosolyodott   el, nem beszélt, 
+és       nem nyújtott kezet. Ehelyett, miután   tetőtől talpig     végigmért       egy hosszú   
+pillanat   erejéig,     egy ellentmondást nem tűrő   mozdulattal egy   ülőhelyhez   intett, aztán    
+   leült   ő   maga is egy     közeli könnyed székbe   és csöndesen   nézett, amíg beállítottam a   
+magnómat.           Rockwellnek ott     volt már egy   sajátja is,   észrevettem, ahogy egy közeli 
+asztalon járt   benne a         szalag.       Aztán, míg   egy   tagbaszakadt őr állt vigyázban 
+köztünk kb. félúton, Rockwell     elővett egy                 gyöngyberakásos revolvert, 
+nyomatékosan a széke karfájára helyezte, majd   hátradőlt, és     &#8211;             mióta   
+találkoztunk, most először &#8211; megszólalt: &#8222;Én   felkészültem, hogy ha       maga          
+ is.&#8221;   Minden további udvariaskodás nélkül bekapcsoltam   a     magnómat.<br><br><span style="font-weight: bold;">PLAYBOY: Mielőtt elkezdenénk, parancsnok,       esetleg elmondaná nekem, 
+hogy             miért tartja azt a   pisztolyt ott a könyöke mellett és       ezt a fegyveres 
+testőrt             közöttünk?</span><br><br>ROCKWELL: Csak   elővigyázatosság.       Talán nincs 
+tudatában ennek, de én szó             szerint több ezer, az életem ellen irányuló         
+fenyegetést kaptam. Ezeknek a legtöbbje             futóbolondoktól származik, de néhány közülük nem 
+      az volt;   ennek az épületnek a külsején   mindenhol           golyónyomok vannak. Épp a múlt  
+   héten   két gallonos lángoló   benzinesüveget   dobtak a házra,   pont     az     én ablakom alá. 
+    Interjúk   közben itt tartom ezt a pisztolyt     elérhető távolságban,   és ezt   az   őrt     
+magam     mellett,   mert már túl sokszor támadtak meg   ahhoz, hogy   bármennyire is     
+kockáztassak.     Még       sosem   rettentett meg egy semmirekellő sem,   de nemrégiben történt,   
+hogy 17     fickó   azt     állítva,   hogy     a helyi egyetemről vannak,   idejött, hogy         
+&#8222;meginterjúvoljon&#8221;;       semmiféle kellemetlenség     nem történt, de   később   
+rájöttünk,     hogy fel   voltak   fegyverkezve   és azt   tervezték, hogy letépik a     zászlót,    
+ felgyújtják az egész     kócerájt   és   összevernek   engem. Csak az   a tény, hogy mi fel voltunk 
+        készülve az efféle durva       dolgokra,     akadályozta meg, hogy ez   megtörténjen. Még 
+sosem   kellett     senkit   se       megsebesítenünk, de   csak azért,   mert gondolom mind   
+tudják, hogy   akármikor   készek   vagyunk         harcolni. Ha ön   az, akinek mondja magát,   
+nincs mitől     félnie.<br><br><span style="font-weight: bold;">PLAYBOY:   Nem   
+félek.</span><br><br>ROCKWELL:   Remek.   De csak hogy       mindketten tudjuk, hogy     hol   is   
+a helyünk, valami   mást is   kristálytisztán   érthetővé     szeretnék   tenni, mielőtt         
+elkezdjük.<br>Őszinte és nyílt   leszek   magához. Ön az ön       hivatásabeli minőségében   van 
+itt; Én       az én   hivatásombeli   minőségemben vagyok itt.   Amíg   itt     vagyunk, jól fogunk 
+bánni     magával     &#8211; de     látom, hogy ön egy fekete   riporter.<br>Ez nem       személyes 
+dolog, de azt   akarom,       hogy   megértse, hogy   én nem   keveredek az ön fajtájával,   és mi 
+az   ön   faját           &#8222;niggereknek&#8221;     nevezzük.<br><br><span style="font-weight: bold;">PLAYBOY:   Sokszor             neveztek már     &#8222;niggernek&#8221;, parancsnok, de ez az 
+első   eset, hogy fizetnek is       érte.       Szóval     mondja csak   nyugodtan: mi baja velünk,  
+ &#8222;niggerekkel&#8221;?               </span><br><br>ROCKWELL: Semmi   bajom   magukkal. Csak 
+úgy   gondolom, hogy maguk, emberek,               boldogabbak lennének ott Afrikában, ahonnan     
+jöttek.   Amikor az első bevándorlóinkat   Európában             üldözték, ők nem tartottak 
+ülősztrájkot vagy efféle       nyavalygást; ők   kivándoroltak,     bementek a         vadonba és 
+felépítettek egy nagy         civilizációt.<br><br><span style="font-weight: bold;">PLAYBOY:       
+Azt a négerek segítségével     építették         fel.</span><br><br>ROCKWELL: Segítség   ide vagy 
+oda, a     fehér   emberek   Amerikában   egyszerűen     sohase     fogják engedni maguknak, hogy   
+teljesen     elkeveredjenek     velük, akár   tetszik,   akár   nem.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: A     polgárjogi   mozgalom célja a     jogok és a 
+lehetőségek       egyenlősítése,   parancsnok   &#8211;   nem   pedig a   faji keveredés, ahogy azt 
+ön     próbálja         sejtetni.</span><br><br>ROCKWELL:     Lehet,   hogy az   egyenlőség a 
+meghirdetett cél, de a faji             keveredés az, ami a   gyakorlatban     megvalósul   belőle; 
+és minél durvábban erőltetik ezt   maguk, annál             dühösebbek lesznek a   fehér     
+emberek.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Úgy   gondolja, 
+    ön fel van jogosítva arra, hogy   a fehér   emberek     nevében       beszéljen?</span><br style="font-weight: bold;"><br>ROCKWELL:   Malcolm X   ugyanazt     mondta, amit én       
+mondok.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Ő egészen       
+biztosan nem     volt abban a helyzetben,   hogy     a fehér emberek nevében     
+beszéljen.</span><br style="font-weight: bold;"><br>ROCKWELL: Nos, azt       hiszem, a fehérek     
+többségének nevében beszélek,       amikor azt     mondom, hogy a faji     keveredés   egyszerűen 
+nem fog     működni. Éppezért úgy gondolom,   hogy         fognunk kéne a     dollármilliárdokat, 
+amit   most     elpazarlunk külföldi segélyekre kommunista       országoknak,         amelyek 
+utálnak minket, és oda kéne       adnunk azt a pénzt a mi saját     niggereinknek,   hogy     
+megépítsék a     saját civilizált nemzetüket       Afrikában.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Attól a       ténytől     eltekintve, hogy Afrika   
+    területileg már fel van osztva szuverén     országok között,           keveseket leszámítva majd 
+    mind a   20.000.000 néger ebben az országban itt született     amerikai,           akiknek pont  
+   annyi joguk van   ahhoz, hogy itt maradjanak, mint Önnek,   parancsnok.</span><br style="font-weight: bold;"><br>ROCKWELL: Én nem így gondolom. Ha két ember   összeférhetetlennek     
+            bizonyul a   házasságban, és nem tudnak együtt élni, akkor elválnak; és az     
+átlag-niggerek       tömege         egyszerűen   nem &#8222;illik bele&#8221; a modern amerikai   
+társadalomba. Egy         leopárd nem       változtatja   meg a   foltjait csak azért, mert behozzák 
+  a dzsungelből és       megpróbálják   betörni és       háziállattá     változtatni. Megtanulhatja, 
+  hogy behúzza a karmait,       hogy egy kevés   maradékot       lekunyerálhasson az       
+ebédlőasztalról; megtaníthatják neki,   hogy     egy szánalmas, meghúzódó     állat     legyen, de   
+ettől még   nem   lehet elfelejteni, hogy   mindig     az lesz, aminek született: egy         
+vadállat.   <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Mi   emberi 
+      lényekről     beszélgetünk, nem         állatokról.</span><br><br>ROCKWELL: Mi niggerekről     
+beszélünk, és   nekem       nincsenek kétségeim       afelől,   hogy ők alapjában véve   
+állatiasak.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Milyen   
+értelemben?</span><br style="font-weight: bold;"><br>ROCKWELL: Spirituálisan.   A mi fehér   
+gyerekeinket megrontják, akár     Pavlov kutyáit:       külső       feltétel-reflex alapú   
+idomítással.   Példának okáért, minden alkalommal     amikor egy       fehér gyerek       kefél egy  
+ jót, az autórádió nigger   bebopot harsog. Ilyen erős     ingerek       hatása alatt nem tart     
+soká,     amíg egy fehér gyerek elkezdi tudat   alatt összekötni a           primitív hangokat az   
+intenzív     örömérzettel,   és így átalakítja a természetes   örömöt a szexben           egy   
+természetellenes rajongássá a     kaotikus és   állatias nigger zenéért, ami     elpusztítja         
+  gyermekeinkben a rend és az igazi szépség     szeretetét. Ez   az, ahogy ti   niggerek         
+megrontjátok     a mi fehér gyerekeinket &#8211; anélkül,   hogy   akár csak rájuk     tennétek a    
+   mocskos     kezeiteket.   Na nem mintha azt nem akarnátok. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Néha azért ez épp ellenkezőleg       történik,      
+     parancsnok.</span><br style="font-weight: bold;"><br>ROCKWELL: Nos, be kell   vallanom, a       
+      sajátjaimnak   is van egy nagy     hibája: a fehér ember lassan túlságosan   elpuhányodik. A   
+niggerek           kemény kétkezi   munka   elvégzésére   vannak kényszerülve, és   ennek   
+eredményeképp a legtöbb         kannigger   akár az     egészséges állat: szilaj és   kemény,     
+olyan, amilyennek a természet a     férfit     szánta. Ha       megfigyeljük, hogy egy fehér férfi   
+    átlagpolgár hogyan tölti az idejét:     az   íróasztal   fölé       görnyedve, balettezve,     
+elektromos fűnyírón   furikázva, prémmel bevont       vécéülőkéjén   guggolva, nem       lehet nem   
+  észrevenni, hogy sok fehér férfi   mennyire   puhánnyá és     löttyedté engedi   magát válni;      
+     főleg azok a csontos, tésztaképű, fehér     békeimádók a   hosszú   hajukkal, tündéri   
+ruhájukkal,       nagy     sárga csíkokkal a gerinctelen   hátukon. Melyik     normális   nőnek 
+kellene ilyen         anyámasszonykatonája?     Sajnálatos módon   néhányat a mi fehér   nőink 
+közül,     főleg az őrült         baloldali állapotok között, amik     az   egyetemeinken   
+uralkodnak, olyannyira   eltérít a       zsidó     propaganda, hogy saját ösztöneiket       elárulva 
+  inkább egy egészséges fekete   kant     választanak ezek       helyett a csontos, nyámnyila   
+fehér       békeőrültek helyett, akik       hemzsegnek az   egyetemeinken.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Azt   akarja mondani, hogy a    
+ néger férfiak   szexuálisan       felsőbbrendűek a       fehér férfiakhoz   képest?</span><br style="font-weight: bold;"><br>ROCKWELL:       Távolról sem.     Az   átlagos fehér   munkásember, a 
+fehér   férfiak   nagytöbbsége, épp   olyan tökös és           kemény, mint   bármelyik nigger,   
+aki valaha is élt. A     fehér értelmiségiek azok, akik         engedték     magukat   
+elcsökevényesedni   fizikailag,   szellemileg, és   főként spirituálisan       olyannyira, hogy   
+már       kénytelen vagyok   elismerni,   hogy egy egészséges   nigger       szemétszállító 
+szexuálisan és fizikailag         bizonyosan     felsőbbrendű egy tésztaképű,         csontos, fehér 
+békeőrülthöz képest.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: 
+Másban is felsőbbrendűnek         tartja a   négereket   a fehér férfiakhoz         
+képest?</span><br style="font-weight: bold;"><br>ROCKWELL:   Épp           ellenkezőleg &#8211;     
+minden     másban alsóbbrendűnek tartom őket a fehér férfiakhoz     képest.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Ez egy eléggé     elnagyolt     
+        általánosítás.   Alá tudná   támasztani konkrét adatokkal?</span><br style="font-weight: bold;"><br>ROCKWELL: Amikor   egyetemeken   tartok beszédet, gyakran felteszik     nekem ugyanezt a  
+     kérdést.       Erre mindig egy   saját kérdésemmel   felelek: hogy döntik el az     egyetemek,  
+ hogy   kik a   jó és kik a     rossz     tanulók? Hát a teljesítmény   alapján! Nézzük csak   a     
+  történelmet, vizsgáljuk   meg a különböző       fajokat:   a kínaiak jól   teljesítenek &#8211;    
+     hatalmas civilizációt   teremtettek. Ugyebár az   összes     fehér faj is   jól   teljesít.     
+  Ellenben a   nigger faj az egészen   szoros közelmúltig   abszolúte semmit     nem alkotott.       
+    <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:     Mennyire szoros 
+            közelmúltra gondol?</span><br style="font-weight: bold;"><br>ROCKWELL: Az elmúlt     
+20-30           évre.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: És 
+mi van               annak a több millió   afrikai   négernek és   leszármazottaiknak &#8211; 
+valamint az egész   világról       jött       mindenféle színű       bevándorlóknak &#8211; a 
+segítségével, azokéval,   akik   segítettek     megalapítani     és   felépíteni     ezt az     
+országot?</span><br><br>ROCKWELL: Nem   akarom ezt   semmibe   venni, de az az       igazság,       
+hogy a niggerek   minden segítsége majdnem   teljes   egészében szolgai   és kétkezi munka   volt.   
+      A   legnagyobb részét lovak   is   elvégezhették   volna, vagy jól   beidomított majmok     
+ugyanazokról a         fákról, amelyekről   őket szedtük   le   még Afrikában. Azóta   néhány új   
+trükköt is   megtanultak   &#8211;       de   csak olyanokat,   amelyeket a   fehér embertől     
+lestek el.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Egyes     
+nemrégiben feltárt     régészeti leletek   alapján     kimutatták     fejlett fekete afrikai       
+civilizációk létezését, melyek     századokkal az   ehhez     fogható európai     kultúrák hajnala   
+előtt   álltak   fenn.</span><br style="font-weight: bold;"><br>ROCKWELL: Hogy ha     akkor annyival 
+  előrébb   jártak   nálunk, miért     lövöldözgetnek       egymásra még mindig köpőcsövekből kis    
+   nyilakat,   mialatt mi rakétákat     lövünk fel   a     Holdra?   <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Az   amerikai         űrprogram nem szegregált   
+projekt, parancsnok.   Sok     néger   dolgozik a NASA-nak és az             
+űriparban.</span><br><br>ROCKWELL: Ez csak az én   igazamat       bizonyítja. Néhány niggert,   akár 
+    az       idomított csimpánzokat, a mi   faji-keveredés-párti   elnökeink és     a szövetségi     
+  kormányunk     felprotezsált   és beleerőszakolt   olyan dolgokba,   mint az űrprogram; de a       
+    niggerektől nem     származik egy olyan ötlet   se, ill.   nem ők hozták   létre az olyan       
+fantaszikus     szervezeteket,     amelyek révén embereket tudunk az     űrbe   juttatni. A niggerek 
+      a NASA-ban olyanok,     mint a     csimpánzok, amelyek megtanultak     biciklizni.   Néhány    
+   beidomított bicikliző majom nem     bizonyítja,     hogy a csimpánzok fel     tudnák találni, meg 
+      tudnák   építeni, vagy akár csak gondolkodni       tudnának   a bicikliről. A     tény az, 
+hogy az       átlag nigger nem olyan   intelligens, mint az átlag   fehér       ember.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Nincs   genetikai       vagy    
+   antropológiai     bizonyíték, ami ezt megalapozná.</span><br style="font-weight: bold;"><br>ROCKWELL:     Tudom, most     azt fogja mondani, hogy tud nekem mutatni   többezer   
+intelligens         niggert és     hülye fehér     embert. Nagyonis tudatában vagyok annak, hogy   
+mindkét   oldalon vannak             kivételek. Én     csak azt mondom, hogy az ön népe átlaga az én 
+  népem átlaga alatt áll;   és a tiszta                 feketék még lejjebb vannak alattunk. Az élő  
+ bizonyítékom erre épp itt ül előttem.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Hogyha rám céloz, én távol                   állok a tiszta feketéktől &#8211; ahogy 
+  ön is láthatja.</span><br style="font-weight: bold;"><br>ROCKWELL: Hát épp ez az: ön egy 
+intelligens   ember; öröm magával beszélgetni. Maga azonban                   nem tiszta fekete, 
+mint az ősei   Kongóban. Szóval, ezzel talán megsértem magát, de   nem             bájcsevegni     
+jöttünk ide:   bizonyára kellett lennie egy fehér embernek valahol a     családjában,           
+különben maga nem       lenne fekete helyett barna. Igaz?<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Igaz.</span><br style="font-weight: bold;"><br>ROCKWELL: Nos, én 
+        azt mondom,   hogy a     maga intelligenciája     az én fajtám   véréből fakad. Akárhányszor 
+      körbemutogatnak     egy okos niggert és     azt     mondják:   &#8222;Látjátok? Nézzétek, 
+milyen zseniálisak       a     niggerek!&#8221;, akit ilyenkor           mutatnak, az általában egy 
+részben fehér ember egy kis         nigger   vérrel az ereiben. Ez   nem     bizonyítja,     hogy a 
+niggerek olyan nagyszerűek   lennének.       Ellenkezőleg;   azt   bizonyítja,     hogy a fehér vér 
+egy     rész-niggert   intelligensebbé tehet.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   Ez nem bizonyíték, parancsnok!           Tud mutatni bármilyen 
+    hiteles iratot, amivel       alátámaszthatja nézeteit?       </span><br><br>ROCKWELL:     Egy    
+ pszichológus, G.O. Ferguson,   készített egy     tanulmányt a       négerekben a fehér vér 
+mennyisége       és   az intelligencia   összefüggéséről. Tesztelte az       összes     virginiai 
+néger iskolás gyereket     és       bizonyította, hogy a teszteken a tisztán   fekete négerek        
+ körülbelül 70 %-át, az egy       fehér     nagyszülővel rendelkező négerek   75%-át érték el a 
+fehérek         eredményének. A két       fehér nagyszülővel     rendelkezők még   jobban 
+teljesítettek, akiknek pedig   három       fehér       nagyszülőjük volt, majdnem   olyan     
+eredményesek voltak, mint fehér társaik.   Mivel ezen     néger         gyerekek mindegyike hasonló  
+     körülmények között élt, mint a többi néger a     tesztek       eredményeiben     látható 
+jelentős   különbséget     nem foghatjuk a környezeti         körülményekre.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Könyvében         - A Profile 
+of the   Negro American   &#8211;     a     világhírű szociológus, T.F. Pettigrew         
+egyértelműen kijelenti, hogy   a fehér   elődök mennyisége         semmilyen módon nem függ   össze 
+a       négerek I.Q. eredményével.     Pettigrew szerint a valaha dokumentált           legokosabb 
+néger   &#8211;     200-as I.Q.   eredménnyel   &#8211; egyáltalán nem rendelkezett fehér            
+ ősökkel.</span><br style="font-weight: bold;"><br>ROCKWELL: A tény, hogy tud mutatni   egyetlen     
+      teljesen   feketét,     aki különb nálam,   nem győz meg arról, hogy az átlag   nigger is 
+különb lenne.   A             megdöbbentő   tény az, hogy minél     &#8222;világosabbak&#8221;, 
+annál okosabbak és minél     feketébbek,           annál     butábbak.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Ez   egy           vélemény,   Parancsnok, nem 
+tény. Alá tudja támasztani bármiféle       konkrét     bizonyítékkal?</span><br style="font-weight: bold;"><br>ROCKWELL: Egy élet tapasztalata a           bizonyíték. Sosem találkoztam     olyan       
+fekete négerrel - igazán feketére gondolok, aki   már         lilának tűnik -, aki úgy tud     
+beszélni,       gondolkozni, ahogy mondjuk, ön tud. Ha   majd     egyszer     találkozom, talán a 
+véleményem     is megváltozik.       Az összes igazán fekete     néger   olyan, mint     amilyeneket 
+Tamás bátyáknak     neveznek, vagy felforgatók,       vagy csak       csavargók,   fosztogatók,   
+erőszakolók.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: A   
+szociológusok     egyetértenének abban, hogy a négerek nagy           többsége     &#8211; sötét 
+bőrüek avagy   sem &#8211;     nem illik egyik kategóriába     sem.</span><br style="font-weight: bold;"><br>ROCKWELL: Mint   mondtam,     mindig vannak kivételek,     de mindenki     tudja,       
+hogy a kivétel erősíti a szabályt. Az       evolúcióból következik,     hogy ha a     felsőbbrendű 
+keveredik az       alsóbbrendűvel, az eredmény hosszú       távon a kettő     között lesz,     tehát 
+alacsonyabb rendű, mint az       eredeti felsőbbrendű csoport       &#8211;     más szóval     
+elkorcsosult.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: A     
+&#8222;felsőbbrendű&#8221; és &#8222;alacsonyabb       rendű&#8221; szavaknak           semmi köze a 
+    genetikához, Parancsnok, csakúgy, mint az elkorcsosulásnak.       Minden     szakértő       
+álláspontja,     hogy a világ különböző embercsoportjai genetikailag nem     különíthetőek       el  
+     egymástól.   Más   szóval mindenki, a különböző rasszokhoz tarozó     szülők leszármazottjai 
+is,               egyenlőnek   születik.</span><br><br>ROCKWELL: Ne     nevettessen, kérem! Nem 
+tudja, hogy ezt az egész                 egyenlőség-marhaságot egy zsidó     antropológus, Franz 
+Boas találta ki a Columbia   Egyetemen?   Boas-t       egy       másik zsidó,     Gene Weltfish 
+követte, szintén a Columbiáról.&nbsp;   Jelenünk zsidó         szakértője, aki   az         
+egyenlőséget prédikálja, egy szintén zsidó, Ashley   Montagu. Bármely         antropológust, aki   
+ki     meri     mondani az igazságot, amit akármelyik   egyszerű, józan paraszti         ésszel   
+megáldott   ember is   tud, hogy a     fajok minőségben   különböznek, egyszerűen           
+ellehetetlenítik, nem   publikálhat, nem   dolgozhat az       egyetemeken, és egyszerűen nem tud     
+      megélni. Nem is   hallani semmit arról az   oldalról.&nbsp;   Carleton     Putnam írt egy   
+csodálatos         könyvet   <span style="font-style: italic;">Race and   Reason</span> címmel,     
+amiben rengeteg   tudományos       bizonyítékot mutat       be, amelyek   alátámasztják az   
+álláspontomat,   miszerint a   néger faj       intellektuálisan eredendően         alacsonyabb rendű 
+  a fehér fajnál.<br>Ez az       egyenlősdi-marhaság egyenesen     a Szovjetunióból         
+származik,   a liszenko-i biológiából, ami   a     kommunista Liszenko nevéhez fűződik,   aki   azt  
+         állította, hogy a környezetet   megváltoztatva   egyik   növény magjából másik növényt      
+ termeszthetünk.         Ez az a tan, ami   elpusztítja a   társadalmunkat -   mert hamis. Nem lehet 
+    kukoricából   búzát       termeszteni   a   környezet   megváltoztatásával.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Nem   lehet kukoricából búzát   
+  termeszteni, bármit   is       változtassunk   meg.   Mindenesetre   itt most   emberi lényekről 
+van   szó, nem           élelmiszerekről.</span><br style="font-weight: bold;"><br>ROCKWELL: Nem 
+akarom   tovább           csűrni-csavarni. A lényeg, hogy   úgy   gondolom, a   zsidók   tudatosan   
+ferdítették el az   antropológia,         a biológia és a   genetika tudományát,     hogy eljussanak 
+  ehhez   a hamis   következtetéshez   &#8211;   és       ezáltal elpusztítsák a kiváló   fehér     
+fajt.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Milyen   hamis     
+    következtetéshez?</span><br style="font-weight: bold;"><br>ROCKWELL: Ahhoz a teljes   mértékben  
+   téves     elképzeléshez, hogy   az öröklésnek semmi köze         például ahhoz, hogy a   
+négereknek     alacsonyabb az   átlagos     iskolai végzettségük és nagyobb       arányban   
+kerülnek ki   közülük     bűnözők, mint a fehérek     esetében?&nbsp;   <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: A     genetika szerint   nincs       is. 
+Mindenesetre, eme         feltételezés elfogadása miért vezetne a   fehér faj           
+pusztulásához?</span><br><br>ROCKWELL:       Azért   mert abba a téves hitbe   ringatja az 
+embereket, hogy a           niggerek inkább csak       &#8222;hátrányos     helyzetűek&#8221;, mint 
+születetten alacsonyabb     rendűek;   és     hogy   fel     tudnak zárkózni,   ha   beengedjük őket 
+az éttermeinkbe, tanulhatnak az     iskoláinkban,             beköltözhetnek a   szomszédainkba.   
+Ez elkerülhetetlenül maga után vonja, hogy       keveredünk velük,       ami       pedig a 
+korcsosuláshoz, majd a   fehér faj megsemmisüléséhez   vezet.     <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Azt mondta,   hogy az     egész       összeesküvés  
+ mögött a     zsidók állnak. Ők maguk is   fehérek, mi előnyük   származhat hát a         saját     
+fajtájuk     tönkretételéből?</span><br style="font-weight: bold;"><br>ROCKWELL: Ők nem           
+fognak   keveredni, ahogy     azt mi tesszük. Úgy   hiszik, ők   túl tiszták, kiválasztottaknak      
+     tartják magukat   &#8211; a világ     irányítására     választottaknak. De nem képesek, csak    
+       alacsonyabb rendű lények   lakta világot uralni.       Mindaddig,   amíg a fehér ember 
+tiszta, nem           érhetnek célt. De mihelyst a   fehér ember   elfogadja a     keveredést a   
+feketékkel, a zsidók           feléjük kerekedhetnek.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:         Hogyan?</span><br style="font-weight: bold;"><br>ROCKWELL: Már       ők   irányítják a   négereket. A       Fekete   Muszlimokat   kivéve 
+gyakorlatilag a zsidók irányítják az   összes         nagyobb emberjogi         szervezetet. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Önt         tévesen 
+informálták,   Parancsnok. Egyet kivéve   &#8211; az NAACP-t &#8211;   az       összes   emberjogi   
+    csoportnál négerek   vannak a   kulcspozíciókban.</span><br style="font-weight: bold;"><br>ROCKWELL:     Ők csak a kirakat     emberek. A zsidók mozgatják a   szálakat a háttérben  
+ és   ők       tartják   kezükben   a   pénzeszsákokat   is.<br><br style="font-weight: bold;"><span style="font-weight: bold;">&nbsp;PLAYBOY: A zsidók, akik   ezekhez   a csoportokhoz tartoznak,   
+illetve   közreműködnek,             kizárólag tanácsadói minőségben     vannak jelen.</span><br style="font-weight: bold;"><br>&nbsp;ROCKWELL: Önt tévesen tájékoztatták.     Mint már kezdtem     
+mondani, a zsidók a   fehér           embereket is irányítani akarják, csakúgy,   mint   ahogy a     
+négereket is   irányítják. Miután a     fehérek       keveredtek a feketékkel, a   fehérek is     
+könnyen     irányíthatóvá válnak, a négerekhez     hasonlóan. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:     Miért?</span><br style="font-weight: bold;"><br>ROCKWELL:     Mert   ha a felsőbbrendűt keverjük az     alsóbbrendűvel, ahogy       már   
+  mondtam, az eredmény     alacsonyabb   rendű lesz &#8211; félúton a     kettő között. A zsidók     
+  túljárnának     az eszén,     kijátszanák, ezáltal   manipulálhatnák az     elkorcsosult fehér   
+embert,   ahogy   azt már teszik     a     négerekkel. Erről szól ez   az egész,     úgymond   
+emberjogi mozgalom;   és hajlamosak     megúszni, ha     országunk   jó fehér   keresztényei nem     
+  ébrednek fel időben és   nem fogunk   össze, hogy   helyre   állítsuk   a dolgok     természetes   
+rendjét,     mielőtt még túl   késő   lenne.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: És mi a   dolgok   természetes     rendje?</span><br style="font-weight: bold;"><br>ROCKWELL: Elkülönülés. A     természetben is az egy     fajhoz   
+tartozó   lények alkotnak         csoportokat. A csimpánzok nem     páviánokkal élnek együtt,     
+hanem   csimpánzokkal.   Ez a rend az     emberekre     is érvényes. Még     a teljesen integrált    
+ főiskolákon is azt   tapasztaltam,   hogy a     négerek más   négerekkel       ülnek egy asztalhoz, 
+  és a   fehérek is fehérekkel. Úgy   gondolom,   ez a     természetes, és       bármely     
+próbálkozás, mely ezt   a tendenciát akarja eltéríteni, a   természet       ellen     történik.<br style="font-style: italic;"><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: 
+      Ön nem vette   figyelembe az erkölcsi és alkotmányos         értelemben is     nagyon fontos   
+különbséget   aközött,     hogy valaki saját döntése alapján él együtt         saját     rasszához   
+tartozóval, vagy azért, mert       kényszerítik rá. Ha hagyjuk az embereket dönteni,               
+lennének, akik keverednének, lennének,   akik nem;     és az amerikaiak nagy része szerint ennek     
+    így       kell lennie.</span><br style="font-weight: bold;"><br>ROCKWELL: Ez így nagyon szépen   
+      hangzik,   meg is     hatódtam. De   hogy néz ki a dolog a     gyakorlatban? Minden esetben,   
+  amikor   az   ön által   védett     emberek   költöznek a környékünkre, fehér     emberek 
+költöznek     el; egyre     gyakoribbak az   erőszakos       megnyilvánulások, amiket békés, jól 
+szituált         fehér férfiak     követnek el - akik még   sosem   tettek     ilyet - felháborodva 
+a négerek     beözönlésén.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Ez erős     túlzás, Parancsnok. A         felmérések azt mutatják,   hogy       
+mind-mind kevesebb fehér ember     költözik el, amikor négerek     költöznek a     fehérek   lakta   
+    környékekre; és valójában     nagyon ritkán történnek olyan     erőszakos cselekmények,       
+amelyek okai       visszavezethetőek     lennének a négerek beköltözésére.   A   legtöbb esetben a 
+kezdeti       feszültségek       után az     új lakókat szép lassan     elfogadják.</span><br style="font-weight: bold;"><br>ROCKWELL: Nem           tudom milyen környékeken     nézett körül, de 
+az erőszak és   ellenségeskedés     általánosságban           tapasztalható, nem csak     kirívó 
+esetekben. És az egész   kétszeresen jelentkezik, ha az       én   embereim       közül költözik     
+valaki a Watts-hoz hasonló   helyekre. Az ön emberei nem   csak   lázonganak,     hanem         
+megpróbálják   megölni. Ez természetes.   Az ösztöneik jönnek   elő,   ahogy mindig is fognak.   
+Bármely           arra   irányuló próbálkozás, hogy   elnyomjuk,   elfedjük   eme ösztönöket, vagy 
+tagadjuk   létüket,             hiábavaló, és sikertelenségre   van   ítélve. A   természet nem 
+változik.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   A négerek 
+ellenséges érzülete a   nácik irányában nem             igazán   tekinthető   bizonyítéknak   az 
+integráció természetellenes   voltára. A náciellenes     erőszak           különben sem   csak a   
+négerekre jellemző.</span><br style="font-weight: bold;"><br>ROCKWELL:     Igaza       van, a     
+zsidókra sokkal inkább.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:  
+   Ön azt állította, hogy a   többek között Watts-i,       Harlem-i és   Rochester-i zavargások      
+     hátterében zsidók állnak.   Van erre bármiféle   bizonyítéka,     amivel   alátámaszthatja a 
+vádakat?           </span><br style="font-weight: bold;"><br>ROCKWELL: Azt     nem   mondtam, hogy 
+ők kezdték;     annyit         mondtam, hogy ők   tervezték meg. Először is, ők mondták     a   
+niggereknek, hogy     &#8222;Nektek nem   kell         engedelmeskednetek a törvényeknek, amelyek 
+nem       tetszenek     nektek&#8221;, ahogy   Martin   Luther Nigger       is hirdeti. Ha egy zsaru 
+letartóztat   egy         négert, az   &#8222;rendőri   brutalitás&#8221;. És azt   mondják     
+nekik, vágjanak vissza. Ha   a         rendőr   el akarja   látni a feladatát, a zsidók által   
+megvezetett     niggereknek ki kell       szabadítani       a   letartóztatottat a brutális rendőr 
+kezei közül. A   zsidók     pszichológiai       bombává     szították     őket &#8211; és ha jön a 
+zsaru és teszi, amit tennie   kell, az olyan,             mintha   égő gyufát tartana     a 
+gyújtózsinórhoz. Bumm &#8211; felrobban az egész!   Ahogy az     történt           Watts-ban és 
+Harlemben     is.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: 
+Watts-ban és     Harlemben is az anyagi károk nagy részét zsidó       tulajdonban lévő           
+üzletek, boltok szenvedték el.     Miért szítanának a zsidók   erőszakot,   melynek       
+eredményeképpen   a saját     vagyonuk semmisül       meg?</span><br><br>ROCKWELL: Az   csak 
+véletlen,     hogy a   gettóban   levő négerekből   élő         üzletemberek nagy része zsidó. A   
+befolyásos, nagy     zsidók hajlandóak     feláldozni a   kisebbeket,       ahogy a   hadvezér is   
+feláldozza a seregének     egy részét, hogy   megnyerje a     háborút.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   De mit     nyerhetnek a zsidók       azzal, hogy  
+ felkeléseket       szítanak?</span><br style="font-weight: bold;"><br>ROCKWELL: Ők   született      
+ bajkeverők.     Egyszerűen nem   tudnak nem   megjelenni   és felkavarni   mindent és végül   
+mindig   ők     szenvednek     miatta. Mindig! De     egyszerűen   nem tudják abbahagyni.   Teljes 
+mértékben     irracionálisak.       Az   egész   liberalizmusukkal   és a   prédikációikkal, amikben 
+  egyenlő   jogokat   hirdetnek a       niggereknek,     csak   zűrzavart és káoszt idéznek   elő, 
+ami végül     elemészti őket. Az         alkoholforgalmazók már     most   kapják. A múlt nyáron az 
+összes zsidó     boltos   visított,         &#8222;Elég!   Hallgassatok meg!   A barátaitok   
+vagyunk!&#8221; &#8211;   miközben a     niggerek           agyba-főbe verték őket. És ez   csak a 
+kezdet, csak   ízelítő abból,   ami még jönni fog. Erre   a             nyárra a Watts-inál jóval   
+szörnyűbb rasszista erőszak     megjelenését jósolom &#8211;   mindezt   a     két       bajkeverő   
+alacsonyabb rendű rassz   miatt.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: A négerek   alacsonyabb   rendűségét &#8211; amint   azt nemrég           kifejtette 
+&#8211;   a   mentális   teljesítményükre alapozza. A   zsidókat is   ugyanezért tartja           
+alacsonyabb     rendűnek?</span><br style="font-weight: bold;"><br>ROCKWELL: Sosem vádoltam a     
+zsidókat         azzal,   hogy értelmileg ne   tudnának   teljesíteni.   Sőt, úgy gondolom, nagy 
+esély     van arra,   hogy         mentális képességeiket   illetően   mindenki másnál   jobbak. 
+Véleményem     szerint egy   átlag zsidó         élesebb eszű,   mint az átlag nem zsidó,   mert 
+hosszú   évekig az       ügyeskedésből élt. Következésképpen           egy olyan zsidó faj alakult 
+ki, amely   mentálisan         jobb képességű, mint mi.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:         Akkor milyen értelemben           tartja a zsidókat 
+alacsonyabb rendűnek?</span><br style="font-weight: bold;"><br>ROCKWELL:   Lelki         értelemben. 
+Úgy gondolom, hogy egy emberi       lénynek,   ahhoz, hogy sikeres     legyen, egyúttal nagy         
+dolgokat vigyen véghez &#8211;       feltaláljon egy rakétát,   vagy   bármit -, kell   lennie   
+valaminek,       amiben hihet, ami több       mint a saját túlélése, ami   több mint   saját maga. A 
+    zsidóknak nincs       ilyenjük. Már olyan       rabbijuk is van, aki   nyíltan bevallja, hogy   
+ateista. Ő   Rabbi   Sherwin Wine, a         Michigan-i       Birminghamből.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Talán ön       nem tudta, hogy 
+az Egyház jelenlegi, Istentől elforduló         irányvonala a       protestáns       papságban 
+gyökeredzik. Mindenesetre Wine rabbi személyes     meggyőződése nem     elég             meghatározó 
+ahhoz, hogy a zsidók hitét általánosan jellemezze. A     zsidók nagy része továbbra   is             
+  hisz Istenben, ahogy azt a Tóra     tanítja.</span><br><br>ROCKWELL: A zsidók sokat   beszélnek    
+         Istenről.   De valójában az ő     istenük, ahogy Marx is mondta, a pénz.   Készpénz! Ez az, 
+  ahol a   zsidók         elbuknak, az       idealizmus hiánya. Többségük   meggyőződéses 
+materialista.   Bárhova is   mentek a     zsidók,         gyanútlan,   barátságos   vidékekre 
+költöztek, és azonnal   elkezdték   kizsákmányolni az       embereket és     az       erőforrásokat. 
+Azt hitték, üzlettel   foglalkoznak, de   valójában elevenen       emésztették fel     az     
+országot.   Aztán amikor az   emberek megelégelték a   gonoszságukat,       kapzsiságukat és     
+elzavarták, vagy     megölték   őket,   mindig azt kiabálták,   hogy őket         
+&#8222;üldözik&#8221;. De   ez nem üldöztetés. Ez         önvédelem.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Arra utal,         hogy Hitler   igazoltan     
+pusztított     el 6 000 000 európai zsidót?   </span><br style="font-weight: bold;"><br>ROCKWELL:    
+ Egy percig sem     hiszem, hogy a 6 000 000   zsidóból akár   egyet is Hitler   irtott       volna  
+   ki. Sosem történt meg.     Akarja, hogy   bebizonyítsam?   <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Tessék.   </span><br style="font-weight: bold;"><br>ROCKWELL:           Rendelkezésünkre     állnak a számok a   zsidók     létszámát 
+illetően 1939-ből, a második     világháború előtti       időből: 15     688 259;   valamint a     
+második világháborút követően élő     zsidók létszáma: 18 000 000. Ha   a         második     
+világháború   utáni számot vesszük és     hozzáadjuk az állítólag elgázosított hatmilliót,           
+    összesen 24   milliót kapunk     eredményül, ami azt jelentené, hogy ötven százalékos 
+népességnövekedés                 történt a     zsidók körében egy körülbelül ötéves időszak alatt. 
+A szexben mégoly jó   zsidók sem               tudnak     ilyen gyorsan sokasodni. Látja, így a 
+saját számadataik árulják el a   zsidók         hazugságait.       <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:         Megnevezné az   említett         
+statisztikák forrását? </span><br style="font-weight: bold;"><br>ROCKWELL: A háború   előtti   
+számok   az     1947-es Világalmanach   219. oldaláról, a         háborút követő időszak adatai 
+pedig   az 1948.   február   22-i     The New   York Times-beli     Hanson     Baldwin cikkből. 
+<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: A     népességre 
+vonatkozó adatokat   félretéve, tagadja   a         dokumentációs     fényképes bizonyítékok     
+érvényességét, melyek a   gázkamrákat és a koncentrációs     táborok           árkaiban, halmokban 
+álló     több ezer testet mutatják?   </span><br style="font-weight: bold;"><br>ROCKWELL: 
+Nyomatékosan     tagadom, hogy létezik bármilyen   érvényes   bizonyítéka     annak, hogy a         
+nácik módszeresen     gyilkolták a zsidókat. A fényképek,     amelyeket halott     zsidók képeként   
+mutattak     be,       tulajdonképpen német civilek holttestei     &#8211;     többnyire asszonyoké 
+és   gyermekeké valamint           menekülteké, akik a szövetségesek         egyéjszakás drezdai 
+bombázása alatt   haltak meg &#8211; itt     350   000     ártatlan embert         mészároltak le. 
+<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Ki         azonosította 
+ily módon e képeket? </span><br style="font-weight: bold;"><br>ROCKWELL: Matt Koehl, a         
+kutatási vezetőm, aki azt mondja, hogy az       úgynevezett náci       atrocitás-fényképek         
+háttérépületei drezdai épületek. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Nem ismerjük el hitelesnek a       kutatási vezetőjének       megállapításait.       
+  </span><br style="font-weight: bold;"><br>ROCKWELL:       Meggyőző bizonyítékaim vannak       arra 
+        nézve, hogy a &#8222;dokumentum&#8221; erejű fényképek       némelyike egész egyszerűen 
+tiszta               csalás. Egy zsidók által kiadott folyóiratban, mely   szerte     Amerikában 
+kapható,   mutatnak   egy     üveget,       melyben a németek által, feltehetően   szegény   halott, 
+    elgázosított   zsidókból   főzött   szappan       található. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Milyen       bizonyítéka van   arra, hogy állítja,  
+ ez   hamis?     </span><br style="font-weight: bold;"><br>ROCKWELL: A         józanész. Az a 
+szappan   bármiből       készülhetett,     akár egy tucat olvasztott Lifebuoy szappanból.   De   itt 
+    van a   végső érvem,     hogy   igazából     mennyire nevetséges az egész náciellenes   irodalom 
+melyet       olvasott:   egy,   1958       márciusában, a   Sir magazinban megjelent cikk, mely   
+azt taglalja,   hogyan       gázosítottak el,         égettek meg és   gyilkoltak meg mindenkit a 
+nácik.   Egy   &#8222;volt SS       tizedes&#8221;   elbeszélése       alapján, a   magát &#8222;Lew 
+    Cor&#8221;-ként jegyző amerikai   hadsereg       alhadnagyának. Nos,     &#8222;Lew     
+Cor&#8221;     egyszerűen Rockwell visszafele   olvasva. Én írtam   &#8211;     tesztként. Az     
+eszembe   jutó,       lehető elrugaszkodottabb   hazugságokat írtam le! És   tessék: mind itt     
+vannak     kinyomtatva       ebben a   folyóiratban.   Nézze a fényképeket!   Állítólag mind a 
+cikkben szereplő       náci       áldozatok   fényképei     &#8211; áldozatok, akiket   én találtam 
+ki! <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   Parancsnok, az Ön 
+- náci kegyetlenkedéseket   illető           -     hazudozási   hajlama nem bizonyítja   azt, hogy a 
+zsidók ugyanezt tették   volna. A több száz               börtöntábort túlélő   szemtanú   náci 
+atrocitásokat igazoló   vallomását is elutasítja?</span>               <br><br>ROCKWELL: Eskü alatt  
+   tett írásbeli   okiratom van egy zsidó orvostól, egy     Auschwitz-i           rabtól, aki azt 
+mondja,   hogy ott   nem   voltak gázkamrák. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   Az Ön   birtokában van ez az     okirat? </span><br style="font-weight: bold;"><br>ROCKWELL:   Elküldöm a   fénymásolatát. Úgy hiszem,     a gázkamrákat 
+a           második   világháború után   építették zsidó katonatisztek.   Azt biztosan     tudjuk, 
+hogy többnyire     zsidó           katonatisztek szabadították fel a táborokat. Ezek közül       
+többen kémelhárításnak dolgozó         zsidó       katonatisztek voltak, akiket a nürnbergi perrel   
+  bíztak meg. Ők   kínoztak meg   ártatlan       nácikat a       lehető legaljasabb módszereket   
+használva,   hogy bárminemű koholt       bizonyítékokra     tegyenek       szert.<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:     Bizonyítani tudja       e   
+vádakat? </span><br style="font-weight: bold;"><br>ROCKWELL: Sok   olyan     esetről van     
+tudomásom,     amikor az     amerikai személyzet   visszavonult a használt módszerek         
+gusztustalansága   miatt. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   Ez nem   bizonyítja azt, hogy         kínzást   használtak volna hamis 
+tanúvallomás       elérésére. Különben még nem     mondta el,   hogy         elutasítja-e a 
+szemtanúk náci   atrocitásokról     szóló vallomásait. </span><br style="font-weight: bold;"><br>ROCKWELL:   Természetesen elutasítom. Már     számlálni sem tudom,     hányszor     
+jártam   bíróságon     miután   zsidó bandák rámtámadtak és   megvertek,   azért, hogy     azután 
+ugyanezek a     zsidók   ott   álljanak   a   tanúk padján, azt mesélve   könnyekkel az       
+arcukon, hogy én hogyan   támadtam     meg őket. A   zsidók a     világ mesterfokozatú   hazudozói!  
+   Ebben   zseniálisak. Miért   van az,   hogy ha   egy zsidrák ül a   tanúk     padján, akkor   még 
+    hagymára sincs   szüksége a   síráshoz?   <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   Azt   beszélik, van   egy modell   gázkamrája a   
+főhadiszállásán.   Igaz       ez?   </span><br style="font-weight: bold;"><br>ROCKWELL:   Nem, de   
+van egy villamosszékünk   a Sing           Sing-ben,   mely már nagy   szolgálatot tett nekünk a     
+Rosenbergek kivégzésében. Több   százezer     hasonló         Rosenberg   szaladgál Amerikaszerte,   
+akiknek   sütögetésre, vagy   elgázosításra lenne     szükségük.       <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: A     &#8222;több       Rosenberg&#8221;     alatt  
+ több zsidót vagy több   kommunista   kémet ért?     </span><br style="font-weight: bold;"><br>ROCKWELL: Több kommunista zsidót.     Gyakorlatilag egy és       ugyanaz a   két   dolog. 
+  <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Azt akarja     
+mondani,   hogy sok     zsidó kommunista, vagy azt,     hogy sok       kommunista zsidó? </span><br style="font-weight: bold;"><br>ROCKWELL: A &#8222;kommunista           zsidó&#8221; kifejezést   
+pontosan     ugyanúgy használom, mintha     azt mondanám &#8220;olasz           gengszter&#8221;. A  
+ legtöbb olasz nem     gengszter, de mindenki tudja, hogy   a   maffia javarészt           olasz.   
+Nos, az én tapasztalatom, hogy a     kommunizmus legalább annyira zsidó,   mint         amennyire    
+ a   maffia olasz. Tény, hogy szinte az   összes   elítélt kommunista kém ateista zsidó         volt 
+  a       Rosenbergekhez hasonlóan. A nemzetközi   kommunizmust   egy Karl Marx nevű zsidó         
+találta ki, és       azóta is   javarészt zsidók vezetik a   mozgalmat, például   Trockij. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Sztálin,   Hruszcsov,         
+Brezsnyev, Kosigin és Mao       Ce-tung többek   között,   biztosan nem voltak   zsidók.</span><br style="font-weight: bold;"><br>ROCKWELL: A zsidók   manapság   többnyire a vörösök   kémei és        
+ agitátoraiként működnek.       Vigyázzon, nem azt akarom mondani,     hogy nincsenek nagyszámban    
+       zsidók, akik megvetik a       kommunizmust. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: De mégis       állítja, hogy többszázezer kommunista     zsidó   
+      van Amerikában? </span><br style="font-weight: bold;"><br>ROCKWELL: Talán ennél is több.       
+  <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Milyen bizonyítéka 
+van         a     számadat   alátámasztására?     </span><br style="font-weight: bold;"><br>ROCKWELL:     Egyszerű         statisztika. 14 fő   az Egyesült     Államok   bíróságain 
+elítélt 16 főből zsidó     fajú volt, egy       további   pedig nigger. A   Medina bíró     
+törvényszékén   elítélt 21     kommunista vezetőből 19 zsidó       fajú volt.&nbsp;   Az   
+úgynevezett     &#8222;másodhegedűs       politbüro-hoz&#8221; tartozó   vezetők     több mint 90%-a 
+zsidó volt.     <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Az 
+elítélt zsidó kémek             összlétszáma 33. Ez még   nagyon   messze van a     többszázezertől. 
+</span><br style="font-weight: bold;"><br>ROCKWELL: Van még     további fekete-fehér     bizonyíték 
+is. A zsidók még saját       kiadványaikban       sem tagadják a   kommunizmus   zsidóságát.   Ezt   
+bárki megtekintheti.     Például, a   legnagyobb     példányszámú     kommunista újság   Amerikában  
+ nem a   The Worker,     hanem egy jiddis   lap, a The Morning       Freiheit. Bármely   amerikai    
+ hozzájuthat e lap       példányaihoz, és az angol   részekben   elolvashatja a     nyílt kommunista 
+    hazaárulást,       melyről   prédikálnak.&nbsp; <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   Parancsnok, a The Morning     Freiheit nézeteiről       
+természetesen nem mondható     el, hogy az       amerikai zsidók többségének     nézeteit tükröznék. 
+  Tudna-e     egy kimondott     példát adni, az amerikai       zsidók bármely     szóvivőjétől 
+elhangzott   pro-marxista         nyilatkozatra? </span><br style="font-weight: bold;"><br>ROCKWELL: 
+Csak egyet?   Könnyű lesz.     Vegyünk     egy nyilatkozatot,   melyet Stephen Wise     rabbi     
+adott. Ő az amerikai   zsidóság     egyik vezető     szóvivője. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: 1949-ben     meghalt.   </span><br style="font-weight: bold;"><br>ROCKWELL: Nos,       halála előtt azt írta:     &#8222;Néhányan       
+kommunizmusnak nevezik, én pedig           judaizmusnak&#8221;. Ez egy közvetlen idézet.     Azt   
+mondanám,     ez elég egyértelmű, nem?     <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Tudja-e igazolni ezen           állítását? </span><br style="font-weight: bold;"><br>ROCKWELL: Természetesen. Elküldöm majd           
+Önöknek.<br>&nbsp;<br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   Van-e   
+      bármilyen kézzelfogható bizonyítéka a   vád         megalapozására? </span><br style="font-weight: bold;"><br>ROCKWELL: Statisztikai mintát     elfogad       bizonyítékként?     
+<br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Hadd       halljuk.     
+</span><br style="font-weight: bold;"><br>ROCKWELL: Az általam     ismert zsidók nagy   hányada,     
+    legalább 50, de akár 85 vagy 90       százalékuk is vöröspárti     &#8211; akár párttagsággal    
+   rendelkező     kommunista vagy   szimpatizáns, a     kommunizmust   nyíltan   és szánt szándékkal 
+    segítő,   arra felbujtó   -   a   jelenlegi kormányzat kommunisták       általi   megbuktatását  
+   támogatják.   Segédkeznek a kommunista       ellenségeinknek, amerikaiak         
+meggyilkolásában,     vagy tudatosan   tüntetik el azon jogi       bizonyítékokat, melyek a 
+hazaárulók         bűnösségét     igazolnák. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:           Következtetéseit az Ön   által személyesen   ismert    
+ zsidók politikai   szimpátiájáról aligha       fogadhatjuk     el állításainak     bizonyítékaként, 
+  parancsnok.   Vegyük   csak például a       &#8222;többszázezer&#8221;     zsidót, akik     Ön 
+szerint   vöröspártiak.     Mindenesetre azt     mondja,   hogy &#8222;meg kellene sütni vagy        
+ gázosítani   kellene&#8221;   őket.   Milyen     alapon?   </span><br><br>ROCKWELL: Árulás. 
+Mindenkit -     nemcsak     a   zsidókat -   akinél       kommunizmus   pártolás, hazaáruló 
+cionizmus gyanúja merül fel   vagy   bármi más         bomlasztó     támadás   országunk   és népünk 
+ellen, azt ki kell hallgatni, le   kell   tartóztatni és a             bizonyítékokat a   bíróság   
+elé kell tárni. Ha vád emelhető ellenük,   bíróság   elé kell       állítani őket,   ha     pedig   
+bűnösnek   találtatnak, meg kell őket ölni.   <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Hogyan?           </span><br><br>ROCKWELL: Nos, ne feledje, hogy 
+több         százezer zsidó   árulót kell majd           kivégezni. Nem látom, hogyan tudna ennyi 
+embert elektromos székbe           ültetni, mielőtt még           megöregszenek és meghalnak, ezért 
+számomra úgy tűnik, hogy a tömeges     gázkamrák         lesznek   az       amerikai kommunista 
+árulók problémájának egyedüli megoldása.&nbsp;     <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Az Ön gázkamrás     javaslata,       mint           
+&#8222;megoldás a kommunista áruló problémára&#8221; emlékeztet a nácik   által         
+Németországban           intézményesített &#8222;zsidókérdés végső megoldására&#8221;. Újabb         
+antiszemita   keresztes     hadjáratot       tervez a Hitler által lefektetett irányelvek mentén?    
+     </span><br style="font-weight: bold;"><br>ROCKWELL: A keresztes hadjárat, amit én tervezek   
+sokkal       nagyobb     horderejű, mint az         előbbi. Németországban, Hitler egy helyi         
+&#8222;laborkísérletet&#8221;     végzett mely ideológiát         szolgáltat nekem, éppúgy ahogyan   
+      Marx tette azt Leninnek. Az én     feladatom, hogy ezt az   ideológiát       világmozgalommá   
+  tegyem.     Ezt sosem fogom elérni pusztán a     tiszta árja elmélet   hirdetésével, ahogyan       
+    Hitler   tette;   az észak-germán népek   felsőbbrendű   fajjá dicsőítésével.   Bár van egy 
+nagyon     könnyen           azonosítható felsőbbrendű   faj: a fehér faj.   Világszerte   
+megtalálható. Ezért     harcolok, a   fehér         keresztény   szolidaritásért, nem pedig az   
+árja   eszméért.     Hosszútávon pedig   győzedelmeskedni   szeretnék         Görögország, 
+Németország,     Olaszország,     Anglia, Kanada,   Franciaország,   Spanyolország, Latin       
+Amerika,   Rodézia, Dél-Afrika     és     a Föld összes   fehér keresztény   országának népei 
+felett.       Megpróbálnám   összeolvasztani a         világ összes   fehér, keresztény   országát 
+egy faji, vallási és       politikai alapú     katonai   egységbe.       Szeretném, ha esetleg ez a  
+ szerveződés hatalmi fölényre   tenne       szert. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: A nem   fehér,   nem         keresztény     népek felett?   
+</span><br style="font-weight: bold;"><br>ROCKWELL: Az     afro-ázsiai     tömb       felett, mely   
+számomra   az   alapvető veszélyt testesíti meg a bolygónk     számára.     Rosszabb, mint egy       
+bomba! Ezek az       emberek valami olyasmivel rendelkeznek,   amit   mind a     kommunizmus, mind 
+pedig a       demokrácia     elvesztett.   Fanatikusak! Tele   vannak ezzel a   vad     tekintetű 
+hittel és életerővel,   amit a       fehér   ember fokozatosan     elvesztett. Ha valaha       is 
+összefognak, majdnem egy milliárd   áll majd       szemben   a fehér   emberrel &#8211;   hét az     
+  egyhez arányban. Oly gyorsan szaporodnak,   hogy az   esélyek         nemsokára tíz vagy akár   
+tizenöt     az   egyhez lesz. Amikor ez a milliárd   színesbőrű     rendelkezni fog       majd az   
+atom- vagy     hidrogénbombával,   amit a Vörös Kína hamarosan   el   is ér,   eltörölhetünk majd a  
+       föld     színéről néhány százmilliót belőlük,   de még mindig     rengeteg   lenne az 
+utánpótlás. A   fehér   faj         nem tudna sokáig ellenállni ennek az   erőnek.       
+Eltörölnének! A félig-állat   színesbőrűek       hatalmas     tömegei végigsöpörnének   rajtunk, és 
+mi     semmit sem   tehetnénk ez   ellen.&nbsp; Ez,   a     mennyiség végső     győzelme   lenne a 
+minőség felett,     hacsak a fehér     emberek hamarabb   össze   nem   fognak. Hatalmas     bajban  
+ leszünk, ha ők egyesülnek     előbb. De   vésse az   eszébe:   lesz   majd egy     armaggedoni 
+csata, és   ez nem a   kommunizmus és       demokrácia ütközete lesz,   hanem   a     színesbőrű   
+milliók és a kis létszámú,   de elit   fehér       csapatok között dől majd   el.     Ideológiai,   
+gazdasági és   filozófiai nézetek   egyáltalán nem   vagy       csak nagyon     kismértékben   
+játszanak majd   szerepet.   Amikor elérkezik majd az   idő,   ami távolabb     van,       mint   
+gondolnánk, tervezem, hogy készen   állok   majd &#8211; nemcsak   saját   magam         megvédésére 
+  &#8211;   hanem a fehérek millióinak vezetésére,     azokéra, akik   ma esztelenül           
+állítják,   hogy nem tudják, mi   történik. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY: Országos   létszámára vonatkozó becslések szerint     25   és   
+100         közötti tagja   van. Ezzel a maroknyi követővel   tervezi a fehér keresztény   nemzetek  
+           irányítását?     </span><br style="font-weight: bold;"><br>ROCKWELL: Elsősorban,   mi egy 
+    világmozgalom         vagyunk   éppen   úgy, mint ahogy a kommunizmus   is egy   világmozgalom, 
+nem     pedig egy helyi vagy       nemzeti       szerveződés. Beindítottuk a     nemzetiszocialisták 
+    világegyesületét, melynek én vagyok   a       parancsnoka.     Másodsorban, az   Ön   számadatai 
+    hibásak. Csak ebben az országban 500         rohamosztagosunk &#8211; ezek       utcai harcra 
+kész       férfiak &#8211; valamint 1500 párttagunk van.         Továbbá van még   körülbelül 1500   
+    levelezőnk   &#8211;   emberek, akik ügyünkkel   szimpatizálnak,       írnak   nekünk és 
+adakoznak.   A külföldi       taglétszámunk pedig   ezrekben   mérhető. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:   Külföldön   hol?         </span><br><br>ROCKWELL: 
+Hadd   nevezzek   meg egy   pár országot Önnek:   Argentína. Ott     Horst         Eichmann, Adolf 
+Eichmann   fia a   vezetőnk. Jelenleg vagy   börtönben van, vagy   eltűnt,   de a           mozgalom 
+növekszik   ott.   Ausztráliában a mozgalmunk jelenleg   tönkrement, de az ottani       vezetőm      
+   &#8211;   egy   amerikai &#8211; titokban szervezkedik, hogy újra   összerakja a     csoportját.  
+             Spanyolországban egy nagyon jó kis földalatti szervezetünk van, de       Franco-nak ez 
+nem nagyon           tetszik,     ezért titokban kell maradnunk. Angliában Colin Jordan     nyíltan  
+ tevékenykedik,   és         nagyon jól végzi     dolgát. Franciaországban egy átkozottul jó     
+csoportunk van,     nemrégiben         tartóztatták le őket.     Belgiumban van egy megbízott, ex-SS 
+    ejtőernyősöm; ő   nagyon jól     végzi       dolgát. Svédországban óriási     csoportunk van, 
+éppen   most     tartoztatták le   mindnyájukat. Az         emberünk Ausztriából börtönben van, így  
+   az   ottani     dolgok eléggé   megszakadtak. Kanadában pedig         John Beattie vezeti a 
+hatalmas és   sikeres         mozgalmat. A   chilei vezetőnket bebörtönözték,         Németországban 
+illegalitásba   vonultunk,   az   ottani       vezetőnk hamarosan börtönbe vonul.         
+Hollandiában, rendben mennek   a   dolgok.   Írországban   felgyorsultak     az események. 
+Olaszországban         egy igazán     nagyszerű mozgalmunk   van.   Japánban egyik emberünk leszúrta 
+  a   szocialista   képviselőt.           Emlékszik erre?   Új-Zéland   szépen gyarapszik. De 
+Norvégiában nem mennek   túl   jól   a dolgok.     Egy       nagyon jó   kis   csapatunk van 
+Dél-Afrikában és mostanra Rodéziában is ott     vagyunk.       Ahogy   látja,         világszerte 
+vannak csoportjaink. Még kicsik, de végül is csak 20 év     telt el     Hitler     halála     óta.   
+  Krisztus keresztre feszítése után 20 évvel alig voltak       keresztények. Jelenleg a           
+horogkereszt     követői katakombákban vannak, pont úgy, mint a       kereszt követői egykoron.      
+ Mondhatnám,     hogy egy     keresztény mozgalom vagyunk   hétköznapi     értelemben, valójában én  
+     személyesen pedig egy         szabadgondolkodó. De   mélyen bent   hiszem,   hogy létezik egy 
+nálunknál       nagyobb erő, amely segít minket           abban, hogy a   világot   megtartsuk 
+természetesnek és     fajilag   tisztának a perverz és   elkorcsosult           ellenében. Van   egy 
+ideológiánk,     elkötelezettségünk és   vitalitásunk   hogy szembeszállhassunk   az         
+afro-ázsiai   tömb vakbuzgó     fanatizmusával. Ezért   tudunk   majd gyarapodni és   feltehetően 
+ezért   fogunk         majd     győzedelmeskedni. <br><br style="font-weight: bold;"><span style="font-weight: bold;">PLAYBOY:           Elmesélné, pontosan   hogyan   tervezi   sorsát 
+beteljesíteni akár isteni segítséggel,     akár       anélkül?       </span><br style="font-weight: bold;"><br>ROCKWELL: Van egy négy fázisból álló           tervem. Az   első       fázis,   hogy 
+megszólítsam a tömeget. Semmit sem tehetsz addig, amíg nem éred el       a         tömeget. Ahhoz,   
+    hogy eljuss hozzájuk pénz, státusz és nyilvánosság nélkül, drámai       hőssé     kell     
+válnod. Hogy ezt       elérjem, egy csomó szemetet le kellett nyeljek: azt, hogy         bolondnak   
+és     szörnyetegnek vagy   valami     hasonlónak tartsanak. De a horogkeresztet   feltéve       
+elérem a   tömegeket.     A második   fázisban     kiábrándítom őket a hamis képből,   amit rólam    
+   alkottak,   megtanítom nekik az     igazi   programomat. A     harmadik fázisban az   általam   
+nevelt     embereket   politikai entitássá     szervezem.   Végezetül a negyedik       fázisban az   
+entitást     fegyverként   használom majd a politikai     hatalom   elérésére. Ez a   terv. A 
+fázisok,           természetesen egymásra   csúsznak. Jelenleg körülbelül 50       százalék   a 
+második fázisban   vesz     részt,     tulajdonképpen   elkezdtük nevelni az embereket, ehhez        
+ hasonló   interjúkban,     főiskolai beszédek vagy     hasonló   események alkalmával. A másik 50   
+százalék         még az első     fázisban van &#8211; balhézunk is       állandóan, hogy   
+tudatosíthassuk az   emberekben,       hogy     létezik egy Amerikai Náci Párt. Egyáltalán   nem     
+  érdekel, mit   mondanak rólunk, mindaddig,   míg         beszédtéma vagyunk. <br><br><div style="text-align: center;"><a target="_blank"href="//bombagyar.hu/showpost.php?post=1446"><span style="text-decoration: underline; font-weight: bold; color: black;">Az interjú második része ide 
+kattintva olvasható.</span></a><br></div><br><div style="text-align: center;">*<br></div><br>Eddig 
+tartott a         Playboy   magazin George Lincoln     Rockwellel   készített     interjújának első 
+része. A második         részét jövő   hét vasárnap   rakom     fel.<br><br>A fordítást <span style="font-weight: bold;">cacodaemon, Gróf   Krisztián,   FireFox, Papp     István,</span> és <span style="font-weight: bold;">Dörgő </span>végezték,     akiknek ezúton is     köszönöm munkájukat. Az  
+   ellenőrzést és         javítást pedig én     végeztem.<br><br></div>               </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-10-05&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1412&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1412&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1412&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1412&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1412&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1412&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1412&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1412&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1412&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1412&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1412&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1412&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1412&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1412&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1412&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1412&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1412&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1412&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1412&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1412&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1412&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1412&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1412&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1412&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1412&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment114583"></A>234. Mithrandir</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-31 17:47:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1018.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A Playboy pont nagyszerű interjúiról híres, részben ezek miatt sikerült oly sikeres lappá válnia. Jó volt, működött az a megközelítés, hogy a nők mellett más, a férfiakat érdeklő témákat (például a politikát) is bemutatnak. Gyakorlatilag minden fontosabb politikus, gazdasági szakember, megmondóember nyilatkozott már a Playboynak. Ezért itt jelent meg ez is.<br />
+<br />
+Ettől függetlenül teljesen egyetértek azzal, hogy amit ez a szellemileg gyenge senkiházi amerikai itt összehord, az pont arra jó, hogy a liberálisok jajveszékelhessenek tőle. Inkonzisztens, ráadásul nem érteni, hogy mit miért mond. Szerintem nagy hiba volt ennek az interjúnak a leközlése. Inkább lett volna egy bejegyzés valamelyik Hitler-beszédről, esetleg valamely korabeli német munka újrapublikálása magyarul. Az egyik 1943-as Signal vezető anyaga az USA trollproblémájával foglalkozott, ha van rá igény, akkor azt be tudom vinni a gépbe (sajnos csak németül van meg, de lehet, hogy meg tudom szerezni a korabeli magyar fordítást is - ugyanis ez a magyar kiadásban is megjelent).</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment111200"></A><FONT COLOR="#FF0000">233. </FONT>Főnix</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1412&id=107088#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-23 01:41:38</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment107132"></A>232. soyer</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1412&id=107088#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-14 17:03:35</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5495.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">elgombázó: Kíváncsi lennék mi alapján állapítottad meg Rockwellről hogy "nagy valószínűséggel súlyosan elmebeteg". Talán azért mert volt egy ember az USA-ban aki fel mert lépni a médiát ellenőrző,iszonyatos pénzügyi hatalommal rendelkező a politikát a háttérből irányító cionista hatalommal szemben, hogy megvédje a hagyományos amerikai értékeket és a rendet? Vagy mert akadt egy amerikai hazafi aki látta hogy hazáját a háború után egy  idegen nép szállta meg és kontrollálja,aki az ő fajtájának ifjúságát elzülleszti,erkölcstelenségre,kábítószerezésre,homoszexualitásra,fajkeveredésre és egyéb devianciákra buzdítja és ezáltal pusztítja a média és egyéb politikai befolyása által vagy hogy az államalapító fehér népét hogy fosztják meg jogaitól, a közbiztonságot hogy építik le, és még sorolhatnám és akadt egy önzetlen hős aki fel mert lépni ez ellen úgygy hogy tudta hogy ezzel tönkreteszik eddigi életét  a hatalmaskodók. Ilyen egy elmebeteg ember?                                                                     </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment107088"></A>231. elgombázó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-14 13:59:13</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5866.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Már az interjú első fele is heves indulatokat váltott ki, minek következtében az érdemi vita sokszor primitív mocskolódásba csapott át. Ezért ennél a bejegyzésnél a kommentálást letiltottam."<br />
+<br />
+Brávó, feltaláltad a gondolatrendőrséget! Hiába, mindig újra és újra föltalálja valaki. Most akkor ki a jobb, mindkettő ugyanazt az ordas agressziót műveli, csak az egyiket utáljuk, mert babó, mert kommunista, mert ork? A másik meg mi vagyunk, nekünk lehet. Nem vitatkozunk az ellenféllel, nem győzzük meg, betiltjuk. Jobb időkben le is lőjük!<br />
+<br />
+Amúgy ez a Playboy cikk (miért is épp ott jelent meg?) nem más, mint egy nagy valószínűséggel súlyosan elmebeteg, égy védelemre méltó ember - G L Rockwell- nyilvános meggyalázása. Még akkor is, ha maga lép ki a nyilvánosság elé. Ez másra nem jó, mint szélsőséges eszközökkel diszkreditálni minden olyan véleményt, mozgalmat, amely a cikkekben foglalt témákban megnyilatkozik. Ilyen csapdába besétálni.... :(<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment106908"></A>230. Ellensúly</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1412&id=106803#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-13 22:48:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2201.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Akkor megnyugodtam. (De persze így is bosszantó, hogy pár írásom oda...)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment106812"></A>229. Bérgyilkos</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-13 18:02:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B><a href="//web.archive.org/web/20050306080509re_/www.rebrebel.com/artists/rockwellplayboyinterview.html" target="_new" style="color: #000000;">http://web.archive.org/web/20050306080509re_/www.rebrebel.com/artists/rockwellplayboyinterview.html</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment106803"></A>228. Főnix</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1412&id=106733#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-13 16:24:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2246.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Rendszerhiba. Ha cenzúrázták volna, azt látnám. Törölni nem szoktunk.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment106733"></A>227. Ellensúly</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-13 08:49:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2201.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Húha, eltűnt pár kommentárom. Rendszerhiba, vagy valami más áll a háttérben?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment106725"></A><FONT COLOR="#FF0000">226. </FONT>vasskereszt</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-13 06:38:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment106712"></A>225. Mate12345</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1412&id=104430#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-12 23:53:38</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_278.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bocs, hogy ilyen régi kommentre válaszolok, de az ilyenek mellett nem tudok elmenni szó nélkül.<br />
+<br />
+"Az atombomba feltalálását Einstein nevéhez kötik. Az ő származása azt hiszem köztudott."<br />
+<br />
+Nem, nem és nem. Einstein NEM találta fel az atombombát. (Mint ahogyan az energiamegmaradás törvényéről sem ő tehet, mint ahogy azzal már valaki vádolta itt.)<br />
+Einstein az anyag-energia ekvivalenciát fedezte fel. Rájött, hogy a tömeg az energia egy formája. (És még sok mindenre.) A hires E=mc^2 képlete, ahol az E az energia, az m a tömeg, a c^2 pedig a fénysebesség, csak annyit mond, hogy 1 kg tetszőleges anyag 9*10^16 jule-lá alakitható. (A jule az energia mértékegysége.)<br />
+<br />
+Ennek a nukleáris fegyverekhez annyi köze van, hogy az atommaghasadás esetén a kiinduló tömeg és a végtömeg különbségéből lehet kiszámolni a felszabaduló energiát.<br />
+<br />
+Az atombomba ötlete egyébként Szilárd Leó magyar származású fizikus nevéhez fűződik. És annyi magyar vett részt a kutatásokban, hogy a következő vicc maradt fenn:<br />
+<br />
+Folyik a titkos atomkonferencia. A magasrangú parancsnokokból és tisztviselőkből álló csoport érdeklődve hallgatja a tudósok vitáit. A konferencia még javában folyik, amikor a csoportnak mennie kell. Miután elhagyták a termet, az egyik tudós megszólal:<br />
+-A parancsnokurak elmentek végre. Mi lenne, ha a konferencia további részét már magyarul tartanánk?<br />
+<br />
+Mellékesen az atombombát az idealista tudósok csak azért akarták kifejleszteni, hogy ezzel elvegyék Hitler kedvét. Arra nem gondoltak, hogy a kormány lesz olyan hülye és beveti.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1412&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1412&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1412&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1412&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1412&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1412&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1412&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1412&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1412&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1412&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1412&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1412&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1412&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1412&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1412&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1412&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1412&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1412&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=1412&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=1412&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=1412&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=1412&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=1412&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=1412&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=1412&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

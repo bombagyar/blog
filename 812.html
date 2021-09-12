@@ -1,0 +1,439 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=812#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Goldstein néni védelmében";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Goldstein néni védelmében<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 április 8. 08:26:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_812.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">A fűszeres Goldstein néni   
+mitsem tud a világban pattanásig feszülő húrról: ő csak azt tudja, hogy félnie kell a   
+bakancsosoktól, mert azok vitték el a családtagjait, akiket talán soha többé nem látott. Szándékosan 
+  szítják benne a parazsat, szándékosan hevítik föl benne a félelmet a médiában harsogó 
+hívószavakkal,   mert a félelemben élő ember könnyen irányítható, könnyen kihasználható. Az igazság 
+az, hogy a   holokausztnak nevezett történelmi folyamat során éppen az ilyen szegény Goldstein 
+néniket vitte el a   zsidó nagytőke (a 300-ak tanácsából Sir Henry     Deterding és a Samuel család) 
+által is támogatott   náci párt, majd halt meg tífuszban vagy a cigány kápók kegyetlenségei miatt. 
+Goldstein néni emlékét   mindannyian tiszteljük, a halálát szörnyűnek tartjuk, bűntelenségét 
+elismerjük. Őt éppenséggel azok   gyalázzák úton-útfélen, akik hamis indokokkal, jogtalanul 
+kárpótlásokat követelnek, kihasználnak egy   szerencsétlen és jelenleg fölnagyított történelmi 
+eseményt. Saját halottaikon táncolnak és   nyerészkednek, méghozzá úgy, hogy semmiféle Goldstein 
+néni vagy az ő családja nem tud az egészről   semmit sem.<br><br>Amikor a nyilasok nevében zsidó 
+tisztek fajtársaikat lőtték a Dunába, pontosan   tudták, hogy mit tesznek. Égő gyűlöletük sajátjaik 
+iránt már a bibliai korból eredeztethető. <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=449">Jack   Bernstein</a> eleinte cionista zsidó sem 
+gondolta volna, hogy Izraelben egy rendőr azt kiáltja,   miközben veri őt: bárcsak Hitler többet 
+irtott volna ki belőletek. A szintén zsidó származású dr.   Norman Finkelstein hiába 
+holokauszttúlélők gyermeke, mégis megírta az általa holokausztiparnak   nevezett kárpótlási pénzekre 
+épülő üzletágról szóló eretnek könyvét Paul Rassinier soátúlélő is vett   már részt 
+holokausztrevizionista konferencián. Ezek az emberek és még sokan mások, köztük rabbik és   még több 
+túlélő érzi úgy, hogy tisztességtelenség folyik a világ Goldstein nénijeivel   szemben. 
+Fajelméletünk nem nekünk van, hanem azoknak, akik az országukba csak származási igazolvánnyal 
+engednek letelepedni valakit.<br><br>Akiket begyűjtöttek, általában éppen azok voltak, akik semmit 
+sem tudtak a judaizmus   valódi arcáról, sokan közülük hazafiak, békés és hasznos állampolgárok 
+voltak, sokan még <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=605">az <img src="./resources/pictures/blogin_sskicsi.gif" style="border: 0px solid rgb(0, 0, 0);" border="0">-ben  
+ is szolgáltak</a>. Nem voltak részei a hevrosznak, annak a kilencven százaléknak, amely általában 
+az   askenáziakat jelenti. Nem gondolták, hogy felsőbbrendűek lennének, nem hitték, hogy őket bárki  
+ feláldozná a saját javáért: hogy a zsidó vallás álcájában pénzérdekek mozgassák. Az ultraortodox   
+zsidók a mai napig ellenzik Izrael létét: a Talmud elmondja, hogy csak akkor alakulhat meg a zsidó   
+állam, ha megérkezett az ő messiásuk. Akik a pénzt adták, a tőkével machináltak, nem kerültek a kis  
+ házakba, ahonnan kirángatták az öreg Goldsteinéket, hiszen egy bársonyszékben, a röhögéstől vadul   
+rángatozó zsíros tokával számolgatták az összegyűlt hasznot.<br><br>Hazudik és ezen valódi gyilkosok 
+  cinkosa az, aki azt az egyébként irracionális és ostoba állítást fogalmazza meg, hogy mi   
+mindösszesen azért neheztelnénk bárkire, mert ennek vagy annak születtek a szülei. A cigányokkal sem 
+  az a probléma, hogy sötétebb a bőrük, csak éppen ez különbözteti meg őket másoktól. A gyermekben 
+még   nincsenek faji kérdések: az óvodában a kaukázusi leül az afróval, együtt játszanak. A későbbi 
+zavart   kapcsolat táplálkozik valamiből, és az sem véletlen, hogy minél inkább keverik a rasszokat, 
+annál   parányibb a vakbuzgó emberbarátok csoportja. Kulturális ellentéteink, társadalmi 
+megszokásaink   különbözőek, azokat közelíteni lehet, de megalázni az embert hitében és 
+elvrendszerében nem: pedig   lassan sorvasztják mindazt, ami fontos, amiben régen hittünk, már alig 
+emlékezünk rá. Hiába élünk   már itt régóta, nem léteznek már a saját szabályaink, csak valami 
+központi, mindenütt egyenlőnek   hazudott szabályrendszert kényszerítenek ránk, amelyben emberi 
+alkatunkból és történelmünkből   kifolyóan is kényelmetlenül érezzük magunkat. Arról senki nem 
+beszél, hogy ki találta ki ezt a   rendszert, mit eredményez. Nincsen valódi válasz a legelemibb, 
+legtisztább kérdésre: miért? Hiába a   legegyszerűbb, a legerősebb kérdés is ez. Ettől lehet félni a 
+leginkább, mert igazából éppen erre   nem lehet és nem szabad válaszolniuk.<br><br> </div> 
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-04-08&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=812&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=812&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=812&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=812&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=812&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=812&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=812&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=812&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=812&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=812&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment46712"></A>82. Ungi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-10 09:56:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Köszönöm a teljes körű választ a szóval kapcsolatban.<br />
+Egy kétséges ponttal kevesebb lett.<br />
+<br />
+A jóslatban a konkrétumok az érdekesek, az ország kettészakadása, és a polgárháború, bár olyan mértékű pusztulást, mint amiről ott szó van, nem tudok elképzelni világháború nélkül.<br />
+A több nemzet részvétele a jóslatban benne is van.<br />
+A Bibliában is benne van a világvége &#8211; ezzel ér véget az Újszövetségi történet (az addigi kereszténységnek vége lesz, nagy társadalmi katasztrófa keretében), a Cion bölcsei is nagy háborút említ a világgyarmat programjával szembeni ellenállás esetén&#8230; Megvannak a sokak által követett forgatókönyvek, és az azok által kijelölt pályák. Irány a katasztrófa. Ehhez értenek a babók, és a követőik.<br />
+A Távol-Keleten még viszonylag normális a helyzet, mert ott nem ilyenek a vallási és ideológiai forgatókönyvek.<br />
+<br />
+A jóslatnál maradva, Magyarországon a nemzet kettéválása lélekben már megtörtént. A barikád két oldalán az országot megtartani akarók, és az országot kiárusítók vannak, és ez nem mesterségesen gerjesztett dolog, mint pl. a Gyurcsány - Orbán konfliktus, hanem össze nem egyeztethető két világnézet van mögötte, a gyarmatosítók, és a gyarmati sorban élők esete, mint pl. Anglia kontra India, Franciaország kontra Algéria, és a többiek.<br />
+Jelen esetben belső gyarmatosításról van szó, amikor a gyarmatosítók látszólag beilleszkedtek az országba, magyar állampolgárságúak, tudnak magyarul, és magyar nevük is van, viszont más a világnézetük és az identitásuk. Az történt, hogy a gyarmatosítók alaposabban beépültek (integrálódtak) az országba, mint ahogy az angolok és a franciák tették, és sokkal kevésbé látszanak, viszont ott van a szándék, és úgy néz ki, hogy az erősebb, mint az angoloké és franciáké volt &#8211; illetve a franciáknál még mindig megvan, de az már nem annyira kizsákmányolás, hanem inkább rossz keveredés; kaptok pénzt és munkát, viszont mi irányítunk, és ha úgy döntünk, akkor atomrobbantást hajtunk végre valamelyik csendes-óceáni szigeten&#8230;<br />
+A babó világgyarmat programja a beépülésen alapul, az irányító hatalom megszerzésén, ami után következik az élősködés, és a fosztogatás. Beépül a parazita a testbe, élősködik, és pusztít. Ehhez persze fontos, hogy a testnek minél kisebb legyen az önvédelme, és Magyarország ilyen, ahol a rendőrség és a bíróság igencsak lightverziós a bűnözők ellen, viszont hatékony akkor, ha valaki meg akarja védeni saját magát, mert az önbíráskodás, és ahhoz neki nincs joga. A rendőrség nem véd meg, de te sem védheted meg saját magad: így lesz a hely a bűnözők paradicsoma, (röviden Bp).<br />
+<br />
+Amíg van gyarmatosító program, addig vannak gyarmatosítás ellen küzdők is; ez a probléma csak a gyarmatosítás végleges megszűnésével szűnik meg.<br />
+Az alapesetet tekintve nincs új a Nap alatt, de a formái egyre kifinomultabbak.<br />
+Volt már gyarmatosítás, elnyomás, kettősmérce, országkifosztás, polgár- és világháború&#8230; és még mindig van.<br />
+Ha fennáll valamely alapprobléma, mindig meglesz rá a problémamegszüntető irányú reagálás is, a támadásra a védekezés; az elnyomásra a felszabadulás, ez a világ, és az élet ilyen, és haladni is több irányba lehet benne.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment46269"></A>81. <A HREF="mailto:ryanfilm2007@gmail.com" STYLE="color: #000000">csodafarkas</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=812&id=46083#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-09 13:42:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2729.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"A homoki szó a magyarban nem régen él, de egyébként ezeréves múltra tekint vissza, mint gyanús, titkos, b&#251;nösnek tekintett embercsoportok címkéje. A magyar homoki az 1900 körüli években csípôdött le a buzeráns alakból a pesti szlengben (vagy ahogy akkor mondták: argóban), ekkor lett a cigarettából cigi, a mozgóképszínházból mozi, a buzeránsból homoki. Az alapszó, a buzeráns a németbôl került ide a múlt század végén (magyar szövegben elôször 1896-ban írták le). A német alak Buserant, a magyarban a szóvégi -áns a latinoskodó hagyomány eredménye, mint pl. német elegant -- magyar elegáns. A német szó a velencei olaszból származik, az ottani buzerar (ejtsd budzerár) igébôl, melynek jelentése "szodómiát &#251;zni, azaz férfivel análisan közösülni". Ennek alapja pedig a régi olasz bugero (ejtsd budzsero), azaz "szodomita". Furcsállhatnánk, hogy erre az olaszok külön szót tartottak fenn, ám tudjuk, hogy a szó korábbi jelentése "eretnek" volt, még korábbi jelentése pedig --- tesék megkapaszkodni --- "bolgár". "</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment46083"></A>80. Ungi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=812&id=45986#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-09 10:23:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bedőlt-e a többség Gy. F. csaló ígéreteinek 2006-ban? Bizony be.<br />
+A nyirkai jóslat viszont nem nyirkai és nem jóslat. Miért nem? Csak.<br />
+A tevét átengedni, a szúnyogot megszűrni, jaaaaajjj.<br />
+<br />
+Úgy tudom, hogy a Yotengrit könyv 2004-ben jelent meg először; és persze hogy akkor lenne minden kétséget kizáróan hiteles, ha a 1950 körül jelent volna meg (és nem Magyarországon, mert azidőtájt a cuclista blokkban ilyen könyveket nem adtak ki).<br />
+A hitelességéhez tehát kétség fér.<br />
+Már csak azért is, mert egyáltalán nem vagyok benne biztos, hogy 1950 táján használták volna a &#8222;buzerálja&#8221; kifejezést.<br />
+De, tudsz jobbat?<br />
+Érdekes lesz, hogy mennyire cáfolja meg az élet.<br />
+A 2002-től idáig terjedő időszakban szerintetek megcáfolta?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment45986"></A>79. br. Waldbott Eduárd</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-09 07:30:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3272.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem ám bedőltök a "nyirkai-joslatnak". Két baj van vele, nem nyirkai és nem jóslat. Olvassátok végig, érdekes módon csak 2002-ig konkrét, sőt túlságosan konkrét. Remekül felismerhető rákosi, gerő és kádár, nem úgy mint Nostradamus jóslataiban a személyek. Jól sikerült blöff, vagy csak játék, vagy átvágás. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment45982"></A>78. jacek</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=812&id=45966#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-09 07:12:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1889.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez a jóslat... Mostanában lépten-nyomon találkozom vele. <br />
+Lehet tudni, mikor fordul elő először? Kitől származik? Mármint úgy értem, valami néprajzi gyűjtés, vagy ki "találta meg"? <br />
+A honlapon igen érdekesek pl. a "sámán-perek" jegyzőkönyvei is, csak én hiányolom a hibvatkozást az erdetikre (levéltár? latin erdeti? valami?). Vagy csak én néztem rosszul.<br />
+Az egyetemen olyasmit mondtak, elég kevés az ősvallással-sámánokkal kapcsolatos forrás, most meg csak úgy zúdul ránk a sok infó. Hadd legyek szkeptikus....</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment45977"></A>77. 77. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=812&id=45956#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-09 06:45:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">jó ötlet<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment45966"></A>76. Ungi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-09 01:26:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha már szóba került az Élősködőink c. előadásban a Yotengrit-könyv, és benne a nyirkai jóslat, itt van a jóslathoz egy link:<br />
+<B><a href="//www.asztralutazas.hu/index.php/magyar/Yotengrit-avagy-a-nyirkai-joslat.html" target="_new" style="color: #000000;">http://www.asztralutazas.hu/index.php/magyar/Yotengrit-avagy-a-nyirkai-joslat.html</a></B><br />
+Hogy a hét tevét hogyan kell értelmezni, judaista vagy iszlám tevék lesznek-e, arról megoszlanak a vélemények.<br />
+Viszont ez az igazán aggasztó:<br />
+<br />
+Kettészakad a nemzet,<br />
+lángra lobban az ország.<br />
+A lángot vér oltja.<br />
+<br />
+Magyar magyart gyilkol,<br />
+de a bika hátáról is ide lőnek<br />
+a hét teve miatt.<br />
+A nép fele elpusztul<br />
+<br />
+&#8217;Minden jövendölés ókumálás (következtetés), a múltat meg jelent összekötő vonás folytatásán, a jövő felé. Megírva semmi sincsen, mert minden megváltoztatható, - ha nem fordultok el ISTENETEK-től és megszívlelitek az ősök intelmeit.&#8217;<br />
+<br />
+Nem nagyon mutatkozik a megváltoztathatóság &#8211; nagyon jól be lett lőve a jóslattal a kos-út, és még mindig bal- és jobboldali szélsőségek mondják meg, hogy mi a &#8222;közép&#8221;, és a &#8222;helyes út&#8221;.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment45963"></A>75. Ungi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=812&id=45925#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-09 00:31:32</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Megnéztem T. F. Élősködőink c. ajánlott előadását, közel 3 órában. Értékes és érdekes, én is ajánlom mindenkinek, bár maga a videó (112 MB) úgy ért véget, hogy nálam még videokártya is kikapcsolt (aztán meg vissza).<br />
+A kolléga mezőgazdász, én pedig hobbiból állat- és emberviselkedéstannal foglalkozom (etológia és humanológia; ha utóbbi tudomány esetleg nem létezne, akkor most van), sok más egyéb mellett.<br />
+A közös megállapításunk az, hogy az eszme jelenti a vándorló parazitát, a mételyt, ez az, ami élősködőként pusztít, valamint hogy ha polgárháború lesz is, magyar magyart ne öljön. Én úgy döntöttem, hogy biztos ami biztos alapon ki is maradok belőle teljesen, mert nekem se a lelki fejlődéshez, se semmihez nem kell, és nem is hiányzik. Másként mondva, nem vayok elég buta hozzá; nem az én szintem, hogy öldökléssel akarjam megoldani a problémákat, amikor más útja is van. Józan ész, jog, erkölcs, ilyenek.... Persze ha nincs meg hozzá  a tömegtámogatottság, az gond, mert hiába a hibátlan logika, ha vannak, akik csak az erőből értenek...<br />
+Ami a nézetkülönbségeket illeti, én a paraziták 0-ra történő redukálásának híve vagyok, már csak azért is, mert a földi élővilágból fajok és fajták halnak ki teljesen, állítólag naponta több is: akkor miért pont a paraziták maradjanak meg?<br />
+Valamint se (kerge)birka, se farkas, se medve nem vagyok, hanem egy cickány, aki a dinoszauruszok kihalását figyeli, és eközben tervei is vannak a hogyan tovább-ot illetően. Azt már tapasztaltam, hogy ez egy ritkán előforduló faj a Kárpát-medencében &#8211; de azért van ilyen is.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment45962"></A>74. <A HREF="mailto:feci@operamail.com" STYLE="color: #000000">vfec</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-08 23:27:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2182.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Valóban,attól hogy valaki babónak ,orknak stb. születik még nem lesz rosszabb ember.<br />
+Ezt mi sohasem állítottuk,úgyhogy védekeznünk sem kellene az állítással szemben!<br />
+<br />
+Az egyszerű átlagember akár babó,akár ork,akár magyar a primitívsége okán válik veszélyes felhasználható eszközzé,manipulálhatóvá,<br />
+és ezzel végső soron ellenséggé.<br />
+Sajnos az átlagember eszi,amit elé önt a média,nem gondolkodik,nem olvas,nem tájékozódik ,nem alkot önálló,érvekkel,és tényekkel megtámogatott véleményt,viszont magának sem hajlandó bevallani ostobaságát,ezért hogy ne tartsák tájékozatlannak egyszerűen átveszi a mások ,általában a média által rendkívül aljasan,és a legaprólékosabb módon kidolgozott,megtervezett propagandát.<br />
+Ezért tartunk most itt .<br />
+<br />
+Így lesz az egyszerű alapvetően jószándékú,de hülye Goldstein néniből a Nemzeti oldalt alaptalanul lenácizó,véresszájú antifasiszta tüntető.<br />
+Na ettől a ponttól kezdve nem tudom sajnálni,pontosan úgy ahogy magyar származású hasonló cipőben járó elbutított embertársaimat sem .<br />
+Ugyanis nem kötelező hülyének lenni,ha pedig valaki az utcára vonul,tudja hogy miért,és kik ellenében teszi mindezt.<br />
+<br />
+Máté barátunknál a pont,ők a Cionizmus értéktelen, és feláldozható eszközei,és az nem mentség számukra hogy ők ezzel nincsenek tisztában.<br />
+Ha valaki a saját hazámban mocskol,és támad csak azért mert kiállok a nemzeti érdekekért,akkor biztos lehet abban hogy keményen megfizet érte,és sokunkkal együtt nem hiszem hogy számukra a tudatlanság megbocsáthatóvá teszi az a hazánkkal szemben elkövetett bűnt!<br />
+<br />
+Mivel a ilyen események mozgatórugója a cionizmus ezért nem hiszem hogy a szükségesnél nagyobb mértékben konfrontálódnunk kell a,az elénk koncnak odavetett,vagy a felbujtók által pajzskélt állított ostobákkal,a figyelmet,és a támadást a háttérben állókra kell összpontosítani.<br />
+A cionizmus leggyengébb pontjai :a vitaképtelensége,mivel hazugságokra épül,illetve<br />
+az irányító személyek rendkívül kis száma &#8230;.<br />
+Ne kíméljük őket,ők se kímélnek minket.<br />
+<br />
+<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment45958"></A>73. <A HREF="mailto:chris20meister@gmail.com" STYLE="color: #000000">chris</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=812&id=45956#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-08 22:24:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2214.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nekem se nagyon igy egyetértek veled ilyen cionista férgek meg mindenhol vannak & miatuk nem igazán vannak ilyen Goldstein nénik.2.vh-ba is elég szépen bujtatuk menekitetük őket akárcsak a lengyeleket Horthy idejében ezt nem igazán ismerik el viszont ilyen állszent schindler-t lazán....<br />
+<br />
+<B><a href="//tdyweb.wbteam.com/AdjatokVissza.htm" target="_new" style="color: #000000;">http://tdyweb.wbteam.com/AdjatokVissza.htm</a></B><br />
+Akit érdekel itt megnézhető a Wass Albert : Adjátok Vissza Hegyeim c. film</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=812&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=812&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=812&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=812&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=812&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=812&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=812&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=812&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=812&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=812&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

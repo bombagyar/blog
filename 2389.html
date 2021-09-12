@@ -1,0 +1,523 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2389#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Masszi Péter közleménye a "Szcientológus a Jobbikban?" című filmmel kapcsolatban";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2389#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Masszi Péter közleménye a "Szcientológus a Jobbikban?" című filmmel kapcsolatban<BR><DIV CLASS="postheader_small">Bombagyár Média - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 július 10. 15:32:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2389.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"> <div></div><div><div><div style="text-align: justify;">Ez a közlemény a <a target="_blank"href="//www.bombagyar.hu/index.php?post=2388"><span class="Apple-style-span" style="font-weight: bold;"><span class="Apple-style-span" style="color: black;"><span class="Apple-style-span" style="font-style: italic;">Szcientológus a Jobbikban?</span></span></span></a> című Bombagyár TV-riporthoz kapcsolódik. Elolvasása a film megtekintése után ajánlott. Az alábbiakban a riportban szereplő, megvádolt Masszi Péter nyilatkozik, megválaszolva a filmben nyitva maradt kérdéseket is.</div><div><br></div><div><hr></hr></div><div><br></div><div>Őszintén sajnálom, hogy ilyesmivel 
+kell foglalkoznom, pedig sokakkal együtt ismerem a közmondást:<br></div><div><br></div><div style="text-align: center; "><span class="Apple-style-span" style="font-style: italic; ">"Aquila non 
+captat muscas"</span></div><div style="text-align: center; "><span class="Apple-style-span" style="font-style: italic; ">A sas nem kapkod legyek után.</span></div><div> </div><div style="text-align: justify; ">Mégis kénytelen vagyok lealacsonyodni a vádlókhoz, és az aljas 
+rágalomtömegre válaszolni, és persze büntető feljelentést teszek nagy nyilvánosság előtt aljas 
+indokból és jelentős érdeksérelmet okozó rágalmazás miatt, valamint a jó hírnév megsértése miatt 
+polgári pert indítok az összes mocskolódó ellen.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Bár jól tudom - nevük elhallgatását kérő jelenlegi 
+belvárosi képviselőktől - hogy az egész mögött biztosan Rogán Antal áll. </div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">A Magyar Hírlap 
+cionistázó baromsága ellen már nem tudok feljelentést tenni, mert erre 30 napig volt esélyem a 
+megjelenés után, s a cikk  közel egy esztendős. Bár ha megismétlik, most szívesen megteszem! Akkor 
+fontolgattam, de nem voltam közszereplő, és hat év civil élet után nem tartottam fontosnak 
+belekeveredni egy akkor politikai okokból az MDF-et támadó cikksorozatba, csak azért, mert a 
+fővárosban az MSZP-SZDSZ-es honatyák hatalmas ingatlan panamára készültek, és a baloldallal többször 
+is,- talán ebben az ügyben is- együtt szavazó MDF-ről akarták lerántani a vizes lepedőt. Úgy éreztem 
+rossz célpontot találtak bennem. Kapóra jött nekik a nevem, aki az MDF-Fidesz-KDNP frakcióvezetője 
+voltam valamikor 1994-1996-ig (!!!) a Belvárosban 12-14 évvel az események előtt!!!  A Belvárosban 
+és nem a Fővárosban! Persze a kutakodásban odáig már nem mentek el, hogy engem az MDF-ből Bégány 
+Attila és Rétháti György hathatós közreműködésével már 1997-ben ellehetetlenítettek. 1998-ban már 
+nem is voltam tag. Találhattak volna időben egy közelebbi MDF-es célpontot.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">De volt még két számomra 
+szerencsétlen egybeesés. Regőczi Miklós, az ügyben szereplő BKV-s vezérigazgató (?) ugyanabba a 
+házba volt bejelentve,- igaz, egy emelettel feljebb -  ahol én lakom. Abban a cikkben láttam először 
+a nevét, soha nem is találkoztam vele se a cikk előtt se utána (máig se) &#8211; a házmesterhez 
+mentem le megkérdezni, hogy itt lakik-e a nevezett úr, és a házmester odahajolva a fülemhez mondta, 
+hogy igen, a harmadikon, de azért nincs kint a neve, mert egy cég bérli a lakást, és a lakó külön 
+kérte, hogy inkognitóban maradhasson. De ha már így rákérdeztem, nekem elmondja. </div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">A másik egybeesés pedig 
+az, hogy a fővárosi ingatlanügy egyik szereplője Michael Shabtai, jó fél évvel a fenti események 
+előtt (!!!) hozott nekem vevőt egy olyan ingatlanra, melynek az értékesítésére az én cégemnek volt 
+joga. Félreértések elkerülése végett, az ingatlan a magánpiacon volt. Mivel Shabtai hozta a vevőt és 
+méghozzá a legjobban fizetőt, a koreográfiát is ő szabta meg az üzlet lebonyolítására. Ő 
+ragaszkodott a közös ügyvezetéshez is, hogy biztosítva lássa a neki járó jutalékot. Természetesnek 
+tartottam, s bevettem magam mellé az én cégembe, ahonnan aztán az üzlet után ki is szállt. Az meg a 
+vevő kérése volt,- az egyik legismertebb európai ingatlanbefektető - hogy az általa alapított cégben 
+addig én legyek az ügyvezető, míg a tulajdonjog át nem száll rá (engedélyi felelősségek, bérlők 
+jogainak rendezése, tulajdon bejegyzés, jogi technikák miatt), de amint kifizette a  vételárat 
+&#8211; pontosabban azzal egyidőben nyilvánvalóan átvette teljes egészében a cégvezetést is. 
+Ennyi. </div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Aztán 
+FÉL ÉV MÚLVA olvasom az újságban, hogy az én egykori közvetítőm milyen fővárosi panamára 
+készül.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">MI 
+KÖZÖM NEKEM EHHEZ?!? A rosszindulatú rágalmazáson kívül. Mi közöm ahhoz, hogy melyik házban lakik, 
+és abban a házban melyik szövetségnek a központja van bejelentve???  Semmi. Pont annyi, mint a 
+taxisofőrnek az utasa fél évvel későbbi nyaralásához.   Persze ha rágalmazni kell, meg besározni 
+valakit minden baromságot össze lehet hordani.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Ez a cégem közvetítő kereskedelemmel foglalkozik. 
+Megbízásokat kap tulajdonosoktól értékesítésre. Nekem ebben a cégben az a dolgom, hogy vevőket 
+keressek. Nem küldhetek el közvetítőt, vevőt, a vevő közvetítőjét azért, mert majd fél év múlva 
+gyanúba fog keveredni egy fővárosi ingatlanügyben?!? Abszurdum, és nevetséges. NEM VAGYOK 
+JÓS! </div><div style="text-align: justify; "> </div><div style="text-align: justify; ">Éppen ezért 
+bárki, aki vállalja ellenem ezeket a rágalmakat, bíróság előtt fog felelni.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Az összes vád 
+szemenszedett hazugság!</div><div style="text-align: justify; "><br></div><div style="text-align: 
+justify; ">Mert semmi nem igaz belőlük! SEMMI!</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Nem vagyok cionista, nem vagyok szcientológus! Nem is 
+voltam, és nem is fontolgattam soha, hogy ennek az egyháznak tagja legyek!</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">SEMMI közöm a fővárosi 
+BKV-s ingatlan panamához! SEMMI!</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">SEMMIFÉLE állami vagyont nem játszottam át barátaimnak, 
+családtagjaimnak, sem senki másnak!</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">(Rétháti György és Tóth Lajos is négy évig ott ültek mellettem a 
+testületben és a bizottságban is. Pont tíz évvel a képviselőségem után jut eszükbe engem vádolni 
+ezzel!?!? Akkor miért nem jutott az eszükbe?!?)  Megmondom. Mert akkor nem volt veszélyben a MIÉP-es 
+illetve MDF-es helyük. Most persze mindkettőnek több mint valószínű, hogy menni kell. Réthátinak 
+éppen a JOBBIK-ból, hiszen az én feltételem volt a JOBBIK belvárosi elnökségének elvállalására 
+Rétháti távozása &#8211; aki eddig egyedül képviselte valamelyik bizottságban a JOBBIKot&#8230; 
+apropó észrevette valaki? Lassan négy éve ül külsős tagként egy önkormányzati 
+bizottságban.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Ami egyedül igaz a vádakból az annyi, hogy a MASSZI KIADÓ valóban nem fizette ki a végül 270 000 
+forint körüli büntetést jogtalanul átvett cikkekért - bár az újságírók telefonon mind hozzájárultak 
+a közléshez, csak az ígért írásos megerősítés nem érkezett meg soha - egy hat éves per után a Magyar 
+Nemzetnek. Igaz, hogy a követelés 2003-ban még hatmillió forint körül volt. Végül sok-sok évi per 
+után olyan kicsire zsugorodott, amit gondolkodás nélkül kifizettem volna a kezdet kezdetén 
+mindenféle per nélkül, ahogy sok más újságnak is megtettem szó nélkül. Az MTI-nek majdnem kétszer 
+ekkora összeget kellett fizetni. De Liszkai Gábor a MN tulajdonosa szándékosan meg akart hurcolni. 
+ Cégem azonnal kifizeti, ha a Magyar Nemzet kéri a végrehajtást. De nem teszi, mert az neki kb. 
+ugyanennyibe kerülne. Ennyi éves és aránytalan / a számokból látszik / tyúkperré zsugorodott 
+meghurcoltatásom után nem teszem meg Liszkainak azt a szívességet, hogy ingyen megússza a 
+megaláztatásomat. Csekély vigasz a számomra az, hogy Liszkai Gáborra már senki sem fog emlékezni, 
+amikor a rendszerváltás egyik legfontosabb kiadójaként említik majd az irodalomtörténetek a 
+kiadóimat.</div><div style="text-align: justify; "> </div><div style="text-align: justify; ">Ennyi, 
+és csak ennyi igaz a seregnyi aljas rágalomból.</div><div style="text-align: justify; "> </div><div style="text-align: justify; ">Persze tudom, a fő kérdés az, hogy hogyan kerülhettem ebbe a 
+helyzetbe.</div><div style="text-align: justify; ">Vissza kell mennem az időben.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">De azt hiszem tanulságos 
+lehet a Belváros önkormányzatának több mint tíz éves előtörténete. MDF-es alapító tagként hittem a 
+rendszerváltozás igazságában. Még előtte 1988-ban szerkesztőként, szervezőként én jegyeztem azt a 
+kiadványt, amely az erdélyi falurombolás elleni hatalmas tüntetést foglalta össze, az EÖTVÖS KIADÓ 
+felelős szerkesztőjeként. Aztán eljött a rendszerváltás ideje. Már három éve dolgoztam kiadóként, 
+megjelent a novelláskötetem, azt hittem a kiadói, írói pálya lesz az életem. Lehettem volna 
+parlamenti képviselő az MDF színeiben a rendszerváltáskor. Nem akartam, mert szent meggyőződésem 
+volt, hogy politikusnak csak annak szabad menni, aki akár pap is lehetne. A folyamatos 
+áldozatvállalás másokért, a nemzetért, a Hazánkért. Elutasítottam a lehetőséget, mert azt gondoltam, 
+ahogy keresztény hitem ellenére pap sem lettem, az emberek ügyei feletti paposkodásra is sokkal több 
+alkalmasabb személy akad nálam is. Ebben később keserűen kellett csalódnom. Már a politikusok 
+alkalmasságában. Maradtam a civil életben. Kiadót szerveztem /KRÁTER/, vállalkozásokat indítottam. 
+Aztán eljött az MSZP nagy visszatérésének a veszélye. Az Antall kormány közlekedési minisztere, aki 
+már a rendszerváltás előtt is a barátom volt, megkért arra, hogy vegyek részt a kampányában. Örömmel 
+segítettem, de tudjuk, győzött az MSZP. Nagyon. Akkor Ő kért meg arra, hogy vállaljak az arcommal 
+politikai szerepet.  Megkért, induljak az önkormányzati választásokon, sőt legyek 
+polgármesterjelölt. Az elsőt elfogadtam, a második lehetőséget SZEMÉLYESEN ÉN engedtem át a 
+FIDESZ-nek, Karsai Károlynak. Hiszen halvány fogalmam sem volt a közigazgatásról a 
+kerületrendezésről, Ő pedig építészként alkalmasabbnak látszott erre. Mindent megnyertük, amit 
+lehetett, így lett a Belvárosban MDF-KDNP-FIDESZ vezette testület, s ennek én lettem a 
+frakcióvezetője. Rétháti György is ennek a frakciónak volt a tagja, de elégedetlen volt a 
+helyzetével, - ő már az előző ciklusban is képviselő volt &#8211; és rövidesen megkezdődött az 
+áskálódás. Őszintén hittem abban, hogy nekünk itt a kerületben nem az a dolgunk, hogy folyamatosan 
+"szívassuk" egymást, hanem az, amiért választottak bennünket, a település ügyeivel kell 
+foglalkoznunk és mindent változtatni, fejleszteni kell.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Tudom furcsa lesz a párhuzam, meg talán fellengzős 
+is, de le kell írnom, nekem a Belváros az, ami Petőfinek az Alföld. Itt lakom több mint fél 
+évszázada, itt jártam általános iskolába, gimnáziumba, a Bazilikánál &#8211; ahová most az ablakom 
+néz- verekedtem először. Nem szaporítom a lírát, nekem a Belváros a "szülőföldem", minden utcát, 
+zugot, követ ismerek, és ha a Hazámra gondolok, elsősorban a Belváros jut eszembe.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Képviselőként is azt 
+gondoltam &#8211; aki itt képviselő, mind így gondolkodik. Tehát a fő feladata a Belváros 
+szolgálata. 1994-ben felálltak a bizottságok, elkezdődött a munka, és én azt gondoltam, hogy a 
+legnagyobb frakció vezetőjeként még nagyobb a felelősségem a település ügyeiért. Ezért aztán 95-ben 
+a polgármestert és a két másik frakció vezetőjét MSZP- SZDSZ meghívtam egyeztetésre a Gellértbe, 
+hogy területen kívül legyünk, és kifejtettem, hogy nekünk nem az a dolgunk, hogy "öljük" egymást, és 
+érdemi vita helyett a pártzászlót a homlokunk elé húzva acsarkodjunk egymásra, hanem békejobbot 
+nyújtva pártszínektől függetlenül a településünket kell közös erővel minél jobb helyzetbe hoznunk. 
+Szépítsük közösen a kerületet &#8211; mondtam békejobbot nyújtva mindenkinek, akit megválasztottak. 
+(Milyen szépen működik ma is néhány kis településen az ilyen összefogás!) Naiv voltam, és 
+romantikus, mint aki az irodalomból jött.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Több-kevesebb egyetértés volt e körül a gondolat körül, de ez volt a 
+tragikai vétségem, mert Rétháti György "indítványt" tett fegyelmi eljárás kezdeményezésére &#8211; 
+az MDF pártigazgatójának árulás, meg nem is emlékszem még miféle vádakkal.  Az a szerencsés 
+természetem, hogy a rosszat, ami velem történt hamar elfelejtem, - így aztán csak most jutott 
+eszembe, a Szabó Gábornak címzett vádirat alapján, &#8217;deja vu&#8221;, hogy Rétháti György engem 
+már egyszer pontosan így feljelentett. De nemcsak engem, nagyon sok más embert is, bíróságon is, 
+többek közt a saját feleségét is. El is ítélték hamis vádaskodás miatt jogerősen abban az időben. 
+Tehát Rétháti György egy örökös feljelentő.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Innen aztán&#8211; a frakció erodálódásával párhuzamosan (egy 
+egyesületi képviselő, vállalkozó, a szó szoros értelmében kivásárolt az MDF frakcióból két embert) 
+Rétháti György és Bégány Attila az akkori kerületi MDF elnök-, addig ügyködtek az 
+ellehetetlenítésemen, hogy esélyem sem volt az MDF színeiben újraindulni.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Ekkor alapítottam a FÓRUM 
+A BELVÁROSÉRT egyesületet, és kitűnő kampány után, közel ezer szavazattal 1998-ban listavezetőként 
+újra képviselő lettem. Ez aztán azt eredményezte, hogy az MDF-ből kizártak, és hiába kértem a 
+jobboldalt, hogy ugyan saját erőből visszajutottam a testületbe, erősíteném a jobboldalt, nem vettek 
+be a frakcióba. </div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Két évig csak az öklömet rázhattam legfeljebb, meg a hangomat hallattam, érdemben egyetlen 
+döntésbe sem tudtam beleszólni. Akkor is azt gondoltam, hogy a település érdekei a fontosabbak a 
+pártoskodásos veszekedésnél.  A fordulat akkor következett be 2000-ben, amikor 3 Fideszes képviselő 
+megunva Varga Éva frakcióvezető asszony parancsuralmi rendszerét kivált a Fideszből és függetlenek 
+lettek volna, de nem volt frakciójuk, mert nem volt a Fideszen kívül önálló szervezet, aki indította 
+őket. Felajánlottam nekik, hogy lépjenek be az egyesületembe, és aztán centrumot alkotva a mérleg 
+nyelveként rajtunk fog múlni minden döntés. Így is történt.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Erről a három képviselőről derült ki, - mikor a 
+frakciót alakítottuk fogalmam sem volt róla &#8211; hogy tagjai a scientológiai egyháznak. Persze a 
+Fideszesek kerestek veszteségük feletti dühükben mindenféle vádakat ellenük&#8230; s ezt 
+ragasztották rám is. Az egyesületnek ugyan én voltam az elnöke, de a frakcióvezetéshez ragaszkodott 
+az egyik fiú &#8211; ez volt az ára az új frakció alakításának &#8211; ez aztán rövidesen újabb 
+konfliktusokhoz vezetett, mert egyeztetni Ő egyeztetett, s én bizony sokszor nem tartottam be az 
+általa remélt frakciófegyelmet, mert továbbra is a település érdekei, és a lelkiismeretem szerint 
+szavaztam.</div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Ez 
+oda vezetett, hogy a frakcióban hárman az MSZP-vel és az SZDSZ-el összefogva visszahívtak az összes 
+funkciómból, és ők hárman nélkülem (!) kvázi beolvadtak az MSZP-SZDSZ frakcióba.  Ebből is látszik, 
+hogy nem álltam át a baloldalra, ahogy vádlóim hangoztatják!  Újra egyedül maradtam, de legalább 
+konfliktusok nélkül szavazhattam a lelkiismeretem szerint. </div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">2002-ben nem jutottam vissza a testületbe, addigra 
+annyira megerősödött a két nagy párt szerepe, hogy esélye sem volt az én kis 
+egyesületemnek. </div><div style="text-align: justify; "><br></div><div style="text-align: justify; ">Újjászerveztem a vállalkozásaimat, három társammal kinyitottuk az ARCVONAL jobboldali kávéházat a 
+szeretett Belvárosban. </div><div style="text-align: justify; "><br></div><div style="text-align: 
+justify; ">Először 2005-ben még Kovács Dávidban vetődött fel, hogy újra politizálhatnék a JOBBIK 
+színeiben, de akkor már Rétháti és Bégány is a Jobbik sorait "gazdagította" és én már akkor, mint 
+ahogy most is megmondtam, hogy abban a pártban én nem politizálok, ahol ez a két ember előfordul. 
+Mert megoldás helyett a viszályt keresik, és szinte lehetetlen együtt dolgozni velük néhány hónapnál 
+hosszabb távon. Ezen túl Rétháti György szerintem orvosi eset, súlyos elmebeteg azzal a környezete 
+számára szerencsétlen körülménnyel, hogy ez nem derül ki az első pillanatban. Az őrültek és mániások 
+sajátos logikájával az első néhány héten megtévesztően behízelgő, aztán&#8230; az eredményt tudjuk. 
+Kis kutakodással elő lehetne keresni erről néhány orvosi papírt is.</div><div style="text-align: 
+justify; "><br></div><div style="text-align: justify; ">Szóval 2006-ban a JOBBIK belvárosi 
+szervezete vállalhatatlan volt számomra a fent nevezettek miatt. Maradt a Fórum a Belvárosért 
+Egyesület, és szövetségben a Nemzeti Fórummal választási megállapodást kötöttünk a Fidesszel, hogy 
+nem rontjuk az esélyeiket azzal, hogy indulunk ellenük, mellettük a szavazatokért, viszont cserébe 
+Rogán Antal aláírt velünk egy jogász által megfogalmazott választási szerződést, hogy a Fidesz 
+győzelme esetén az Egyesületet és a Nemzeti Fórumosokat milyen bizottsági helyek illetik meg a 
+Testületben. Még közös sajtótájékoztatót is tartottunk róla. Rogánék nyertek, és a szerződésből 
+egyetlen betűt sem tartottak be. Mint ahogy abból sem, amit Mendelényi Tündének, az Arcvonal egyik 
+tulajdonosának és háziasszonyának ígértek, hogy győzelmük esetén megmentik az Arcvonalat. Rogán ezt 
+sem tartotta be, mint annyi más ígéretét, s itt ennek csak annyi a szerepe, hogy nyilván azért 
+indítja ellenem a támadásokat, mert többszörösen átejtett, s talán fél attól, hogy nemsokára szembe 
+kellene néznie néhány számára rettenetesen kellemetlen igazsággal. De Tudjuk, Isten nem bottal ver. 
+S ami késik, az eljön.</div><div style="text-align: justify; "> </div><div style="text-align: 
+justify; ">Hozzátartozik még politikai pályaképemhez, 2003-ban kísérletet tettem egy jobboldali párt 
+alakítására Új Magyarország néven, melynek legkiemelkedőbb akciója volt az ÉLŐLÁNC A BALATON 
+MEGMENTÉSÉÉRT majd később Centrum néven igyekeztem bejegyezni egy pártot, de Kupa Mihály csapata 
+talán fél nappal megelőzött, a tőlünk elorzott névvel, s aztán már csak a munkánk veszteségét 
+igyekeztünk minimalizálni csapatommal, kevés eredménnyel.</div><div style="text-align: justify; "> </div><div style="text-align: justify; ">Azért örültem, amikor a Jobbik megkeresett, mert úgy 
+éreztem ugyanazért küzdünk, s azt gondoltam, s gondolom ma is, hogy a leszűrődött tapasztalataim 
+hasznára lehetnek ennek a minden vonatkozásban gyönyörű szándéknak, s nem hiszem, hogy egy 
+rágalomhadjárat be tud mocskolni egy tiszta szándékot. Mindezzel együtt, sokáig gondolkodtam a nyílt 
+politikai szerepvállaláson, mert nagyon jól ismerem ennek a küzdőtérnek a kegyetlenségét és 
+igazságtalanságait. Aztán döntöttem. A Belváros iránti többször emlegetett szeretetem, meg mert, 
+ahogy a könyvkiadásnál, itt is dolgozik bennem valami mélyebb elhivatottság, hogy akinek az Isten 
+tehetséget adott, az nem áshatja el a talentumokat, hanem a közössége javára köteles 
+kamatoztatni.</div><div style="text-align: justify; "> </div><div style="text-align: justify; ">Az 
+igazi lényemet nem érintik ezek az aljas vádaskodások.</div><div style="text-align: justify; ">Leírom még egyszer.</div><div style="text-align: justify; "><br></div><div style="text-align: 
+justify; ">NEM VAGYOK CIONISTA!</div><div style="text-align: justify; ">NEM VAGYOK 
+SCIENTOLÓGUS!</div><div style="text-align: justify; ">SEMMI KÖZÖM a BKV-s FŐVÁROSI INGATLAN 
+BOTRÁNYHOZ!</div><div style="text-align: justify; ">SEMMIFÉLE VAGYONT NEM JÁTSZOTTAM ÁT 
+CSALÁDTAGJAIMNAK, BARÁTAIMNAK, SEM SENKI MÁSNAK!</div><div style="text-align: justify; ">ÉS NEM 
+VOLTAM, VAGYOK, LESZEK  BALOLDALI POLITIKUS!</div><div style="text-align: justify; "> </div><div style="text-align: justify; ">Viszont én vagyok az a Masszi Péter, </div><div style="text-align: 
+justify; "><br></div><div style="text-align: justify; ">- aki a nemzeti könyvkiadás egyik élő 
+lelkiismerete és művelője</div><div style="text-align: justify; ">- aki az Eötvös Kiadót is 
+alapította</div><div style="text-align: justify; ">- aki 1988-ban ezzel a kiadóval kiadta a Hitelt a 
+rendszerváltás folyóiratát</div><div style="text-align: justify; ">- aki a Püski-Isis vegyesvállalat 
+alapítója</div><div style="text-align: justify; ">- aki a Kráter Kiadó alapítója</div><div style="text-align: justify; ">- aki kiadta Wass Albertet először hazánkban</div><div style="text-align: justify; ">- aki 2000-ben kiadta a <span class="Apple-style-span" style="font-style: italic; ">Sír a Tiszát</span> magyar és angol nyelven</div><div style="text-align: justify; ">- aki hagyományőrző  műveket ad ki</div><div style="text-align: 
+justify; ">- aki alapította a <span class="Apple-style-span" style="font-style: italic; ">Napút</span> c. folyóiratot</div><div style="text-align: justify; ">- aki immár 10 esztendeje a 
+saját nevén is működtet egy kiadót</div><div style="text-align: justify; ">- aki a keresztény 
+nemzeti irodalom felvállalója</div><div style="text-align: justify; ">- aki Mária-jelenésekről ad ki 
+sorozatot</div><div style="text-align: justify; ">- aki az ARCVONAL IRODALMI KÁVÉHÁZ egyik 
+alapítója</div><div style="text-align: justify; ">- aki a Püski-Masszi nemzeti könyvnagykereskedés 
+egyik alapítója&#8230;</div><div style="text-align: justify; "> </div><div style="text-align: 
+justify; ">Sorolhatnám a szakmai pályafutásom elismert eredményeit, és akkor még nem is beszéltem a 
+tanári pályámról, ahol utoljára mentálisan visszamaradt gyerekek intézetét igazgattam. Komolyan 
+mondom, könnyebb volt velük sokszor szót érteni, mint a sötét lelkű politikusokkal.</div><div style="text-align: justify; "> </div><div style="text-align: justify; ">És a vezérelvem az életben, 
+hogy: jónak lenni jó!</div><div style="text-align: justify; ">Ezért nem veszem fel sokszor a 
+kesztyűt messziről látható ostobaságokra.</div><div style="text-align: 
+justify;"><br></div></div></div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-07-10&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2389&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2389&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2389&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178341"></A>15. 15. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-07-12 20:55:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Aki a disznók közé keveredik, azt megeszik a korpákok."<br />
+ (Kozár László "Öcsi")</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178239"></A><FONT COLOR="#FF0000">14. </FONT>faszagyerek</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2389&id=178131#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-07-11 16:06:41</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2260.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178229"></A>13. <A HREF="mailto:farkasroli@hotmail.com" STYLE="color: #000000">Farkas Roland</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-07-11 15:02:57</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_297.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez a folyamat most indul be.<br />
+<br />
+Érzik a régi elvtársak, hogy ég a ház, ezért újat kell keresni.<br />
+<br />
+Mit gondoltok miből fog megélni a sok, nyelvet sem beszélő, érettségivel rendelkező parlamenti képviselő amikor kilapátolják őket a parlamentből?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178188"></A>12. Normann</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-07-11 03:22:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4004.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hihető magyarázat és mellette egy meggyőző pozitív múlt, de attól még sok a gyanús egybeesés a dologban. Sokkal több annál amit azért pusztán véletlennek lehetne betudni. Ha nem is igazak a felsorolt vádak, a fickónak szerintem még van vaj a füle mögött.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178140"></A>11. tunya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-07-10 21:18:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1481.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">na ezért tudnak a leszerepelt politikusok annyi évig "tűzközelben" lenni,<br />
+mindegyik fogja valakinek az érzékeny pontját jó szorosan.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178139"></A>10. jun!Or</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-07-10 21:13:53</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1770.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Így a videóval mindennel együtt végre egy objektív közléssorozat a Jobbikról :)<br />
+<br />
+Amúgy ennyi véletlen meg nincsen. A pénzért azért Masszi is sokmindenre képes.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178136"></A>9. <A HREF="mailto:interstellar_deity@yahoo.ca" STYLE="color: #000000">3llenség</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-07-10 20:37:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3949.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Az én véleményem az, hogy vegyétek a csávót ide állandóra, mert bírom a stílusát! :D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178133"></A>8. Tomcat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2389&id=178131#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-07-10 20:07:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_14.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Masszi úr nem is csodálkozik semmin, vagy mondott mást?<br />
+Vona meg olyan értelemben nem tudta, kicsoda Masszi Péter, hogy nem nézett tüzetesen utána.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178131"></A><FONT COLOR="#FF0000">7. </FONT>Gambit</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-07-10 19:31:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5598.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment178130"></A><FONT COLOR="#FF0000">6. </FONT><A HREF="mailto:zolilz@vipmail.hu" STYLE="color: #000000">ZooLeee </A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-07-10 19:29:38</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_965.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2389&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2389&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2389&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

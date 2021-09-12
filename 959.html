@@ -1,0 +1,465 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=959#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Érdekességek 1919 sajtójából: Tisza István, Károlyi Mihály és a két Hollán Sándor";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=959#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Érdekességek 1919 sajtójából: Tisza István, Károlyi Mihály és a két Hollán Sándor<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 május 20. 09:19:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_959.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><div style="text-align: right;"><font style="font-style: italic;" size="1">"Egyszerre eszembe jutott az, amit Marat          
+ Barbaroux-nak mondott: </font><font style="font-style: italic;" size="1">&#187;</font><font style="font-style: italic;" size="1">Adjatok  nekem négyszáz gyilkost és megcsinálom a           
+forradalmat</font><font style="font-style: italic;" size="1">&#171;</font><font style="font-style: italic;" size="1">&#8230; Szívemben egy  pillanatra megállt a vér. Micsoda embereknek került a       
+    kezükbe az ország  és mindnyájunk sorsa!"<br>- </font><font size="1">- Tormay Cécile: Bujdosó    
+       könyv</font><font style="font-style: italic;" size="1"><br></font></div><br>A 
+Hollán-emléktábla   után                 kutakodva számos érdekes újságcikket szedtem össze az 
+Országos Széchényi   Könyvtárban         1919-ből. Bár         magáról a tábláról nem találtam 
+írást, de a gyilkosságról,   illetve más,         korabeli történelmi         eseményekről igen. Így 
+például a Tisza   István-gyilkosság   nyomozásáról,       majd pedig 1919 nyarától a         
+kommunista gyilkosságok   pereiről. Még ma is   azt tanítják az       iskolai történelemkönyvek, 
+hogy   Tisza       Istvánt   ismeretlen katonák   lőtték agyon, pedig a       korabeli sajtóból 
+egyértelműen kiderül,   hogy         meglettek a   tettesek. Az egész közvéleményt       
+értelemszerűen izgalomban tartó nyomozásról     naponta         írtak a pesti újságok.<br></div><div style="text-align: justify;"><br>Hogy miféle     világállapotok     uralkodtak 1918-19-ben, hamar    
+       átláthatjuk, ha csak végiglapozunk egy   újságot.   Keleten   vörös   őskommunizmus tombol, 
+Nyugaton   még         mindig tele van minden   szögesdróttal és     gödörrel.   Németországban a 
+spartakisták   csinálják   a       fesztivált,   Bécsben vörösbarát   kormány   üldögél,   
+menedékjogot adva Kun   Bélának. Mi még     istenesen       vagyunk, tőlünk csak   az országunkat   
+akarják   elvenni. A román   hadsereggel még     nincsen sok   gond, mert     még nem   jöttek ide, 
+de a   háborút már     elvesztettük, és Károlyi     hazaáruló   pártja már szervezkedik az       
+ország ellen. De   egészen más     minderről egy száraz       történelemkönyvben olvasni, mint egy   
+újságban.     Csak egy apró   hírt   mutatok a   <span style="font-style: italic;">8 órai   
+Ujság</span> 1918 szeptember 13-i   számából.<br></div><br><div style="text-align: center;"><A NAME="WKZSMTX"><A HREF="./index.php?post=959#WKZSMTX" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_1.jpg', 600, 241); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_1.jpg" src="./resources/pictures/tomcat_ujsag1919_1_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br><div style="text-align: justify;">Elvannak hát a ruszkik, de mi a helyzet   
+            idehaza? 1918 október 17-én     felháborító jelenet zajlik le az Országgyűlésben. 
+Lovászy         Márton,   a     Károlyi-párt képviselője hetykén     odaveti az országnak, kikkel is 
+vannak ők.         <span style="font-style: italic;">"Vegyék tudomásul,   hogy   ántántbarátok 
+vagyunk!"</span>   Egy       hadban       álló Magyarország parlamenti pártja az ellenség   oldalára 
+  áll. Az a párt,   amelyiknek       elnökének       szobrát ma könnyek közt koszorúzza minden évben 
+a   jelenlegi           kormány...<br></div><br><div style="text-align: center;"><A NAME="XSIUNLB"><A HREF="./index.php?post=959#XSIUNLB" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_2.jpg', 600, 1190); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_2.jpg" src="./resources/pictures/tomcat_ujsag1919_2_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br><div style="text-align: justify;">Ugyanezen a napon merényletet követnek el 
+              gróf Tisza István miniszterelnök     ellen. Ez még nem a későbbi, sikeres merénylet. A 
+      támadó         revolvere csütörtököt mond. Érdemes     elolvasni a cikket. Így reagált egy 
+igazi       államférfi   egy       igazi merényletre. Több szó nem is esett     róla. És hogy 
+reagált   Gyurcsány     arra, hogy   műanyag       pisztolyt fogott rá valaki egy majálison? Hetekig 
+    ment   a hiszti,   hogy   "de mi lett   volna, ha..."       A merénylő neve is érdekes: Lékai-Leitner   János.       Természetesen   zsidó, hiszen   akkoriban,   egészen     a második 
+világháborúig, a   zsidók gyakran   egyszerre       használták   magyarított és   eredeti nevüket.   
+  Később látni   fogjuk, hogy a   kommunisták neveit is   így       szerepeltetik mind az   
+újságcikkekben,   mind     a bírósági   iratokban. Lékai-Leitnert a   kommunisták   szabadítják ki a 
+  börtönből később, ami   nem is csoda,   hiszen jó barátja Landler   Jenőnek, a későbbi   
+népbiztosnak. A   második   világháború után, egészen   1989-ig tér volt róla   elnevezve   
+Budán.<br></div><br><div style="text-align: center;"><A NAME="HCAAHOY"><A HREF="./index.php?post=959#HCAAHOY" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_3.jpg', 500, 967); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_3.jpg" src="./resources/pictures/tomcat_ujsag1919_3_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br><div style="text-align: justify;">Alig pár napra rá azonban már sikerrel    
+           járnak a merénylők. Tisza Istvánt     saját házában gyilkolják meg. Ekkor természetesen 
+még               ismeretlenek a tettesek, de ez csak modern     történelemkönyveink szerint marad 
+így.     Ugyanezek   a         könyvek állítják azt is, hogy néhány közkatona     bosszúból ölte 
+meg, a     fronton elesett     társaiért.       Természetesen ez sem igaz. Ekkor már javában folyik  
+   a     Károlyi-párt puccsa. A     forgatókönyv       ugyanaz, mint az oroszoknál: először 
+"polgári" kormány       alakul,   aztán ez     sajnos igen gyenge       kezűnek mutatkozik, és azok 
+a fránya   kommunisták,   nebbich, hát   nem       átveszik a hatalmat? Ugyanez       történt 
+1946-ban is, és   egyébként ma is   ez folyik. A       kommunistákat   persze néha máshogy   hívják, 
+    de ugyanaz a   társaság.   <br><br>Nézzük, mit írt a 8     órai   Ujság Tisza   haláláról.   
+Jellemző, hogy       magáról a   merényletről nem is született     híradás, mert olyan   gyorsan   
+terjedt   el a híre         Budapesten, mindenféle újság nélkül     is.<br></div><br><div style="text-align: center;"><A NAME="URMIBDQ"><A HREF="./index.php?post=959#URMIBDQ" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_4_0.jpg', 600, 1182); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_4_0.jpg" src="./resources/pictures/tomcat_ujsag1919_4_0_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br><div style="text-align: justify;">És most... <span style="font-style: italic;">ugorgyung. </span>A következő   újságot már 1919 november 15-én vesszük a     kezünkbe.     
+Tisza         István meggyilkolásának   ügyében egészen eddig nem volt semmiféle nyomozás. Ezután    
+     azonban         naponta kerültek elő   bizonyítékok, és már az első napokban nyilvánvalóvá 
+vált,     hogy az         időközben     külföldre   menekült Károlyi Mihály tudott a merényletről, 
+és     támogatta is azt. Érdemes           elolvasni     ugyanezen napon a bevonuló Nemzeti Hadsereg 
+    méltatását is a       főoldalról.<br></div><br><div style="text-align: center;"><A NAME="MGCIQCA"><A HREF="./index.php?post=959#MGCIQCA" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_5.jpg', 600, 1580); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_5.jpg" src="./resources/pictures/tomcat_ujsag1919_5_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A>&nbsp; <A NAME="DVYAOHV"><A HREF="./index.php?post=959#DVYAOHV" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_6.jpg', 200, 856); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_6.jpg" src="./resources/pictures/tomcat_ujsag1919_6_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br><br><div style="text-align: justify;">A kommunista gyilkosok utáni nyomozásokról,     
+          büntetőperekről például az <span style="font-style: italic;">Az Est</span> című lap 1919   
+      szeptember       30-i, illetve a <span style="font-style: italic;">8 órai Ujság</span> 1919   
+december       16-i számában       olvashatunk. A kommunisták közül elsőként bizonyos Kohn-Kerekes   
+Árpád       kötélkiutalását intézte a   T.     Bíróság. Az egész oldalt betöltő cikk révén ma is   
+képet       alkothatunk a tanácskormány       rémtetteiről.<br></div>  </div><br><div style="text-align: center;"><A NAME="BSWIUXJ"><A HREF="./index.php?post=959#BSWIUXJ" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_8.jpg', 600, 1501); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_8.jpg" src="./resources/pictures/tomcat_ujsag1919_8_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A>&nbsp; <A NAME="CMIWDUE"><A HREF="./index.php?post=959#CMIWDUE" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_7_0.jpg', 800, 1159); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_7_0.jpg" src="./resources/pictures/tomcat_ujsag1919_7_0_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br><br></div><div style="text-align: justify;">A tömeges rablások kiváló példája         
+volt,       amikor Rákosi Mátyás parancsára Budapest minden lakosának be kellett szolgáltatnia       
+  minden   függönyét     és szőnyegét. A zsidók természetesen tudták, miből lehet pénzt csinálni,    
+     hiszen a   felgyűlt hatalmas     mennyiséget el akarták adni, hogy egy kis "zsebpénzük" legyen. 
+  Az       <span style="font-style: italic;">Az Est</span> 1919 október 3.-i számából megtudhatjuk,  
+ hogy       Budapest   szőnyegei egyetlen     bátor embernek köszönhetik   
+megmenekülésüket.<br></div><br><div style="text-align: center;"><A NAME="EYVQEYZ"><A HREF="./index.php?post=959#EYVQEYZ" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_9.jpg', 600, 1119); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_9.jpg" src="./resources/pictures/tomcat_ujsag1919_9_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br><div style="text-align: justify;">Ugyanezen lap 1919 október 26-án          
+     részletes írást közölt arról, hogyan menekült ki az országból Károlyi Mihály, és vitte magával 
+az               ellopott, elsikkasztott koronamilliókat. Nem is csoda, hogy az MSZP annyira 
+tiszteli ezt   az             embert...<br></div>  <br><div style="text-align: center;"><A NAME="VAAYWYZ"><A HREF="./index.php?post=959#VAAYWYZ" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_10.jpg', 600, 870); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_10.jpg" src="./resources/pictures/tomcat_ujsag1919_10_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="KFULYRU"><A HREF="./index.php?post=959#KFULYRU" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_11.jpg', 600, 1222); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_11.jpg" src="./resources/pictures/tomcat_ujsag1919_11_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br><div style="text-align: justify;">Nagy gondot okozott akkoriban a           
+    "forradalmi eszmék" fertőző hatása a közoktatásban. Az újságok szinte naponta írtak arról, hogy  
+ mely             budapesti iskolákból kellett kicsapni tanulókat azért, mert a tömeggyilkos   
+kommunista       rendszert       éltették, az Internacionálét énekelték, vagy magyarellenes   
+agitációt végeztek.       Különös módon a       legtöbbjüknek elég jellegzetes családneve volt, és   
+egyikük magyarellenes       viselkedése indokául a       "hitsorosai" sorsát hozta fel. Az is   
+érdekes, hogy némelyikük ellen       azért folyt eljárás, mert a       kommün idején politikai   
+nyomozónak (!) jelentkezett. Sejthető,       hogy ezeknek a kicsapott       senkiháziaknak harminc   
+évvel később valóra is vált az       álmuk...<br></div><br><div style="text-align: center;"><A NAME="TPEVBMR"><A HREF="./index.php?post=959#TPEVBMR" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_12_0.jpg', 600, 1177); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_12_0.jpg" src="./resources/pictures/tomcat_ujsag1919_12_0_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="FHWJFSA"><A HREF="./index.php?post=959#FHWJFSA" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_22.jpg', 250, 677); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_22.jpg" src="./resources/pictures/tomcat_ujsag1919_22_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="KRZFRAE"><A HREF="./index.php?post=959#KRZFRAE" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_23.jpg', 250, 989); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_23.jpg" src="./resources/pictures/tomcat_ujsag1919_23_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br> <br><div style="text-align: justify;">Mindeközben persze tovább folyt a nyomozás     
+          Tisza István gyilkosai után. 1919 október 28-án Almásy Denise grófnő, az egyik szemtanú    
+   fényképről         felismerte a tetteseket. <br><br><div style="text-align: center;"><A NAME="OYEYEZK"><A HREF="./index.php?post=959#OYEYEZK" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_13.jpg', 400, 1141); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_13.jpg" src="./resources/pictures/tomcat_ujsag1919_13_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <br><br><div style="text-align: justify;">Hogyan viselték sorsukat az elfogott           
+    kommunista vezérek? Az Est 1919 október 30-i számában olvashatunk arról, mivel töltötte napjait  
+             Cserny József, a Lenin-fiúk vezetője kivégzése előtt. Szegény, kiderül, hogy mindenki   
+utálta.   De   az         ellátásra egy szava sem lehetett. Első osztályú kötelet is kapott     
+később.<br><br><div style="text-align: center;"><A NAME="DREWHIS"><A HREF="./index.php?post=959#DREWHIS" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_14.jpg', 1027, 1521); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_14.jpg" src="./resources/pictures/tomcat_ujsag1919_14_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br><br><div style="text-align: justify;">Másnap újabb esemény következett be a           
+    Tisza-gyilkosság nyomozásában. Újabb részletek kerültek napvilágra, egyértelművé vált, hogy a    
+           Károlyi-féle Nemzeti Tanács tagjai tudtak a merényletről, és megnevezésre került a 
+gyilkos,     Pogány           József is.<br><br><div style="text-align: center;"><A NAME="JVJODGX"><A HREF="./index.php?post=959#JVJODGX" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_15.jpg', 400, 1158); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_15.jpg" src="./resources/pictures/tomcat_ujsag1919_15_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br>Másnap pedig helyszínbejárást - ahogy akkoriban írták, "tetemrehívást" -    
+           tartottak a gyilkosság helyszínén. November 2-án sikerült azonosítani, ki járt a 
+gyilkosság         napján       Tisza Istvánnál, és mi történt akkor. Gyanúba keveredett Dobó István 
+és         Horváth-Horvatovics   István     is, akikről később kiderül, hogy valóban ők voltak az 
+elkövetők.         Íme a nyomozás   alakulása, napról     napra.<br><br><div style="text-align: center;"><A NAME="JZYTQXZ"><A HREF="./index.php?post=959#JZYTQXZ" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_16.jpg', 800, 1204); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_16.jpg" src="./resources/pictures/tomcat_ujsag1919_16_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="HXEVWIU"><A HREF="./index.php?post=959#HXEVWIU" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_17.jpg', 800, 1199); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_17.jpg" src="./resources/pictures/tomcat_ujsag1919_17_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="BIEEZIB"><A HREF="./index.php?post=959#BIEEZIB" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_18.jpg', 800, 1137); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_18.jpg" src="./resources/pictures/tomcat_ujsag1919_18_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="HRTQNDE"><A HREF="./index.php?post=959#HRTQNDE" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_19.jpg', 600, 1157); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_19.jpg" src="./resources/pictures/tomcat_ujsag1919_19_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="QJCZIAT"><A HREF="./index.php?post=959#QJCZIAT" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_20.jpg', 500, 1409); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_20.jpg" src="./resources/pictures/tomcat_ujsag1919_20_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br>  <br><div style="text-align: justify;">1919 november 12-én pedig vallomást tett Dr.  
+             Szentkirályi Béla, aki a patkánylázadás idején a budapesti rendőrség   
+főkapitány-helyettese       volt.       Kiderült, hogy Károlyi Mihály személyesen utasította a   
+rendőrséget a Tisza-gyilkosság         nyomozásának     azonnali leállítására.<br><br><div style="text-align: center;"><A NAME="YXSGVXC"><A HREF="./index.php?post=959#YXSGVXC" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_21.jpg', 400, 837); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_21.jpg" src="./resources/pictures/tomcat_ujsag1919_21_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br><br><div style="text-align: justify;">Nem állt meg közben a kommunista tömeggyilkosok 
+              utáni nyomozás, illetve bírósági tárgyalásuk lefolytatása sem. 1919 november 23-án     
+  részletes,         háromoldalas beszámoló olvasható <span style="font-style: italic;">Az       
+Est</span>-ben a   Lenin-fiúk       főtárgyalásáról. Érdekes történelmi dokumentum ez a riport,      
+ érdemes végigböngészni.   Hogy a   vádlottak     a gyilkosság kifejezésére miért a "gajdeszbe       
+küldeni" kifejezést használják,   nem is   kommentálom. A     későbbi napokon megjelent       
+tudósításokat is melléteszem.<br><br><div style="text-align: center;"><A NAME="SGWTOBX"><A HREF="./index.php?post=959#SGWTOBX" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_24.jpg', 800, 1199); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_24.jpg" src="./resources/pictures/tomcat_ujsag1919_24_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="OJZVBSM"><A HREF="./index.php?post=959#OJZVBSM" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_25.jpg', 800, 1172); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_25.jpg" src="./resources/pictures/tomcat_ujsag1919_25_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="PVQFFSF"><A HREF="./index.php?post=959#PVQFFSF" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_26.jpg', 800, 1163); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_26.jpg" src="./resources/pictures/tomcat_ujsag1919_26_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="NSYMQRT"><A HREF="./index.php?post=959#NSYMQRT" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_27.jpg', 800, 1202); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_27.jpg" src="./resources/pictures/tomcat_ujsag1919_27_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="MOVEUSY"><A HREF="./index.php?post=959#MOVEUSY" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_28.jpg', 500, 1428); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_28.jpg" src="./resources/pictures/tomcat_ujsag1919_28_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="JTWXDVT"><A HREF="./index.php?post=959#JTWXDVT" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_29.jpg', 500, 546); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_29.jpg" src="./resources/pictures/tomcat_ujsag1919_29_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br>  </div><br>A közvéleményt nagy izgalomban tartó perről heteken át nagy terjedelemben 
+              értekezett a sajtó. 1919 november 27-én került sor a két Hollán Sándor lánchídi        
+ meggyilkolásának       tárgyalására. Erről ismét több oldalas tudósítás jelent meg <span style="font-style: italic;">Az       Est</span>-ben. Ugyanezen a napon, rögtön e tudósítás után      
+   olvasható a hír: beismerő vallomást   tett     Tisza István gyilkosa, Pogány József. Ennyit a mai 
+        történelemkönyvekről! A beismerő   vallomást tevő     Sztankovszki Tibor részletesen 
+feltárta,   kik       és hogyan ölték meg a kiváló   miniszterelnököt, és fény     derül a 
+Károlyi-féle Nemzeti     Tanáccsal,     illetve a tanácskormánnyal   ápolt kapcsolatukra     
+is.<br><br><div style="text-align: center;"><A NAME="FNFUIVA"><A HREF="./index.php?post=959#FNFUIVA" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_30.jpg', 800, 1191); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_30.jpg" src="./resources/pictures/tomcat_ujsag1919_30_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <A NAME="NOFBHEO"><A HREF="./index.php?post=959#NOFBHEO" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_31.jpg', 800, 1518); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_31.jpg" src="./resources/pictures/tomcat_ujsag1919_31_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br><br><div style="text-align: justify;">A rövidke összefoglaló után azonban a lap       
+        másnapi számában már részletes, egész oldalas tudósítás is olvasható a gyilkosok beismerő    
+           vallomásairól. A gaztett minden részlete, mozzanata ismertté vált.<br><br><div style="text-align: center;"><A NAME="YVHKKDP"><A HREF="./index.php?post=959#YVHKKDP" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_32.jpg', 800, 1184); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_32.jpg" src="./resources/pictures/tomcat_ujsag1919_32_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br></div><br>A Hollán-gyilkosságról is további részletek derültek ki ezen a napon.       
+        Vallomást tett Hollán Sándorné, ifjabb Hollán Sándor özvegye, illetve Hollán Miklós, Hollán  
+   Sándor           öccse, akik saját szemszögükből mondták el annak a borzalmas éjszakának a     
+történetét.     <br><br><div style="text-align: center;"><A NAME="EWNNQJL"><A HREF="./index.php?post=959#EWNNQJL" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_32.jpg', 800, 1184); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_32.jpg" src="./resources/pictures/tomcat_ujsag1919_32_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A> <br></div><br>A november 29-i lapszámban pedig fény derül egy történelmi mítosz          
+     eredetére. Manapság megélhetési rettegőink gyakran hivatkoznak a "nyilas házmesterekre", 
+akiktől               rettegett mindenki, mert csak egy telefonba került neki, és a nekik nem tetsző 
+lakót már     vitték   is   a       Dunába lőni. Nos, a mese eredete a Hollán-gyilkosság, csak 
+természetesen a     házmester   nem   nyilas,       hanem kommunista volt, és nem az áldozat volt 
+zsidó... Így működik a     héber   mesemondás:   saját       gaztettük történetét addig 
+csűrik-csavarják, míg sok évvel   később   ők   lesznek a   sajnálatra méltó       áldozatok. Jó 
+megjegyezni ezt az apróságot, és ha   megint a     "nyilas   házmesterekre" hivatkozik valaki,       
+felvetni neki, hogy mondjon erre egy   dokumentált     példát,   mert 1919-ből éppenséggel tudunk az 
+      ellenkezőjére...<br><br><div style="text-align: center;"><A NAME="TEEZSJT"><A HREF="./index.php?post=959#TEEZSJT" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_34.jpg', 800, 1200); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_34.jpg" src="./resources/pictures/tomcat_ujsag1919_34_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br><br><div style="text-align: justify;">Az ügy lezárult, a gyilkosokat felkötötték,     
+          lecsukták. Ám ne higgyük, hogy Horthy bevonulásával azonnal rend lett. Még 1919 
+decemberében     is           aktívkodtak egyes kommunista bűnözők. Kevesen tudják, hogy Szamuely 
+Tibornak volt két       testvére   is,       akik semmivel sem voltak különbek hírhedt bátyjuknál. 
+Egyikük, Szamuely   György     hűségesen   követte       Tibor példáját, és önként ment a pokolra, 
+mielőtt segítettek   volna neki.     Szamuely   László azonban       továbbra is a proletárdiktatúra 
+híve maradt, és   előbb Korvin-Klein     Ottó   kiszabadítására, majd a       kitört zűrzavarban 
+Horthy Miklós   meggyilkolására készült.     Szerencsére   Horthy Miklós hírszerzése       
+meghiúsította a tervet.   Íme az <span style="font-style: italic;">Az   Est</span> 1919 december 
+28-i       címlapja a       tudósítással.<br><br><div style="text-align: center;"><A NAME="AFUOUZQ"><A HREF="./index.php?post=959#AFUOUZQ" ONCLICK="openbigwindow('resources/pictures/tomcat_ujsag1919_35.jpg', 800, 1251); return true;"><img bigpic="resources/pictures/tomcat_ujsag1919_35.jpg" src="./resources/pictures/tomcat_ujsag1919_35_thumb.jpg" style="border: 1px solid rgb(0, 0, 0);" border="0"></A><br><br><div style="text-align: justify;">Ezzel az újsághírrel pedig a gyűjtés végére     
+          értem, és nem értem, miért nincs a CD-n talán a legérdekesebb. Talán elfelejtettem 
+elmenteni   a             könyvtárban. Ennek lényege, hogy 1919 végén, Szeged környékén a csendőrök 
+elfogtak egy       csavargó,         rongyos nőt, bizonyos Klein Mártát. Kiderült, hogy ő is 
+országosan körözött   vörös     terrorista,         Szamuely Tibor jobbkeze volt, maga is számos 
+gyilkosságban vett részt,       bérgyilkosként is         tevékenykedett. Ám ami érdekesebb, hogy a 
+nyomozók előtt felfedte,   hogy     Szamuely utasította őt, hogy         ölje meg Kun Bélát, mert 
+Szamuely szerint Kun nem volt   eléggé     radikális. A gyilkosságra csak a         tanácskormány 
+bukása miatt nem került sor. Ha   legközelebb a     könyvtárban járok, megpróbálom         
+előkeresni ezt az érdekes       
+hírecskét.<br><br></div></div></div></div></div></div></div></div></div>               
+</div></div></div></div></div></div></div>        </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-05-20&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=959&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=959&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=959&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=959&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=959&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=959&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=959&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=959&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment118458"></A>68. Suomi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-11-10 16:38:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_960.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bár majdnem fél évvel később olvastam, de nagyon jó. Tényleg megérte!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60862"></A>67. Kandrew</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-05-22 14:36:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Gratula TC, ez a cikk megérte az egész napos kutakodást, igen sok nem ismert információt gyűjtöttél nekünk.<br />
+<br />
+Szerintem sok történelemtanár egész élete folyamán nem tölt el ennyi időt könyvtárban, pláne nem magyar történelmet kutatva.<br />
+<br />
+mint mindíg: tisztelet a kivételnek.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60846"></A>66. <A HREF="mailto:neozsivany@freemail.hu" STYLE="color: #000000">neozsivany</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=959&id=60792#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-22 13:32:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hááát szerintem az a "gróf " akkor pláne ciki:D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60811"></A>65. Walaky</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-05-22 10:31:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1706.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Jó cikk! Köszönjük!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60792"></A>64. arax</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=959&id=60580#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-22 09:19:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_382.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Pedig belefér a "kommunista gaztettek" kérdéskörbe LENINgen-Westerburg Károly.:)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60580"></A>63. <A HREF="mailto:neozsivany@freemail.hu" STYLE="color: #000000">neozsivany</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=959&id=60569#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 17:48:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem, nem tett ilyet olyannyira nem, hogy még közvetlenül a kivégzése előtt is, az akasztófa alatt ezen vádpont ellen tiltakozott...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60569"></A>62. Sabre</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=959&id=60566#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 15:19:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3516.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Mit tudom én. Ha lelövette őket akkor jól tette.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60566"></A>61. <A HREF="mailto:neozsivany@freemail.hu" STYLE="color: #000000">neozsivany</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=959&id=60547#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 15:01:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"A bécsi hadbíróság nem hozott fel hamis vádakat, a per nem volt koncepciós. Hazudni, hamis vádakat felhozni kommunista találmány."<br />
+<br />
+Például az sem volt hamis vád, hogy gróf Leiningen-Westerburg Károly Buda várának bevételekor osztrák tiszteket lövetett agyon...<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60558"></A>60. arax</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=959&id=60552#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 14:11:43</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_382.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Onnan tudom, hogy miután ezért és más gaztetteiért (pl. gyermek végtagjainak megrövidítése szemmelveréssel, majd visszaváltoztatása, gyermek kékkéváltoztatása és meggyilkolása, majd feltámasztása, emberek templomban való láthatatlan zaklatása) lefejezésre és máglyára ítélték, a királynő személyes védelmébe vette, és ő mondta ki ártatlanságát.:)<br />
+Egyébként meg a komcsi koncepciós perek nagy vonalakban valóban úgy zajlottak, ahogyan mondod, legalábbis két félévnyi Komcsi politikai peres szeminárium után bennem is erősen ez a kép él, vagy még durvább.<br />
+(Mellesleg Bárthory pere ez alapján nyugodtan lehet koncepciós per, ugyanis erőteljesen a vagyonára nyomultak, sajnos sikerrel.)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment60552"></A>59. Sabre</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=959&id=60549#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-05-21 13:56:19</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3516.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Honnan tudod, hogy nem változtatta sárga lóvá ? :-)<br />
+Hamis tanúvallomások mindig voltak. A hisztériakeltés is régen bevált módszer.<br />
+Az igazi koncepciós pereket, a hatalom csinálja. A bíró, ügyész , tanúk mindegyike előre kitervelt módon, a hatalom utasítására cselekszik.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=959&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=959&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=959&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=959&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=959&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=959&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=959&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=959&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

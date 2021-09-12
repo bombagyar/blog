@@ -1,0 +1,466 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2516#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Zsidók-e a krisnások? Válasz egy cikkre a HunHíren";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2516#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Zsidók-e a krisnások? Válasz egy cikkre a HunHíren<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 szeptember 3. 01:41:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2516.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Olvasói levél jelent meg a <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//hunhir.hu/index.php?pid=hirek&id=22632">HunHíren,</a> amelyben egy "Felvilágosult" nevű illető azt írja, a Magyarországi Krsna-tudatú Egyház "zsidó irányítás alatt" áll, mi több, egy "zsinagógás szekta, mint&nbsp; pl. a Hit Gyülekezete". A kommentárok közt már kérték, hogy válaszoljak erre, de úgy gondolom, ez hosszabb választ igényel, mint egy egyszerű viszontkommentár.<br><br>A levélíró azzal kezdi, elég jól ismeri "a krisnásokat" itt, Magyarországon. Nyilvánvalóan a Magyarországi Krsna-tudatú Egyházra gondol, amely a vaisnavizmus fő képviselője hazánkban. Az egyház az Ő Isteni Kegyelme Srila Prabhupada által a hatvanas években az Egyesült Államokban elindított vallási mozgalom magyarországi ága, rövidítve ISKCON (International Movement of Krshna Conciousness). A vallás maga persze nem a hatvanas években született, hanem jó ötezer éves, de az Indiából érkezett tanítómester nem a Nyugaton ismert hindu néven ismertette a tanokat, hanem az Indiában eredetileg használatos nevet (vaisnava) és egyházi terminológiát fordította le angolra. A mindössze néhány rúpiával és egy szatyor könyvvel New York-ba érkező vallástanító oly sikeresen állította maga mellé a hippimozgalom drogmámorában fetrengő, útkereső fiatalokat, hogy néhány éven belül a könyvfordítások eladásából már több tucat krisnás templomot (asram) és vallási közösséget sikerült felállítaniuk, amelyek a mai napig működnek. Srila Prabhupada útmutatása szerint az embereknek fel kell hagyniuk az élvhajhász élettel, és a magyarországi, somogyvámosi Krsna-völgyhöz hasonló közösségeket kell alapítaniuk, ahol egyszerű munkából élnek, tartózkodnak az élvezetek hajszolásától, és mindent Isten, azaz Krsna dicsőségére tesznek. Elképzelésével nem volt egyedül, hiszen például az amishok is ugyanezt teszik, csak nem hindu, hanem keresztyén vallási alapokon.<br><br>Magától értetődik, hogy Srila Prabhupada tevékenységét nem nézték jó szemmel azok a körök, akiknek fontos céljaik voltak az emberek hülyítésével, különösen a fiatalok drogra és rock and rollra szoktatásával. Halála különös körülményeiről korábban írtam <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.bombagyar.hu/showpost.php?post=669">itt, a Bombagyáron.</a> A nagyságában csak II. János Pálhoz vagy Teréz anyához mérhető hitoktatót minden valószínűség szerint az Illuminátosok - azaz a luciferiánusok - mérgezték meg, akik könnyűszerrel közel férkőzhettek hozzá, ügynökeik tanítványnak adva ki magukat.<br><br>Visszatérve a HunHíren megjelent levélre, a névtelen levélíró azt állítja, hogy az egyház magyarországi vezetése, főleg Sivarami Swami zsidó, aki - természetesen - csupán nyerészkedni kíván az egyházban.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"De a levél célja itt most az ugynevezett "főlelkészüknek" az ismertetése.Nos ennek a főlelkésznek a magyarosított neve Létai Péter, 56-ban kimenekülta családja Kanadába..A krisnások között őt "Sivarama Swami"-nak mondják. És most jön a lényeg, Létai Péternek az eredeti családneve Sonnenschein, ennél zsidóbb nevet nehéz lenne elképzelni.. Ez egyébként onnan tudható,
+hogy Péternek az unokatestvére Lantos Róbert egy nagyon elismert amerika film producer, elkészítette a családjuk történetéről szóló filmet. Ennek a filmnek a címe "A Napfény Íze" (angolul: Sunshine). Bizony ez egy nagyon híres film, én is megnéztem még felvilágosulatlan koromban, mit sem sejtve a zsidók uralmáról, és a filmnek hátterének az ilyen szoros kötődéséről Létai Péterhez."</div><br>Ez igaz, Sivarama Swami családja valóban Kanadába menekült, és Sivarama Swami már onnan tért vissza. Mivel kint nőtt fel, a mai napig kissé törve beszél magyarul. Ő indította el Magyarországon a Krsna-tudatú egyházat, és "vezeti" azt a mai napig. Azért teszem idézőjelbe a szót, mert a krisnásoknál nincs sok értelme vezetőről beszélni, ugyanis az egyház egyenlőséget hirdet, és a vezetést csak az egyház dologi ügyeinek intézése kapcsán lehet emlegetni, aminek nincs sok köze magához a valláshoz. Az egyház nem azonos a vallással, csupán intézménye annak, segít, hogy a tanok eljussanak az emberekhez, illetve fussanak olyan programok, mint az Ételt az Életért segélyakció vagy a könyvkiadás. Főlelkész pedig azért lett, mert gyakorlatilag az összes többi magyarországi bhakta tőle tanulta meg a vallási elveket. Ő maga Srila Prabhupada személyes tanítványa volt, és 1979 óta él lemondott életet. Magyarországon több tízezer ember köszönheti neki közvetve vagy közvetlenül, hogy közelebb került Istenhez, megismerte a világ működését, és boldogabbá vált az élete. Köztük én magam is.<br><br>A levélíró azonban nem ezzel foglalkozik, hanem azzal, hogy vajon Sivarama Swami zsidó-e. Őszintén szólva nem tudom, hogy az-e. Én soha nem hallottam, hogy az eredeti neve Sonnenschein volt-e vagy sem. Nem is foglalkoztam vele. Miért? Mert amit a krisnásoknál láttam, semmilyen gyanakvásra nem adott okot. Több, mint tíz éve ismerem a vallást és az egyházat, bár nem vagyok avatott bhakta. De nem csak én, hanem az itt, a Bombagyáron kommentáló tucatnyi krisnás - köztük avatottak - is alátámaszthatják, hogy soha nem tapasztaltunk olyasmit, ami miatt az ISKCON-t vagy bármely vaisnava szervezetet a Hit Gyülekezetéhez vagy hasonló álegyházakhoz lehetne hasonlítani. A HunHíren megjelent mocskolódó névtelen levélhez hasonlót soha nem láttunk sehol. Pedig ha lenne valami alapja, már előfordult volna néhány ilyen.<br><br>Soha nem kértek tőlünk pénzt. Kizárólag akkor, ha vásároltunk valamit: könyvet, kegytárgyat, ételt. Természetesen a templomban van persely, aki akar, dobhat bele. Ha ez valamiféle cionista susmus, akkor kérem a levélírót, elemezze a katolikus egyház zsidó kötődését is.<br><br>Soha senki nem látott gazdag krisnást. Ez nem azt jelenti, hogy a krisnások kötelesek koszos rongyokban járni, és ha meglátjuk, hogy valamelyik egy jobb cipőt vesz vagy étteremben ebédel, akkor az csaló. Nem erről van szó. Nem láttuk még, hogy az "egyházi vezetők" (az idézőjel okát lásd fent) bármelyike fölöslegesen drága autóval utazott, ékszert viselt, villát épített vagy bármiféle fölösleges, csak az élvezet kedvéért való dolgot vásárolt vagy cselekedett volna. Természetesen ez ismét csak nem azt jelenti, hogy a krisnások mindenhová gyalog mennek, putriban laknak és egész nap csak ülnek maguk elé nézve. De az egyház bevételei sohasem kerülnek magánszemélyekhez. Egyrészt a Krsna-völgy és az asramok építésére, szépítésére fordítják - meg is lehet nézni, milyen gyönyörű mindegyik, és aki szerint ez "lopás", az legyen szíves, kérje számon a Szent István-bazilika aranydíszeit is - másrészt a vallás, pontosabban az Istenről való tudás terjesztésére és a szegények segélyezésére költik. Nagyon szép közösségi programokat is rendeznek, mint amilyen az évenkénti Ratha-Yathra szekérfesztivál, ami egy kis erőltetéssel olyasmi, mint a keresztényeknek a húsvéti körmenet.<br><br>Sivarama Swami sem kivétel a fentiek alól. Mi, akik találkoztunk vele, hallgattuk előadásait és nem kevesen személyesen is ismerjük - bár részemről ez csak futó ismeretség - pontosan tudjuk, hogy a levélíró egyetlen célja ennek a nagyszerű embernek a lejáratása. Ostoba prolik persze most felkiálthatnak, hogy igen, mert mi "agymosottak" vagyunk. Nekik ezúton is gratulálok, holnaptól a Népszabadságot is nyugodtan higgyék el. A levélíró talán ismeri "a krisnásokat", de a Védák tanait biztosan nem, mert akkor nem állítana marhaságokat. Sivarama Swami hiteles tanító, aki mindenben a Védák tanítása szerint él és tevékenykedik. Tanúja ennek több ezer avatott bhakta és százezernyi szimpatizáns. Az egyház magyarországi működésének idestova húsz éve alatt soha egyetlen fillér el nem tűnt, gyanúra nem adott okot semmi. Ellenben sok ezer fiatal szabadult ki a tudatlan élet béklyóiból, dobta el a kábítószert, kezdett Istennek tetsző életet élni, mégpedig úgy, hogy abba egy jezsuita hitoktató sem köthetne bele azon túl, hogy nem a kereszt jelét vették magukra, hanem a fejüket borotválták le inkább. Az ISKCON-t "szektának" nevezni pedig műveletlenségről tanúskodik, ugyanis a "szekta" szó egyházból kivált vallási csoportot jelent, mint például a Hit Gyülekezete, de az ISKCON nem vált ki soha sehonnan.<br><br>Hogy kik Sivarama Swami rokonai, nem tudom, és nem is érdekel. Mint ahogy az sem érdekel senkit, hogy Toroczkai László rokona volt Tutsek Gusztáv vérbíró, aki százakat akasztatott fel 1956 után, Ezekről is lehetne "leleplező" cikkeket fabrikálni. De mint ahogy például Toroczkai sem csinál titkot ebből a nem túl kellemes rokonságból, nyilván a levélíró sem tudná, kik Sivarama Swami rokonai, vagy az ő eredeti neve, ha maga a mester nem mondaná el bárkinek. (Vagy nem lehetne megtalálni az Interneten egy kis kereséssel, például <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//home.the-wire.com/%7Esteph/rfrr/rfmacleans.html">ebben a cikkben.</a>) A rokonok "fontosságáról", helyesebben a rokoni kapcsolatok érdektelenségéről lásd a Bhagavad-Gítát és Srila Prabhupada tanításait. Minden élőlényben - így a zsidókban is, bármily furcsa - ugyanolyan lélek lakozik, és e lélek vágyai határozzák meg, hogy a személy milyen lesz. Bizonyos értelemben a születés helyét és formáját is, hiszen a vándorló léleknek már születése előtt is vannak vágyai, és amilyen szeretne lenni, olyan formában testesül majd meg. Ha éppen olyan akar lenni, mint Ariel Saron, akkor Ariel Saron lesz. Ha Sivarama Swami, akkor Sivarama Swami. Mindenki maga dönti el, merre megy tovább.<br><br>Ha Sivarama Swami úgy döntött, hogy fejlődni kíván, megvan neki a lehetősége. Akár egy rablógyilkos fia is lehetne, nem érdekes, hol született és kik a rokonai. Az a lényeg, hogy ő maga mit csinál. S bárki származásának csak ennek fényében van értelme. A keresztényi megbocsátás is ennek szellemében értelmezendő, lásd Krisztus esetét a jobb oldali latorral. A levélíró ostoba, elvakult gyűlöletében Krisztust köpi szemen, amikor a származást megbocsáthatatlan bűnnek képzeli.<br><br>Az pedig egy marhaság, hogy a "főzsidó", ahogy a levélíró Sivarami Maharadzsot nevezi, "luxusházban" időzik a Krsna-völgyben. Azt persze el tudom képzelni, hogy a levélíró valami poros kis lyukban tengeti életét, és irigykedik azokra, akik szép házban laknak. Sivarama Swami egy életet dolgozott végig azért, hogy az a völgy, azok a házak felépüljenek, iskola, tehenészet, virágzó földek szülessenek, nem mellesleg egy csőd szélén álló magyar falut is felvirágoztatva, ami a fene nagy zsidómentességében semmit sem tudott kezdeni a földjével, és ezért lakik ott egy szép házban. Miből telik neki? Abból, hogy megdolgozott érte, bunkókám! Az meg, hogy "közben a hívőktől a szokásos módon minden el van véve", közönséges hazugság. Sem Sivarami Swami, sem az egyház nem vesz el senkitől semmit. A Krsna-völgy lakói valamennyien szép házakban élnek, ugyanolyanokban, mint maga Sivarama Swami. Aki nem hiszi, menjen el oda, és nézze meg.<br><br>Végül néhány szót magáról a levélíróról. "Felvilágosultnak" nevezi magát, ami mit is jelent? A luciferiánusok nevezik magukat felvilágosultnak, mi több, tőlük ered a felvilágosodás kifejezése is. Fő céljuk az egyházak lejáratása és szétverése. Az ISKCON-t már nagyon régen célkeresztben tartják, hiszen zavaró módon Srila Prabhupada kezdeményezése mindmáig százezreket irányít a helyes útra, és tart is ott életük végéig. Vajon mi alkalmasabb a széthúzás szítására, mint egy jellemzően keresztényeket, nemritkán szélsőséges érzelmű, antiszemita keresztényeket megszólító hírportálra írt uszító cikk? Ideje összeugrasztani a mélymagyarokat a vaisnavákkal, hiszen míg a katolikus egyház tökéletes irányítás alatt áll, ezek itt zavartalanul felvonulgatnak, ételt osztanak és könyveket árulnak. Nagyon sajnálom, hogy a HunHír ilyen egyszerűen a luciferiánus suttogó propaganda eszközévé tudott válni. Pedig már maga a levélíró neve is árulkodó kéne, hogy legyen, benne rejlik, hogy mennyire cinikusan hülyének tekinti azokat, akiket megszólít.<br><br> </div></DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-09-03&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2516&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2516&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2516&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2516&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2516&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2516&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2516&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment185326"></A>51. Scorpion82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-08 06:06:13</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves GEschenker.<br />
+ Nem nagyon érdemes vitatkoznunk, mert nem értünk egyet alap dolgokban.<br />
+Nincs baloldali értékrendem, állati ösztönöm is csak annyi, mint másnak. A Yotengreit egyáltalán nem tanítja a korlátlan, zabolátlan nemi életet, sőt, több helyen is leírja, hogy a monogámia az egészséges, és természetes., és ettől csak ott szabad eltérni, ahol a helyzet megindokolja. Látod, az ilyenek miatt éenne érdemes elolvasni a könyvet, mert idézetekből ,és a gyalázkodó cikkekből ez nem derül ki. Papp György ott volt rettenetesen sportszerűtlen, hogy önkényesen kiragadott részeket a teljes szövegből, és azokat kommentálta a saját nézőpontjából. Jó példa erre, hogy a kenderes gyógymódokat egyből az szdsz-el, és a kendermag egyesülettel állítja párhuzamba, holott a Yotengrit egy szót sem ír arról, hogy élvezeti cikként kell használni a kendert. És még sorolhatnám a hasonló példákat. Nekem egyszerűen ez a kritika nem mérvadó, mert elfogult, nem tényeken alapszik, hanem afféle konyhapolitika-szintű fröcsögés. Ettől függetlenül Papp György biztosan jó ember és jó magyar, de itt szerintem nem tudott túllépni bizonyos emberi gyengeségeken.<br />
+Ami a kereszténységet illeti, sajnos nem tudok nem észrevenni bizonyos dolgokat, mint vallásokkal foglalkozott, vallási oklvevéllel is rendelkező ember. Életemben talán egy, vagy két pappal találkoztam, akin látszott, tudja, érti és éli is, amiről prédikál (katollikusok voltak, a reformátusoknál mág ennyivel sem találkoztam, pedig keresztlevelem szerint az lennék). Szóval ezt ne vedd személyes sértésnek, vagy afféle általánosításnak, hiszen meggyőződésem, hogy aki spirituális ember, az bármilyen vallásban ugyanazokat az egyetemes értékeket látja, és ami nem érték, azt nem követi. Szó sincs róla, hogy a Jézusi Tanítást kritizáljam, viszont az egyházakról megvan a véleményem. <br />
+Sajnos, nem tudom elképzelni, miféle hierarchiáról beszélsz a nemek kapcsán.  A két nem természetesen teremtetett két nemnek, és hangsúlyozom, semmi sem indokolja, hogy egyiket a másik fölé helyezzük. Semmi. A két nem kiegészíti és segíti egymást, együttműködik, és egyáltalán semmi oka nincs annak, hogy az egyik uralkodjon a másik felett.<br />
+Szóval annyira szerintem nem kéne "jobboldalinak" lennünk, hogy oda is hirearchiát teszünk, ahová természetes állapotban nagyon nem kéne.<br />
+"Nem jó dolog, ha az embert az érzelmei irányítják"...ha CSAK az érzelmei irányítják, az valóban nem jó. De szerintem a fogaskerekes agyműködés önmagában legalább ugyanolyan káros, mint a pusztán érzelmi alapú. Valahogy valamiféle harmóniafélére kéne törekedni...<br />
+<br />
+"akkor és azzal szűröd össze a levet, akivel éppen kedved tartja (a Yotengrit egyébként érdekes módon ezt támogatja is...),"<br />
+<br />
+Nem támogatja egyáltalán. Mindössze annyit állít, hogy a szexuálitás teljesen természetes, és istentől származó örömforrás, az elfojtása pedig betegségeket okozhat.  Mert attól, hogy ezt Freud is így állította, ez még igaz. <br />
+<br />
+"Akkor tedd meg és lépj túl az állatias ösztöneiden, és uralkodj magadon!"<br />
+<br />
+Értettem, Mester. Mellesleg, házasságban élek, és gyerekünk is van. De köszönöm a tanítást!<br />
+És az "egészséges" nemi élet alatt a heteroszexuális, kultúrált nemi életet értettem. <br />
+<br />
+Részemről ezt a vitát lezártam, köszönöm a beszélgetést .</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment185250"></A>50. <A HREF="mailto:gschenker@freemail.hu" STYLE="color: #000000">gschenker</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2516&id=185057#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-09-07 21:51:27</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves Scorpion82!<br />
+<br />
+"Látom, nagy hatással volt rád Papp György lovasíjász gyalázkodó cikke a Yotengritről. Szerencsésebb lenne, ha elolvasnád a könyvet, mert tudnád is, miről szól, és inkább az alapján alkotnál véleményt."<br />
+<br />
+Hogy őszinte legyek engem sokkal inkább a Máté Imre tollából eredeztetett lektúrák motiválnak, véleményemet azok alapján alakítottam ki. Ezzel együtt én azért csínján bánnék a jelzőkkel, mert bár tudom, nektek ezt a cikket egyszerűbb egy negatív jelző kíséretében elhárítani, semmit az általa felvetett igen fontos és súlyos vádakat megválaszolni, én azért azt mondanám, hogy a tartalomra fókuszálj, mielőtt vádat megfogalmazol. Magát a könyvet, bevallom, sosem olvastam, de számtalan részlet megtalálható belőle a neten, és hivatalos vagy nemhivatalos forrásokból is bőven találtam olvasmányokat. Alapelvem, hogy nem kell ahhoz elmerülni a fekáliában, hogy az ember megállapíthassa róla, hogy az "büdös"...<br />
+<br />
+"A balliberálison meg ne lovagoljunk. Se a baloldal, se a liberális se azt jelenti manapság MAgyarországon, amit kellene..."<br />
+<br />
+Én tudom, hogy a baloldaliság mit jelent, mert én nem politikai, hanem spirituális szempontból tekintek személyeket vagy személyek egy csoportját baloldalinak. A pártok világában nincs jobb- és baloldal, csak baloldali erők vannak, amelyek bal- vagy jobboldali címkéket aggatnak magukra, mikor hogy kívánja érdekük.<br />
+Én egyáltalán nem ilyen értelemben beszélek bal- vagy jobboldaliságról...<br />
+<br />
+"Mi az, hogy férfi és nő egyenlőségének túlhangsúlyozása? Túlhangsúlyozása??? Szerintem normális ember nem gondolja, hogy az egyik nem feljebbvaló lenne, mint a másik."<br />
+<br />
+Szerintem meg egy "normális ember" (értsd az én olvasatomban puritán jobboldali) elfogadja, hogy az életben természetszerűen létezik egyfajta hierarchia, és ebben a nemiség sem képezhet kivételt. A terra firmában, a látható világunkban lévő dolgok összefüggenek és egymáshoz kapcsolódnak, ezért egyfajta rend is van közöttük, a rend alapja viszont a természetben mindenkor a hierarchia (hiérosz ="szent", "isteni"; arkhé ="uralom). Mivel az ember nem vonhatja ki magát sem Isten, sem a természet törvényei elől, szükséges, hogy legyen közte és a többi ember között egyfajta hierarchia, mely idoneitás és leszármazás alapján - mivel ez a kettő szoros összefüggésben van egymással - egymás alá- és fölé rendeli az embereket, és nemcsak az embereket. <br />
+<br />
+Miért ne lenne tehát különbség a természet törvényei szerint a férfi és a nő között, amikor már nemtől függetlenül is létezik az egyes létezők között, és főleg miért lennének a hierarchia egyazon szintjén?<br />
+<br />
+"Lehet ezzel most sokakat megsértettem, de ezt a véleményt én születésem óta így érzem, osztom és megvallom bárhol."<br />
+<br />
+Na látod itt kezdődik a baj forrása, ti. véleményt nem "érezni", hanem érteni kell. Nem jó dolog, ha az embert az érzelmei irányítják...<br />
+<br />
+"A nemi élet szabadságának túlhangsúlyozása? Engedtessék már meg....Istenre hivatkozva nekem senki se mondja meg, kivel élhetek nemi életet és kivel nem, amíg az természetes és egészséges."<br />
+<br />
+Senki nem mondott meg sem neked, sem másnak ilyesmit, de tudod a házasság nálunk szent dolog, és ha neked az számít "egészségesnek", hogy akkor és azzal szűröd össze a levet, akivel éppen kedved tartja (a Yotengrit egyébként érdekes módon ezt támogatja is...), akkor tudd, hogy ez nem "egészséges", s ebből kifolyólag nem is természetes. Teljesen mindegy, hogy hányszor és hogyan váltogatod "barátnőidet", akiket szimpla használati tárgyként használsz alantas ösztöneid kielégítésére, a természetes célja a párosodásnak az utódnemzés, és nem az örömszerzés. Egy dolog, hogy az állatok ösztönből bárhol és bármelyik tüzelő állattal képesek lennének összeszűrni a levet, te azonban EMBER vagy, akinek uralnia kell ösztöneit és nem felváltva másokon kiélni azokat. <br />
+<br />
+Mindazonáltal érdekelne, hogy szerinted hol kezdődik az "egészséges nemi élet"? Kifejtenéd ezt?<br />
+<br />
+"Elhiszem, hogy a zsandár, dádázó Isten eszméje is több ezer éves, de talán ezen már kicsit túl kéne lépni annak, aki gondolkozik is..."<br />
+<br />
+Akkor tedd meg és lépj túl az állatias ösztöneiden, és uralkodj magadon! A rendezett és igazán természetes nemi kapcsolat nem az, hogy untomiglan-untodiglan kefélsz valakit, akit aztán majd kidobsz, mint egy koszos zsebkendőt, ha kényed úgy tartja. Ha tényleg "gondolkodni" akarsz, akkor úgy vélem, hogy ezt érdemes lenne fontolóra venned, mert az állat megengedheti magának az ösztönös kielégülésre való folyamatos törekvést, de a te tested egy magasabb rendű lélek temploma, amelyet a félállati szintű nemi magatartással megrontasz.<br />
+<br />
+"A monotesita vallásokkal való ellenszegülés? Szerintem Koppányék is ellenszegültek, már ami Róma vallását illeti..."<br />
+<br />
+Miért is? Koppány színből ugyan, de felvette a keresztséget, ez a keresztség pedig teljesen mindegy, hogy Róma vagy Bizánc által lett kiszolgáltatva. Azzal, hogy Koppány Róma ellen lázadt, fellázadt Bizánc ellen is, ti. eltérő politikai érdekek ide vagy oda, a kereszténység akkor még - legalábbis a latin és a görög részegyházak tekintetében - egységes volt. Mindazonáltal igen, Koppány ellenszegült Istennek, és meg is kapta érte büntetését.<br />
+<br />
+"Amúgy köszönöm a kioktatást, ismétlem, el kell olvasni a könyvet, és némi vallástörténeti alapsimeretek sem ártanának..."<br />
+<br />
+A vallástörténeti "alapismeretek" nálam is megvannak (bár az is igaz, hogy engem nem bérsarlatánok, hanem nemzetközileg elismert professzorok tanítanak), de a könyvet hiába ajánlod nekem, mert egyszerűen nem fogom megvenni. Nincs az a pénz ugyanis, amit én erre ne sajnálnék kiadni. Egyszerűen nem vagyok hajlandó támogatni egy ilyen... hm... "egyházat"...<br />
+<br />
+"Nem hiszek olyan Istenben, aki előtt térden kell csúszni-mászni, emberek előtt meg főleg nem teszem. Még akkor sem, ha négy évvel több teológiát végzett az egyetemen, mint én."<br />
+<br />
+Persze, hogy nem hiszel, mivel önelégült baloldali értékrended meggátol ebben. Pedig tudnod kéne (mintha Yotengrited is mindig a szeretetet szajkózná...), hogy aki nem ismeri az alázatot, az nem ismeri a szeretetet sem, aki pedig nem ismeri a szeretetet, az HALOTT EMBER. Hogy tudnál bárkit is szeretni anélkül, hogy ne tudd magad megalázni előtte, ha kell, és hogy tudnál egyáltalán bármiféle isteni személyt vagy istenséget is szeretni, ha egyszer az Ő teremtményeit sem tudod szeretni? Az a baj, hogy nagyon kilóg az a démoni lóláb, kedves Scorpion, úgyhogy ideje lenne patkót verned rá...<br />
+<br />
+A papot vagy lelkipásztort pedig nem az egyetemeken eltöltött tanévek száma miatt kéne tisztelni, ha nem tudnád... <br />
+<br />
+"Továbbá egyetlen hiteles vallásalapító, ideértve Jézust és Buddhát is, nem várta el senkitől a hajbókolást."<br />
+<br />
+Buddha talán - egykori maharadzsa létére - valóban nem, de Jézus igenis megkövetelte a tiszteletadást. Sőt példát is mutatott ebben azzal, hogy saját maga mosta meg tanítványai lábát az utolsó vacsorán, a széder estén, miközben arra intette őket, hogy egymást is így szeressék. Ezt a szokást az ókeresztények is megtartották, de sok gyülekezetben nagycsütörtökön még ma is gyakorolják a keresztények, mint az általad igen elítélt "hajbókolás" egy formáját. Látszik, barátom, hogy bármilyen teológiára is jártál, igen hiányosak még az ismereteid, legalábbis ami Jézus tanításait illeti.<br />
+<br />
+"Tetteket vártak, amiket a szeretet meg az együttérzés vezérel."<br />
+<br />
+Igen, és ezek a tettek a mai napig is mozgatják az Egyházat, amikor karitatív szervezeteket üzemeltet. Te adsz enni az éhezőknek? Segíted a betegeket, a rászorulókat és a szegényeket? Mert az Egyház igen. Akkor meg mire fel is kritizálsz bennünket, és főleg milyen jogcímen? <br />
+<br />
+"Papp György, aki a gyalázkodó cikket írta, még el is szólta magát a fórumon, miért cseszi a Yotengrit annyira a csőrét: a Püski kiadó visszadobta a könyvét, és szerinte a Yotengrit miatt."<br />
+<br />
+Tudod ez engem nem érdekel, mert ez két személy - Máté Imre és Papp György - személyes vitája. Engem sokkal inkább az érvek érdekelnek, kedves Scorpion, azokból pedig hogy-hogynem, Papp György sokkal több és meggyőzőbb érvet tudod felmutatni, mint ti - és ebbe a "bácsát" is beleértem. <br />
+Az a helyzet ugyanis, hogy ő miként is válaszolt az érvekre, amelyeket ellene felhoztak? Személyeskedéssel, minden komoly érv nélkül. Íme a "válasz" arra a számtalan komoly, tudományos érvre, amelyet Papp György felhozott a Yotengrit ellen:<br />
+<br />
+"Az a benyomásom ezek alapján, hogy az ön által "keshedt fickónak" és "ürgének" titulált áltudós valaha "leleplezett" és hamistanuskodott esetleg foglalkozás-szerűen. Egyrészt szórakoztató amint egy ilyen szellemi kerti törpe ugrál, másrészt hideg futkos a hátamon, ha belegondolok hogy (Ady szavaival élve) egy ilyen gonosz ostoba népbíróságon vádol, vagy hamistanuskodik!".<br />
+<br />
+/ Forrás: Hivatalos Yotengrit Blog /<br />
+<br />
+<B><a href="//hivatalos-yotengrit.freeblog.hu/archives/2009/03/01/Mate_Imre__Kerdezz_felelek/" target="_new" style="color: #000000;">http://hivatalos-yotengrit.freeblog.hu/archives/2009/03/01/Mate_Imre__Kerdezz_felelek/</a></B><br />
+<br />
+Érdekes, nem? Semmi érv, semmi cáfolat - csak személyeskedés...<br />
+<br />
+<br />
+"Mátét a kormány meg nem véletlenül '56 miatt tüntette ki?"<br />
+<br />
+Valószínűleg azért, mert az ő krédója az, hogy "magamat liberálisnak vallom, és szerettem volna a magyar liberalizmust fölvirágoztatni.", és irodalmi munkássága miatt:<br />
+<br />
+->Máté Imre, író, költő, kritikus, műfordító<br />
+* Maglóca, 1934-12-11<br />
+Tagság: I; FDA<br />
+[KMIK Borbándi UMIL]<br />
+Nemzetközi lírai verseny, Hildesheim 1999, 2000: két díjazott vers.<br />
+2003-ban megjelent kötete: Vállunkon vízözönnel (Pro Pannonia)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment185057"></A>49. Scorpion82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-07 03:16:19</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves Geschenker.<br />
+A Dobogó fórumára gondoltam. ( <B><a href="//www.dobogommt.hu" target="_new" style="color: #000000;">www.dobogommt.hu</a></B>)<br />
+Látom, nagy hatással volt rád Papp György lovasíjász gyalázkodó cikke a Yotengritről. Szerencsésebb lenne, ha elolvasnád a könyvet, mert tudnád is, miről szól, és inkább az alapján alkotnál véleményt. <br />
+A balliberálison meg ne lovagoljunk. Se a baloldal, se a liberális se azt jelenti manapság MAgyarországon, amit kellene...<br />
+Mi az, hogy férfi és nő egyenlőségének túlhangsúlyozása? Túlhangsúlyozása???  Szerintem normális ember nem gondolja, hogy az egyik nem feljebbvaló lenne, mint a másik. Lehet ezzel most sokakat megsértettem, de ezt a véleményt én születésem óta így érzem, osztom és megvallom bárhol.<br />
+A nemi élet szabadságának túlhangsúlyozása? Engedtessék már meg....Istenre hivatkozva nekem senki se mondja meg, kivel élhetek nemi életet és kivel nem, amíg az természetes és egészséges. Elhiszem, hogy a zsandár, dádázó Isten eszméje is több ezer éves, de talán ezen már kicsit túl kéne lépni annak, aki gondolkozik is...<br />
+A monotesita vallásokkal való ellenszegülés? Szerintem Koppányék is ellenszegültek, már ami Róma vallását illeti, de egyesek szerint ez sem igaz, István király pedig Jézus inkarnációja volt...<br />
+Amúgy köszönöm a kioktatást, ismétlem, el kell olvasni a könyvet, és némi vallástörténeti alapsimeretek sem ártanának (persze ha még nincs meg. Nálam megvan, ha nálad is, akkor ez sztornó)<br />
+Továbbá, ha már így feltetted a kérdést, hogy egyenes gerinccel ki előtt állok meg, akkor erre van egy válaszom: <br />
+Nem hiszek olyan Istenben, aki előtt térden kell csúszni-mászni, emberek előtt meg főleg nem teszem. Még akkor sem, ha négy évvel több teológiát végzett az egyetemen, mint én. <br />
+Továbbá egyetlen hiteles vallásalapító, ideértve Jézust és Buddhát is, nem várta el senkitől a hajbókolást. Tetteket vártak, amiket a szeretet meg az együttérzés vezérel. Szóval ha én nem hajbókolok senki előtt, az nem azért van, mert olyan fasza gyerek vagyok, hanem mert az égvilágon semmi értelme nincs.<br />
+Az a baj, hogy nagyon szeretünk fikázni oylasmit, amiről csak egy-két nagyszájútól hallunk, és aztán lovagolunk az ő gondolatain. <br />
+Papp György, aki a gyalázkodó cikket írta, még el is szólta magát a fórumon, miért cseszi a Yotengrit annyira a csőrét: a Püski kiadó visszadobta a könyvét, és szerinte a Yotengrit miatt.<br />
+Mátét a kormány meg nem véletlenül '56 miatt tüntette ki?<br />
+De leeht, hogy tévedek...<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184922"></A>48. <A HREF="mailto:gschenker@freemail.hu" STYLE="color: #000000">gschenker</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2516&id=184838#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-09-05 15:07:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves Scorpion82!<br />
+<br />
+"lvasd végig a fórumon a Yotengrit-vitát, látni fogod miről beszélek."<br />
+<br />
+Szívesen megtenném, de elárulod a cikk címét? Nem muszáj a pontos URL-cím, de valami támpontot adj kérlek, hogy rákereshessek!<br />
+<br />
+"Teljesen alaptalan, kicsavart vádaskodás az egész, balliberális stílusú belemagyarázásokkal, hangulatkeltéssel."<br />
+<br />
+Tisztázzuk, hogy olyan, hogy "balliberális" nem létezik, mert minden, ami liberális, az egyszersmind baloldali is. Amit sok "értelmiségi" "jobbliberális"-nak nevez, az valójában csak baloldali princípiumok, alapelvek gyűjteménye, némi jobboldali mázzal leöntve. Ami viszont a Yotengritet illeti, kedves Scorpion, szerintem jobb, ha nem a felszín alapján ítélkezel, hanem egy kicsit jobban a mélyére ásol a dolgoknak. Máté Imre úgynevezett "rábaközi hagyományai" egyáltalán nem hagyományok, főleg pedig nem ősiek, hanem csak egy bölcsész agyszüleményei, aki nem átallott új vallást kreálni magának a régiekből. Ármány? Zoroászter sírna a röhögéstől, ha elolvasná, hogy Máté Imre mit talált ki az ő Ahrimánjából. Yo-tengrit? Az ősi mongol-fekete hun (xiung-nu) "tengrit" (= "az ég istene", a legfőbb istenség) kifejezés együtt a yo-val ("jó-isten") eléggé szánalmas koppintás, nem gondolod?  És arról mi a véleményed, hogy a hunokról - a tőlük vett plágium ellenére - előszeretettel megfeledkezik Máté barátod?<br />
+<br />
+Azt pedig végképp furcsállom, hogy olvasva a Yotengritről írt cikkeket bizony rendre azt tapasztaltam, hogy kő keményen baloldali, sőt liberális doktrínákat tanít. Jellemző például a férfiak és a nők egyenlőségének túlhangsúlyozása, a nemi élet szabadságának túlhangsúlyozása, vagy éppen a kereszténységgel és a monoteista vallásokkal szembeni direkt uszítás, ellenszegülés (az olyan eszme vagy hit ugyanis, amely valami vagy valaki mással szembehelyezkedve határozza meg önmagát, jellegzetesen baloldali, és eleve nem is lehet isteni.) <br />
+<br />
+Érdekes a nyirkai jóslat is. Ha azt kéne megvizsgálni, hogy irodalmi vagy eszmei szempontból mennyire értékes, akkor bizony valóban le kéne venni szerzője előtt a kalapot, de a szöveg elemzése után nyilvánvalóvá válik, hogy ez nem valamiféle "jóslat", hanem egy ún. vaticinium ex eventu ("az esemény utáni jóslat"). Nem, ez a vers nem hagyomány, hanem egy olyan sarlatán koholmánya, akit az állam 2004-ben nyilván nem azért tüntetett ki Kossuth-díjjal, mert az állam érdekeivel szembeszegülő tevékenységet folytatott... <br />
+<br />
+"Mindenhol sok a lelkileg sérült ember, akinek kell valaki, aki előtt lehet hajbókolni."<br />
+<br />
+Szóval te lelkileg "erős" ember vagy, s neked nem kell hajbókolnod senki előtt? Egyenes gerinccel hetykén megállsz Isten és ember előtt, mert te oly nagy vagy?<br />
+<br />
+"Erről nem az tehet, aki letett valamit az asztalra."<br />
+<br />
+Igen, csak kérdés az, hogy kinek az asztalára. 2004-ben például az MSZP-kormány asztalára tett le "valamit", aminek folytán ők méltónak találták a kitüntetésre...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184856"></A>47. álnokfutó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2516&id=184818#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-09-04 21:26:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5631.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"A Krishna-tudat mozgalom már indiai szempontból heterodox mozgalom, semmiféle benső összefüggése nincs a hindu tradicionalitással." Heterodox a buddhizmus is, és a dzsainizmus is, igaz nem indiai szempontból, de a 6 ortodox vallási (vallásfilozófiai) irányzaton (darsana)kívül áll. Tény lehet az, hogy Sankara után pár évszázaddal az istenkép Indiában már antropomorf, vagyis a sankarai ortodoxiát és végső összegzést követően, mindenképpen tőle, mellette vagy ellene foglaltak állást. a hindu ortodoxia utolsó oszlopa Sankara. <br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184848"></A>46. Blaireau</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-04 20:12:05</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tc holnap írnék neked ezekkel a dolgokkal kapcsolatban mert nem mindent látsz jól. Persze csak ha elfogadod egy bhakta véleményét. Nanda Gopala das<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184839"></A>45. Scorpion82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-04 18:55:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">zembernek :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184838"></A>44. Scorpion82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-09-04 18:53:32</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves GEchenker!<br />
+Máté Imréről és a rábaközi hagyományról én írtam, nem VargaSz.<br />
+Jól ismerem a Dobogót. Az ott publikáló szerzőket nagyra becsülöm, de van abban a körben két ember, akiknek Máté Imre egész egyszerűen üzleti okokból útjában van. Olvasd végig a fórumon a Yotengrit-vitát, látni fogod miről beszélek. Teljesen alaptalan, kicsavart vádaskodás az egész, balliberális stílusú belemagyarázásokkal, hangulatkeltéssel.<br />
+ A másik meg az, hogy én találkoztam a "vén sarlatánnal" élőben is. Ennek a zembernek egyértelműen terhére van, hogy a könyvei miatt sokan afféle gurunak tartják, ezt az előadásain is elmondja, csak burkoltan, mert nem akar megbántani senkit. Mindenhol sok a lelkileg sérült ember, akinek kell valaki, aki előtt lehet hajbókolni. Erről nem az tehet, aki letett valamit az asztalra.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184829"></A>43. <A HREF="mailto:gschenker@freemail.hu" STYLE="color: #000000">gschenker</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2516&id=184776#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-09-04 17:37:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Van egy szellemi hagyomány, amit nagyra becsülök, a Máté Imre által közzétett rábaközi táltoshagyomány, ami semmi másról nbem beszél, mint a magyarság szeretetéről, és a problémák lehetséges megoldásáról, és azt is egyfolytában "szabadkőművesbabómételyezi" néhány nagytudású "őskeresztény"."<br />
+<br />
+Ajánlom szeretettel neked ezt az írást, kedves VargaSz, mielőtt még leborulva imádni kezdenéd a vén sarlatánt...<br />
+<br />
+<B><a href="//dobogommt.hu/dobogo/cikk.php?id=20061219212314&evfolyam=V&szam=5" target="_new" style="color: #000000;">http://dobogommt.hu/dobogo/cikk.php?id=20061219212314&evfolyam=V&szam=5</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment184827"></A>42. <A HREF="mailto:gschenker@freemail.hu" STYLE="color: #000000">gschenker</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2516&id=184787#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-09-04 17:16:22</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves Tomcat!<br />
+<br />
+Én alapvetően ezen hozzászólásodat tartom aggályosnak:<br />
+<br />
+"...Ha ez valamiféle cionista susmus, akkor kérem a levélírót, elemezze a katolikus egyház babó kötődését is."<br />
+<br />
+<br />
+Ezzel együtt igen érdekes kijelentés volt az alábbi is, mert ugyebár "tudjuk", hogy a kijelentő bizonyosan "katolikus keresztény" volt, tehát le lehet, sőt le kell szólni a katolikusokat, mert amíg ti ételt osztogattok a rászorulóknak, addig mi csalárd módon arany cicomával látjuk el legfontosabb bazilikánkat (egyébként pedig mi katolikusok ezek szerint "nem" osztogatunk ételeket és működtetünk ország-szerte akkora karitatív hálózatot, amely a betegápolástól kezdve az idősök és a hajléktalanok gondozásán át az oktatás támogatásáig is kiterjed)...<br />
+<br />
+"Egyrészt a Krsna-völgy és az asramok építésére, szépítésére fordítják - meg is lehet nézni, milyen gyönyörű mindegyik, és aki szerint ez "lopás", az legyen szíves, kérje számon a Szent István-bazilika aranydíszeit is - másrészt a vallás, pontosabban az Istenről való tudás terjesztésére és a szegények segélyezésére költik."<br />
+<br />
+Azt is megjegyzem, kedves Tomcat, hogy hazánk - sajnos - már régóta nem keresztény, s még kevésbé katolikus ország, ezért ha valaki támadja hitedet, akkor egyáltalán nem biztos, hogy az illető keresztény, az pedig még kevésbé, hogy úgymond "keresztény antiszemita", ti. egy igaz keresztény a szó mai értelmében éppúgy nem lehet antiszemita, mint ahogyan túlzottan "babóimádó" sem. Ez a két dolog szélsőség, s mivel az igaz keresztény hit nem a vér vallása, vallásunk univerzális, tehát mi nem kötődünk semmiféle etnikumhoz. Kétségtelen, hogy ők adták az "alapokat" egykor, de a katolikus vallás már nagyon régen levált a babó tőről. Ugyanakkor negatív értelemben sem diszkriminálhatjuk a babókat, tehát ha valaki ész nélkül "babózik", akkor az egészen biztosan nem "katolikus". Ebből következik, kedves Tomcat, hogy - enyhén szólva is vitatva és támadva a hitedet bíráló oktalan babózását, még ha mégoly jó szándékú is volt az - támadód nem "keresztény" volt, hanem egy antiszemita ember, aki - mellőzve Prohászka józan antiszemitizmusát nem őrködött, hanem ítéletet mondott a babó vér felett. A babónál, ha féreg, nincs veszedelmesebb, ezért mindig észnél kell lennünk és figyelnünk kell rájuk, mert az Ebál-hegyi átkot hordozzák, de elítélni valakit pusztán azért, mert babó, nem keresztényi, mert Krisztusban nincs sem babó, sem görög, sem szkíta...<br />
+<br />
+Ennyit erről! A jövőben kérlek ne végy minden a vallásod ellen irányuló támadást "keresztény" attaknak, mert ezzel az erővel én is vehetném az ateizmus csápjait a babó "szellem" terjeszkedésének, de nem teszem. A sátánnak ugyanis nincs se színe, se bűze, s ennél fogva népe sincsen. Csak eszközei és bábjai vannak, akiket kénye-kedve szerint irányít, de ne gondolja azt senki, hogy ezek a lucifer-fiókák csak babók lehetnek, mert aki ezt hiszi, az jobb, ha üdvözli új "polgártársait", az általa annyira gyűlölt cionista babókat...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2516&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2516&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2516&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2516&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2516&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2516&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2516&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

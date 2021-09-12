@@ -1,0 +1,466 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2210#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Bioterrorizmus Magyarország ellen";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_297.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Bioterrorizmus Magyarország ellen<BR><DIV CLASS="postheader_small">Blog - Farkas Roland</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 május 18. 17:17:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2210.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Néhány hete óriási botrányt    
+   kavart a Baxter gyógyszeripari cég azzal, hogy egy ausztriai laborjában öszekeverte a       
+madárinfluenzát és az emberi influenzát, majd 18 közép- és kelet-európai országba küldte szét,       
+szokványos influenza elleni védőoltásnak beállítva.<br></div><br><div style="text-align: justify;">A 
+      kérdés az, miként történhet ilyen, mert véletlenül nem lehetséges. Ugyanis a Baxter hármas   
+fokozatú     biztonsági előírásokat használ. Az egyik előírás pedig megakadályozza a termékek       
+átfertőződését. Vagyis a dolog szándékosan történt.<br></div><br><div style="text-align: justify;">De hát mit akar a Baxter azzal, hogy élő madárinfluenzát, az H5N1 nevű vírust és annak     
+  emberre veszélyes verzióját, a H3N2 vírust összekeveri, és szokványos influenza elleni 
+oltóanyagként       szétküldi? És mindezt a sertésinfluenza terjedésének hajnalán? (az "összekeveri" szót ne úgy értsd, hogy öszecserélte a két virust, hanem egybe gyúrta, egy koktélt csinált belőle) <br></div><br><div style="text-align: justify;">A vakcinákat 18 közép- és kelet-európai ország kapta meg. Néhány 
+közülük     választ vár, hogy ez   szándékosan történt-e, hogy járványt idézzenek elő. A 
+madárinfluenza százakat     ölt meg, de ha   szokványos emberi influenzavírussal kombinálódik, akkor 
+szuperhalálos és     járványszerűen terjedő   lesz. Ha ebbe még a sertésinfluenza is belemutálódik, 
+akkor meg aztán     konyec. Egy   biológiai fegyver jön létre, 60 százalékos halálozási 
+aránnyal.<br></div><br><div style="text-align: justify;">A hír   először február 27-én egy <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.torontosun.com/news/canada/2009/02/27/8560781.html">kanadai lapban látott       
+napvilágot</a><span style="font-weight: bold; color: rgb(0, 0, 0);">,</span> de persze minderről nem 
+sokat hallottunk eddig a magyar médiában. Egyetlen <a target="_blank"style="font-weight: bold; text-decoration: underline; color: rgb(0, 0, 0);" href="//www.naturhirek.hu/index.php/egeszsegvilag/bigpharma/104-bigpharma/279-madarinfluenza-a-vedoltasban.html">eldugott
+   kis cikkecske</a><span style="font-weight: bold; text-decoration: underline;"></span> jelent meg  
+     róla március 5-én.<br></div><br><div style="text-align: justify;">Mindeközben Magyarországon 
+található egy állami támogatású cég, az       Omninvest Kft, amely a világon a leggyorsabban képes 
+védőoltást gyártani egy újfajta vírus   ellen.     Csakhogy ahhoz vírusminta kell, és mint <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.origo.hu/itthon/20090429-nem-valaszolt-az-usa-az-uj-influenza-virus-mintaja-ugyeben.html">április
+   30-án megtudtuk:</a><br></div><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Egyelőre válaszra sem méltatta 
+a sertésinfluenza elleni       védőoltás kifejlesztéséhez vírusmintát kérő Magyarországot az 
+Egyesült Államok. Mivel az USA nem       válaszol, ezért az egészségügyi kormányzat minden 
+lehetséges országtól megpróbálja elkérni a       vírusmintát, de úgy tűnik, hogy csak az 
+Egészségügyi Világszervezet csigalassú segítségében       reménykedhet."</div><br><div style="text-align: justify;">Pedig vírusbank is van Magyarországon, ilyennel rajtunk kívül pedig 
+csak az       USA és Anglia rendelkezik. Az Országos Epidemiológiai Központhoz tartozó vírusbankunk 
+annyira       titkos, hogy  a Nemzetbiztonsági Hivatal védi, és Melles Márta főigazgató szerint nem 
+nyilvános az       ott  végzett munka, de még a vírusbank helye sem tartozik a 
+nyilvánosságra.<br></div><br>Csak       értitek... cseszhetjük ha nem kapunk mintát.<br><br>Íme, 
+feliratoztam az esetről egy videót, ha       nehezen olvasható, bocs...<br><br><div style="text-align: center;"><object width="425" height="350"><param name="movie" value="http://www.youtube.com/watch/v/AiwAGleeF8c"></param><param name="wmode" value="transparent"></param><embed src="//www.youtube.com/watch/v/AiwAGleeF8c" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object><br></div><br><div style="text-align: justify;">Egyébként maga     a sertésinfluenza is elképzelhető, hogy emberi hiba 
+következménye és kiszabadult egy laborból. Ezt     maga Adrian Gibbs mondta, aki négy évtizede 
+genetikus és a Tamilflu nevű oltóanyag feltalálója. Nagy vihart is kavart     a kijelentésével, 
+amelynek alapja, hogy a vírusban hat más vírus génje van, és megtalálta annak nyomait is, hogy 
+tojásban fejlesztették ki. <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.youtube.com/watch?v=lnelnLlszPM">Erről itt a videó.</a><br></div><br>      
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-05-18&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2210&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2210&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2210&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2210&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2210&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169335"></A>37. Shadow82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2210&id=169303#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-21 00:30:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1811.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">&#8222;Okos ember keres,kutat, utannajar, ha kell googlizik.<br />
+A buta merlegel csak abbol amit eleraknak. A megbutabb meg<br />
+merlegelni is keptelen.&#8221;<br />
+<br />
+Okos ember ha keresett, kutatott, utána járt és meg akar győzni másokat, akkor két kézzel tárja eléjük a bizonyítékokat. A buta odalök valami általa leszűrt konzekvenciát, a többiek meg keresgéljenek.<br />
+<br />
+Okos ember tudja, hogy az érv hangoztatása és az érv létének hangoztatása nem ugyanaz. A buta a különbséget sem érti.<br />
+<br />
+Okos ember tudja, hogy ha ő már mérlegelt, bizonyítékokat gyűjtött és rendszerezett, akkor a leghasznosabban úgy jár el, ha mindent megoszt a többiekkel &#8211; így a többiek közül a butákat meggyőzi, az okosoknak meg megspórolja azt a munkát, amit ő már elvégzett. A buta ember blöfföl, hogy mennyi bizonyítéka van, holott nincs semmije.<br />
+<br />
+A még butább, mikor lebukik, még hisztizik egy kört.<br />
+<br />
+&#8222;Ami neked propagandafilm az nekem hiteles forrasok hitelesen megszolaltatott<br />
+Interjualanyainak gyujtemenye. Nem tudom melyik neked abbol a bulvar.&#8221;<br />
+<br />
+Nekem az érzelmekre hatás, a félelmetes aláfestés, az ismételgetés és sulykolás a bulvár. Hiteles forrást nem kell összevágni, eladja magát. A hiteles forrás körüljár, kérdez. A propaganda állít, egyszerűsít és érzelmekre hat. Nézd meg a orkösszefogás propaganda filmét:<br />
+<B><a href="//www.youtube.com/watch?v=EHkRYcj-6PA&eurl=http%3A%2F%2Fkuruc.info%2Fr%2F35%2F40690%2F&feature=player_embedded" target="_new" style="color: #000000;">http://www.youtube.com/watch?v=EHkRYcj-6PA&eurl=http%3A%2F%2Fkuruc.info%2Fr%2F35%2F40690%2F&feature=player_embedded</a></B><br />
+Hiteles képek vannak benne összevágva Tatárszentgyögyről, meg mindenféle egyéb helyekről, ahol orkokat öltek meg ismeretlenek. Plusz hiteles kép van egy gárdaellenes tüntetésről. Hiteles képek gyűjteménye? Nem. A zene csak aláfestés? Nem. Aljas, sugalmazó-rágalmazó propaganda, agymosó módszer. Hol is láttam ilyesmit utoljára? Ja, a te videódban.<br />
+<br />
+&#8222;Mint mondtam nalam is van bulvar kategoria, be is linkeltem egy korabbi irasomat.<br />
+Nezd meg. Jajj bocs klikkelni sem szeretsz?&#8221;<br />
+<br />
+Elolvastam, már akkor mikor írtad, és most is. E vitában, ami arról szól, hogy szerintem az írásod bulvár és hiteltelen; szerinted meg nem, de nem tudod megvédeni, elég irreleváns az, hogy bizonyos dolgok még a te mércédet sem ütik meg. Egyébként az, hogy neked a szemétnek is a legalján kezdődik a szemét &#8211; ne haragudj, de nem engem minősít. Mellesleg megint aljasul belém mászol, ugyanis egy szóval sem állítottam, hogy nem olvastam.<br />
+<br />
+<br />
+Az utolsó szó jogát tisztelettel köszönöm.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169303"></A>36. <A HREF="mailto:farkasroli@hotmail.com" STYLE="color: #000000">Farkas Roland</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2210&id=169178#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-20 23:01:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_297.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Te sokat irsz de semmit se mondasz vele. <br />
+<br />
+Okos ember keres,kutat, utannajar, ha kell googlizik.<br />
+ A buta merlegel csak abbol amit eleraknak. A megbutabb meg<br />
+ merlegelni is keptelen.<br />
+<br />
+Ami neked propagandafilm az nekem hiteles forrasok hitelesen megszolaltatott<br />
+Interjualanyainak gyujtemenye. Nem tudom melyik neked abbol a bulvar.<br />
+<br />
+Mint mondtam nalam is van bulvar kategoria, be is linkeltem egy korabbi irasomat.<br />
+Nezd meg. Jajj bocs klikkelni sem szeretsz?<br />
+<br />
+Ezzel lezartam a vitat reszemrol mert parttalan. Tied az utolso szo joga.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169269"></A>35. Gomulka Béla</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-20 21:11:13</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6552.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Apropó, meg off, meg ilyesmik. Gomulka teóriája a sertésinfluenzára vonatkozóan. Megjelölt források: Ebola, Spanyolnátha és Dürenmatt. <br />
+<br />
+A spanyolnátha is csak egy influenza. De a világháború által szétrombolt Európát kapta el, se gyógyszer, se étel, se egészségügy, és milliók haltak meg.<br />
+Az Ebola virus nagyon gyorsan öl. Olyan gyorsan, hogy rendesen terjedni sincs ideje: lám, izolálták és vége lett. Sokfelé olvasni, hogy egy ilyen virus nem maradhat fenn, mert nem tud hatékonyan terjedni. Mutációk persze vannak, víruséknál nagyon is gyakran, de így is biológiai fegyverre gyanakszik a fél világ. Kipróbálták, azért a pár szerecsenért meg apácáért igazán nem kár.<br />
+Lásd a Megfigyel&#245;k megfigyel&#245;inek megfigyeléseir&#245;l-t, ha jól emlékszem a címre. Valószín&#251;leg nem jól emlékszem.<br />
+Tehát: gyártunk egy olyan vírust, ami egy jól fejlett egészségüggyel rendelkez&#245; országban komoly galibát nem csinál. Tamiflu, oltóanyag, szevasz tavasz. Kinézünk egy országot, mondjuk a Gonosz Tengelye mentén, gyurmává bombázzuk, majd t&#251;zszünetet kötünk. Kigyomláltuk a gonoszt, legyen béke és fellendülés. Majd bedobjuk a vírust, és jó hangosan sajnálkozunk, istenkém,istenkém. Kiutalunk pármillió dollárt erre-arra, és megvárjuk míg a tüsszögés elviszi a lakosságot. Szépen lassan, hogy legyen idejük eltemetni egymást. <br />
+Aztán mehetünk befektetni.<br />
+<br />
+Aludjatok jól.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169178"></A>34. Shadow82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-20 14:22:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1811.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Farkas Roland<br />
+<br />
+Ismét csúsztatsz és nagyon hamis érvelési technikákat alkalmazol. Érvelési technikádat egyébként szalmabábérvelésnek hívják: <B><a href="//hu.wikipedia.org/wiki/Szalmab%C3%A1b%C3%A9rvel%C3%A9s" target="_new" style="color: #000000;">http://hu.wikipedia.org/wiki/Szalmab%C3%A1b%C3%A9rvel%C3%A9s</a></B><br />
+<br />
+Vagyis nem azokat az érveket cáfolod, amiket én felhoztam. <br />
+<br />
+&#8222;mit tudok kezdeni olyan allitassal, hogy nem elegendo szamodra a bizonyitek????<br />
+<br />
+lehozhatom neked a csillagos eget, az sem eleg.&#8221;<br />
+<br />
+Ez egy teszteletlen állítás, hiszen meg sem próbálkoztál más érveket hozni, inkább hozzám vágtad, hogy járjak utána. Hidd el, létezik elegendő bizonyíték, de egy propaganda film (ezt kifogásoltam egyébként a legjobban, és ez az amit meg sem próbálsz védeni) nem az. <br />
+<br />
+&#8222;ha egy toronto star lehoz egy cikket, amit egyebkent maga a ceg is beismer es nemzetkozi ellenorzes indul, plusz a csehek laborjaiban hullanak a beteg kiserleti allatok, neked ez nem eleg.&#8221;<br />
+<br />
+Ismét kiforgatod a szavaimat és olyasmival vádolsz, ami nem igaz. (Per def. hazudsz.) Én azt állítottam, hogy a te cikked bulváros, nem pedig a Toronto Sun. A te cikked tartalmaz fura szerkesztést és fura videókat, emellett egy darab hitelesnek tűnő forrást, ami egyébként sehol nem állít semmilyen 60%-os halálozási arányt. Te vagy az, aki két különálló nagy botrányból túlcsordulóan nagy gigamega botrányos összeesküvést faragsz, ezzel elvéve az egésznek a komolyságát és a hitelességét. Erre mondják, hogy a kevesebb több.<br />
+<br />
+&#8222;ha a videoban szereplo babasamponos dolgot ecsetelo no nevet beirod a keresobe, kihozza a sztorit. neked ez sem eleg.&#8221;<br />
+<br />
+Nem fogok a te érveidért google-zni. Linkeld be nekem, aztán meglátom, hogy elég-e. Miért nem lehetett már az eredeti cikkbe belinkelni, forrásként? Tehát nem állítom hogy nem elég (te állítod tesztelés nélkül, tehát hazudsz), hanem azt állítom, hogy ha meg akarsz győzni, akkor győzz meg te. Írjál eleve olyan cikket, ami meggyőz, a hivatkozások tömegével, ne nekem kelljen valami linkből továbbmenve linkeket visszakövetve eljutnom ahhoz a következtetéshez, amire te eljutottál. Ez lenne a hiteles írás lényege: érvekkel érvelünk.<br />
+<br />
+&#8222;az utolso bekezdesben irt mondatomban benne van az "elkepzelheto" szo, tehat nem ertem a kifogasodat.&#8221;<br />
+<br />
+Mind a ketten tudjuk, hogy mennyire gyenge kifogás ez. Mekkorát hörrennénk, ha mondjuk olyan újságírói mondatok jelennének meg, hogy &#8222;elképzelhető, hogy gárdisták raboltak ki egy idős nénit&#8221;. Ja, elképzelhető, sokan el is képzelik. Azonban ezt sugalmazásnak hívjuk, az egyik legaljasabb bulvártechnika. Nyelvileg teljesen védhetetlen, hiszen minden elképzelhető, még az UFO-k is, meg a varázslók meg a tündérek. Csak éppen egy híranyagba csak bizonyítékkal alátámasztott és körüljárt elképzelések kerülhetnek. Különben csak egy regény vagy novella lesz, éppen annak a hitelességi szintjével, tele &#8222;elképzelhető&#8221; elemekkel. A cikked utolsó mondatai, bár szerepel bennük az &#8222;elképzelhető&#8221;, éppenséggel se nem körül járt, sem pedig különösebb alapossággal megírt részlet, éppen csak egy bulváros sejtetés, egy félig bizonyított elképzelhetőség, egy hiteltelen nagy nulla.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169155"></A>33. warhamster (40.000) -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-20 12:24:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_250.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">az ingerküszöb baszogatása nagyon veszélyes dolog hosszú távon.<br />
+egyébként is, azt szoktam mondani, hogy mindig azt kell keresni, hogy kinek áll ez a dolog az érdekében? és ha végiggondoljuk, hogy a pénz és a hatalom a mozgatóerő _mindenkinél_, akkor hamar rájöhetünk a megoldásra.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169125"></A>32. <A HREF="mailto:farkasroli@hotmail.com" STYLE="color: #000000">Farkas Roland</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2210&id=169110#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-20 02:04:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_297.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">abban lehet el is fogadom a kifogasodat, hogy a cim nem a legjobb. lehet kerdojelet kellett volna tennem a vegere...<br />
+<br />
+az utolso bekezdesben irt mondatomban benne van az "elkepzelheto" szo, tehat nem ertem a kifogasodat.<br />
+<br />
+tartom magam egy dakota kozmondashoz, miszerint: ha valami ugy totyog mint egy liba, ugy gagog mint egy liba es ugy is nez ki mint egy liba, akkor valoszinuleg az tenyleg liba.<br />
+<br />
+de maradok nyitott mas ervelesek fele is, gyozz meg.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169122"></A>31. <A HREF="mailto:farkasroli@hotmail.com" STYLE="color: #000000">Farkas Roland</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2210&id=169110#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-20 01:35:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_297.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">mit tudok kezdeni olyan allitassal, hogy nem elegendo szamodra a bizonyitek????<br />
+<br />
+lehozhatom neked a csillagos eget, az sem eleg.<br />
+<br />
+ha egy toronto star lehoz egy cikket, amit egyebkent maga a ceg is beismer es nemzetkozi ellenorzes indul, plusz a csehek laborjaiban hullanak a beteg kiserleti allatok, neked ez nem eleg.<br />
+<br />
+ha a videoban szereplo babasamponos dolgot ecsetelo no nevet beirod a keresobe, kihozza a sztorit. neked ez sem eleg.<br />
+<br />
+nem tudom ki itt a droid mar megbocsass...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169110"></A>30. Shadow82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-05-19 23:30:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1811.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Gratulálok. <br />
+<br />
+A felvetésemre, problémáimra érdemben nem reagáltál, viszont burkoltan lehülyéztél (ld Tesco sonka), amire szerintem nem szolgáltam rá. Sehol ne írom, hogy mocskos profitszerzés nincs, csak azt, hogy össze-vissza keverni jelenségeket, mindennek &#8222;mögé látni&#8221; láthatólag minden képzettség és kritikai érzék nélkül semmivel sem jobb a népbutító bulvármédia módszereinél. Igen, nyíltan kimondom, hogy az általad művelt &#8222;tényfeltárás&#8221; a nemzeti-underground média Blikk-je és RTL Klub-ja, népbutító bulvár a javából &#8211; csak némi nemzeti lázadó tudattal megfűszerezve.<br />
+<br />
+Talán te is érzed, hogy a cikkeid egy része tarthatatlan. A kommentjeid közt eldugott körkörös érveléshez külön gratulálok. (Azaz: 60% halálozás várható, tehát világjárvány. Következtetésképpen világjárvány várható, tehát 60%. Az egyik állítást alá kéne támasztani&#8230;) Azt meg még inkább nehezményezem, hogy bedobsz egy állítást, aztán jó netes droid módjára a képembe vágod, hogy járjak utána magam. Nem. Te állítod, te akarsz másokat meggyőzni, te mutasd a bizonyítékot, de ne egy bulvárműsor kivágott részletét.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169084"></A>29. <A HREF="mailto:farkasroli@hotmail.com" STYLE="color: #000000">Farkas Roland</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2210&id=169039#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-19 20:03:31</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_297.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">lehet, hogy neked nem hitelesek, nekem azok a hirforrasok.<br />
+<br />
+a hatvan szazaleknak jarj utanna magad, kezd a korabbi nagy vilagjarvanyoknal.<br />
+<br />
+mocskos profitszerzes van, nem osszeeskuves elmelet gyartas.<br />
+<br />
+lasd a fogyasztovedelem (babasamponos) vizsgalati eredmenyeit.<br />
+<br />
+ha nem hiszel a forrasoknak, tenyleg ne olvasd oket es ne hallgasd. <br />
+<br />
+egyel tovabbra is kutyahust es hus nelkuli tesco sonkat es nyugtasd magad, hogy csak eltuloztak benne a szojamennyiseget... en nem tulzok.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment169039"></A>28. Shadow82</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2210&id=169014#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-05-19 14:50:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1811.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">&#8222;Neked akar hitelesek ezek a hirek akar nem, en azert meg irni fogok roluk ha megengeded.&#8221;<br />
+<br />
+Nem tiltottam semmit és nem követeltem betiltást. A véleményemet mondtam meg, ezután is megmondom, ha megengeded. <br />
+<br />
+&#8221;Nem ertem mi bajod veluk, teljesen hiteles forrasbol vannak, azert is rakom be azokat a linkeket amelyek forraskent szolgaltak a megirasahoz.&#8221;<br />
+<br />
+Az, hogy valamire link mutat, még nem teszi hitelessé. Az általad prezentált cikk több helyen is bulvárizálva van, ha érted amire gondolok, és mind-mind csökkenti a hitelességét:<br />
+<br />
+-	A videó egy vészjósló zenével aláfestett, szanaszét vágott hírmix, inkább propaganda anyag, mint tájékoztatás, még ha eredeti híradók is vannak összevágva. <br />
+-	Blikkfangos, de nem alátámasztott cím.<br />
+-	A sertésinfluenzára adott válasz hiánya össze van keverve a Baxter csalásával, méghozzá két váltásban (Baxter-sertés-Baxter-sertés), amely szerkesztési elv azt sugallja, hogy ezeknek közük van egymáshoz. Ugyanezt a szerkesztési elvet szoktuk mi magunk is kifogásolni a mainstream média esetén, amikor mondjuk egy vandálos hírt még egy magyargárdás hírt tesznek egymás mellé, vagy akár összevágva, ami tudat alatt kapcsolást hoz létre a nézőben. Két hónap múlva a cikked olvasói már csak arra emlékeznek, hogy volt valami gyógyszergyár a sertésinfluenzával.<br />
+-	Egy egyébként potenciálisan hatalmas botrányt érő téma, mégpedig hogy nem adták a cuccot, elvész egy még nagyobb botrányban, ugyanakkor nincs sem eléggé körbejárva, sem eléggé tényfeltárva. Egy origós cikkre van link, ami maga is bulvárosan felfújt valamit, ami talán nem is akkora ügy. Ezek után ki tudja eldönteni, hogy vajon mennyit ér a hír? Csak az marad meg, hogy a szemét amcsik meg a Baxter meg a bioterror hazánk ellen. <br />
+-	Bár a videó tartalmazz azt a 60% halálozási arányt, ez egy teljesen ellenőrizhetetlen adat, a linkek alapján nem visszakereshető, te azonban még erre is rádobsz egy lapáttal. Így a következő, aki téged hivatkozik, szintén elég, ha csak egy kicsit módosít felfelé, és a végén már ki tudja milyen összeesküvést kapunk a végtelenbe vesző linkkekkel.<br />
+-	Egy máskor, máshol már tudományosabb igénnyel körüljárt téma, mégpedig a &#8222;hogyan keveredhet a többféle (madár, sertés, ember) influenza&#8221; kerül szintén egy blikkfangos félmondattal a végére, egyetlen videóval, amiből egyetlen mondani való van kiemelve és lesarkítva, kicsit meg is változtatva. A fickó ugyanis nem azt mondja, hogy valaki laborban keverte az új vírust, hanem hogy emberi okok is állhatnak a háttérben. <br />
+(Kis helyesbítés egyébként: 6 gén jött é-amerikai sertésvírusokból, 2 pedig ázsiaiakból, és nem az a furcsa, hogy egy vírus összeszed géneket más vírusoktól, hanem hogy a donorok más kontinensről valóak, illetve hogy viszonylag új gén mind.)<br />
+<br />
+&#8221;Ha meg nem tetszik ne olvasd.&#8221;<br />
+<br />
+Mondhatnám én is a kommentjeimre, de nem tartom elegáns érvnek, mi több, egy vitában szerintem elég... bunkoid dolognak hatnak érvek helyett az ilyesmi beszólások.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2210&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2210&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2210&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2210&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2210&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

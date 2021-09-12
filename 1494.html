@@ -1,0 +1,736 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1494#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: '56 nem erről szólt!";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=1494#" ONCLICK="window.open('popup_userdatasheet.php?id=', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./pic/noavatar.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>'56 nem erről szólt!<BR><DIV CLASS="postheader_small">Blog - </DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 október 25. 16:47:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1494.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><a target="_blank"href="./resources/pdfs/nanithawa_cikk.pdf" target="_new"><img src="./pic/pdf_icon.gif" title="resources/pdfs/nanithawa_cikk.pdf" align="absmiddle" border="0"></a>&nbsp; <a target="_blank"style="color: rgb(0, 0, 0);" href="./resources/pdfs/nanithawa_cikk.pdf" target="_new"><b>Letöltés: '56 nem erről     
+            szólt</b></a><br><br>Ma reggel arra ébredtem, hogy október 23-a van, a Forradalom Napja. 
+    Borús                   időjárás, szemerkélő eső, szürkés fények, borongós hangulat. Fojtogat a  
+   levegő;   valamit   írni     kell,         akkora a csönd és figyelemelterelés az országos     
+médiában.<br><br>A   magyar   társadalom     átfogó           válságát éli. A válság szinte életünk  
+   valamennyi területére     kiterjed, és a magyar     társadalom   egészét         fenyegeti.     
+Polgárháború felé sodródik az     ország, mély szakadék tátong     nemzetiek   és&nbsp;             
+szocialista-liberálisok között.     Nincsen megegyezés nemzeti minimumnak     számító   kérdésekben  
+   a         politika, a gazdaság és a     kultúra területén. <br><br>Mi vezetett     idáig, van-e   
+    kiút ebből a             helyzetből?<br><br>Megújulásra van szüksége az egyénnek és az     egész 
+    magyar   társadalomnak. Kell     egy         új, tiszta, friss erő, mely nem szennyeződhetett be 
+a         kommunista   diktatúra     éveiben, nem is         kollaborálhatott a kommunista 
+rendszerrel,     kimaradt   a         &#8222;rendszerváltozás&#8221; dicstelen         folyamatából 
+és nem része     semmilyen formában   a         jelenlegi hatalmi elitnek - annak a hatalmi         
+elitnek, amely a     volt kommunista rezsim           köpenyegforgató és gátlástalan 
+ifjúkommunistáiból és             veteránjaiból szervezett,           posztkommunista, de magát ma 
+már szociáldemokratának valló MSZP,     és az       MSZMP&nbsp; bújtatott           liberálisaiból 
+szervezett SZDSZ nászából született. Ez   a   hatalmi         konstelláció nem   ígért         semmi 
+jót és nem is hozott semmi jót a magyar     népnek, sőt.<br><br>Vegyük         sorra   a   tényeket, 
+      és rögtön tisztábban fogjuk látni mai     helyzetünket. A Kádár&#8211;rendszer             
+1989-ben a   teljes     gazdasági összeomlás     küszöbére sodródott. Az államadósság mintegy 20     
+milliárd           dollárra     rúgott, és a     kommunista rendszer már nem volt tovább 
+finanszírozható     az&nbsp;               &#8222;ideológiai     ellenség&#8221;&nbsp; Nyugat&nbsp; 
+további kölcsöneivel     sem.<br><br>Már senki   nem                 hittt&nbsp; a &#8222;mienk a 
+gyár&#8221;, &#8222;magunk     jövőjét építjük&#8221;,   &#8222;a           dolgozó       népé a 
+hatalom&#8221; kiüresedett     szólamaiban. Mindenki nagyon jól   tudta,   hogy a         kommunista 
+  vezetők     a rendszer adta     keretek között gátlástalanul     harácsolnak.   Víkendházaknak     
+  bejelentett   paloták     épültek a     Balatonon, a budai   hegyekben   és a   vidéki városok 
+előkelőbb       övezeteiben.     Gyermekeiket&nbsp;       soron   kívül vették fel az     egyetemre, 
+és annak elvégzése után         egyenes útjuk     vezetett&nbsp;   a     kulturális,     
+kereskedelmi vagy&nbsp; diplomáciai         külszolgálathoz,   illetve a     hazai gazdasági és      
+   kulturális intézmények vezető         pozícióiba.<br><br>Ez     természetesen egy   másfajta   
+életminőséget       biztosított, mint azoknak a         millióknak az     életminősége, akik 
+külföldre   is   csak   korlátozásokkal, és szigorúan   megszabott           devizakerettel 
+utazhattak; ha   egyáltalán tudtak     bárhová is     utazni.<br><br>Az   emberek     többsége       
+egyik napról a   másikra élt; nem az utazgatás   volt   a   legnagyobb   problémájuk.     A&nbsp;   
+boltok         választéka silány, kelet-európai árukból   állt,   mindenki   a közeli   Bécsre     
+kacsingatott, és   ha         lehetett, nyugati     &#8222;cuccokat&#8221; szerzett be a     
+feketepiacon,   vagy a     pult alól. A   pult     alóli       mozgalom hatalmas&nbsp; méreteket   
+öltött&nbsp; és       kialakult&nbsp; a   <span style="font-style: italic;">korrupció</span>, amely  
+ a társadalom         valamennyi területét beszőtte,       és mint a   rák   az emberi     
+szervezetben,&nbsp; hamarosan     teljesen     elhatalmasodott. <br><br>A         felpuhult     
+diktatúra tudta és   tűrte a korrupció     jelenlétét, mivel ez   volt   a társadalmi           
+feszültségek   levezetésének egyik fontos       szelepe. A közmegegyezés ebben állt:   miénk,&nbsp;  
+           magunkat   kommunistának mondó     párttagoké a hatalom,   mindenfajta előjogokat 
+élvezünk,       alakítjuk a           politikát, mi     választjuk a vezetőket, a mi   gyermekeink a 
+  kivételezettek,   intézzük az   állam         ügyeit,       harácsolunk ahol tudunk, de cserébe    
+ behunyjuk a szemünket,   ezért lehet a vállalati               raktárakból lopni   (természetesen   
+csak mértékkel), lehet a     vállalati berendezéseken&nbsp;               &#8222;maszekolni&#8221;,  
+   lehet az orvosi rendelőkben   és laborokban   is maszekolni, bár               hivatalosan 
+üldözzük   a hálapénzt (mégis, a jobb   ellátásért az orvosnak zsebbe   fizetni   kell).   Lehet     
+        olyan GMK-kat&nbsp; indítani   amelyek   azokat a gazdasági réseket&nbsp;   fedik   le,   
+ahol az         ugyan     mindenható, de   rendkívül rugalmatlan, és   cseppet sem   mozgékony 
+szocialista   ipar     és       kereskedelem     nem   képes hatékonyan kiszolgálni a     
+keresletet.<br><br>A     kereskedelemben és         vendéglátóiparban       virágzott a gebin (talán 
+a   fiatalok már nem     is   ismerik ez a szót).       Természetesen   itt   is a     
+kiválasztottak   kaphatták csak meg az     engedélyeket.   Tejelni kellett a       tanácsi     
+osztályvezetőknek       (esetleg még magasabb     beosztású köztisztviselőknek),   mert       
+egyébként   ugrott a   gebin, és   más kapta         meg.<br><br>Igen kifinomult kapcsolatrendszer 
+alakult       ki   &#8222;ki kinek       kicsodája&#8221;   vagy a     &#8222;ki kit ismer&#8221; 
+alapon. Az érdemek,         képességek,       tudás semmit   sem   jelentett ebben a     
+rendszerben. Nem csoda hát, ha ezt a hazug,             képmutató és velejéig     romlott   
+szisztémát     szétfeszítették a gazdaság szigorú             törvényei.<br><br>Miközben az   állam 
+külföldi     kölcsönökből     finanszírozta magát és egyre             inkább eladósodott, aközben   
+virágzott a feketegazdaság, az     úgy     nevezett       &#8222;kommunista       rendszer&#8221;   
+kivételezettjei pedig rohamosan gazdagodtak a               szocialista ipar és       kereskedelem 
+és   kultúra&nbsp; romjain.<br><br>Nem csoda, hogy       bekövetkezett az         összeomlás       
+előtti   állapot, amikor két lehetőség állt&nbsp; a       hatalmat birtokló               
+&#8222;kommunisták&#8221;   előtt:<br><br><div style="margin-left: 40px;">1.&nbsp;&nbsp;             
+  &nbsp;Visszatérés a   kemény hadikommunizmus vonalára, és       egy&nbsp; rákosista típusú, 
+személyi               kultuszon   alapuló kemény, kompromisszumokat nem       tűrő rendszer 
+kialakítása. Minden magántulajdon                 felszámolása (beleértve a   balatoni     és budai 
+villákat, kisipari tevékenységet                 stb.)<br><br>2.&nbsp;&nbsp;       
+&nbsp;Rendszerváltás - mely áttérést jelent a&nbsp; nyugati típusú                 piacgazdaságra,   
+    de nem feltétlenül jelenti a hatalmi elit teljes bukását. Politikai alkut   kell       kötni     
+          még időben, addig amíg lehet. Olyan partnereket kell válsztani, akik     személyiségüknél  
+     és           múltjuknál   fogva a &#8222;kommunista&#8221; elit számára kedvező     alkut   
+elfogadják, nem         számolják       fel annak   gazdasági pozícióit és nem zárják ki teljesen    
+   azt a         hatalomból.<br></div><br><br>Nos a       felpuhult,   korrumpálódott és   
+megtollasodott             &#8222;kommunista&#8221; elit az utóbbi verziót       választotta, mert   
+  addigi kellemes,             kiváltságos éltmódját nem kívánta már feladni egy&nbsp;       
+rákosista   típusú diktatúra   kedvéért.             Másfelől feltehetőleg 1956 tanulságai is szeme 
+előtt         lebegtek, és azt üzenték   számára,           hogy   ez az út 1989-ben nem   
+járható.<br>&nbsp;<br>Maradt tehát a                 &#8222;rendszerváltás&#8221;&nbsp;     mint   
+egyetlen járható út. Na, de hol az az ellenzék, akivel             ki     lehetne egyezni, meg   
+lehetne     állapodni? <br>A diktatúra tűrte ugyan a kommunista               gazdaságpolitika     
+fellazulását, de a   hatalom és a   politika szent tehenéhez senki sem           nyúlhatott.     Nem 
+  volt valódi   ellenzék, akivel   tárgyalni lehetett   volna. Ebben a     helyzetben       
+kénytelen   volt     &#8222;megszülni&#8221; saját   ellenzékét, hogy legyen       kivel leülni      
+ tárgyalni.   <br><br>Kíválóan     alkalmasak voltak   erre a   célra azok a     fiatalok akik a   
+hatalmi         elit sötét öregeinek&nbsp;&nbsp;             &#8222;elhuligánosodott&#8221;, 
+szamizdatos gyermekei           voltak, és eddig is lázongtak a       kommunista       rendszer 
+ellen, bár annak elsőszámú,   külföldön         taníttatott haszonélvezői         
+voltak.<br><br>Létrejött     a kerekasztal, majd   az abból kinövő       politikai   pártok, melyek  
+   ezer     rejtett szálon kapcsolódtak a       roskadozó kommunista   rendszer     állítólag       
+leköszönőben lévő     hatalmi   elitjéhez.<br><br>Megkezdődött a       politikai hatalom     
+látványos     átadása,   miközben   titkos,     a mai napig nem ismert paktumok       biztosították 
+a       gazdasági,   kulturális   kulcspozíciók     megőrzését   a volt   &#8222;kommunisták&#8221; 
+és               &#8222;ifjúkommunisták&#8221; számára.     <br><br>Márpedig     tudjuk, hogy a 
+gazdasági és a           politikai     hatalom egymástól nem elválasztható,   hiszen     ugyanannak  
+ a dolognak, a       hatalomnak     különböző arcai,     egymást indukálják. Ezt pontosan     tudta 
+a           marxista-leninista tanokon     nevelkedett kommunista elit     is. A politikai   
+gazdaságtan   első       féléves     anyagában olvasható:     a&nbsp; piacgazdaságban azé a     
+politikai   hatalom aki a         gazdasági hatalmát   és   ezzel járó     politikai befolyását 
+érvényseíteni             tudja.<br><br>Ezért   aztán az alku fontos   részeként       pozícióikban 
+tartották a volt         kommunista     vezetőket&nbsp; csőd   felé tántorgó állami       vállalatok 
+és   intézmények élén,         maradtak helyükön a     média kollaboráns vagy aktív       párttag    
+       vezetői.<br><br>Hirtelen azt vehettük tehát     észre, hogy akik   eddig kommunista       
+szombatra,           építőtáborokra, társadalmi munkára, &#8222;biciklit       Vietnamnak&#8221; 
+mozgalomra               buzdítottak   bennünket, most elkezdtek piaci realitásokról,       
+kereslet-kínálatról,           tulajdonosi     viszonyok   átalakításáról, profitról beszélni 
+ugyanazzal a                 &#8222;szenvedéllyel&#8221; és       &#8222;meggyőződéssel&#8221;, mint 
+ahogy néhány évvel korábban                 április 4-ék alkalmával   éltették   a   dolgozók 
+államát, a termelőeszközök társadalmi             tulajdonlásának     felsőbbrendű   elvét.   
+<br><br>Ők voltak   azok is, akik kárhoztatták   a     nyugat       gátlástalan       
+profitszemléletét, a   kommunista erkölcsre káros     kapitalizmust,     mely a     Coca-Cola        
+ &#8222;mámorában&#8221; fetrengő   fiatalokat   nevel.<br><br>Köpönyeget           fordítottak, 
+színt     váltottak     (pirosról piros-kékre,     csillagról szegfűre,   madarakra),   és mi     
+ezt szó   nélkül     eltűrtük nekik,     miközben a   tartalom nem     változott.   <br><br>Új     
+vezetőink a hatalom       látszólagos birtokosai, az       MDF   vezetésével         
+&#8222;elügyetlenkedték&#8221; a rendszerváltást.     Valóban     ügyetlenkedés   volt ez,     vagy  
+       átgondolt folyamat zajlott, amelyben&nbsp; politikai       bábuk és     demokratának 
+álcázott, korábbi             kollaboránsok, köpönyeget fordított   ex-kommunisták       együtt   
+munkálkodtak a kommunista   elit         gazdasági   hatalmának   átmentésén?<br><br>Kínzó       
+kérdés.<br><br>Nos,   sokunk   véleménye   szerint   erre     a   válasz az,   hogy elsikkasztották  
+ az     állami vagyonnal együtt   magát a       rendszerváltást   is, és szó     sincs itt         
+&#8222;ügyetlenkedésről&#8221;. Minden   egy előre     alaposan     átgondolt, és közösen       
+megtervezett       forgatókönyv szerint zajlott         le.<br><br>Megalkották a saját     
+kerekasztalukat, és az     abból     létrejövő   ellenzéki         pártokat, majd feltöltötték 
+ezeket   olyan megbízható           &#8222;káderekkel&#8221;, akikre           biztosan lehetett 
+számítani. Nem   tudtuk, de ma már látjuk, hogy a           világ legnagyobb         &#8222;Átverés  
+ Show&#8221;-jának   voltunk szemtanúi, részesei és             elszenvedői.<br><br>Ők,       akik a 
+kommunista     rendszert&nbsp; korábban passzívan elfogadták,             &#8217;56-ban a   meleg    
+ szobában, a   rádióból   hallgatták csak a fegyverropogást,   akiket könnyű volt                 
+megfélemlíteni,   majd kollaboránssá tenni,   kisebb-nagyobb   pozíciókba juttatni, most tömegesen   
+                beléptek az MDF-be, mert megérezték, hogy ezé   a   párté lesz a hatalmon, 
+most&nbsp; erre a             hajóra     kell   &#8222;átszállni&#8221;.   Jutalmul lehet kapni   
+Videotont, Ikarust,       papírgyárat,           bútorgyárat,   Erdértet,   ÉGV-t, és még hosszan 
+lehetne sorolni a   vállalatok         sorát.<br><br>Nem         álltak ezek   az   emberek 
+semmilyen szilárd elvi meggyőződés talaján.     Ők       többségükben     opportunisták       voltak 
+&#8211;   maga Lenin is ismerte ezt az     emberfajtát, és   még   ő sem   szerette       őket -, 
+akik     mindig oda csapódnak,   ahol a     hatalom van, és élvezik a hatalom által       juttatott  
+ kisebb-nagyobb     morzsákat, de a     veszély első   fuvallatát     megérezve hátat   fordítanak   
+addigi     szövetségeseiknek, és     ha     szükséges, hátba is döfik       őket.   
+<br><br>Nincsenek elveik;   jólétet és     kiváltságokat         szeretnének.<br><br>Ez az MDF el    
+   is végezte   a   &#8222;feladatát&#8221;, és bár         meghirdette a     &#8222;Tavaszi         
+Nagytakarítást&#8221;, mégsem tett semmit a     valódi     rendszerváltás     érdekében. A         
+három hatalmi ág (törvényhozói, végrehajtói,       bírói)     kulcspozícióiból&nbsp; nem             
+távolította el a&nbsp; kommunista rendszer     meghatározó   szereplőit,   így   azok nagy mértékű   
+          összefonódását sem szüntette meg, és     mérgező örökségként magával   vitte   az     
+újszülött           &#8222;demokráciába&#8221;.     <br><br>Ugyanígy az akkor még állami irányítás   
+alatt     álló   médiából           (tévé, rádió,     napilapok) sem rakta ki azokat az újságírókat, 
+  riportereket,     szerkesztőket       és           főszerkesztőket, akik&nbsp; korábban mindenben  
+ aktívan kiszolgálták a   kommunista       rendszert       és       annak szócsövét, dezinformáló,   
+elhallgató médiarendszerét,       propagandagépezetét         üzemeltették.       <br><br>Ma is ez   
+médiaelit birtokolja az összes       TV-csatornát, a rádiókat     és a     napilapokat. Ők a         
+negyedik hatalmi ág. Abszolút       antidemokratikus módon     létrejött hatalom   ez. Képviselőit   
+nem       választják, és nem is       leválthatók. A tőke     élteti őket, ez a gazdájuk,   akkor    
+ morognak, ha ez       utasítja őket, és       azonnal     elhallgatnak, ha ez rájuk szól. Tényleges 
+    hatalom ez,   amely ott csücsül       minden           magyar otthonban, és butítja 
+gyermekeinket,   rabolja   az időnket, átformálja   ízlésünket,                 vágyainkat, 
+céljainkat, elhallgatja a   valóságot,   megfoszt minket tradícióinktól, nemzeti                   
+érzelmeinktől, hősökként   tüntet fel alantas   embereket és igazi hősöket taszít a         
+sárba.<br><br>Hamis             értéket teremt, és valódi   értékeket szüntet meg.<br><br>Más, volt  
+       szocialista országokhoz           hasonlóan   a kommunista   rendszer prominenseit legalább 
+tíz   évre       el kellett volna   tiltani a         politikai életben   és a   közügyekben való   
+részvételtől.       <br><br>Antall   József&nbsp; kormánya -         legenyhébb esetben is     
+csupán   politikai       dilettánsok   gyülekezete - azonban nem tette meg azokat a         
+lépéseket,     melyeket az   adott         helyzetben megtehetett volna, meg kellett volna           
+tennie.<br><br>Antallék   tartották   magukat       a   kerekasztal paktumaihoz, és nem használták 
+ki   azt a         mozgásteret,     melyet a     megváltozott     világpolitikai feltételek 
+biztosítottak   számukra. (A           kelet-európai,       szocialista rezsimek   és a   
+Szovjetunió összeomlása, a   Nyugat közeledése           felénk.)<br><br>A       kommunista 
+diktatúra   elnyomó   elitjének tett ígéreteket egyáltalán   nem szabadott           volna     
+betartani. Ez több,   mint politikai hiba,   ez   maga a Bűn,   amely a mai napig rányomja       
+bélyegét         társadalmunkra,   és visszájára   fordította az   egész   úgynevezett               
+  &#8222;rendszerváltást&#8221;.<br><br>Vajon miért   nem tette   meg az MDF, amit   megtehetett 
+volna a                 rendszerváltás eufóriájában, hatalmas   társadalmi támogatottság mellett?    
+     <br><br>Vajon       miért     hagyta   Magyarországot az   adóságcsapdában vergődni, amikor a 
+nyugati       államok     készséggel         átvállalták   volna   az első elszakadt 
+&#8222;kommunista   láncszem&#8221;     adósságait,   annak a           politikai   és   gazdasági 
+hozadéknak a fejében,   amit a szocializmus     összeomlása               
+eredményezett?<br><br>(Gondoljuk   csak meg, mekkora   piacot kaptak ezek az     országok később!    
+ Hány           pláza, bevásárlóközpont,   multinacionális   cég telepedett ide, és     mekkora     
+profitot zsebeltek   be   ezek       az évek során?     Lengyelországnak harminchárommilliárd        
+ dollárnyi adóssága volt, és   ezt   egy         tollvonással leírták   nekik. Pedig nem ők voltak   
+    azok,   akik megnyitották a   Kelet-Németek     előtt a       nyugati határt, ezzel   elindítva 
+a       szocialista   rendszer     felbomlását.)<br><br>Miért   nem hozták       nyilvánosságra az   
+      ügynöklistákat, és   nyitották   meg   az archívumokat a nép előtt,   mint más volt       
+kommunista         országokban? Ennek     egyszerű a   magyarázata: mert akkor saját magukat   
+leplezték volna   le,           hiszen a       rendszerváltó pártok   tele voltak olyan káderekkel, 
+akik érintve     voltak például a   III/III-as               ügyekben.<br><br>Inkább   elszabotálták 
+az   ügynöktörvényt, hátha nem derül     ki a múlt.   Ezzel   pedig           elindították a   véget 
+nem   érő politikai zsarolások   láncolatát. Ez   olyan     fegyver   volt&nbsp; a             
+szocialista-liberális&nbsp;   szövetségesek kezében, amelyet       politikai   krízisek,   
+pozícióharcok     idején         gátlástalanul fel is használtak, és mindig     elérték a       
+számukra kedvező eredményt.   Teszik     ezt ma is,   és     mindaddig, amíg a     múltjukkal   
+zsarolható     emberek maradnak a       politikában.<br><br>Az MDF   megtette   amire         
+rendeltetett, magyarul nem   tett   semmi olyat,   ami   az   exkommunista elit   gazdasági-,        
+ kulturális- és   médiapozícióit     megrengette   volna.   Elindította   viszont a&nbsp;     
+kárpótlási       folyamatot, és azt is           &#8222;elügyetlenkedte&#8221;. Gazdasági     
+szakemberek előre       figyelmeztettek,   hogy a   kárpótlás         korlátozott és részleges   
+jellege, valamint   a     kárpótlási jegyek   kibocsátása     politikailag és         gazdaságilag   
+is elhibázott       döntés.<br>&nbsp;<br>Az MDF minden     intézkedése az időközben     helyén       
+maradt, most már       exkommunista, liberális gazdasági   elit   tulajdoni megerősödését,           
+gyarapodását tette       lehetővé.   Remek példa erre   Gyurcsány Ferenc vagyona   és           
+&#8222;karrierje&#8221;.<br><br>Az     MDF eltűrte   a     spontán, tehát törvénytelen   
+privatizációt,         semmit   sem tett, és     természetesen, ha   indult is   egy-egy   ügy, a   
+helyükön maradt&nbsp;         rendőrségi&nbsp;       káderek nem   nyomoztak alaposan, a   helyükön  
+ maradt   ügyészek nem kutakodtak       kellő       alapossággal, és     persze a helyükön maradt   
+bírák   sem a tényállások   tényleges feltárásán               munkálkodtak. Nem születtek   nagy   
+számban elmarasztaló   ítéletek, melyek a   spontán             privatizáció   során ellopott   
+vagyont   visszaadták volna az államnak.   <br><br>Létrehoztak               azonban különböző     
+hitelkonstrukciókat - például az E-hitel - melynek   segítségével             feltőkésítették az     
+exkommunista-liberális elitet. E-hitelt   persze csak annak   volt érdemes             felvennie,   
+akinek lehetővé   tették az   állami vagyon mélyen értéken   aluli       megvásárlását.           
+Tipikus példaként említhető, hogy valaki     felvett állami kezességvállalás         mellett 100     
+  millió     forintot, kiprivatizálta ezzel a 2,5 milliárd     eszközértékű     vállalatot, majd     
+  annak     vidéki     telephelyének egyszeri eladásával 400 millió forinthoz         jutott, amiből 
+  azonnal       vissza   is     fizethette a felvett hitelt, és még forgóeszköze is     maradt. Így  
+     került az állami       vagyon nagy       része &#8211; a dolgozók tulajdona &#8211;     az   
+exkommunista-liberális   és       MDF&#8211;es     elit&nbsp;   kézébe. A privatizációt   ezek   a   
+szorgos hangyák példátlan     mohósággal   és         rablóbandát megszégyenítő         
+szervezettséggel hajtották végre. Nagy szerepet       vállalt&nbsp; a       pártok és   a       
+privatizáció   kezdeti&nbsp; finanszírozásában a Postabank,     melynek   csillaga amilyen           
+  gyorsan   emelkedett, olyan   gyorsan le is hanyatlott a     &#8222;felelőtlen&#8221;     
+hitelpolitika           következtében.   Számolatlanul   folyósította a     Postabank a   
+milliárdokat&nbsp; a     pártok         finanszírozására, és olyan   privatizációs       ügyletekre, 
+  amelyek az új elit   gazdagodását és     politikai       pártjainak izmosodását         
+szolgálta.<br><br>A   bank vezetése     &#8222;okosan&#8221; adott         &#8222;jobbra&#8221; és   
+    &#8222;balra&#8221; egyaránt,       remélve, hogy akkor nem lesz, aki majd         felelősségre  
+     vonja, ha borul a buli.   Milyen     igaza volt   Prinz Gábornak; a bíróság felmentette,        
+   sőt,     majdnem ki is tüntették.<br><br>Látszólag   van jobb- és baloldal, de ez   csupán   az   
+        &#8222;Átverés     Show&#8221; bölcs   rendezőinek köszönhető,   akik a magyar politikai     
+      tragikomédiát   a       normális társadalmakban   kialakult parlamenti   berendezkedéshez 
+kívánták         alakítani. A   mai új politikai eliten   belül a törésvonalak ugyanis   egyáltalán 
+nem   a             pártok   között húzódnak,   mint azt az átlag állampolgár   gondolja, hanem 
+inkább a                 zsákmányszerzésre   specializált, háttérben   dolgozó oligarchák&nbsp; 
+által   megállapított&nbsp;                 érdekterületek, befolyási övezetek mentén.   Azt is 
+mondhatnánk, az új   elit&nbsp;               pártjai&nbsp;   csupán a   politikai színjáték részei, 
+  hisz a valódi hatalom a&nbsp;           háttérben       szürke   eminenciásként meghúzódó hazai 
+oligarchák és   multinacionális vállalati         helytartók         kezében     
+összpontosul.<br><br>A Postabank természetesen   tönkrement     volna, ha     a betétesek       
+felelőtlenül       elherdált pénzét az állam nem pótolja     közpénzekből   (ezt     hívják 
+szemérmesen       banki konszolidációnak,       és mint napjaink     amerikai példáján látjuk, ez    
+   nem csupán magyar       jelenség). Tehát   végső soron a         bank által elherdált pénzt az    
+ állam a       költségvetés útján a betétesek, és   más     adófizetők     adóforintjaiból     
+pótolta.<br><br>A hatalmi         elit azonban elérte célját.       Hozzájutott azokhoz a kedvező    
+     hitelekhez, melyekből       felvásárolhatta   az állami     vállalatokat.   Természetese mélyen 
+áron     alul, és     rendkívül puha       fizetési és egyéb       szerződéses feltételek   mellett. 
+A     privatizáció során szinte sohasem           sikerült     érvényesíteni az   állam részéről 
+azokat a       beruházási és foglalkoztatási követelményeket,               melyeket az állam az   
+adásvételi     szerződésben   kikötött. Nem ruháztak be annyit,   amennyit         vállaltak, és     
+nem tartottak   meg     annyi munkahelyet,   amennyit vállaltak.   Helyette     leépítették     a 
+munkavállalókat, és       eladták   a   telephelyeket,   leginkább   külföldi     befektetőknek, 
+áron alul.     <br><br>Közben más       forrásokból   is   táplálkoztak     azok a     bevételek, 
+melyeket az állami cégek       felvásárlására,   és a pártok         finanszírozására       lehetett 
+fordítani. Ilyen volt a hírhedt         &#8222;olajszőkítés&#8221;,   melynek     során     vasúti   
+  tartálykocsik ezrei&nbsp;         járták keresztül-kasul&nbsp; az   országot, egyes helyeken       
+lefejtették a       szállítmányokat,   vegyileg kezelték,   majd       ismét elszállították és   
+szétosztották az       üzemanyagtöltő       állomások között. Érdekes         módon&nbsp; a 
+hatóságok   nem tudtak semmiről, nem   láttak       semmit,   hasonlóan   a         
+titkosszolgálatok sem jutottak   semmilyen kézzelfogható   eredményre.   Akik     viszont     
+beleütötték         orrukat ebbe az   ügybe, azokat meghurcolták és     ellehetetlenítették, sőt,    
+   néhányan   meg is       haltak. Egy     biztos: a valódi felelősöket   sosem   találták meg, az   
+aktákat hosszú     évekre           titkosították, és senki   (vagy nagyon   kevesen   tudják, de ők 
+  sem beszélhetnek) nem tudja, hová               lett az a sok százmilliárd     forint, amit   ez 
+az   illegális, jövedéki adózást és forgalmi     adózást           érintő   bűncselekmény-sorozat    
+   eredményezett.<br><br><span style="font-style: italic;">Cui prodest,</span> kinek az érdekében,   
+  teszi   fel a kérdést             a&nbsp; latin   mondás. A   válasz egyértelmű, nem kell ehhez a  
+   titkosított   dokumentumokat     feloldani.         Akik   a haszonélvezők   voltak, azoknak az   
+  érdeke az ügy   titkosítása. Ez pedig   a   teljes   jelenlegi         hatalmi elit, hiszen       
+kormányok változtak de   egyik sem oldotta fel   a     titkosítást.<br><br>A         tulajdoni     
+viszonyok átalakítása   2008-ra   gyakorlatilag   befejeződött, és     megvonható az új   társadalmi 
+          elit tevékenységének mérlege   is.   Ez   röviden a     következő:<br><br><ul><li>A 20     
+  milliárd dollár       államadósság, amit a       Kádár&#8211;rendszertől     örököltünk, legalább  
+ 100     milliárd dollárra&nbsp;           növekedett.</li><li>Spontán   és       
+&#8222;törvényes&#8221;     privatizáció során magánosításra     került cca.       40.000   
+milliárd&nbsp;     forint   állami   vagyon,   a termelőeszközök&nbsp; főként     a régi-új&nbsp;    
+     ex-kommunista-liberális       érdekcsoport,   és   multinacionális vállalatok     kezébe   
+kerültek.</li><li>Az       állam a     privatizációs     bevételeket&nbsp;   felélte, s rendkívül    
+   kis mértékben fordították ezeket a           jövedelmeket a     gazdasági szerkezet         
+megváltoztatására, termelő beruházások   támogatására,             munkahelyteremtésre.</li><li>A    
+   nagy   elosztórendszerek átalakítása   nem történt meg (oktatás,             egészségügy,       
+nyugdíjbiztosítás, szociális   támogatások),   vagy olyan módon lett átalakítva, hogy&nbsp;     a   
+költségvetési hiányt évről évre     újratermelje.</li><li>A rendszerváltás&nbsp;                   
+vesztesei&nbsp; és teherviselői a bérből   és fizetésből   élő emberek, akiknek                   
+adóforintjaiból konszolidálták   a bankokat, és támogatják a munkát   kerülő társadalmi              
+     rétegeket.</li><li>Magyarország   leépítette hadseregét, egy esetleges külső támadás   esetén   
+teljesen                 védtelen. A   honvédség laktanyáit, raktárait sok esetben biztonsági   
+magáncégek       (pl.         In-Kal       Security) őrzik. Ez nemzetbiztonsági szempontból   
+megengedhetetlen. A biztonsági           cégek     fegyveres állománya jóval meghaladja a Rendőrség  
+ és a   Honvédség     együttes               állományát.</li><li>Az állam öngyilkos nemzeti és     
+nemzetiségi politikát     folytat.     Mesterségesen&nbsp;           gerjeszt&nbsp; és támogat     
+nemzetiségi igényeket,     miközben&nbsp;   a   magyarérzelmű&nbsp;     lakosság       jogos   
+igényeit   figyelmen kívül     hagyja.</li><li>Az   állam   hatalmas összegeket fizet     szociális  
+         támogatásokra, és olyan     rendszert tart   fenn, amely   egyáltalán nem ösztönöz a munka  
+     világába   való       visszatérésre,     azonban   kifejezetten ösztönzi   a&nbsp; 
+meggondolatlan         gyermekvállalást. Ennek terhei       is     az   adófizetőket   
+terheli.</li><li>A&nbsp; magyar   állam   erején     felül vállal kötelezettségeket         olyan    
+   nemzetközi katonai   missziókban, melyek a   magyar   érdekeket   nem, vagy csak   rendkívül      
+ áttételesen         szolgálják. Magyarország sohasem   volt   gyarmattartó hatalom,     ezért - 
+szemben   a   brit,     amerikai,     francia, spanyol és   más     kolonialista-imperialista     
+államokkal &#8211;   ilyen       irányú, erkölcsi alapokon       nyugvó     kötelezettségei     
+nincsenek.</li><li>A&nbsp;   hatalom     elhibázott,   pozitív   diszkriminációt         
+folytat&nbsp;   bizonyos   társadalmi   csoportokkal   szemben,   és ezzel sérti   a   többségi   
+társadalom         érdekeit, rombolja a     régi, jó erkölcsöket   és   veszélyezteti a   társadalmi 
+    békét&nbsp; és a     különböző       csoportok békés   egymás mellett       élését.</li><li>A 
+hatalom   elhibázott     szomszédségi     politikát folytat a     környező       államokkal.   Nem 
+képviseli   bátran, méltósággal   és     következetesen   a szomszédos államokban     élő       
+magyar   lakosság   érdekeit, pedig ez az     anyaállam egyik   legfőbb   kötelessége. Érdekeink   
+nem             Afganisztánban és Irakban   vannak,   hanem a balkáni régióban és   a   szomszédos   
+országok magyarok       lakta           területein.</li><li>A&nbsp; hatalom felszámolta a     
+szociális   biztonságot, eltűri,   hogy       emberek     százezrei éljenek a létminimum alatt, és   
+emberek     tízezrei     hajléktalanként,       teljesen   kisemmizve     tengessék életüket. Eltűri 
+a     gyermekszegénységet     és     gyermekek&nbsp;     százezreinek   éhezését, miközben     
+dollártízmilliókat   engedünk el     különféle     államok     tartozásaiból, és ingyen   
+osztogatjuk fel nem       használt&nbsp;               hadianyagkészleteinket.</li><li>A hatalom és 
+elitje nem   becsüli a   magyar földet,       mindent           megtesz   a magyar termőföld 
+kiárusításáért, és lehetővé     teszi&nbsp; a helyi   gazdálkodók               kisemmizését.   
+Ellehetetlenítette a magyar   mezőgazdaságot és     mezőgazdasági   vállalkozókat. Az         állam  
+   nem segíti   hatékonyan a   mezőgazdasági   termelőket, a     közvetítői láncok kiiktatásában   
+és       a     tisztességes     felvásárlási   árak     kialakításában.</li></ul>És még sorolhatnánk 
+    hosszan,     melyek a       politikai     elit     &#8222;eredményei&#8221;, melyek a 
+jelenlegi&nbsp;     társadalmi,     gazdasági,     politikai,         kulturális   válsághoz 
+vezettek.<br><br>De&nbsp; hogyan     kezdhetnénk neki       a   megújításnak   egy olyan         
+országban, amely negyvenöt évnyi kommunista     elnyomás, lelki   és       politikai   terror után 
+1989-ben az új         kezdet reményével indult, de mára       teljesen   világossá       vált, hogy 
+a&nbsp; rendszerváltás se nem     több,     se nem kevesebb   mint     amit   maga a       
+rendszerváltás szó jelent. Nem hazudtak nekünk azok, akik     a       rendszerváltás       szót      
+ választották, de nem is mondtak igazat, mert ez a szó hamis   várakozással         töltötte       
+el a       magyar népet.<br><br>Úgy gondoltuk, leszámoltunk a   múlttal, megbüntetjük, de   legalább 
+                  megnevezzük a bűnösöket, és tisztességes,   nyílt versenyben felépítjük a 
+szociális                 piacgazdaságot.     Olyan gazdaságot, ahol   mindenki boldogul, aki 
+dolgozik, és nem sunyi     háttéralkuk             fogják eldönteni       emberek, vállalatok, 
+privatizációk, kölcsönök,     tanintézetek,             közbeszerzések&nbsp;   sorsát.     
+Tisztességes, áttekinthető privatizációt     akartunk, és helyette a             magyar   nép teljes 
+kisemmizését     kaptuk. Az arcunkba nevetnek     és azt mondják,   &#8222;sajnos a             
+rendszerváltozásnak vannak     vesztesei&#8221;. Igen   ,   lehet, hogy így   van, de miért   mindig 
+  mi         fizetjük a számlát?<br><br>Mi     fizetünk,   ha   mások tévednek,     sikkasztanak, ha 
+  elkótyavetyélik   az       állami vagyont. Mindig mi   fizetünk.       És azt is     mondják - 
+mert   mondani kell már   valamit -,       hogy ez   egy&nbsp;   következmények nélküli         
+ország, pedig ez nem   igaz. Mindig   mindennek vannak           következményei, esetleg csak   még 
+nem   látszanak. A       lelkünkben a rombolás   már teljes.             &nbsp;<br><br>Embertársaink 
+iránti   bizalmunk már teljesen       elpárolgott, nem   tudunk   hinni.   S aki       nem hisz, 
+annak nincsen   jövője. Szeretnének minket   nem csak a         múltunktól, de     a jövönkbe   
+vetett     hitünktől is   megszabadítani.<br><br>Az első   lépés tehát   az           önmagunkba 
+vetett hit     helyreállítása,     majd pedig a közbizalom   megteremtése. Nem     tűrhetjük     
+,hogy     olyan intézmények     igazgassák     sorsunkat, akikben nem   bízhatunk.     Kell hinnünk  
+   abban, hogy a rendőrség     mindent     elkövet a   bűnözők   felkutatására,   a     bűnt üldözi, 
+nem   pedig   saját polgárait. Hinnünk kell,     hogy     az   ügyész mindent   elkövet     a   
+bűnök felderítésére, még akkor   is ha az elkövető vagy rokona magas           politikai     
+kapcsolatokkal       rendelkezik a kormány   oldalán. Hinnünk kell abban, hogy a bíró   pártatlan    
+     és     szakszerű     ítéletet   hoz, fajra,   nemre, vallásra, politikai hovatartozásra   való  
+   tekintet     nélkül, és         nem lehet neki     sugalmazni hétvégi partikon, összejöveteleken, 
+      esetleg balatoni       vitorlázások   során,     hogy mi     volna a bizonyos körök számára 
+kedvező         ítélet.<br><br>Bevallom     őszintén,   én már nem tudok       bízni   a fenti 
+dolgokban.   Sunyi       ország lettünk, ahol semmi sem az       aminek, és senki sem az   akinek    
+ mondja     vagy mutatja       magát. Hiába vannak mindenfajta       közvéleménykutatók - ezt is   
+lehet   tudományosan             manipulálni.<br><br>Mi már nem hiszünk. Mert       látjuk, hogy a 
+dolgok     napról-napra   rosszabbak,     a     rendőr   nem úgy nyomoz, ahogyan kell, az       
+ügyész csak   egyeseket   üldöz,   a bíró     érthetelen ítéleteket     hoz, s csak   egy biztos: a 
+számlákat         minden esetben mi     fogjuk     kifizetni.<br><br>Nincsen tovább, többé     nem   
+hátrálhatunk.   Ezt a         kilencvenháromezer       négyzetkilométert nem adhatjuk fel, mert 
+nincs számunkra       máshol   haza.   Itt       születtünk, és       itt is szeretnénk 
+gyermekeinket felnevelni, emberhez   méltó életet       élve,         használva       
+anyanyelvünket, és büszkének lenni nemzeti   szimbólumainkra.   <br><br>Össze kell       fogni,     
+és         megújítani mindent, amit az elmúlt   19 évben ferde útra   vittek, elcsaltak,       
+elsikkasztottak.           Elegünk   van a   &#8222;multikultiból&#8221;!   Tisztelünk más 
+kultúrákat, de a         sajátunkat         szeretjük,   és nem   akarunk változni a   saját 
+országunkban azért, hogy másnak                   tetsszünk.<br><br></div>               
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-10-25&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1494&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1494&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1494&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1494&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1494&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1494&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1494&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1494&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1494&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1494&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1494&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1494&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1494&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1494&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment113856"></A>121. saltib</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-30 13:24:48</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez az egyik legjobb írás, amit itt olvastam. Terjesztem, akinek csak tudom. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112901"></A>120. parittya -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1494&id=112648#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-27 20:19:22</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Mondta neked bárki is, hogy csúzlival akar harcolni?                                                        <br />
+<br />
+Senki sem beszélt mikéntekről, és módszerekről, te mégis eldöntötted, hogy eleve nem működhetnek. ( Ez az igazi szűklátókörűség.)                  <br />
+<br />
+Nekem pl. semmi bajom a halállal, de a rabszolgasághoz nem füllik a fogam, és inkább  nem fekszem le a földre éhendögleni. Ugye nem baj?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112699"></A><FONT COLOR="#FF0000">119. </FONT>Chani</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-27 13:45:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_983.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112648"></A>118. <A HREF="mailto:gbw@freemail.hu" STYLE="color: #000000">GutBesserWasser</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-26 23:38:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_637.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Én mindaddig békés vagyok, amíg csak lehet. Nem tudom, mit úszhatok meg békésen és mit nem, de azt tudom, amit már másodszor írok le itt: a szerintetek sátáni babóság legalább 90%-a ugyanúgy szenvedő alanya a rendszernek, mint mi. Ezt talán nem kéne figyelmen kívül hagyni.<br />
+<br />
+És azt sem, hogy ha csúzlival lövünk tankra, a legkisebb bajunk az lehet, hogy nevetségessé válunk. A legnagyobb baja pedig Magyarországnak lesz, ha elpazaroljuk a vérünket ostobaságból kifolyólag. (Ha kinyíratjuk magunkat,  más itt nem marad, csak az ellenfeleink. Ők pedig életünkben nem becsülnek, gondoljátok, hogy halálunkban fognak?)<br />
+<br />
+Kész vagyok (hősi halált) halni, ha attól Magyarországnak jobb lesz. De ez most nem az az idő.<br />
+<br />
+Részemről ez a téma lezárva, elmondtam, amit erről szerintem érdemes elmondani. (Ahogy megközelítitek (főleg toecutter, kisebb mértékben parittya), jobb esetben csőlátó ostobaság, rosszabb esetben provokáció. Tehát így is többet foglalkoztam vele, mint kellett volna.)<br />
+<br />
+Inkább - még egyszer mondom - arra kéne koncentrálni, hogy ez az információ minél szélesebb körben tudatosuljon, és arra vonatkozóan kéne ötleteket gyártani, hogy miként lehetne ebből úgy kimászni, hogy ténylegesen kimásszunk, és ne elvesszünk. (Ha meg sehogy, akkor az egészről kár beszélni, kár bármit is csinálni, szépen le kell feküdni a földre, és éhen dögleni.)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112587"></A>117. parittya -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-26 19:45:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A bőrét megmenti: módosítom seggét megmenti-re.                                                   <br />
+<br />
+Hozzáteszem: a mi vérünk már most sem drága nekik, lásd egészségügyi reform. Én most voltam korházban, és elmondhatom, jobb  ha nem betegedtek meg!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112570"></A>116. parittya -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1494&id=112408#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-26 18:39:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Gut Besser Wasser! Akár békés, akár harcias módszert választunk, ők nem hagyják majd magukat, megvédik a hatalmukat bármilyen eszközzel.         <br />
+<br />
+Nekik nem lessz drága a mi vérünk sem,  és végül nem marad más lehetőségünk, vagy megvédjük magunkat, vagy kipusztítanak minket.       <br />
+<br />
+Ha azt hiszed békéskedéssel megúszhatod ép bőrrel, akkor vagy a legnagyobb veszélyben!                                                                        <br />
+<br />
+A győzelem egyik esetben sem garantált, de aki harcol egy nemes célért, az ha egyszer meghal, tiszta lélekkel mehet a túlvilágra, Aki meg csak azt latolgatja, mit veszíthet ekkor, mit veszíthet akkor, az lehet, hogy rövidtávon a bőrét megmenti, (hosszabbtávon, még azt sem) de a lelke attól szennyes marad.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112516"></A><FONT COLOR="#FF0000">115. </FONT>Wrasse</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-26 16:38:34</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112486"></A>114. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-26 15:57:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bizony most fején találtad a szöget. Szememben sokkal károsabb az, aki a babót védi, mint a babó maga. De, hogy a tárgynál maradjunk: vagy mellettem, vagy a babók oldalán, de mindenképpen szembe fogod magad találni egy elszánt, mindenre képes ellenséggel. <br />
+<br />
+Ezt már nem lehet 'megúszni'. A gép mozgásba lendült.<br />
+<br />
+Amerikától nem kell tartanod, nekik máris meg VAN kötve a kezük, hát még mi lesz ott a közeljövőben...<br />
+<br />
+Izraeltől annál inkább: ugye hallottál a 'Sámson opcióról', ha nem, keress rá, nehogy tőlem halld, hisz én csak amolyan ostobácska goy náci vagyok...<br />
+<br />
+Sokan igen bölcsen tennétek, ha felfrissítenétek a cion bölcseinek jegyzőkönyvével kapcsolatos ismereteiteket - különösen a végjátékra koncentrálva.<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112408"></A>113. <A HREF="mailto:gbw@freemail.hu" STYLE="color: #000000">GutBesserWasser</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-26 10:01:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_637.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hát jó. Játsszunk el a nyílt háború agyrémével. Tegyük fel, hogy jó nácik módjára megneveztük "az ellenséget", mit sem törődve azzal, hogy az ellenségnek kikiáltott emberek legfeljebb ha egytizede tehet bármiről is azzal kapcsolatban, amivel bajunk van. (Tehát jó, ám igen ostoba nácik vagyunk.) Tegyük fel, hogy nem vagyunk szlavofóbok, csupán csak antiszemiták, és kimondjuk, amit oly nagyon szeretnél hallani. Aztán mit tegyünk? Kezdjünk el vadászni sörétes puskával ezekre az emberekre? (Merthogy ugye jogi út kizárva, szerinted.) Akkor mi fog történni szerinted? Szerintem az, hogy Európa, Amerika, és Izrael szépen ide küld 20 F16-ost, és pépesre lövik a seggünket. Aztán a helyünkbe ültetett vezetők, és azok utódai még évtizedeken keresztül minden nemzeti ünnep és bármi más alkalmából kérhetnék a bocsánatot. Annak a gondolkodásmódnak pedig, ami Magyarországot mint önálló kulturális és gazdasági egységet szeretné, még a mostaninál is nagyobb kuss lenne, mert a zászlója alatt azoknak az életére törtek, akik irányítják a világot. Ha ezt szeretnéd, végy sisakot, kardot, és harcolj. Én ezt nem szeretném, de nagyon nem, ezért először velem fogod magad szembe találni a harcmezőn.<br />
+<br />
+Bízom benne, hogy erre nem fog sor kerülni.<br />
+<br />
+Ha már nem tudjuk/akarjuk másképp megközelíteni ezt a kérdést, mint "faji" alapon, inkább azzal foglalkozzunk, hogy az ellenségnek kikiáltott társaságból azt a 90%-ot, aki ugyanúgy szenved a 10%-tól mint mi, megnyerjük magunknak.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment112384"></A>112. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-26 03:27:57</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Az a baj, gyerekek, hogy ravaszabbak akartok lenni a Sátánnál. Elmondom előre: nem fog sikerülni. Ami előttünk áll, azt nem fogjuk megúszni vérontás nélkül, bármennyire próbálkoztok is egy jogi koncepció mögé bújni. Azt hiszitek, a babók nem tudják hová vezet az, amiről beszélgetünk? Mit gondoltok, miért sikoltoznak náciveszélyről lépten-nyomon? Nagyon egyszerű: minden cselekvési tervünk szükségszerűen rajtuk akad el - hisz ők állanak azok mögött a tendenciák mögött, amelyek miatt ezek a tervek egyáltalán felmerülnek.<br />
+<br />
+Hisz volt már nekünk Szent Koronás Főnk is, nem is egy, és nézd meg, hová jutottunk.<br />
+<br />
+Szóval földet vettél, de nincs ínyedre levágni a daganatos testrészt, itt is megjósolhatom jövődet: El fogják azt venni tőled, mert jó strucc módjára, megintcsak a földbe dugod a fejed. Erről szól az ingatlanadó. Ne azt nézd, hogy az most még nem is olyan sok, a lényeg, hogy be legyen vezetve, azután majd kreálnak okot, hogy 'kiigazítsák'. <br />
+<br />
+Amíg ódzkodsz attól, hogy kimondd: babó, mit kimondd, üvöltsd, sikítsd, addig ez a parazita újra és újra rá fog tekeredni a nyakadra.<br />
+<br />
+Vegyünk egy egyszerű, de egyben nagyszerű példát: vissza akarod szerezni az Apró(Klein) klántól annak megszerzett javait. Hogyan? Tessék, itt a lehetőség, magyarázd el szép sorban nekem, hogyan szeretnéd ezt véghezvinni, én meg szépen elmondom neked, hogy miért született halva az egész ötlet, hogy majd a szentkorona...<br />
+<br />
+Délibábok kergetése helyett készülni kellene a nyílt sisakos háborúra, testben és lélekben. Nem földet kell először venned, nem ekét, hanem kardot, mert az ekétől még lehetsz jobbágy, rabszolga, de karddal a kezedben már nem. Vagy Szabad Ember leszel, vagy halott, de jobbágy soha.<br />
+<br />
+Hát itt vónánk, ez a lényege az egésznek. Felnőtt itt a neten egy NAGGYON okos, de NAGGYON gyáva nemzedék, akik felgyűrt ingujjal, meglazított nyakkendőben, a képernyő mögül szeretnék megejteni a rendszerváltást - ennek isszuk a levét ma. Persze, az előző generáció se volt kutya, hogy ne varrjak mindent a Ti nyakatokba...<br />
+<br />
+Méghogy Ruszkik haza, szép gondolat, de nincs végiggondolva, milyen alapon különböztetsz te meg népeket, mi vagy te, szlavofób, antiszlávita?<br />
+<br />
+Babók haza - ha már mondtunk á-T, és akkor már léptünk is egyet a valódi megoldás felé...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1494&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1494&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1494&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1494&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1494&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1494&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1494&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1494&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1494&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1494&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1494&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1494&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1494&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1494&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

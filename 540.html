@@ -1,0 +1,660 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=540#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Három olvasói cikk";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Három olvasói cikk<BR><DIV CLASS="postheader_small">Levrov - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 január 17. 08:37:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_540.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Biztosan föltűnt néhány     
+olvasónknak, hogy nagyon eltűntem az elmúlt napokban. Sok dolgom volt, például meg kellett nyernem   
+  egy <a target="_blank"style="color: black; font-weight: bold;" href="//bombagyar.hu/index.php?post=189">pókerversenyt</a>, azért nem tudtam írni (mármint nem 
+a póker, hanem a sok dolog miatt). Addig is     kaptunk néhány cikket, amelyek közül hármat itt 
+közlök komolyabb kommentár nélkül. Ha valakinek     nagyon olvashatnéka támadna, oltsa le 
+ezekkel!<br><br><hr style="width: 100%; height: 2px;"><br><span style="font-weight: bold;">Petrasovics 
+Anna és a német szemét</span><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">Van egy kis fáziskésésem, csak 
+ma hallgattam meg a XIII. adást. Ebben      szóba került Petrasovics Anna illetve a német 
+importszemét. A kettő ről  eszembe jutott egy sztori,     ezt szeretném megosztani Veled.  
+<br><br>Naszóval.<br>Tavaly decemberben felhívott minket egy     zaklatott  hölgy, hogy Szarvasgede 
+falu határában szemmel láthjató ok nélkül  vágnak ki egy fasort.     Gondoltam, megkérdezem a 
+Közútkezelő Kht-t, hogy  tudnak-e róla (az út menti fasorok karbantartása     általában hozzájuk  
+tartozik), majd miután kiderült, hogy nem a Közútkezelő a hunyó,  felhívtam a     falu 
+polgármesterét is. <br><br>Kedélyesen elbeszélgettünk a polgármester asszonnyal.  Elmondta,     hogy 
+a fakivágásról ő is tud, neki se tetszik a dolog, de  sajna nem sokat lehet tenni: a terület     
+magánkézben van, nem  üzemtervezett erdő, így sajna a tulaj azt csinál, amit akar, még ha ez  nem is 
+    tetszik másoknak. <br><br>Mikor megtudta, hogy környezetvédelemmel foglalkozom,  megkérdezte,    
+ tudom-e, hová vezet az út, ami mellett a&nbsp; fasor volt?  Nem-e? Hát az illegális     
+veszélyeshulladék-lerakóhoz. Mert nekik ilyen  is van ám. Persze nem jószántukból. Pár éve     
+megkereste őt egy fazon,  hogy hahheluja, dicsőség, ők itten nagy vállalkozók, lenni német-magyar    
+  vegyesvállalat, csinálnának veszélyeshulladék újrahasznosító művet.  Megvettek egy tanyát a falu   
+  külterületén, ott lesz. <br><br>Aztán beruházás nbem volt semmi, a vállalkozás beérte a régi  TSZ  
+   által meghagyott düledező istállóépületekkel. Ennek ellenére  viszont a kamionopk csak jöttek és  
+   jöttek a telepre. Aztán pár évre rá  jöttek a környezetvédelmi felügyelőség emberei is, bezárták 
+a     boltot. <br><br>Ugyanis derék barátaink beszereztek egy hazai hatósági  engedélyt veszélyes 
+hulladék     megsemmisítésére, és elkezdtek házalni  vele Németországban. Összeszedtek egy rakás 
+kórházi     hulladékot és  elirányították az új telepükre. Mikor már nem fértek tőle, az éghető  
+cuccot     felgyújtották, a folyékonyt meg kiöntötték. Ekkor állította le  őket a felügyelőség. 
+<br><br>A cég     egyik tulaja Petrasovics Anna, a másikat úgy hívják,  hogy Czakó Ignác; ő a német 
+szemétbotrány     egyik gyanúsítottja, aki  tudtommal előzetesbe került. <br><br>Czakóhoz egyébként 
+volt  szerencsém     nekem is. Pár éve megkeresett, hogy elektronikai  hulladékfeldolgozót szeretne 
+telepíteni a     városunkban és ebben kéne  neki egy kis segítség. Nem lett volna hálátlan. Mivel az 
+elektronikai      hulladékfeldolgozás alapvetően jó dolog (ausztriai tanulmányútjaimon  már láttam, 
+hogy kéne     kinéznie), én el is vállaltam volna a  segítségnyújtást, de aztán visszament a parti. 
+Még szerencse.     Lehet, ha  összejön, a főtéren tépik le a tökömet a helybeliek. <br><br>Jól meg 
+is lepődtem mikor     idén év elején láttam, hogy Czakó  volt a főbűnös. Hiába, kis ország vagyunk. 
+Az egyik végén     finganak és a  másik végén lesz büdös.<br><br>Hogy mi a pláne ebben a 
+sztoriban?<br>A  kórházi     hulladéklerakás a 90-es évek végén történt. Akkoriban annyi  bírságot 
+szabtak ki a cégre, hogy a     bírság 20 %-a, ami az illető  önkormányzatot illeti, meghaladta az 
+önkormányzat egy évi      összköltségvetését. Persze a zsetont soha nem sikerült behajtani. 
+<br><br>Ezt követően ennek a     menedzsmentnek még bőven volt lehetősége  megszervezni a német 
+szemétbulit - gyakorlatilag hasonló     paraméterekkel.<br>Úgy látszik, mással nem olyan kegyetlen a 
+rendszer. Kiváncsi vagyok, a haszonból     hány politikussal kellett risztelni?  <br><br>üdv 
+nv</div><br><hr style="width: 100%; height: 2px;"><br><span style="font-weight: bold;">Japán&#8211;Magyarország</span><br><br>Egyik olvasónk     szerelme miatt Japánban él, 
+megkértem rá, ossza meg a tapasztalatait, valóban olyan jó arcok-e a     japánok, ahogy arra sokan 
+következtetnek.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">Lassan egy fél éve vagyok     Japánban, nem túristaként, 
+párom Japán, így  kerültem én is ide. (rasszista már nem lehetek, ázsiai     barátnővel, ez  majd 
+később lesz érdekes) Az itt töltött idő alatt sok mindent  tapasztaltam,     ledöbbentem, 
+elcsodálkoztam és rájöttem, van még normális  hely a földön, ahol a globalizáció és a     "tőke" még 
+nem zabálta fel,  vagy irtotta ki a hagyományokat, az emberi értékeket és a tényleges      
+szólásszabadságot. Ebben az országban ugyanolyan hangosan ki lehet  mondani, hogy zsidó, hogy fekete 
+    vagy cigány, mint azt hogy japán,  ázsiai vagy fehér, kaukázusi. No de ez csak egy apró 
+pozitívum,     ami  viszont a legjobb bizonyítéka annak, hogy ez az ország egyenlőre még  viszonylag 
+"tiszta".   Nem,   nem a fajoktól, hanem a globalizáció  mocskától.<br><br>&nbsp;Én  Tókióban élek, 
+de jártam   már   vidéken is, történetesen Kobéban. Itt  hozzátenném, mielőtt elfelejtem, hogy a 
+japán szavakat,     neveket  magyarosan írom át, kiejtés szerint. A hivatalos változat angolos  
+lenne, például: Tokyo,     Nihombashi, stb. Ám ezek pontatlanok, nem  kiejtés szerintiek, és a 
+későbbi "hivatalos"   átírásokkal   ellentétesek.  (pl. most már Nihonbashi lenne, illetve Toukyou, 
+mivel ez a helyes    írásmódja a   jeleknek, aki tud japánul egy picit is, az ezt is tudja.  
+Gondolom pl.   &#12402;&#12370; nevű   gyárlakótársunk tudni fogja miről beszélek) Nem is  a 
+hivatalos magyar   átírást használom, hanem   leírom fonetikusan, és  kész.  <br>&nbsp;Vegyük sorra 
+az első   különbségeket, amik felűntek   (segítenek megérteni a többit):<br>1:  jegypénztár (vasút): 
+mosoly,   udvariasság, kedvesség, stb.   Sokat jártam  otthon is vonattal, budapesti vagyok, de igen 
+gyakran   mentem ide-oda.  Velem sosem   bunkóztak igazán a pénztárosok, de általában nagyon szürkék 
+ voltak.   Hihetetlen sok bunkóval   találkoznak, ahogyan a sorban állok  között megfigyelhettem, 
+úgyhogy meg   is értem, sőt a fizetésük   sem túl  ösztönző. Bunkó emberek Japánban is vannak, mégis 
+mosolyog a   pénztáros,  kedves, nem unott.   Jól fenékbe is rúgják gondolom, ha nem kedves  
+alapból. Itt bárhova   megy az ember, mindenki kedves,   a rendőr is! Ha  valaki eltéved, első 
+dolga, hogy rendőrt keres és   útbaigazítást kér. A  rendőr   pedig nagyon figyelmesen és kedvesen 
+útba is igazít.<br>2:    tisztaság: nincs szemét. (eltekintve pár   városrésztől, pl. Roppongi,  ami 
+egy fertő, és szinte   csak idegenek lakják, sok feka pl.).    Budapesten kb. 2 millió ember él, ha 
+jól tudom, Tókióban   több mint az  ötszöröse, jóval több, főleg   nappal, amikor a környékbeli 
+városokból is  idetódul   mindenki (Például Jokohamából, Csibából), mégis   ez a város  sokkal 
+tisztább mint Budapest. Itt ha   egy fiatal esetleg eldob valamit,  nem hogy az   öregek nem félnek 
+rászólni, de még a saját barátai   is  rászólnak, hogy hékás, vegyed már fel, ne   égess minket. Itt 
+égő  szemetelni, bunkóság,   lenézendő, nem pedig alap, vagy vagányság...    Hozzáteszem: itt 
+nincsen lépten nyomon szemetes,   hiszen válogatják a  hulladékot, itt-ott látni apró   
+szemét-szigeteket, azaz    válogatott-hulladékgyűjtő konténereket, ládákat. Pl. élelmiszerüzletek    
+előtt. Addig mindenki   zsebrevágja, táskájába teszi a szemetét. <br>3: épületek: itt egy   
+felhőkarcoló, ott egy kis   családi ház, amott  meg sorházak (apró lakó-tömbök, mint nálunk egy 3-4  
+ szintes, keskenyke    bérház). Ezek váltogatjá egymást mindenhol. Mert itt nincsenek  kisajátított  
+ városrészek, nincsen   kiválasztott elit, aki szabadon  szemezgethet az ingatlanok között, míg az   
+átlag halandó lakáshoz   is  csak hitelből jut. Nagyon jól mutatja ezt az egész város.    
+<br><br>&nbsp;Ez a pár különbség   talán rámutat, hogy Japán is ország, élő  emberekkel, nem pedig 
+egy   robot, mint sokan látják.   Sokan  rémisztgettek, mielőtt kijöttem, hogy ott dolgozni kell ám! 
+  Tényleg?  Otthon nem? De. A   különbség annyi, hogy itt nem húzzák le a fizetésem  felét, 
+minden-féle   soha meg nem térülő   címszavakkal. Én otthon is  túlóráztam, természetesen nem 
+fizetett túlóra volt.   Itt viszont    180.000-230.000 yen körül mozog az átlagfizetés. Forintban 
+ez... kb.  másfélszer több.   Az ingatlan   drágább, de ez annyit tesz, hogy itt 20-40  
+négyzetméteres lakásokban élnek, amiért itt   Tókióban   le kell tenni  mondjuk, havi 100.000yent 
+(ez már egy elég "kóser" lak, rezsivel). A  kaját   simán   meg lehet oldani havi 50.000 yenből. És 
+még mindig marad  pénzünk. Egy pályakezdő fiatal, fél   perc   alatt eltarthatja magát. Talál  
+magának egy barátosnét, összeköltöznek, és hopp, máris dupla   ennyi   pénz  van, amiből már a 
+lakbér sem jön le. Lehet családot tervezni, juhé. (és  akkor még nem   is   lettek előléptetve, nem 
+is vállaltak ráadás munkát,  pl. fordítás, bárakármi, amit otthon sokan     csinálnak, hogy 
+egyáltalán a  lakást tudják fizetni HITELRE)  <br>&nbsp;<br>&nbsp;Közbiztonság:     Japánban még él 
+a halálbűntetés, (él a  halálbűntetés, tudom, haha). Ezt azt hiszem nem is kell     részletezni.  
+Sokat járok sétálni esténként a környéken, lepukkantabb negyedekben is,  és soha senki     még csak 
+csúnyán sem nézett rám. Pedig 190 centimmel  alapból kilógok a sorból.      
+<br><br>&nbsp;Vendégszeretet: A japánok vendégszerető népek. Bárkit  szívesen látnak, kapod a 90     
+napos vízumot (landing-permission, igazából  nem vízum), élj boldogan három hónapig. Azonban,     
+Japánban meg van  határozva, hogyan válogasd a szemetet, melyik oldalon közlekedj, ne  bűzölögj mint 
+    egy csotány, ne bűnözz. Ha bűnözöl, pápá. Akkor is, ha  teszem azt, munkavállalói vízumod van.   
+  Egyetlen esetben nem rúgnak ki  az országból, ha egyik családtagod japán. Akkor "függő-vízumod" 
+van,     és  akkor lesittelnek. Magyarázat? Ez Japán. A japán emberek, a japán nép  hazája, országa. 
+Ezért     harcoltak, haltak meg, küzdőttek, építették,  stb. Ők itt úgy szeretnek élni ahogy, hiszen 
+ez az ő     hazájuk. Gyere  bátran, látogass meg, de ha nem vagy hajlandó alkalmazkodni hozzánk,  
+húzz anyádba,     mert mit itt, japánok, a magunk módján szeretünk élni. <br>&nbsp;Magyarországon: 
+gyere idegen, élj     ahogy akarsz, majd mi  lefekszünk, és alkalmazkodunk hozzád, mert ez mindenki 
+hazája, csak a    miénk   nem, már azért is, mert úgyis annyian meghaltunk érte, és annyit  
+dolgoztunk érte, hogy   milyen jogon   is neveznénk a sajátunknak. Értsd  ezt az egész 
+Kárpát-medencére, bátran.      <br><br>&nbsp;Betegellátás: itt a kórházak állami kézben vannak, de 
+van  magán-rendelő/kórház is.     Voltam egy kórházban, államiban. Páromnak volt  valami baja, 
+elmentünk a helyi rendelőbe. Szép nagy     épület, patolyat  tiszta, csendes, nem bűzlik mint egy 
+rohadó vágóhíd, mindenki kedves,  stb.     Valahogyan amúgy tömeg sincsen... pedig itt aztán rohadt 
+sok ember  él. Nálunk otthon, egy     méregdrága magánrendelő nem olyan csúcsszuper,  mint itt egy 
+állami kórház. Nem, nem a méregdrága     berendezésre  gondolok. Itt is köpenyben járkál a nővér, 
+kávézik a doki, sima váró  van,     recepcióval, papírokkal dolgoznak, nem "high-end" laptopokkal,  
+minden a megszokott. Azonban itt     rend van, tisztaság, nem omlik a  vakolat, nem a folyosón vár a 
+beteg, stb. Otthon olyan mintha     börtönbe  mennék, amikor kórházba megyek, itt meg egy kellemes, 
+békés helyre  érkezem. Ismétlem:     állami pénzből. Az emberek adójából. Lehet mondani,  hogy itt 
+120 milliónál is több ember él,     nagyobb az adó-bevétel vagy  mi, de annál több kórház is kell, 
+annál több embert kell ellátni.      Szerintem annyi a különbség, hogy itt nincsenek Gyilkos 
+Ágnesek. <br><br>&nbsp;Vasút: A MÁV és a     japán JR (Japanese Railway, vagy tudom is  én) árai 
+majdnem fedik egymást. Egy Déli - Székesfehérvár     távon, talán  300Ft különbség van a kettő 
+között. Én sokat jártam Székesfehérvár felé  anno. Most     már jár valami új-féle vonat is, tudom, 
+de ez a magyar  vonatok egy kis hányadát teszi ki,     beleszámítva az Esztergom-felé  közlekedő 
+Siemens u-boot-okat. A legtöbb vonat, még mindig a      teligraffitizett, 
+vastagon-rozsdaporral-lepett<div id="1eor" class="ArwC7c ckChnd"><wbr>-ablakú,     dugult  wc-s, 
+szakadt-kárpitos, nyáron-sülj-meg szerelvény. Japánban távolsági  vonattal még nem     közlekedtem 
+igazán, itt egy egyórás út a metrón is  előfordul simán, tekintve Tókió méreteit.     Viszont még 
+így is, azon  járatok, melyek a környező városokat kötik össze Tókióval,      légkondícionált, 
+tiszta, rendben tartott (heti rendszerességgel  takarítják pl. a     metró-szerelvényeket, sosem 
+ragad a kapaszkodó, sosem  csúszik, nem vastagon poros az ablakpárkány,     stb) szerelvények 
+járnak.  Többségében digitális kijelzővel, ajtónként menetrenddel, két fős      személyzettel 
+(legalább). Az állomások fedettek, légkondícionáltak,  tiszták, biztonságosak,     mindehol számos 
+hasznos információval ellátva.  Mindez, 300 forinttal többért. Nálunk most emeltek     árakat, ha 
+jól  tudom, meg töröltek el kedvezményeket, elég abszurd módon... Mégsem  hallom senkitől     hogy 
+"hú baze, épül az új állomás meg minden!". Tudom,  van ahol építenek új állomást, meg   egyebek,   
+újítják a régit, de ez  talán 1-2 helyen fordul elő, miközben járatokat szűntetnek meg, a    minőség 
+  még mindig sz*r. Mirefel akkor az áremelés? <br><br>&nbsp;Emberek: itt senki sem   politizál.   
+Komolyan, tesznek rá.  Azonban, ha gy politikus gebaszt csinál, akkor mennie kell. Lásd   Sinzó  
+Ábe,   ki nem is olyan régen vonult vissza. Nem lopott milliárdokat, nem  kurvázta le Japánt,   de 
+nem is   töketlenkedett ellenzékként. Mennie  kellett. Még ő kért elnézést, és teljesen ki is   
+borult. Senki   nem  sajnálta igazán, mondták, hogy szegény, de hát nem végezte jól dolgát,  mennie  
+ kell. Ha itt   olyasmi történne mint otthon volt pl. az őszödi  beszéd (vagy az azt megelőző 16   
+év:P) akkor annak   sorozatos  kivégzés-hullám lenne a vége. Nem, nem az emberekkel szemben, hanem a 
+   kormánytagokkal,   képviselőkkel szemben.  <br><br>&nbsp;Történelem: Japán a második 
+világháborúban   veszített pár    szigetecskét Oroszország javára. (Szovjetúnió akkor éppen) A 
+Japánok  mind a mai   napig követelik   vissza, holott pici szigetecskék ám, és alig  200 ember ha 
+érintett az ügyben.   (felmenőik lettek   kitelepítve, vagy ők  maguk) Mégis, minden japán azt 
+vallja, hogy az biza japán   föld, és  kérik   vissza. Ez az ügy, elég erősen rányomja bélyegét a 
+két ország  közötti   viszonyokra. Nekünk van több   mint 70% földveszteségünk, anno  50% 
+lakossággal együtt. (nem   érdekelnek az akkori kimutatások,   nézzünk  már meg egyszer nem 
+20.századi, hanem 19.sz.    végi   felméréseket, és hopp, még kevesebb az oláh, tót, stb... és 
+vegyük  bele, hogy még azt is a     Habsburg közigazgatás végezte el.) Tény ami  tény, mind a napig 
+milliók érintettek. Állam-bácsi,     tetszik lépni? Nem.  És itt nem a kormányt értem. Az állam a 
+nép. Kinek a pénze? Kinek a  döntése?     Kinek a földje? Kinek az élete?  
+<br><br>&nbsp;Összetartás/oktatás: itt már az iskolában az     összetartást  tanítják, sőt óvodában. 
+Ne feledjük, a japán írásrendszer elég  bonyolult. Három írást     használnak egyszerre (aki akar 
+utánajárhat, most  kivételesen angolul: Kanji, Hiragana, Katakana).     Ugye a kínait  átvették, de 
+a japán ragozós nyelv, és ezen ragok jelzéséhez kellett  még valami     extra. Továbbá az 
+idegenszavakra, hangutánzó-szavakra is  külön írásjel-készletük van. No de nem is     ez a lényeg. A 
+lényeg, hogy  egyenruhában jár a gyerek oviba. Nem kezdődik már 4 éves korban a      gizdázás, kinek 
+milye van. Általános iskola szintúgy, még a táska is  egyen-táska. Középiskolánál     már kezd 
+változni a helyzet, egyenruha van,  iskolatáska... elvileg az is egyen, de már láttam     eléggé 
+egyedi táskát  is. Ez az egyenruha dolog (jó, részint perverz, mert&nbsp; évfolyamtól      függően 
+rövidül a szoknya, és a végzős diáklányok már eszméletlen rövid  szoknyát hordanak, azonban     
+megtalálták a megoldást: rövidnadrágot  hordanak alatta, már aki, párom pl. ezt tette) erősíti az    
+  összetartozást is. <br>&nbsp;Minden iskolában vannak "klubbok". Főző-klubb, csillagász-klubb,      
+kendo-klubb, kertész-klubb, számítógép-klubb, stb. Vannak rendes  sport-foglalkozások. Kosár, foci,  
+   atlétika, önvédelem, egyebek. Egy  klubba kötelező belépni, és annak a tevékenységein részt 
+venni.     Nem  hülyeség. Párom pl. tennisz-klubban volt. <br>&nbsp;A tanulók tisztelik a tanárokat, 
+    kénytelenek, mivel elég komoly  bűntetést kapnak, ha pofátlankodnak. Ja igen, itt a pofon,     
+elfogadott  dolog (iskolában nem nagyon szokás, de nagyon sok sorozat, rajzfilm,  stb jelzi, hogy    
+ néha bizony szükség van rá). A pofont elszenvedő alany,  pedig az esetek 90%-ban belátja, hogy     
+kiérdemelte azt. Fegyelem az  megvan. <br><br>&nbsp;Ez csak pár példa, számtalan ilyennel     
+szolgálhatnék még. A  lényeg: itt az emberek többségében becsületesek, és ezt kötelezően  betartja   
+  maga az aktuális "hatalom" is. Itt is van némi korrupció,  ebben biztos vagyok, bár amikor ezt     
+felhozom, az emberek azt mondják,  hogy kizárt. Ki tudja. Azonban amikor szárazon elmesélem az     
+otthoni  dolgokat, ledöbbennek, és néznek hogy ez, Európa? Olyankor mondom, és  bizony ilyen az     
+összes többi ország is, csak a miénk a csúcstartó. Mert  nehogy azt higgyük, hogy Németország jobb.  
+   Annyi a különbség, ott az  emberek még nem lustultak el annyira mint minálunk. (tisztelet a      
+kivételnek)  <br>&nbsp;<br>&nbsp;A hazaszerető magyar embernek, aki tiszteli a hagyományokat,  és ad 
+    még az igazi értékekre, Japán egy földi paradicsom. Itt is vannak  gondok, persze, menny és 
+pokol   a   két ország között a különbség. Az  egész hozzáállás kérdése. Látszik ez a szemetelésen 
+is.     <br><br>&nbsp;A lényegi különbség az, hogy míg nálunk az iskolák  többségében most már csak 
+sz*rral     tömik a gyerek fejét, itt jómodort,  udvariasságot, tiszteletet, rendszeretetet és 
+szorgalmat     nevelnek a  gyerekekbe. Ne feledjük, az iskola gyerekkori éveink nagy részét  
+kiteszi, az iskola     felelős a nevelésünkért, a jövőnkért. Az iskola az  államé (egyenlőre), az 
+állam mi vagyunk, mi     megválasztunk egy kormányt.  Azonban ha valami simlit észlelünk, nem egy 
+másik párttól várunk      megmentést, hanem mi, az állam lépünk, és mozdítjuk el a barmokat a  
+trónusból. Na ez az ami nálunk     hiányzik. Tudom, én beszélek, aki  Japánban él. Nehogy azt 
+higgyétek, hogy nekem olyan rohadt   könnyű    dolgom van. A magyar nyelv (hála a politikának, 
+hiszen immár a térség  legfontosabb nyelve   lehetne,   lásd kelet-nyugat kapuja, Európa közepe,  
+minden mehetne rajtunk keresztül, és   sorolhatnám) nem épp   a  legeladhatóbb dolog, és csodával 
+határos, hogy találtam egy céget,  amely   támogatja a vízumomat,   de egyenlőr efizetés nélkül 
+jobbára...  Sokat szenvedtem mire le tudtam   adni a vízumhoz szükséges   papírokat, és  még mindig 
+egy hónap, mire megtudom, hogy mi lesz.   Viszont nem vagyok  mérges a   bevándorlási hivatalra. 
+Japán óvja a japán emberek életét.  Megértem.   Megértem, mert az én hazámban   sz*rnak a magyarok 
+életére és  így érzem a fontosságát ennek.   Megértem, hogy nem akarnak több   bűnözőt  beengedni, 
+és megértem, hogy itt japánként kell élni.   Nem, nem feladni  a múltamat, hanem   egyszerűen, úgy 
+megőrízni azt, hogy közben a  mindennapokban,   alkalmazkodom az itteni emberek   életviteléhez. Én 
+itt  idegen vagyok, amolyan vendég-féle, és   tisztelem a házigazdát. Remélem    elfogadják a 
+kérelmet, és hamarosan elkezdhetek rendesen   dolgozni, de  nem vagyok mérges a sok   idegeskedés 
+miatt, hiszen én döntöttem úgy,  hogy idejövök,   nem ők hívtak.  <br>&nbsp;Ez a   hozzáállás pedig 
+nagyon sok külföldiből hiányzik. Őket innen    idővel kirúgják. Otthonról sajnos nem.   Én örömmel 
+írtam alá a papírt,  hogy ha bármilyen törvényt   itt megsértek, azonnal küldenek haza,   hiszen  
+eszem ágában sincs ilyet tennem, és tudom, hogy nem   fognak hazugságokat  rámkenni, nem úgy,   mint 
+teszi azt sok honfitársammal a haza    "igazságtalanságszolgáltatás. "  <br><br>&nbsp;Bizonyos   
+témakörökbe mélyebben is bele tudnék   mászni, jobban  részletezve elemeket. Például az   
+oktatási-rendszer, közbiztonság,  honvédelem,   stb. Nagyjából bárminek utána tudok járni. Japán nem 
+  egy  európai ország, és viszonylag érintetlen   még a sok fertőtől. Nem hittem  el, amíg ide nem   
+jöttem. Szerintem elég lelkesítő tudni, hogy   lehet  normálisan élni, egy normális országban. Talán 
+  Magyarországon is  elérhetőbb közelségbe   kerül egy ilyen jövő, ha az emberek bepillantást  
+nyernek   egy már létező, élő és viruló példába.    <br>&nbsp;Nem írtam még arról, hogy itt ez a 
+"gazdagabb"   ország, milyen  "extra" kiadásokkal küzd,   közlekedés, építészet terén, és mégis, 
+milyen  hihetetlen   eredményeket ér el. De írhatnék a   nemzetközi problémákról  is, hiszen Japán 
+az egyik legvitatottabb   ország történelmileg.  Számtalan   támadás éri, mégsem hunyászkodik meg. 
+Sorolhatnám ezeket,  talán   majd legközelebb.    <br>&nbsp;<br>&nbsp;Biztos tele vagyok helyesírási 
+hibákkal, ezekért elnézést, de   azt hiszem,   jelenleg ez a legapróbb gondja mindenkinek. 
+<br><br>Fütyőke</div></div><br><hr style="width: 100%; height: 2px;"><br><span style="font-weight: bold;">A hitel és   Blogin</span><br><br>A néhány napja   a bankok pénztermelési csalásáról szóló <a target="_blank"style="color: black; font-weight: bold;" href="//bombagyar.hu/index.php?post=496">bejegyzésemre</a> írta ezt   válaszul Lazalie, aki   
+szerint hülye vagyok és nem értek a közgazdasághoz (az állítások közül   legalább az egyik igaz   
+is).<br><br>A cikk közlésével munkája elismerése mellett bocsánatkérés is a   célom. Ahogyan azt már 
+  leleveleztük vele, az adott bejegyzések hozzászólási részénél tévedésből   távolítottam el a   
+regisztrációját, nerm azért, mert más véleményen volt. Egyszerűen a rendszer egyik   általam nem   
+ismert funkcióját rosszul használtam, de Lazalie ismét regisztrált felhasználónk.   Kijelentem, hogy 
+  házirendünk értelmében nem jár kizárás annak, aki más véleményt hangoztat, mint mi,   ha azt az   
+általunk is elfogadott, kulturált vagy kényes témákban legalább mérsékelten kulturált   hangnemben   
+teszi. Emellett fölhívom rá mindenki figyelmét, hogy a házirend nem demokratikus alapokra   épül:   
+lehetőségünk van indoklás nélkül is kizárni valakit (értsd: nem tetszik a pofád), de ilyenre   nem   
+volt és szerintem nem is lesz példa. Ez sem ilyen eset volt.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;"><span style="font-style: italic;">A hiteltől nem félni kell, hanem élni kell vele" - mondotta volt  Fekete 
+    János, az MNB egykori nagyhatalmú alelnöke, el is intézett  Magyaországnak nem kevés     
+államadósságot... Ennek ellenére igaza volt,  bármennyire is vadító elméletek vannak erre, a kamat,  
+   a hitel, a  hitelpénz nem ördögtől való dolgok.</span><br style="font-style: italic;">  <br style="font-style: italic;"><span style="font-style: italic;">  A pénz keletkezése és megszűnése     
+bármelyik közgazdasági könyvből  megismerhető (pl.  <a target="_blank"style="color: black;" href="//www.hik.hu/tankonyvtar/site/books/b106/ch02.html" target="_blank">http://www.hik.hu/tankonyvtar<wbr>/site/books/b106/ch02.html</a>? ) Ez a sztori      
+ténykérdés, nem vélemény, ha valaki ezt nem fogadja el, azzal nem tudok  mit kezdeni.</span><br style="font-style: italic;">  <br style="font-style: italic;"><span style="font-style: italic;">  A  
+   kamat a kölcsönpénz ára. Ugyanúgy, ahogy a zöldséges se fogja neked  önköltségi áron adni a 
+répát,     az egszeri bankár is megéri az árát a  portékájának. A kifizetett kamat nem pénzteremtés, 
+hiszen az     adós  megtermeli a kamat fedezetét, lemond a saját jövedelméről más javára. A  
+törlesztés pedig   nem   esik ki a pénzrendszerből (jó esetben), hanem a  bank újra kihitelezi azt. 
+Durva   összehasonlítással   a kamat intézménye  ugyanaz, mint a gazdasági profité: a zöldséges az 
+áru   beszerési ára és  saját   költségein felül profitot rak rá a répára, így alakul ki a végső    
+kiskereskedelmi ár. Ha olyan   világot szeretnél, ahol nem kell  megfizetni, csak az áru árát és a   
+munkabért, akkor tulajdonképpen   már  megteremtődött ennek a feltétele, hiszen ki mondja meg, hogy  
+ mennyit ér  a zöldséges munkája,   hogy a felszámolt profit az ő munkájának ára. </span><br style="font-style: italic;">  <br style="font-style: italic;"><span style="font-style: italic;">    
+Közvetlen hitelfelvételre senki nem   kötelez, ha valaki magánszemélyként  vagy vállalkozóként mégis 
+  a hitel felvétele mellett dönt, akkor   az az ő  személyes felelőssége eldönteni, hogy jövedelme   
+mennyi  adósságszolgáltra elég. Ha valaki   túlvállalja magát, akkor kényelmes  ugyan a nemzetközi   
+pénztőkét okolni, de valójában a   finanszírozónak ez  nem érdeke, nincs rosszabb mint, a bedőlt   
+hitel, jól látható ez pl. az  amerikai   jelzálogpiaci válságból. Vissza lehet persze élni az   
+emberek  pénzszűkével, az uzsora létező   jelenség, sőt a provident ténykedése is  morálisan   
+megkérdőjelezhető, ugyanakkor ez sem kötelező   igénybe venni,  és akinek tényleg csak átmeneti   
+pénzzavara van, annak mág jó is lehet,  de nagyon   óvatosan kell hozzáálni, ugyanúgy, ahogy a   
+hitelkártyákhoz.</span><br style="font-style: italic;">    <br style="font-style: italic;"><span style="font-style: italic;">  A nemzetközi pénzügyi világ   valóban rejt meglepetéseket, de messze   
+nem  ilyen primitív manipulációkkal operálnak. Nincs olyan,   hogy egy  nagyvállalat nem kap hitelt, 
+  mert szándékosan tönkre akarják tenni, ha  X bank nem ad,   akkor jön Y bank és szívesen kihelyezi 
+a   tőkéjét.  Jelenleg globális szinten likviditási bőségről   beszélhetünk, a  hitelfelvevők vannak 
+  tárgyalási előnyben, folyamatosan lazulnak a  hitelezési   korlátok, gyakran túlságosan   
+is.</span><br style="font-style: italic;">  <br style="font-style: italic;"><span style="font-style: italic;">  A kamatlábak meghatározása a világon mindehol a   jegybankok feladata,  legyenek akár   
+állami, akár magánkézben. A modern monetáris politikai    irányelvek szerint a jegybank fő feladata  
+ az infláció (és a defláció)  megfékezése, azt pedig nem   lehet úgy, hogy&nbsp; fedezet nélkül   
+teremtünk  pénzt, ezért a jó monetáris politika ugyanúgy érdeke   a magánbankárnak  is, mint az   
+államnak. Ennek ellenére én jobbnak ítélem az állami  tulajdont,   mintahogy Magyarországon is az   
+állam az MNB egyedüli  részvényese. Ami gyakran félreértést szül, az   az, hogy a jegybank kvázi    
+függetlenséget élvez a végrehajtó hatalomtól. Ez azért van így  általában   a világ minden táján,   
+mert a kormányoknk az infláció túl  kényelmes eszköz a kiadások   eltüntetéséhez, hogy érdemben   
+harcoljanak  ellene.</span><br style="font-style: italic;">  <br style="font-style: italic;"><span style="font-style: italic;">  A nemzetközi pénzügyi világban   valóban dollárszáz-ezer milliárdok    
+mozognak naponta, de ebben benne van minden, a    nyugdíjmegtakarításunktól az izraeli   
+ingatlanvállalkozók profitjáig,  felesleges a nagy számok   mögött nagy összeesküvéseket látni. Nem  
+ tudom,  hogy léteznek az általad említett szervezetek,   kapcsolati hálók, még  azt is   
+elképzelhetőnek tartom, hogy igen, de nem látok rá esélyt, hogy    érdemben befolyásolni tudják a   
+világ folyását, túl nagy falat az azért.  Ráadásul a pénz önmagában   értéktelen: az értéket az   
+ember rakja mögé  munkájával, kreativitással, a természet ajándékainak   elfogyasztásával.</span><br style="font-style: italic;">  <br style="font-style: italic;"><span style="font-style: italic;">  Az 
+  államok eladósodása külön érdekes kérdés, ugyanis ez az    állampolgárok szempontjából közvetett   
+hitelfelvétel. Demokráciákban a  szavazatoddal nyilvánítasz   véleményt, az emberek 2002-ben és   
+2006-ban  is az eladósodás, az állami pénzszórás mellett tették   le&nbsp; voksukat.  Senkit nem   
+érdekel az állam gazdasági helyzete, csak minél többet  akarunk az   államtól, lehetőleg most   
+azonnal és persze ingyen. Ez a  nemtörödőmség az oka az igazi   pénzszivattyúnak, egy befektetőnek   
+ ugyanis az állampapír vásárlás a legkényelmesebb megoldás,   minimális  tranzakciós ráfordítással   
+rövid idő alatt, alacsony kockázat mellett  hatalmas összegeket   tud kihelyezni. Nem igaz, hogy az  
+ államadósságért  cserébe nem kaptunk semmit, nagyon is kaptunk,   feléltük az egészet, így    
+összközösségileg. elautóztuk, elvásároltuk, elutaztuk, elszórakoztuk.    Elég végignézni   
+Magyarországon, igazi devizatermelő, értékteremtő  tevékenységet nemzeti tulajdonban   alig végez   
+valaki, messze jobban  élünk, mint amennyire a világgazdasághoz hozzáteszünk.   Hajvágásért,    
+könyvelésért és seftelésért ugyanis nem adnak a nemzetközi piacokon  kőolajat, szenet,   energiát,   
+nyersanyagot, autót, combinot stb. A saját  portánkon kéne először körülnézni, és utána   másban   
+keresni a hibát.  Számos ország ki tudott törni a mélyszegénységből a jelenlegi    világgazdasági   
+rendben is, csak dolgozni kell érte. Meg megtérülő  beruházásokra felvenni a hitelt   és nem   
+felélni.</span><br style="font-style: italic;">  <br style="font-style: italic;"><span style="font-style: italic;">  Persze nem tökéletes a fenálló pénzügyi rend, vannak     
+megfontolandó&nbsp;  alternatív pénzügyi rendszerek is. Ilyen például Silvio Gesell      
+szabadpénz-szabadföld elmélete, ami már a gyakorlatban is bizonyított.  Nem vagyok meggyőzödve, hogy 
+    átemelhető a mai viszonyok közé, de  kíváncsi vagyok, hogy mennyire működne.</span><br style="font-style: italic;">  <br style="font-style: italic;"><span style="font-style: italic;">  A  
+   kamat és a nemzetközi hitelezés miatt valóban óriási  jövedelemáramlások vannak, de csak rajtunk  
+   múlik, hogy az áramlás  melyik végére állunk. Ha a hitelt nem plazmatévére és horvát  nyaralásra, 
+    hanem megtérülő beruházásokra költjük, akkor még esély is  van rá, hogy a visszafizetés után mi  
+   legyünk a másik oldalon, és az új  jövedelmünket a bankrendszeren keresztül kihitelezzük, és     
+hosszútávon  növeljük az egész nemzet életszínvonalát.<br><span style="font-style: italic;"><br></span></span>Laziale</div><br> </div>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-01-17&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=540&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=540&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=540&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=540&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=540&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=540&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=540&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=540&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=540&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=540&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=540&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=540&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=540&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=540&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=540&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34681"></A>139. hurkoa-medúza</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-02-28 05:36:28</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_162.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">viszont aki rendelkezik bovebb informacioval, meg tudna erositeni 1-2dolgban v kiabranditani, az nyugaodtan irhatna 1 cikket, v maganban levelet. Ja es az ne feledjuk, amikor Hazank tortenelmerol kerdeztek meg orszagokat, akkor Japan nyilatkozott a legkorrektebbul.<br />
+(jo nem meglepetes, de azert jol esik).</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34680"></A>138. hurkoa-medúza</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-02-28 05:30:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_162.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">???Mi van veletek emberek???? En nem vagyok szakmabeli, de nem 1 vallalkozo, kozgazdasz szagember baratom ill. ismerosom mondta el kb.ugyanazokat a dolgokat mint Laziale. Lehet hoborogni, de sajna vannak tenyek. Viszont ez h ilyen szinten szarra marjatok 1mast, az szep ,jo magyar szokas szerint... De nekem kulonosen a vegen tetszik az a besertodok, martirok utcaban lakom toroljetek a regisztraciomat, itt csak a pooor nep gyulekezik. Csak kemenyen sracok. Viszont Futyoke irasa nagyon tetszett, az viszont kar Feny Arnyek egyensuly nem volt meg. Nagyon erdekeltek volna a negativ tapasztalatok is, mert biztos voltak. En mar 1 jo ideje elhagytam Magyaro.-t,  s tervezem h kikoltozok par ev mulva Ausztralliaba, ill. Japanban szeretnek par honapot, estleg 1-2evet eltolteni. Van 1-2 Japan ismerosom, kolegam akik meseltek az orszagrol. De azert inkabb megkerdeztem masokat is. Az 1ik, brazil kolegam 5 evet elt kint Japanban. O ha jol tudom lakott Tokyoban, es Yokohamaban. Gracie jiu jitsu bajnok volt Sao Paulo allamban. Meghivtak Japanba a Vale Tudo-ra(alacsonyabb kategoriaban) Fekeszuleset 1 bizonyos gorbelabu, alacsony, vekony uriember Yuki Nakai segedlete alatt vegezte mint sokan masok. Yuki Nakai az 1 legenda, kulon sztori aki harcmuveszhomoki az biztos fel tudja idezni a 95 Vale Tudo-t. Ott van a choke cimu film pl. Nah lenyeg az h a srac keszult fel, kozben ugyebar dolgoznia is kellett. Takaritott, pizza-t hordott stb, ez mellett meg edzett,+capoera-t oktatott. Hat aztan sajnos nem sikerult megnyernie a tornat, ugyebar ameddig a kulfoldiek dolgoztak edzes mellett, a japan versenyzoknek ott volt a szponzor, ok csak az edzesre kellett energiat olni.(meg a partykra de ez is 1 kulon tortenet.)No amit meg tudtam a sractol: Sokan azt mondjak h a mostani generacio az eleg satnya(tiszt a kivetelnek.). Rengeteg a jatekhomoki, pl: Xbox live-on a Katan Uno, egyeb logikai jatekok, jatektermek stb. azt nem tudom h milyen szinten vannak jelen a fuggok... de talan svedorszag, del-korea szintjen mozognak. A kozlekedes, kettesevel gazoljak el az embereket, nagy problema a marihuana, barmikor megallithat a rendor es atkutathat van-e nalad motyo. Ha jol emlekszem Mecs Alajos irta a japani ember olyan mint a gyerek. OO oke... nagyon sok erdekes Japan show van fonn a neten(nemcsak a youtubon). A kulonfele fetisek... ja es a pedofilok.<br />
+A kulfoldiekkel szembeni idegenkedes az szerintem a multe, a keveredes miatt, oo amerikai katonak helyeben en is segitettem volna benepesiteni a szigetet. Nos ket atombomba utan az amerika majmolas...? Hat persze nem is japanok lennenek. A versenges meg mindig bennuk el. A Japan ember mindig jobb akar lenni a masiknal, ez igy volt mindig is, masolnak mindenkit akit lehet. Most az Usa van legfelul, persze h ot masoljak. Gazdasag, ruhazkodas stb.<br />
+Ja es a Japan nok, torpapa, little bastard, avagy a brazil kolegam, azt mondta h a Japan nok bizony nem olyanok mint ahogy en elkepzeltem oket. Nem jok. Hat nem tudom en itt kint lattam nem 1 dijnyertes szepseget. Kulonosen a felverek gyonyoruek. Bar nem tudom izles dolga. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34505"></A>137. Laziale -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=540&id=34495#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-27 15:52:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"De azért néha nézz fel a tankönyvből"<br />
+<br />
+a vadprimitív proli mentalitás csúcsa, gratulálok.<br />
+megértem, hogy kellemetlen folyamatosan visszapattani a falról de ez már vérgáz. nemhogy gazdasági, hanem emberi alapok hiányoznak. az ilyen selejtek építették a legszorgalmasabban a szocializmust, mert elhitték hogy egy országot/vállalatot/falut akármit el lehet vezetni tárgyi ismeretek nélkül, csak hadd szóljon... </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34495"></A>136. <A HREF="mailto:vargata@freemail.hu" STYLE="color: #000000">Nergal</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=540&id=34490#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-27 15:06:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2734.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hát igen. Te sem tartozol ezen néhány nick közé. (vagyis de, a negatív példa is példa) Amúgy pont erre jöttem rá én is. Már kértem TomCat-et, hogy törölje a regem. No jó közgazdálkodást. De azért néha nézz fel a tankönyvből...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34490"></A>135. Laziale -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=540&id=34481#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-27 14:36:27</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">nézz utána h mi az az állami transzfer...<br />
+<br />
+csoportosan nem nagyon tudtok felmutatni minimális gazdasági ismereteket az itt a baj. látsz magad körül dolgokat, jelenségeket, de a háttér megértéséhez, folyamatok felismeréséhez ez édeskevés, az eredmény csak ez a fogalomzavaros kavarás-kutyulás-kliséhalmozás lesz, még egy saját által hozott cikk értelmezéséből is, nemhogy még az általam leírt dolgokból... <br />
+<br />
+ami lássuk be vlahol gáz, hogy ha itt tart egy műszaki értelmiségi, mert valóban nem kell a programozáshoz tudni bármit is mondjuk az államháztartásról, de vlahol szerintem az igányeség velejárója, hogy a témában mégse a kocsmaproli logikai szinten tudjon egy magát diplomásnak valló ember megnyilatkozni.<br />
+<br />
+visszaolvasva senki nem tudta megcáfolni amit az erdeti levélben vagy utána írtam, de még a megértés is keveseknek ment, a legtöbb csúcsértelmiségi leragadt a horvát nyaraláson és a samsungtévén, meghogy hogy miből fog ő beruházást csinálni.<br />
+és a zsigeri ellenkezés, igaz az se tudja mi ellen, de ez nem olyan mint ahogy a táltos megmondta, tehát igaza se lehet!<br />
+<br />
+nagy csalódás számomra ez a bombagyár, ugyanaz mint a zindexfórum, vitaképtelen kockák tengere, alig pár nickkel, akiktől tanulni is lehet esetleg vlamit...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34481"></A>134. <A HREF="mailto:vargata@freemail.hu" STYLE="color: #000000">Nergal</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=540&id=34444#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-27 14:03:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2734.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A segélyeket honnan sikerült ebbe belevenned? (Csak mert részemről szó sem volt róluk, abban egyet értek veled, meg a transzferezéssel is.) Amúgy most arról papolsz, hogy Fletóéknak mit kellene tenniük, mert eljutottunk oda, hogy igazából csak az állami kiadásokat kellene faragnunk, miközben a vitát egy nekünk szóló írás és az arról szóló reakciók indították. Eljutottunk oda is, hogy a vásárlóerő csökkentése számodra a ne adjunk pénzt a orkoknak (ezt tényleg meglépte a szlovák kormány, nagyon helyesen, de ennek a témában külön bejegyzése van a blogomban, ha unatkozol olvassd el).<br />
+Ahhh! Feladom. Visszaolvastam az egészet, látom, mindenkinek ugyanaz volt veled a baja, ugyanazt nyomod a cikk megjelente óta, mindenki mással szemben, és mindenkinek azt dobálod, hogy csak kamuzunk. Szedjél gyógyszert vazze!<br />
+<br />
+133: Írtad ezt egy "diplomás" vállalkozónak. LOL</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34448"></A>133. Laziale -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=540&id=34335#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-27 12:20:13</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Pár alapvető gazdaság és társadalompolitikai reform:<br />
+adóreform, munkaügyi reform, decentralizáció, aktív cselekvő beruházásösztönzés, cégügyi reform, közbeszerzési reform...<br />
+és minden szakpolitikát annak a fordulatnak alárendelni, amit írtam.<br />
+<br />
+azt nem vagy hajlandó felfogni, hogy másképp is lehet csinálni a dolgokat, mintahogy most megy Magyarországon, a ne légy naiv képzelgésedihez meg csak annyit, hogy ne legyél proli. Vegyél néhány államháztartás órát, mert bármennyire is hihetlen az áht szerkezete és működése még véletlenül se úgy néz ki, mintahogy a népek a kocsmában elképzelik. <br />
+<br />
+kérlek tehát a jövőben az ilyen kocsmaszintű általánosságokkal hagyjál békén, ismeri őket mindeki,  a zemberek szegények, a politikusok lopnak csalnak hazudnak, a segíly meg a nyugdíj kevés, a vállalkozók adócsalók mind, túl sok a diplomás stb.<br />
+én ezekből már kinőttem, ha továbbra is ennyire vagy képes akkor keress más vitapartnert, mert én nem tudom követni a hatalmas olvasottságodat. (ami persze ciki, tegyük hozzá, főleg könyveket és stasztikákat olvasni!)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34444"></A>132. Laziale -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=540&id=34335#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-27 12:05:37</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">látod itt köszön vissza a gazdasági ismeretek hiánya, pedig akár még anélkül is kisakkozható, hogyha elveszed a segílyt akkor azt értelemszerűen nem is fogják elkölteni. <br />
+<br />
+a lényeglátásod tapsot édemel, kiragadsz egy darab témát (állami bürokrácia), írsz rá egy nagy általánosságot (városok és jogvédő szervezetek nem engedik), majd ezzel azt hiszed minden rendben van.<br />
+<br />
+Csak a tisztánlátás végett: Szlovákiában a jobboldali kormány végrehajtotta azt a fordulatot, amit írtam, megvágták a segélyezést, az államon élősködést, adóreformot hajtottak végre (ami véletlenül sem csak a 19% kulcsból áll), és aktív cselekvő állami gazdaságpolitikával termelő/exportáló külföldi cégeket hoztak az országba világos stratégia mentén. huszadrangú részletkérdés h hány hivatlat zártak be, mert ez a stratégia kétség nélkül működik, a csúnya gonosz statisztika ezt mutatja. érdemben a fico-kormány se merte nagyon visszavágni.<br />
+<br />
+Kavarásodat a munkanélküliekkel nem értem, egyrészt nem tudom mivel vitatkozol, senki nem akar közalk-tartós munkanélküli traszformációt, de az első lépés h értelmes munkát adunk a bürokratának h kirúgjuk. a második h nem tartjuk el segélyből. ugyamez él a traszferekből élőkre is. a pénztelenség a legnagyobb motiváció a munkanélküliség ellen, a motivált munkanélküliek tömege meg a legjobb motiváló erő a munkahelyteremtő beruházóknak. Folyamatában kéne végiggondolni a dolgokat, nem csak egy lépéssel továbbmenni.<br />
+<br />
+A hőzöngő proli legnagyobb ismérve h a problémák gyökerét a parlament létszámában és a minszteri autók árában látja. kényelmes, gondolkodást nem kívánó álláspont.<br />
+<br />
+Nyugdíjügyben megint hozod az átlagember felszínes világképét, kcsit mélyebbre ásva látható, hogy jelenleg az emberek magasabb (elő)nyugdíjjal vonulnak vissza, mint a bruttó (!) fizetésük volt, meg egyébként is mi üzemeltetjük Európa egyik legbőkezübb nyugdíjrendszerét, hogy míg a gyurcsányi megszorításoknak köszönhetően a reálbér nagyot zuhant, addig a reálnyugdíj inkább szinten maradt, arról meg inkább ne is beszéljünk hogy mit hagyott/épített a hős nyugdíjas generáció, hogy pozitív vagyont nem sikerült 90-ben átadni az egy dolog, fogjuk rá a szovjet hadseregre, de még normális mennyiségű utódot se sikerült nemzeni, ami megtermelné most a nyugdíjukat. érdmes megnézni azt is h milyen nyugdíjat biztosított a mai nyugdíjas generáció az akkori időseknek...<br />
+arról meg már csak tényleg zárójelben h vlamilyen  fogalmi zűrzavar miatt nálad a nyugdíj=öregségi nyugdíj, ami messze nem igaz a mai szabályozás mellett.<br />
+<br />
+A bekopizott cikkedet se sikerült értelmezned, a kezdőnyugdíj és a nyugdíjemelés közötti különbséget sem sikerült észrevenni, tehát erre a teljesítményedre nem lennék büszke. (biztos azért szavazták ki a nyuggerek a fideszt a hatalomból 02-ben, mert annyira jó volt nekik)<br />
+de nem baj, mert te vagy nyeregben, az általad etalonnak tartott társadalommodellt építni a  balliberálsi koalíció, nyugdíjas és ork seggnyalás megy ezerrel, egy szavad nem lehet.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34335"></A>131. <A HREF="mailto:vargata@freemail.hu" STYLE="color: #000000">Nergal</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=540&id=34199#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-27 07:59:20</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2734.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Itt semmit nem írtál arról, hogy hogy kell visszafogni a fogyasztást államilag. A tanulmányozandó példádban csak most, a fejlődés beindulása után 12 évvel ésszerűsítik az állami bürokráciát, de az sem megy jól, mert a városok és jogvédő szervek megakadályozzák a hivatalok bezárását. Az állami túlfoglalkozást csak akkor tudod leépíteni anélkül, hogy még tovább rombolnád a gazdaságot, ha tudsz nekik munkahelyet is teremteni (itt SK-ban is így történik), addig csak termeled a munkanélkülieket. Ha viszont CSAK a parlament megnyirbálásáról írtál, akkor igazad van, rájuk nincs szükség. A nyugdíj már így is kishíján a megélhetési szint alatt van, pedig azok az emberek már építették ezt a világot egy ideig. Tudod a "szociális" szó azt jelenti, hogy utána nem vágjuk ezeket az embereket haza. (és ez nem a ballib álláspontja, a fidesz idején 8-16%-os értékekkel nőttek a nyugdíjak, míg jelen pillanatban csökkentik "a nyugdíjrendszerbe 2008-ban belép&otilde;k számára mintegy 8 százalékkal csökken járandóság összege,", "A f&otilde;csoportf&otilde;nök elmondta: az idén megállapított nyugdíjak a tavalyiakhoz képest nem csökkentek olyan mértékben, ahogy azt a minisztérium prognosztizálta. A tárca közlése szerint a tavalyihoz képest 6-8 százalékkal kisebb nyugellátást kapnak" Kiss Sándor ONyF) Ráadásul a nyugdíjkorhatárt is egyre emelik, vagyis folyton faragják az ilyen irányú kiadásokat. Szóval ki is az aki olvas is? No meg ki is képviseli a ballibet?<br />
+<br />
+No de! Mi az a pár alapvető gazdaságpolitikai reform, mert pont a lényegről nem írtál semmit.<br />
+<br />
+A "jelenleg minden extra forrás..." kezdetű részhez meg csak annyit, hogy olyan nincs, azt lenyeli az állami pénznyelőautomata. Ne légy naív. Ha nem kellene nyugdíjat meg közalkalmazottakat fizetni, akkor is ugyanitt tartanánk. Azt nem vagy hajlandó felfogni, hogy nem a határokon egyensúlyoznak a pénzosztással, hogy a nyugdíjasokon vagy az egészségügyön kellene nyerészkedni, hanem ezeket leszorítva szórják a pénzt mindenhova, ahova nem kellene. (állami építkezések /babónegyed, rendőrnegyed.../, túlfizetett pályázatok, elsikkasztott pénzek, messze túlfizetett politikusok /eleve mi az, hogy egy politikusnak fizetnek/, messze túlfizetett állami cégvezetők /BKV, MÁV.../) Ezekre folynak el a bevételek.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment34199"></A>130. Laziale -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=540&id=34177#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-02-26 18:48:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">leírtam már el kéne olvasni, de kedvedért mégegyszer: állami traszferek erőteljes megvágása, állami túlfoglalkoztatás leépítése, az állam ésszerűsítése, nyugdíj-traszfer-közalk bér befagyasztás, ÁFA emelés > áht hiány csökkentés > minden többletet államadósság csökkentésre költeni <br />
+<br />
+ezzel párhuzamosan szükségese pár alapvető gazdaságpolitikai reform, ezek együtt pedig elvezetnek egy alacsonyabb inflációs állapothoz - ami köztudottan a reálbér (és a pozitív reálkamat) legnagyobb ellensége. a meginduló gazdasággal együtt meg megindulhatnak a reálbérek is, de hitelből 2*100 nap alatt sajnos ez nem megy.<br />
+tanulmányozandó példa: Szlovákia.<br />
+<br />
+jelenleg minden extra forrást a nyugdíjak és a traszferek reélértékének megőrzésére és minimális emelésére költenek, ami szociálisan nagyon szépen hangzik, csak mivel ezek inaktív rétegek, értelemszerűen csak viszik a pénzt > magas áht hiány > instabil áht > magas infláció és kamatok. ha nem söprik ki a fenntarthatalan fogyasztást és csinálnak egy aktív-inaktív gazdaság és társadalompolitikai fordulatot, akkor ebben a szép lassú későkádárista pangásban fog végleg elrohadni ez az ország...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=540&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=540&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=540&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=540&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=540&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=540&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=540&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=540&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=540&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=540&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=540&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=540&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=540&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=540&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=540&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

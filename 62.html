@@ -1,0 +1,612 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=62#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Egy szcientológussal beszélgettem";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Egy szcientológussal beszélgettem<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2007 október 8. 09:18:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_62.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Tegnap szcientológus (ejtsd:   
+  [szientológus]) ünnepnap volt, mint minden év október hetedikén: a legújabb, XX. századi vallás, a 
+    szcientológia követői ekkor ünneplik a Szcientológusok Nemzetközi Szövetségének     
+megalapítását.<br><br>Én magam a médiahírek és a terjedő információk miatt szcientológusellenes     
+propagandában is részt vettem, együtt röhögtem másokkal a Xenu-történet ostobaságain, segítettem az  
+   ismertté vált Rémálom nevű szcientológiaellenes blogoldal indításánál.<br><br>Azonban nagyot     
+hibáztam, mert egy dolgot nem tettem meg: nem beszéltem egy megbízható szinten álló, már legalább    
+ <span style="font-style: italic;">clear</span> szcientológussal. A hibát azonban néhány hete     
+pótoltam, a beszélgetésből pedig interjú lesz, amelyet hamarosan bemutatunk majd a Bombagyár     
+valamelyik rádióadásában. Elöljáróban azonban néhány szó, az én véleményem     
+következik.<br><br>Magyarországon a szcientológia vallása szerint élők számát 3000&#8211;4000 főre   
+  tehetjük, ezzel pedig a népesség arányához viszonyítva az elsők vagyunk az egész világon. Nálunk a 
+    média sem támadja olyan erősen az új vallást: a legnagyobb hangadó az Tóta W. Árpád, aki a 
+legutóbb     az autókra ragasztott Nagy-Magyarország-matricákat is kiröhögte.<br><br>A 
+beszélgetőtársam egy a     szcientológiában kifejezetten magas szintre jutott férfi, Miklovicz 
+Attila, aki már OT III-as és a     felesége a Magyar Szcientológia Egyház második embere, úgyhogy a 
+válaszai hitelesnek tűnnek,     legalábbis a szcientológusok szempontjából vizsgálva a 
+kérdést.<br><br>A szcientológiával     kapcsolatban a leggyakoribb kritika, hogy pusztán üzleti 
+vállalkozás, ezért nem hiteles. Érdekes,     hogy éppen azok a liberális vagy akár zsidó 
+médiaszereplők képesek ezt mondani, akik a     vallásszabadság legnagyobb támogatói, mégis tartanak 
+a szcientológusoktól. Érdekes történet esett     meg néhány éve egy világméretű valláskonferencián, 
+ahol a Vatikán követe fölállt, és a Szcientológia     Egyház képviselőjét ki akarta küldeni a 
+teremből, úgymond: itt nincs helye szektáknak. A muzulmán     követ állt föl és vette védelmébe a 
+szcientológusokat: tudniillik az egész teremben ők voltak     egyedül, akik nem szektába tömörültek, 
+a szó valódi értelmében.<br><br>Valóban igaz, hogy a     szcientológia pénzbe kerül. Bár elméletileg 
+léteznek ingyenes képzések is, én magam nem igazán     hiszek abban, hogy működhet. Egy 1998-as 
+felmérés szerint a szcientológusok 80%-a keres az amerikai     átlag fölött, de szerintem nem a 
+szcientológia miatt keres jól, hanem azért lehet szcientológus,     mert jól keres. Miklovicz 
+szerint a vallás alapítója, egy állandó csúsztatással sci-fi-írónak     mondott elismert író és 
+filozófus, L. Ron Hubbard eredetileg is a <span style="font-style: italic;">képesebbeknek</span> 
+szánta a vallást. Bár az mindenkinek használhat, áldozatokat kell     hozni. Miklovicz úr maga sem 
+tudta megmondani, mennyibe került ilyen magas szintre jutni, de sokba.     Igaz, szerinte megérte, 
+és szerintem meg azt csinál a pénzével, amit csak akar.<br><br>A vallás     alapja nagyon egyszerű, 
+és valójában teljesen követhető is lenne: Hubbard rájött arra, hogy az     embereket nagyon 
+hátráltatják a rossz emlékek, amelyek buta beidegződésként végzik. Egy ismert     szcientológus 
+példát hozok, mert ezen keresztül értettem meg én is, hogy mire gondolnak. Egy     lakásban egy 
+férfi üvölt egy nővel, hazugnak és ostobának nevezi, majd a földre löki, hasba rúgja,     miközben 
+csöpög a csap és az utcán elhúz egy autó. Az elme a rossz emléket eltárolja az úgynevezett     
+reaktív elmében, amely nem tesz különbséget az események kapcsolata között. Azaz egyszerre tárolja   
+a   hazugság és ostobaság vádját, a hasi fájdalmat, a csöpögő csapot és a kocsi hangját, a képlet   
+tehát   A=A=A=A. Ha néhány évvel később ugyanezen nő új párja valamiért felemeli a hangját, s   
+véletlenül   hasonló hangszínt üt meg, mint a bántalmazás estéjén az eredeti férfi, esetleg el is   
+húz egy kocsi a   házon kívül, a nőben azonnal föltámadnak az akkori érzések: megfájdulhat az   
+oldala, és azonnal   ostobának és hazugnak érzi majd magát.<br><br>A szcientológia lényege ezen   
+reaktív elme fölötti   irányítás megszerzése. Szerintük az, aki képes az ilyen berögzültségeket   
+eldobni magától, boldogabb   életet kap: eljut a clear (tiszta) állapotig. Ilyenkor kevesebbszer   
+lesz beteg, kevesebb baleset   éri, jobban teljesít és boldogabb, képesebb ember lesz.<br><br>Persze 
+  nem ennyi a vallásosság nem   titkos, tehát még számunkra is elérhető része. A szcientológusok   
+elfogadnak más vallásosságúakat is   maguk között, de egyébként is van valamiféle istenképük. Ez nem 
+  konkrét isten (a szcientológiában   ugyanis nincsenek isten személyével kapcsolatos hittételek), 
+de   nevezhetjük valamiféle Legfelső   Jónak vagy ahogyan tetszik. Ez az élet nyolcadik 
+mozgatóereje,   vagyis dinamikája. A szcientológusok   szerint ugyanis ilyen dinamikák szerint élnek 
+az emberek, és   ez sem hülyeség, bár nem is új dolog.   Az első dinamika önmagunk, a második a 
+kreativitás (az   alkotás, de ez érthető a családra is). Ezek   hajtják először az embert, majd ez 
+alá rakódik a   csoport túlélése, amely faji vagy nemzeti   összetartást is jelent és így tovább. 
+<br><br>A vallás   szerint az emberek nem pusztán csontból,   húsból és vérből állnak. A legalsó 
+szint maga a test, egy   burok, amelyben tartózkodik az elme: a   gondolataink és az emlékeink. 
+Mindezek fölött áll a thetán,   amelyet akár léleknek is nevezhetünk. Ez   száll testről testre a 
+reinkarnációkon keresztül, és   ennek kell visszaadni a vezető szerepet,   megszüntetni az ezt 
+elnyomó gátakat. Az alapvetések tehát   ezek, de ezekre rakódik rá sokféle kitétel   és 
+tanfolyam.<br><br>A tanfolyamoknak valóban van   díjuk. Ez változó összeg, de Magyarországon   
+nagyjából 10 000 forint körül mozog egy (néhány napos,   esetleg hetes elfoglaltság). Ezt a   
+szcientológusok adománynak nevezik: éppen olyannak, amilyenek   majdnem minden más vallásban vannak. 
+A   pénzt elmondásuk szerint közel kétszáz fizetett, főállású   alkalmazottjuk, illetve az egyház   
+fenntartására fordítják. A tanfolyamokat képzett személyek,   úgynevezett auditorok végzik.<br><br>A 
+  szcientológiában hívők drogellenesek, mivel a   kábítószereket olyan mérgeknek tartják, amelyek   
+hosszan a szövetekben maradnak az utolsó szívás,   lövés stb. után is, ezért velük együtt nem lehet  
+ képzésekre járni, mert elvonják az elme   figyelmét. A kábítószereseknek a tanfolyamok előtt egy   
+méregtelenítő kúrán kell átjutniuk,   amelynek része lehet a drog rundown nevű képzés. A   
+szcientológusok gyakran tartanak drogellenes   felvonulásokat, de ezeken kívül is van társadalmi   
+tevékenységük. Miklovicz úr szerint a   legfontosabb, hogy önkéntes lelkészeiket fölkészítik 
+különféle   katasztrófaesemények során   szükséges védelmi feladatok ellátására, így a világ több 
+tájfunjához,   földrengéséhez, erdőtüzéhez   stb. küldenek szcientológusokat. Például a szeptember 
+11-i New York-i   terrortámadásnál is több   szcientológus végzett segítő munkát (megjegyzem, hogy 
+Miklovicz úr sem   biztos benne, hogy pontosan   az történt ott, amit mondanak). A 2002-es 
+magyarországi árvíz után a   Szcientológia Egyház   lelkészei kitüntetést kaptak a Katasztófavédelmi 
+Hatóságtól.<br><br>Érdekes,   hogy ilyesmiről nem   hallhatunk a médiából. A szcientológia komolyan 
+támadja Freudot és azokat, akik   a modern, a mai   pszichológia alapját alkották meg. Ezek az 
+egyébként zsidó emberek óriási hazugságot   követtek el   ezzel a szóval, ez pedig igaz is: a 
+psziché, azaz a lélek tudománya ma éppen azt vallja,   hogy nem   létezik lélek. Milyen érdekes 
+ez... a harc pedig örök a pszichológusok és a szcientológusok     között.<br><br>Ahogyan bennünket 
+elhallgat a média, úgy a szcientológia követeinek sem lehet szólni.     Ez legalábbis valamiféle 
+közösséget okoz, ha akaratlan és kéretlen is a dolog. Valóban igaz: nem     igazán találtam 
+szcientológusoktól nyilatkozatokat a médiában, hírt is keveset, és azok is csak     negatívak. 
+Történt már próbálkozás, amikor keresztény hittanár ismerős próbálta a TV2 reggeli     műsorába 
+meghívni Miklovicz urat, de Juhász Árpád geológus&nbsp; az adásba kerülése előtt letiltotta     a 
+műsort. Érdekes, talán Juhász úr a TV2 vallási cenzora volna? Szintén nem találjuk az RTL Klub     
+reggeli vallásműsorában az egyéb vallások képviselőit: mindig csak egy fiatal rabbival beszélgetnek  
+   a műsorban, soha, semmilyen más vallásúval nem.<br><br>Bár azzal nem kell egyetérteni, amiben     
+hisznek a szcientológusok, és bennem is él a gondolat, hogy néhányan nagyon jól megélnek ebből a     
+vallásból, azért láttam én már református papot bőrüléses Mercedesben, és az csak a második autója   
+  volt. Valamiért a vallásszabadság ellenében ezt a vallást támadják, ezek az emberek pedig nem azt  
+   szokták támadni, ami eleve rossz, hanem azt, ami nekik rossz. Az meg nekünk néha jó.<br><br>A     
+szcientológusok szerint minden ember jó, csak fölülkerekednek benne a rossz gondolatok. Egy     
+úgynevezett tónusskálán mérik 0-tól 40-ig az embert (a halál 0, míg a lét legfelsőbb boldogsága 40), 
+    az átlag még a 3-as értéket sem éri el. Az emberek 2%-át tartják antiszociálisnak, aki ártani 
+akar     és minden körülmények között rosszat tesz. Bár ide sorolják például Adolf Hitlert is, a 
+dolog     lényege nem ez. Ha előfordul, hogy egy család valamely tagja féltékenységből vagy pusztán 
+féltésből     a szcientológia ellen beszéli az preclear, tehát új tagot, akkor hátráltatja a 
+fejlődésben, ezért     ilyenkor az illető dönthet úgy, hogy a Hubbard által kapcsolatmegszakításnak 
+nevezett tevékenységbe     kezd. Ez azt, aminek tűnik. Ezt nevezik agymosásnak és elrablásnak a 
+kívülállók, ezért rossz a híre     az egyháznak.<br><br>Nagyon érdekes, hogy mennyire tartanak 
+valamiért tőlük azok is, akiknek még     soha nem volt közük a szcientológiához. Ahhoz képest, hogy 
+a szcientológia elődjéről, a dianetikáról     szóló hasonló című könyv az egész világon bestseller 
+lett, erről a vadonatúj vallásról alig lehet     tudni valamit. A hitelességét pedig pont ez növeli, 
+mert ismerjük a média világát. Persze,     egyáltalán nem arról van szó, hogy a támadások hibásak, 
+csak arról, hogy hiteltelenek. Tényleg nem     hiszem, hogy mindenkinek használna a szcientológia, 
+sőt azt is gondolom, hogy árthat is. Viszont     most már látom: egyeseknek jobbá tette az életét, 
+segíthet. Igaz, ez a felháborító és valóban     szektás, pénznyelő és agymosó Hit Gyülekezetére is 
+igaz. Azt mégse támadják a médiában.<br><br>A     valamelyik következő Bombagyárban hallható 
+interjúban megkérdezem az OT III-as szintű (ezért már     külföldön kell tanulnia, itthon ugyanis 
+nincsenek meg a feltételek az ilyen magas szinthez)     szcientológust, hogy mi a kapcsolat a 
+szabadkőművesség és a szcientológia között, van-e kapcsolatuk     a zsidósággal és van-e az 
+MSZP-vel. Ezeket a kérdéseket ugyanis fel kellett tenni.<br><br><br>     </div>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2007-10-08&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=62&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=62&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=62&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=62&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=62&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=62&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=62&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=62&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=62&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=62&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=62&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=62&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=62&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=62&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=62&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=62&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=62&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=62&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=62&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=62&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=62&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=62&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=62&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=62&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=62&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=62&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> <A HREF="./index.php?post=62&commentstart=250#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>26</B></A> <A HREF="./index.php?post=62&commentstart=260#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>27</B></A> <A HREF="./index.php?post=62&commentstart=270#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>28</B></A> <A HREF="./index.php?post=62&commentstart=280#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>29</B></A> <A HREF="./index.php?post=62&commentstart=290#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>30</B></A> <A HREF="./index.php?post=62&commentstart=300#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>31</B></A> <A HREF="./index.php?post=62&commentstart=310#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>32</B></A> <A HREF="./index.php?post=62&commentstart=320#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>33</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment62013"></A>324. kortzsch</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-05-27 09:12:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1295.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">jah, a szcientológusok szerint nincs olyan betegség, hogy "skizofrénia". valószínűleg még sohasem láttak ilyen beteget.<br />
+egy másik kommentben említettem, hogy Freud nem a pszichológia megalapítója. és a modern pszchológia azért materialista szemléletű, mert a lélek megfoghatatlan. és hozzátartozik sokak számára a lélek az emberhez. ezért van nehéz dolga: egy matamatikus tudja úgy művelni a tudományát, hogy mellette hihet benne, vagy nem. egy pszichológusnál összefonódik.<br />
+és egyébként ez egy egyoldalú harc: a szcientológusok köpködnek, hogy nincs szükség ránk, mert pénzért csináljuk. ők nem. ellentmondásos az egész. és az e-meter biztos egy letesztelt, tudományosan kifejlesztett eszköz.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment13963"></A><FONT COLOR="#FF0000">323. </FONT>Levee</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-18 22:02:52</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1663.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment13953"></A>322. wmiki -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=62&id=11891#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-18 21:21:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">kedves sehim...<br />
+<br />
+én nem tartom olyan veszélyesnek a dolgot, mint ahogy tényleg a médiában lefestik<br />
+másrészt...<br />
+mit nevezenek "tudomány"nak?<br />
+<br />
+mert valóban, a vallásokban sok a dogma<br />
+de a "tudományban" még annál sokkal több...<br />
+na "az" tényleg káros, aki azt elhiszi, ami ott van...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12737"></A>321. kókajános</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 15:38:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Közben átnéztem a levelezésemet és találtam egy ilyet, most be is másolom ide bizonyítékképpen!<br />
+Alul az aláírásban rögtön kitünik a név HUBBARD (az alapító) szóval nem lehet letagadni az összefüggést. <br />
+Egyébként érdekelne, hogy honnan szedik az email címünket (céges) amire rendszeresen küldözgetik ezeket, mindig más címről, más cég nevében, de a lényeg és a szisztéma ugyanaz. <br />
+Általában benne van egy hivatkozás, hogy le lehet jelentkezni a hírlevélről, ezt többször megtettük- eredménytelenül. Volt olyan, amikor én személyesen hívtam fel a megadott telefonszámot és vontam kérdőre őket, hogy honnan is van meg a címünk és elérhetőségünk, nem adtak választ, sőt még ők voltak felháborodva!! Persze nagyon kiosztottam a hölgyikét. Egyszer rám is rakták a telefont!!! Mégis hogy képzelik?? Kértem, hogy azonnal töröljenek minden levelezési listájukról, de ez azóta sem történt meg! Egyszer lehet még hogy megfontolok egy jogi lépést ez ügyben, csak sajnos most más per is van antimagyar viselkedésű építési vállalkozó ellen, így erre már végképp nem lenne energiám.  Na mindegy. <br />
+Ami még rettentően idegesít, ha valaki nem tud helyesen írni magyarul, főleg egy marketing levélben, amikor ügyfeleket szeretne toborozni. Kérem szépen, mikor tanulják már meg végre, hogy dátumnál helytelen, ha a szám után pont van! Tehát nem 27.-én!! hanem 27-én!!!!!!!!!!!!!<br />
+Íme a levél:<br />
+<br />
+<br />
+VEZETŐI KOMMUNIKÁCIÓ képzés!<br />
+<br />
+(díjmentes)<br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+Ezúton tisztelettel meghívom Önt és vezető munkatársait a 2007. június. <br />
+<br />
+27.-én szerdai napon, 10:00 tartandó díjmentes vezetői kommunikációs képzésünkre, amelynek címe:<br />
+<br />
+ A sikeres vezetői kommunikáció összetevői<br />
+ <br />
+ <br />
+<br />
+ Ön adott már ki ilyen módon utasítást?<br />
+<br />
+ <br />
+<br />
+Milyen lett a végeredmény?<br />
+<br />
+ <br />
+<br />
+Az egyik legnélkülözhetetlenebb tudás a sikerhez az üzleti és a társadalmi életben az a képesség, hogy pontosan ki tudjuk fejezni gondolatainkat olyan módon, hogy a másik személy teljesen megértse azt.<br />
+ <br />
+ <br />
+Ezen az előadáson egy olyan bevált, gyakorlatias kommunikációs módszerrel ismerkedik meg, amellyel Ön és üzletkötői jobban tudnak kommunikálni ügyfeleikkel, így többet, jobban <br />
+<br />
+és hatékonyabban lesznek képesek értékesíteni, és ezzel Ön fokozza cége eredményességét. <br />
+<br />
+ <br />
+<br />
+Az előadás helye: Közép-Európai Hubbard College Oktatási Kht<br />
+<br />
+1161 Budapest Pálya utca 83.<br />
+<br />
+ <br />
+<br />
+Az előadáson ízelítőt kaphat többek között a következő témákról:<br />
+<br />
+ <br />
+<br />
+&Oslash;       Mi a helyes módja egy utasítás kiadásának?<br />
+<br />
+&Oslash;       Mik a cégen belüli kommunikáció eszközei, és hogyan használjuk őket?<br />
+<br />
+&Oslash;       Hogyan teremtsünk biztos kommunikációs alapot egy másik személlyel?<br />
+<br />
+&Oslash;       Hogyan növeljük a céges hatékonyságot helyes kommunikációval?<br />
+<br />
+&Oslash;       Hogyan kezeljük a kommunikációs zűrzavarokat?<br />
+<br />
+ <br />
+<br />
+A képzésre a belépés díjmentes, ezért kérjük, a korlátozott hely miatt előre jelezze részvételi szándékát a mellékelt jelentkezési lapon. Az előadásra érkezés 9:45 -re. Kattintson ide a térkép megtekintéséhez.<br />
+<br />
+ <br />
+<br />
+            Tisztelettel:<br />
+<br />
+                                                                                               Kovács Sándor<br />
+<br />
+                                                                       Előadó<br />
+ <br />
+ <br />
+<br />
+<br />
+ JELENTKEZŐLAP <br />
+Ezt a jelentkezőlapot elküldheti nekünk faxon az (1)405-4607-es számra, vagy kattintson az űrlapon a megadott időpontra, és jelentkezzen közvetlenül interneten keresztül.<br />
+<br />
+Név:<br />
+ Cégnév:<br />
+ <br />
+Cím:<br />
+ Telefon:<br />
+ <br />
+Fax:<br />
+ E-mail:<br />
+ <br />
+<br />
+ <br />
+<br />
+ <br />
+ Jelentkezem a 2007. június 27.-án, szerdán, 10:00 órakor<br />
+ <br />
+<br />
+<br />
+tartandó díjmentes kommunikációs képzésre. <br />
+<br />
+Kérem, számítsanak részvételemre és még _____ fő munkatársam részvételére.<br />
+<br />
+Dátum:_____________________ Aláírás:______________________<br />
+ <br />
+<br />
+  <br />
+<br />
+HÍVJON MINKET INGYEN INTERNETEN KERESZTÜL!<br />
+<br />
+<br />
+<br />
+HÍVÁS KEZDEMÉNYEZÉSÉHEZ KATTINTSON A KÉPRE<br />
+Bövebb információ<br />
+ <br />
+<br />
+ <br />
+<br />
+ <br />
+<br />
+Kérdésem van a képzéssel kapcsolatban.<br />
+<br />
+ <br />
+<br />
+Közép-Európai<br />
+Hubbard Szervezetigazgatási KÉPZÉSI KÖZPONT<br />
+Hubbard College of Administration Central Europe<br />
+<br />
+<br />
+1161 Budapest, Pálya u. 83.<br />
+<br />
+<br />
+Telefonszám: (1) 405-9520; 405-9521   Fax: (1) 405-4607<br />
+<br />
+<br />
+Web oldal: <B><a href="//www.hubbardcollege.hu" target="_new" style="color: #000000;">www.hubbardcollege.hu</a></B>  <br />
+<br />
+ E-mail: <B><a target="_new" style="color: #000000;" href="mailto:kepzes@hubbardcollege.hu">kepzes@hubbardcollege.hu</a></B> <br />
+<br />
+ <br />
+<br />
+Amennyiben nem kíván több információs anyagot kapni tőlünk, kérem jelezze ezt válaszában a Nyilvántartás címen, a<br />
+<br />
+pontos név, cégnév, e-mail cím, e-mail címek megadásával együtt, amelyeken keresztül megkaphatja azokat és letiltjuk<br />
+<br />
+a megadott címet a címlistánkról.<br />
+<br />
+<br />
+2005 Hubbard College of Administration. Minden jog fenntartva. Hubbard bejegyzett védjegy, amely az RTC tulajdonában van,  használata annak engedélyével történik. A Tigris embléma bejegyzett védjegy, amely a Hubbard College of Administration<br />
+<br />
+tulajdonában van.<br />
+ <br />
+<br />
+ <br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment11899"></A>320. 320. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-11 23:56:40</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Világépítés és világpusztítás-Beszélgetés Bakos Józseffel:<br />
+<br />
+<B><a href="//www.okotaj.hu/szamok/31-32/ot31-06.htm" target="_new" style="color: #000000;">http://www.okotaj.hu/szamok/31-32/ot31-06.htm</a></B><br />
+<br />
+Hosszú cikk a szabadkőművességről, és az írás 2/3-ánál a szabadkőműves-szcientológia kapcsolatról. A cikk szerintem rendkívül érdekes, ajánlom mindenkinek, főképp Adminnak!<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment11891"></A>319. kókajános</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-11 23:22:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A szcientológiával, mint minden más szektával az a baj, hogy van egy-két tézis, amibe kapaszkodik, azaz beeteti az embereket, hogy így nem jó-úgy nem jó és mivel nagyon sok a hiszékeny ember mindenhol a többi hülyeséget már szó nélkül benyeli. A másik probléma, hogy az emberek már elvesztették a hitüket a "régebbi" egyházak sem már a régiek, kilátástalan a helyzetük, egyre rosszabb (főleg hazánkban) és örülnek, ha valamiben kapaszkodhatnak és hihetik, hogy jobb lesz. <br />
+A szcientológia a pszichátriára építette ezt a "beetetést". Támadja ezt a tudományágat, sőt nem is ismeri el, mint tudomány. Nem véletlenül. Az említett dianetikáról szóló könyv, illetve a többi Hubbard által szerzett is tele van un. programozással. Ez azt jelenti, hogy rejtetten, ahogy a kedves olvasó olvassa a könyvet betűről betűre egy-két dolgot az agyába ültet, azaz agymosást alkalmaz. Nos, ezért nem csípik a pszichológiát és a pszichátereket, mivel egy képzett szakember ismeri ezt a jelenséget, és rájön egyből a turpisságra. Ezért érdekük, hogy lépten-nyomon lejárassák a pszichológiát/pszichátriát, hogy a konkurenciát kiiktassák. Le kell szögezni, hogy az alapító, Hubbard zseniális volt, hiszen felfedezte, hogy a vallás milyen jövedelmező is. Egészen pontosan először nem is vallást akart alapítani, csak hírdetni a nézeteit, de miután rájött, hogy ha vallásként lesz bejegyezve, nehezebben lesz támadható, hiszen vallásszabadság van, tiszteletben kell tartani a vallási hovatartozást. Nosza, akkor csináljunk vallást. Így indult. <br />
+A kábítószeresekkel is azért foglalkoznak, hiszen az aztán a jó anyag nekik, mivel köztudottan sokkal jobban befolyásolhatóak azok az emberek, akik ezzel élnek. A másik jó anyag még nekik a mai lázadó fiatalság. Felteszik az utcán a kérdést, hogy otthon minden rendben? Mire a fiatal lány v. fiú nagy valószínűsséggel nemmel fog felelni. Hiszen lehet, hogy van testvére, akinél úgy érzi, hogy ő a kedvenc, vagy éppen úgy gondolja, hogy nem kap elég zsebpénzt, túl szigorúak vele és még sorolhatnám. Ilyenkor a "szakképzett" már berángatott emberek rárepülnek, hogy ők tudnak segíteni és már megy is minden a maga útján. Kíváncsi lennék, hogy erről mit mondana akit meghívnátok a műsorba...bár tuti lenne valami jó szöveg erre. <br />
+Az már csak hab a tortán, hogy sok híresség is ennek a "vallásnak" hódol, tehát divat, trendi, nosza akkor legyünk mi is szcientológusok. Még végigmegy valaki a végeláthatatlan tanfolyamokon, amik már említésre kerültek, hogy nem olcsók, addigra már nem is jut eszükbe, hogy át lettek verve és simán elhiszik a Xenu nagyúr-űrutazás-rossz lelkek-vulkánkráteres baromságot, mivel úgy gondolják, hogy annyi sok pénzért most valóban az igazságot tudják meg. Mert úgyebár ez a szcientológusok végső igazsága, ami titok egészen addig még egy bizonyos magas szintet el nem érünk. És miután megtudhatjuk az igazságot égre-földre meg minden másra meg kell esküdnünk (és aláírni) hogy senki másnak nem mondjuk el, aki nem "beavatott" mert nem tudná megérteni, mivel ő alacsonyabb szinten van. <br />
+Hát mi ez, ha nem üzlet? Hol is van a vallás? <br />
+Egyébként én már nem egy szcientológussal beszéltem, akik simán belemondták a képembe, hogy nem is vallásról van szó. Aztán jó nagyot néztek, amikor visszaválaszoltam, hogy akkor meg miért van vallásként is bejegyezve hivatalosan?<br />
+A magyarországi szcientológia egyháznak egyébiránt több üzleti vállalkozása is van. Ezek az un. konzulting cégek. Napi szinten kapok DM levelet ezektől, van belőlük jó pár. Arról szól, hogy amennyiben sikeressebbé szeretném tenni a vállalkozásomat (egyébként nem is az enyém, csak alkalmazott vagyok, és egyébként sem tudom honnan szedik az email címünket) akkor résztvehetek egy teljesen ingyenes konzultáción az ilyen és ilyen szállodában ebéddel meg mindennel, csak be kell regisztrálnom. <br />
+Most pedig elmondom hogyan is működik ez. A kezdő vállalkozó vagy épp csöd szélén álló stb. beveszi, hogy 2007-ben még adnak ingyen bármit is, méghozzá pont neki üzleti tanácsokat, pont azért, hogy megduplázza a cége vagyonát és elmegy a fent nevezett tréningre. Ott aztán a jól kiképzett (általában 80%-ban szcientológus vallású, bár ez nem előfeltétel, de erősen ajánlott) szépen kikérdezgeti és felállít egy diagnózist, hogy semmi nem jó ahogy van a cégében. Cégvezetőnk elgondolkozik, üzletkötőjük pedig több milliós(!) de min. többszázezres szolgáltatások közül ajánl egyet. Kimennek, átvilágítják a céget és utána elmondják, hogy mit hogyan kéne megváltoztatni potom több százezerért, nagyobbaknak több milláért. Hmm. No comment. Mindenhogyan keresnek rajta, sőt többen ilyenkor még be is állnak szcientológusnak. Gondolom észrevettek még egy "kis" apróságot a dologban. Rájöttek miről beszélek? ÁTVILÁGÍTANI = azaz a vállalkozás pénzügyi-személyügyi és minden egyéb adataihoz hozzáférni. Tehát még egy pont az ő javukra. Vajon mit csinálnak ezekkel az adatokkal? Lehet, hogy én már túl összeesküvés-elmélet beteg vagyok, de itt lehet a kapcsolódás a koránnyal-cionizmussal stb. Hiszen ezzel akár kompromisszumot is köthettek: a mindenkori hatalom békén hagyja őket, azaz no média, elseperjük a szemetet stb. - Cserébe hatalmas adatállomány. Nos? Ez utóbbit már én gondoltam hozzá, a többi teljesen igaz, alá is tudom támasztani dokumentumokkal, de rá lehet keresni a neten is. Ja és még valami, amivel a háttérhatalom jól jár: még több embert lehet eltéríteni pl. a kereszténységtől. <br />
+Ezúton is elnézést kérek, aki esetleg minden rossz szándéktól mentesen tagja ennek az egyháznak! De egyet ne feledjünk: mindig a kisemberek szolgálják ki a hatalmat, ahogy itt is, tehát nem a szomszéd 20 éves sráccal van a gond, aki csatlakozik, mert úgy érzi, otthon nem kap elég elismerést, hanem akik az ilyen befolyásolható emberekből akarnak hasznot húzni. Úgy tudnám jellemezni, mint egy piramisjátékot, aki felül van, az nagyon jól jár minden téren, aki meg az alsóbb szinteken, az kiszolgálja őket mind pénzügyileg mind morálisan, mind minden téren. <br />
+Még oldalakat tudnék erről írni, de azt hiszem a lényeget elmondtam. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7610"></A>318. <A HREF="mailto:rhino666@citromail.hu" STYLE="color: #000000">Rhino666</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=62&id=3171#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-10-27 02:23:35</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_115.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Egy állat igenis értékesebb egy embernél. Az állatok nem háborúznak, nem vakítják el őket a fals értékek és nem teszik tönkre a Földet puszta irígységükből és nemtörődömségükből. Ott borult fel az egész dolog, amikor az ember a tápláléklánc csúcsára került.<br />
+<br />
+Szívesen nézném végig az emberi faj kipusztulását. Mert végülis mi is kipusztítottunk rengeteg más fajt, mi lenne olyan extra megható abban, ha egy másik faj ugyanúgy kipusztítana minket is?<br />
+<br />
+Egyébként meg ennél [a reakciónál] többet néztem ki belőled...<br />
+<br />
+Szerk: Mintha el is olvasná valaha... :-/ </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5700"></A>317. <A HREF="mailto:blogadmin@gmail.com" STYLE="color: #000000">Blogin</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-20 19:05:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Félreértés ne essék, nem gondoltam, hogy ez általános. Csak arra kívántam rámutatni, hogy mindenhol akadnak ilyenek.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5521"></A>316. nemere</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-19 11:41:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1218.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bocsánat, hogy egy ilyen csekélység miatt fárasztom lakótársaimat, de egyházunk neve, helyesen leírva: Magyarországi Református Egyház. Pardon.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment5519"></A>315. nemere</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-19 11:37:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1218.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves  Blogin/Blogadmin!<br />
+Református lelkész vagyok. Azért regisztráltam, hogy megvédjem a mundér becsületét: a bőrüléses mercis lelkész hivatásunknak nem tipikus képviselője. Egyházunkban a lelkészek közül a püspökök járnak jobb verdákkal, de az sem az ő tulajdonuk, igaz kizárólagos használatukban vannak. (Mármint a bőrüléses kategóriájú autók.) Kollégáim zöme egyszerű talpas, akiknek abban az esetben jár bőrülés, ha a saját ülőfelületén van bőr. <br />
+Mármost, ha az általad emlegetett lelkésztársam nem lelkész, de még csak nem is esperes, akkor biztos, hogy nem hivatásbeli szorgalmának köszönhetően érintkezik a kétségbevonhatatlanul saját tulajdonú ülőfelülete az autó ülésének bőrével. <br />
+A Magyarországi református egyházban, illetve a mi egyházkerületünkben ún. szabályrendelet határozza meg az önálló gyülekezeti lelkészek számára a gyülekezetek (a mi munkaadóink) által fizetendő minimális készpénz iletmény mértékét. Ez jelenleg: 68000 forint. (Ez a mi mnimálbérünk.) A vidéki gyülekezetek jelentős része éppen hogy csak ki tudja fizetni ezt a minimumot. Ezt nem panaszul írtam le, hála Istennek nem halunk éhen, s ma már - lassan-lassan - ez is nagy szó. De azért szeretném, ha tudnák a gyárlakók, hogy egyházunk a mercis lelkészekben szegény terület. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=62&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=62&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=62&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=62&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=62&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=62&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=62&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=62&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=62&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=62&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=62&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=62&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=62&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=62&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=62&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=62&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=62&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=62&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> <A HREF="./index.php?post=62&commentstart=170#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>18</B></A> <A HREF="./index.php?post=62&commentstart=180#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>19</B></A> <A HREF="./index.php?post=62&commentstart=190#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>20</B></A> <A HREF="./index.php?post=62&commentstart=200#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>21</B></A> <A HREF="./index.php?post=62&commentstart=210#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>22</B></A> <A HREF="./index.php?post=62&commentstart=220#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>23</B></A> <A HREF="./index.php?post=62&commentstart=230#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>24</B></A> <A HREF="./index.php?post=62&commentstart=240#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>25</B></A> <A HREF="./index.php?post=62&commentstart=250#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>26</B></A> <A HREF="./index.php?post=62&commentstart=260#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>27</B></A> <A HREF="./index.php?post=62&commentstart=270#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>28</B></A> <A HREF="./index.php?post=62&commentstart=280#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>29</B></A> <A HREF="./index.php?post=62&commentstart=290#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>30</B></A> <A HREF="./index.php?post=62&commentstart=300#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>31</B></A> <A HREF="./index.php?post=62&commentstart=310#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>32</B></A> <A HREF="./index.php?post=62&commentstart=320#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>33</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

@@ -1,0 +1,547 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=147#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Blogin levelei";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Blogin levelei<BR><DIV CLASS="postheader_small">Levrov - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2007 október 26. 16:30:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_147.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Kaptam én is néhány említésre 
+és idézésre méltó üzenetet a Bombagyár indulása óta. Ezekből szemezgetek most, visszautalva némely 
+korábbi írásomra.<br><br><b>Mák Albert írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Üdv Bombagyár!<br>  <br>  Az Aids-es cikkhez a hivatkozott találmány kivonatának linkjét 
+küldöm. Magyarul, rákerestem az amerikai szabadalmi hivatal honlapján. Remélem, nem dobtak meg sokan 
+ezzel.<br>  <br><a target="_blank"style="font-weight: bold; color: black;" href="//appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.html&r=1&f=G&l=50&d=PG01&S1=%224647773%22&OS=%224647773%22&RS=%224647773%22">[LINK]</a><br>
+ <br>  ElfWarrior</div><br><a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=96">Az AIDS-hullám és más szándékos népirtások</a> című 
+bejegyzésemhez fűzött plusz információ, köszönöm. De érkezett egy jóval hosszabb levél 
+is...<br><br><b>Jancsika írta:</b><br>  <br>  <div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok!<br>  <br>Reagálni szeretnék 
+az oldalon megjelent "Az AIDS-hullám és más  szándékos népirtások" című írásra, mivel tartalma SZVSZ 
+nagyobbrészt a  legsötétebb demagógia, hatalmas logikai bukfencekkel és lazán odakent  
+féligazságokkal.<br>  <br>  Alapvetően a betegségekre gyógyírt adók nem a betegségekből élnek,  
+mivel a gyógyszergyártók ritkán finanszírozzák saját termékeiket. A  gyártó és a beteg között ott 
+állnak még a biztosítók is, akik  alapvetően abban érdekeltek, hogy minél előbb és minél olcsóbban  
+meggyógyuljon az ügyfelük, ugyanis a kezelés költségeinek jelentős  részét ők állják. Normális 
+működés esetén éppen ők képeznek ellensúlyt  a gyógyszergyártókkal szemben. A másik köztes állomás 
+az orvos, aki a  gyógyszert felírja, akiknek a tekintélyét ugye mostanában eléggé  megtépázták kis 
+Hazánkban, de azért alapvetően abban érdekeltek, hogy a  betegük meggyógyuljon. Utolsó védvonalnak 
+pedig ott kellene állni a  józan észnek és tiszta fejjel mérlegelésnek a beteg oldalán, vagyis, ha  
+egy kezeléstől nem gyógyul meg, elmegy másik orvoshoz, vagy a réginek  ezt jelzi és másik kezelést 
+kér. Erős túlzásnak tartom a  gyógyszergyárak karmai közt vergődő tehetetlen ember képét. <br>  <br> 
+ Az, hogy a gyógyszeripar döntené romba az egészségünket, elég furcsa  elképzelés, 
+összehasonlításképpen célszerű megnézni a születéskor  várható élettartamot egy nyugati országban és 
+egy orvosi ellátással  gyakorlatilag nem rendelkező afrikai országban. Az a néhány évtizednyi  
+különbség a nyugat javára biztosan csak a véletlen műve. Ezen kívül  célszerű megnézni az egyes 
+emberek életminőségét is. PL. Afrikában a  felnőtt népesség egyharmada steril, ugyanis a különböző, 
+kezelés nélkül  maradt húgy-ivarrendszeri fertőzéseknek bizony megvan az áruk. Azért a  tönkretett 
+egészségű nyugati világban ilyesmit nem nagyon tapasztalunk.<br>  <br>  "Hallunk történeteket 
+százéves emberekről, akik soha, semmilyen  körülmények között nem használtak pirulákat és 
+injekciókat, de a világ  furcsaságait ma már egy vállrándítással el lehet könyvelni."<br>  <br>  Ez 
+a mondat egyszerű demagógia. Igen, valóban ott áll előttünk Kuzma  Kuzmics 120 éves kazah 
+matuzsálem, aki életében még sohasem járt  orvosnál. Szép. Azonban hiányzik mellőle kilenc testvére, 
+akik közül  csak négy élte meg a felnőttkort, felesége, aki gyermekágyban halt meg  a nyolcadik 
+gyerekük szülésekor (Akik közül csak három élte meg a  felnőttkort), brátai, osztálytársai, rokonai 
+népes csapata, akik a  saját unokáik születését sem láthatták már meg. Az alacsony  átlagéletkor nem 
+azt jelenti, hogy nincsenek öregek, hiszen aki megélt  30 évet és nem magas a vérnyomása , nincsenek 
+keringési betegségei, az  jó eséllyel megéri a hatvanat is. Egyszerűen annyit jelent, hogy tíz  
+gyerekből csak három nő fel, a többiek kiszelektálódnak. A nyugati  orvostudományéppan azt teszi 
+lehetővé, hogy ne kelljen tizenkét  gyereket szülni, ha azt szeretnénk, hogy kettő felnőjön. Aki ez 
+ellen  van, az saját hatáskörben is tehet az emberi faj elkorcsosulása ellen:  A terhességét ne 
+jelentse be, szülje meg otthon, ne oltassa be egyetlen  betegség ellen sem, ha pedig belázasodik, ne 
+vigye orvoshoz! Amelyik  gyerek mindezt túléli, jó eséllyel megéri a nyolcvanat is. <br>  <br>  <br> 
+ <br>  "Döbbenetes eset volt, amikor néhány évvel ezelőtt egy dr. Gotlieb nevű  rákkutató beismerte 
+a CIA nyomozása során, hogy nagy mennyiségű letális  vírust engedett a zairei Kongó-folyóba a 
+népesség csökkentése céljából."<br>  <br>  Erről az esetről gyakorlatilag egyetlen forrást találtam 
+egy  bevallottan elnagyolt keresés során, ami pontosan ugyanezt a mondatot  tartalmazta, nem többet. 
+Mellette egy másik esetben ugyanez a ficere  LSD -vel is kísérletezett. Nyilván Dr. Gotlieb 
+polihisztor,  rákkutatással, vírusokkal, kábítószerekkel is foglalkozik. Szép  karrier. Azonkívül 
+érdekes lenne megvizsgálni, milyen vírust is  engedtek a Kongóba? A kezeletlen trópusi vizek 
+általában tartalmaznak  fertőző májgyulladást okozó hepatitis-A vírusokat, vérhasamőbákat,  
+négy-ötféle parazita férget, tífuszt, meg még ki tudja mi mindent. E  mellé nem nagyon tudok olyan 
+vírust elképzelni, ami lényegesen rontotta  volna a helyzetet. Ugyanis fertőzött vízzel az igazán 
+harapós vírusok,  például a HIV nem terjednek. Azokban az országokban, ahol naponta  millió 
+köbméternyi tisztítatlan szennyvíz ömlik a folyókba, tökéletesen  fölösleges mérgezni a vizet, amúgy 
+sem iszik senki sem forralatlanul  belőle, aki mégis, azt a fenti kórokozótársaság hamarabb elviszi, 
+mint  bármilyen beoltott vírus. A másik probléma ezzel, hogy ahhoz, hogy  fertőzőképes maradjon az 
+oldat, naponta több ezer tonnányi  vírusrészecskét kellett volna a vízbe önteni, aminek az 
+előállításához  nyilván egy külön gyár is kellett volna.<br>  <br>  Az éhínség és betegség útján 
+történő lakosságcsökkentés jó ötlet, már  Sztálin elvtárs is gyakorolta, a '32-es nagy ukrán 
+éhínség, a Holodomor  ilyesmi volt.<br>  <br>  <br>  <br>  "az afrikai országokban az éhínség és a 
+fertőző betegségek minden eddiginél több embert pusztítanak el"<br>  <br>  Ez valóban igaz. Ugyanis 
+az afrikai országokban minden eddiginél többen  élnek. Erőteljesen növekvő populációkról van ugyanis 
+szó, ahol sikerült  kiirtani az egyik féken tartó tényezőt, a himlőt és lecsökkenteni a  másikat, 
+maláriát. Sajnos el kell fogadni, ha egy ország 30-40 évente  megduplázza a népességét, előbb-utóbb 
+annyian lesznek, hogy márnem jut  mindenkinek elég élelem és éhezni fognak. Egyes véemények szerint  
+egyébként a középkori Európát ettől a sorstól egyedül a pestis mentette  meg, ami szépen letarolta a 
+fölösleges szaporulatot.<br>  <br>  <br>  <br>  "Fölháborította, amikor megtudta, hogy a hepatitis B 
+elleni vakcinát  génmanipulációval gyártják, amely eredményeképpen fibromyalgiát  (krónikus 
+fájdalomszindrómát) és sclerosis multiplexet okoz."<br>  <br>  Itt SZVSZ a cikk írója félreértett 
+valamit. Attól, mert  génmanipulációval készült valami (Tulajdonképpen mit is jelent a  
+génmanipuláció? Meg tudná nekem mondani valaki azok közül, akik ilyen  nagy hangon morognak 
+ellene?), még nem okoz semmit sem. Itt mindössze  annyiról lehet szó, hogy elkészült egy oltóanyag, 
+aminek alkalmazásakor  az esetek bizonyos százalékában (10.000 -ből egy, vagy valami hasonló,  nem 
+láttam a klinkai vizsgálatok eredményét, nem tudok róla  nyilatkozni.) ilyen tünetek is előjöttek. 
+Sajnos ez a modern  orvostudomány egyik rákfenéje. Ha megmenthetsz egymillió embert, annak  az árán, 
+hogy tíz meghal, megteheted -e? Nehéz kérdés, megnyugtató  választ még senki sem adott rá. 
+Megjegyezném, hogy olyan 40 évvel  ezelőtt minden egyes oltás után napokig lázas betegen fetrengtek 
+a  gyerekek, azoknak nyilván még több mellékhatása volt. Az a gyűlöletes  génmanipuláció ezen 
+például segített. <br>  Hoznék egy másik példát is: Az inzulint annak idején sertés  
+hasnyálmirigyből vonták ki. Ettől a készítménytől a betegek igen hamar  megvakultak, reumásak 
+lettek, minden bajuk volt. Később hozták csak ki  azt az inzulint, amit baktériumban termeltek meg, 
+(ennek a módszernek  ma a "génmanipuláció" nevet adnánk) ami sokkal jobban működik, mint a  vágóhídi 
+selejtből kiáztatott zavaros löttyök, amit bármelyik  cukorbeteg igazolhat.<br>  <br>  <br>  Legjobb 
+tudomásom szerint egyetlen pénzember vagy politikus sem  gyógyult még ki a HIV fertőzéséből. 
+Egyszerűen megfelelő kemoterápiával  akadályozzák a vírus szaporodását, amivel a beteg tünetmentessé 
+tehető  és ideális esetben ez az állapot elég hosszú ideig fennmarad ahhoz,  hogy autóbalesetben 
+haljon meg, ne AIDS -ben. Egyébként az USÁban a  koldusszegény néger gyerekek is már elélnek 18-20 
+éves korukig a  születéskor kapott HIV fertőzésükkel, ami mindenképpen a kezelés  eredményessége 
+mellett szól. <br>  <br>  Olyan, hogy "A rák", nem létezik. Ez egy összefoglaló név a szervezet  
+saját sejtjeinek kóros burjánzására. Gyakoratilag ahány daganat, annyi  féle. Vannak daganatok, amik 
+egyszerű műtéttel gyógyíthatóak, vannak,  amelyek kemoterápiával gyógyíhatóak, vannak, amelyek úgy 
+sem.  (Egyébként évek óta pedzegetnek génterápiás módszereket, nyilván a  tisztelt cikkiró inkább 
+békében meghalna egy esetleges daganatos  megbetegedés esetén, mintsem beadják neki ezek egyikét.) A 
+daganatokat  általáan az alapján osztályozzák, hogy a szervezet melyik szövetéből  indultak ki: A 
+leukémiák vérsejt eredetűek, a melanómák pigmentsejt  eredetűek, a bazaliómák pedig korlátlanul 
+osztódó hámsejtek. Az egyes  típusokon belül is minden egyes daganat más és más, ha két ember  
+ugyanazt a kezelést kapja a leukémiájára, attól az egyik még vígan  meggyógyul, míg a másik meghal 
+hetek alatt. Azzal dobálózni, hogy ki  gyógyul ki a rákból nem nagyon érdemes, gyakorlatilag 
+szerencse dolga.  Miniszterelnökök is belehalhatnak és különösebb orvosi beavatkozás  nélkül is ki 
+lehet gyógyulni belőle (Bár ez utóbbi az "orvosi csoda"  kategóriába tartozik.)<br>  <br>  <br>  
+"Samuelt Firski azért perelte be az Egyesült Államokat, mert állítása  szerint &#8222;az AIDS-vírus 
+az U. S. Special Virus program mesterségesen  előállított bioterméke&#8221;. Az említett program az 
+USA-ban zajló kísérlet  volt 1962 és 1978 között."<br>  <br>  Ha eltekintünk attól, mit tudtak a 
+virológiáról 1962 ben,valamint a  ténytől, hogy ekkor még egyetlen, az HIV -hez hasonló szerkezetű 
+vírus  sem volt ismert, az mindenképpen érdekes, hogy 1981 -es felfedezése  után a HIV járvány 
+eredetét sikerült 1959 -ig visszavezetni. (Magyarul  találtak betegeket, akik AIDS -hez hasonló 
+tünetekkel kísérve haltak  meg már 1959 -ben, amikor természetesen senkinek fogalma sem volt róla,  
+mi az az AIDS, hát még a HIV. Azon kívül a HIV vírus legközelebbi  rokona egy SIV (Simian 
+Immundeficiency Virus - Majom Immunhiányos  Vírus) nevű jószág, amit 1985 -ben fedeztek fel egy 
+Rhesusmajomban, a  HIV felfedezése után. Azóta kiderült, hogy ez a víruscsalád  gyakorlatilag minden 
+főemlősben jelen van, az egyes változatai  fajspecifikusak, nehezen fertőznek más fajokat. Ha a CIA 
+fejlesztette  ki a HIV vírust, akkor vagy harminc-negyven hasonló vírust is el  kellett készítnie, 
+amelyek a különböző majomfajokat fertőzik és ezeket  ugyanúgy elterjeszteni egész Afrika területén. 
+Sőt, számos majomban a  saját SIV vírusa nem is okoz betegséget, tehát a CIA laboratóriumokban  még 
+azt is fel kellett deríteniük, mitől válik egy faj (Nem egyes  egyedek, egy egész faj!) immunissá a 
+vírusra, hogyan szelidítik  egyszerű szatellitavírussá, amely jelen van ugyan, de csak apróbb  
+kellemetlenséget okoz. Bízvást állíthatom, hogy ez manapság, jó harminc  évvel később is lehetetlen 
+feladat lenne, nem hogy a hatvanas-hetvenes  években, amikor molekuláris biológia gyakorlatilag nem 
+is létezett. <br>  <br>  Ha pedig ez mind nem elég, az USA Nixon elnöksége alatt, 1969 -ben adt  fel 
+kiterjedt biológiai fegyverprogramját, amelybe dollármilliárdokat  öntöttek a hidegháború alatt. Itt 
+foglakoztak mindenféle trópusi  betegséggel, anthraxszal, pestissel, miegymással, vagyis az 
+eképzelhető  legveszélyesebb kórokozókkal. Ha ezeket a kísérletket abbahagyták,  miért csak a HIVvel 
+dolgoztak tovább? <br>  <br>  Harmadik érvként pedig: A HIV fertőzés első tüneteit 5-8 évvel a  
+fertőzés után mutatja. A hivatkozott mintegy 16 évnyi idő alatt akkor  sem sikerülhetett volna 
+előállítani a HIV vírust, ha minden egyes  kísérlet elsőre sikerül. Azon kívül a CIA miért fektetne 
+pénzt egy  olyan fegyverbe, amelyik tíz év alatt öl? Miért nem inkább egy  virulensebb koleratörzset 
+fejlesztettek ki, amely aztán hetek alatt  elviszi az áldozatát?<br>  <br>  <br>  <br>  "Az 1990-es 
+években egy elismert jogász, a maga is HIV-pozitív Boyd E.  Gravest indított pert azzal a váddal, 
+hogy a HIV-vírus az izlandi juhok  megbetegedését okozó Visna-vírus elemeit tartalmazza. A Visnát  
+egyébként a náci Németországban fejlesztette ki a berlini Birodalmi  Főlaboratóriumban 1943 
+májusának elején Gustav Bloominger őrnagy."<br>  <br>  Attól eltekintve, hogy az USÁban az 
+intelligens tervezés elmélet  iskolai oktatásáért is pereskedtek már, ami alapvetően semmit sem  
+jelent, eltekintve attól, hogy a molekuláris biológia ekkor még csak a  jövő zenéje volt, a DNS 
+szerkezetét például 1953 -ban sikerült csak  megfejteni, valamint hogy mi a rákért vitték volna 
+éppen Afrikába a  vírusukat, ha a nácik hozták létre, a Harmadik Birodalom 1933-45 -ig  állt fenn 
+mindössze, egyszerűen nem volt idejük egy ilyen lassú  lefolyású betegség tanulmányozására. <br>  
+<br>  <br>  <br>  Végezetül az őssejtkutatást valóban nem szeretik az USÁban. Tényleg  nemsok okuk 
+van erre. De ez pillanatnyilag annyit jelent, hogy a  kibontakozóban lévő kínai orvostudománynak is 
+lesz majd jó pár  szabadalma, mert ezen a területen nem gázolják le őket az amerikaiak. <br>  <br>  
+<br>  <br>  Tisztelettel:<br>  <br>  Jancsika</div>  <br>Zsír levél, bár jobban is kifejthetted 
+volna. Köszönjük.<br><br><b>nemere írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Blogadmin szcientológiás bejegyzéséhez 
+írt kommentemet ide másolom levélnek is:<br>  <br>  Kedves Blogin/Blogadmin!<br>  Református lelkész 
+vagyok. Azért regisztráltam, hogy megvédjem a mundér becsületét: a bőrüléses mercis lelkész 
+hivatásunknak nem tipikus képviselője. Egyházunkban a lelkészek közül a püspökök járnak jobb 
+verdákkal, de az sem az ő tulajdonuk, igaz kizárólagos használatukban vannak. (Mármint a bőrüléses 
+kategóriájú autók.) Kollégáim zöme egyszerű talpas, akiknek abban az esetben jár bőrülés, ha a saját 
+ülőfelületén van bőr.<br>  Mármost, ha az általad emlegetett lelkésztársam nem lelkész, de még csak 
+nem is esperes, akkor biztos, hogy nem hivatásbeli szorgalmának köszönhetően érintkezik a 
+kétségbevonhatatlanul saját tulajdonú ülőfelülete az autó ülésének bőrével.<br>  A Magyarországi 
+Református Egyházban, illetve a mi egyházkerületünkben ún. szabályrendelet határozza meg az önálló 
+gyülekezeti lelkészek számára a gyülekezetek (a mi munkaadóink) által fizetendő minimális készpénz 
+iletmény mértékét. Ez jelenleg: 68000 forint. (Ez a mi mnimálbérünk.) A vidéki gyülekezetek jelentős 
+része éppen hogy csak ki tudja fizetni ezt a minimumot. Ezt nem panaszul írtam le, hála Istennek nem 
+halunk éhen, s ma már - lassan-lassan - ez is nagy szó. De azért szeretném, ha tudnák a gyárlakók, 
+hogy egyházunk a mercis lelkészekben szegény terület.</div><br>Az <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=62">Egy szcientológussal 
+beszélgettem</a> című cikkem komoly felháborodást keltett sokakban. A hozzá kapcsolódó 
+Bombagyár-rádióriport még hátra van, illetve tartozom egy újabb cikkel, amelyben elmagyarázom, hogy 
+erre a sokak által komolyan kritizált írásra miért volt szükség, és mi volt a célja, értelme. Nem, 
+nem az, hogy szcientológusok lennénk.<br><br><b>Zolly írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Üdv!<br>  <br>  Bocsi ha már volt, vagy ismeritek. <br>  <br>  Cigányfajták:<br>  <br>  
+Közönséges cigány:<br>  Valamennyi cigányfajta közül ez a legelterjedtebb. Hazánkban sokfelé 
+el&#245;fordul, kedvenc tartózkodási helyei: napsütötte szemétdombok, csatornák. Igen veszélyes 
+fajta, irtása több, mint ajánlott! Bármilyen környezetben, pl.: rádióaktív sugárzással szennyezett 
+területeken, vagy mérgesgázzal telített helyiségekben is elemében van. A legszéls&#245;ségesebb 
+körülményeket is könnyedén elviseli (sajnos). Fogságban is jól szaporodik. A n&#245;sténycigány 
+egyszerre 6-24 kölyköt ellik. A vemhesség ideje 1-2 hónap.<br>  Ha kedvez&#245;ek a feltételek, 
+ugyanabban az évben 12-24 alom is világot láthat. A a fiatal egyedek hordákba tömörülnek, és 
+kötözködnek, szemétkednek fajtársaikkal és az emberekkel. Irtási tipp: igen nagy kaliber&#251; 
+géppuska, vagy vállról indítható rakéta.<br>  <br>  Csöves cigány:<br>  A legártalmatlanabb cigány, 
+mivel mindig alkohol befolyása alatt áll. Ismertet&#245;jele: a cigányokra jellemz&#245; sötétbarna 
+b&#245;rszín, émelyít&#245;en büdös, tespedt seggszag. Intelligenciahányadosa magasabb a többi 
+cigányénál, bár az övé is inkább a nullához van közelebb, mint a háromhoz. Éppen ezért 
+kiszámíthatatlan és igen agresszív, de veszélytelen faj. Védekezési tipp: boxer, vagy acélbetétes 
+bakancs. Nem védett!<br>  <br>  Döglött cigány:<br>  A legszelídebb és legártalmatlanabb faj. De 
+sajnos elég ritka. Azért, ha találkozunk ilyennel, pl.: romos házakban, ne felejtsünk rányomni egy 
+szép, ragadós, mélyr&#245;l felkrákogott, zöld túrhát, majd szelíd "Kurva anyádat te mocskos 
+cigány!!!" mondattal hagyjuk nyugodtan magára ezt az igen békés természet&#251;, szimpatikus 
+cigányfajt.<br>  Szaporítása tulajdonképpen könny&#251; lenne, csak ez a módszer törvényes kereteken 
+kívül esne (Magnum vagy Beretta). Azért reménykedjünk, hogy egyszer majd ez a faj lesz túlnyomó 
+többségben.<br>  <br>  Dolgos cigány: Na, ilyen nincs!<br>  <br>  Kubikus cigány:<br>  A kubikus 
+cigányfajta vezére: a vajda, melyet dagadt teste, drótacél vastagságú nyaklánca különbözteti meg 
+fajtársaitól. Különösen nagy étvágyú ez a faj, de csak munkaid&#245; alatt. A falkából egyszerre 
+csak egy cigány "dolgozik", a többi árnyékos helyre húzódva figyeli, miközben jóíz&#251;en söröznek. 
+Csakúgy, mint a többi cigus, a kubikus cigány is felt&#251;n&#245;en barna testszínnel rendelkezik. 
+Esze nyilvánvalóan nincs. Ha megtámad egy ilyen minket, van egy hatásos módszer, amellyel 
+garantáltan el&#251;zhetjük közelünkb&#245;l. Kiáltsunk rá: Munka! De vigyázat, könnyen 
+összekeverhetjük ezt a fajt az oláh cigánnyal (amit lentebb részletesen ismertetünk), akikb&#245;l 
+ez a kijelentés már egészen más hatást vált ki.<br>  <br>  Oláh cigány:<br>  A leggaládabb, szemét, 
+rosszindulatú, igen veszélyes fajta. Benne minden negatív cigánytulajdonság megtalálható. Ami 
+mozdítható, az nincs biztonságban. F&#245; fegyvere a zsebkése, melyet mindenhova magával visz. 
+Kedvenc járm&#251;vük a Lada, amely legtöbbször piros szín&#251;, de a Bkv járatait sem vetik meg. 
+Különösen éjszaka aktív. IQ szintje hihetetlenül alacsony, antiszociális, obszcén szavakat 
+el&#245;szeretettel használ. F&#245; tápláléka a szotyi, melyet más cigányfajtáktól zsákmány<br>  
+<br>  <br>  <br>  <br>  Zolly</div><br>Ismertük, de vicces.<br><br><br><br>Nos, ilyen könnyű 
+levelekre válaszolni.<br><br> </div> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2007-10-26&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=147&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=147&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=147&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment8056"></A>15. <A HREF="mailto:szt1987@gmail.com" STYLE="color: #000000">Theg</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-28 18:14:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_327.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A orkfajták hosszabb leírása:<br />
+<B><a href="//vampire666.mindenkilapja.hu/?m=821853" target="_new" style="color: #000000;">http://vampire666.mindenkilapja.hu/?m=821853</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7624"></A><FONT COLOR="#FF0000">14. </FONT><A HREF="mailto:treydar@gmail.com" STYLE="color: #000000">psyho</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-27 08:49:40</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1022.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7621"></A>13. Lezuzius</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-27 07:18:04</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_938.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">In memoriam "zámolyiak meghurcoltatása":<br />
+<br />
+A KLASSZIKUS VERZIÓ:<br />
+A hangya a forró nyarat szorgalmasan végigdolgozta, építgette-szépítgette<br />
+házát, és élelmet halmozott fel felkészülvén a kemény télre. A tücsök úgy<br />
+gondolta, a hangya bolond, és végigmulatta anyarat. Eljött a tél, a<br />
+hangya<br />
+nem fázott és nem éhezett, ám a tücsök élelem és szállás híján a hidegben<br />
+lelte halálát.<br />
+A MODERN VERZIÓ:<br />
+A hangya a forró nyarat szorgalmasan végigdolgozta, építgette-szépítgette<br />
+házát, és élelmet halmozott fel felkészülvén a kemény télre. A tücsök úgy<br />
+gondolta, a hangya bolond, és végigmulatta anyarat. Eljött a hideg tél,<br />
+és<br />
+a nélkülözo tücsök sajtótájékoztatót hívott össze azt a kérdést feszegetve,<br />
+hogyan lehet az, hogy míg egyesek kint fagyoskodnak a hidegben, mások úgy<br />
+élnek, mint a hangya. A CNN, az RTL Klub, a TV2 és az MTV felvételeket<br />
+mutatott be a didergo tücsökrol, és a melegben, terített asztal mellett<br />
+henyélo hangyáról.<br />
+A világ döbbenten konstatálta az égbekiáltó különbséget. Hogyan<br />
+lehetséges, egy ilyen jól fejlodo, épülo országban a tücsköt így sorsára<br />
+hagyni?   <B><a href="//www.freeweb.hu/jobbpart/erdcikk/add.php?top=12" target="_new" style="color: #000000;">http://www.freeweb.hu/jobbpart/erdcikk/add.php?top=12</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7620"></A>12. Lezuzius</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-27 07:01:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_938.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"> ......Ott, a fák között, &#245;rizve és védve, az én<br />
+pénzemb&#245;l élnek a "közszolgák", a politikusok, pazar villáikban, ahová<br />
+ugyancsak az én pénzemb&#245;l vásárolt luxuskocsikon érkeznek, s telik<br />
+nekik palackozott forrásvízre, amíg az én gyomromban n&#245; a rák a<br />
+klórtól, amit a nekem ivási és tisztalkodási céllal, igen drágán<br />
+kiutalt szennyvízhez kevernek, hogy ne törjön ki pestisjárvány....     <B><a href="//www.freeweb.hu/jobbpart/erdcikk/add.php?top=17" target="_new" style="color: #000000;">http://www.freeweb.hu/jobbpart/erdcikk/add.php?top=17</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7619"></A>11. Lezuzius</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-27 06:49:39</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_938.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B><a href="//www.freeweb.hu/jobbpart/erdcikk/add.php?top=13" target="_new" style="color: #000000;">http://www.freeweb.hu/jobbpart/erdcikk/add.php?top=13</a></B>     újabb összeesküvés elméletzek?   ....<br />
+Ismeretlen betegségek lépnek fel<br />
+<br />
+Dr. Day szerint olyan új betegségek jelennek meg, amelyeket korábban nem ismertek. Igen nehéz lesz ezeket diagnosztizálni, és még nehezebb kezelni, legalábbis egy bizonyos ideig. Itt Dr. Dunegan az AIDS-t említi, de mi a magunk részér&#245;l hozzátehetjük az ebolát, és ki tudja, esetleg azt a vírust is (Severe Acute Respiratory Syndrome, azaz SARS), amely a közelmúltban járványosan terjedt els&#245;sorban Kínában, Tajvanon, Kanadában és oly sok áldozatot szedett.<br />
+<br />
+Dr. Day azt is kijelentette, hogy ?mindenféle rákbetegséget gyógyítani tudunk. Az erre vonatkozó tudományos ismeretanyag a Rockefeller Intézetnél van elzárva, és ha valaha döntés születik err&#245;l, akkor nyilvánosságra fogják hozni. De vegyék csak figyelembe, ha az emberek nem halnak meg többé rákban, akkor milyen gyors ütemben válik a Föld túlnépesedetté. Az ember éppen úgy meghalhat rákban, mint bármi másban.? Ebb&#245;l a megfontolásból a rák kezelését els&#245;sorban olyan irányban fejlesztik, hogy csökkentsék a betegek szenvedéseit. Az a kommentár is elhangzott, hogy esetleg a rák gyógyítására vonatkozó dokumentációt mégis csak nyilvánosságra kell hozni, mert el&#245;fordulhat, hogy független kutatók is hozzájutnak ezekhez az ismeretekhez. (Mindenesetre napjaink valósága Magyarországon is az, hogy egyel&#245;re csak korlátozottan lehet eredményesen gyógyítani különböz&#245; rákbetegségeket.)<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7615"></A><FONT COLOR="#FF0000">10. </FONT>ashnur</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-27 03:52:42</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_131.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7597"></A>9. warhamster (40.000) -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-27 00:41:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_250.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">az aids-est már én is belinkeltem a posztodhoz kommentként... :(</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7544"></A><FONT COLOR="#FF0000">8. </FONT><A HREF="mailto:erikerik@citromail.hu" STYLE="color: #000000">Bosza</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-26 21:46:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_978.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7532"></A>7. ahus -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-26 20:55:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Mazsi Steellel egy cipőben szívok Magyar (sic!) Bálint miatt...<br />
+Egyébként tetszett a vírusos levél.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment7529"></A>6. Mintapolgár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-10-26 20:50:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1071.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Jancsika levele nagyon ütős! <br />
+Oda az összeesküvés elmélet. :)<br />
+Rendesen körbejárt mindent, nem elkábítva a félinformációktól.<br />
+Logikus és reális írás.<br />
+<br />
+Blogin, így kell ezt csinálni! Publikálni a másik oldalt is.<br />
+Köszönöm.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=147&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=147&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=147&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

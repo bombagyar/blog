@@ -1,0 +1,536 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1713#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Kopogtatócédula-biznisz, 2006&#8211;2008";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Kopogtatócédula-biznisz, 2006&#8211;2008<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 december 22. 17:26:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1713.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><style>    	<!--  		@page { size: 21cm 29.7cm; margin: 2cm }     
+                           		P.sdfootnote { margin-left: 0.5cm; margin-bottom: 0cm;   font-size:     
+    10pt       }                		P { margin-bottom: 0.21cm }  		A.sdfootnoteanc {   font-size: 90%  
+ }                	--></style>      <p style="margin-bottom: 0cm; font-weight: bold;" align="justify"><font size="2">A                kopogtatócédulák           gyűjtése a magyar    
+választási rendszer egyik         legjellemzőbb     és          legnevetségesebb pontja: 750         
+    ajánlást kell  összegyűjteni     egy olyan       országban,       amelyben     az emberek  már   
+hallani sem   akarnak a             politikáról,      céduláikat   az érkezés     napján    kidobják 
+      vagy azt sem tudják, mire       való. Sőt,              előfordul az is,   hogy ezek     a   
+papírok   meg sem   érkeznek.  A       rendszer alig   szabályozott,     az   arányok             
+eltúlzottak,    a   visszaélések pedig       évről évre  megjelennek és         megtorlatlanok     
+maradnak     &#8211;         csupán    azért,     mert ezek   nélkül nem is létezne a            
+rendszer!</font></p><p style="margin-bottom: 0cm;" align="justify"><font size="2"><span style="">2006  februárjában           ismertté vált, hogy a              jobboldalinak mondott   
+FIDESZ       cédulákat   gyűjtött a        szélsőbaloldali,         kommunista               
+Munkáspártnak.</span><sup><span style="display: inline;"><a target="_blank"class="sdfootnoteanc" name="sdfootnote1anc" href="./index.php?post=1713#sdfootnote1sym"><sup>1</sup></a></span></sup><span style="">  Az       
+ellenségem ellensége a                           barátom &#8211; ez volt az  elv, amikor az MSZP   
+pedig   az MDF és az   SZDSZ   nevű           törpepártok                megsegítésére sietett, és   
+cédulákat    gyűjtött       nekik.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote2anc" href="./index.php?post=1713#sdfootnote2sym"><sup>2</sup></a></span></sup><span style="">  Március   
+9-én az MSZP elismerte,                               hogy egyik aktivistájuk  jogtalan adatkezelést 
+  végzett. A KDNP és a      Centrum     is           lebukott,       amikor   a     közösen leadott  
+ szelvények  egyikén a     számláló magát     fedezte    fel,         pedig ő másra               
+voksolt.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote3anc" href="./index.php?post=1713#sdfootnote3sym"><sup>3</sup></a></span></sup><span style="">  A Zöld           Párttal nem    
+       megegyező             Zöldek Pártja  is 762 érvénytelen vagy hamis cédulát  adott   le,     
+ám               védekezésük szerint   vétlenek      az       ügyben, szándékos provokáció           
+         történt.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote4anc" href="./index.php?post=1713#sdfootnote4sym"><sup>4</sup></a></span></sup><span style="">  A         Jobbik&#8211;MIÉP     
+                    közös jelöltje is hamis  cédulákkal bukott le: a leadott 1245 cédulából  522 
+darab                                 fénymásolat volt. A közös jelölt,  Hegedűs Tamás azt 
+állította, hogy     politikai        gyilkosság                     áldozata   
+lett.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote5anc" href="./index.php?post=1713#sdfootnote5sym"><sup>5</sup></a></span></sup><span style="">  Később a         Jobbik       
+fellebbezett,                   álláspontjuk  szerint nem megállapítható, hogy egy                
+kopogtatócédula eredeti-e, azokon         ugyanis           nincsen  egyedi azonosításra alkalmas    
+           jel.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote6anc" href="./index.php?post=1713#sdfootnote6sym"><sup>6</sup></a></span></sup></font></p>    <p style="margin-bottom: 0cm;" align="justify"><font size="2"><span style="">A  kopogtatócédulákon           szereplő adatokat      
+                 elvileg  tilos tárolni, ám a pártok között  nyílt titok a törvénysértés:            
+          mindannyian             címlistákat készítenek a  támogatókról. Azt mondják nekik, nem 
+kell            kitölteni a                 mezőket,       elég aláírni a  cédulát, ők majd beírják 
+a párt    nevét.         2006-ban került   napvilágra     egy                 gyulai  adatbázis, 
+melyben a   választók         különösen  érzékeny   személyes adatának     számító      politikai    
+           preferenciái is         szerepeltek. A FIDESZ az   MSZP-t  hibáztatta, de     maga is   
+érintett     volt az                     ügyben.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote7anc" href="./index.php?post=1713#sdfootnote7sym"><sup>7</sup></a></span></sup><span style="">  Az        
+ adatvédelmi biztoshoz                         fordult a médiából  megismert, csupán a jéghegy   
+csúcsának        számító     sorozatos       visszaélések    miatt             Polgár Tamás mint   
+magánszemély is.  Dr.           Péterfalvi   Attila,     korábbi adatvédelmi    biztos már         
+2002-ben       is aggályosnak     nevezte a         magyar      kopogtatócédula-rendszer       
+működését</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote8anc" href="./index.php?post=1713#sdfootnote8sym"><sup>8</sup></a></span></sup><span style="">,  a pártok           azonban     
+    valamiért még               mindig nem  akarnak változtatni   rajta.</span></font></p><p style="margin-bottom: 0cm;" align="justify"><font size="2"><span style=""><br></span></font></p><a target="_blank"href="./resources/pdfs/blogin_cedula_ombudsman.pdf" target="_new"><img src="./pic/pdf_icon.gif" title="resources/pdfs/blogin_cedula_ombudsman.pdf" align="absmiddle" border="0"></a>&nbsp;&nbsp; <a target="_blank"style="color: black;" href="./resources/pdfs/blogin_cedula_ombudsman.pdf" target="_new"><b>Ombudsmani  
+                               vélemény a kopogtatócédulázásról</b></a><br><font size="2"><span style=""><br></span></font><div style="text-align: justify;"><font size="2"><span style="">2006-ban  
+                    történt   tehát,   hogy a kereszténydemokraták          elnöke, képviselője,   
+Bartók       Tivadar             visszalépésre      kényszerült, mivel a cédulák vizsgálatakor    a  
+             számolást végző     okmányirodai           vezető a  saját   nevére és aláírására    
+bukkant, pedig ő       nem adta   le           céduláját. Később            szintén     
+kereszténydemokrata támogatóként        találták meg a helyi MSZP-s                 kampányfőnököt   
+   is.     Bartók azt   állította,   hogy     az egész  választási rendszer     &#8222;úgy     
+rossz,     ahogy                     van&#8221;.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote9anc" href="./index.php?post=1713#sdfootnote9sym"><sup>9</sup></a></span></sup><span style="">  Az ügy    
+   miatt választási           csalás                 bűntett  gyanúja miatt indult nyomozás, mely   
+során több      száz lakost       hívott     be a     rendőrség           Lentiben.   A  szintén   
+csalás gyanújába   keveredett          Független     Kisgazdapárt és a                  
+Kereszténydemokratapárt (sic!)     provokációról,          szándékos     lejáratásról beszélt.  A    
+   szemtanúk és           érintettek   szerint maga   Bartók      sem     tudott a     csalásról,   
+amely csak azért     bukott  le, mert az               számolta a     cédulákat, akinek   a        
+nevében   leadtak egyet. Hogy ez     mennyire véletlen,     abban  is               megoszlott a     
+    közvélemény álláspontja,  ám az   bizonyossá     vált,   hogy a       kopogtatócsalásban      
+lebukni               csak akkor lehet, ha valaki le akar   buktatni, de             azokat is    
+hírbe lehet hozni,   akik nem   is         csalnak     (például    a postán érkezett       cédulákat 
+      nem tudja a    párt ellenőrizni).     A     rendőrség sem       tudta            
+megállapítani,   hogy ki állt a     tömeges hamis  cédula   mögött,   mert         Bartók csak 
+leadta              azokat, nem ő     gyűjtötte. A     politikus szerint a      kopogtatócédulás     
+    választási          rendszer     tarthatatlan, mert ezzel         szándékosan      kigolyózható 
+bármely                 párt.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote10anc" href="./index.php?post=1713#sdfootnote10sym"><sup>10</sup></a></span></sup><span style="">  Ebben  
+           az évben a                   választási   csalások  elleni tiltakozásul a Berta nevű 
+kutyát     jelöltként        indító       Magyar               Szociális Zöld Párt    elégette az 
+összegyűjtött       kopogtatócéduláit,            valamint Sólyom   László             köztársasági  
+elnöknek       bizonyítékokat   adott át a Magyar            Szocialista Párt   és más   pártok 
+választási                csalásával           kapcsolatban.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote11anc" href="./index.php?post=1713#sdfootnote11sym"><sup>11</sup></a></span></sup><span style="">  A               Zöldek által 
+a                 köztársasági   elnöknek  átadott körülbelül 1700 darab     fénymásolt  szelvény,   
+  valamint                       bizonyító erejű    hangfelvételek nem     kondították meg a  
+vészharangot: az elnök   nem             válaszolt,         az     eljárásra      alkalmas   
+hivatalok pedig egytől egyig azt     állították,    hogy     az     ügyben     nincs         
+eljárási     joguk. A    Fővárosi        Főügyészségre áprilisban   érkezett      bejelentés         
+    ezen esetek   és   CD-n     terjesztett     választói  adatbázisok     miatt, A   Legfőbb       
+Ügyészséghez      pedig     már   májusban       megérkezett     egy panasz, de az    ügyekből       
+semmi sem         lett.</span></font></div><p style="margin-bottom: 0cm;" align="justify"><a target="_blank"href="./resources/pdfs/blogin_cedula_legfobbugyeszseg.pdf" target="_new"><img src="./pic/pdf_icon.gif" title="resources/pdfs/blogin_cedula_legfobbugyeszseg.pdf" align="absmiddle" border="0"></a>&nbsp;&nbsp; <a target="_blank"style="color: black;" href="./resources/pdfs/blogin_cedula_legfobbugyeszseg.pdf" target="_new"><b>Panasz a Legfőbb           
+                      Ügyészségnek</b></a><br></p>  <p style="margin-bottom: 0cm;" align="justify"></p>              <p style="margin-bottom: 0cm;" align="justify"><a target="_blank"href="./resources/pdfs/blogin_cedula_fovarosifougyeszseg.pdf" target="_new"><img src="./pic/pdf_icon.gif" title="resources/pdfs/blogin_cedula_fovarosifougyeszseg.pdf" align="absmiddle" border="0"></a>&nbsp;&nbsp; <a target="_blank"style="color: black;" href="./resources/pdfs/blogin_cedula_fovarosifougyeszseg.pdf" target="_new"><b>Bejelentés a Fővárosi   
+                              Főügyészségnek</b></a><font size="2"><b><br></b></font></p><p style="margin-bottom: 0cm;" align="justify"><font size="2"><b><br></b></font></p><p style="margin-bottom: 0cm;" align="justify"><font size="2"><b>A 2006-os  választás komikumát az     
+adja,         hogy míg    országosan 196           induló adta le a szükséges          hétszázötven  
+           ajánlószelvényt,  addig csupán 6 fő   érte el   a     750     szavazatot. Az indulók    
+kirívó                   többsége, 97%-a csak a cédulákat  adta le,     később     nem     szavaztak 
+        rájuk.</b></font></p>        <p style="margin-bottom: 0cm;" align="justify"><font size="2"><span style="">A  Zöld Párt   2004-ben   az   európai parlamenti          listaállítás   
+során a                 Magyar Vidék  és Polgári   Párttal   közös jelöltet    állított. A     
+választási       bizottság          2004.         május 16-i   közleményében    kijelentette, hogy a 
+  leadott     cédulák közül    azokat     nem           fogadja   el,       amelyek csak   az egyik  
+ párt nevét  s nem   egyszerre     mindkettőt     tartalmazzák.   Az   így                    
+használhatóként megmaradt 23&nbsp;109          kopogtatócédulából az   Országos    Választási       
+Bizottság               valamilyen probléma        miatt   (többszörös jelölés, téves  kitöltés      
+ stb.)     2995-öt   minősített                    érvénytelennek. Bár   így is több mint    
+20&nbsp;100 érvényes     cédulájuk       maradt, az  OVB         51/2004. (V.           17.)   számú 
+  határozatával  kizárta a két     pártot a     listaállításból.          A   bizottság az     
+elutasítást       többek     között  arra   alapozta,   hogy a   Zöld     Párt     részéről        
+elismerten előfordult     néhány olyan     eset,   amikor   a   párt        nevét maga a         
+gyűjtő írta a   papírra, a      választópolgár   pedig a saját       adatait. (A        vonatkozó    
+       törvény   50. §-a ezt az   eljárást    nem hozza   az     érvénytelenek                 
+között.)</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote12anc" href="./index.php?post=1713#sdfootnote12sym"><sup>12</sup></a></span></sup></font></p>    <p style="margin-bottom: 0cm;" align="justify"><font size="2"><span style="">2007-ben  ismét botrány       tört ki a szavazás       
+  körül:                    kiderült, hogy egy cigány önkormányzat minden  MSZP-re     leadott       
+      kopogtatócéduláért 1000            forintot       fizetett. A szavazatvásárlót      
+felfüggesztett           börtönre   ítélték,  de a     szocialisták       közül senkit sem       
+vontak                felelősségre.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote13anc" href="./index.php?post=1713#sdfootnote13sym"><sup>13</sup></a></span></sup></font></p>    <p style="margin-bottom: 0cm;" align="justify"><font size="2"><span style="">Az  idei IX. kerületi      
+ időközi választáson a                    Balogh         Béla vezette Magyar Nemzetért Mozgalom  
+visszalépett a Jobbik                 Magyarországért         Mozgalom  javára,         közel ötszáz 
+kopogtatócédulát  átadva a           Jobbik-jelölt       Szegedi         Csanádnak. Balogh  nyílt 
+levélben         jelezte, hogy Szegedi           nem tartotta be az          átadáskor       nekik 
+tett több ígéretét,  sőt azt   állította: ő                 nem is tudja, milyen nehéz               
+ kopogtatókat gyűjteni.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote14anc" href="./index.php?post=1713#sdfootnote14sym"><sup>14</sup></a></span></sup></font></p>    <p style="margin-bottom: 0cm;" align="justify"><font size="2"><span style="">A  Jobbik a választási   bizottságba Novák  Elődöt     
+                          delegálta, aki vétót emelt az MDF,  a MIÉP és a Zöld   Párt cédulái  
+ellen.   A         Választási         Bizottság     12.         OEVB. 26/2008.  (XII.20.) számú   
+döntésével     elfogadta        az indítványt,         melyben Novák azt       állítja,        hogy 
+ezen   pártok     ajánlásainak   egy     részét  nem eredeti         választószelvényen adták        
+       le.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote15anc" href="./index.php?post=1713#sdfootnote15sym"><sup>15</sup></a></span></sup><span style="">  Egy F.         D. monogramú   
+          személy             FIDESZ elleni bejelentését  azonban     elutasítják</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote16anc" href="./index.php?post=1713#sdfootnote16sym"><sup>16</sup></a></span></sup><span style="">,        melyben egy e-mailre   
+                        hivatkozva a bejelentő azt állítja,  a párt jogellenesen pénzt ajánlott (700 
+                    forintot      egy         órára) a cédulagyűjtőknek.</span></font></p>    <p style="margin-bottom: 0cm;" align="justify"><font size="2">A  Jobbik nem élt beadvánnyal a többi     
+    jelölttel  szemben. A       Humanista               Párt részéről     dr. Várady  Tibor már a    
+     leadási időszak legelején,       november  20-án     leadott     786       cédulát, egy     
+nappal         megelőzve  az SZDSZ-t, mely alig       több, csak 814     cédulát      
+gyűjtött.</font></p>                  <p style="margin-bottom: 0cm;" align="justify"><font size="2">2008-ban      még mindig     ugyanazokat     az           egyedi jelölés       nélküli  
+szelvényeket     használják, mint       2006-ban,   amikor   a    Jobbik jelöltje hamis              
+   cédulái napvilágra      kerülése     után ezt szóvá   tette.   Egyik      párt sem tartotta 
+fontosnak,   hogy     a     Magyar               Állami  Nyomda által     biztosított   technikai   
+lehetőségeket    kiaknázva     másolhatatlan   vagy             legalábbis       nagyon      nehezen 
+hamisítható     ajánlószelvényeket        vezessen be.   Mégis a kérdéses             esetekben az   
+ állami       vállalat   szakértője         véleményezi,    hogy egy cédulát ők   gyártottak-e,     
+holott         sem  különleges     papírt,           tintát,   sem   egyéb  egyedi   azonosító jelet 
+nem       használnak.</font></p>        <p style="margin-bottom: 0cm;" align="justify"><font size="2"><span style="">A  mostani esetben                   érdekes, hogy a   bizottság   szerint a 
+     Zöld Párt   mindössze     13 érvényes  ajánlást     adott   le,           holott     ez 
+irreálisan   alacsony  szám. A     szintén       buktatott MDF     feljelentést   tett,        
+állításuk     szerint a     három   pártnál    talált gyanúsan nagy           számú     érvénytelen  
+    jelölés   fölveti a   gyanúját,   hogy  valaki         visszaélt egy                 
+adatbázissal.</span><sup><span style=""><a target="_blank"class="sdfootnoteanc" name="sdfootnote17anc" href="./index.php?post=1713#sdfootnote17sym"><sup>17</sup></a></span></sup><span style="">              Elvileg 
+lehetséges,                 hogy     listamérgezéses  megoldással valaki szándékosan   hibás    
+kopogtatókat             adjon   át     egy       pártnak, de ilyen     eset  még nem     
+ismert. A MIÉP is tagadja, hogy csalt volna: közleményükben a rendőr</span></font><font size="2"><span style="">ség </span></font><font size="2"><span style="">segít</span></font><font size="2"><span style="">ségét kérik, hogy állapít</span></font><font size="2"><span style="">sák meg, ha valóban nem az Állami Nyomda Nyrt. állította elő az eredetiekkel telje</span></font><font size="2"><span style="">sen megegyező,</span></font><font size="2"><span style=""> kérdé</span></font><font size="2"><span style="">se</span></font><font size="2"><span style="">s hitelű cédulákat, akkor kic</span></font><font size="2"><span style="">soda.</span></font></p>    <p style="margin-bottom: 0cm;" align="justify"><font size="2">A  Zöld   
+      Párt sajtószolgálata             tájékoztatott,  hogy a     párt         fellebbezést nyújtott 
+  be az   OVB-nek,  melyben           sérelmesnek nevezik,       hogy a     tüzetes       
+ellenőrzést      csak   három pártra terjesztik     ki,   ezért kérik,  hogy     valamennyi          
+ jelölőt         vizsgálják   meg, különös        tekintettel a   Humanista Párt, valamint a Magyar  
+           Kommunista              Munkáspárt     céduláira, melyeket két      részletben adták le, 
+miután az   első     leadáskor    annyi                     érvénytelent találtak,   hogy a 750-es 
+határ    alá       süllyedtek.</font></p><p style="margin-bottom: 0cm;" align="justify"><font size="2"><br></font></p><a target="_blank"href="./resources/pdfs/blogin_cedula_fellebbezes.pdf" target="_new"><img src="./pic/pdf_icon.gif" title="resources/pdfs/blogin_cedula_fellebbezes.pdf" align="absmiddle" border="0"></a>&nbsp;&nbsp;                       <a target="_blank"style="color: black;" href="./resources/pdfs/blogin_cedula_fellebbezes.pdf" target="_new"><b>A     Zöld     Párt           
+fellebbezése</b></a><br><font size="2"><br></font><div style="text-align: justify;"><font size="2">Egy      viszont     már most bizonyosan   látszik: a            kopogtatórendszer hibás,   
+      kijátszható és      politikai         értelemben veszélyes is,         használata      nem 
+segít   a valódi       választói akarat      megismerésében,     hiszen   már         minden ismert  
+ párt      a   hamisítás       gyanújába keveredett! Mégis  életben     tartják,       ez     pedig  
+ fölveti   a   kérdést:        vajon       kinek érdeke egy rossz rendszer   működtetése?  Ki       
+húz         valójában hasznot   ebből az               esetből?  Csak   remélhetjük, hogy hamarosan  
+ fény     derül  arra, mi       is    folyik a                 háttérben.</font></div><p style="margin-bottom: 0cm;" align="justify"><font size="3">______________<br></font></p>     <ol class="references" style="font-size: 85%; -moz-column-count: 2; -moz-column-gap: 2em;">     <div id="sdfootnote1">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote1sym" href="./index.php?post=1713#sdfootnote1anc">1</a> Joó  	Hajnalka,               Magyar Hírlap, 
+2006.   február     16.<a target="_blank"class="sdfootnotesym" name="sdfootnote2sym" href="./index.php?post=1713#sdfootnote2anc"><br></a></font></p><p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote2sym" href="./index.php?post=1713#sdfootnote2anc">2</a> Beindult  	a                
+     kopogtatóbiznisz, Index (2006.           február 21.)                        
+	http://index.hu/politika/belfold/ced0221p/</font></p>  </div>            <div id="sdfootnote2">  	  
+                    </div>  <div id="sdfootnote3">    	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote3sym" href="./index.php?post=1713#sdfootnote3anc">3</a> Hamis  	ajánlószelvényeket  
+       találtak                      	Balmazújvárosban, Origo (2006.     március 16.)                
+              	http://valasztas2006.origo.hu/20060316hamis.html</font></p>  </div>  <div id="sdfootnote4">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote4sym" href="./index.php?post=1713#sdfootnote4anc">4</a> Csaknem  	800 hamis ajánlószelvény Nógrád      
+	megyében, Népszabadság                             Online (2006. március  	17.) 
+http://nol.hu/archivum/archiv-397613</font></p>                  </div>        <div id="sdfootnote5">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote5sym" href="./index.php?post=1713#sdfootnote5anc">5</a> Fénymásolt  	cédulákat adott         le a         
+                MIÉP&#8211;Jobbik  	Szombathelyen, HVG.hu (2006. március 13.)                        
+          	http://hvg.hu/valasztas2006/20060313fenymasmiep.aspx</font></p>  </div>      <div id="sdfootnote6">                          	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote6sym" href="./index.php?post=1713#sdfootnote6anc">6</a> Fénymásolt          
+	kopogtatócédulák &#8211;  a     MIÉP&#8211;Jobbik  	jelöltje                     fellebbezett a     
+    határozat ellen, Origo Választás      	2006 (2006. március 16.)</font></p>          </div>       
+         <div id="sdfootnote7">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote7sym" href="./index.php?post=1713#sdfootnote7anc">7</a> Rejtélyes      	&#8222;polgári&#8221; adatbázis   
+                      Gyulán,     HVG.hu (2006.  	március 16.)                                  
+	http://hvg.hu/valasztas2006/20060316gyulaadatbazis.aspx</font></p>  </div>  <div id="sdfootnote8">  
+                            	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote8sym" href="./index.php?post=1713#sdfootnote8anc">8</a> Hivatalos  	közleményben is, valamint Stekler     
+          Ottónak a    	590/A/2006-3                 számú tájékoztatásként.</font></p>  </div>  
+<div id="sdfootnote9">    	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote9sym" href="./index.php?post=1713#sdfootnote9anc">9</a> Lebukás  	a         kopogtatócédula-biznisz       
+        finisében, Index    	(2006.         március 16.)                        
+	http://index.hu/politika/belfold/bartokbuk03/</font></p>    </div>  <div id="sdfootnote10">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote10sym" href="./index.php?post=1713#sdfootnote10anc">10</a> Választási  	csalás ügyében fáradjon be!, Index           (2006.      
+      	május     15.)         http://index.hu/politika/belfold/ced0221p/</font></p>    </div>    
+<div id="sdfootnote11">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote11sym" href="./index.php?post=1713#sdfootnote11anc">11</a> Zöld  	Párt: Hangfelvételek a csalásról,       
+                   	Kuruc.info (2006. március         17.) http://kuruc.info/r/2/1106/</font></p>    
+</div>        <div id="sdfootnote12">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote12sym" href="./index.php?post=1713#sdfootnote12anc">12</a></font><font size="1"> 
+50.    	§ (1)             Érvénytelen az az ajánlás,  	amelyet&nbsp;<br>a) nem a           hivatalos 
+          ajánlószelvényen      	adtak         le,&nbsp;<br>b) nem a 47. § (2) bekezdése     szerint 
+         	kitöltött             ajánlószelvényen adtak          	le,&nbsp;<br>c) az ajánlási     
+szabályok          	megsértésével             gyűjtöttek.&nbsp;<br>(2)  	Aki ugyanazt a         
+jelöltet       többször       ajánlotta,    	annak   valamennyi         ajánlása 
+érvénytelen.&nbsp;<br>(3)  	Aki   több             jelöltet         is   ajánlott, annak valamennyi  
+        	ajánlása   érvénytelen.</font>       	</p>  </div>    <div id="sdfootnote13">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote13sym" href="./index.php?post=1713#sdfootnote13anc">13</a> Felfüggesztett  	börtön a     szabolcsi                     
+szavazatvásárlónak,          	Észak Index (2007. február 7.)                                    
+	http://eszakindex.hu/hir.php?tip=2&amp;melyiknap=2007-02-07&amp;melyikid=14198</font></p>    </div> 
+                               <div id="sdfootnote14">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote14sym" href="./index.php?post=1713#sdfootnote14anc">14</a> Balogh  	Béla nyílt      
+           levele Szegedi Csanádnak,                 HunHír  	(2008. december 16.)                   
+       	http://www.hunhir.hu/index.php?pid=hirek&amp;id=15246</font></p>          </div>  <div id="sdfootnote15">  	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote15sym" href="./index.php?post=1713#sdfootnote15anc">15</a> Budapest  	IX. kerület,   Ferencváros, a 12.   
+                      sz.       Országgyűlési  	Egyéni Választókerületi Választási  	Bizottság       
+  határozatai,                                
+	http://www.ferencvaros.hu/idokozi_2009_hatarozatok.php</font></p>  </div>    <div id="sdfootnote16">              	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote16sym" href="./index.php?post=1713#sdfootnote16anc">16</a> 12.  	számú Országgyűlési Egyéni               
+       	Választókerületi Választási              	Bizottság 12. OEVB. 27/2008. (XII.20.) sz.         
+            határozata</font></p>  </div>  <div id="sdfootnote17">        	<p class="sdfootnote"><font size="1"><a target="_blank"class="sdfootnotesym" name="sdfootnote17sym" href="./index.php?post=1713#sdfootnote17anc">17</a> Kizárták  	az                     MDF-et az időközi választásból,     
+  Index  	(2008. december       12.)                     
+http://index.hu/politika/belfold/hamisced22/</font></p></div></ol><p class="sdfootnote"><br></p><p style="text-align: center;" class="sdfootnote"><font size="1"><span style="font-style: italic;">Ez a 
+                      cikk nem a Zöld Párt hivatalos     állásfoglalása, csak a       
+saját<br>független         anyagom, mely     célja a háttér     megvilágítása. A Zöld             
+Párt<br>sajtószolgálata   holnapra       bővebb         felvilágosítást             ígért. 
+</span></font></p><font size="1"><br>     </font>       </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-12-22&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1713&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1713&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1713&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1713&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1713&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1713&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1713&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1713&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1713&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1713&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1713&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1713&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1713&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1713&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133646"></A>124. rugonfalva</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-23 21:18:43</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">az a korrekt ;ahogyan szoktátok egyébként; a törvényes jogszabályok alapján eljárni. akkor nem kellene magyarázkodni.nem egy nagy ügy ha nem csípik az embert  vagy de?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133416"></A>123. <A HREF="mailto:rpg7@citromail.hu" STYLE="color: #000000">LE 184 616</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1713&id=133339#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-12-23 15:18:32</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6239.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tök mindegy, hogy mi mit mondunk! <br />
+<br />
+A bíró a sípjába fújt és piroslapot mutatott TC-nek. Ballaghat a ültözőbe. Ezen a meccsen már nem játszik.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133339"></A>122. Mate12345</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1713&id=133309#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-12-23 13:04:24</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_278.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Na jó, de akkor most a kopogtatócédulák másolása csalás vagy nem? Mindenki mást mond...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133309"></A>121. <A HREF="mailto:roth_adam@citromail.hu" STYLE="color: #000000">Vincenzo/axe</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-23 12:04:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2252.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nameg az, hogy a másik is csal, nem mentség.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133308"></A><FONT COLOR="#FF0000">120. </FONT><A HREF="mailto:roth_adam@citromail.hu" STYLE="color: #000000">Vincenzo/axe</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-23 12:03:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2252.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133288"></A>119. Forton</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-23 11:10:34</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">hát elvileg jó lenne, merthogy arányos, de nem az, mert a területi lista nem arányosít, hanem épp ellenkezőleg: aránytalanít. a kompenzációs lista még valamit visszahoz az aránytalanságból, de nem eléggé.<br />
+<br />
+A német választási rendszer másoltuk le, de rosszul, mivel ott a pártok annyi helyet kapnak a Parlamentben, amennyit elértek listán, Magyarországon mióta van ez így?? <br />
+<br />
+Másrészt nem Hagenbach-Bischoff formulát kellene alkalmazni, hanem Hare-kvótát, mivel az ad teljes arányosságot.<br />
+<br />
+A magyar választási rendszer a Nemzeti Kerekasztal tárgyalások eredménye, ergo egy kiegyezés, amit később már többször lehetett volna változtatni. A két nagy pártnak szükségessége ez a rendszer, ezen kéne változtatni.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133254"></A>118. hns</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-23 09:51:48</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">a valasztasi rendszerunk speciel jo<br />
+a legjobban aranyositok egyike<br />
+unalmas es hosszadalmas lenne kifejteni miert<br />
+<br />
+viszont a jeloltallitas jelenlegi formaja szar. ez kb mar 10eve nyilvanvalo, a kedvezmenyezettek bolondok lennenek megvaltoztatni tarsadalmi nyomas hianyaban. ez van.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133250"></A>117. Forton</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-23 09:30:59</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Európában Magyarországon a legmagasabb a jelöltállítási küszöb, egyéniben a választókerület több mint 1,6%-os támogatása szükséges, hogy egyéni jelöltet állíthass. Mindenhol más és más feltételek mellett lehet jelöltet állítani. Hollandiában pl. nincs semmiféle feltétel, de ezért is van ott rengeteg jelölt. Néhány országban kauciót fizetnek, amit a választás végén visszakapnak (elvileg). <br />
+<br />
+A rendszerváltáskor az MSZMP még 1000 ajánlószelvényt akart, mert azt gondolták, hogy az ellenzék nem lesz képes összeszedni ennyit. Gyakorlatilag ennek a levét isszuk ma is. <br />
+<br />
+Úgy gondolom, hogy valamiféle jelöltállítási küszöb mindenképpen szükséges, hogy kizárjuk a komolytalan jelölteket, de azzal egyetértek hogy a 750 az kicsit sok, arról nem is beszélve, hogy milyen aránytalanul vannak felrajzolva a választókerületek. A legkisebb választókerületben 27 ezer választásra jogosult polgár él, míg a legnagyobban 66 ezer. Ebből kifolyólag a jelöltállítás az utóbbinál persze hogy sokkal könnyebb lesz. Szóval ebben is reform kéne, csakúgy mint az egész magyar választási rendszerben.<br />
+<br />
+DE! Attól függetlenül, hogy mennyire igazságtalan a rendszer, még senkit sem jogosít fel arra, hogy kijátsza azt! Szégyellje magát mindenki, aki részt vett az ajánlószelvények hamisításában, ez nem mentség, hogy "mindenki ezt csinálja".</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133167"></A>116. Mate12345</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-23 00:29:24</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_278.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nekem most valami nem tiszta. Biztos a kései időpont miatt.<br />
+<br />
+Most akkor a kopogtatócédulát fénymásolni bűn, vagy sem?<br />
+HA jól láttam, Blogin érve az volt, hogy a cédulák eredetét nem lehet ellenőrizni megfelelő azonosítójel híján. Ez nem igaz. Minden nyomtató egyedien nyomtat és egy szakértő meg tudja állapítani, hogy egy cédula saját nyomdából került ki vagy sem.<br />
+<br />
+Én ellenzem mind a kopogtatócédulákat, mind a választási rendszert. Szerintem cenzushoz kéne kötni. (Bár nem tudom, miféléhez)<br />
+De ha a parlamentből akar a ZP tevékenykedni, akkor be kell oda kerülnie. De ha novák (igen, kisbetűvel) most az összes nemzeti pártot kigolyózza, az azért annyira nem lesz jó.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment133163"></A>115. coffee -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-12-23 00:07:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1947.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Vazz elképzelem ezt a sok kis nyüzüge okoskodó gyereket, ahogy itt a hangyányi agyukat arra használják hogy provokálják azokat akiknek a rádió adását hétről hétre gúvadt szemmel követelik és kifordul a belem tőlük. Tényleg nem értem miért csináják. Miért van az, ha valaki valamiben bizonyít rögtön az összes féreg elkezdi hozzá méregetni magát???? Undorító, gusztustalan. Ezekben az emberekben tényleg semmi emberi méltóság nincsen? Bassza meg nem tetszik neki a pálya elhúz és csinál valami jobbat. De nem ő nem  majd inkább egy olyan helyen produkciózik amit más fáradtságos munkával összehozott. Inkább elhúzok aludni mielőtt lehányom a gépem. Üdv.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1713&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1713&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1713&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1713&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1713&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1713&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1713&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1713&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1713&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1713&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1713&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1713&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1713&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1713&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

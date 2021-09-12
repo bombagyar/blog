@@ -1,0 +1,522 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=496#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Hogyan teremtenek pénzt a bankok?";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Hogyan teremtenek pénzt a bankok?<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 január 12. 12:29:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_496.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">A karácsonyi időszakban még az 
+    átlagosnál is több hitelügyi reklámot láthattunk a televízióban, de soha sem szenvedünk hiányt   
+  bennük: ezek a szpotok látszólag folyamatosan lehetséges alternatívát jelentenek a nehéz anyagi    
+ helyzetbe kerülők számára. Valójában azonban többnyire csak újabb veszélyt     
+jelentenek.<br><br>Példánkban a Provident által reklámozott úgynevezett gyorskölcsönt vizsgáljuk.    
+ Tudni kell, hogy ez különleges kölcsönszolgáltatás, hiszen kis összeget juttat, cserébe nagyon nagy 
+    kamattal, de ez a későbbi kifejtést nem befolyásolja. Ha a Providenttől 30 000 forintot     
+kérvényezünk, a bank részletekben végül több mint 130 000 forintot fog visszakérni. Ez azt jelenti,  
+   hogy mi harmincezer forintért százharmicezret fizettünk. Keletkezett százezer forint, amely eddig 
+    nem létezett: ezt ki kell termelnünk, hogy a banknak adhassuk, azaz elvonjuk a gazdaságtól,     
+megteremtjük. Értelemszerűen olyan emberektől, akik szintén hiteleket fizetnek. A globális hitelezés 
+    eredménye a újkor adósrabszolgasága, amelyben egy olyan szolgáltatásért kell hihetetlen 
+összegeket     fizetni, amelyet az állam kamatadómentes készpénzzel szükségtelenné is 
+tehetne.<br><br>Nem csupán     akkor fizeted a kamatokat, ha hitelt veszel föl: benne van az a 
+kenyér árában, mert a pék is     tartozik, hiszen hitelt vett föl, hogy megvegye a sütödéjéhez 
+szükséges gépeket, de a lakásod árában     is benne van mindenki tartozása. A bank felé áramló 
+eszméletlen mennyiségű pénz pedig nem kell,   hogy   az ország területén maradjon, azt elszívhatják 
+a nemzetközi pénzhatalmak. Lassan tehát már   csak   azért kell dolgozni, hogy az ember a 
+végeláthatatlan hiteleket fizesse. Ezeket nagy tudású   szakértők   úgy állapítják meg, hogy azokat 
+a lehető legnehezebb legyen visszafizetni, ezért sokan   valósággal   életjáradékot fizetnek a 
+bankoknak: a megkeresett pénzük egy részét minden hónapban át   kell utalniuk   anélkül, hogy 
+reményt láthatnának a helyzet megoldására. Még egyszer fontos   hangsúlyozni: nem csupán   a 
+hitelfelhasználók szenvednek emiatt, hiszen a gazdaságból hiányzó   összeg, amelyet viszont elő kell 
+  teremteni (a kamat), beleépül minden termék   árába.<br><br>Értelemszerű és a legtöbb ország   
+alkotmánya is lefekteti, hogy pénz csak az állam   teremthet: nem ülhet le senki otthon 
+sajtcetlikből   saját bankót előállítani. Ennek ellenére   képesek vagyunk mi is pénz teremteni, 
+például mikor vaalmit   úgy adunk egy barátunknak, hogy csak   később kell neki visszafizetnie. 
+Ilyenkor azonban ritkán kérünk   kamatot, ha pedig mégis, az   eltörpül a bankárok hiteladó 
+képessége mögött: léteznek olyanok, akik   városoknak, sőt egész   országoknak is adtak már 
+hiteleket, természetesen busás kamattal, amelyet a   lakóknak kellett   később visszafizetniük s 
+kell ma is.<br><br>Ahol ennyi pénz mozog, ott ördögi   dolgok történnek. A   világ tőkéseinek 
+érdekében áll, hogy a lehető leginkább megfigyelésük alatt   tartsák a világot.   Ezért rendvédelmi 
+szerveket, egész médiabirodalmakat vásárolnak, sőt embereket   vásárolnak meg   (politikusokat, 
+rendőröket ugyanúgy, mint például bírákat). Ez teljességgel logikus:   ezek az   üzletemberek 
+megpróbálják a lehető legtöbbet kihozni a vagyonunkból, a lehető legnagyobb     gazdagságot és az 
+ezzel járó hatalamat birtokolni. A probléma az, hogy a világméretű bankok vezetői     egy közös cél 
+érdekében bármilyen vállalatot megszerezhetnek maguknak, de képesek akár államokat is     térdre 
+kényszeríteni. A dolog nagyon egyszerű! Csak meg kell vonni a hitelt az olyan   vállalatoktól,   
+amelyeket meg szeretnénk szerezni: a cég csődbe fog sodródni, a tőzsdén a   részvényei ára zuhanni   
+fog. Ekkor a tervet kieszelők emberei fölvásárolják a részvényeket.   Dönthetnek úgy, hogy   
+fölvirágoztatják a céget, hiszen már óriási hiteleket hajlandóak adni neki,   aztán drágábban   
+megválnak tőle, de előfordul az is, hogy ők ülnek a vezetőségi székekbe.<br><br>Az   1930-as 
+gazdasági   világválság sem magától keletkezett: a közgazdászok gazdasági ciklusokkal   próbálják 
+magyarázni a   sokkal egyszerűbben körülírható dolgokat. A bankok elszívták a világ   pénzkészletét 
+egy összehangolt   manőverrel: nem adtak hitelt. Mégis érdekes, hogy a háború idején   azonnal 
+megjelent az addig eltűnt   pénz: Hitler például Alfred Rosenbergen keresztül, Sir Henry   
+Deterdingtől (300-ak tanácsa) és a   Samuel családtól 30 000 000 fontot kapott, ahogy erről Oswald   
+Dutch történelemkutató írt. A   közvélekedés azt mondja, hogy persze, háborúra mindig van pénz.   
+Miután férfiak, nők, gyermekek   tízezrei haltak éhen, rengeteg pénz jelent meg a háborúskodásra! Ez 
+  nem véletlen. Tudatos pénzügyi   machniáció áll annak a hátterében is, hogy a világ második   
+legnagyobb élelmiszer exportőre, Brazília   élelmiszerhiánnyal küzd: évente több millióan halnak   
+éhen egy olyan országban, amely minden probléma   nélkül elláthatná magát élelemmel. Abban viszont   
+nincsen semmiféle haszon a nemzetközi globális   elitnek, ha valaki magának termeli a javakat: a   
+cél, hogy rajtuk keresztül éljünk. Amíg a   mezőgazdászok valódi gabonát használnak a génmódosított  
+ helyett vagy nem importálják az élelmiszert,   nem jelentenek valódi hasznot, ezért föl kell   
+számolni őket. Ügyesen ellehetetleníthetjük őket   például megfizethetetlen hitelekkel vagy éppen   
+ellenkezőleg, a hitelek megtagadásával! Lehet   választani!<br><br>A globális elitnek nevezett   
+tizenhármak tanácsát jegyzők Rothschildok és   Rockefellerek (eredetileg: Rockenfelder) közül éppen  
+ Amschel Rothschild maga jelentette ki sokat   idézett és bírált mondatában a lényeget:   
+&#8222;Adjátok nekem egy ország pénzügyeit, s többé nem   érdekel, kik hozzák a   
+törvényeket.&#8221;<br><br>A piramis tetején álló tizenhármak tanácsa nem egy   mágikus szervezet,   
+aki róluk beszél, az nem megmosolyogni való: pontosan lehet tudni, hogy kik ők. A   svájci Genfben   
+székelő Nemzetközi Bankbizottság fejei. A biztosságot David Rockefeller hozta létre   1972-ben. A   
+bankáróriások egyik remek húzása, hogy bankjaik nevében gyakran használják a <span style="font-style: italic;">federal</span> (szövetségi) szót. Az emberekben föl sem merül, hogy az   
+  ország legfőbb bankjait magánkézbe adják, a kifejezésből pedig logikusan azt következtetik, hogy a 
+    pénz gyökerével csak az állam foglalkozhat. Ez óriási tévedés! A Nemzetközi Bankbizottság, a     
+Nemzetközi Fizetések Bankja, a Nemzetközi Valutaalap, a Világbank, a Gazdasági Együttműködési és     
+Fejlesztési Szervezet, a Szövetségi Tartalékalap, a Bank of England, de még a Magyar Nemzeti Bank is 
+    magánkézben, magántőkéből működik, valakinek profitot termel! Amikor 1997 májusában a 
+munkáspárti     Gordon Blown pénzügyminiszteri hivatalába lépett, azonnal fölhatalmazta a Bank of 
+Englandet a     kamatlábak meghatározására (ugyanezt teszi nálunk az MNB is).<br><br>A helyzet 
+rettenetes, kivált     akkor, ha nem ismerjük föl a problémát. Ma már egy saját ház megvásárlása is 
+hihetetlen megterhelést     jelent egy átlagember számára, pedig a mostani árak nagyjából 
+egyharmadába kerülne a fölhúzása, ha     nem kellene mindenkinek a tőkén túl még mások kamatterheit 
+is fizetnie.A Federal Reserve Bank of     Atlanta volt hitelnyújtási vezetője, Robert Hemphill is 
+erre célzott, amikor     kijelentette:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Teljes mértékig a 
+kereskedelmi bankoktól függünk. Valakinek     kölcsön kell vennie minden egyes forgalomban lévő 
+dollárt, legyen az készpénz vagy hitel. Ha a     bankok elegendő szintetikus pénzt hoznak létre, 
+akkor prosperálunk, ha nem, akkor éhezünk. (...) Ha     valaki teljesen felfogja az egész képet, 
+akkor reménytelen helyzetünk tragikus képtelensége szinte     hihetetlennek tűnik, de mégis úgy van. 
+Ez a legfontosabb téma, amelyet intelligens emberek     vizsgálhatnak és amin eltöprenghetnek. 
+Olyannyira fontos, hogy a jelenlegi civilizáció összeomolhat,     hacsak alaposan meg nem értjük és 
+mihamarabb ki nem javítjuk.&#8221;<br></div><br>David Icke <span style="font-style: italic;">...és 
+az igazság felszabadít </span>című könyvében hivatkozik Sheldon     Emery lelkész munkájára, amely 
+pontosan levezeti azt is, hogyan tudnak a tőke hatalmával országokat     és ezáltal (mesterséges 
+konfliktusok vagy döntéshozások révén) kontinenseket irányítani.<br><br>A     II. világháború (mely 
+a valláskutatók és hívők szerint az elsőhöz hasonlóan nem volt benne az     emberiség karmikus 
+sorsában, azt valamilyen őrült erőszakkal, szándékosan indították el) még a     győztes hatalmakat 
+is meggyöngítették. Ismeretes a tény, hogy az 1960-as években még az Egyesült     Államok is 
+államcsődbe került, de azóta ki sem mozdult onnan! Nincsen elég aranytartalékuk a     forgalomban 
+lévő dollárok fedezetére; egyetlen menedékük, hogy elérték: az olajat csak dollárban     lehet 
+megvásárolni. Míg korábban William Rockefeller ötven centért kínálgatta az olaj literjét a rák     
+és impotencia gyógyítására (ez egyébként kuruzslás), a fia már megalapította a Standard Oil     
+Companyt, hogy a növekvő olajlámpapiacot eláthassa olajjal. Azonban a belsőégésű motorok     
+megváltoztatták az olaj értékét: fekete arany lett belőle s ma már a világgazdaság és a     
+világpolitika függ az olajkartellek hatalmától.<br><br>Egy ausztrál mérnök, bizonyos William Knox    
+ d'Arcy a Perzsa-öböltől északra, Irán területén talált olajat. A sahtól 20 000 dollárért     
+megvásárolta a kitermelés jogát, de az istenfélő, keresztény ember még 16%-os részesedést is     
+fölajánlott a sahnak. 1961-ben a Brit Titkosszolgálat embere, Sidney Reilly (eredeti nevén Sigmund   
+  Georgjevich Rosemblum) papnak öltözve győzte meg a mélyen vallásos d'Arcyt, hogy adja a jogokat a  
+   megbízói által alapított, kereszténynek nevezett Angol&#8211;Perzsa Olajtársaságra. D'Arcy hitt a 
+    csalónak, így ki tudták semmizni, Nagy-Britannia pedig szintén olajtulajdonossá     
+vált.<br><br>Visszatérve Emery lelkész példájára: tegyük föl, hogy a szövetségi kormánynak     
+egymilliárd dollárra van szüksége, például egy váratlan háborús kiadás miatt. A pénz nem áll Amerika 
+    rendelkezésére, ezért az állam a magánkézben lévő Federal Reserve-höz fordul. Hihetetlen, de     
+előfordult már az emberi történelemben, hogy egy koszosnak tűnő gettó egyik kis utcájának     
+elhagyatottnak tűnő boltjában adtak át egy államnak eurómillióknak megfelelő összeget!<br><br>A     
+Federal Reserve hajlandó hitelezni az Amerikai Egyesült Államoknak, ha átvállalja a pénznyomtatás    
+ költségét (nagyjából ezer dollár) és hitelt fizet! Az egymilliárdot megkapják államkötvényekben,    
+ fölhasználja, de így egymilliárd dollárral és kamataival eladósították a népet! Hihetetlennek 
+tűnik?     Ez történt kicsiben Magyarországon is, de az USA is megtette már! A Federal Reserve 
+létrehozása     (1913) óta folyamatosan így történik. A legutolsó hiteles adat az 1980-as évekből 
+val: ekkora már     több mint százmilliárd dollár volt csupán az éves kamat, az USA adóssága a 
+magánvállalat felé pedig     egybillió (10<sup>12</sup>, azaz 1 000 000 000 000) dollár környékén 
+mozgott. A helyzet azóta     nyilvánvalóan csak romlott, hiszen ekkora tőkét nem lehet 
+visszafizetni. Ha a tőkés hatalmakat     továbbra is engedik dolgozni, az USA-ban az örökkévalóságig 
+fizetheti a nép a     kamatokat.<br><br>Ilyen összegek mellett egyáltalán nem tűnik hihetetlennek az 
+elképesztő becslés,     amely szerint a világ valamennyi pénzének 90%-át (!) a tizenhármak 
+tanácsának tagjai mozgathatják.     1910-ben az amerikai államadósság csak egymilliárd dollár volt 
+(lakosonként 12,4 dollár), a Federal     Reserve megalakulását hét évvel követően már 24 millárd 
+(228 dollár/fő). Jelenleg akkor is, ha   egész   Amerikát papíron is a bankárhatalmasoknak adnánk, 
+még legalább két, de lehet, hogy három   amerikányi   tartozás maradna. Miért lenne hihetetlen, hogy 
+ennyi pénzzel valóban világokat   mozgathatnak ezek a   pénzemberek?<br><br>Az USA esete nem 
+egyedülálló. Természetesen kisebb   mértékben, de Magyarország   tartozásaival is ez a helyzet, de a 
+Brit sziget sem maradhatott ki: míg   1960-as években egybillió   fontot fizettek kamat- 
+törlesztésre a szigetországban, addig 1993-ban   már 24,5 billió font volt ez   az összeg úgy, hogy 
+az eredeti tőke teljes egészében törlesztetlen   maradt! Azaz a semmire kell   ekkora összegeket 
+fizetni, és ez a pénz valakihez, egy magánemberhez   kerül! Őket nem láthatjuk a   Forbes 
+leggazdagabbakat fölsoroló listáján, mert vagyonunkat családi   vállalkozásokba, úgynevezett   trust 
+companykba rejtik.<br><br>Nem véletlenül mondta az amerikai   alapító atyák egyike, Thomas   
+Jefferson a következőket:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Ha az   amerikaiak 
+bármikor is lehetővé teszik a   magánbankoknak, hogy ellenőrizzék a pénzkibocsátást,   először 
+inflációval, aztán pedig deflációval a   bankok és a fölnövekvő társaságok (...) megfosztják   az 
+embereket a tulajdonuktól, míg gyermekeink   egy szép napon hajléktalanul ébrednek azon a   
+kontinensen, amelyet atyáink hódítottak   meg.&#8221;</div><br>A történetnek nincsen vége: szót   
+kellene még ejtenünk az Aranyhegyről, a   Shell&#8211;Esso részvételével hódító Hét Nővér   
+olajkartellekről, a szabadkereskedelem   hazugságairól, de talán ennyi is sok volt. Szédítő   
+belegondolni, hogy talán létezhet egy világ, ahol   mindenért csak az anyag és a munka költségét   
+kell megfizetni, ahol nem ügyeskedő emberek zsebébe   vándorol az országok és lakosságuk kemény   
+munkával megszerzett pénze. Ha csak a fele igaz a   föntieknek, az említett pénzemberek, tőkés   
+hatalmak nélkül (és mindegy, hogyan nevezzük őket)   megszűnhetne a hajléktalanság, nem lenne   
+munkanélküliség. Valóban egy olyan utópia jöhetne létre,   amelyről már régen elhittük, hogy nem   
+létezhetne. A harmadik világ országainak nem kellene az   európai és amerikai igényeket a sajátjuk   
+rovására kielégíteni, megtermelhetnék a saját javaikat,   kereskedhetnének anélkül, hogy egy   
+harmadik fél mindenért sápot vesz le. A pénz a mozgatórugója a   bűnözésnek, a társadalmi   
+ellentéteknek, frusztrációinknak. Lehet, hogy ezek nem is tartoznak az   emberiség szükséges és   
+alapvető érzelmei közé!<br><br>Nagyon könnyedén el lehetne szakadni a   nemzetközi tőkétől: helyi   
+valutával vagy kamatmentes bakókkal. Hitler hatalomra jutása után a német   márkát próbálta meg   
+függetleníteni, Szaddám az olajat akarta dolláron kívül más valutáért is adni.   De nem csak ilyen   
+emberek vannak: feltételezhetően John F. Kennedy is küzdött az Új Világrend ellen,   amikor   
+találkozóra hívta az olajkartellek ellen küzdő Enrcio Matteit. A kutató pontosan előadhatta   az   
+olajjal történő manipulációkat, melyek rákényszerítik az olaj használatát a világra, de csak   olyan 
+  módon és annyiért, amennyiért az érintett trösztök szeretnék. Kennedyt sajnos egy évvel később     
+meggyilkolták. Ugyanígy járt Abraham Lincoln is, aki zöldhasúival kamatmentes állami pénzt akart     
+létrehozni (néhány kamatmentes kötelezvénye még mindig létezik): 1865-ben John Wilkes Booth,     
+feltehetően a Rothschild-ház ügynöke meggyilkolta.<br><br>Sajnos képtelenek vagyunk fölmérni a     
+fölöttünk álló pénzhatalom valódi méretét és erejét. De azon kis szelet, amelyet láthatunk vagy     
+kikövetkeztethetünk, sajnos, rettenetes képet mutat. Ha nem kelünk öntudatunkra, nem értjük meg,     
+hogy még egy dolog nincsen a tulajdonunkban, mi magunk, akkor tényleg elvesztünk. Hamarosan ugyanis  
+   mikrochipeket kap minden ember, onnantól pedig még az a maradék kézzelfogható pénz is megszűnik,  
+ ami   eddig volt. Még elvonttabb fogalommá válik, és pontosan úgy és oda fog folyni, ahová 
+kiagyalói     szeretnék. Rabszolgái leszünk egy kis globális elitnek, amely tagjainak még az arcát 
+sem ismerjük,     sőt azt sem, hogy léteznek egyáltalán.<br><br></div><div style="text-align: justify;">   </div>     </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-01-12&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=496&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=496&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=496&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=496&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=496&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=496&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=496&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=496&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=496&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=496&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=496&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=496&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=496&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment63054"></A>110. Smith</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=496&id=27812#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-06-01 12:53:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">LoooL!<br />
+<br />
+Na igen persze a PSZAF -ről is azt gondoljuk, hogy állami szférában van, aztán a saját bőrömön tapasztaltam egy gazdasági ügyvéd segítségével, hogy bizony egy orosz emeber magánkezében van az egész. Az MNB mint a magyarországi jegybank az pedig pontosan ugyanúgy magánkézben van mint ahogy az eredeti jegybank is. Az eredeti jegybank amit az egész prototípusának tekinthetünk az a Federal Reserve: tulajdonosai és egykori alapítói Rotschild, Rockefeller és stb.<br />
+babóbandák. A FED tükörmásaként létrejött minden országban a jegybank, pontosan azzal a céllal, hogy biztosítsa mindazt amit a blogin szerintem elég értelmesen összefoglalt.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment28114"></A>109. szivar</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=496&id=27931#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-01-18 16:24:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ha már ilyen ügyes vagyok, hogy még egy kis áramszünet is elvarázsolja a több sorban kifejtett mondanivalóm lényegét, akkor megérdemlem hogy pár sorban ismét (és rövidítve) összefoglaljam a dolgokat.<br />
+<br />
+Normál esetben annyi pénz van a gazdaságban, mint amennyi a megtermelt cuccok érnek. Ez elméletileg a szabad piactól függő folyamat.<br />
+<br />
+Tehát ha dolgozik az ember, akkor pénzt keres, azt el tudja költeni. Vesz olyan dolgokat, amiket mások állítanak elő, akik keresnek ezzel és szintén elköltik a keresetet, vagy megtakarítnak, amit azután elköltenek. Ha valamiből kevés van, akkor annak az ára akkora, amit a vásárló még megfizet. Ha valamiből sok van (neadjisten versenyhelyzet van) akkor annak az ára egészen addig mászik lefele, amíg még valakinek megéri előállítani. Normális esetben beáll valamiféle egyensúly a kereslet és a kínálat között.<br />
+<br />
+Ha kevesebb pénz van, mint amennyi kellene, akkor lenne kereslet, de nincs miből. Lenne munka, de mivel nincs kereslet... Lenne munka és lenne kerslet is, de megint csak nincs elég pénz ennek finaszírozására a gazdaságban.  Állítólag ezt nevezik deflációnak. Elméletileg a pénz felértékelődésvel egy idő múltán ismét egyensúlyi helyzetbe kerülne a kereslet-kínálat-munkaerő dolgában.<br />
+<br />
+Viszont ha több pénz van forgalomban, mint amennyit a kínálat kívánna, akkor elértéktelenedik a pénz, tehát amennyi pénzért megdolgoztunk, az minél előrébb tekintünk az időben, az annál kevesebbet fog érni. Ez az infláció.<br />
+<br />
+Amennyiben az infláció hatásait pénznyomtatással (hiánypótlás céljából) próbálná valaki ellensúlyozni, akkor kezdődne el a hiperinfláció, mint már volt nem egy példa rá a történelemben.<br />
+<br />
+A pénznyomtatás szó most szabadon behelyettesíthető pénzcsinálásra, egyszar.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment28096"></A>108. szivar</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-18 15:03:04</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Sirius:<br />
+Egy életszerű példa következik.:]<br />
+<br />
+Ha elmész dolgozni és közben jön pár honfoglalósdit játszó etnikum, akik nem engednek be a lakásodba, elvarázsolják az összes ingóságodatt meg ilyenek, de a rendőrség tehetetlen, mert jogszabály írja elő hogy az ilyen szegíny szerencsítlen ártátlán állámpógárokat nem lehet ám télvíz idején kipakolni a más lakásából. Sőt ha erőszakot alkalmazol, akkor meg téged fognak megb***ni érte, nem is kicsit.<br />
+<br />
+Viszont akkor kinek is a tulajdona ez a lakás, és ki is használja? <br />
+Bár ez egy erősen elrugaszkodott (:]) példa volt, de szvsz jól jellemzi a helyzetet...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment27931"></A><FONT COLOR="#FF0000">107. </FONT>107. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-17 23:07:20</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment27900"></A>106. Laziale -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=496&id=27802#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-01-17 21:23:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">minek égeted saját magad? a két mondat kurvára nem ugyanazt jelenti de téged ez ne zavarjon!<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment27812"></A>105. Sirius -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-17 12:27:13</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1113.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Blogin honnan vetted, hogy az MNB magántőke kezében van?<br />
+A jegybanki törvényben az áll, hogy az MNB egy 100%-ban állami tulajdonú Rt. És nem a magántőke, hanem a monetáris tanács, meg kicsit a kormány irányítja. Bár azt elhiszem, hogy Fletóékat a magántőke irányítja :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment27802"></A>104. Mafia -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-01-17 12:17:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Emlékszel erre lazalie??<br />
+<br />
+Hogyan is működik Magyarországon a pénzkibocsájtás? Az állam azt mondja kell a gazdaságba 100 milliárd. Utasítja a pénzügyminisztériumot, hogy állítson ki 100 milliárd értékű adósságlevelet (állampapír, kamatozó kincstárjegy)"<br />
+<br />
+Erre mondád te:<br />
+<br />
+A pénzkibocsájtás még véletlenül sem így működik, de még az eladosódás és az adósságkezelés is más egy kicsit.<br />
+<br />
+<br />
+Majd belinkeled a forrást:<br />
+<br />
+"Tételezzük fel például, hogy a jegybank a gazdaság expanzióját elősegítendő kormánykötvények vásárlásával növeli a pénzkínálatot."<br />
+<br />
+Gratulálok. Újabb ékes bizonyíték, hogy nem igazán fogod fel amit olvasol.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment27545"></A>103. szivar</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=496&id=27426#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-01-16 16:35:53</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kérlek ne célozgass Laziale topictársra, mert nem érdemli meg. Ő csak azt mondhatná el, amit megtanult. Ez meg benne lehet bármelyik közgáz szakkönyvben. Nem hinném hogy fel kellene róni neki azt hogy nem magyarázza el a sok év alatt megtanultakat a mezei halandók számára - egy vagy két kommentbe sűrítve. Sőt az sem hogy csak azon dolgokat veszi számításba, amit számításba kell vennie -a megtanultak alapján.<br />
+<br />
+Viszont amit a tudományról írtál az helytálló. Viszont valószínűsíthetőlegesen a közgazdaságtan az egy érdekes jószág ilyen szempontból. Mert pl. a fizikában először mérnek, elmélkednek és jósolnak, utána próbálják bizonyítani a 'megjósolt' dolgokat. Ha ez stimmel, akkor egy adott elmélet érvényességi korlátait kitolták egy új és pontosabb matematikai szabályendszer bevezetésével.<br />
+<br />
+<br />
+Én valahogy a kvantumfizka vs. való élet közti különbséghez hasonlítanám a közgazdaságtant és a valóságot . Adott körülmények között, adott kiinduló feltételek mellett a végeredményre a valószínűség az annyi mint... Nagyobb léptékben viszont egész más szabályrendszer alapján van kalkulálva a dolog. Me' az márt kaotikus folyamatnak tekinthető hosszútávon és nagy léptékben.<br />
+<br />
+Már amennyit az idáig megszerzett (s korántsem teljes) ismereteim alapján le tudtam vonni ezidáig a valóságból. Mert ugye egy kicsit nehéz egyszerre péknek, kőművesnek, asztalosnak, statikusnak, könyvelőnek, jogásznak, orvosnak, hentesnek, programozónak, meg úgy álltalában mindenesnek lenni és elsajátítani a szükséges ismereteket. Feltéve ha ilyen sok fizuból még élni is akar az ember...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment27527"></A>102. 102. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=496&id=27361#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-01-16 15:24:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ilyen "csináljon saját költségvetést" tavaly is volt, de rájöttem, hogy nem az elosztással van a legnagyobb baj, hanem a felhasználással.<br />
+Elfolyik a korrupció, mutyizás, "kakaóbiztos számítógép" stb.stb. utakon/lyukakon, mint szitán a víz.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment27518"></A>101. Laziale -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=496&id=27426#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-01-16 14:36:55</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Főnök, tényleg nem szorult beléd annyi intelligencia se, hogy rájöjj h valaminek vége van? Igen, nagyon kemény voltál, jól megmondtad, taps. jutalmad egy tűzfal méretű "Magyarország benned van!" plakát, átvehető a Köztársaság téren "matematikuss" jeligére.<br />
+<br />
+Le lehet rólam szállni, az érvképtelenségből származó dühödet töltsd ki máson, köszi.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=496&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=496&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=496&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=496&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=496&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=496&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=496&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=496&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=496&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=496&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=496&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=496&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=496&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

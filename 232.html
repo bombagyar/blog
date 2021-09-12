@@ -1,0 +1,657 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=232#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Reakciók az elméletekre";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Reakciók az elméletekre<BR><DIV CLASS="postheader_small">Levrov - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2007 november 14. 13:50:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_232.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Tegnap óta sok levél érkezett  
+   a nagy port fölvert <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=222">Sátánista szimbólumok a szabadkőművességben és     
+mindennapjainkban</a> című írásomhoz. Egyéb levelek mellett alább ezeket is közre adom, és     
+válaszolok az engem és minket ért kritikákra.<br><br>Csupán annyit tennék hozzá elöljáróban, hogy az 
+    adott bejegyzésekben egyikünk sem írta azt, hogy a néhol hajmeresztő föltevéseket valósnak   
+gondolná.   Talán egyeseknek (bár lassan kezdem azt hinni, hogy keveseknek) föltűnt az is, hogy a   
+nyelvtani   feltételes módot is szívesen használtuk. És az sem jó érv, hogy több ezer karakternyi   
+szöveg egy   elemét támadjuk, a többiről viszont tudomást sem veszünk. Egyébként elszomorító, hogy   
+sokan átvették   a liberálisokra jellemző hibás érvtechnikát, az &#8222;azért, mert csak&#8221;   
+jellegű érvelést; az   nem érv, hogy &#8222;én ezt nem hiszem el&#8221; és attól nem lesz igazad,   
+hogy beírod: &#8222;ezt   te sem gondolhatod komolyan&#8221;. De, gondolhatom. Csak éppen nem   
+mondtam, hogy úgy is   teszek.<br><br><b>tuzoltokocsi írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">szerintem emlłtésre méltó:<br><a target="_blank"style="color: black; font-weight: bold;" href="//elegunkvan.extra.hu/">      
+http://elegunkvan.extra.hu/</a></div><br>Megemlítettük.<br><br><b>Ádám írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Kedves Bombagyárosok!<br>  <br>  Elsősorban Tomcatnak és Bloginnak írok. Tetszik a     
+munkásságotok, de pár dolgot jeleznék nektek. Ti egy olyan közösség vagytok, akik a magyarság     
+felemelkedéséért, ha úgy tetszik a szebb jövőért, az értelemért dolgoztok. Blogin épp ezért nagyon   
+  felbosszantott, amikor még a múltkori adásban az áltudós, sarlatán Egely Györgyöt reklámoztad. Te  
+   nagyon sok mindenben jártas vagy, nem kéne olyan témában is jártasnak tüntetned fel magad, amiben 
+    történetesen nem vagy az. Úgy érzem, a bombagyár szellemiségével ellentétes dolog egy áltudóst   
+  népszerűsítése, aki abból él hogy a fizika és a tudomány, ha úgy tetszik a racionális gondolkodás  
+   képviselőit járatja le, és hamis dolgokat állít. Hogy ne csak beszólásnak tűnjön eme 
+észrevételem,     <a target="_blank"style="color: black; font-weight: bold;" href="//vod.niif.hu/index.php?lg=hu&mn=archive&eid=10&sm=listevent">ezen a     
+linken</a> megtaláljátok Orosz László előadását (az 5. az) egy korábbi szkeptikus konferenciáról,    
+ amiben szűk időkeretben ugyan, de érthetően elmondja, miért állít hülyeségeket Egely. Mi több Egely 
+    is megszólal az előadáson, és látszólag nem érti, vagy talán csak nem akarja érteni(?), mi a 
+hiba   az   állításaiban.<br>  Másik amit még régen mondtál Blogin, hogy a német cserkészeknek nem 
+engedik,   hogy   normális egyenruhájuk legyen. Nos, én voltam kinnt idén a jamboreen, a nemzetközi  
+ tábortörzsben   önkéntesként (IST-International Service Team), és csak kevés némettel találkoztam,  
+ de azoknak   teljesen normális egyenruhájuk volt, a magyarhoz eléggé hasonlított. Azóta 
+rákérdeztem,   és   megtudtam, hogy a német cserkészeknek tartományonként vagy szövetségenként több 
+egyenruhájuk   van,   lehet hogy valamelyik gázosabb, de mondom, én ezt nem tapasztaltam.<br>  
+Tomcat, neked meg     gratulálok a patkány lebuktatásához és a Csiszárnak való múltkori beszóláshoz. 
+Gyönyörű, fenséges,     még ilyet sokat! :) Sok sikert a perekhez! Minden jót!<br>  <br>  
+Ádám</div><br>Megkérdeztem Ádámot,     hogy vajon én melyik adásban reklámoztam Egelyt, és azóta nem 
+kaptam tőle választ. Én nem   emlékszem   ilyenre, úgy tűnik, hogy ő sem. A német 
+cserkészegyenruháról szóló információt pedig   éppen az   említés napján kaptam egy magyar 
+cserkésztől, aki éppen azon a héten járt egy nemzetközi     cserkésztalálkozón.<br><br><b>P$YCHO 
+írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Szevasztok!<br>  <br>  Nemrég kezembe akadt egy 
+régebbi Móricka újság, s az alábbi     "sztorit" találtam benne, melynek Tomcat is érintettje.<br>  
+<br>  Az igazi Józsika-sztori<br>  <br>      Azon a borzalmas napon szegény Patai Józsika beteg 
+nagymamájához ment látogatóba két     pajtásával.<br>  Nehéz volt kijutnia a második kerület 
+közismert gettójából, négy rasszista romaverő     rendőr is igazoltatta, egyikük gumibottal meg is 
+ütötte, amikor csupán annyit rebegett a     &#8222;Papírokat, cigány&#8221; felszólításra, hogy 
+&#8222;természetesen, biztos úr&#8221;.<br>      Józsika kosarában a Máltai Szeretetszolgálattól 
+kapott 10-12 mobiltelefon, 8-10 pénztárca, némi     speciális gyógyfűkeverék és por 22 db zacskóban, 
+néhány egyszerű, a kirekesztettekre jellemző 5 cm     vastag aranylánc, fél tucat puritán, bálás 
+Versace öltöny, egy-két apró, a szociálisan hátrányos     helyzetűeknek osztogatott Denon DVD 
+lejátszó, egy szeméttelepen talált Oxford Advanced     Learner&#8217;s Dictionary és Világirodalmi 
+Lexikon, a Vizsolyi Biblia, egy fémből készült 28 cm     hosszú, olcsó háztartási eszköz volt, amit 
+a nagyinak szánt ajándékba a &#8222;Speed&#8221; nevű     legolcsóbb fájdalomcsillapítóval együtt, s 
+egy ujjakra felhúzható, kedves kis acélékszer.<br>  A     21-es buszon éppen egy öreg néninek 
+segítettek a csomagjait felcipelni amikor SS egyenruhás, 25-30     év közötti szőke férfiak érkeztek 
+a megállóba. A Székely Himnuszt énekelték.<br>  - Ide nekem egy     rohadt zsidót! &#8211; 
+kurjantotta a legtagbaszakadtabb vandál, hideg kék szemei izzottak a     gyűlölettől.<br>  - 
+Nincsenek a buszon izraeli vallásúak. &#8211; motyogta félénken Kohn bácsi,     miközben 24 karátos 
+aranyóráját lopva levette csuklójáról és kabátzsebébe csúsztatta.<br>  - Ehun     van egy! &#8211; 
+üvöltötte az egyik verőlegény, és véres ingujj kivillant éjfekete egyenruhája alól.     Ekkorlépett 
+közbe Józsika:<br>  - Pax Vobiscum! &#8211; mondta szerényen az őrjöngő hitleristáknak     &#8211; 
+Mindnyájan testvérek vagyunk! &#8211; Hangja halk volt, mégis határozott.<br>  Kicsiny,     gyönge 
+testével &#8211; nem régen épült fel egy súlyos vírusfertőzésből &#8211; védte az ártatlan,     
+remegő Kohn bácsit.<br>  A busz hátuljában álldogáló tíz válogatott rögbijátékos, hat súlyemelő, két 
+    +130 kg-os birkózó, Fekete László, Toldi Miklós, Görbe Nóra (Linda), az antiszemita Mel Gibson,  
+   Lovas István, ifjabb Hegedűs Lóránt, a páncélos tábornok Joseph Ratzinger és Tomcat rideg 
+közönnyel     nézte végig a rasszista megnyilvánulást. Sőt, az egyik szemtanú későbbi beszámolója 
+szerint a     blogger karlendítéssel bátorította a fasiszta pribékeket.<br>  - Ha nem takarodsz 
+előlem, keresztül     szúrlak, te büdös cigány! &#8211; ordította a Mortimer névre hallgató 
+Obersturmbahnführer a frissen     mosakodott, illatos fiúnak, ám Józsika halált megvető bátorsággal, 
+rendíthetetlenül védelmezte a     halmozottan hátrányos helyzetű , minden munkahelyről alapítványi, 
+médiavezetői és bankigazgatói     székből kirekesztett embertársát. Szemeiből a szeretet és a jóság 
+fénye sugárzott. A kigyúrt,     homlokán és talpán horogkeresztes tetoválást viselő vadállat erre 
+kihúzta hüvelyéből második     világháborús német kardját, s rárontott a Roma Katolikus Ifjúsági 
+Szövetség tizenöt éves tagjára. A     fajgyűlölő penge a gyermek hasába hatolt és tizenkét helyen 
+jött ki a hátán. Mindez egyetlen     döféstől!<br>  - Bocsásd meg nekik Uram, nem tudják mit 
+cselekszenek! &#8211; rebegte elhalóan     Józsika, majd kezével megáldotta támadóit és lehunyta két 
+szemét. Az utasok elégedett cinkos     mosollyal szálltak le a buszról &#8211; többen kezet ráztak a 
+támadóval vagy leköpték a vérében úszó     Józsikát, majd csendesen eltávoztak a tett 
+színhelyéről.<br>  Egy humánusabb járókelő megpróbált     segítséget hívni mobiltelefonján, ám a 
+közeli templom katolikus (vagyis nyilas) plébánosa kicsavarta     kezéből a távbeszélő szerkezetet 
+és porrá zúzta az aszfalton.<br>  - Cigánybuzi! &#8211; sziszegte   a   jótét lélek fülébe.<br>  A 
+mentők és a rendőrség csak 13 óra múlva értek ki a helyszínre.<br>    Addig   SENKINEK nem tűnt fel 
+az ártatlan, megsebzett roma kisfiú!<br>  Kegyetlen gyilkosa (aki   akkor még   nem tudhatta, hogy 
+Józsika iszonyatos sebekkel ugyan, de túlélte a támadást) Mortimer,   menekülés   közben berohant 
+egy titkos árja szépségszalonba, ahol 3 órát szoláriumozott, fekete   parókát vett   fel, majd a 
+rendőrségen megbúvó náci bajtársaival mobilon lebeszélte a fedősztorit,   miszerint ő is   roma.<br> 
+ <br>  Tegnap a fasizmus még csak az ajtónkban állt, ma bejött az   előszobánkba és holnap   talán 
+már mindennapi életünk része lesz!<br>  Független Szabad és Demokrata   Hírszolgálat<br>    
+</div><br>Lám, a netről élő Mórickába most igaz történet is került. Ma   tárgyalják a Józsika-ügyből 
+  kifolyólag <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=228">Robin   ügyét</a>, drukkoljunk   
+neki!<br><br><b>holly írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Kedves Bombagyár!<br>  Most hallottam,   
+hogy a Csintalan elvtársanak a fia Izraelben tanul,   nem lehetne ezt az információt egy kicsit   
+lenyomozni????<br>  holly</div><br>Ezt mi is hallottuk.   Azért nem kerültbe a <a target="_blank"style="font-weight: bold; color: black;" href="//www.bombagyar.hu/index.php?post=220">csintalanos bejegyzésbe</a>, mert a szóbeszéden    
+ kívül semmi pontos információnk nincs erről. Még.<br><br><b>Vidéki Be-tone írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Autós, utazó cigánybűnözés!<br>  <br>   <br>  <br>  Saját magam éltem át a következőt!<br>  
+    <br>   <br>  <br>  Drapp Zsiguli 1500, 3 roma benne ül, közelednek... Nyár van, délután két óra  
+   körül, világos nappal, forgalmas utca, sok jövő-menő autó, nagy meleg. Gyalogos szinte senki! Az  
+   autómtól 6-7 méterre állunk a járdán, árnyékban, beszélgetünk egy ismerősömmel, de éppen egy 
+bokor     takarásában. Minket nem látnak. Lelassítanak, ketten elöl, egy hátul. Megállnak az autóm 
+mellett. A     sofőr marad, pörgeti a motort, az anyósülésen ülő és a hátsó kiugranak. Az első 
+elkezdi feszegetni   a   kilincset, közben ököllel odavág féloldalról az oldalablaknak. Semmi 
+szerszám nincs a kezében,     puszta kézzel nyaggatja. A hátsó, a takaróember eközben azonnal beáll 
+a hátsó rendszámtábla elé     (pontosabban mögé), ronggyal a kezében. Odakiáltunk felháborodottan az 
+első reflexből, hogy mit     csinálnak!? Nem feszegeti tovább, valamit cigányul ordít vissza. 
+Össze-vissza kiabálás, de a hátsó     még egy szemvillanás alatt letakarja a rendszámot a ronggyal, 
+beugranak, és bőgetve a Zsigát,     elviharoznak. Látszatra összeszokott mozdulatsorok, de ez most 
+nem jön nekik össze! Semmi     depresszió!<br>  <br>   <br>  <br>  Biztos vagyok benne, hogy nem 
+először voltak ilyen helyzetben!     <br>  <br>  Ez a jelenet kb. 10-15 másodperc alatt játszódott 
+le. Tényleg nem több!<br>  <br>   <br>      <br>  Egy füles szatyor volt a kocsiban, teletömve 
+ruhával (de ezt nem tudták, mi van benne) a     hátsó ülés előtt, a padlón. A mobilom meg ott volt 
+töltőn az anyósülésen, előtte szálltam ki, és ott     felejtettem.<br>  <br>  Az értékük kb. 5.000,- 
+Ft + 30.000,- Ft. <br>  <br>  A rongálással - ha     üvegkár, akkor szereléssel 35.000 - 40.000,- Ft 
++  mobil 30.000. Ha csak zár, akkor 5-10.000 körül +     telefon megúsztam volna.<br>  <br>   <br>  
+<br>  Okulásként bárkinek: ha van benne valami olyan,   kb.   10-30 másodperc alatt bármi elvihető, 
+ami könnyen mozdítható. A rongálási kár sokszor több,   mint az   elvitt érték!!!<br>  <br>  Ez a 
+kár ugye akár egy havi átlagfizetése is lehet egy   családfőnek sok   helyen!? Csak egy kis kihagyás 
+miatt! Igen, mert az alkalom szüli a tolvajt!<br>    <br>   <br>  <br>    A rendőrségnek azonnal 
+jeleztük, hogy autófeltörési kísérlet, milyen autó,   mennyien vannak, gyors   személyleírás, 
+ruházat stb., most éppen milyen irányba mennek. A rendőr azt   kérdezte mindjárt, van-e   kár?  
+Mivel zárva volt, és a kilincs még a helyén, elsőre nem törött be   az üveg, így szerencsére nem   
+volt. Na és így csak autófeltörési kísérlet. Mi ketten, ezek hárman.   A szembesítésnél hárman   
+leugatták volna a fejünket!!! Szerintem nem is érdekelte a rendőröket az   egész. Nincs kár, minek   
+fárasszák magukat!?<br>  <br>   <br>  <br>  Később rákérdeztem, van-e   valami az ügyben, de   
+hozzáteszem, az egészből nem lett semmi!<br>  <br>  Így utólag, akkor   szerintem el se indultak, 
+egy   rádiós elfogási parancsot, riasztást ki nem adtak a járőröknek.   Ezeket akkor még meg 
+lehetett volna   csípni! Az ismerősöm elindult utánuk, de lerázták. Hozzá   teszem, ügyesek voltak. 
+Egy megyeszékhelyen   10-15 másodperces előny az ismerősöm előtt nekik   egérút volt!<br>  <br>  
+Amíg az adatokat   egyeztettem volna a rendőrökkel, addig ezek eltűntek. Be   se fejeztem a 
+rendőrrel, mert  hosszasan,   akkurátusan kérdezgetett, nem láttam értelmét addig   magyarázni, míg 
+vígan elszelelnek.<br>  <br>     <br>  <br>  Kérdés 1:<br>  <br>  Tettenéréskor   mennyi idő kell 
+egy riasztáshoz? Ilyenkor egy szóra   miért nem lehet ugrasztani a járőrt??? Ha   éppen lemerül egy 
+mobil, vagy kiveszik a telefont a   sértett kezéből, vagy, ha már éppen ölnek   valakit, nincs ideje 
+bediktálni az adatait, mert előbb   meghal!? Utána már nincs esély!!!<br>  <br>    ( Belátom, lehet, 
+hogy a rendőr tapasztalata az volt,   hogy kár nincs, felesleges is bajlódni,   piti ügy, mert 
+esélytelen, hogy amire ez bizonyítva van,   ebből bárminemű büntetés következményként   is legyen, 
+meg pláne kézzel fogható, valamire való   elrettentő ítélet?!<br>  <br>  És ha visszaeső?   Akkor 
+lehetett volna pl. egy felfüggesztettet, vagy   egy kedveznényes szabadulást újragondolni!<br>    
+<br>   <br>  <br>  Kérdés 2:<br>  <br>  Amikor egy   falu egy főutcáján átvonulva max. fél óra   
+alatt, világos nappal, többek szeme láttára feltörnek több   autót, lakást, házat stb., visznek el   
+családi vagyonokat, csapnak be pofátlanul - főleg védtelen   gyereket, kismamát, idős bácsikat és   
+néniket sikerrel, akkor valahogy már meg kell állítani ezeket   az állatokat!?<br>  <br>   <br>    
+<br>  Az a baj, hogy legtöbbször utólag tudják meg a szemtanúk,   hogy mi volt, és jönnek rá, hogy   
+tulajdonképpen látták is, de pontos információval már nem tudnak   szolgálni!<br>  <br>   <br>  <br> 
+   Ne felejtsük el! Se Istent, se Embert nem tisztel az, aki ilyen   útra lép, vagy ebbe születik   
+bele!!!<br>  <br>  Egymást is kényszerítik erre az életmódra!!!<br>    <br>  Véssük az eszünkbe!   
+Csak a saját haszna érdekli, semmi más! Hogy ez kinek milyen bosszúsággal,   kárral, testi épség   
+veszélyeztetéssel jár, nem foglalkoztatja a bűnözőt!<br>  <br>   <br>  <br>  Ha   látunk ilyeneket,  
+ vagy csak ólálkodókat, és nem kell a testi épséget félteni, jelezzük az ilyen   tetveknek, hogy   
+figyeljük őket, jelezzük a rendőröknek, egymásnak, írjunk fel rendszámot, pontos   személyleírást   
+stb.!!!<br>  <br>   <br>  <br>  Egy érdekesség! Igaz nem láttam saját szememmel, de   már kisebb   
+legenda, sokaktól hallottam:<br>  <br>   <br>  <br>  Egy hétvégi telek épületét többször     
+feltörték, és már be se zárják az ajtókat.<br>  <br>  Ki van írva a bejárathoz: "Ide már hatszor     
+betörtek, innen már nincs mit elvinni!"<br>  <br>  Az ajtón belül az asztalon egy flakon ásványvíz   
+  és műanyagpoharak, valamint egy üzenet:<br>  <br>  "Ha már itt jártál, igyál az 
+egészségünkre!"<br>      <br>  Hozzáteszem senki nem bántja azóta a telket, a víz időnkét cserélve 
+van, senki nem akar inni   a   vízből! Csak nem félnek attól, hogy mérgezett???:::)))<br>  <br>   
+<br>  <br>  Sajnos a telket   nem   tudják használni azóta sem rendesen, mert nem látják értelmét! 
+Állandó stressz a gazdának, aki   már   teljesen belebetegedett ebbe az állapotba! Úgyhogy, sajnos 
+ez sem igazi megoldás!<br>  <br>     <br>    <br>  Kérek Mindenkit a legnagyobb tisztelettel, hogy 
+jobban figyeljünk egymásra, egymás   értékeire,   legfőképpen a kiszolgáltatott helyzetben levő 
+kicsikre és idősekre! Mert mi is voltunk   kicsik, és ha   így megy tovább, nem biztos, hogy 
+megöregedhetünk tisztességben!!!<br>  <br>   <br>    <br>    Köszönettel: Vidéki 
+Be-tone</div><br>Vidéki Be-tone mindezt azután írta, hogy <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=216">elküldte   nekünk</a> egy   kétségbeesett 
+borsodi anya levelét.<br><br><b>sgss írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">A legutóbbi 222-es posztra csak ezt írnám a Jelenések könyve 13. fejezetéből:<br>  <br>     
+ 14.  És elhiteti a földnek lakosait a jelekkel, a melyek adatának néki, hogy cselekedje a fenevad   
+  előtt; azt mondván a föld lakosainak, hogy csinálják meg a fenevadnak képét, a ki fegyverrel     
+megsebesíttetett vala, de megelevenedett.  <br>  15.  És adaték néki, hogy a fenevad képébe lelket   
+  adjon, hogy a fenevad képe szóljon is, és azt mívelje, hogy mindazok, a kik nem imádják a fenevad  
+   képét, megölessenek,  <br>  16.  Azt is teszi mindenkivel, kicsinyekkel és nagyokkal, gazdagokkal 
+és     szegényekkel, szabadokkal és szolgákkal, hogy az ő jobb kezökre vagy a homlokukra bélyeget   
+tegyenek;    <br>  17.  És hogy senki se vehessen, se el ne adhasson semmit, hanem csak a kin a   
+fenevad bélyege   van, vagy neve, vagy nevének száma.  <br>  18.  Itt van a bölcseség. A kinek   
+értelme van, számlálja   meg a fenevad számát; mert emberi szám: és annak száma hatszázhatvanhat.    
+</div><br>Még a régi   blogom idejében, amikor nem ismertem BlueBunnyt, csak a blogját olvastam (nem 
+  is sejthettük, hogy   valaha közös oldalra is fogunk írni), egy bejegyzésemet neki ajánlottam. A   
+poszt a rémisztő   hatszázhatvanhatos számról szólt. Kifejtettem benne, hogy a bibliai antihős,   
+népszerűbb nevén az   Antikrisztus sexcenti sexaginta sex száma a fenevad száma, amely Szórath   
+napdémon héber nevéből is   kijön: Thav (400) + Resh (200) + Wav (6) + Szamekh (60). A számmisztika  
+ a 666-ot mint szoláris   számot ismeri, hiszen számjegyeinek összege 18, ennek számjegyei pedig 
+9-et   adnak. A kilenc a hatos   ellentettje (valójában csak a forma szerinti tükörképe), a kilences 
+pedig   a Lucifer falsust, tehát a   sátáni bukást szimbolizálja. Van egy-két valódi 666-mániás, 
+akik   szerint Néró császár maga volt az   Antikrisztus, mert a ő nevének betűi is kiadják a   
+666-ot.<br><br>A 666-al szemben a 777-et   tökéletes, vagyis isteni számnak tekintik, mivel Isten   
+összességében hét nap alatt teremtette meg a   világot (a pihenőnappal együtt), a három számjegy   
+pedig a szentháromságra utal. Azonban Isten az   embert a hatodik napon teremtette, ezért annak   
+száma 666. Ezen értelmezés szerint tehát a fenevad,   az Armageddon okozója maga az ember. Milyen   
+érdekes, ugye? És akkor még nem beszéltünk azokról, akik   szerint a bibliai fordítás egyszerűen   
+téves: szerintük az eredeti szövegben a DCXVI szám szerepelt,   ez viszont a 616-os.<br><br>És akkor 
+  megint kicsit tovább magyunk. A   magyar&#8211;román&#8211;zsidó&#8211;cigány Anton LaVey (igen,   
+halmozottan hátrányos helyzetű, lám,   még magyar vér is csörgedezik benne!) által alapított földi   
+sátánizmusban azonban kevés szó esik a   bibliai 666-ról, mivel ebben a Sátán száma nemes   
+egyszerűséggel a 9-es. A Fekete Pap által teremtett   autodedista* vallás az egóra épít, ennek száma  
+ a kilences, mivel a kilencet bármilyen számmal   megszorozva az eredményül kapott szám jegyeinek   
+összege kilenc lesz. Érdekes, nem? A legjobb, ha azt   mondjuk, hogy több gonosz van. Úgyis elég sok 
+  hely van nekik, elférnek.<br><br><font size="1">*A valódi sátánisták, tehát nem a magukat sátánistának nevező ördögimádók (ez a tipikus egybekopasz náci, meg az értelmes, nyugodt nemzetiszocialista közötti különbség pepitában) nem hisznek sem istenben, sem ördögben, csupán saját magukban.</font><br><br><b>firedragon   írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok<br>  Mondtatok valahol hogy a Led Zeppelin   - Stairway to Heaven szamat   
+visszafele hallgatva valami rejtett uzenet van. Meg tudnatok mondani   pontosan hogy merrefele kell  
+ keresni?</div><br>Az <a target="_blank"style="font-weight: bold; color: black;" href="//www.bombagyar.hu/index.php?post=222">összeesküvős bejegyzésben</a> megtalálod,     
+lejátszható, meghallgatható, meg van mellett egy link is, amely ügyesebben megmutatja, hogy miről    
+ van szó.<br><br><b>Outsider írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">A "Sátánista szimbólumok a     
+szabadkőművességben és mindennapjainkban" bejegyzésre reagálva<br>  <br>  Kedves Blogadmin! Pontosan 
+    ismerem a forrásokat, ahol ez a sok badarság össze van hordva - a nagy része karizmatikus   
+keresztény   maszlag, nulla igazságtartalommal. Mivel immáron 15 éve foglalkozom okkultizmussal és   
+mágiával   (hangsúlyoznám, hogy NEM vagyok sátánista), rólad pedig úgy tudom, hogy az igazság   
+érdekel, ezért   szeretnék reagálni. <br>  <br>  Nézzük részletesen.<br>  <br>  A Szabadkőművesség a 
+  18. században   jelent meg, eredetileg a kőművesek céheként, azon célból, hogy az építkezések 
+során   használt   titkokat megőrizzék - aki nem volt céhtag, nem juthatot hozzá. Ebből valóban 
+viszonylag   gyorsan   titkos mozgalom alakult ki; ugyanakkor az 1800-as évekre már egyre-másra 
+alakultak a   titkos   társaságok, rendek, stb. A Szabadkőműves Mozgalomnak annyi köze van a 
+zsidókhoz, hogy   zsidók is   beléphetnek; továbbá igencsak "sikk" volt (sőt a mai napig az) a 
+politikai-gazdasági   elit számára   eme titkos társasághoz tartozni. Ennek következtében 
+megjelentek azok a páholyok,   amik arra   szakosodtak, hogy összeismertessék a megfelelő embereket 
+a megfelelő emberekkel - de ez   nem a   szabadkőművesség hibája, hanem az említett elité. <br>  
+<br>  Anton Sandor LaVey nem zsidó -   hithű   keresztény családból származott, a templomban 
+orgonált vasárnaponként. Azért lett sátánista,   mert a   vidámparkban a vetkőző néniknek is 
+orgonált, és azt vette észre, hogy mindkét helyen   ugyanazok ülnek   az első sorban. Egyébként 
+LaVey azt hazudta, hogy magyar cigány a nagymamája.   Amerikában ugyanis a   magyar cigányokról a 
+vámpírfilmjeikből ismert romantikus kép él -   vándorolnak, néhol megtréfálnak   valakit, de 
+alapvetően egy kedves nép, akiknek igen komoly mágikus   tudásuk van; mindig egy öreg   magyar 
+cigányasszony jósol a főhősnek, az adja a jótanácsokat. <br>    <br>  A Kabbala a zsidó vallás   
+misztikus ága, mely az 11. századtól igen jelentős hatást gyakorolt   a mágikus gondolkodásra   
+Európában. A 15-16. században jelent meg a Pico della Mirandola és   Johannes Reuchlin nevével   
+fémjelzett keresztény kabbala, mely a krisztusi igazságok misztériumát   kutatta; ez az ág a   
+legelterjedtebb a mai napig. <br>  <br>  Hogyan jön össze ez a három? A   Kabbala az egyik   
+legalapvetőbb ezoterikus-okkult irányzat, melynek könnyen alkalmazható,   vallássemleges alapelveit, 
+  szimbolikáját szinte minden modern rendszer használja, így a   Szabadkőművesség, továbbá az 
+1960-as   években alapult Church of Satan is (mely, bár jelentős   sátánista szervezet, de nem a 
+legnagyobb, de   még csak nem is a legjelentősebb - főleg a LaVey   halála után bekövetkezett 
+"egyházszakadás"   óta).<br>  <br>  A &#8222;halálrúna&#8221;<br>  A   germán rúnáknak önmagukban is 
+szimbolikus   jelentésük van (nem egyszerűen hangot, hanem egy teljes   gondolatkört is jelölnek). A 
+lefelé   fordított rúnát troll-rúnának nevezzük, és az adott   gondolatkör fordítottját jelzi. Az 
+általad   említett &#8222;halálrúna&#8221; eredetije az Algiz.   Betűértéke: Z (ónorvég R). A 
+legátfogóbb   szimbolikájú rúna. Védelmet és győzelmet adó jel.   Szentséget, szent helyeket is 
+jelképez. Az isteni   ikrek védőhatalma. Az erő az emberek életében,   mely tereli őket az istenek 
+világa felé. Az istenek   és emberek közti kapcsolat, híd. Ergo ugyanez   fordítva a 
+megszentségtelenítés rúnája, melyet azért   vésnek az elhunyt fölé, hogy az még halálában   se 
+találjon nyugodalmat. Valóban vicces egyébként,   hogy ez lett az atombomba-ellenesség jelképe   
+(csak jóval később vált az általános béke   jelképévé).<br>  <br>  Hermész botja<br>  Hermész nem a  
+ kereskedelem istene. Hermész először is   hírvivő, ezéltal a mozgás istene - és mivel a 
+kereskedelem   alapja az áru és pénzmozgás, ezért a   kereskedők közt is igen kedvelt volt. 
+Ugyanakkor emellett   bizony a tudás, tudomány istene is,   legfőképp pedig az orvostudományé. 
+Aszklépiosz Hermész-pap   volt és orvos (egyébként létező személy),   aki olyan hírnévre tett szert, 
+hogy külön megtették a   gyógyítás istenének. Hermész botján a két   kígyó közül egyik a gyógyítás, 
+máik a bölcsesség   jelképe, Aszklépiosz botján csak a gyógyításé   található. <br>  <br>  
+"Baphomet" ölében a   kaduceus<br>  A kép, amit beraktál, Eliphas Levi, azaz   Alphonse Louis 
+Constant hermetikus mágus A   nagy mágia dogmája és rituáléja (La Dogme et Rituel de la   Haute 
+Magie) című, az európai okkult   gondolkodásra igen nagy hatást gyakorló művében található.   Ebben 
+az esetben a kecskefej a gyengék   elrettentését szolgálja, feje tetején a tűz a tudást. Jobb   
+kezével felfelé mutat (mivel a jobb kéz   az aktivitás és a jövő jelképe, ezért ez az Isten felé   
+törekvést jelzi),karjára a latin Solve,   "oldj" szó van írva - ez a fizikai síktól való   
+megszabadulás. Bal keze lefelé mutat, rajta a   Coegula, "köss" - evidens módon a fizikai síkhoz 
+való   ragaszkodás, mint a "megvilágosodásnak",   azaz Isten elérésének akadálya. A kaduceus nem az 
+ölében   van, hanem a fallosza maga, mely a   teremtő princípium - azaz a tudás, mint a teremtés 
+alapelve. Ez a   kép ebben a formájában egy   gnosztikus alapeszme, semmi köze a sátánizmushoz. <br> 
+ <br>  A "Sátán   kézjegye"<br>  Mint tudjuk,   a kereszténység a maga párszáz éve alatt a régi 
+pogány szokásokat egyik   oldalról nagyban követte,   másik oldalról nagyban pusztította. A régi 
+vallásokban ugyanis nagyon   jellemző volt, hogy "ha   harcoltak az emberek, harcoltak az istenek" - 
+és a legyőzött nép isteneit   demonizálták   (demonesztálták :D). Ez történt Pánnal, a szarvakat 
+viselő kecskeistennel is. Az ő   követőire   jellemző köszöntés az, amit manapság "metálvillának" 
+ismernek. Persze ezt a szimbólumot   útközben a   sátánisták is lenyúlták, lévén, hogy a 
+termékenység és a fizikai élvezetek jelképe.   Érdekességként   jegyezném meg, hogy a középső ujj 
+kinyújtása, a többi ökölbe szorításával ("kabbe   jel") még a   középkorban is démonűző jel volt a 
+fallosz = teremtés = Isten összefüggés miatt.   Hozzátenném, hogy   a mutató- és hüvejkujj 
+összeérintése ("minden rendben" jel) ez utóbbira volt   válasz, a vaginát,   női princípiumot 
+jelezve.<br>  <br>  Tisztelettel: <br>    Outsider</div><br>Köszönöm a részletes   elemzést! Nem 
+ígérek ilyen részletes választ; azért lássuk,   mit tudok mondani.<br><br>A   szabadkőművességről 
+szóló összefoglalásodnak nagyon örülök, de   elhiheted, hogy jómagam is az   átlaghoz képest sokat 
+foglalkoztam ezzel a hihetetlen titkos   szervezettel. Vannak forrásaim,   amelyek szerzőit 
+rejtélyes balesetek taszítottak halálba, és érdekes   összefüggések, melyeket már   nem tudok a 
+véletlennek betudni. Viszont azt is tudom, hogy az ilyes   összeesküvések   legveszélyesebb oldala, 
+hogy fogékonnyá tesznek olyan badar túlzásokra is, amelyek   logikusnak   tűnhetnek, de csupán az 
+első találkozás idejére. Azért jó, hogy van itt egy apró   összefoglalás,   hiszen a Bombagyár 
+olvasói között nagyon sok az ideológiailag alulképzett, akik az   ilyen alapokkal   sincsenek 
+tisztában. Nekik üzenem, hogy érdemes ezt elolvasni, de még sokkal többet   is kell   
+kutatni.<br><br>Hasonló a helyzet a kabbalizmussal kapcsolatban is, de az írásod többi része     
+(például a kézjelek eredete) nagyon érdekes volt, köszönöm. Több hozzászólásomban említettem 
+egyébként, hogy jómagam is az említett szerencsétlen által alapított földi sátánizmus parancsait és 
+törvényeit vallom és követem, jóllehet magam nem vagyok sátánista, hiszen több vallást ismerek, és 
+ezek számomra megfelelő elvei, illetve erkölcsi tanításai szerint próbálok élni. A sátánizmus 
+általam követett nagyjából húsz mondata pedig tökéletesen elfogadható és hihetetlen meglepő azok 
+számára, akik egyáltalán nem vagy nagyon jól ismerik ezt a vallást. Talán megérne egy bejegyzést, 
+hogy miről is beszélek. (Az érdeklődőknek: a parancsok között olyanok szerepelnek, hogy ne árts 
+kisgyermeknek; ha más tanyáján tartózkodsz, mutass tiszteletet; ha valaki közterületen háborgat, 
+szólj neki, hogy hagyja abba, ha továbbra is háborgat, akkor pusztítsd el; stb.)<br><br><b>Vince 
+írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Cuki, ahogy megfordítottátok a sorrendet a jelek, 
+szimbólumok létrejöttét illetően :)     Sátánistáék és egyéb csúnyabácsik a meglévő jelek, 
+szimbólumok inverz vagy legalábbis megfordított     verzióját használták fel (pl feszület fejjel 
+lefelé) a maguk antivallásának létrehozásához. Amit     láttak ki (avagy lefelé) fordtottak. Pl 
+ezért csúnyadolog amerikában fejjel lefelé felhúzni az amcsi     zászlót, mert az sátánizmus. Nem 
+vicc.  <br>  <br>  Egyébként, mivel megfordítottátok a sorrendet,   a   dolgok megfordítása 
+ellentétükre pedig a sátánisták szokása, a postokra egyébként abszolúte   jellemző   logikával (és 
+érveléssel) élve tehát minden kétséget kizáróan sátánisták vagytok, de   legalábbis a   sátán 
+gyermekei. :) LOL<br>  <br>  Vince</div><br>Jól van, Vince, röhögj csak. Ez az     
+én-okosabb-vagyok-és-csak-köröglek hozzáállás éppenséggel azon nagyképű emberekre jellemző, akik     
+talán éppen a vallásuk miatt többnek és jobbnak képzelik magukat. Pedig általában csak iditlén     
+balfaszok.<br><br><img src="./resources/pictures/blogin_papaitron.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0">Sokan     
+hörögtek jajveszékelve, hogy a fordított kereszt nem is sátánista, mert a keresztények is     
+használják, bibibi. Vajon hol írta bárki, hogy nem az? Hol írta bárki, hogy sátánista eredetű?     
+Természetesen sehol, de a mindenkinél okosabbak már hozzá is képzelhetnek dolgokat. Az árpádsávos    
+ zászló sem nyilas jelkép, de a belevarrt nyilaskereszt óta bizony az is: a nyilaskeresztesek a mai  
+   napig lobógjuknak tekintik ugyanúgy, elég emlékezni a suttogo.hu részéről Németberta Péterrel     
+készített Bombagyár-interjúnkra, amikor kijelentette, hogy a zászló nyilas jelkép is. Más kérdés,    
+ hogy az eredeti mondanivalóját, a valódi jelentését nem szabad, hogy elhomályosítsa egy másik,     
+ráerőltetett szimbólum. Itt is ez a helyzet, csak nyilasok helyett sátánistákról van szó: ők a     
+fordított keresztet a saját világnézetükbe és hitvilágukba mint Jézus megalázának egyik jelképét     
+vették föl. Tehát nem hörögni, hanem megérteni. Én nem foglak leköpni, ha fejre fordított kereszttel 
+    jelensz meg előttem, de egy sátánista sem. Tudod, a horogkeresztnek nevezett szvasztika sem     
+zsidógyilkoló jelkép. (Egyébként ez éppen már a vicc és irónia része lenne az összeesküvésnek: de    
+ tudtam, hogy néhányan nem értik meg, hogy az ironizálásban is lehet még iróniát keresni, és a pápai 
+    trónról készült képet nem tettem be. Éppen azért, mert arról nincs is itt     
+szó.)<br><br><br><br><br><b>dowNLoad írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Az összeesküvés elméletekhez szorosan kapcsolódik: New World Order, ami először az Iron     
+Mountain-i kiszivárgott(?) titkos kormányzati gyűlés jegyzőkönyvében bukkant fel először, erről, és  
+   az ehhez kapcsolódó sok mindenről itt egy topik, ahol egy ideje már feszegetik a témát, érdemes 
+pár     dolgot átvenni, amit részletesen kitárgyaltak: <a target="_blank"style="color: black; font-weight: bold;" href="//www.sg.hu/listazas.php3?id=1108932295&order=reverse&index=1">[LINK]</a><br></div><br><br><b>dowNLoad
+  írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sátánista szimbólumok.. posthoz:<br>  a Bohemian     
+Grove (bohém liget) is megérne egy külön cikket, ott is a bagoly az egyik fő szimbólum, konkrétan    
+ egy 20m magas rézbagoly, ami előtt nagyon elt státuszú figuráknak mutatnak be egy érdekes műsort:   
+  rituálisan elégetnek egy embert, moloch tiszteletére.<br>  (nem igazit, csak bábut)<br>  Alex 
+Jones     forgatott erről egy <a target="_blank"style="color: black; font-weight: bold;" href="//video.google.com/videoplay?docid=-1358319439993514946">megdöbbentő dok.folmet</a>, hogy 
+    kik járnak oda, és mióta létezik ez az egész, és miért: <br>  (G.W. Bush természetesen, 
+Kissinger,     stb. mind oda járnak, fotók is vannak)<br><a target="_blank"style="color: black; font-weight: bold;" href="//video.google.com/videoplay?docid=1312392966306512397">  Egy felvétel</a> 1981-ből:     
+(azóta 1db dok.film -a fenti- készült az egészről)<br>  Esetleg prága lenne még érdekes, hogyan     
+kapcsolódik az ott fellelhető rengeteg szabadkőműves épület, szimbólum, és az ottani zsidóság,     
+esetleg miért pont ott és pont  akkor voltak Prágában bizonyos összejövetelek. (világbank ülés,     
+stb)</div><br><br><b>firedragon írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;">Sziasztok. Reagálva a szabadkőműves     
+szimbólumokrol irt cikketekre, <a target="_blank"style="color: black; font-weight: bold;" href="//worldcoingallery.com/countries/Germany_all5.html">ezt találtam</a>. Ha jól tudom a     
+szögmérő is régi szabadkóműves szimbólum...</div><br>Ne, fuj! Néhány gyárlakó pontosan leírta, hogy  
+   összeesküvések márpedig nincsenek. Aki egyébként ilyet ír, az a legveszélyesebb: közénk 
+tartozónak     érzi magát, holott az ellenséget szolgálja tudatlanságával és naivitásával: 
+összeesküvések márpedig     vannak, ez axióma. Például mi a gimnáziumban nagyon utáltunk egy tanárt, 
+aztán összeesküdtünk     ellene. Még szimbólumnak értelmezhető tárgyaink is voltak, és létezünk. 
+Azt, persze, elfogadják már,     hogy az MSZP és a Fidesz közös érdekeik miatt a szükséges mértékben 
+összetartanak. Az nem     összetartás, mert nincs mögötte vallási tartalom?<br><br><b>firedragon 
+írta:</b><br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; text-align: justify; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-left: 20px; margin-right: 20px; font-style: italic;"><a target="_blank"style="color: black; font-weight: bold;" href="//labor.transindex.ro/?cikk=658">Ez</a> is érdekes dolog :)</div><br>Ha azt   
+mondod...<br><br>   </div>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2007-11-14&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=232&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=232&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=232&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12855"></A>17. <A HREF="mailto:cacodaemon@vipmail.hu" STYLE="color: #000000">cacodaemon</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 23:03:16</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_667.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Néhány gyárlakó pontosan leírta, hogy összeesküvések márpedig nincsenek" - szerintem mi néhányan nem azt állítottuk, hogy nincsenek összeesküvések (éppeszű ember ilyet se állít). Összeesküvések minden bizonnyal vannak itt-ott. Akár nagyobbak is. Ezt nem vitattuk.<br />
+Mi csak azt kifogásoltuk, hogy milyen hülyeségek kerültek be ebbe az amúgy színvonalas blogba összeesküvések címén. <br />
+Például lehet, hogy tévedek, de az, hogy a Vénusz bolygó pályája 47°-os szöget zár be a Napéval, és valahol megszámoltak valamit, amiből 47 van, az nem jelenti azt, hogy a babó szabadkőművesek kozmikus összeesküvést szőttek Luciferrel lepaktálva a világ meghódítására. És egy bagoly egy fán sem valószínű, hogy kifejezetten a szabadkőműves hatalomátvétel nyomát jelölné.<br />
+És mi szerepe van a rejtett szimbólumoknak? Erősebbek lesznek tőle? Mert inkább csak lebuktatják magukat... hogy egy titkos társaság szánt szándékkal mindenhova be akarja lopni a jelképét pff... Akkor ez azt mutatja, hogy nem túl intelligensek, hanem babonás balfaszok, így nem is olyan veszélyesek.<br />
+Akár a hátam közepére tetoválhatnak egy hatalmas piramist benne egy szemmel, attól én nem válok szabadkőművessé, és valószínűleg senkit sem térítek meg nekik.<br />
+Semmi haszna nincs az elrejtett jelképeknek. Vagy ha úgy gondoljátok, hogy ők ettől hatalmasabbak lesznek, okkultisták vagytok ti is. Hogy én miért nem a valami ork jósda blogját kezdtem el olvasni...<br />
+Eddig azt hittem, csak poénból jósoltattátok meg a bombagyár jövőjét, de rémülten veszem tudomásul, hogy talán komolyan gondoltátok...<br />
+Vagy ha nem, akkor minek foglalkoztok ilyen marhaságokkal, mint ez a számmisztika?!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12853"></A>16. Kain</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 22:49:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_919.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A sátánizmus általam követett nagyjából húsz mondata pedig tökéletesen elfogadható és hihetetlen meglepő azok számára, akik egyáltalán nem vagy nagyon jól ismerik ezt a vallást. Talán megérne egy bejegyzést, hogy miről is beszélek.<br />
+<br />
+Akkor írd meg Blogin!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12826"></A>15. warhamster (40.000) -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 21:22:32</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_250.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">1. priusz pápa. azért, hogy legyen már egy kis értelmetlenség is.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12788"></A><FONT COLOR="#FF0000">14. </FONT>revisionist3500 -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 20:01:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1624.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12772"></A><FONT COLOR="#FF0000">13. </FONT>SerapH89 -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=232&id=12766#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-14 19:13:29</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_205.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12766"></A>12. <A HREF="mailto:blogadmin@gmail.com" STYLE="color: #000000">Blogin</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=232&id=12754#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2007-11-14 18:55:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Mit nem értettél azon, hogy tudom? Egyébként gratulálok, hogy ezt egy paptól kell megkérdezned.<br />
+Azt sem érted, amit leírtam?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12758"></A>11. terminus -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 17:55:25</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_694.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Blogin, had mutassam meg, hogy miért fölösleges a kilences szám önmagába fordulásáról filózni: minden számrendszer legmagasabb számjegyével igaz lesz, kivéve a kettest. Például tizenhatos számrendszerben: F * FE12 = EE30E, ennek a számjegyeinek összege pedig 2D, aminek meg F. Igaz ez persze a kettest kivéve bármelyik számrendszerre. Mondhatnék példákat a 11-es számról is, hasonló magyarázatokkal, de nem fárasztok senkit tovább kérése nélkül.<br />
+<br />
+Sok hasonló dolgot tudnék mutatni a többiről is. Ezek a dolgok nagyon szépek, hogy egyes számok így vagy úgy kijönnek, stb., de a legnagyobb részük matematikai bűvészkedés, vagy szimpla egybeesés.<br />
+<br />
+Mondhatná persze bárki, hogy "túl sok az egybeesés," meg hogy "véletlen nem lehet," de igazából lehet véletlen, azért van ennyi egybeesés, mert sokféle magyarázat közül lehet válogatni. A legtöbb írásotokból ki lehetne hozni valahogyan pl. a 666-ot, a többi meg belemagyarázás kérdése.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12754"></A><FONT COLOR="#FF0000">10. </FONT>SerapH89 -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 17:19:53</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_205.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12743"></A><FONT COLOR="#FF0000">9. </FONT>Szecső</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 16:29:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_271.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment12741"></A><FONT COLOR="#FF0000">8. </FONT>Szecső</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2007-11-14 16:18:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_271.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=232&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=232&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=232&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

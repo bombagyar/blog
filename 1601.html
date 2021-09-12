@@ -1,0 +1,467 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1601#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Mindenki zöld akar lenni";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=1601#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Mindenki zöld akar lenni<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 november 19. 04:30:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1601.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Nem újdonság: mindenki zöld    
+       akar lenni. Kis, zöld emberke, aki majd jól megmenti a világot a gonosz 
+környezetszennyezőktől.           Tetszetős ez a zöld szín, nem olyan, mint a korábban lejáratott 
+vörös vagy a kék. A zölddel     ugyanúgy       lehet lázadozni, van hozzá érthető ellenségkép, lehet 
+megint terelgetni a birkákat,     akik   korábban   a   vörös és a kék mesékre is fogékonyak voltak. 
+A tőkét addig ütöttük, míg mi     törtünk   bele; a   nácikra   addig mutogattunk, míg végül nem 
+maradt semmi, amire még ne mutattunk     volna; és   megint   nevetségessé   váltunk - még mindig 
+jobb, mintha megint gyilkossá - a   korlátlan   "szabadság"     eszméjével. Nincs más   hátra, 
+máshogy kell megmentenünk ezt a hülye   emberiséget.   Legyünk   zöldek.<br><br><img src="./resources/pictures/tomcat_gruhl_ein_planet_1978.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0">Mármost álljunk    
+   meg egy pillanatra. Ellentétben a korábbi vörös,   kék és más   színekkel, olyan tényleg van, 
+hogy   zöld,     és nem most találták ki. A zöld fogalmát -   már nem a   színét, hanem a zöld 
+gondolatét -   bizonyos   Dr.   Herbert Gruhl (1921-1993), az <span style="font-style: italic;">Ein 
+Planet wird     geplündert</span> (A   bolygó kifosztása) című könyv     szerzője találta ki 1975 
+körül, aki az   elsők   között ismerte fel, hogy   a környezetszennyezés, a     klímaváltozás és 
+minden ezzel járó   dolog végső   soron nem sok jóra vezet az   emberiség számára.     Abba kéne 
+hagyni mindent, de úgy   cakkpakk mindent,   amit eddig különféle   ideológiák -     kapitalizmus, 
+kommunizmus, mindenizmus -   címén műveltünk, és   újragondolni ezt a       civilizáció-dolgot, 
+mielőtt fejünkre szakad az ég.   Szó szerint. Inkább valahogy   úgy kéne használni       ezt a 
+bolygót, ahogy a Jóisten kigondolta.   Gruhl persze nem talált fel ezzel   semmi újat, csak     
+szólt,   hogy elállítgattuk a kapcsolókat,   és nem kéne tovább rángatni őket. De   ebben nagyon is  
+   igaza   volt.<br><br>Sajnos azonban   rosszkor volt igaza, mert a nyugati világ   tömegesen 
+majommá     formált   ifjúsága épp ezekben az   években őrült meg, és akart mindenáron   forradalmat 
+csinálni, ha     már a   második világháborúból   kimaradt. Mivel más nem jutott, hát nekiment   a 
+világ természetes     rendjének,   lásd 1968-as   diáklázadások, és csillogó szemmel követte azokat 
+a   vénülő     felforgatókat, akik végre     megérték, hogy befejezhetik, amiért egy nem sokkal 
+korábban   letűnt     korban minimum pofont, de   sok   esetben elmegyógyintézeti illetve börtönbeli 
+gyógyüdülést   kaptak,     vagyis a keresztény   Európa és a   nemzet fogalmának lerombolását. 
+Fogták elhülyített       tizenéveseiket, kivonultak   velük az utcára, és   lázadni kezdtek, mindegy 
+miért. A szülők ellen, az       iskola ellen, a   törvények ellen, az állam puszta   léte ellen. 
+Ezen öregeknek köszönhetően jött       létre a csúnya   szóval balliberálisnak nevezett   politikai 
+kultúra, amely a következő ideákat   tűzte     maga elé:   a civilizáció minden addigi   
+tapasztalatának elvetése, a devianciák dicsőítése,   a lelki     élet   megszüntetése, a tisztelet   
+fogalmának eltörlése és mindenféle társadalmi rend   szétzilálása.   E     körök természetes 
+eredményei   lettek a tömeggyilkos baloldali terroristák, mint   például a       Baader-Meinhof 
+csoport, de pszt, erről   nem szabad balliberálisok előtt beszélni,   mert   vértolulást     kapnak, 
+és elakad bennük a lemez a   nácizós résznél. Minél több diplomájuk   van,   annál     
+biztosabban.<br><br>Egyszóval ilyen kor volt ez   1975 körül. Ekkor kezdődött az a     szokás, hogy 
+ha     egy férfi nem nőként viselkedett, kinézték a   klubból, ha nem füvezett,     kiröhögték, és 
+ha még     katona is volt, már abszolút megvetés övezte. llyen   kor van most is,     csak azok az 
+idióta     tizenévesek immár felnőttek, és idióta médiaemberek lettek.   Ebbe a korba,     mármint a 
+hetvenes     évekbe robbant bele Herbert Gruhl, és tette meg szerény javaslatait   a     bolygó 
+megmentésére, mintegy     a lassú megdöglés alternatívájaként. Arra azonban már nem maradt       
+ideje, hogy ki is fejtse     nézeteit, mert a derék lázadozók, akiknek épp kezdett kifogyni a       
+lendületük, nem lévén több     hagyományos érték, amit szétdúljanak, kitörő örömmel ölelték     
+keblükre. Ó,   de rendes ember, talált     nekünk új ellenségképet! Máris tervezgetni kezdték,     
+hogyan fognak bemászni a   legközelebbi     atomerőmű kerítésén, hogyan fekszenek majd keresztbe a   
+  vegyi üzem iparvágányán, és   hogyan     tüntetnek majd a libamáj-üzemek ellen. Elvégre 
+tökmindegy,     csak lázadjunk, jöjjön a csúnya       rendőrség, és mutogathassunk rájuk, hogy 
+bántottak, és   ordítva   toporzékolhassunk, ha valami hülye       öregnek ez nem tetszik, hát nem 
+érti, hogy   for-ra-da-lom   van?!<br><br>Gruhl nevét hiába is   keresitek     például a 
+Wikipediában, annyi van   csak róla, hogy   <span style="font-style: italic;">No   page with     
+that title exists.</span> Még   ennyire se   méltatja az utókor. Helyette keressetek rá a   
+balliberális     Joschka Fischerre, a   kommunista   utcai randalírozóból és szabadcsapatosból lett  
+ német miniszterre.     Na, róla már   találni fogtok   vastagon, mindenhol kiemelve, hogy a német 
+Zöldek   párt egyik alapítója.       Ugyanígy megtaláljátok   Petra Kellyt, a multikulturalista 
+vérliberálist,   aki szintén a német Die       Grünen alapítója,   vagy Otto Schily-t, a - micsoda 
+meglepetés -   kommunista ügyvédet, aki a   Vörös     Hadsereg Frakció   nevű baloldali 
+terrorszervezet   védőügyvédjeként szerzett hírnevet,   majd a Zöldek     hatalomba   kerülése után 
+valahogy   belügyminiszter lett, a Gyurcsány   aranyhaverjaként&nbsp; és német       megfelelőjeként 
+ismert Gerhard   Schröder javaslatára.   Egyszóval minden balos zöld nevét és   életútját     szabad 
+ismerni, csak Gruhl   úrét nem, bár az   itt felsorolt baloldali-cionista   felforgatók csupáncsak   
+  beleültek a készbe,   amit ő   egyáltalán nem nekik szánt.<br><br><img src="./resources/pictures/tomcat_herbert_gruhl.jpg" style="border: 1px solid rgb(0, 0, 0); float: left; margin-right: 10px; margin-top: 0px; margin-bottom: 0px;" border="0">Herbert Gruhl ugyanis     
+  keresztény volt és konzervatív. Na, hát     ezért nem hallhattok róla. Nemzeti érzelmű volt - már  
+     amennyire a hetvenes évek     Nyugat-Németországában szabad volt annak lenni - és egyáltalán 
+nem volt   a     vörös tombolás híve.     Zöldre festődött "elvbarátait" éppen azért fogadta el, és 
+alapította   meg velük     a Zöldek   pártját,   mert azok, úgymond, elfogadták elveit, a 
+környezetvédelem és az   ésszerűség       filozófiáját, s   felhagytak baloldali tevékenységükkel. 
+Kutyából persze nem lesz   szalonna: ők   vitték     félre a zöld   gondolatot, és hitették el a 
+világgal, hogy az tulajdonképpen   baloldali   ideológia,   sőt,   a   "felvilágosult" 
+baloldaliságnak csupán egy mellékága, s mint   ilyen,   természetesen csakis az       1968-as 
+lázadók hitbizománya. Szegény Gruhl ugyan mondhatta,   hogy   ezt ő egyáltalán nem így találta       
+ki, de ez már senkit sem érdekelt, és 1981-ben, csupán   egy   évvel a Zöldek megalakulása után a    
+   zöldnek álcázott kommunisták bekerültek a nyugatnémet     kormányba.<br><br>És milyen jó dolog 
+zöldnek       lenni! Ez az ideális szimbiózis a gazdatest, azaz     a társadalom és a parazita, azaz 
+a baloldali       "társadalmi megvilágosultak" között. Lehet     nyugodtan kísérletezni, rombolni, 
+bevándorlókat Európára       zúdítani, az állampolgárokat minden     addiginál szorosabban 
+ellenőrizni, megfigyelni. Ha közben   épül     néhány szélkerék, és ki lehet     menni tüntetni az 
+olajcégek vagy a fókapusztítás ellen, kit   érdekel a     kormány? A lázadozó     fiataloknak adunk 
+elfoglaltságot, sőt, még furkósbotnak is jók, ha   gazdasági     érdekeink úgy     kívánják: lásd 
+magyar libamáj... Ha meg épp nem borult fel tankhajó a   közelben, még     mindig ott     vannak a 
+nácik, azokra mindig rá lehet küldeni pár ezer tüntetőt, hogy   azokkal         
+foglalkozzanak.<br><br>A gengszterváltás után több, mint húsz év kellett, hogy   Magyarországon      
+   kiégjenek a hagyományos politikai szerepek. A baloldalról tudjuk, micsoda. A   jobboldalról   
+szintén.   A     politológiában kicsit is járatosak tudják, hogy nálunk nincs is meg ez a   két   
+pólus. A   baloldal   (gyk.   MSZP) valójában szélsőbaloldal, a jobboldal (gyk. Fidesz) pedig     
+klasszikus   baloldal,   innentől kezdve   pedig a valódi jobboldal (gyk. Jobbik) csakis     
+szélsőjobboldal lehet,   holott nem   az. A politikai   színpad szélén táncikálnak a liberálisok,    
+ akiknek mindegy, csak az   legyen, amit ők   mondanak. (Hogy   kik ők? A megfejtők között egy   
+letépett   körmöt sorsolunk ki.)   A zöldek   pedig...<br><br>Nos, ez az.   Nálunk eddig nem voltak  
+ zöldek. Nem   volt rájuk szükség. A     környezetvédelem senkit sem érdekelt, és   igazából azt sem 
+  tudjuk, mi az,   hogy zöld. Valamit     sejtünk, hogy balos idióták, akik odaláncolják   magukat   
+különféle ipari   létesítményekhez. Pedig     Herbert Gruhl megírta, mi lenne a helyes válasz.     
+Zöldnek lenni annyit   tesz: a világot a maga     ésszerű és magától értetődő törvényei szerint   
+használni   és megélni. Mi   mást írhatna egy   keresztény   konzervatív? Ám jöttek az álzöldek, és  
+ boldogan   felismerték Gruhl   tanaiban saját   önigazolásukat.   Hát persze, ésszerűen, vagyis 
+úgy,   ahogy mi   akarjuk, hát akkor   reformáljuk meg   a világot gyorsan,   hogy ésszerű   
+legyen!<br><br><img src="./resources/pictures/tomcat_zold_fuvesek_0.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0">És   
+2008-ra, mire nálunk,       Magyarországon is elkoptak a hagyományos politikai szerepek -   értsd:   
+mindenkiről kiderült, hogy       akkor is hazudik, ha kérdez - szükségszerűen előkerült a zöld     
+kártya. Fodor Gábor már régen       bejelentette: szeretné, ha lenne Magyarországon is zöld párt. Ó, 
+    természetesen dehogyis egy     Herbert   Gruhl-féle zöld pártra gondolt! Inkább egy olyanra,   
+amelyikbe   át lehet menteni az SZDSZ       holdudvarában képzett ifjú kádereket, esetleg néhány   
+MSZP-s havert, akik   még nem mentek el a       süllyesztőbe Zuschlag bukása után. Az új zöld párt,  
+ mint afféle Noé bárkája,   kimenekíti majd ezt   a     társaságot, s velük együtt ideológiáikat a   
+politikai elitet szökőárként   elborító     hitelvesztésből, át   egy új "békés rendszerváltáson" a  
+ túloldalra. Csak nem képzeljük,   hogy     feladják szép álmaikat a   "szabadságról", ahol ők   
+mondják meg, ki lehet ember, a "békéről",   ahol     ők mondják meg, ki lövethet   kire vagy az   
+"egyenlőségről", amelyben mindenki állat, de   néhányan     még nagyobb állatok, vagy hogy is   volt 
+  Orwellnél. 2010-re készen kell állnia az "új,   friss"     politikai erőnek. Már neve is van: 
+"Lehet     Más a Politika." Azaz LMP.<br><br>Nem tűnt fel       senkinek, milyen óriási érdeklődés 
+övezi ezt   a suta   kis pártocskát? Minden mozdulatukra azonnal       odafordulnak a tévékamerák, 
+rohannak a   riporterek,   csattognak a fényképezőgépek. 2006 szeptember       18-án este több, mint 
+százezer   ember tüntetett a   Kossuth téren - de ezt letagadták, a       közszolgálati Magyar 
+Televízió pedig   még csak nem is tudósított   róla, még akkor sem, amikor a       tüntetők már a 
+kapujukat döngették.   Erre jön ez az LMP, kiragaszt pár   matricát, és máris övék a       figyelem. 
+Kiállnak hárman a   Parlament elé, jelképesen megmosni egy   politikus kezét, és övék az       
+országos média figyelme.   Komolyan elhisszük, hogy ez csupán az   újszerűségük miatt van? Korábbi   
+    kommunista   pártkáderek, MSZP-hez és SZDSZ-hez közeli arcok hirtelen   "zöldként" mutatkoznak 
+be,       "zöld   vitaesteket" szerveznek bioétel-kóstolóval, és a "zöld gondolat"   fontosságáról 
+papolnak...   s       közben előadják a legvisszataszítóbb vadliberális ideológiákat, hogy   
+romboljuk le a   családokat,       akadályozzuk meg, hogy közösségek épüljenek, felejtsük el a 
+nemzet   fogalmát, mert   itt az új       internacionalizmus, a zöld, a zöld, a sötétzöld. Komoly 
+emberek is bedőlnek ennek a maszlagnak, hiszen az LMP gőzerővel szervezi vidéki szervezeteit, és nem 
+egy jószándékú, de naiv embert felültetnek, maguk közé édesgetnek, hogy aztán mint "mérvadó 
+szakemberekre" hivatkozhassanak rájuk.<br><br>Herbert Gruhl nem   ezt   akarta. Az ő       
+olvasatában a környezet védelme nem ürügy, hanem eredmény. Nem olyan cél, amely     feljogosít a     
+  társadalom bármiféle újragondolására, ahogyan teszik azt - sok százmillió ember   élete   árán -   
+1789     óta a különféle, korszaktól függően forradalmárnak, baloldalinak,   liberálisnak vagy     
+egyszerűen     csak haladónak nevezett körök, hanem racionális, ésszerű életmód   eredménye, olyan   
+életé,   amely     összhangban van a világ természetes rendjével, amit vagy úgy   hívunk, hogy Isten 
+  alkotta rend,   vagy     nem hívjuk úgy, de attól még ugyanaz. Nem újabb   álcázólepel azoknak, 
+akik   évszázadok óta       visszaélnek az emberiség legnemesebb szavaival, a   szabadsággal, az   
+egyenlőséggel és a       testvériséggel, s ennek nevében törlik el mindhármat. A   zöld gondolat   
+mindenkié, s értelmetlenné       teszi mindazokat a társadalmi kísérleteket, amelyek a   XX.   
+században csúfosan megbuktak. Ezt a zöld       gondolatot tartja magáénak a Zöld Párt, az a   párt,  
+ amelynek képviselőjelöltje vagyok. Túl azon,   hogy     céljaink értelemszerűen a nemzet     
+túlélését, s azon túl a globális túlélést szolgálják,   immár új,     váratlan feladatunk is akadt:  
+   megküzdeni a múlt sárkányával, ami nem is olyan régről   maradt itt, és     sokkal veszélyesebb,  
+   mint eddig bármelyik. Hiszen immár nem "csupán" néhány   százmillió, de mind a hatmilliárd   
+emberi     lény életét veszélyezteti azzal, hogy pusztító, romboló   ideológiája szolgálatába   
+akarja       állítani az ökológiai önvédelem kérdéskörét, frázisokká   alacsonyítani az ökologikus   
+gondolkodás       közérdekét. Ha övék lesz a "zöld" fogalma, elvesztettük   az utolsó esélyt a Föld, 
+s   ezen belül       Magyarország megtartására.<br><br></div>      </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-11-19&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=6" TARGET="_blank"><IMG SRC="./resources/banners/scenehu_468x60.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1601&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1601&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1601&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1601&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1601&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1601&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1601&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1601&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1601&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1601&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment122560"></A>89. Tomcat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1601&id=121168#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-11-21 23:09:34</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_14.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A kép nyilvánvalóan illusztráció. A szó jelentését keresd ki az Idegen Szavak Szótárából.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment122559"></A>88. Tomcat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1601&id=121241#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-11-21 23:08:48</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_14.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Légy üdvözölve. És ne tegyél úgy, mintha nem tudnád, kikhez kötődnek ezek a magukat tíz éve zöldnek nevező LMP-sek. Mi tudjuk, figyeljük őket.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment121511"></A>87. Kopiás Attila Steve</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1601&id=121262#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-11-20 16:31:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Én. Rég regeltem, ritkán írok. Kábé akkor, amikor név szerint említve vagyunk és valami miatt értelmesnek tűnik megnyilvánulni. Én sem szeretem, amikor a mi oldalainkat áll neki valaki széttrollozni, szóval igyekszem visszafogni magam és nem mindenre ráugrani... :+)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment121294"></A>86. <A HREF="mailto:blogadmin@gmail.com" STYLE="color: #000000">Blogin</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1601&id=121168#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-11-20 11:43:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szerintem az nem az LMP-t illusztrálja, mert a cikk nem az LMP-ről szól. Egy jelenségről, melynek az pusztán része.<br />
+<br />
+De funkcionális analfabéták miért nem az egyszerűbben értelmezhető portálokat olvassák?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment121262"></A>85. vébermester</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1601&id=121241#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-11-20 10:36:55</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_798.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hoppá, a Steve! Te vagy az éhségsztrájkos-Budaházyvalvitázó, ugye? Hát regeltél?<br />
+<br />
+LMP-re adott reakcióra már én is akartam mondani, hogy elég különös csúsztatás. "hogy egy olyan világképet alakítotok ki magatoknak, amiben rajtatok kívül mindenki együtt a világ lerombolására tör, akkor is, ha ez nem így van" - hát ja, nekem is így tűnik néha.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment121241"></A>84. Kopiás Attila Steve</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-11-20 09:27:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Meg se alakult még az LMP, az utóbbi három hónapban már "tuti forrásból" hallottam, hogy a Fidesz hozta létre ballib szavazókat elcsábítani az mszpszdsztől, hogy az mszpszdsz hozta létre odamenekíteni magát, hogy igaziból a humanisták állnak mögötte, hogy igaziból a multik akarnak maguknak pártot hogy ne legyen valódi ellenzőjük, hogy valójában ezek komcsik és nem tudom még mit. Mind tuti, nekem elhihetitek. <br />
+Mert ők persze azt mondják magukról, hogy javarészt tizen- huszonéve aktív zöld és alternatív aktívisták, szakemberek, tanárok stb országos összefogásából készül épp megszületni ez a valami, olyan emberekéből, akik civil teljesítményként külön-külön is elég sokat tettek le az asztalra, így aztán a média is ismeri őket, de hát nem hihetünk ezeknek...<br />
+Én erősen távolálló külsősként ez az, amit leginkább nem értek: mit nyertek azzal, hogy egy olyan világképet alakítotok ki magatoknak, amiben rajtatok kívül mindenki együtt a világ lerombolására tör, akkor is, ha ez nem így van. Úgy értem, bőven elég probléma van magában is a világban, tök sok dolgon akartok változtatni, erre sokan felhúztok magatok elé egy ilyen illúzió-ködöt és azzal hadakoztok napestig, aztán csodálkoztok, hogy a világ nem akar megváltozni. Oké, nem mondom, hogy ezt sajnálom, mert merőben más irányú változást látnánk szívesen, de akkor sem értem. Ez a vesszőparipa például, hogy a ballib kormány antiszociális intézkedései ellen hat éve folyamatosan tiltakozó zöld-alter-globkrit csoportokat állandóan a kormány bábjának tekintitek például az egyik legfurább. Már csak azért is, mert tényleg bőven elég különbség van köztünk alterok és köztetek nemzeti radikálisok között. Pl a Humanista Párt volt az első magyarországi párt, ami támogatta a melegházasságot meg még lehetne sorolni, evidens emberi jogi téren a hatalmas távolság köztünk. Kábé akkora, mint szociális témákban a kormány és köztünk. <br />
+Na mindegy, nem az én dolgom, csak fennakadok rajta néha mert nem értem. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment121175"></A>83. bryan5</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-11-20 01:47:39</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4348.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kissé vargabetűs a cucc...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment121168"></A>82. F16</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-11-20 01:31:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A gandzsás fiataloknak a képen, semmi köze az LMP-hez, őket az USA-ból importáltad. Szerintem ciki így hiteltelenné tenni, amit írsz.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment121114"></A>81. <A HREF="mailto:blogadmin@gmail.com" STYLE="color: #000000">Blogin</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1601&id=120957#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-11-19 23:08:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Olvasd el a programot. Nem fog mindenkinek egyesével elmondani valamit, amiről volt már szó.<br />
+<br />
+Kérdésedre: nincs baj az ellenvéleménnyel. De az, hogy valaki Kritikus névvel ennyire nem veszi a fáradságot, de elvárja a választ, szerintem legalábbis furcsa. Emellett pedig az nem ellenvélemény, hogy "unom már a Zöld Pártot, írj másról". Nincs joga az ellenvélemény hangoztatására annak, akinek nincsenek valódi információi, gondolata, esetleg még rosszhiszemű is.<br />
+<br />
+Nevetséges ez a kitételed azután, hogy babó, Fiatal Baloldal-elnök, Index-fórumos és minden más furabogár is írhatott, írhat itt.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment121102"></A>80. muhaddib</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-11-19 22:50:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_440.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Vigyázz...még a végén mutáns ork lesz nyolc kézzel. Így egyszerre tud játékgépezni, cigizni, inni, mócerolni, kunyerálni, segget-tököt vakarni, lopni, ölni, tapogatni és így tovább...Ez már maga lenne a paradicsom számukra. Én csak jót szeretnék, így kívánom, hogy az összes kedves rétitroll igyon egy nehéz korty vizet :D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1601&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1601&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1601&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1601&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1601&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1601&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1601&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1601&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1601&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1601&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

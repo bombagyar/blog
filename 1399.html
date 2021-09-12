@@ -1,0 +1,728 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1399#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Az Ima ereje";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_565.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Az Ima ereje<BR><DIV CLASS="postheader_small">Blog - Dragon64</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 október 1. 14:17:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1399.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><p style="text-align: justify;">És akkor most valami egészen     
+  más.</p><p style="text-align: justify;">Tudjátok, amikor az emberek imádkoznak, 
+akkor-általában-úgy       gondolják, hogy az általuk elmondott szavak valamiféle "csereüzlet" 
+részeként jutnak el a célzott       személyiség-vagyis Isten- felé. Valahányszor hallom, hogy "Ezt 
+az imát pedig X-Y egészségéért,   lelki     üdvéért, ilyen-olyan kívánságok teljesüléséért 
+mondom-mondjuk", mindannyiszor végig fut a   hátamon   a   hideg. Egyszerűen úgy érzem, ezek a 
+magukat "hívőnek", "vallásosnak" gondoló személyek   azt     feltételezik, hogy a Teremtő igényli az 
+efféle "üzleti kapcsolatot", holott szerintem   Isten-ha     van-messze fölötte áll a mi 
+elképzeléseink korlátain, és nem aszerint ítél, vagy   "jutalmaz"     bennünket, hogy mi mit 
+gondolunk a Vele való kapcsolatunkról. Pontosabban Ő sokkal   teljesebb és     "végtelenebb" annál, 
+mintsem örömét lelné efféle "ószövetségi szellemű   cserekereskedelemben". Igen,     azt gondoljuk, 
+Ő valamiféle "pénzbedobó automata", vagyis felül   bedobunk 12 Miatyánkot és 8     Üdvözlégyet, 
+cserébe pedig alul kiesik számunkra egy lottóötös, egy   Lány szerelme, vagy Bözsi Néni     
+gyógyulása...</p><p style="text-align: justify;">Szerintem,   mondom, ez maga az 
+istenkáromlás.</p><p style="text-align: justify;">Mert ugye a Mester-gyengébbek   kedvéért 
+Jézus-megtanította Nekünk a     helyes imádságot, mit "a legbelsőbb szobába visszavonulva"   
+mondhatunk, és a szívből szóló zörgetésre     Ő "ajtót nyit Nekünk".</p><p style="text-align: justify;">Ott van pl. az a bizonyos "És ne vígy     minket a kísértésbe!" dolog. Nekem ez valahogy   
+mindig olyan riasztó volt, hiszen a "Kísértő"-már a     "Könyv" tanítása szerint is valami egészen   
+más, mint Akihez én fohászkodni szeretnék. Aztán     figyelmesebben elolvastam Édasányámtól kapott,  
+ még 1946 elöttről származó Károli féle Bibliámat, és     ott a következő szövegre leltem a "Mi   
+Atyánk" tanításában: "És ne vígy minket a     kisérTETBE!"...</p><p style="text-align: justify;">Igen, kisértet. Vagyis a "halott szelleme", az     pedig valami egészen más, mint a   
+"kísértés", ugye? Holt szellem, halott gondolat, értelmetlen, nem     evilági szellem.</p><p style="text-align: justify;">Amikor pedig-életemben előszőr-sikerült ezt a     gondolatot, vagyis   
+hogy Istenhez nem valamiféle kivánság teljesítéséért mondom a HELYES szövegű     fohászt, hanem   
+magamat teljesen FEL-ADVA-igen, fel, Neki, csupán azért mondtam a szívemből fakadó     Szókat, mert  
+ ezzel Őt-a Magassabbrendű Rezgést, a Mindenek Fölött Valót, a Teremtő     Gondolatot-kívántam-ha   
+mégoly kicsiny erőmmel is-"szolgálni", nos akkor valami igen furcsa élményben     volt részem.</p><p style="text-align: justify;">A kimondott Ige szárnyán-mint valamiféle     "megváltozott   
+tudatállapotban"-egy határtalan "Fénygömb" belsejében találtam magam, és ez a     "Világosságdarab"  
+ elkezdett száguldani velem egy érzékeléseken túli Valóságban, egy érzékeléseken és     "emberi   
+tudáson" túli Valóság felé. És ez negyon jó érzés volt.</p><p style="text-align: justify;">Ám   
+egyszer csak elkezdtem látni-már ha ezt a látomást megfogalmazhatjuk ezzel az egyszerű       
+fogalommal.</p><p style="text-align: justify;">Láttam egy kopár, sivár tüskebozóttal borított       
+hegyoldalt, lentebb egy füstölgő, romos város képével, miben döbbenten ismertem föl az egy korábbi   
+    utazásom során megkedvelt boszniai főváros romjait, azaz az épp ekkoriban, a "balkáni háború"   
+során     megsemmisített Szarajevót. A hegyoldalon, a tüskebokrok közt kanyargó ösvényen egy   
+szedett-vedett     katonai ruházatba öltözött, nagydarab, igen rossz arcú fegyveres férfi   
+közelített, vállánál fogva     maga után rángatva egy szemlátomást halálra rémült, cigányosan tarka  
+ rongyokba öltözött, kb.8-10     évesnek tűnő kislányt. Célja egy ócska kalyiba, amolyan fa   
+szerszámoskamra és kecskeól     keresztezésének tőnő kis épület volt.</p><p style="text-align: justify;">Egyszer csak-mint egy ezüst     villanás-egy fentről alásuhanó "fénykapszula" vágódott a   
+láthatóan gonosz gondolatokat dédelgető     fickó fejébe, mire ő artikulálatlan mordulással ellökte  
+ magától a hisztérikusan remegő, halálra     rémült kisleányt, Ki ezután reszkető kis lábain   
+elszaladt a közeli kanyaron túlra, és ott eltünt a     bokrok mögött. A figura ezután odatámolygott  
+ a bódéhoz, egy hirtelen rántással feltépte az ajtaját,     benyúlt rajta, és egy csatos üveget 
+emelt   ki a bal kéz felé eső&nbsp; polcról. Kinyitotta, majd     szájához emelte és kiitta 
+tartalmát,   valami pálinka szerű italt.</p><p style="text-align: justify;">A következő pillanatban 
+újra otthon   eszméltem öntudatomra, s azonnal megértettem, hogy az     általam ÖNZETLENÜL, azaz 
+minden fajta   HATÁROZOTT CÉL nélkül elmondott Ima a "Szellemi Térben"     pontosan meglelte azt a 
+helyet   (körülményt, valamit) ,ahol és amikor épp a legnagyobb szükség volt     erejére.</p><p style="text-align: justify;">Namost persze gondolhatjátok, hogy kissé megbuggyantam,     esetleg   
+kényszerképzeteim vannak, ám az ezután történtek még "ezotérikusabb felhangot" adnak a       
+mondandómnak.</p><p style="text-align: justify;">Ugyanis néhány héttel később meglátogattam egy      
+ kedves Barátomat, Ki az MTI. Naphegy téri központjában, a fotótárban dolgozik.</p><p style="text-align: justify;">Míg különböző témákról-kígyók, természetvédelem, utazások,       
+stb...-beszélgettünk, egyszer csak megláttam az asztalán egy fényképet, mely a látomásban "látott"   
+    férfit ábrázolta, sötét öltönyben, egy bírósági tárgyalóteremnek látszó helységben, fotósok és   
+    öltönyös-nyakkendős emberek gyűrűjében. Elhülten kérdeztem Jánost, ki ez az alak a képen, Ő 
+pedig       közölte, hogy egy szerb szabadcsapat egykori harcosa, ki ÖNKÉNT FELADTA MAGÁT a 
+nemzetközi       békefenntartóknak, hogy-megtörve az általa elkövetett háborús bűntettek súlya 
+alatt-a Hágai       Nemzetközi Bíróság elött feleljen tetteiért!</p><p style="text-align: justify;">Uramisten!</p><p style="text-align: justify;">Ezek szerint?</p><p style="text-align: justify;">A továbbiakat       gondoljátok végig Ti, én csupán azt akarom mondani, hogy az általam 
+ideírtak tökéletesen megfelelnek       a valóságnak.</p><p style="text-align: justify;">Mondom 
+mindezt azok után is, hogy <a target="_blank"style="color: rgb(0, 0, 0);" href="./resources/pdfs/dragon64_eszmek_es_eszmelesekpdf.pdf" target="_new"><b>egy korábbi írásomban</b></a>-egy másik honlapon, ahonnan amúgy végleg kitiltottak-megjelentettem ezeket a 
+gondolataimat,       miket végigolvasva talán Számotokra is sikerül valamelyest árnyaltabbá tennem 
+ezt az egész       "Isten-Vallás-Hit" kérdéskört.</p><p style="text-align: justify;">Ugyanis-szerintem-a Világ       megértéséhez és befogadásához az efféle "dolgok" újra és 
+átgondolása is ajánlott.</p><p style="text-align: justify;">És Szerintetek?</p>Na, akkor most még 
+valami egészen <a target="_blank"style="color: rgb(0, 0, 0);" href="./resources/pdfs/dragon64_eletem_emlekei.pdf" target="_new"><b>más</b></a>...jó     utazást Mindannyiótoknak!<br><p><br></p>     </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-10-01&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1399&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1399&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1399&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1399&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1399&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1399&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1399&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1399&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1399&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1399&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1399&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1399&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1399&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1399&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1399&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1399&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1399&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1399&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104620"></A>168. Nyilas -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104480#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-05 18:23:27</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2118.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">1. Aki elég információval rendelkezik ahhoz, hogy a kereszténységről akárcsak vázlatos képe legyen - annak csak Jézuson át visz az útja.<br />
+<br />
+(Ego sum Via, Veritas  et Vita.)<br />
+<br />
+2. Kézus itt a segítséget emelte ki, nem a megbocsátást.<br />
+<br />
+3.Nézd, csodálom, hogy nem vetted még észre: én egyik ábrahámita vallást sem csípem. Egyiket ezért, a másikat azért.<br />
+<br />
+Helyes, akkor térj vissza a politeista sötétségbe.<br />
+(Egyébként, ha már itt tartunk, az ősmagyarok pl. egyistenhívők voltak. És pont azért vették át ilyen simán a kereszténységet, ellentétben a sok rémmesével.)<br />
+<br />
+4. Világos, Gusztos áttér, majd megírja a szeretethimnuszt.<br />
+<br />
+Ebben az a szomorú, hogy a hiteles vallásos élményt, mint olyat vonod kétségbe. Egy jobban anyajogú környezetben tán nem lehet minden ilyet ugyanezzel a frazeológiával visszadobni?  Dehogynem. itt bukik a dolog.<br />
+<br />
+"Nézd, csodálom, hogy nem vetted még észre: én egyik ábrahámita vallást sem csípem. Egyiket ezért, a másikat azért."<br />
+<br />
+Egy szekta és egy egyház között alapvető - nemcsak számbeli- különbségek vannak. <br />
+<br />
+Szerinted tehát mindenki, aki kizárólagosságot hirdet a hitével kapcsolatban, az megbízhatatlan, kókler, szélhámos, stb.<br />
+<br />
+persze, sokkal szebben hangoznak azok a semmitmondó nyilatkozatok, hogy "egy hegyre is több ösvényen lehet feljutni", meg "ez a lényeg: megismerni és megszeretni. Vagy inkább megszeretni és megismerni."<br />
+Bla-bla.<br />
+<br />
+Igazad van, tehát ha egy művész egy új tartalomhoz RÉSZBEN régi, már meglévő formát használ fel, akkor egy-az-egyben a régit veszi át.<br />
+<br />
+Óhh értem. Tehát a bűnbeesés számodra azt jelenti, hogy a békés anyaibb társadalomból átléptünk egy erőszakosabb apaibb formába.<br />
+<br />
+De mégis:konkrétan melyik történelemben létezett társadalom a hiteles? Mondj példát! Rómában pl. rengeteg istennek volt papnője, mégis keményen apaközpontú társadalom volt. <br />
+<br />
+"Ó, értem. Tehát a ki tudja hány maya kódex, rovásírásos pálcánk, antik "pogány" könyvek, templomok, mind-mind a posztreneszánsz időszakban tűntek el, hopp! Egyszerre föllángolva. Biztos nem a korakeresztény időszakban rombolták le, vagy alakították át a "pogány" templomokat a RómBir szerte..."<br />
+<br />
+A maya kódexekre pont igaz, amit írtam, (nagyjából a reneszánsz korában égtek el), az antik könyvek ellen módszeres irtóhadjáratot soha és senki nem folytatott, SŐT az antikvitás újrafelfedezésének köszönhető a humanizmus, ami az európai civilizáció végének kezdete volt), a rovásírásos pálcáinkat pedig István király semmisíttette meg.<br />
+<br />
+"Aki valódi keresztény, az a krisztusi elvek szerint él"<br />
+<br />
+Nocsak. Mik azok a jézusi elvek - szerinted?<br />
+<br />
+i"gen. esetleg egy-kettő spontán gyógyulás előfordult. De az max. véletlen volt. Jézus maga példát statuált a centúrióval meg a Zasszonnyal."<br />
+<br />
+A többi nem került bele az evangéliumba. Ennyi.<br />
+<br />
+"azt ismered."<br />
+<br />
+Egy részét. Sőt, még csak nem is a lényeges részét.<br />
+<br />
+Ez a Dragon64 -post ugyan idejétmúlttá vált, de attól függetlenül szívesen vitatkozom még veled, ha gondolod.<br />
+<br />
+Úgysem érdekel senkit:)<br />
+<br />
+Béke</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104480"></A>167. 167. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104391#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-05 11:55:12</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Csak röviden:<br />
+<br />
+1. üdvözülés. <br />
+<br />
+Valóban bekerült az, hogy Isten kegyelméből a megfelelő életet élő, Jézusról nem tudó pogány is üdvözülhet. De tudtommal a hangsúly a tudatlanságon van - tehát aki találkozott a kereszténységgel, az csak az egyházon keresztül üdvözülhet. <br />
+<br />
+2. felebarát.<br />
+<br />
+Az, hogy "jobban utálták" csak erősíti azt, hogy Jézus a megbocsátást mennyire nyomatékosan tanította, de nem gyengíti az én állításomat. (az I-tent olyankor használom, amikor a judaizmus szemszögéből írok, mivel ott Isten neve kiejthetetlen, ezért minden nyelven kihagynak egy, vagy több betűt az "Isten" helyi véáltozatából. G-tt, G-d, I-ten, stb.)<br />
+<br />
+3. "Minden egyistenhívő vallás ezt tanítja". Csak az Ábrahámita vallások. (időrendben): a judaizmus, a kereszténység és az iszlám.<br />
+<br />
+"Próbáltad volna bármely matriarkális társadalomban elsütni azt a poént, hogy nem hiszel az xy istenben/istennőben"<br />
+<br />
+Fogalmunk sem lehet arról, ezt hogyan kezelték volna, mivel abból az időből nem maradt írásos emlék, vagy nem tudunk róla. Ugyanakkor az alapmentalitás kétségessé teszi, hogy bármiféle retorzióra számíthattál volna.<br />
+<br />
+"A legrokonszenvesebb beállítódás: "Az iszlámból egy kiút van: a halál" Na ehhez mit szólsz? A kereszténység sosem volt ilyen."<br />
+<br />
+Nézd, csodálom, hogy nem vetted még észre: én egyik ábrahámita vallást sem csípem. Egyiket ezért, a másikat azért.<br />
+<br />
+4. Saul-Pál<br />
+<br />
+Valóban volt látomása? A fanaticizmusa alapján könnyen lehet. Ám ha számtalan téren eltért attól az új Krisztus-alak hirdetése, mint akit követői, tanítványai, személyesen beavatott apostolai ismertek, akkor nem csoda, ha komoly viták voltak.<br />
+<br />
+Kérlek, mindentől függetlenül, képzeld el: adva van egy fanatikus egyházellenes politikus, mondjuk egy Gusztos Péter. Ez a Gusztos gyerek autóbalesetet szenved, ami által -állítása szerint- látomása támad. Ebben a látomásban -még mindig csak az ő állítása szerint- megjelenik neki Jézus, mint a Felkent Ember Fia, és új egyház alapítására ösztökéli. <br />
+Majd ez a Gusztos gyerek, már mint fanatikus hittérítő, prédikálni kezd a Hit Egyházáról, azt bizonygatja, hogy az ő gyülekezete, a Hit Egyháza áll a valódi jézusi, krisztusi alapokon.<br />
+<br />
+Hoooopsz. Ilyen van, legfeljebb a látomás nem stimmel. A név: Németh Sándor. Az "Új Egyház": a Hit Gyülekezete.<br />
+<br />
+Na, menj szépen, és térj be hozzájuk, és egy percig se berzenkedj! Ki vagy te, hogy megkérdőjelezd NS-t, tettei mozgatórugóját, szándékai tisztaságát?! Ő a Valódi Krisztusi Egyházat hirdeti, bezonyám! Hállelúja meg zsolozsma tezsvéreim a Zsúrban! <br />
+<br />
+<br />
+Remélem, leesik a tantusz :)<br />
+<br />
+Gyengébbek kedvéért:<br />
+<br />
+a Páli irányzat úgy viszonyult a Péterihez, ahogy a HGy viszonyul a RómKat egyházhoz. Aki most katolikusként berzenkedik a HGy ellen, annak jusson eszébe: Péterék is pontosan így viszolyogtak tőle. Ámde ha a HGy győz a hatalmi harcban...<br />
+<br />
+"Mi az, hogy "nem tisztult meg a babó szokások szerint"? Ködös spekuláció."<br />
+<br />
+Például a bemerítő medencékben. Például a rendes évi bűnbak-áldozatkor, stb.<br />
+<br />
+5. Vallás és társadalom<br />
+<br />
+"Manapság úgysem a vallás irányít"<br />
+Ááá, dehogy. Csak figyeld meg az iszlám hatását a muszlim országokban, a judaizmus hatását Izraelben és a Zusákoknál. Valóban igazad van, ezek elhanyagolható tényezők :D :D<br />
+<br />
+6. Anyajogúság<br />
+<br />
+"Akkor most kívánod, vagy nem kívánod?"<br />
+<br />
+A jelleg, struktúra visszatérését igen, a felépítmény egészét viszont a modern korhoz igazítva. <br />
+<br />
+"Ja és az anglikánoknál nők is lehetnek papok. Mi a véleményed?"<br />
+Nagyon helyes. Ezért életképesebb az anglikán egyház.<br />
+<br />
+"Óh, látom, a Zeitgeist című "dokumentumfilm" tovább szedi áldozatat..."<br />
+<br />
+A francokat. Ezt már művtöri órán felisertem még kis gimnazista koromban. Elsütötték a Da-Vinci Kódja filmben is (ami egyébként az egyik legrosszabb film, amit valaha láttam. A regény pedig... felejthetően ócska). És bárki meggyőződhet róla, aki veszi a fáradtságot és megnéz egy ilyen szobrot.<br />
+<B><a href="//www.historyofreligions.com/romisis21.jpg" target="_new" style="color: #000000;">http://www.historyofreligions.com/romisis21.jpg</a></B><br />
+<br />
+<B><a href="//www.jesusneverexisted.com/IMAGES/Orkn-Isis-Horus-child-20BC.gif" target="_new" style="color: #000000;">http://www.jesusneverexisted.com/IMAGES/Orkn-Isis-Horus-child-20BC.gif</a></B><br />
+vs.<br />
+<B><a href="//www.jesusneverexisted.com/IMAGES/mary%2Bchild.gif" target="_new" style="color: #000000;">http://www.jesusneverexisted.com/IMAGES/mary%2Bchild.gif</a></B><br />
+<br />
+Nézd, ugyanezt megtaláljuk Szent György esetében is:<br />
+<br />
+<B><a href="//www.theoi.com/image/pictures-bellerophon.jpg" target="_new" style="color: #000000;">http://www.theoi.com/image/pictures-bellerophon.jpg</a></B><br />
+vs.<br />
+<B><a href="//www.theoi.com/image/pictures-saint-george.jpg" target="_new" style="color: #000000;">http://www.theoi.com/image/pictures-saint-george.jpg</a></B><br />
+<br />
+"Mindkettőnk verziójában az ősbűn előtt az emberek nagyjából öntudat nélküli lények voltak."<br />
+<br />
+Na neee. Szerinted egy sokszorosan összetett hitvilágot, szimbólumrendszert, kereskedelmi hálózatot, kézműipart, művészetet kidolgozó, a hajózást, városépítést, stb. ismerő őscivilizáció emberi "nagyjából öntudat nélküliek"?!?! Akkor a mai kor emberiségének 99%-a agyhalott véglény!<br />
+<br />
+Innentől kezdve dől amit írsz.<br />
+<br />
+"A kereszténységet kevered a reneszánsz talaján kialakult humanista-egoista kultúrsovinizmussal."<br />
+<br />
+Ó, értem. Tehát a ki tudja hány maya kódex, rovásírásos pálcánk, antik "pogány" könyvek, templomok, mind-mind a posztreneszánsz időszakban tűntek el, hopp! Egyszerre föllángolva. Biztos nem a korakeresztény időszakban rombolták le, vagy alakították át a "pogány" templomokat a RómBir szerte...<br />
+<br />
+"Mivel nem az egzakt tudományok talaján állunk, ilyet nem jelenthetsz ki, haver.<br />
+A biblia egy hamisítvány szerinted. Mik az érveid?<br />
+(Szak)Irodalom?"<br />
+<br />
+A bibliakritika Órigenész óta egzakt tudomány, még ha sokáig nem is nagyon művelték.<br />
+Továbbá megint hanyag voltál. Én a Genezisről mondtam, hogy sokszorosan átszerkesztett fércmű, a Biblia egészéről pedig azt mondtam, mítosz- legenda- és törvénygyűjtemény.<br />
+<br />
+Kezdő irodalom: Fényes ölednek... Komoróczytól (vagy ha őt nem szereted, akkor <B><a href="//etcsl.orinst.ox.ac.uk/" target="_new" style="color: #000000;">http://etcsl.orinst.ox.ac.uk/</a></B>, ahol angolul szerepelnek). Olvasd el a sumer mítoszokat, különösképpen amelyikben:<br />
+- Enki a föld porából(agyagból) és vízből embert készít<br />
+- Enki eszik a tiltott gyümölcsből, ezért beteg lesz és haldoklik<br />
+- Enki oldalbordáját (is) kivéve születik az Élet/Borda Úrnője (NIN-TI)<br />
+- Enlil vízözönt akar az emberiségre bocsátani, Enki megsúgja Ziusudrának, az igaz embernek, hogy készítsen hajót, végül Enlil megbocsát az embereknek a vízözön végén<br />
+- Inanna az Élet Fáját a kertje közepébe ülteti<br />
+<br />
+úgy kezdésnek. Ha ezzel megvagy, akkor jön a szakirodalom.<br />
+<br />
+6. Vallások(?)<br />
+<br />
+"A fent említett eszmék<br />
+1. Nem vallások<br />
+2. Per definitionem erőszakos irányzatok.<br />
+De gratulálok, megint keversz mindent össze-vissza."<br />
+<br />
+1. de azok, ami a nácizmust és a kommunizmust illeti. Minden szükséges tulajdonsággal, jellegzetességgel, és tök' azonos struktúrával bírnak. Ha valami úgy néz ki, úgy viselkedik, úgy formálódik, ugyanolyan részekkel bír, ugyanazt a szerepet tölti be, mint egy vallás, akkor az vallás is lesz. Bármilyen furcsa, de így van.<br />
+<br />
+2. a kereszténység is erőszakossá _vált_. Ezért mondom, hogy mostanság csak birodalmi saulizmussal, esetleg saulizmussal találkozni. Aki valódi keresztény, az a krisztusi elvek szerint él. <br />
+<br />
+7. Gyógyulás<br />
+<br />
+"ESETLEG más is meggyógyulhatott.<br />
+Talán.:)"<br />
+<br />
+igen. esetleg egy-kettő spontán gyógyulás előfordult. De az max. véletlen volt. Jézus maga példát statuált a centúrióval meg a Zasszonnyal.<br />
+<br />
+"Ez nem válasz, már csak azért sem, mert egy vitában szükséges a partner álláspontjának ismerete."<br />
+<br />
+azt ismered. A személyes hitünk meg a mi dolgunk. Én sem azt írom, hogy milyen hülyén/jól hiszel...<br />
+<br />
+<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104391"></A>166. Nyilas -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104330#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-05 00:41:24</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2118.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Te egy idealizált kereszténységről beszélsz, én pedig arról, ami létezik. Nekem még van olyan 1905-ös keltezésű rómkat hittankönyvem, amiben feketén-fehéren az szerepel, hogy egyedül a Rómkat Anyaszentegyházon keresztül lehet üdvözülni." <br />
+<br />
+Ok, beismerem, tényleg csak a katolikus egyházon keresztül lehet üdvözülni:)<br />
+<br />
+Egyébként aki életében semmit, vagy csak nagyon keveset hallott a kat. egyházról, az is üdvözülhet(<B><a href="//www.katolikus.hu/kek/kek00811.html#N54" target="_new" style="color: #000000;">http://www.katolikus.hu/kek/kek00811.html#N54</a></B>) 846-848. pont.<br />
+Tehát NEM egyedül a Rómkat anyaszentegyházon át lehet üdvözülni,<br />
+hanem csak nagyrészt.<br />
+<br />
+"2. Jézus kivételként említette, hogy előfordulhat, hogy valaki nem hithű babó létére is ugyanabban az I-tenben hisz."<br />
+<br />
+Szóval egy kivétel a felebarátom? Na. Jézus, amikor példabeszédet mondott, igyekezett minél szélesebb körhöz szólni. És igen, a babók még a pogányoknál is jobban utálták a szamaritánusokat, mert ők eltévelyedtek. (Egy átlagos "keresztény" is jobban utálja a protestánst, mint a pogányt -érthető.)<br />
+Ja és mi ez az "I-ten"?<br />
+<br />
+Egyébként meg mi ebben a rendkívüli? Minden egyistenhívő vallás ezt tanítja. És? <br />
+Próbáltad volna bármely matriarkális társadalomban elsütni azt a poént, hogy nem hiszel az xy istenben/istennőben. Akármilyen toleráns is volt (innen, több évezred távolából találgatva) az a közeg, biztos olyat kaptál volna, hogy megemlegeted.<br />
+<br />
+A legrokonszenvesebb beállítódás: "Az iszlámból egy kiút van: a halál" Na ehhez mit szólsz? A kereszténység sosem volt ilyen. <br />
+<br />
+"Fanatikus babó volt."<br />
+Legfeljebb fanatikus Krisztus-követővé vált. Ha fanatikus babó lett volna, akkor ugyanúgy a betérés mellett kardoskodott volna, mint Péterék.<br />
+<br />
+Volt egy látomása. Ja és tudod, egy adott ember megtérése eléggé át tudja alakítani a személyiségét...<br />
+Akárhogy is, a magyarázatod nem bizonyítható. (Az enyém sem bizonyítható, de én legalább nem mondom azt, hogy így volt és kész. Mivel nem egzakt tudományos (matematika, fizika, kémia) terepen vagyunk, ezért nem jelenthetünk ki EGYÉRTELMŰEN dolgokat. te pedig ezt teszed. Mindegy, az ember nem válogathatja meg a vitapartnereit.)<br />
+<br />
+"Valóban. Azt jelenti, hogy a tisztátalan emberek számára ne tárják fel a szentségeket és ne pazarolják rájuk a tanításokat. Jaaa, hogy mindenki tisztátalan volt, aki nem tisztult meg a babó szokások szerint? Hoppá, akkor ez a "pogányokra" is igaz."<br />
+<br />
+Azt, hogy ne pazarolják a méltatlanokra a tanítást, az igaz. Mi az, hogy "nem tisztult meg a babó szokások szerint"? Ködös spekuláció.<br />
+<br />
+"A fő hangsúly inkább azon van, a nők mennyire érvényesülhettek a spirituális életben. "<br />
+-Mi, azt nem hallottad még hogy a nőknek nincs lelkük?!<br />
+:)<br />
+Viccet félretéve, ez legyen a legnagyobb probléma az összes létező társadalomban. Manapság úgysem a vallás irányít - akkor meg minek? Szerencsére ma már vannak - feltehetően a te ízlésednek megfelelő- neopogány mozgalmak, melyek minden ilyen igényt kielégítenek. Legyél wiccás.:)<br />
+<br />
+"Ebben látod maradéktalanul egyetértünk. A nyelvünk alapvetően "liberális" a nemek terén, sőt. Az asszony eredeti jelentése: úrnő. Tehát amikor a nő azt mondja, 'ő az én uram' az egyenértékű azzal, amikor a férfi azt mondja: 'ő az én asszonyom', hiszen azt mondja: 'ő az én úrnőm'."<br />
+<br />
+Szép.<br />
+<br />
+"Én nem kívánom vissza az ősi időket - álomkergetés volna. Ráadásul azóta elég sok minden megváltozott. Viszont a reményt nem adtam föl, hogy tiocfaidh ár lá. :)"<br />
+<br />
+Akkor most kívánod, vagy nem kívánod? Minden bizonnyal szeretnéd, ha visszatérne ez az időszak, amelyről néhány könyvet elolvasva azt hisszük, az volt a tökéletes társadalom (vagy majdnem tökéletes társadalom), de a valóság sajnos kiábrándítóbb ennél.<br />
+Ja és az anglikánoknál nők is lehetnek papok. Mi a véleményed?<br />
+<br />
+"Egyiptom: Íszisz-kultusz. Ahonnan a "Madonna karján a kisdeddel" kompozíciót egy-az-egyben átvette a kereszténység. Sőt, az 'istenszülő' szimbólum-halmazt is."<br />
+<br />
+Óh, látom, a Zeitgeist című "dokumentumfilm" tovább szedi áldozatat...<br />
+<br />
+''ősbűn' koncepciójának mi is a valóságos alapja.'<br />
+<br />
+Érdekes. Mindkettőnk verziójában az ősbűn előtt az emberek nagyjából öntudat nélküli lények voltak.<br />
+Bűnbeesés:<br />
+Nálam az ember egy tudatos döntést hozott Isten előtt,<br />
+Nálad pedig egyszerűen átlépett egy másik társadalmi állapotba.<br />
+<br />
+Namost az én világom lakóit te állatkáknak és Isten játékainak nevezted.<br />
+A te világod lakóira ez ugyanúgy áll, mivel ők meg egy adott társadalom öntudatlan játékszereinek tekinthetők (ne felejtsük, ez még az öntudatra ébredés előtt történt!)<br />
+<br />
+Érdekes módon az én világom "szadista kényura" a te világod non plus ultrája. Mégegyszer: az ember mindkét helyzetben ugyanaz, nálam döntést hozott, nálad fejlődött (vagy inkább változott) egyet, de míg az én Istenem minden, csak nem rokonszenves(neked), addig a matriarkális társadalom a gyönyörök legmagasabbik foka.<br />
+Hogy is van ez?<br />
+Isten az nem, a saját fantazmagóriáid néhány olvasmánnyal megtámogatva, na az igen.<br />
+<br />
+"Mindenesetre sokkal kevesebb mészárlás és kultúrapusztítás történt volna meg :)"<br />
+<br />
+A kereszténységet kevered a reneszánsz talaján kialakult humanista-egoista kultúrsovinizmussal.<br />
+<br />
+"Nem. Nem történHETETt. Így történt." (Mármint, hogy az egész Biblia hamisítvány.)<br />
+Mivel nem az egzakt tudományok talaján állunk, ilyet nem jelenthetsz ki, haver.<br />
+A biblia egy hamisítvány szerinted. Mik az érveid?<br />
+(Szak)Irodalom?<br />
+<br />
+"Ó, persze. A kommunizmus sem felelős, a nácizmus sem, a cionizmus sem, egyáltalán: egyetlen eszme sem felelős az emberek tetteiért. Ugye?"<br />
+<br />
+A fent említett eszmék <br />
+1. Nem vallások<br />
+2. Per definitionem erőszakos irányzatok.<br />
+De gratulálok, megint keversz mindent össze-vissza.<br />
+<br />
+A kereszténység nem erőszakos irányzat, a benne foglalt tanokból kifolyólag.<br />
+<br />
+"Sőt, a katonák, ávósok, nácik, terroristák, gyurcsányok és veresek is csak parancsot teljesítenek. Mindig más a felelős. Lehetőleg a portás, vagy a kertész."<br />
+<br />
+Pont azt mondom, hogy mindenki felelős, és nem kenheti ezt egy békehirdető vallásra. Persze, ha az eszme erőszakos, akkor egy kicsit más a helyzet, de az egyén felelőssége így is megmarad.<br />
+<br />
+"azért ez erős volt. Hihetetlen beszámolók születtek volna a tízmilliók csodás gyógyulásáról. Nem így történt, sőt. Egyáltalán semmiféle beszámolónk nincs a keresztény iratokon kívül."<br />
+<br />
+Nem is azt mondta, hogy kelettől nyugatig minden római és/vagy pogány meggyógyult, hanem azt, hogy a kánaáni asszonyon és a római százados szolgáján kívül ESETLEG más is meggyógyulhatott.<br />
+Talán.:)<br />
+<br />
+"nem. Egyszerűn S.K.H. :)"<br />
+<br />
+Ez nem válasz, már csak azért sem, mert egy vitában szükséges a partner álláspontjának ismerete. A lényeges álláspontok ismerete.<br />
+Ennek hiányában marad az árnyékboksz.<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104385"></A>165. 165. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104383#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-05 00:21:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hajrá zefír! Egy dolgot megígérhetek: odaát találkozunk. És akkor majd sok mindent megértesz :)<br />
+<br />
+de addig még sok időnk van, éljünk vele.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104383"></A>164. zefír</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104379#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-05 00:03:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">kara: ha az első eset, akkor reménytelen, én nem vagyok sportember; utánanéztem, a valóságot a jelen határozza meg, tehát élő; mai dolgokról kell hát disputázni és a Gibson film kapcsán jobban fogalmaztál; de már késő van; ha neked ezekről a dolokról vitatkozni kell, akkor vagy a gonosz ösztönöz, vagy keresel valakit, imádkozom érted; fantasztikus hogy mik történnek a BGY-n!<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104381"></A>163. zefír</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104367#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-04 23:50:29</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">kagami: lehet, hosszú leszek<br />
+<br />
+ennek akkora irodalma van, hogy csak na, és ha beleártod magadat, akkor megérted a nagy vicsorgást; olvasd a János evangéliumot - az nagyon sok mindenre válasz, olyannyira, hogy rájössz, miért nem szabad gyűlölni azt, aki téged gyűlöl és miért ne gyűlöld azokat, akik megölték Jézust; ezért akarják elfelejtetni a János evangéliumot, ha már vannak evangéliumok, legyenek csak a szünoptikusok<br />
+<br />
+és nincs ha; visszafordítani az idő kerekét nem lehet, sőt az idő egyre jobban folyik, gyorsul, mint mélyberántó vízesés előtt a hegyi folyam; a megtörténtekre és miértekre vannak válaszok, de bármit írok, csak spekuláció és jelentősége nincs a téma szempontjából, mert a válaszok mai válaszok és nem akkoriak<br />
+<br />
+és még egy: a világ igenis kétpólusú: halál és élet, nincs átmenet, kárhozat van és üdvösség, és a lelkednek ezek közül valamelyik lesz az érdeme; ha nem hiszel a lélekben, akkor 0:2, nincs miről beszélni, női fecsegés az egész<br />
+<br />
+sokáig nem értettem a János evangélium végét, mit akadéskodik az a zelóta Péter, és mit törődik a Jánossal? Világos az üzenet: foglalkozz a saját dolgoddal, és Te kövess engem, nézd föltámadtam és ne azon spekulálj, hogy megtagadtál, meg hogy megöltek, pedig nem kellett volna, meg itt ez a János is, akit te elkényeztettél, és ráadásul nem is fog meghalni; csupa-csupa okoskodás és bolondozás; Te kövess engem</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104380"></A>162. 162. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104367#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-04 23:50:04</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Honnan a francból veszed, hogy szükségszerű volt meghalnia? Ha népe elfogadja megváltónak, akkor máshogy alakultak volna a dolgok.<br />
+A babók döntöttek így."<br />
+<br />
+:D :D :D :D :D<br />
+<br />
+Nézd, ha nem ölik meg, akkor, ugye, egy rakás prófécia sem lesz igaz rá, tehát a kereszténység Megváltó nélkül marad. Mármint keresztény szemszögből szükségszerű volt a halála.<br />
+<br />
+Politikai szempontból is: a fennálló társadalmi és vallási rend ellen lázított, ezért mennie kellett. Nem véletlen végezték ki úgy, mint ahogy a köztörvényeseket, szökött rabszolgákat és a lázadókat volt szokás.<br />
+<br />
+Amúgy mivel nem teljesítette be azt, amit egy Mosiachnak be kellett volna, semmiképpen nem tekinthető annak. És megsúgom: EZÉRT nem fogadják el a babók Megváltónak. Egyszerűen nem tette meg azt, amit a Megváltónak meg kellett volna tennie.<br />
+Ezért nem fogadták el az összes többi "Messiást" sem- mindegyik elbukott.<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104379"></A>161. 161. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104361#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-04 23:46:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"ki írt mást? elindultam keletnek, és metorpantama Himalája mögött: Kina csak példa volt arra, hogy népírtások voltak kereszténység nélkül is, és kerszténység nélkül se lett volna kevesebb; a bűn kereszténység előtti örökség"<br />
+<br />
+Csodálkoztam, mivel az animizmusra és shintoizmura reagálva írtad, amit írtál. Kérlek alássan, egyik nevében sem mentek és gyilkoltak embereket halomra. Az meg, hogy a birodalmak tömegeket irtanak, tényleg nem újdonság, de nem is vallás, vagy népfüggő, hanem társadalmi alapstruktúrától való.<br />
+<br />
+"sak emlékezni kell rá, nekem is, és téged is emlékeztettelek, lehet nem kellett volna"<br />
+<br />
+Tök fölösleges volt.<br />
+<br />
+"te kardoskodtál Jézus babósága mellett, a valóság mellett; senki se állította azt, hogy a Jézust elpusztítók bűnösebbek másoknál, egyszerűen csak annyit írtam, hogy rajtuk szárad a vére; ezért 2000 év óta a kereszt és Jézus neve nekik botrány; bontsd ki a valamelyik talmudot, és nézz utána mi a helyzet ezzel Jézussal; kompatibilitás nincs 2000 év óta, akkor meg minek jössz judaizmussal meg kereszténységgel?"<br />
+<br />
+figy. <br />
+1. ha Megváltó volt és vérével elvette a bűnöket, akkor az őket megölő emberek bűnét is elvette, tehát semmiféle vér nem szárad rajtuk. Megalvadni sem volt ideje.<br />
+2. ha Megváltó volt, de az őt megölő emberek bűnét nem vette el, akkor is maximum annak a néhány tucat embernek tehetsz szemrehányást, és nem A Babóknak.<br />
+3. ha nem volt Megváltó, akkor max. mint "polgári áldozat" szerepelt ott és akkor végkép fölösleges ezzel a szöveggel jönni.<br />
+<br />
+"ki szajkózik, én tényeket soroltam, amit te nem veszel tényeknek (lásd alább); "<br />
+<br />
+Tények azok, amik bizonyítottan valóságosak. Jézus kivégzéséről csak a bibliai szövegek tanúskodnak. Máshol képzeld azt olvastam, hogy L. Ron Hubbard átkelt a Hídon és ő valójában a Xenu igája alól szabadítja fel az embereket. És a világon milliók hisznek ebben és könyveik, "független" írások tízezrei bizonyítják ezt!<br />
+<br />
+Érted, ugye.<br />
+<br />
+"mi a ciki?"<br />
+<br />
+Az, hogy így se - úgy se érvényes az, amit állítasz.<br />
+<br />
+"akkor neked a valóságról más fogalmaid vannak, valóság csak egy van"<br />
+<br />
+Ez így van. Akkor a kedvedért átfogalmazom: Gibson filmje egy vallás által tolmácsolt, valóságosnak feltüntetett eseménysort mutat be.<br />
+<br />
+"no mármost, miért ne tartozna ide jobban, mint a te általad belinkeltek? de nem is akarlak felmelegíteni, nem szokásom (tudok én is gonosz lenni)"<br />
+<br />
+Felőlem... részemről túltárgyalva a filmes kérdés.<br />
+<br />
+"kara, te vagy szenvedélyes viatatkozó vagy, vagy hihetetlen nagy káosz van a fejedben, vagy provokátor vagy, amit ráadásul élvezel is;"<br />
+<br />
+Az első eset.<br />
+<br />
+<br />
+ <br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104367"></A>160. Nyilas -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-10-04 23:17:07</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2118.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">akkor most egy kicsit fogadatlan prókátorkodok neked, zefír - ha nem baj:)<br />
+<br />
+"mert az nem megy, hogy 2000 év után is azt szajkózod, hogy "kicsinálták Kennyt! A rohadékok" de ugyanakkor enélkül Jézus nem tölthette volna be a ti általatok neki tulajdonított sorsát."<br />
+<br />
+Honnan a francból veszed, hogy szükségszerű volt meghalnia? Ha népe elfogadja megváltónak, akkor máshogy alakultak volna a dolgok.<br />
+A babók döntöttek így.<br />
+<br />
+Amíg nyitott volt, hogy a babók elfogadják-e Őt, addig nem kellett meghalnia.<br />
+Máshogy döntöttek - a többi már történelem.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment104361"></A>159. zefír</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1399&id=104351#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-10-04 23:01:06</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Te, a shintoizmus Japán nemzeti vallása, nem Kínáé :) --- ki írt mást? elindultam keletnek, és metorpantama Himalája mögött: Kina csak példa volt arra, hogy népírtások voltak kereszténység nélkül is, és kerszténység nélkül se lett volna kevesebb; a bűn kereszténység előtti örökség<br />
+<br />
+"a keresztények Jézusra mondtak igent"  Mondtam én bármi mást is?! nahátakkor --- csak emlékezni kell rá, nekem is, és téged is emlékeztettelek, lehet nem kellett volna<br />
+<br />
+"kit eltettek láb alól azok, akiké volt" Kérlek, döntsd el: áldozat volt, aki elvette az emberek/benne hívők bűneit, megváltotta az emberiséget, stb., és akkor ne mutogass ilyen hévvel az isteni gondviselés eszközeire, mivel ők semmivel sem bűnösebbek a vértanúk életét kioltó kardpengéknél és puskagolyóknál, VAGY halála szükségtelen volt, nem Isten akarta így, és akkor viszont az egész kereszténység máris dugába dőlt --- te kardoskodtál Jézus babósága mellett, a valóság mellett; senki se állította azt, hogy a Jézust elpusztítók  bűnösebbek másoknál, egyszerűen csak annyit írtam, hogy rajtuk szárad a vére; ezért 2000 év óta a kereszt és Jézus neve nekik botrány; bontsd ki a valamelyik talmudot, és nézz utána mi a helyzet ezzel Jézussal; kompatibilitás nincs 2000 év óta, akkor meg minek jössz judaizmussal meg kereszténységgel?<br />
+<br />
+mert az nem megy, hogy 2000 év után is azt szajkózod, hogy "kicsinálták Kennyt! A rohadékok" de ugyanakkor enélkül Jézus nem tölthette volna be a ti általatok neki tulajdonított sorsát --- ki szajkózik, én tényeket soroltam, amit te nem veszel tényeknek (lásd alább); <br />
+<br />
+Ciki --- mi a ciki? neked ciki? nekem nem ciki, a ciki annak ciki aki ciki, de ez csak egy vicc, amolyan bucska, szeretek bucskázni, meg ott járni ahol a madár se jár<br />
+<br />
+"mert keményen megmutatta a valóságot, és újra hangsúlyozom: nem az igazságot" Nem a valóságot, hanem egy vallás szerint valóságos eseménysort -- akkor neked a valóságról más fogalmaid vannak, valóság csak egy van, bár lehet igazad van, hogy a valóság csak jelenidejű; utána kell gondoljak, valóban<br />
+<br />
+Az meg, hogy ki miért támad egy filmet - bocs, de nem ide tartozik, és engem spec teljesen hidegen hagy. Filmekről is magam formálom a saját véleményemet. --- no mármost, miért ne tartozna ide jobban, mint a te általad belinkeltek? de nem is akarlak felmelegíteni, nem szokásom (tudok én is gonosz lenni)<br />
+<br />
+kara, te vagy szenvedélyes viatatkozó vagy, vagy hihetetlen nagy káosz van a fejedben, vagy provokátor vagy, amit ráadásul élvezel is; remélem, aki olvassa ezt a disputát, elgondolkodik - ha materialista, ha istenhívő,, hogy ennek az egésznek mi az értelme, mert van<br />
+<br />
+és mert a mennyiség nem csap át minőségbe, sajnálom, hogy ilyen hosszú voltam , sőt meg is igértem, hogy nem szólok hozzá, és még karát is gonosz módon cinkeltem</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1399&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1399&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1399&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1399&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1399&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1399&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1399&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1399&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1399&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=1399&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=1399&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=1399&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=1399&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=1399&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=1399&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=1399&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> <A HREF="./index.php?post=1399&commentstart=150#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>16</B></A> <A HREF="./index.php?post=1399&commentstart=160#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>17</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

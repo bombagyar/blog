@@ -1,0 +1,564 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1259#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A pártellenes antipárt újra akcióba kezd&#8230;";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3962.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>A pártellenes antipárt újra akcióba kezd&#8230;<BR><DIV CLASS="postheader_small">Blog - Szami</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 augusztus 17. 02:00:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1259.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Üdv   
+mindenkinek!<br><br>Szolgálati közlemény! A Zöld Párt a népszavazási aláírásgyűjtés végső stádiumba  
+ jutott. Próbáljon meg lehetősége szerint mindenki besegíteni nekik, hisz most ezen múlhat   
+minden.<br>Vagyunk itt vagy 10-20 ezren, és ha mindenki csak egy ívet tölt le, irat alá a családi   
+haveri körön belül, már az is elég ahhoz, hogy megszívassuk a mélyentisztelt politikai elitet!<span style="font-weight: bold;"><br>Most valóban azon múlik, hogy akarjuk-e, vagy csak szájkaratézni   
+tudunk mi is.</span><br><br>A kérdést ismeritek:<br><br><span style="font-weight: bold;">-   
+Egyetért-e Ön azzal, hogy az országgyűlési képviselőknek csak a bizonylattal alátámasztott   
+elszámolható kiadásai után járhat költségtérítés?</span><br><br>Honlap megtekintése:&nbsp;<a target="_blank"style="color: rgb(0, 0, 0);" href="////www.anepszavaz.hu"><span style="font-weight: bold;"></span></a><a target="_blank"style="color: rgb(0, 0, 0); font-weight: bold;" href="//www.anepszavaz.hu">www.anepszavaz.hu</a> és <a target="_blank"style="color: rgb(0, 0, 0);" href="//www.zoldpart.hu"><span style="font-weight: bold;">www.zoldpart.hu</span></a><br><br>Az aláírásgyűjtő ív letöltése: <a target="_blank"style="color: rgb(0, 0, 0);" href="//www.anepszavaz.hu/img/alairasgyujtoiv.pdf"><span style="font-weight: bold;">www.anepszavaz.hu/img/alairasgyujtoiv.pdf</span></a><br><br><span style="font-weight: bold;">A postacím: Zöldek, 1440 Budapest, Pf. 20.</span><br><br>Ha valaki ezen 
+kívül is tud vagy   akar segíteni, netán bármilyen egyéb ötlete van, jelentkezzen a <span style="font-weight: bold;">b2074c@gmail.com </span>e-mail címen.<br><br>Egy kis kedvcsinálónak pedig 
+sikerült végre   begépelni a Magyar Jelenben megjelent velük készült cikket. Szerintem mindenkinek 
+érdemes   elolvasni, hogy egy kicsit képbe kerüljetek.<br><font style="font-weight: bold;" size="3"><br></font><hr style="width: 100%; height: 2px;"><font style="font-weight: bold;" size="3"><br>A   pártellenes antipárt újra akcióba kezd&#8230;</font><br><br>&#8222;A Nép 
+Szavaz!&#8221; címmel az   Országos Választási Bizottság és az Alkotmánybíróság jóváhagyása után a 
+Zöld Párt országos   népszavazási kezdeményezést indított el a következő 
+kérdéssel:<br><br>Egyetért-e Ön azzal, hogy az   országgyűlési képviselőknek csak a bizonylattal 
+alátámasztott elszámolható kiadásai után járhat   költségtérítés?<br><br>Erről, és a Zöld Pártról 
+beszélgettünk a szóvivővel. <br><br><br>M.J.: A 2006-os   országgyűlési választások óta nem sokat 
+lehet hallani a Zöld Pártról, bár akkor is meglepetéssel   rukkolt ki azzal, hogy elégette a több 
+mint negyvenezer kopogtatócéduláját. Miért volt ez   tulajdonképpen, és mi történt azóta?<br>Sz.G.: 
+Az akkori leadási határnapon azért égettük el a   kopogtatócéduláinkat, hogy felhívjuk a figyelmet a 
+választási visszaélésekre, és ezzel elkerüljünk   egy újabb illegitim 4 éves kormányzati időszakot. 
+Ennek ellenére több konkrét bűncselekményre   (nevekkel és tanúkkal!) az ügyészség hozzáállása 
+megdöbbentő, és egy jogállamhoz méltatlan volt,   hisz megvárva a második forduló végeredményét, 
+másnap hétfői dátummal simán eltussoltak mindent,   mintha mi sem történt volna.<br><br>M.J.: Tehát 
+szerintetek a választásokon csalás   történt?<br>Sz.G.: Inkább úgy fogalmazhatunk, hogy jól 
+szervezett csalási sorozat, hisz a   kopogtatócédulákat a legtöbb indulónak más pártok 
+&#8222;szedték&#8221; össze, vagy személyes   adatokat tartalmazó &#8222;klienslistákat&#8221; 
+bocsátottak a rendelkezésükre. Nem véletlen, hogy   rekord mennyiségű bűncselekmény került akkoriban 
+felszínre, és bár a legtöbb eljárás eredménytelenül   zárult, a nyomozások során azért mindig 
+kiderült, hogy a cédulákat a megkérdezettek nem azoknak   szánták, mint akiknél végül 
+&#8222;landolt&#8221;. A &#8222;listákból dolgozók&#8221; esetén a   rengeteg elhalálozott választó 
+is azt bizonyította, hogy valami nagyon bűzlik, de erről   természetesen mélyen 
+hallgattak.<br><br>M.J.: Ezek szerint az elhíresült &#8222;Őszödi&#8221;   beszédnél sokkal 
+lényegesebb okok is lehettek volna a kormány elkergetésére és új választások   kiírására, ha a 
+hatóságok és a média tájékoztatta volna a lakosságot?<br>Sz.G.: Így igaz, de sajnos   megszoktuk 
+már, hogy ránk csak ritkán kíváncsiak. Mindenesetre elmondhatjuk, hogy rajtunk kívül   senki nem 
+vállalta fel ennek a &#8222;színjátéknak&#8221; az ügyét, főleg nem úgy, hogy bojkottálja   a 
+választást, ahogy mi tettük akkor. Hiábavaló azért nem volt, mert eljön még a nagy beszámoltatások   
+ideje a történelem színpadán, emellett pedig újra bebizonyítottuk, hogy nekünk nem a hatalomban való 
+  részvétel a legfőbb célunk. Lassú víz partot most &#8211; ha eljön az ideje, ott   
+leszünk&#8230;<br><br>M.J.: Mi ennek a visszafogottságnak az oka?<br>Sz.G.: Bizonyos fokig szándékos 
+  a háttérben maradásunk, de ezt a média is segíti azzal, hogy nem kíváncsi ránk. Le vagyunk   
+&#8222;tiltva&#8221;, ugyanis bennünket nem &#8222;úgy hoztak létre&#8221;, ahogy ezt a hagyományos, 
+  ma ismert pártokkal tették a rendszerváltás körüli zavaros időkben. És mivel nem vagyunk senkinek  
+ alárendelve, bizonytalan és kockázatos szereplői és tényezői vagyunk a politikai életnek. A pártok  
+ egyrészt azért nem szeretnek bennünket, mert éles kritikát fogalmazunk meg velük szemben az   
+együgyűségük és az aljasságaik miatt. Emellett pedig nem is nézzük jó szemmel őket, hisz   
+vezérkaraikban manapság csak a legtehetségtelenebbek és leggátlástalanabbak kaphatnak helyet. Azt   
+pedig mondanom sem kell mennyire rettegnek attól, hogy a már sokak által várt harmadik erőként a   
+Zöld Párt egyszer csak megjelenik a páston, mert onnantól kezdve egészen más megvilágításba fog   
+kerülni a politikai küzdőtér.<br><br>M.J.: Ezen mit értesz?<br>Sz.G.: Azt, hogy a hazudozás és a   
+mellébeszélés helyett végre lesz egy olyan erő a közéletben, aki nem a butaságok, a züllést, az   
+eredménytelenségeket és a rombolást akarja konzerválni, hanem a tudatosságot, az erkölcsöt, a   
+problémamegoldásokat és a cselekvőképességet tekinti legfontosabbnak. Hiszen erre vár mindenki ebben 
+  az országban, mert azt szeretnék végre, hogy ezt a nagyfokú politikai impotenciát a jó 
+elképzelések,   a hatékonyság és az eredmények váltsák fel. Csak egyvalamit felejt el a társadalom 4 
+évente, hogy   akik már (nem)egyszer csődöt mondtak, azoktól hiába is vár megoldást, mert a 
+problémák halmozásán   kívül másra nem alkalmasak. Kutyából nem lesz szalonna, mint 
+tudjuk&#8230;<br><br>M.J.: Mi az, amit   ti tudtok, és mások nem?<br>Sz.G.: Bennünket a 
+politikusoktól az különbözetet meg, hogy nem a   hazudozás és az öncélú érdekérvényesítés, hanem az 
+emberekért, a jövőért és a hazánkért, de   mondhatjuk bátran azt is, hogy az egész világért érzett 
+felelősségünk motivál. Ennek megfelelően mi   nem a problémákat látjuk csak, és siránkozunk miatta, 
+ahogy ezt a &#8222;hagyományos   környezetvédők&#8221; teszik, hanem a megoldásokat is tudjuk, és 
+alkalmazni akarjuk, mert ez az   egyetlen kiút a hamarosan beköszöntő KÁOSZ-ból. Sokan azt hiszik, 
+hogy mi amolyan   &#8222;együgyű&#8221; természetvédők vagy állatbarátok vagyunk mindössze, akik 
+csak tiltakozni   tudnak. Ez nagyon nem így van, mert mi ennek a hagyományos, és a jövő kihívásainak 
+megoldására   teljességgel alkalmatlan hozzáálláson már rég túlvagyunk, és reméljük ennek a 
+korszaknak a világ   minden részében hamarosan búcsút intenek az &#8222;igazi zöldek&#8221;. Mert 
+egy rendszert szidni a   legkönnyebb, de a XXI. században ezt felelősen már csak az teheti meg, aki 
+a szájtépés helyett a   megoldásokat is tudja a problémákra.<br><br>M.J.: És ti tudjátok?<br>Sz.G.: 
+Azt gondolom, hogy igen.   És erre biztosíték az a &#8222;szellemi műhely&#8221; is, ami alapvetően 
+életben tartja a Zöld   Pártot &#8211; és itt most nem a pénzre kell gondolni, hanem az elkövetkező 
+és valóban fenntartható   kulturális, tudományos, és gazdasági élet megalapozóinak tudására és 
+munkásságára. Mi nem egy   hagyományos párt vagyunk, ezért nálunk nem szenved senki 
+&#8222;karrierlázban&#8221;, de   pénzéhségben sem &#8211; és itt most nem akarok arra a közhellyé 
+vált idézetre hivatkozni, hogy mert   az nem ehető. Viszont tudjuk a választ a jövő kihívásaira, a 
+hamarosan elkövetkező gazdasági,   energetikai, környezeti, egészségügyi, szociális és geopolitikai 
+válságokra. Ha kell, akkor mi   két-három év alatt visszafizetjük az ország &#8211; szerintünk 
+egyébként nem létező &#8211; összes   államadóssággát. Ha ennyire kell a pénz nekik, hát legyen, 
+sokat úgy sem fognak tudni kezdeni vele 5   év múlva. Igen, 5 év múlva, és erre nem gondol ma még 
+szinte senki, főleg a korlátolt pártok, és a   tehetségtelen vezetőik. Még az elkövetkező helyzetet 
+sem látják, nem hogy az ehhez szükséges   megoldásokat.<br><br>M.J.: Elég félelmetesen hangzik az, 
+amikről beszélsz.<br>Sz.G.: Valóban   félelmetesnek tűnő időszak fog az emberiségre köszönteni 
+&#8211; melyben nem kis szerepe van a   politikának, úgy világszerte &#8211;, de ahogy ez már az 
+éltben is lenni szokott, félnie csak annak   kell, aki felkészületlen, vagy nem tudja a megoldásokat 
+az elkövetkező problémákra.<br>Az 1945 óta   eltelt időszak politikai és gazdasági főbűnöseinek nem 
+az általuk elkövetett gusztustalanságok és   bűncselekmények a legnagyobb saruk, hanem az, hogy 
+öncélúságuk és butaságuk miatt felkészületlenül   hagyták a társadalmat, és ezzel a ránk váró 
+válságos időszak kiszolgáltatottjai lettünk. Pedig ők   legalább annyira kiszolgáltatott helyzetbe 
+kerülnek, ugyanis felülről még egy politikus is csak apró   légypiszoknak tűnik, függetlenül attól, 
+hogy milyen magas kerítéssel, vagy hány őrrel vetette körül   magát. A népharag helyett vagy mellett 
+méltó büntetést szán neki majd a bölcs természet, és az ellen   nem lesz kihez 
+interpellálniuk.<br><br>M.J.: Térjünk vissza napjainkba. Konkrétan az általatok   elindított 
+országos népszavazási kezdeményezéshez. Miért pont ti, és miért pont ezt a kérdést   indítottátok 
+útjára?<br>Sz.G.: Már megszokhattuk, hogy a politikához kötődő &#8222;előnyökkel&#8221;   
+kapcsolatosan pártként csak mi szoktunk szót emelni. Ennek az az egyszerű oka, hogy rajtunk kívül   
+mindenki csak szavakban igyekszik a visszásságokra utalni, de gyakorlatilag tenni nem tesz ellene,   
+mert abból azért jó haszna van vagy lehet, még ha erkölcstelenül is &#8211; és ez egyáltalán nem   
+okoz nekik lelkiismeret furdalást. Ezért nem véletlen, hogy semelyik párt nem üdvözölte a   
+kezdeményezésünket, és nem is ajánlotta fel a segítségét.<br>Ahogy az sem véletlen, hogy egyedül mi  
+ küzdünk azért, hogy a pártok ne kapjanak állami támogatást (de ezt a kérdést eddig semmilyen   
+verzióban nem engedte a pártdelegáltakból álló OVB hitelesíteni). Pedig ennél logikusabb dolgot el   
+sem lehet képzelni, hisz miként várhatnánk el bármelyik párttól azt, hogy az országot kihúzza a   
+kátyúból, amikor még arra sem képesek, hogy a nyomorult kis párt-pereputtyukat fenntartsák a maguk   
+által teremtett lehetőségekből. Annyira kicsinyesek és öncélúak, hogy inkább csak   
+&#8222;privátba&#8221; lopnak, abból pedig a legritkább esetben adakoznak a pártjuknak &#8211; pedig 
+  a &#8222;büntetlenséget&#8221; ennek köszönhetik, és még sincs hála. Gondoljunk csak bele ezek 
+után,   mennyire izgatja őket az ország, vagy az emberek sorsa. És mennyire szeretnék a drágáink, 
+hogy   jobban éljünk...<br>Ők inkább abban érdekeltek, hogy jobban féljünk, mert az jobb üzlet 
+&#8211;   nekik!<br><br>M.J.: Valóban furcsa dolog, hogy senki nem állt a kérdés mellé, pedig súlyos 
+  problémáról van szó. <br>Sz.G.: Így van, ráadásul erre a kérdésre nem lehet nemet mondani, amikor  
+ bárkit 2-300 ezer forintra is megbüntethetnek, ha nem ad számlát, miközben a törvényalkotó   
+honatyáink 5-600 ezreket kapnak havonta &#8211; számla nélkül!<br>A kezdeményezésünk célja az, hogy  
+ a 386 fős kisebbség &#8211; vagyis az országgyűlési képviselők &#8211; kiváltságait megszüntesse,   
+öncélú érdekérvényesítésének korlátot szabjon. Amennyiben sikerül összegyűjteni a 200.000 aláírást,  
+ ez lesz a hetedik népszavazás Magyarországon &#8211; de az első olyan, ami a hatalmi elit   
+mohóságának szab gátat.<br>Általános igényt fogalmazunk meg, amikor úgy gondoljuk, hogy egy   
+jogállamban mindenkinek egyenlő elbírálás alá kell esnie, különös tekintettel az ország vezetőire   
+&#8211; akik ma a példamutatás helyett továbbra is csak az állampolgárok kedélyeit borzolják, és   
+közben mélyen hallgatnak a körülöttük lévő visszás helyzetekről. Ezen változtatni csak is   
+nagyszabású társadalmi összefogással, és a nyilvánosság erejének segítségével lehet, ezért arra   
+kérünk mindenkit, hogy támogassa a népszavazási kezdeményezésünket. <br>Meg kell szüntetni azt, hogy 
+  egy kivételezett réteg, amely ahelyett hogy példát mutatna, a törvények felett állónak tekinti   
+magát. Az igazságtalanságok feloldására kezdeményeztük ezt a népszavazást, és bízunk abban, hogy   
+ezzel sikerül egy rég várt megtisztulási folyamatot is elindítani, amihez bárki csatlakozhat, aki   
+szeretné, hogy Magyarországon végre egy igazságosabb rendszer jöjjön létre. <br>Ráadásul ezt a   
+korrupció ellenes referendumot szinte kiadások nélkül lehetne jövőre megtartani az EU-s választással 
+  egy időben.<br><br>M.J.: És milyenek a kilátások?<br>Sz.G.: A legfontosabb dolog, hogy valaki   
+elkezdje ezt &#8211; és mi megtettük. A társadalom figyelmét rá kellett végre terelni erre, ami az   
+első hangzásra nem tűnik túl jelentősnek, de kis odafigyeléssel belátható, hogy nagyon is fontos   
+dologról van szó. A képviselők által bizonylatok vagy bármilyen elszámolási kötelezettség nélkül   
+adómentesen felvett havi félmilliót is meghaladó költségtérítés nem csak felháborító, hanem   
+szégyenletes is. Az ország első embereitől joggal várhatnánk el a példamutatást, ehelyett pedig   
+folyamatosan arról győznek meg bennünket, hogy csak magukkal, az egyre nagyobb jövedelmek   
+megszerzésével, és a kicsinyes pártharcokkal vannak elfoglalva, amivel csak megosztják a lakosságot, 
+  hasztalan működésüknek köszönhetően pedig egyre nagyobb szakadék tátong a társadalom felső tízezre 
+  és az alsó tízmillió között. Ez a méltatlan viselkedés pedig egyre növekvő feszültséghez vezet, 
+ami   a súlyosan elmélyülő erkölcsi, gazdasági és morális válság végkimeneteleként társadalmi 
+robbanást   fog okozni.<br>Ezt a nem túl biztató jövőképet szeretnék megváltoztatni azzal, hogy a 
+problémák   gyökeréig lenyúlva, a kiváltó okok megszüntetésével kívánjuk a közélet tisztaságát 
+mihamarabb   helyreállítani, és a mindent elárasztó korrupciót száműzni &#8211; még a politika 
+legfelső   szintjéről is!<br><br>M.J.: Értékelve a szándékot és kezdeményezésetek fontosságát, 
+igyekszünk a   magunk módján mi is erősíteni a gyűjtést azzal, hogy felhívjuk olvasóink figyelmét, 
+támogassanak   titeket. <br>Emellett, hogy mindenképpen összejöjjön a 200.000 aláírás azzal is 
+segítünk, hogy   lapunkkal együtt az olvasóink az aláírásgyűjtő ívhez is hozzájutnak, bízván abban, 
+hogy mindenki   aláírat legalább egy ívet, de lemásolva tovább is adhatja másoknak, hogy minél 
+többen   csatlakozhassanak a kezdeményezéshez.<br>Sz.G.: Ezt nagyon köszönjük, mert minden segítség 
+ránk fér,   hisz valóban közügyről van szó, ami mindenki számára ugyanolyan fontos, a különböző 
+nézetektől vagy   pártállástól függetlenül. Hányattatott történelmünk során most jött el az első 
+lehetőség, hogy az   ország lakossága teljességgel összefogjon és igent mondhasson valamire, ami 
+minden normális embertől   elvárható &#8211; kivéve az országgyűlési képviselőktől.<br>&nbsp;<br>Aki 
+további információt   szeretne, tekintse meg a&nbsp;<a target="_blank"href="//www.zoldpart.hu"><span style="font-weight: bold;"></span></a><a target="_blank"style="color: rgb(0, 0, 0);" href="//www.zoldpart.hu/rolunkpl.php?id=9"><span style="font-weight: bold;">http://www.zoldpart.hu/rolunkpl.php?id=9</span></a> vagy a <a target="_blank"style="color: rgb(0, 0, 0);" href="//www.zoldek.hu"><span style="font-weight: bold;">www.zoldek.hu</span></a> honlapokat,   
+illetve a <a target="_blank"style="color: rgb(0, 0, 0);" href="//www.anepszavaz.hu"><span style="font-weight: bold;">www.anepszavaz.hu</span></a> honlapot, ahonnan a gyűjtőív le is 
+tölthető.<br></div><br> </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-08-17&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1259&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1259&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1259&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1259&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1259&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1259&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1259&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment88309"></A>58. Background</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-20 07:43:24</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez néhány perccel ezelőtt érkezett:<br />
+<br />
+Sziasztok!<br />
+<br />
+Ma reggel elindult a Zöld Párt akciója. Ez nem az, amit korábban szerettünk volna, de az idő és az alkalom ahhoz még nem jött el, így most más feladat került a napirendre. Röviden a lényeg, hogy ma délután 6 óráig el kellene juttatni néhány ezer irományt Budapest területén lévő postaládákba. Aki szeretne csatlakozni ehhez, az jöjjön a Keleti pályaudvarhoz délelőtt 10 órától legkésőbb délután 4 óráig és hívja fel a (20) 492-3658-as telefonszámot.<br />
+<br />
+Olyan jelentkezőket is várunk, akik segítenének az előkészítő és szervező munkálatokban: Telefonálgatás, hajtogatás, vágás, tűzés, szendvicsek készítése, stb. <br />
+<br />
+Üdvözlettel,<br />
+     Zöld Párt<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87954"></A>57. 57. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87867#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-19 10:25:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Az  megint  csak  diktatúra  lenne.<br />
+Ha  a  választási  jog  iskolai  végzettséghez  lenne  kötve,  akkor  maradjunk  ennél  a   rendszernél.  <br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87933"></A>56. Razor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87867#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-19 01:37:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5258.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A másik felvetésedre: a választójog feltételekhez szabása elég bonyolult, hacsak nem egyszerű kritériumokat állítasz be (csak nők, csak szőke hajúak, csak az Anyám tyúkját elszavalni tudók), hiszen mégiscsak cirka 6-7-8 millió emberről van szó...<br />
+<br />
+A vagyoni cenzusnál mindenkinek értékbecsléseket kellene végeztetnie (hiszen a fizetés nyilván nem minden esetben mérvadó) választás, népszavazás, EP-választás előtt. Előny: egy csomó munkanélkülit el lehetne helyezni értékbecslőként. Idénymunka, persze, de decemberben mondjuk lehetnének még Mikulások is, mellékállásban.<br />
+<br />
+A műveltségi cenzus megint necces, szerintem. Iskolai végzettség? De mekkora? Érettségi? Vagy jó lenne a szakmunkás is? Vagy csak diploma? És mindenféle diplomát elfogadnánk? Velem diplomázott olyan ember, hogy hajjaj... Még miniszternek sem lenne jó, nemhogy választópolgárnak...<br />
+Vagy IQ-tesztek, feladatlapok? Ki állítaná össze ezeket? Rettentő szubjektív eredmények jöhetnek ki egy objektívnek tűnő vizsgálatnál is, ráadásul az ilyenek többsége csak egy-egy gondolkodási területet "mér", a többit legfeljebb érintőlegesen.<br />
+<br />
+Amivel viszont teljesen egyetértek, az a munkanélküli segély kontra szavazati jog. Vagy segély, vagy választójog. Ez a Választás Light.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87928"></A>55. Razor</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87867#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-19 00:42:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5258.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Örülök, hogy megkérdezted. Ez az elv a következők miatt alakult ki: (nem feltétlenül mindegyikkel értek egyet, és nagyon kíváncsi vagyok a véleményetekre)<br />
+- Aki gazdag, kevésbé megvesztegethető. Mivel a nép választja a képviselőt, a mi dolgunk kiszűrni a morálisan alkalmatlanokat.<br />
+- A szegényebb sorból érkezőket gyakran túlságosan lenyűgözi a hirtelen jött jólét, nem tudják feldolgozni az anyagi körülményeik megváltozását.<br />
+- Előző pont következménye: olyan dolgokba keverednek a pénz miatt, amik által zsarolhatóvá válnak: szerencsejáték, alkohol/drog, nők/férfiak ízlés szerint. <br />
+- Az anyagi jólét elméletben (szigorúan elméletben!) stílust is von maga után. Ki venne komolyan egy miniszterelnököt egy Zsiguliban? Egy belügyminisztert, aki a Havannán lakik? Aki szakadt farmerben jelenik meg egy vacsorán? Vagy ami még rosszabb, méregdrága, de ízléstelenül összeválogatott ruhákban?<br />
+<br />
+Nézd meg Bokros Lajost, Göncz Kingát, Hiller Istvánt, a másik oldalról mondjuk Kövér Lászlót... A kvalitásaikról lehet vitatkozni, ha nagyon akarsz, de én egyikkel sem ülnék le vacsorázni...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87882"></A>54. 54. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87861#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-18 20:28:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Megyek  lefeküdni.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87867"></A>53. Mate12345</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87700#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-18 19:48:29</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_278.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem értelek. Miért lenne jó, ha csak egy bizonyos vagyon felett lehetne az ember képviselő? (Amit irtál, az ezt jelenti.)<br />
+<br />
+Inkább a szavazati jogot kéne cenzushoz kötni. Na persze nem vagyonihoz, inkább valamilyen iskolai végzettséghez.<br />
+<br />
+Vagy az se lenne rossz ötlet, ha egy irástudó szavazata többet érne, mint egy analfabétájé...<br />
+<br />
+Annak pedig alapnak kéne lennie, hogy a tartósan munkanélküliek nem kapnak beleszólást a közügyekbe. (A nyugdijas és a rokkant az más.)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87861"></A>52. Mate12345</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87850#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-18 19:43:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_278.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez nem vizitdij, hanem a gyógyszergyáraktól szedett egyfajta adóféleség, csak kicsit becsapós a neve.<br />
+<br />
+"A gyártóknak 2006 óta kellett havonta 500 ezer forintot kellett fizetnie a gyógyszerismertetést végzők után az államnak, a törvény erre vonatkozó részét júniusban törölte el az Alkotmánybíróság."<br />
+<br />
+Itt a betegekről egy szó sincs.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87850"></A>51. 51. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87809#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-18 19:14:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">HírTV  online  írt  róla  ma.<br />
+ <B><a href="//www.hirtv.hu/belfold/?article_hid=229653" target="_new" style="color: #000000;">http://www.hirtv.hu/belfold/?article_hid=229653</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87849"></A><FONT COLOR="#FF0000">50. </FONT>kanoc</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87691#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-18 19:12:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment87809"></A>49. Mate12345</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1259&id=87708#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-18 17:40:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_278.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ezt honnan veszed???<br />
+<br />
+Egyébként mi az aláirásgyűjtés határideje?<br />
+(Kapásból tudok 6 embert, akivel aláiratom, de szerintem meglesz a 21 is.)<br />
+<br />
+Végül egy (nagyon is aktuális) vers:<br />
+<br />
+<b>Vörösmarty Mihály: Országháza</b><br />
+<br />
+A hazának nincsen háza,<br />
+Mert fiainak<br />
+Nem hazája;<br />
+Büszke fajnak<br />
+Küzd&#245; pálya,<br />
+Melyen az magát rongálja,<br />
+Kincsnek, vérnek rosz gazdája.<br />
+És oh szégyen! roszra, jóra<br />
+Még szavazni jár dobszóra.<br />
+Ura s rabja millióknak<br />
+Kik gyülölnek és dacolnak;<br />
+Zsarnok, szolga egy személyben<br />
+Ki magával sincs békében.<br />
+S vaseszével<br />
+Jégszivével<br />
+Fölmer&#251;l a külfaj árja,<br />
+A meleg vért általjárja,<br />
+És a nemzet áll fagyottan<br />
+Tompa, zsibbadt fájdalomban.<br />
+Nincsen egy szó<br />
+Összehangzó<br />
+Honfiaknak ajakáról,<br />
+Nincsen egy tett<br />
+Az eggyé lett<br />
+Nemzet élete fájáról.<br />
+<br />
+A hazának nincsen háza. Mért?<br />
+Volt id&#245;, mid&#245;n nevére<br />
+Fölkelének, s amit kére<br />
+Nem keresvén cifra szóban,<br />
+Ami a szív legmélyén van,<br />
+Adtak drága bért,<br />
+Adtak érte vért.<br />
+Most mid&#245;n leszállt a béke<br />
+S a vérontó harcnak vége,<br />
+S a hazának,<br />
+Mint anyának,<br />
+Aki gyermekei körében<br />
+Áll ragyogva örömében,<br />
+Földer&#251;lne boldog napja:<br />
+Most fejét szenny s gyász takarja.<br />
+<br />
+Földön futva,<br />
+Bujdokolva,<br />
+Mint hivatlan vendég száll be<br />
+A szegény s kaján telekbe,<br />
+Hol nevét rút ferditésben<br />
+Ismerik csak átokképen.<br />
+Neve: szolgálj és ne láss bért.<br />
+Neve: adj pénzt és ne tudd mért.<br />
+Neve: halj meg más javáért.<br />
+Neve szégyen, neve átok:<br />
+Ezzé lett magyar hazátok. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1259&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1259&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1259&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1259&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1259&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1259&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1259&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

@@ -1,0 +1,578 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1214#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Egy könyvről: Jiddise Máme";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Egy könyvről: Jiddise Máme<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 augusztus 28. 22:32:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1214.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Nyaralási olvasnivalót         
+                              kerestem egy nagy könyváruházban. A bejárat után az ajtóban az 
+ajánlott         könyvek       között         mindig                 találni néhány szemetet; ezeken 
+érdemes jót         nevetni, aztán   az       eldugottabb       helyeken   keresni   az   olyan      
+       könyveket,       amelyeket valamilyen   okból       kiadtak bár, de el       akarnak   dugni: 
+talán     csak   nem         viszik     vagy       kellemetlen a       témájuk. Ezek   rendszerint 
+jó         olvasmánynak           bizonyulnak.<br><br>Most     azonban           megakadt a     
+szemem   egy   nagyon   ajánlott           könyvön: a     címlapján   pajeszos fejek, stilizált      
+         Dávid-csillag és   menóra.   A           könyv címe:     <span style="font-style: italic;">Jiddise   Máme     túlélőkönyv.</span>       Megforgattam a   kicsiny       alkotást:   a   
+      rövidsége&nbsp;   ellenére         háromezer           forintért (kivált úgy,   hogy a   
+legmagasabb     szintű           törzsvásárlói   kedvezményem   is           van) talán           
+megvásárolható az     Ulpius-Ház ezen   kiadványa.       Megnéztem       a hátszöveget,       amely 
+a           túlélőkönyvnek         nevezett, egyébként     látszólag   is   humorosnak   szánt       
+  alkotást     kínálta:           <br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">&#8222;Ötven zsidó       anya 
+ad         humoros és komoly, szép és   szívbe         markoló               választ az élet   kis 
+és nagy           kérdéseire; ügyvédek,     háziasszonyok,         holokauszttúlélők és           
+kismamák, akik         mind         hasonlítanak   egymáshoz, az én       mamámhoz   és a te     
+mamádhoz:   mindannyian         Jiddise                   Mámék.&#8221;</div><br><A NAME="VUFXSAF"><A HREF="./index.php?post=1214#VUFXSAF" ONCLICK="openbigwindow('resources/pictures/blogin_jiddisemame.jpg', 450, 359); return true;"><img bigpic="resources/pictures/blogin_jiddisemame.jpg" src="./resources/pictures/blogin_jiddisemame_thumb.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Amellett, hogy ebben a     
+                                  szövegben is szerepelt már két égszaggató helyesírási hiba 
+(melyeket     itt     már             javítottam)         föltűnt     még       néhány dolog. A 
+zsidók ilyen       különlegesek,   hogy   az           anyáikról külön   könyvet       kell írni?   
+Nem             sztereotip   ez egy   kicsikét?     Nyilvánvaló,         hogy nekik lehet.   Azt meg 
+még             értem, hogy   milyen     szakma,         életvitel az   ügyvéd   vagy       a 
+háziasszony, de a         holokauszttúlélő       itt   is   különleges.     És   mind       
+hasonlítanak       egymáshoz:   a       zsidók   egymáshoz hasonlóak?   Akkor       mégis     van   
+alapja a     pletykáknak? Mégis                 legjobban az utolsó   néhány     szó tetszett:     
+hasonlít   az     én     mamámhoz.   Amellett,       hogy     ezt   nem hiszem,         számomra ez 
+olyan     üzenetet   hordozott,       hogy a       könyv     legfőképpen     zsidóknak       szól 
+(hiszen   Jiddise         Mámékról van   szó).   Ezeket       érdemes       olvasni, hiszen         
+könyvenként   legalább         egyszer   számunkra is           hasznosítható   elszólás található   
+    bennük,     ha   egymásnak   írták       (vö.   Talmud).         Ezt a   forrást pedig igazán 
+nem   lehet   antiszemitának                       hazudni!<br><br><A NAME="CTHXLFS"><A HREF="./index.php?post=1214#CTHXLFS" ONCLICK="openbigwindow('resources/pictures/blogin_judygold1.jpg', 289, 421); return true;"><img bigpic="resources/pictures/blogin_judygold1.jpg" src="./resources/pictures/blogin_judygold1_thumb.jpg" style="border: 0px solid rgb(0, 0, 0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A fordító Gálvölgyi Judit                         (igen, Gálvölgyi   
+    János     felesége) a   címmel   ügyes munkát végzett: a   Jiddise     Máme           
+túlélőkönyv               lényegesen     érdekesebb, mint a <span style="font-style: italic;">25     
+Questions   for         a   Jewish             Mother</span> (25   kérdés egy zsidó       anyához).  
+ Két szerzőt     mutat   a       címlap. Judy     Gold   (képünkön             jobbra) amerikai 
+baloldali komikus, az     előítéletes         fajtánknak     csodálatos   fogás:       természetesen 
+  zsidósága               mellé leszbikus is     lett, van       két   gyermeke   (egyiküket ő,      
+   másikukat az   általa       ex-társnőnek         nevezett     volt       barátnője hordta   ki).  
+   Édesanyja legjobb       tanácsa az       volt neki:     &#8222;Soha   ne adj   semmit     
+írásba!&#8221; A Vaginamonológokból   mint a dühös   vagina   lehet     ismerős.   Kate   Moira   
+Ryan katolikus ír         színdarabszerző,   egyébként   meg   blogger                   (mivel 
+ronda,   róla   nem   mutatunk képet).<br><br>Már         az előszó is   érdekes: olyan              
+ rasszista,     erőszakos     és     szupremácista   szervezetek is         előkerülnek, mint   a    
+ B'nai       B'rith     Rágalmazásellenes   Liga,     megjelenik     olyan     kitalált           
+személy,   mint Anne   Frank,     és   megtudjuk, amit     eddig is     tudhattunk, hogy   az HBO is 
+        kapva           kapott   az ötleten,       hogy   zsidó anyákról forgassanak.     Ez sem     
+    meglepő, hiszen a   producer Naomi             Newman         is   zsidó. Sokan vannak,   
+mi?<br><br>Az       ötlet       egyébként könnyen fogant meg,   de a     szerzők                 
+vallomása   szerint a   munka   nem volt     könnyű.     Talajrészegen néhány     vodka és   martini 
+      után     Gold         siránkozva   lépett     oda a   buliban Ryanhez, akit         ismert   
+korábban. Éppen       valamiféle           világfájdalma   volt       (&#8222;menekíts   ki   innen, 
+    nem bírom     <span style="font-style: italic;">ezeket</span>&#8221;       &#8211;   tipikus     
+mentalitás),   mire Ryan             rávágta,     hogy jó,       akkor írjunk a zsidó   anyákról.    
+ Még   aznap     este, egy   szalvétára írták               részegen   a   kérdéseket.       Mégis 
+öt   évig tartott   a   könyv   megírása. Már az     első         fölkeresett   zsidó   anya       
+nem     akart   velük     beszélni.   Ryanre   nézve így szólt: &#8222;te         nem is     vagy    
+ zsidó   ezzel   az   orral&#8221;.           (Nem,   kérem, ez   a könyv bizony     nem       
+antiszemita: a   zsidók   éppen       úgy megismerik       egymást   arcról a             
+jellegzetes   szemita       vonásaik miatt &#8211; de   még azt   is         megmondják, hogy     
+askenázi     vagy           szefárd az       illető &#8211;, ahogyan mi őket.     És     igen, 
+ennyire     rasszisták       is       közülük   néhányan,         akárhogyan is   tilos   erről   
+beszélni.)     Ryan így írt       ezután:       &#8222;nem       számított,   hogy   a       
+partnerem zsidó,   és a   fiunkat           zsidónak   neveljük&#8221;. Milyen       érdekes,   a    
+     befogadó vallás       meséje is       szétpukkad, mint       egy   buborék.<br><br><div style="text-align: right;"><font style="font-style: italic;" size="1">&#8222;Gyerekkoromban az   
+iskolában le kellett rajzolnom<br>a         családfámat. Megkértem   anyukámat, hogy 
+segítsen.<br>Fogott   egy ceruzát, és minden egyes         családtagjának<br>a neve alá   odaírta:   
+&#187;megölték&#171;.&#8221;</font><br></div><br>A könyv   a         komikus       élettörténete.   
+A   megfogalmazás az   esetek többségében     vicces próbál     lenni, s   bár   a   vásárló jó      
+     eséllyel az ötven zsidó anyára lenne   kíváncsi, őket     a     zsidó   komikus   háttérbe   
+szorítja.           Egymondatos, néhol sehová sem tartozó   idézeteket     és csak       egy-egy   
+hosszabb, de     érzésem       szerint   akkor sem teljes   történetet   olvashatunk.   
+Természetesen         érdekes az   is, hogy a         leszbikus szerző     hogyan   rendelt askenázi 
+  zsidótól származó spermát       otthonra,     hogy           megtermékenyíthesse a   barátnőjét,   
+érdekes   az is, hogy a próbálkozások   két   és   fél év   alatt   35           000   dollárt 
+emésztettek föl, de   kötve   hiszem, hogy a   többség ezért     vagy   hasonló       információkért 
+    vásárolná meg a   kötetet.     Mindazonáltal   érdekes a   várandóssá   tett lány           
+véleménye: a teherbe     eséshez   csak egy hitelkártya és         orvosi vizsgálat   szükséges.   
+Én félek       attól,   hogy már nem a       szerelem és egy     megbízható pár állnak     néhány    
+ embernél az első         helyen.<br><br>Számomra     szintén       kicsit kiábrándító, hogy 
+Gálvölgyi   a     gyermekvárást   mindenütt     enyhén     negatívnak       érezhető   szavakkal 
+jelzi. A hölgyek   a megszokott       kifejezéssel élve   terhesek     a   könyvben     vagy   (és 
+ezt a   kifejezést itt   olvastam először)     viselősek.   Erősen       szubjektív     
+magánvéleményem, de     szívesen     olvastam volna egy-két helyütt     az áldott     állapotban     
+  lévő vagy   csak várandós       kifejezéseket.   Egyébként a kis Jacob   Henry     névadó   apja a 
+    szomszédban lakó   Cohen   nevű   zsidó úr   volt. Én pedig   ebből a könyvből     tudtam     
+meg, hogy   a   körülmetélésekor is kell a       csecsemőnek   kipát viselnie, amíg a     mohél      
+ megcsonkítja   egy   kicsit.<br><br>Az   előszóban már         olvashatunk     egy   megható   
+történetet           a   holokauszttal       kapcsolatban, amely ismertetését most       olvasóink   
+      kedvéért         mellőzném,     eleget       ismernek már.   Szinte biztos vagyok   benne, 
+hogy   még   így   is         visszatérünk       erre,   de   most   már     kezdjünk     olvasni! A 
+fő kérdés minden   anyával             kapcsoltban az,   amit tőlünk is             
+megkérdezhetnének:       &#8222;miben különbözik a     zsidó         anya a     nem zsidó       
+anyától?&#8221;<br><br>Egy       válasz a     következő     fejezet első             mondata, melyet 
+      félkövér   betűkkel szedtek, így meglehetősen   föltűnő:           &#8222;a       zsidó        
+   anyák jobban     szeretik a   gyerekeiket&#8221;. Ez nagyon   kedves, de   kikérem a     gój      
+       anyák       nevében.     Más   válaszok   azonban kevésbé   sértőek ránk nézve:   &#8222;a    
+     neurózis   fokában,   az           általános       üldözési     mániában&#8221;.   Igen, ezek   
+  tipikusan   <a target="_blank"style="color: black; font-weight: bold;" href="//www.bombagyar.hu/index.php?post=1195">zsidó                       
+betegségek</a>.<br><br>Érdekes           önvallomások   ezek: míg a szerző arról ír,   hogy   első   
+            könyve   nem   valamiféle Micimackó-szerű           gyermekkönyv volt,   hanem az   Anne 
+        Frank         naplója, addig az   anyák   kéztördelve haboznak, féltik           
+gyermekeiket           valamiféle   új         soától, mintha egy második   holokauszt   árnya 
+lebegne mindig       fölöttük.                 Egy ortodox anya       azt mondta:   &#8222;a zsidó   
+anyák       gyermekközpontúak&#8221;.   Ő           vajon tényleg   azt           képzeli, hogy a 
+nem zsidó     anyák   nem     azok?<br><br>A   könyv     szerint   a     zsidó nők majdnem         
+mindegyike       megemlíti Barbra Streisandot, ha   egy         példaképének   számító zsidó     
+asszonyról           kérdezik.   A szerző is   kedveli   Barbrát:     &#8222;volt egy     álma,   
+nagy orra és nehéz               gyermekkora&#8221;.   Minden,   ami kellhet.       Meg néhány 
+filmje,   amelyek   tanulságát       a szerző           édesanyja a       &#8222;goj&#8211;zsidó   
+házasságban&#8221;     látja:   &#8222;A     vegyes házasságok                 sosem válnak be.     
+Soha.&#8221; (Érdemes fölidézni   a szerző   édesanyjának egy másik, életet     végigkísérő, bár 
+roppantul   előítéletes bölcsességét:     &#8222;bárki bármit mondjon, mindenki utálja     a 
+zsidókat. Úgy viselkednek,   mintha a barátaid     lennének, de mihelyt kiteszed a lábad a szobából, 
+    lebüdöszsidóznak.&#8221; Ilyenek   ezek a     gójok, nemdebár?)<br><br>A nácik   egyébként 
+hülyék,   jobb,   ha   tudjuk. Egy nő                 elmesélte, hogy édesanyját   maga Josef   
+Mengele   választotta ki   elgázosításra,   ráadásul         háromszor         is. Már ahhoz is elég 
+komoly       véletlen kelljen,   hogy mindhárom esetben maga           Mengele döntsön         
+(hiszen az ilyen     döntéseket a     történetek szerint valóban     orvosok   végezték,   de a   
+legritkább         esetben   maga   Mengele,   aki inkább a   saját     kísértleteivel   volt inkább 
+  elfoglalva &#8211;     szintén   e           történetek mesélői     szerint). A nő     
+mindháromszor úgy   visszaszökött a sorba, hogy     sem a         tisztek,         sem az orvos nem 
+vették   észre. Érdekes   dolog   ez: vajon a többi rab   miért   nem     szökött         vissza?    
+ Vagy tényleg   sokan megtették, mert ennyire     könnyű   volt, de az <img src="./resources/pictures/blogin_sskicsi.gif" style="border: 0px solid rgb(0, 0, 0);" border="0">-nek  
+                   nem tűnt föl, hogy több embert kellene elgázosítani? Nagyon   ügyes   asszony     
+  lehetett,           Mengelének     meg   sok dolga volt vagy nagyon rossz arcmemóriával           
+rendelkezett.<br><br>Zsidó         szokás szerint az újszülöttet egy halott rokon után kell         
+elnevezni.   Ez gyakran vita forrása   is,       hiszen a családban nyilvánvalóan több a halott,     
+    mint a csecsemő. Az   érdekes tradíció nem   éppen       transzcendentális okairól a szerző      
+   fogalmaz: &#8222;Igen, a zsidók a   halottak után   nevezik el a       gyermekeiket tiszteletből, 
+de         azért is, mert a zsidóknál minden   boldog   eseménybe vegyülnie kell   némi     
+szenvedésnek         is.&#8221; Ezt már jómagam is megfigyeltem, és     hallottuk zsidókról is: egy  
+ igazi       zsidónak       egyszerűen igénye van arra, hogy üldözzék. Ezt     alátámasztja a 
+komikus     édesapjáról írt           néhány sora is. A férfi szívinfarktusban halt meg,     
+teljesen   váratlanul. A   gyász így még       nehezebb,     ezért a szerző pontokba szedve 
+összeírta, mi       mindent tanult   édesapjától. Az       olyan kevésbé magvas     
+életbölcsességeken, mint   &#8222;mindig     próbáld kitalálni,   hogy ki       nyeri a Miss America 
+      szépségversenyt&#8221;, egy sokkal érdekesebb     elmélet is helyet         kapott, szinte 
+megbújva   a kilencedik     sorban: &#8222;mindenki utálja a     zsidókat&#8221;. Puff         neki, 
+szép   útravaló az élethez. Egyébként     pedig biztosan     véletlen.<br><br>A zsidó   szülők       
+szinte   mindig elvárják, hogy gyermekük szintén zsidót       válasszon.   Ha ők teszik,   ezt se    
+     fajvédelemnek, se rasszizmusnak nem szokás nevezni.   Mindazonáltal       előfordulhat,   hogy 
+a         szerelem bolondos játékai miatt egy zsidó lány gójt   választ, ilyenkor viszont         
+elvárás,   hogy     a   gyermekeket zsidóként neveljék, hiszen zsidó az,   akinek anyai felmenői   
+között     zsidó     van     (rabbi   Radnóti Zoltán nyomán). Ez a helyzet a   szerzővel is, aki   
+emellett még     homoszexuális   is,       de van két gyermekük. Nagyon tanulságos a   mi   
+szempontunkból is   egy, a páros   között     lezajlott       beszélgetés. Gold barátnője ugyanis,   
+mint   tudjuk, nem   született   zsidónak.<br><br>Amikor     kisgyermekük     elkezdte     a héber   
+iskolát, Kate   szembesült vele, hogy a   zsidó ünnepek szinte     kivétel nélkül         valamiféle 
+    bosszúállásra, vérengzésre, gyilkosságokra   emlékeztetnek. A     párbeszéd annyira     
+tanulságos,         hogy szó szerint kell idéznünk a   könyvet:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 50%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px;"><i>&#8222;&#8211; Jude, nálatok minden  
+       ünnep     valamiféle vérfürdő túléléséről szól?       &#8211; ordította letörten. &#8211;     
+  Túlságosan   lehangoló a     vallásotok.<br>&#8211; Vannak derűs       ünnepeink is &#8211;       
+mentegetőztem.   &#8211;, például a     hanuka.<br>&#8211; Aha. Van egy bájos       rajz Júdás       
+Makkabeusról, amint   úgy kalapálja el a görögöket,     mint Sub-Zero, a Mortal Kombat             
+főszereplője.<br>&#8211; No   és a zsidó húsvét? Akkor ünnepelünk     &#8211; A francba! Nyomban     
+        megbántam, amint   kimondtam.<br>&#8211; </i>A bárányok hallgatnak<i>     előjátéka. Tovább. 
+            </i><i>&#8211; Kate   állt nyerésre.<br></i><i>&#8211; Ott a purim. Az igazi     
+mulatság.             </i><i>&#8211; Mi baj   lehet a purimmal, gondoltam.<br></i><i>&#8211; Hámánt 
+megölik                 </i><i>&#8211;</i><i>   felelte Kate. </i><i>&#8211; Mintha a 
+</i>Maffiózok<i> egyik</i><i>   epizódja               volna i. e.   50 tájáról. De csak, hogy tudd, 
+a kedvencem a tisá b'áv, ez a   mindenes     gyászünnep,     ha         netán valamelyik vérfürdő 
+kimaradt volna.<br></i><i>&#8211;   Nézd, Kate, a     te vallásod sem     mindig         vidám. Mi 
+van a húsvéttel? </i><i>&#8211; Az ő   vallása sem csak     Mikulásból, meg   húsvéti     nyusziból  
+     áll. Láttam a </i>Passió<i>       előzetesét.<br></i><i>&#8211; Tévedés. Jézust     keresztre   
+feszítik, de       feltámad.       Örömünnep. Jude, nézz szembe a tényekkel. A te vallásod       
+dióhéjban</i><i> a következő:             &#187;megtámadtak minket, legyőztük őket,       
+együnk.&#171;&#8221;</i></div><br>Amikor mi írunk a         zsidó     vallási ünnepek furcsa, sőt    
+   horrorisztikus eredetéről vagy a szokásaik   számunkra       idegenségéről     (emlékezzünk csak 
+a       dreidelezés <a target="_blank"style="color: black; font-weight: bold;" href="//bombagyar.hu/index.php?post=328">kedves szokására</a>), valaki   mindig megjegyzi,   
+hogy               tévedünk. Ha az utolsó mondat poénját idézzük, nekünk nem ül   úgy a vicc, mert 
+nem   vagyunk         zsidók:   de     tőlük-róluk olvasni ezt a néhány sort biztos   alapot ad 
+mindarra,   amit írtunk   vagy       írni fogunk   a     tömeggyilkosságok és bosszúk   
+ünnepeiről.<br><br>A       könyv egyébként más példát hoz a zsidóság anyai ágon történő     
+öröklődésére, méghozzá egy rabbi       tanulságos történetét: egy kurva egyik éjjel három férfival   
+is hál,   majd terhes lesz. Bár nem       tudja, hogy a zsidó férfi-e az apa, azt igen, hogy az   
+újszülött zsidó   lesz: hiszen ő maga is       zsidó. Ilyen jó kis történet ez, érdemes   
+megjegyeznünk.<br><br>Az amerikánus   zsidóknál   ismert       jelenség lehet   a zsidó anyákról   
+szóló vicc, mivel ezekről elég hosszan értekezik az   iromány.   A     szerző szerint azért     
+szeretnek egymás között anyáikkal viccelni a   zsidók, mert   olyan sok   országból     rúgták ki   
+őket, hogy   szükségük van a nevetés hozta   megkönnyebbülésre. Hát   még   azoknak, akik nem       
+tudták kirúgni   őket.<br><br>Ő komikusként a   színpadon mindig azzal     kezdi, hogy leszbikus és  
+   zsidó,   de a zsidók   fösvénységével nem   viccel, csak a zsidó   anyákkal.   Álláspontja 
+szerint     ellenkező   esetben (ha egy   ilyen   jellegzetes sablont tenne   nevetségessé)   maga 
+adná elő    &#8222;a   Cion   bölcseinek jegyzőkönyve     (minden antiszemita   kötelező olvasmánya) 
+    zanzásított     változatát&#8221;.<br><br>Egy érdekes   fejezet   foglalkozik   azzal hogy a     
+megkérdezett zsidó anyák     gyászhetet (úgynevezett süvet)   ülnének-e, ha a     gyermekük nem   
+zsidóval   házasodna össze. A zsidók     közismertek erős fajvédő   szabályaikról,   azonban   őket  
+ egyáltalán nem   érintik azok a vádak,     amelyekkel találkozniuk   kell például   azoknak a     
+magyaroknak, németeknek   stb., akik azt kívánják,     hogy saját nemzetük   tagjai   közül   
+válasszon párt   utódjuk. Az ilyeneket   lefasisztázzák, nácinak     nevezik, a   fajvédelem     
+különböző passzusait fogják   rájuk, ők meg csak   pislognak, hogy nekik ilyet     miért   nem     
+lehet. A könyvben szerepől érv szerint   nekik azért kell   ilyen szigorúan egymás között           
+házasodniuk (sok családban olyannyira, hogy a másképp     cselekvőket kiátkozzák, az unokákat nem    
+       ismerik meg és el), mert  &#8222;a holokausztban olyan   sok   zsidó halt meg, hogy ha 
+továbbra     is   nem     zsidókkal házasodunk, lassunk magunk irtjuk ki a     népünket&#8221;. 
+Pedig éppen   annyi     zsidó él a     világban, mint magyar: nekik a fajvédelem, nekünk   a   
+multikulturalizmus   jut? Ha     valaki azt mondja,     hogy <span style="font-style: italic;">magyar   a   magyarral,   fiú a     leánnyal</span>, máris nácivá     válik. Még jobban 
+fogalmazza meg valaki más,   akit     idéz a     szerző:  &#8222;Nem azért éltem túl     Hitlert, 
+hogy gojhoz menjek feleségül.&#8221;     Nos, erről       van szó.<br><br>Emlékezetes, hogy Tomcat   
+  azóta nem mondhatja el a véleményét a     médiában,     amióta a TV2-n a Talmudból idézett, és az 
+én blogom     is azok után tiltották le,   hogy       megerősítettem, amit akkor mondott. A zsidók 
+szent könyvében a nem     zsidó (tehát gój   vagy akum)       nőket sikszének (kurvának), a goj 
+kislányokat pedig sikszeldének   (kicsi     ringyónak) hívják.   Ebben     a könyvben is szerepel a 
+siksze szó, méghozzá negatív     szövegkörnyezetben:   egy anya   attól óvja   a   gyermekét, nehogy 
+sikszét vegyen el.<br><br>A   könyvnek   némi magyar vonatkozása     is van: a   szerző   a leírás 
+szerint valóban nagyszerű   nagymamája (aki   egyébként titkon dupla     szalonnával   ette a   
+szendvicset, fittyet hányva a   kóserség előírásaira)   magyaros pogácsát   sütött   otthon. Jó   
+érzés,   hogy bennünket nem az   antiszemitizmus fellegváraként   mutat be a   könyv; a szerző     
+édesanyja   szerint mindenki   utálja a zsidókat, csak a hollandok nem.   Szerinte   talán Anne 
+Frank   miatt.   Ha ez   igaz,   akkor Anne Frank mesesztorija és a mostani     ultraliberális, 
+kábítószeres   modern Szodoma       között lehet összefüggés.<br><br>A   Világkereskedelmi   
+Központba vezetett   repülőgépek története   is     bekerült a könyvbe, hiszen   annak jócskán van 
+zsidó   vonása. Mégsem úgy   került a zsidók   anyák     könyvébe, mint ahogyan mi   írtuk volna: 
+itt Gold zavartan   próbálja   szeptember 11-én   elmagyarázni a     második   gyermeküknek, hogy 
+miért kellett korábban   elhoznia az   óvodából. A   magyarázat a   &#8222;rossz     emberek&#8221; 
+és az &#8222;ahogyan   Izraelben&#8221;   frázisokba   fullad, mire a   kisgyermek csak     ennyit 
+kérdezett: &#8222;miért   gyűlölnek ennyire     minket?&#8221; Később egy   Seattle-beli   előadáson 
+a rendező azt kérte, hogy a   számból hagyják   ki   az Izraelre utaló részeket.     (Természetesen 
+minden zsidó humorista kötelező   érvényűnek   érzi, hogy   a számaiban hangsúlyozza az     
+identitását; elég csak Adam Sandlerre gondolni.)   Az   írónő letört:   állítása szerint kávét     
+szürcsölgető menő liberálisokat várt, de kiderült, az     izraeliek   őshazájának tartott 
+Seattle-ben   is   fölmerült, hogy a szeptember tizenegyedikei     eseményekért   éppen Izrael a 
+felelős. (A komikus   végül   nem volt hajlandó más számot előadni,   ezért   inkább   meghívta a 
+helyi zsinagógát, hogy   zsidók előtt   léphessen föl. A darab egyébként   pocsék   kritikát   
+kapott, a szerző szerint a   kritikusok   antiszemitizmusa   miatt.)<br><br>Értelemszerűen egy   
+ilyen     humorosnak szánt   könyvben is külön   fejezetet kap a   holokauszt. Az írónő Simon 
+Wiesenthal     Központban   dolgozó   ismerőse azt mondta,   mindegy   hogyan, de emlékeztesse az 
+embereket a     történtekre. Érdekes a     dolog, mert sem ő, sem a     szerző nem élte át a 
+holokausztot, de   megkérdezett   olyanokat, akik   igen.   Itt már lényegtelen   is   a könyv 
+témája: történeteket   olvasunk arról, ahogyan   egy   kislány a két helyen     gerincetört anyját   
+kicsempészi a kórházból   Auschwitzban, az őröknek pedig     nem tűnik föl,   hogy a   kislány csak  
+ támogatja gerinctörött   édesanyját. Az írónő Anne Frank     történetén   nevelkedett és zsidó,   
+úgyhogy   nem várható el tőle,   hogy bármi hasonlóan irreális     történet   részleteire 
+rákérdezzen.   Elnézést   kérek a sértettektől,   de nehéz komolyan venni   például     egy olyan 
+beszámolót, mely ezzel a     mondattal kezdődik:   &#8222;anyám az egyetlen   túlélő     
+köztünk&#8221;. És tessék mondani, akkor a     halálból   szólsz?<br><br>A cionizmusról   érdekes    
+ történetek olvashatók a könyvben. A szólam a   szokásos: a   II. világháború után a   zsidóknak 
+járt   ez a   terület, a gonosz palesztinok pedig nem   engedték és   most robbantanak.   Arról nem 
+esik   szó, hogy talán   azért nem, mert korábban ők éltek   ott. Egy nő   egyenesen azt   mondja, 
+hogy   szereti Izraelt, de az   izraeliek miatt soha nem költözne   oda. Erre az   írónő mesél   egy 
+  izraeli ismerőséről, aki a fuvarozási   vállalkozásának kamionját úgy   csempészte   be (komoly    
+ összeget keresve) a homoszexuálisok úgynevezett   Méltóság Menetébe, hogy   beolajozott   testtel,  
+   rózsaszín cicanadrágban fényképeztette le magát egy   buzimagazinban. Úgy   érezte, ezzel   pénzt 
+    kereshet, pedig nem volt buzi. A valóban homoszexuális   szerző vérig sértődött   ezen a       
+történeten, és hosszú oldalakon keresztül meséli a pénzéhes álbuzi   zsidó   történetét.<br><br>A    
+   könyv a végéhez közeledve egyre jobban laposodik: a csak néha ülő poénokat   lassan fölváltja az  
+     önsajnálat. Az írónőt a barátnője elhagyta, így állandóan éjszakázó leszbikus   komikusként 
+egyedül       kell nevelnie két gyermekét. De azért a könyvet így fejezi be:   büszke 
+rá, hogy       vállalja &#8211; ő egy zsidó anya.<br><br>     </div>                             
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-08-28&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1214&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1214&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1214&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1214&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1214&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1214&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1214&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1214&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1214&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment93024"></A>78. pillango</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-30 11:04:27</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3916.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Köszi Blogin!<br />
+<br />
+Ez nagyon jó volt! :-)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92826"></A>77. Harcos Tibi</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-29 22:14:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Blogin! Te egy hős vagy, hogy képes vagy végig olvasni ilyen szarokat! Meg azért mert még életben vagy, annak ellenére, hogy a tegnapi búrád láttán ez kétségesnek tűnt... : )</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92813"></A>76. Kunlegény</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-29 21:15:16</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1978.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">én nem olvastam ezt a könyvet,nem is fogom,de ez az elemzés róla sztem kibaszottul zseniális!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92743"></A>75. Mellike</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1214&id=92728#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-29 16:57:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Bayerncool: Ez k. jó. Nézzétek meg a gerendagyakorlatát is. Én bepisiltem a röhögéstől:DDDD</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92737"></A><FONT COLOR="#FF0000">74. </FONT>74. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1214&id=92736#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-29 16:34:16</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92736"></A><FONT COLOR="#FF0000">73. </FONT><A HREF="mailto:devius@freemail.hu" STYLE="color: #000000">devius</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1214&id=92728#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-29 16:31:20</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_602.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92735"></A>72. bodin</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1214&id=92733#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-29 16:23:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5120.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">És régebben volt egy másik vicc is, hogy milyen a szovjet pornó:<br />
+...Iván sapka nélkül...   vagy<br />
+...ló nyereg nélkül...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92733"></A>71. Kritikus</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1214&id=92719#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-29 14:56:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2586.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Azóta is álmatlanul forgok néha, mikor eszembe jut, s gyötör a kíváncsiság, mert tudom hogy akkor elszalasztottam a lehetőséget, hogy megtudjam: milyen lehet a babó szex...?" <br />
+<br />
+Azt nem tudom, de régebben volt egy vicc, hogy milyen a szovjet gruppenszex? 20-30 fiú+lány bemennek egy nagy, sötét szobába, majd mindenki meztelenre vetkőzik... és vigyáz a ruhájára! :-)) </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92732"></A>70. Lothandar (BadGuy)</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1214&id=92728#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-08-29 14:41:05</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1639.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez azért kevés a golyók elvesztéséhez. :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment92728"></A>69. 69. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-08-29 14:04:15</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Liebe Freunde,<br />
+<br />
+Csodálkozik még valaki azon , hogy "Jiddise Máme"-k ilyen gyerekeket szülnek ? . . .<br />
+<br />
+<B><a href="//www.href.hu/x/6shn" target="_new" style="color: #000000;">http://www.href.hu/x/6shn</a></B><br />
+<br />
+P.S. - remélem örökre elvesztette golyóit,  <br />
+a Máme, valamint  a Kiválasztott Nép, és  liberális "kultúra" szemefénye, <br />
+a "tornászkankisasszony"</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1214&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1214&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1214&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1214&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1214&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1214&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=1214&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=1214&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=1214&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

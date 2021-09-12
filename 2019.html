@@ -1,0 +1,575 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2019#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Terített betli, Mikolától Mengelicáig";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_448.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Terített betli, Mikolától Mengelicáig<BR><DIV CLASS="postheader_small">Blog - Molnárgörény</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 március 17. 11:29:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2019.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div class="entry">  				<p style="text-align: justify;">"Magyar 
+ egészségügy". Az a bizonyos állatorvosi ló, amelyikre kígyót-békát  lehet kiabálni, mégis 
+tulajdonképpen csodaszámba menően működik, főleg  ha a lehetőségekhez képest nézzük. Ahol páratlan 
+szakmai hozzáértés  társul az abszolút sötétséggel és nihilizmussal; ahol önzetlenül  
+végignyomorgott életek kontrasztolják a luxusyachtokat és az évi három  külföldi luxusüdülést. 
+Amiről olyan sokan írnak, olyan sok okosságot és  még sokkal több hülyeséget.</p><p style="text-align: justify;">Ez a posztsorozat Lelkylola, a Reakció számomra legkedvesebb bloggere 
+nyomán, voltaképpen az ő kérésére született. <a target="_blank"style="font-weight: bold; color: black;" href="//reakcio.blog.hu/2009/02/18/hosok_feher_kopenyben">Ő is írt</a>  röviden a témáról - 
+nagyon hosszú vitát kiváltva -, de ott és akkor nem  akartam a posztnál ötször hosszabb kommenttel 
+előjönni. De megígértem  neki, hogy külön kitérek a kérdésre, mert többször jelezte, hogy -  
+érthetően - érdekelné a véleményem.</p><p style="text-align: justify;">Tehát.  Úgy gondolom, hogy 
+most már gyakorlatilag lehetetlen a kocsirudat jó  irányba lökni: már gurulunk a hegyoldalon lefelé, 
+és nem látok olyat,  aki megállíthatná az elszabadult szekeret. A magyar egészségügy halálos  beteg. 
+Sok szervét rágja a kór, és orvosai vagy dilettánsok, vagy még  annál is rosszabbak.</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: center;"><strong>I. A szakmai 
+lecsúszás</strong></p><p style="text-align: justify;">A  magyar egyetemek mindig is magas 
+színvonalon oktattak, amit a környező,  főleg keletebbi szocialista országokról nem nagyon lehet 
+elmondani (a  Bolyai még hagyján, de az ukrán egyetemekről jobb hallgatni). Amíg  mentőztem, a 
+szigorló mentőtiszteket láttam minden évben (most a  rezidenseket). Amikor a kötelező nyelvvizsgát 
+bevezették a kilencvenes  évek közepe táján, ordítottak ellene, és többük azért diplomázhatott  
+később, mert nem bírta a nyelvvizsgát időben letenni. Vagyis: itthon  képzelték el a 
+jövőjüket.</p><p style="text-align: justify;">Csak  közbevetem: nem igaz, hogy a szakmai 
+frissességhez okvetlenül kell a  nylevtudás, még ha ez eretnek szöveg is. Mire az újítás (elég 
+hamar)  ideér, addigra a fordítás is megvan, minden lényeges információ  megszerezhető magyarul. 
+Sőt, a neten már a Google is fordít, ha rosszul  is, de megérthetően.</p><p style="text-align: justify;">A kétezres  években a medikusok attitűdje megfordult. Tanulják a nyelvet, mint a  
+kisangyalok. Méghozzá nem csak angolt, németet, hanem norvégot, svédet,  dánt - ki lehet találni, 
+miért... Ma a szakmai tárgyakat halasztják,  hogy a felsőfokú norvég vizsga meglegyen. Az a 
+fontosabb: azzal lehet  odakint pénzt keresni. Itthon nem marad, csak a szakmailag reménytelen  
+eset, meg a protekciós orvoscsemeték, akiknek a fenekük alá tolják a  pénzes helyet, illetve néhány 
+reménytelenül hazaszerető idealista  (például az a bolond Molnárgörény). A drága pénzen kiképzettek 
+helyére  jön ukrán, szerb és arab. Nem is mind magyar anyanyelvű: sokan itt  végeznek, aztán eszük 
+ágában sincs hazamenni (a románokra ez már nem  igaz, ők otthon már jobb lehetőségeket kapnak, hála 
+Gyurcsánynak, aki  lehúzta az országot a leállósávba).</p><p style="text-align: justify;">A  
+legjobban képzettek elvesztése miatti szakmai deficitet csakis korrekt  és kérlelhetetlen 
+ellenőrzéssel lehetne úgy-ahogy kompenzálni. Na de ki  ellenőrizzen? Az ÁNTSZ erre alkalmatlan (ott 
+olyanok dolgoznak,  tisztelet a kivételnek, akiket sose lenne szabad beteg mellé  engedni...), a 
+kamarának nem ez a fontos, a kötelező továbbképzési  rendszer meg egy rossz vicc. Vizsgák általában 
+nincsenek (sose jut rá  idő...), vagy ha van, akkor is névleges - nem is beszélve sok ilyen  
+továbbképzés színvonaláról.</p><p style="text-align: justify;">Csak a közelmúlt kórházi 
+beutalásaiból néhány szakmai gyöngyszem (csakis hozzáértőknek), mégpedig EKG-témakörben:</p><p style="text-align: justify;">a/&nbsp;"III-ban  asystolia"... Vagyis: a tengelyállás miatt a III. 
+elvezetésben apró,  majdnem isoelectromos kitérés volt - persze a többi elvezetésben  hibátlan volt 
+a jel, és micsoda képtelen hülyeség, hogy az egyik  elvezetésben nem dobog a beteg szíve, csak a 
+többiben...</p><p style="text-align: justify;">b/  "arrhythmia absoluta, pitvarfibrillatio ÉS I. 
+fokú AV-block". Így  egyszerre... Pitvarfibrillatio az tényleg volt, de hogy P-hullám híján  a 
+PQ-távolság megnyúlását hogy a fenébe állapította meg a kolléga, az  rejtélyes...</p><p style="text-align: justify;">c/ "I-aVL-ben I. fokú  AV-block" - a kolléga még be is karikázta az 
+EKG-szalagon, hogy mire  gondol. Nevezetesen úgy vélte, hogy a beteg bal kezéről levezetett  EKG-n 
+hosszabb ideig tart a pitvarkamrai átvezetés, mint a jobbkezes  görbén. Mivel az elektromosság 
+sebessége ugyancsak rettentő gyors,  ennek valósága érthetően képtelenség...</p><p style="text-align: justify;">Aki  ilyeneket leír (ja: háziorvos vagy belgyógyász szakorvos volt 
+mind), az  nyilvánvalóvá teszi, hogy a belgyógyászat egyik alapvizsgálatának, az  EKG-nak az 
+alapjairól se tud semmit...</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: center;"><strong>II. A korrupció abszolúttá válása</strong></p><p style="text-align: justify;">Nem,  
+nem a paraszolvencia. A beszerzési korrupció! A 10 % visszaosztás az  kérem nem kivétel, hanem 
+szabály. Tudja mindenki, nem szól senki  (legfeljebb reménykedik, hogy ő is kap majd valaha). Annak 
+idején,  amikor kerületi egészségügyi vezetőként az alapellátásnak eszközöket  szereztem be, bejött 
+egy cég képviselője az irodámba: körülnézett (10  négyzetméter, alaposan lepukkanva), és egyből 
+közölte, hogy náluk nem  10, hanem 15 % a jutalék a döntéshozónak. Mire én rögvest kirúgtam, de  
+erre még mutogatott, mert azt hitte, hogy be van az iroda technikázva,  csak azért teszek így. Fel 
+se merült benne, hogy pechjére olyan helyre  tévedt, ahol nincs fogadókészség...</p><p style="text-align: justify;">A  mentőknél is láttam szebbnél szebb dolgokat. Vettek olyan  
+lélegeztetőgépet, ami csak 100 %-os oxigénnel ment, és 15-20 perc alatt  leszívta a palackot, így 
+Pécsről úgy hoztunk Budapestre beteget, hogy  letűztük a hatoson másfél óra alatt, majd viszafelé 
+három óráig  repkedtünk "virágról virágra": vagyis még Siófokra is eljutottunk, mert  csakis elég 
+közeli mentőállomásokon át mehettünk, a palackcserék  végett... Amikor az egyik, beszerzéseket 
+véleményező vezető Toyotával  járt, amikor Toyotát vettünk és Mercedessel, amikor Mercedest, akkor 
+én  ezt leírtam az akkori főigazgatónak, Göbl Gábornak. A válasz az volt,  hogy ne rágalmazzak, és 
+különben is, a kocsi nem az illető, hanem a  férje nevén van... Mindenesetre Göbl Gábor ma 
+Ómátyásföld régi polgári  villanegyedében Palotás János közelében sínylődik egy 
+luxusingatlanon...</p><p style="text-align: justify;">Göblt  az a Takács Zoltán követte, aki 
+egyidejűleg a legnagyobb konkurrens  magáncég (Főnix) gyakorlatilag teljhatalmú tulajdonosa volt - 
+és  főigazgatósága alatt is az maradt, csak az elnök-vezérigazgatói posztot  adta át másnak. A 
+magyar jog erre a bravúros megoldásra lehetőséget ad:  van olyan kiskapu a törvényben, hogy egy 
+ember lehet állami intézmény  vezetője és azonos profilú magáncég tulajdonosa. Biztosan azért, hogy  
+élesebb és tisztább lehessen a verseny... Takács mindenesetre olyan  módon vezette saját cégét és az 
+OMSZ-ot is, hogy néhányan bérgyilkost  fogadtak ellene, csak épp lebuktak...</p><p style="text-align: justify;">Még  számos esetet említhetnék eészen pofátlan lenyúlásokra és korrupt  
+ügyletekre, de minek? Ha egy országban megengedik, hogy az állami  intézményt a vetélytárs magáncég 
+tulaja vezesse, akkor minden  elképzelhető... Mindenesetre érdekes módon ezek a beszerzések és 
+simlik  semmiféle érdemi felelősségrevonást nem ereményeztek - még csak  felderítést sem -, tehát a 
+"hivatalos" álláspont ma is az, hogy az  OMSZ-nál minden a legnagyobb rendben van. Hogy közben 
+időnként  milliárdos adósságokat kellett konszolidálni, azt simán rá lehet fogni  a TB-finanszírozás 
+hiányosságaira...</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: center;"><strong>III. A jövedelmek - bebaszott az EU<br></strong></p><p style="text-align: justify;">Ez  szorosan összefügg a szakmai lecsúszással. Akárki tudhatta, aki  gondolkodni képes, 
+hogy az EU-csatlakozás és diplomáink automatikus  elismerése helyzetbe hozza az orvosokat: immár nem 
+kell évekig  szarakodniuk egy külföldi munkavállalásért, és így nem kénytelenek  beérni az itthoni 
+éhbérrel. A politika viszont úgy vélte, hogy az  alattvalókat meg lehet nevelni. Nem jött össze: 
+aneszteziológus  ismerősöm két hosszú hétvégét ügyel Londonban (persze a repülőjegyét is  fizetik), 
+és ezzel háromszor annyit keres, mint itthon a látástól  Mikulásig való keccsöléssel meg a 36 órás, 
+változatlanul létező  ügyelettel. Londonban ugyanis nem 72 órát szolgál egyfolytában, hanem  
+megkapja a tisztes pihenőidőt a hétvégén belül...</p><p style="text-align: justify;">&nbsp;A&nbsp;"reform"  minden kormány alatt főleg az volt, hogyan lehet az ellátást  
+visszafogni. Ugattak a paraszolvenciáról (amit mi se szeretünk, én pl.  szívesebben kapnék fizetést 
+éhbér helyett - bár az én szakmámban alig  van hálapénz), de hogy európai bér legyen, az véletlenül 
+sem lett  célbavéve. Egyszerű a képlet: ahol európai a bér, oda megy a magyar  orvos. Itt meg 
+nevelnek tovább, hivatástudatról meg esküről csaholnak,  holott a huppokratészi esküben sehol nincs 
+benne a csirkefarhát, a  rántott leves meg a gyerekek lyukas zoknijainak harmadik  megstoppolgatása. 
+A reménytelen jövedelmek mindenkit elűznek, kivéve a  szakmailag reménytelen, avagy reménytelenül 
+hazaszerető orvosokat.</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: center;"><strong>IV. A reform: ésszerűtlen restrikciók</strong></p><p style="text-align: justify;">Voltaképpen  a magyar egészégügy ténylegesen pazarló, legalábbis sok mindenben az.  
+Értelmetlen "biztonsági" vizsgálatok, illetve azok állandó  ismételgetése; betegek fölösleges 
+kórházi felvétele, szociális  feladatok folyamatos ellátása, és utoljára, de nem utolsósorban a  
+páciensek direkt követelésére végzett vizsgálatok emésztenek fel óriási  pénzeket. Az eddigi 
+"reformok" azonban a lyukakat nemhogy nem tömték  be, de sokszor éppenséggel kitágították.</p><p style="text-align: justify;"><strong>1/</strong>  A magyar rendszerben nem tisztázott, hogy milyen 
+szakorvos milyen  kaliberű felelősséget vállalhat be. Például: a kórház felvételi  osztályára érkező 
+szédülős betegről az ott dolgozó sürgősségi szakorvos  meg tudja állapítani, hogy nincs neurológiai 
+tünete - mégis inkább  konzíliumba küldi a neurológushoz, mert ha ezer esetből egyszer téved,  és 
+abból per lesz, a felelősségét már amiatt megállapítják, hogy nem  kért megfelelő szakorvosi 
+konzíliumot. Elvileg ő maga is megfelelő  szakorvos, csak ezt egyetlen jogszabály se mondja ki, mint 
+ahogy  általában nincsenek olyan, tünetegyüttesekhez társított ellátási  protokollok sem, melyeket 
+gépiesen betartva a felelősséget nem lehet  utána a "miért nem vizsgálta ezt meg azt" kérdésre 
+kihegyezni.  Különösen a permanens túlterheltség állapotában dolgozó orvosok képesek  egy-egy 
+vizsgálati lépcsőről megfeledkezni - például azért, mert  Kalányos János tizenöt hozzátartozója 
+ordibál a folyosón, mert a három  hetes panaszokkal "akutan" beutalt Kalányos urat tíz percen belül 
+még  nem vizsgálták meg...</p><p style="text-align: justify;">A  szakmai-felelősségi szabályok 
+kevéssé precíz körülírtsága egy-egy  jogvitát végtelen tengerré tehet. Nekem egyszer volt már 
+műhibaperem,  ahol a kérdés dióhéjban az volt, hogy a délután kettőkor adott vénás  gyógyszertől az 
+elmebeteg kerülhetett-e az őt felvevő kórházban másnap  reggel nyolcra válságos állapotba... 
+Tekintettel arra, hogy még a  laikus is tudja, hogy a vénás gyógyszerelést azért alkalmazzuk, hogy a 
+ hatás azonnali legyen, elég nehéz ráfogni az előző kora délutáni  nyugtatóra a másnapi bajt - 
+tisztáztam is magam, de alig négy év  kellett hozzá... Tanulságos volt a "szakértők" működése: olyan 
+ ellentmondásos és dódónai dumák érkeztek szakvélemény gyanánt, hogy az  ember haja az égnek állt. 
+Feltűnő volt az is, hogy egymásnak a világért  sem akarnak direktben ellentmondani: ha egyikük 
+valamit leírt, a másik  legfeljebb burkolt célzásokkal cáfolta azt.</p><p style="text-align: justify;">&nbsp;Természetesen  a felelősség tisztázatlansága seregnyi duplikációhoz vezet. A régi  
+röhej (belgyógyász szakorvos EKG-t kér a szakrendelőtől, elemzéssel,  holott neki elvileg erre van 
+szakvizsgája) megmaradt, és jöttek hozzá  újak. A belgyógyász a szimpla szívelégtelenséget, ami még 
+csak nem is  súlyos, megvéleményezteti kardiológussal, a közönséges  pajzsmirigytúltengést 
+endokrinológussal, satöbbi, satöbbi.</p><p style="text-align: justify;"><strong>2/ </strong>Semmit  
+nem változott az a gyakorlat, hogy a kórházak a szociális gondok  lerakóhelyei. Aktív belgyógyászati 
+ágyakon fekszenek ma is a  magatehetetlen, demens öregek, akiknél a véglegesen elveszett értelem  
+miatt hősies beavatkozásokat amúgy sem szokás végrehajtani - koruk és  általános álapotuk miatt 
+például egy kiterjesztett daganatműtétet ki  sem bírnának. Tévedés ne essék, nem vagyok az eutanázia 
+híve - ám azt  azért tudomásul kellene venni, hogy a teljes szellemi leépüléssel az  ember elveszti 
+emberi mivoltát, és onnantól csakis ápolásra szorul.  Ehhez képest karácsony, húsvét és a nyári 
+szabadságok előtt tucatszám  érkeznek a "hirtelen rosszabbodott állapotú" magatehetetlen  
+szerencsétlenek. A reform kapcsán meghirdették, hogy majd lesz sok-sok  ápolási ágy: néhány tényleg 
+lett, de ez csak évekről hónapokra, néhol  hetekre csökkentette a várakozási időt, és továbbra sem 
+lehet utcáról  beadni oda a leépült öregeket, csakis aktív kórházi osztályról. Hogy mi  
+keresnivalója van például egy gasztroenterológián egy, a nevét  megmondani nem tudó demens 
+kilencvenéves betegnek, azt én nem tudom  felfogni; de ha ápolási osztályra kerül, akkor is van 
+visszaútja, mert  amikor az ottani, szintén alulfizetett (és ritka lehangoló munkát  végző) csapat 
+nem bírja tovább a bácsi/néni nyöszörgését, akkor azonmód  visszaküldi aktív osztályra, költve 
+valamilyen állapotrosszabbodást  hozzá.</p><p style="text-align: justify;"><strong>3/ </strong>A  
+háromszáz forintos vizitdíj micsoda vihart kavart... De ott vannak ám  maguk a betegek is, akik 
+sokszor mondhatni abszolút pofátlanul  "rendelnek". Ma például egy nem igazán heveny panasz esetén 
+(pl. három  hónapja időnként fájogat a beteg hasa) a hasi ultrahangra egy-két hetet  várni kell. Mit 
+tesz a beteg? Az egyik kivárja. A másik? Bejön a  sürgősségi osztályra beutaló nélkül, előadja a 
+panaszát (sokszor azt  is, hogy ő NEM HAJLANDÓ két hetet várni) - és eléri a célját, mert  orvos 
+vizsgálat nélkül nem küldheti el, és ha már kórházban van,  kórházi szintű ellátást kap. Hogy nem 
+sürgős a panasza? Az senkit sem  érdekel. Hogy esetleg az ilyen, indokolatlanul a beteg által  
+"sürgősített" vizsgálatokat ki kéne fizettetni? Hát persze. Na de  mikor, melyik kormányzat vállalta 
+fel azt, hogy jogot adjon az  orvosnak: a doktor kimondhassa, hogy Pityi Palkó indokolatlanul jött  
+be, következésképpen fizesse ki a vizsgálat árát!?</p><p style="text-align: justify;">Ebből  
+népszavazás meg forradalom lenne - holott az egészet azok a  szerencsétlenek szívják meg, akik 
+szépen kivárják a két hetet, hiszen  mindezzel a simlisek éppenséggel velük tolnak ki, amikor 
+trükkösen  eléjük furakodnak.</p><p style="text-align: justify;">Mindaddig, amíg  SÜRGŐSSÉGI 
+osztályra következmények nélkül lehet jelentkezni négynapos  beutalóval ("a hétvégén még dolgom 
+volt"), vagy éppen beutaló nélkül  azzal kezdve a panaszt, hogy "három hete...", addig itt nem lesz 
+rend.  A "fizetem az SZTK-t" az efféle betegek állandó érve: úgy vélik, hogy a  járulék (amit 
+esetleg valójában nem is fizetnek...) nem csupán  szakmailag megfelelő, de az ő kényelmük 
+szempontjából is optimális  ellátásra jogosítja fel őket, szerényebb betegtársaik rovására is.</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: center;"><strong>V. Piac márpedig itt 
+nem lehet</strong></p><p style="text-align: justify;">Főleg  a liberális idióták elsődleges célja a 
+privatizáció, mert szerintük a  nagybetűs PIAC az mindent szabályoz, elhull, ami nem kell, és pénzt  
+kap, aki kell. Frászkarikát. Először is: az influenzajárvány nem akkor  jön, amikor a piac bővül, 
+hanem akkor, amikor akar. Senki nem veteti ki  a vakbelét másodszor is csak azért, mert most éppen 
+nagyon olcsó a  műtét. A magyar viszonyok között még a kórházak közötti verseny is  legfeljebb 
+Budapesten valósulhatna meg úgy-ahogy; vidéken kinek van  pénze elutazni a következő nagyobb 
+városba, ott beteget látogatni, és  így tovább? Néhány embernek telne erre, de az nem piac - 
+ráadásul  érthető okból a direkt reklám nem engedélyezett, a betegek pedig  képtelenek objektív 
+képet alkotni az egyes orvosok szakmai  teljesítményéről. A vicc az, hogy a pokrócgoromba sebész nem 
+ritkán  kétszerte jobban operál, mint bársonymodorú kollégája - de sajnos ez  sem általános 
+szabály...</p><p style="text-align: justify;">Piac ott  működhet, ahol a vevő legalább nagyjából 
+képes a termékek  összehasonlítására, és nincs kényszerítve a vételre. Ha viszont  valakinek komoly 
+betegsége van, nincs választása, hogy vevő lesz avagy  nem - elvégre az élete a tét. Éppen ezért a 
+piaci mechanizmusnál sokkal  biztonságosabb és jobb az, ha az állam működteti és felügyeli az  
+egészségügyet - elvégre az állam vállalt feladatai közé tartozik (kéne  hogy tartozzon) a polgárok 
+egészséges életének biztosítása.</p><p style="text-align: justify;">A  TB-járulék egyébként is 
+kényszerelem, hát hogy a pokolba lehetne a  kötelező biztosítást a szabadpiaccal házasítani? A 
+sokbiztosítós  őrültség egy tízmilliós országban a hülyeség abszolút kulminációja  volt, még 
+szerencse, hogy időben kimúlt...</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: center;"><strong>VI. A szakma sem reformpárti</strong></p><p style="text-align: justify;">Maga  az 
+orvosi szakma sem reformpárti. Azok, akik pénzes szakmák befolyásos  vezetőcskéi, abszolút 
+ellenérdekeltek. Egy nőgyógyász főorvos király  lehet a saját szemétdombocskáján, és annyit keres, 
+amennyit akar. Miért  kéne neki mondjuk havi félmilliós nettó fizetés és garantáltan  
+büntetendő-eltörölt paraszolvencia, amikor ha minimálisan csipkedi  magát, a félmillió sokszorosát 
+megkeresheti? Általában az operatív  szakmákban vastagabb a boríték; mégpedig annyira, hogyakinek 
+jut, annak  jó így, ahogy van, legfeljebb publicitásból keseregnek. Még a  háziorvosok között is van 
+jó néhány olyan, aki igazi vagyont keres; egy  jó helyen fekvő praxis valóságos aranybánya...</p><p style="text-align: justify;">Az  állami vezetés szakmai része az maga a szégyen. Mengelicát oda 
+lehetne  engedni egy beteg mellé? Nem hát. Vagy Molnár miniszter úr, aki még  Afrikában is gyatra 
+volt gégésznek? Nos, a TB és az ÁNTSZ főorvosi kara  is nagyrészt hasonló káderekből áll. 
+Íróasztaldoktorok (tisztelet a  kevés kivételnek), akik korlátlan észosztásra képesek, viszont a 
+szakma  gyakorlatát rég elfeledték, ha tudták egyáltalán valaha.</p><p style="text-align: justify;">Elvileg  ott lenne a kamara. Csakhogy a kamara jelszava nem az, hogy "menjen  minden a 
+legnagyobb rendben és a lehető legtisztességesebben", hanem  az, hogy "fejére szól, ki szót emel!" A 
+kamara az ordító szakmai  hibákat vagy etikátlanságot is szépen lenyeli, de ha arra van gyanú,  hogy 
+valaki mindezt körön kívülre vitte, akkor odavág.</p><p style="text-align: justify;">Még  
+egészségügyi vezetőségem után volt egy tanulságos eset. Egyik  háziorvosunk a helyemre frissen 
+kinevezett "szaktanácsadó"  (minikörzetes háziorvos, pár száz beteggel) piszkálódásai nyomán  
+infarktust kapott és meghalt. A "szaktanácsadó", aki az önkormányzat  egyik vezető funkcionáriusával 
+jóban lett, abban a pillanatban  beszaktanácsolta (pályázat és hasonló fölösleges sallangok nélkül) 
+a  megüresedett állásba, és a kinevezést rögtön meg is kapta. Egészen  pontosan: az öreg körorvos 
+holtteste még otthon feküdt (hajnalban vitte  el az infarktus), amikor állása már véglegesen be lett 
+töltve...</p><p style="text-align: justify;">A  kerületi kamara felzúdult, mert amíg én voltam a 
+führer, addig  tisztességes pályázatok döntöttek az állásokról (magam sem ültem be  egyikbe sem, 
+holott a szakvizsgám feljogosított volna rá). Testületileg  feljelentették az illetőt etikátlan 
+állásszerzésért. Az egyik helyi  újság meg is írta az ügyet, tőlem is nyilatkozatot kértek  
+(önkormányzati képviselőként, és az előző vezetőként nyilatkoztam).  Erre az illető állásszerző 
+doktornő engem jelentett fel etikai  vétségért, mondván, hogy a (teljes névvel az újségíró által 
+aláírt)  cikket valójában én írtam.</p><p style="text-align: justify;">Az  eljárás orwelli volt. A 
+kerületi kamara feljelentését úgy kezelték,  mintha az elnök személyesen tette volna; majd simán 
+lesöpörték. Az  állásszerző szaktanácsadó a döntés szerint nem követett el etikai  vétséget, mert 
+nem követett el jogszabálysértést (!!!). Én azonban  etikai vétséget követtem el, mert csak. 
+Indoklás nem volt - másodfokon  sem. Bíróságra vittem a határozatot, meg is nyertem a pert (a 
+kamarának  esélye sem volt, ügyvédjük az obstrukciót választotta) - de a kamara a  bírói ítéletet, 
+miszerint az egész eljárást játsszák le újra,  tisztességesen - nem hajtotta végre.</p><p style="text-align: justify;">Mit  várhatunk tehát az egyre romló szakmai környezetben a dolgok  
+eltussolására jászó kamarától? &nbsp;Mit várhatunk Éger "Én is lehetnék  miniszter" Istvántól? A 
+kamara elnöke és a miniszteri szék között  normális helyeken erkölcsi betonfal áll - nálunk Gógl 
+példája óta a  kamarai elnök szorgalmasan politizál, hátha megtetszik egy pártnak.  Vagy a 
+szakszervezet fog rendet tenni? A TB-ből érkezett Cser  "Pandúrból lesz a legjobb rabló"&nbsp;Ágnes? 
+Kedves olvasók, ti hisztek még  az esti mesékben?</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: center;"><strong>VII. A lehetőség elúszni látszik</strong></p><p style="text-align: justify;">A  magyar egészségügyre nincs sok pénz, mégis máig is, oly sok sebből  
+vérezve minőségi ellátást nyújt. A szakmai válság viszont egyre  mélyebb, és a jövőben csak tovább 
+fog mélyülni.</p><p style="text-align: justify;">Hogyan  lehetne megoldást találni? Kéne egy csapat 
+- ami most nincsen. Egy  olyan csapat, amelyben átfogó szakmai hozzáértéssel bíró orvosoktól  jogi 
+és beszerzési szakemberekig néhányan összedolgoznak. Kéne nekik  nagy-nagy hatalom és olyan bér, 
+hogy senki ne vesztegethesse meg őket  (meg aztán csak olyan embereket szabadna bevenni, akik 
+normálisan  megfizetve bármilyen megközelítést etikai alapon is visszautasítanak -  de éhbér mellett 
+ez senkitől se várható el...).</p><p style="text-align: justify;">Aztán  kellenének egységes 
+szabályok. Hogy minden beteg ugyanazon eséllyel és  jogal vehessen igénybe minden ellátást - de 
+ingyen senki se kaphasson  svarcban vagy pofátlanul előrenyomakodva többletet. Aki nem akar  
+sorbaállni - fizessen! Ne háromszáz forintot, hanem piaci árat.  Ugyanakkor ha a szakmai 
+jogosítványokat és kötelezettségeket sikerül  egységesíteni és számonkérni, akkor a sorok 
+megrövidülnek, mert a  fölösleges átfedések megszűnése drámaian csökkentheti a szakvizsgálati  
+igényt.</p><p style="text-align: justify;">Ez a bizonyos csapat masszív  követelményeket állítson 
+fel orvosszakmai téren. Ne lehessen háziorvos  az, aki nem ért az EKG-hoz! Minek tesszük kötelezővé 
+az EKG-készüléket  a körtanár rendelőjében, ha azt már nem szabjuk meg neki, hogy azt a  furmányos 
+kis tüskés vonalkát, ami kijön belőle, értékelni is tudja?  Meg kell mondani, hogy belgyógyász 
+szakorvos mennyiben köteles érteni a  gasztroenterológiához, a kardiológiához, a tüdőgyógyászathoz, 
+a  belgyógyászat egyéb specialitásaihoz. A továbbképzéseket számon kell  kérni, és igen, a 
+licenceket hülyeség esetén azonnal fel kell  függeszteni. Ha egy pártatlan és tisztességes szakértői 
+csapatot  sikerülne felállítani - akik egyenes beszéddel eldöntik a jogvitákat -  akár egy időre 
+érdemes lenne a munkaügyi bíróságok mintájára  egészségügyi bíróságot is felállítani, hogy egy-egy 
+ügy ne fulladjon  hosszú évek ügyvédi mellébeszéléseibe olyan bírók előtt, akiknek azt is  el kell 
+magyarázni, hogy mi az a vénás injekció...</p><p style="text-align: justify;">Kéne  egy olyan 
+miniszter, aki átlátja a szakmát, és elég kemény ahhoz, hogy  akaratát keresztülvigye - de elég 
+kommunikációképes ahhoz, hogy a  szakma visszahúzó részéről érkező támadásokat a közvélemény előtt 
+ügyes  debatterként kivédje. Netán több idő is kéne neki négy évnél, mert négy  év alatt csak az 
+alapokat lehet lerakni...</p><p style="text-align: justify;">Kéne  egy társadalmi konszenzus abban, 
+hogy az egészségügyi személyzetet -  meg kell fizetni! Normatívan, tisztességesen, úgy, hogy amikor 
+a rossz  modorú, esetleg szemtelen, követelőző, sértegető betegnek visszavág, ne  az otthoni 
+csirefarhátat balhézza le rajta... Olyan embereket, akik  sok-sok nyomorúságot látnak (olykor benne 
+a saját majdani sorsukat),  vastagon meg kell fizetni. Ma Magyarországon egy negyvenéves közrendőr  
+nyugdíjba mehet korengedménnyel - egy ápolónó meg dolgozhat, amíg  elbírja a lába! Az egészségügy és 
+a rendőrség hozzáállásáról egyébként  mindent elmond, hogy bár Budapesten minden kerületben van 
+kapitányság,  mentőállomás meg feleannyi, mégis, a balesetek, erőszakos  bűncselekmények többségéhez 
+a mentők értek oda először mindig is...  Röhej, de előfordult, hogy még a késelő tettes is a 
+helyszínen volt, de  a rendőröket még hosszú ideig várni kellett... A polgárok végigverése  nemzeti 
+ünnepek alkalmával, illetve az autósok saját zsebre  bírságolgatása miért kiemeltebb, mint a betegek 
+ellátása?</p><p style="text-align: justify;">Ha  nem lesz európai fizetés, itt nem lesz európai 
+orvos sem. Soha senki  nem mutatta ki, hogy a ritka drága orvosképzésben mennyi pénzt vesztünk  el 
+azzal, hogy a frissen végzett orvosok zöme immár rögtön itthagyja az  országot... Még az sem kizárt, 
+hogy ha valaki kimutatná a teljes  veszteséget, kiderülne, hogy az orvosok vaskos megfizetése volna  
+olcsóbb...</p><p style="text-align: justify;">Nos, ötletem még volna sok, de inkább befejezem, mert 
+ahogy írom, úgy vagyok egyre dühösebb...</p><p style="text-align: justify;"><br></p>  			</div> 
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-03-17&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2019&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2019&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2019&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2019&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2019&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2019&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2019&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2019&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159999"></A>69. Raine</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2019&id=159523#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-22 14:35:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Szerintem nincs értelme vitatkozni vele. A kommenteket olvasva 2 ember kivételével mindenkinek lejött MG írása.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159537"></A>68. <A HREF="mailto:emn@freemail.hu" STYLE="color: #000000">eMM</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-03-20 11:27:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A magyar betegbern volt 1 kis riport Csókai proffal.Szerinte is elkeserítő a helyzet de ő még bízik a kormányváltásban.És van hite.Legyen neki igaza.<br />
+Bár jelenleg az a helyzet hogy a jó drága fizetős EÜ-ben lehet kb megkapni azt az ellátást ami járna.Persze annak akinek tellik rá.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159523"></A><FONT COLOR="#FF0000">67. </FONT>Tohonya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2019&id=159456#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-20 09:36:29</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_392.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159456"></A>66. st</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-03-19 16:27:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3071.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tahonya: kicsit önellentmondásos a dolog, nem? A hivatás miatt választották a pályát, ok, még talán el is hiném, biztos van jópár ilyen is. De mikor ilyen "én a te szaros életedet is mentem, ide nekem a több pénzt" hozzáállással követeli a nagyobb fizetést, akkor ez azért nem olyan egyértelmű...<br />
+Raine: hahaha, tipikus beképzelt őőő hogyismondjam, eü-i :D<br />
+Próbáltál valami okosat, frappánsat írni, nem jött össze :P<br />
+Kínjában már a másik írásába és fogalmazásába köt bele, száááánalom :D Nameg a másik egyetemébe, ami ugye nem az ő nagy orvosija, tehát csak szar lehet, pont erről beszéltem...<br />
+Majd súgd már meg hogy mivel rosszabb az én írásom mint a tied, ó te bölcs és agyonművelt :)<br />
+Ha jól emlékszem mindketten írtátok hogy eü pályán vagytok, így tehát ugye nem baj ha inkább csak kiröhögöm az észosztásotokat? :D Majd pont a személyesen érintettek lehülyézése fog érdekelni :D</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159057"></A>65. Raine</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2019&id=158977#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-18 15:10:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Az öt év egyetemről meg csak annyit, hogy közismert mekkora különbségek vannak nem csak egyetemek, hanem szakok között is. Ezen felül is egyénenként változó a helyzet: van aki tisztességesen végzi a munkáját, van aki nem. <br />
+<br />
+Mint látjuk vannak egyetemek, ahol olyan diplomásokat képeznek, akik sem írni, sem fogalmazni nem tudnak. Még szerencse, hogy mintául szolgáltál a saját hülyeséged bizonyításában.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159053"></A>64. Raine</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2019&id=158977#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-18 15:07:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez a "ha nem tetszik el lehet menni" ismerős retorika, mintha már hallottam volna valahol.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159041"></A>63. ketemén -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-03-18 14:45:21</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6377.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Még az sem kizárt, hogy ha valaki kimutatná a teljes veszteséget, kiderülne, hogy az orvosok vaskos megfizetése volna olcsóbb..." - Sajnos azért nem, mert a munkaerő-piac is ugyanúgy logikátlanul működik, mint minden piac: ha az orvosokat vaskosan fizetnék, abból következően túl sokan akarnának orvosok lenni, és 1 dolgozó orvosra jutna 5 munkanélküli (illetve más állásban dolgozó), akik dísznek szerezték a diplomájukat. Ahogy nyugaton ez létező jelenség is orvosokkal, ügyvédekkel, színészekkel, stb.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment159007"></A>62. Tohonya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2019&id=158977#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-18 12:30:39</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_392.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem szoktam személyeskedni fórumokon, de st Te nem félművelt vagy, hanem hülye, ha nem látod be, hogy az orvos nem a fizetés, hanem a hivatás miatt választotta a pályáját, és szeretne belőle TISZTESSÉGESEN megélni. Hidd el, többségük más feladatot is el tudna kacagva látni, de akkor ki gyógyítana Téged mondd? Ezért két választása van....elmegy, vagy itthon marad és sír, mert van neki miért. Nem basztatni kellene ezért, hanem a problémáját megoldani, addig, míg van orvosod......ha egy se lesz 2 hét alatt nem fog tudni a munkanélküli központ gyorstalpalón újakat képezni...bár lehet Neked az kellene. Egyébként már a Mentőknél működik ez a metódus...eredménye érezhető is...Hajrá! Ez a színvonal felé vezető út!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment158990"></A>61. lotus</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2019&id=158984#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-18 10:50:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_787.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Álmok!<br />
+Soha meg nem valósulók...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment158987"></A><FONT COLOR="#FF0000">60. </FONT><A HREF="mailto:met-al@hotmail.com" STYLE="color: #000000">Met-al</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2019&id=158807#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-03-18 10:26:33</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2019&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2019&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2019&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2019&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2019&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2019&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2019&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2019&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

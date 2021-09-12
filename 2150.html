@@ -1,0 +1,619 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2150#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Az Auschwitzi Jegyzőkönyv - hogyan vezették meg Horthy Miklóst a cionisták?";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2150#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Az Auschwitzi Jegyzőkönyv - hogyan vezették meg Horthy Miklóst a cionisták?<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 április 26. 18:21:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2150.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">A második világháború   
+történelmi kulcsfiguráinak visszaemlékezései közt sehol nem szerepel egyetlen szó sem gázkamrákról   
+vagy haláltáborokról. Winston Churchill többkötetes, csaknem ötezer oldal terjedelmű, magyarul is   
+megjelent <span style="font-style: italic;">A második világháború </span>című művében   
+egyetlenegyszer sem szerepel a "gázkamra", a "zsidók kiirtása" vagy a "hatmillió" szó, pedig a "kis  
+ mustárgáz-ördög," ahogy felesége becézte a tömegpusztító fegyverekhez való beteges vonzódása miatt, 
+  igencsak sokat csúsztat a németek kárára. Ugyanígy nem szerepelnek ezek a szavak, vagy akár csak   
+utalás a holokausztra Charles De Gaulle 2054 oldalas <span style="font-style: italic;">Mémories de   
+guerre</span> című emlékirataiban, illetve Dwight D. Eisenhower <span style="font-style: italic;">Crusade in Europe</span> című 559 oldalas könyvében.<br><br>Az egyetlen visszaemlékezés,   
+amelyben szó esik haláltáborokról, vitéz nagybányai Horthy Miklós emlékiratai. Ebben Horthy Miklós   
+említi, hogy amikor elrabolt fiát, ifj. Horthy Miklóst viszontlátta, az arról számolt be, hogy a   
+buchenwaldi koncentrációs táborban egy "kínzókamra" mellett őrizték, s hallotta a megkínzott emberek 
+  sikolyait. Horthy István kormányzóhelyettes özvegye, gróf Edelsheim-Gyulai Ilona pedig 1992-ben, a 
+  <span style="font-style: italic;">Horthy admirális</span> című riportfilmben arról beszélt, hogy   
+1944-ben egy Auschwitzból megszökött zsidó személy olyan jegyzőkönyvet adott át neki, amely   
+részletesen írt a gázkamrákról, a tömeges kivégzésekről. Ezt továbbította a kormányzónak, de előtte  
+ maga is elolvasta. Horthy Miklós e jegyzőkönyv hatására állíttatta le a "munkaerőcserét", azaz a   
+munkaszolgálatra alkalmas zsidók külföldre szállítását. Özvegy Horthy Istvánné a riportban kifejezte 
+  mindmáig tartó megdöbbenését az akkor olvasottak felett.<br><br>De mit tartalmazott ez az 
+iratköteg?   Mi volt az, amit sem keleten, sem nyugaton nem hitt el senki egészen a hatvanas évekig? 
+Hiszen   például az <span style="font-style: italic;">Encyclopaedia Britannica</span> - a világ 
+egyik   legmegbízhatóbbnak tartott forrásműve - 1956-os kiadásában még semmit sem írt sem 
+haláltáborokról,   sem mérges gázról a koncentrációs táborokról szóló szócikkében, sőt, a zsidók 
+"táborokba   koncentrálását" mint általános háborús gyakorlatot említi, nem pedig "emberiségellenes 
+bűntettet",   amelyet minden hadviselő fél gyakorolt a "megbízhatatlan elemek" elkülönítésére. A 
+"mérges gáz" szó   csak 1967-ben került a szócikkbe.<br><br>  A Horthy Miklósnak átadott <span style="font-style: italic;">Auschwitzi jegyzőkönyv</span> nem valamiféle elveszett történelmi titok. 
+Teljes   terjedelmében <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.bibl.u-szeged.hu/bibl/mil/ww2/doksi/au_jegyz_1.html">elolvasható</a> az Interneten, 
+  és könyv formájában is kapható. Létezéséről, történetéről a Horthy Miklósról szóló <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//hu.wikipedia.org/wiki/Horthy_Mikl%C3%B3s">Wikipedia-szócikk</a> is megemlékezik. Két, a 
+  koncentrációs táborból megszökött fogoly, Rudolf Vrba és Alfred Wetzler állították össze, és 1944  
+ elején a szlovákiai Zsolnán adták át a helyi cionista köröknek. A pozsonyi cionista központ vezetői 
+  április 25-én és 26-án meghallgatták őket, ahol beszámoltak két éves raboskodásuk élményeiről. 
+(Ezek   szerint a II. világháborús Szlovákia fővárosában 1944-ben működött cionista központ. Mi 
+több,   cionista körök is, noha az ország 15 ezres zsidó lakosságát akkor már szinte mind 
+koncentrációs   táborokba szállították.) E beszámolókból készültek az <span style="font-style: italic;">Auschwitzi   jegyzőkönyvek, </span>amelyeket a pozsonyi cionisták eljuttatták isztambuli, 
+genfi, londoni és   budapesti kollégáiknak. A leírtakat később megerősítette a budapesti születésű 
+Ernest Stein cionista   ellenálló is. A beszámolót - állítása szerint - hitelesnek fogadták el a 
+szövetségesek is. Ennek   ellenére, mint említettem, a szövetséges vezetők egyike sem említi az 
+abban leírtakat, vagy akár a   jelentés létezését a második világháború fontos eseményei 
+között.<br><br>A budapesti cionisták,   közelebbről Kasztner Rudolf (Israel Kastner) cionista vezető 
+ezt az jelentést állítólag   visszatartotta, elhallgatta. Csak a több százezer zsidó deportálása 
+után tárta a kormányzó és a   magyar kormány elé. A vonatra szálló "hatszázezer" zsidó ezért nem is 
+sejthette, hogy a halálba   viszik őket, pedig ha tudták volna, minden erővel ellenálltak volna. 
+Hihető ez? A budapesti   cionisták hagyták volna elpusztítani sok százezer hitsorsosukat? Vajon 
+miért? Stein szerint azért,   mert Kasztner egyezséget kötött Adolf Eichmann-nal, hogy az másfél 
+millió dollár ellenében   biztosítsa 1685 gazdag zsidó Svájcba menekülését. A "Kasztner-vonat" 
+története közismert, a   lepecsételt vagonok valóban megérkeztek Svájcba. Ha Stein állítása igaz, 
+akkor Kasztner Rudolf   feláldozott 600 ezer szegény zsidót 1600 gazdag zsidó megmeneküléséért. Ez 
+olyan árulás lett volna   saját népe ellen, amiért mindmáig a holokauszt fő felelősei közt 
+emlegetnék.<br><br><img src="./resources/pictures/tomcat_rudolf_kastner.jpg" style="border: 1px solid rgb(0, 0, 0); float: left; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" border="0">Azonban Kasztnert soha   nem vonták felelősségre a jegyzőkönyvek állítólagos elhallgatása 
+miatt. Sőt! Yetzhiam Weitz izraeli   történész például úgy emlegeti őt, mint aki <span style="font-style: italic;">"a két kezével több   zsidót mentett meg, mint bárki más előtte vagy 
+utána".</span> A háború után Izraelbe költözött, ahol   magas állami pozíciót kapott, a Kereskedelmi 
+és Iparügyi Minisztérium szóvivője lett 1952-ben. Csak   egyetlen ember vádolta meg a nácikkal való 
+kollaborálással, Malchiel Gruenwald, egy amatőr író és   bélyeggyűjtő 1953-ban. Kasztner azonban oly 
+fontos volt az izraeli kormánynak, hogy az állam maga   indított eljárást Gruenwald ellen 
+rágalmazásért, hogy Kasztnernek ne kelljen ezzel fáradnia!   Kellemetlen fordulatot vett az ügy, 
+amikor a bíróság kimondta, hogy Kasztner valóban árulást   követett el, amikor a gazdag zsidók 
+megmentését megszervezte. Az ítélet szerint a nácik által a   gazdag zsidóknak felajánlott 
+menekülési lehetőség olyan ajándék volt, amelynek elfogadása   "kollaboráció volt, annak 
+legteljesebb értelmében". <br><br>De ez nem jelenti, hogy Kasztner ellen   bármilyen büntetőeljárás 
+indult volna. Sőt, az izraeli legfelsőbb bíróság 1958 januárjában   megsemmisítette még ezt az 
+ítéletet is, az indoklás szerint azért, mert az elsőfokú bíróság "súlyos   hibát követett el". Ezt 
+azonban Kasztner már nem érhette meg. Az Eichmann-nal való barátkozással   hírbe hozott, 
+Izrael-szerte közutálatnak örvendő politikust 1957 március 3-án a 24 éves Zeev   Eckstein és két 
+társa agyonlőtte Tel-Avivban. Perük során kiderült, hogy Eckstein a Moszad fizetett   informátora 
+volt. A bíróság azonban elutasította azt a feltételezést, hogy a gyilkosságot a   titkosszolgálat 
+szervezte volna, mivel a Moszad igazgatója jó barátságot ápolt Kasztnerrel. Kasztner   esete 
+mindmáig fenntartja azokat a spekulációkat, miszerint a magasabb cionista körök szándékosan   nem 
+akadályozták a zsidók deportálását a második világháború alatt.<br><br>Mi történt a két   auschwitzi 
+szökevénnyel, Rudolf Vrba-val és Alfred Wetzlerrel?<br><br>A felvidéki zsidó Vrba,   eredeti nevén 
+Walter Rosenberg 1942-ben, 18 éves korában Angliába akart szökni, hogy az   "antiszemitizmus" ellen 
+harcolhasson. Át is jutott a magyar határon, ám Magyarországot szlovákiai   zsidóként saját leírása 
+szerint "nagyon ellenségesnek" találta, és visszafordult. (Azt a   Magyarországot, ahová akkoriban 
+ezerszám menekültek a szlovákiai zsidók!) A magyar határőrök azonban   a határátlépési kísérlet 
+közben elfogták, és átadták a szlovák hatóságoknak. Megszökött a Nováky-i   gyűjtőtáborból, ám egy 
+rendőrjárőr ismét elfogta. Júniusban a majdaneki, majd az auschwitzi   koncentrációs táborba 
+küldték. <br><br>Visszaemlékezéseiből kitűnik, hogy valóban járt Auschwitzban.   Szemléletesen írja 
+le a kemény munka és a kápók kegyetlenkedéseinek következményeit, az éhező orosz   hadifoglyokat, 
+akik a tábort építették. Pontos számokat ír, amikor csoportokról beszél. Ám mindjárt   a második 
+részben kiderül, hogy mennyire következetesek a megfigyelései. <br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Az első és második 
+szállítmányból 120 embert - köztük engem -   kiválasztottak,     és az auschwitzi lágerparancsnokság 
+parancsára, amely orvosokat,   fogtechnikusokat,     főiskolásokat és tisztviselőket igényelt, 
+Auschwitzba küldtek. A csoport 90       szlovák és 30 francia zsidóból állt. Egyhetes auschwitzi 
+tartózkodás után ebből     a 120   értelmiségiből 18 orvost és ápolót, valamint 3 tisztviselőt 
+választottak     ki. Az orvosokat az   auschwitzi kórházban foglalkoztatták, míg a 3 tisztviselőt,   
+  köztük voltam én is, visszaküldtek   Birkenauba. Két társam, Ladislaus Braun Nagyszombatból     és 
+Gross Verbóból, ők időközben már   meghaltak, a szlovák blokkhoz került, én     a franciához, ahol 
+is a foglyok nyilvántartásával   bíztak meg bennünket. <span style="font-weight: bold;">A maradék    
+ 99 személyt az auschwitzi   kőfejtőbe küldték, ahol rövid időn belül 
+elpusztultak.</span>"</div><br>Auschwitzban sosem volt   kőfejtő. Nem is lehetett, hiszen síkságon 
+fekszik. Kőfejtő Mauthausenben volt, de az Ausztriában   működött, jó ötszáz kilométerre onnan. 
+Ebből az idézetből kitűnik, hogy a valóságban Vrba korántsem   ismerte a tábor környékét 
+pontosan.<br><br>Nézzünk most egy idézetet a második részből.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Amikor a második 
+szállítmány kb. 14 nap múlva megérkezett, a mi     transzportunkból már csak 150-en voltak életben. 
+Minden este megszámoltak   bennünket, a hullákat   kézikocsira tették, és a közeli nyírfaligetbe   
+vitték, ahol azokat nehány méter mély és 15 m hosszú   gödörben   elégették."</div><br>Egy szót sem 
+veszteget arra, hogy hogyan égették el a halottakat,   pedig nagyon pontosan igyekszik beszámolni 
+mindenről. Benzinnel? Tűzifával? Oltott mésszel? Miért   nem temették el egyszerűen őket, hiszen egy 
+"néhány méter mély és 15 méter hosszú" gödör bőven   elegendő lenne ehhez? És miért nem a 
+krematóriumban égették el a holttesteket? Hiszen pár sorral   lejjebb említi, hogy volt krematórium, 
+mégpedig elég nagy teljesítményű, és használták is az elhunyt   foglyok elégetésére.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Röviddel ezután az egyik épületben berendeztek egy ún.   kórházbarakkot. 
+Ez   volt a hírhedt "7-es számú blokk". Kezdetben főápolóként alkalmaztak itt,     később én lettem 
+a gondnok. A kórház főnöke, a 3350-es számú lengyel   politikai fogyoly, Viktor   Mordarki volt. A 
+kórház nem volt más, mint a   halálra várók gyűjtőhelye. Minden munkaképtelen   foglyot a kórházba   
+küldtek. Orvosi kezelésről és ápolásról szó sem volt. <span style="font-weight: bold;">Naponta kb. 
+150-en   haltak meg. A hullákat naponta átszállították az auschwitzi     
+krematóriumba.</span>"</div><br>Vrba beszámolója itt bukik el, a számokon. Hiszen ezek szerint a   
+krematórium - 1942-ben még csak egy működött, és az sem tömeges égetésre volt tervezve! - alig tíz   
+perc alatt képes volt elhamvasztani egy halottat, beleértve a hamvak kitakarítását is. (Könnyű   
+kiszámolni, hogy ha 24 órában működik, és naponta 150 halottat kell elégetni, akkor 9,6 perc jut   
+egyre.) Ezzel szemben nézzük csak, mit ír egy <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.startribune.com/lifestyle/homegarden/11311516.html">modern temetkezési cég</a>   
+FAQ-ja arról, mennyi időbe telik egy kremálás!<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">K: Hogy működik a   
+halottégetés, mennyi ideig tart? Valóban hamuvá válik az egész test?<br>V: A testet <span style="font-weight: bold;">két és fél órára helyezzük a kamrába, 1600 és 2000 fok közötti   
+hőmérsékleten.</span> Csak csontszilánkok és hamu marad utána, mondta Kevin Waterston, a Minnesotai  
+ Halottégető Egyesülettől.<br></div><br>Ezek után nyilvánvaló, hogy nemhogy a tíz perc alatt   
+befejeződő kremálás nem lehet igaz, de a szabadtéri hullaégetés sem túl hihető. Ilyen hőmérsékletet  
+ nagyon nehéz lenne egy közönséges gödörben elérni. Természetesen el lehet égetni halottakat szabad  
+ ég alatt, ám teljesen megsemmisíteni nem. <br><br>Érdekes, amit Vrba a zsidó kápók   
+kegyetlenkedéseiről ír. Sokkal gyakrabban fordul ez elő, mint ahányszor az SS-ekről írt   
+hasonlókat.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Sokakat a felügyelők, az ún. kápók munka közben minden ok nélkül   
+egyszerűen agyonütöttek. Csapatunk hiányzó tagjait naponta a Birkenauban maradt nagyobbik csoportból 
+  pótolták. A munkából való esti hazatérés nehéz és veszélyes volt. A hosszú, 5 km-es úton magunkkal 
+  kellett cipelni a szerszámainkat, tüzifát, nehéz főzőüstöket, és napközben meghalt vagy agyonütött 
+  társaink holttestét. Felpakolva kellett katonai rendben vonulnunk. A kápó a neki nem megfelelő   
+menetelést kegyetlen ütlegeléssel vagy agyonütéssel büntette. Amikor a második szállítmány kb. 14   
+nap múlva megérkezett, a mi transzportunkból már csak 150-en voltak életben."</div><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Egy fogoly megölése nem számít bűncselekménynek.   Egyszerűen csak   
+nyilvántartásba veszik, hogy az ilyen és ilyen számú   fogoly meghalt. Az, hogy milyen módon   
+következett be a halál, teljesen   mellékes. Egyszer magam is jelen voltam egy esetnél, amikor <span style="font-weight: bold;">egy Jossel   nevű fiatal lengyel zsidó elmagyarázta egy SS-katonának "a   
+gyilkolás   helyes módját", s szemléltetés végett puszta kézzel, fegyver nélkül   megölt egy   
+zsidót.</span>"</div><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A "kápók" birodalmi németek és csehek voltak. Az előbbiek  
+ általában brutálisak voltak, a csehek segítettek, ahol csak tudtak. A láger felügyelője egy holicsi 
+  cigány volt, akit Galbavynak hívtak, helyettese, egy Mittler nevű szeredi zsidó, aki ezt a   
+tisztséget brutalitásának és beteges kínzási hajlamának köszönhette. Hatalmi pozícióját arra   
+használta fel, hogy a már amúgy is súlyosan sújtott zsidókat még jobban kínozza. Hacsak gonoszat   
+tehetett, nem mulasztotta el.  "</div><br>De nézzük tovább a beszámolót. A negyedik részben Vrba   
+leírja, milyenek voltak az 1943-ban megépült megsemmisítő komplexumok.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"A hamvasztóhelyiség közepéből egy magas kémény emelkedik ki. Körülötte 9 
+    kemence épült, mindegyik 4 nyílással. Minden nyílásba 3 átlagos méretű   holttestet lehet   
+elhelyezni, amelyek másfél órán belül teljesen elégnek.   A kemencék kapacitása eléri a napi 2000   
+holttestet."</div><br>9 kemence, 4 nyílással, egyenként 3 holttestel - azaz 108 halottat égethetnek  
+ egyszerre. Ez másfél órás eljárás. (Egy kicsit romlott a hatékonyság a régiekhez képest, no de   
+kicsire nem adunk...) Átlagolva: egy óra alatt 81 halott égethető el. 81 x 24 = 1944. Valóban, ez   
+csaknem 2000 holttest. A gázkamrák működésének szemléletes leírása után a következő   
+olvasható:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"<i>A négy krematórium összteljesítő   képessége tehát naponta 6000   
+elgázosítás és elégetés.</i>"</div><br>Jó, hát tévedett. Később szerepel a helyes nyolcezres   
+számérték is. Csakhogy egyetlen szót sem ír arról, milyen üzemanyaggal működtek a krematóriumok.   
+Leírást kapunk arról, hogyan mentek be az áldozatok, kétezer ember egyszerre, hogyan szorították be  
+ őket a gázkamrába, de arról egy szó sincs, hol tárolták az üzemanyagot (szén? fa?), kik hordták 
+azt,   és kik rakták a kemencékbe. Számoljunk csak, mennyi energia kell egy halott   
+elégetéséhez!<br><br>Krematóriumokat a mai napig építenek, így lehet találni forrásokat arra nézve,  
+ mennyi energiát igényel egy ilyen szerkezet. <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//www.techtrol.net/_ukanimal_3-1p.htm">Itt van például</a> egy állati tetemek elégetésére 
+  szolgáló krematórium adatlapja. Az elején látható egy táblázat, amely a különféle modellek adatait 
+  tartalmazza. Tételezzük fel, hogy egy-egy auschwitzi halott átlagos súlya 50 kg körül volt. Ez   
+esetben az AP50 típusra lenne szükségünk a Techtrol cég termékeiből. Ez a készülék egy óra alat 111  
+ 250 kcal energiát használ fel. Másfél óra alatt tehát 166 875 kcal-t.<br><br>Tegyük fel, hogy   
+Auschwitzban a legkiválóbb minőségű antracitot pazarolták a krematóriumokban, amelynek kb. 35000   
+KJ/kg, azaz 8365 kcal/kg az energiatartalma. Egy halott elégetéséhez 19,9 kg lenne szükséges. 6000   
+halotthoz mintegy 120 tonna, azaz hat vagon. Naponta! Azonban soha egyetlen visszaemlékezés sem   
+említette, hogy valaha is szenet szállítottak volna Auschwitzba, szenet tároltak vagy lapátoltak   
+volna a foglyok. Vrba igen jól értesültnek tűnik mindenről, ami a táborban zajlott (a kőfejtőt   
+leszámítva), de ő sem ír széntárolóról, sem pedig óriási olajtartályokról. Más energiaforrást   
+akkoriban nemigen használtak.<br><br>Mindezek persze nyilvánvalóak számunkra ma, 2009-ben, amikor a  
+ holokauszt hazugságai sorra megdőlnek. 1944-ben azonban Horthy Miklósnak nem volt oka kételkedni a  
+ hozzá hivatalos csatornán eljuttatott irat valódiságában, és nem is tudta ellenőrizni, mi folyik a  
+ Krakkó melletti táborban. A jól felépített propagandairat nem tartalmaz olyan ellentmondásokat,   
+amelyek akkor még szemet szúrtak volna.<br><br>Végül pedig Vrba nem pazarol sok szót arra, hogyan   
+sikerült kijutnia a dupla elektromos szögesdróttal, őrtornyokkal, vizesárkokkal körülvett   
+táborból.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"1944. április 7-én társammal együtt sikerült megszöknöm."</div><br>Ez   
+minden. Szerencsére más források többet elmondanak. Vrba-ról külön szócikk található az angol <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/Rudolf_Vrba">Wikipedián, </a>amelyben szerepel szökésének   
+története.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Amikor Birkenauba érkezett, találkozott Alfred Wetzlerrel, a 29162-es   
+számú fogollyal, akit szülővárosából ismert. Wetzler a birkenaui hullaházban dolgozott, azon foglyok 
+  azonosítószámát jegyezte fel, akik nem gázosítás következtében haltak meg, és hogy mennyi aranyat  
+ nyertek ki a fogukból.<br><br>A két férfi úgy döntött, megszöknek. A tábor földalatti mozgalma   
+segítségével 1944 április 7-én, délután 2 órakor - Pészach napján - elbújtak egy mélyedésben,   
+amelyet az épülő "Mexikó" táborrész építőanyagául szolgáló faanyag közt alakítottak ki. Ez Birkenau  
+ belső peremvonalán kívül volt, de még a legkülső vonalon belül, amelyet napközben őrök vigyáztak. A 
+  többi fogoly deszkákkal takarta el búvóhelyüket, majd erős orosz dohánnyal kevert gázolajjal   
+locsolták körbe a területet, hogy megzavarják az őrkutyákat. Ezt a trükköt orosz foglyoktól, egészen 
+  pontosan Dimitrij Volkovtól tanulták, aki megszökött Auschwitzból, de ismét   
+elfogták..."<br></div><br>Álljunk meg egy szóra. Megszökött, de újra elfogták? Hiszen Vrba maga írta 
+  meg, mi történt az ilyen foglyokkal.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Ha élve fogják el a foglyot,   
+akkor az egész láger szeme láttára felakasztják. Ha megtalálják a holttestét, akkor azt visszahozzák 
+  a lágerbe - akárhol akadnak is rá -, és a bejáratnál közszemlére teszik ki. A kezei közé tesznek 
+egy   táblát a következő felirattal: &#187;Íme itt vagyok.&#171;"</div><br>Feltételezhetjük, hogy 
+Volkov   nem maga mondta el nekik, hanem a többi fogoly megfigyelte a trükköt, mielőtt megszökött, 
+és mások   mondták el Vrbáéknak. Ám a következő mondat nem hagy kétséget:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Volkov azt is   tanácsolta nekik, hogy óvatosan utazzanak, pénz nélkül, 
+és senkivel se osszák meg   terveiket."</div><br>A szökés története tovább folytatódik.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Aznap este   20:33-kor Auschwitz-II parancsnoka, Fritz Hartjenstein 
+SS-ezredest telexen értesítették, hogy két   zsidó megszökött. A két férfi korábbi szökési 
+kísérletei nyomán tudta, hogy amikor az esti   Appel-nél, azaz sorakozónál felfedezik, hogy 
+hiányoznak, három napig keresni fogják   őket."</div><br>Ezek szerint már többször próbáltak 
+megszökni ők maguk is? Mégsem akasztották fel   őket? Érdekes.<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Ezért elbújva 
+maradtak a negyedik éjszakáig, bár egyszer   majdnem lebuktak, amikor az egyik őket kereső őr éppen 
+fölöttük állt meg a farakáson. Április 10-én   holland ruhában, kabátban és csizmákban, amelyeket az 
+egyik  &#187;Kanada&#171;-raktárból szereztek,   dél felé menekültek, a Sola folyóval párhuzamosan, 
+a 133 km-re levő szlovák határ felé tartva, egy   iskolai atlasz segítségével, amit Vrba a raktárban 
+talált.<br><br>&#187;A szökés pillanatától   megszakadt minden kapcsolatunk Auschwitzban maradt 
+barátainkkal, kint pedig senki sem várt ránk. A   világ számára de facto megszűntünk létezni, amikor 
+1942 tavaszán felraktak bennünket a deportáló   vonatra. Létezésünk egyetlen bizonyítéka az a 
+nemzetközi körözés volt, amelyet távirati úton   megkapott a Gestapo minden egysége. Ezt a körözést 
+a Kripo (bűnügyi rendőrség), a Sicherheitsdienst   (biztonsági szolgálat) és a Grenzpolizei 
+(határőrség) is megkapta.&#171;<br></div><br>Így jutottak   el a szlovák határig. Wetzler eddig is 
+másodhegedűs volt a történetben, s ezután is az maradt. Neki   sikerült egy Zyklon-B doboz címkéjét 
+elhoznia bizonyítékként. A háború után ő írta meg az <span style="font-style: italic;">Auschwitz, 
+négymillió ember sírja</span> című könyvet. De ezután   kilépett a történelemből. 1988-ban 
+Csehszlovákiában halt meg. Auschwitzban az ő visszaemlékezései   alapján állították fel a négymillió 
+áldozatnak szóló emléktáblát, amelyet aztán a kilencvenes évek   elején csendben levettek, és 1,1 
+millióra cseréltek. Wetzler állítása szerint egyébként a   magyarországi zsidódeportálások azért 
+álltak le, mert a nyugati szövetségeseket meggyőzték   állításai, és ennek nyomán olyan 
+kormányépületeket bombáztak le Magyarországon, amelyekből a   deportálásokat irányították. Ez a 
+marhaság olvasható a Wetzlerről szóló <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//en.wikipedia.org/wiki/Alfr%C3%A9d_Wetzler">Wikipedia-szócikkben</a> is.<br><br>Amikor a 
+  jelentés eljutott Horthy Miklóshoz, ő először kitalációnak, "zsidó mesének" minősítette.   
+Emlékirataiban nem is említi. Azonban Veesenmayer a vele történt beszélgetésről tett jelentésében 
+említi, hogy a jegyzőkönyv miatt a szövetségesektől és semleges országok vezetőitől áradni kezdtek a 
+  tiltakozások Horthy Miklóshoz. 1944 július 7-én a magyar hírszerzés elfogott egy táviratot, 
+amelyet Richard Litzheim,   a genfi Zsidó Ügynökség elnöke küldött Angliába, s amelyben a magyar 
+kormány tagjait nevezte meg az   auschwitzi tömeggyilkosság felelőseiként, javasolva a háborús 
+bűnösökként való felelősségre   vonásukat. Ezért végül 1944 július 9-én Horthy Miklós további 
+kivizsgálásig leállította a   deportálásokat. Kérdésére Adolf Eichmann és Edmund Veesenmayer 
+egyaránt tagadták a Vrba-Wetzler jelentés valóságtartalmát. A hivatalos  kivizsgálásra végül is nem 
+került sor, a háború eseményei más fordulatot vettek.<br><br>Különös, de   sem Vrba, sem Wetzler nem 
+jelent meg sem a nürnbergi perben, sem az Eichmann-perben tanúként. Pedig   ők voltak az egyetlenek, 
+akik személyesen beszámolhattak volna a tábor 1942-43 körüli állapotáról.   Vrba csak az 1963-65-ös 
+frankfurti Auschwitz-perben jelent meg, majd 1995-ben Ernst Zündel ellen,   akit 
+holokauszt-tagadásért fogtak perbe.<br><br><img src="./resources/pictures/tomcat_rudolf_vrba.jpg" style="border: 1px solid rgb(0, 0, 0); float: left; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" border="0">1944-ben Rudolf Vrba számára a Szlovák Zsidótanács új igazolványt   
+állított ki, amelyben "tisztavérű árja" bejegyzés került. (Hogy hogyan bocsáthatott ki ilyen   
+igazolványt egy zsidótanács egy állítólag náci országban, azt nem tudjuk.) 1944 szeptemberében   
+csatlakozott egy szlovák partizáncsapathoz, és a háború végéig a németek ellen harcolt. A háború   
+után a kommunista párt támogatója volt, ám a sztálini antiszemitizmust felismerve inkább elhagyta az 
+  országot, amikor 1958-ban Izraelbe hívták egy holokauszt-konferenciára. Végül Kanadában telepedett 
+  le, és 2006-ban halt meg.<br><br>Visszaemlékezéseit mindmáig komoly ellentmondások övezik. Még a   
+holokauszt-történészek is megbízhatatlannak nevezik jelentését, noha az abban foglaltakat, a   
+gázkamrák létezését ők nem tagadják. Az elfogadott álláspont szerint a jelentés alapvetően hiteles,  
+ noha igen pontatlan, de ezek a pontatlanságok "csak fokozzák hitelességét" (sic!)<br><br>A   
+Vrba-Wetzler jelentést már a maga idejében sem vették igazán komolyan. Bár a szövetségesek   
+felhasználták propagandacélokra, végül nem ez, hanem a háborús bűnökért való felelősségre vonás   
+fenyegetése győzte meg Horthy Miklóst a deportálások leállításának szükségességéről. Politikusként   
+pontosan átlátta, hogy Németország el fogja veszíteni a háborút, és az igazságnak vajmi kevés köze   
+lesz ahhoz, hogy kit ítélnek el háborús bűncselekményekért és kit nem. Ha a magyar kormány részéről  
+ sor kerülhetett volna a jelentés vizsgálatára, az egészen más fénybe helyezte volna a holokauszt   
+kérdéskörét a háború után. Erre azonban a hadiesemények és a nyilas hatalomátvétel miatt sajnos már  
+ nem került sor. A háború után a jelentés tartalma tényként került a köztudatba Magyarországon, majd 
+  világszerte. Ez szolgált a holokauszt-világvallás egyik fő dogmájának alapjául, s erre építették 
+rá   a későbbi elemeket - hol sikeresen, hol kevésbé. Érdekes módon a nagy hősök, akik éveken,   
+évtizedeken át terjesztették történeteiket a haláltáborokról, mind-mind meggyőződéses cionisták   
+voltak, népük lelkes védelmezői, akiknek érdekükben állt minél nagyobbat lódítani a németekről. Vrba 
+  és Wetzler sem volt más. Már csak ezért is el kell gondolkodni, mennyire hitelesek az ilyen   
+"szemtanúk".<br><br></div>   </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-04-26&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2150&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2150&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2150&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2150&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2150&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2150&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2150&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2150&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166323"></A>66. BiG</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2150&id=166282#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-28 15:50:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_615.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Nem kell kikészülni, a folyamat nem ördöngösség: ha a hőt nem engeded olyan ütemben elszökni, mint ahogy az utánpótlás hő jön, akkor önfenntartóvá válik a folyamat. Csak nem szabad nyitogatni az ajtót. A bélésnek meg nagy hőkapacitással kell rendelkeznie és jó szigeteléssel. Egy közönséges samottos cserépkályha szinte hozza ezt, hiszen kevés parázsról is lehet újra tüzet rakni benne, mert a benne levő tárolt hő elegendő a gyulladási hőmérséklet közeli eléréséhez, a parázs meg gyújtja a felszabaduló gázokat.<br />
+Persze, amit mutogatnak fényképen meg helyreállítva akkori krematóriumot, a nagy vasajtóval meg nyitott hamutérrel, hát az minden, csak nem energiatakarékos. De nem is volt cél, mert annyi hulla nem volt, mint amit szeretnének így utólag.<br />
+<br />
+Végül is ez a hullahegyektől hemzsegő holokamu történet a szerencsétlen táborlakók szemszögéből a legnagyobb antiszemitizmus: pont a babók akarnak még több halott babót...<br />
+Röhej...<br />
+<br />
+Mi meg fizetünk? Röhögés stop. :-(<br />
+<br />
+Az általad vázolt mai hasznosítás hümm, érdekes. Bioerőmű. Végre nem lopnák az áramot, hanem termelnék! Igaz, csak egyszerhasználatos módon, tehát kompromisszumköteles a megoldás: van orkpecsenye, de akkor élőzene nincs :-)<br />
+<br />
+<br />
+Kék eget! BiG<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166282"></A>65. Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2150&id=166196#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-28 06:05:23</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">61. BiG !<br />
+<br />
+Teljesen kikészűltem, olvasva az önmüködö krematóriumodról.<br />
+<br />
+Tehát előmelegítés, utána a futószalagon folyamatosan szállított hullák tartják fenn a bioláncreakciót. Persze kell az a bizonyos kritikus zsírtömeg ami az egész processszt önfenntartóvá teszi. Teljesen helyesen jegyzed meg, hogy kétled miszerint 44 vége felé az akkori tetemekkel ez müködhetett volna. Azért szerintem nem kellene az ötletet kidobni. A mai kigyúrt orkokkal nagyszerüenn müködhetne. Még hasznosítható energiafeleslegre is lehetne számítani. Talán még a futószalagot is meg lehetne spórolni. Csak annyit kellene mondani nekik, hogy amerre a fény van ott rengeteg rezet, bronzot lehet gyüjteni. Mennének maguktól is. Egymást nyomva előre.<br />
+Ki beszél itt erőszakról ?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166281"></A>64. Szarvasbogár</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2150&id=166061#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-28 05:36:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_593.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Kedves 54. Kritikus !<br />
+<br />
+Engem idéztél (52. Szarvasbogár):<br />
+<br />
+ "...annyi benzint vagy petróleumot kapok amivel a németek kényelmesen megnyerhették volna a háborút."<br />
+<br />
+Aztán magad írod rá: <br />
+<br />
+ "Nem tartozik a holocauszt témájához, de a fenti állításod hülyeség! Ismerve főleg az amerikai ipar erejét, a németeknek esélyük semvolt a háború megnyerésére. Azt írod, műszaki ember vagy, tehát akkor ki tudod számolni, hogy az amerikaiak, a britek és az oroszok hány ágyút, repülőgépet, tankot, valamint ezekhez lőszert és üzemanyagot tudtak előállítani, szemben a folyamatosan bombázott németországi hadiipar lehetőségeivel. ..." <br />
+<br />
+ Igazad van, úgy ahogy túllelkesedve leírtam, tényleg hülyeség. Pontosabban, nem kellett volna a "kényelmesen"  kifejezést beillesztenem. Ellenben, ha nehezen is, a már kezdettől teljes energiaellátással, főleg benzin, olaj, a háborút megnyerhették volna.<br />
+Ezt továbbra is fenntartom.<br />
+<br />
+ Abban is igazad van, hogy az amerikai, angol hadigpezet mérhetetlenül sok ágyút, repülőgépet, tankot, lőszert, üzemanyagot tudott bevetni. Ezeket viszont mind, közvetve vagy közvetlenül a tengeren  kellett átvinni, vagy részben átrepíteni Németországot támadandó. Ha tehát az eleitől fogva nem lett volna probema az üzemanyag, szarrá bombázhattak volna minden tengeri szállítást, iletve vadászgépekkel leszedhették volna a bombázó rajokat. Szinte minden német oldalról írott emlékirat megemlíti, hogy repülőkből nem volt hiány, viszont az üzemanyaghiány teljesen tragikjus volt. A ruszki hadigépezetet is említed, de ezt nem vagyok hajlandó egy kalap alá venni a többivel, mert ismert, hogy rengeteg nyugati segítséget kaptak főleg Amerikától. (Tankmotorok, szinte 100%-ban, és sok más is).<br />
+<br />
+A "folyamatosan bombázott német hadiipar" megjegyzésed is helytálló. Tényleg nagy károkat okoztak ezek a bombázások. <br />
+A németek sem voltak hülyék,  még idejében hegyek alatt természetes vagy mestersges hegyalatti barlangokban rejtettek el műküdő gyárakat. Igy mentették, még idejében, a föld alá a teljes schweinfurti golyóscspágy ipart. Zack-und-pack. Az amerikai légierők egyik máig is gyaktran emlegetett totális sikere a schweinfurti golyóscsapágyipari komplexum porrábombázása. Azzal nem hencegnek, hogy kiürített gyárakat bombáztak szarrá, nem kis anyagi áldozat árán.. A németek már régóta várták a támadást,  amikor végre a rendszer jelezte, hogy jön, szalmával jól befűtötták az összes elérhető kemencét, az amik meg eszementen bombáztak, látván a füstöt okádó gyárkámányeket,a németek meg eszementen röhögtek.  Természetesen a golyóscsapágy épp oly fontos kellék egy repülőnél mint a benzin. Ezt a történetet olvastam is, meg egy magyar vadászpilótától is hallottam, de egjobban Karl mesélte el a leghihetőbben. <br />
+<br />
+  Karl 1977-ben hozzám volt beosztva mint müszaki rajzoló. Három hónapig volt segítségére szükségem a egyik projectemhez. Jobb kezefeje észrevehetöen nyomorék volt, de a ceruzát jól tudta fogni és a müszaki rajz semmi problemát nem okozott neki. Ekkor én voltam 40-éves, ő meg 55. Elég mogorva, rátarti faszi volt, de szerettem mert nagyon szépen és lelkiismeretesen tudott dolgozni. Jó kemény német akcentussal  beszélte az angolt. Amikor megtudta, hogy 56-os magyar vagyok, kinyílt mint a bazsarózsa. Nagyon összebarátkoztunk. Kiderült, hogy a II, V.H., legvégééig Messerscmitt pilóta volt. Nem is emlékezett pontosan hányszor vetették be, de az utölsó alkalomkor légitámadás alatt akart felszállni. Eltalálták a gépét, mely kigyulladt, a hátracsúsztatható repeszálló szintetikiusüvegü búra csúszókáját is golyó érte, ami emiatt beragadt. Kivülról elkezdték a mentők oltani a tüzet, Karl meg belülről puszta ököllel verte szét a repeszálló üveget. Elég kemény legény lehetett 22-éves korában. Persze kezefeje összes csontját össze-vissza törte. Amikor egy ilyen ember mesél, nyugodtan szarhatunk hivatalos  ---agyonmaszírozott--- forrásokra.<br />
+Évekig tartottuk a kapcsolatot, aztán egyik napról a másikra nyoma veszett. Nagyon hiányzott, fogalmam sincs mi lett vele. Ő is állalndóan arról beszélt, hogy sohasem volt elég üzemanyag. Lőszer, pilóta lett volne bóven, benzin nem. Még arról is beszélt, hogy tudott arról, hogy a bajorországi hegyek között többszáz vadonatúj Messzerschmitt vadászgépet rejtettek el üzemanyaghiány<br />
+miatt. Magam is olvastam aerikai forrásból, hogy a háború után majdnem 2000 messzerschmittet találtak így elrejtve. <br />
+<br />
+  Eléggé úgy néz ki, hogy itt off-olok, pedig az eredeti hozzászólásom értelmében pontosan azt akarom itt újra hangsúlyozni, hogy a háborúalatti üzemannyaghiány miatt nem volt semmiféle babógetés. Nem is lehetett. Nem volt hozzá kalória!<br />
+  </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166262"></A>63. warhamster (40.000) -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-04-27 22:15:36</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_250.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">nagyon tartalmas szöveg. olyannyira, hogy háromszorra olvastam át. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166201"></A>62. farkasanyó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-04-27 18:05:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_677.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Megint beletaláltál a közepébe!<br />
+Minden pont,vessző és egyéb ott,ahol az jó,annyi leírással amennyi éppen szükséges.Kösz.<br />
+<br />
+(Nem rég mosakodtál,hogy kevest írsz,és a "berendezkedés"kezdeti stádiumában felturbózott dobozos kupi is bemutatásra került,konyhasarkon a számítógéppel.)<br />
+Most mi újság Nálad TC!Megháromszorozódtál,és a hétvégén még el is rendezkedtél,vagy éppen nem jutsz tovább a "konyhasaroknál"?:))))</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166196"></A>61. BiG</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2150&id=166027#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-27 17:46:40</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_615.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Izé, a koksz jobb, mint a barnaszén és ahhoz antracitot használnak, azt "kokszosítják" el. Nem véletlenül használják a vaskohókban.<br />
+<br />
+Manapság vannak önműködő krematóriumok, speciális béléssel, amit egyszer felfűtenek és az először elégő holttest hője tartja melegen, aztán a következőé és így tovább. De ezt manapság használják, akkoriban nem hiszem, hogy erre ügyeltek volna, tehát folyamatosan kellett fűteni valamivel. De majd megkérdem Hullakomát, meséljen, ő dolgozott krematóriumban.<br />
+<br />
+Ráadásul a mai hullák többsége több zsírt tartalmaz, mint az akkoriak (főleg '44 vége felé), tehát több a fűtőanyag bennük. Tehát akkoriban pótolni kellett volna a be nem vitt élelem által beálló energiacsökkenést. Most akkor megetették szénnel a babót és ráleheltek, vagy bíztak az öngyulladásban?<br />
+<br />
+Bár az is lehet, hogy mivel hazudni égő dolog ("ég a pofám" mondás, ugye), tehát megvan, mivel fűtöttek: holokamu mesével! :-)<br />
+Hazudj, Pino... izé, babó, hazudj! :-)<br />
+<br />
+<br />
+Kék eget! BiG<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166160"></A>60. <A HREF="mailto:f.adam@citromail.hu" STYLE="color: #000000">Starkiller</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2150&id=166061#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-27 16:21:05</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5950.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Pont ezzel legitimálják amcsiék a mai napig azt a gazdasági modellt, amit ránkkényszerítettek a "rendszerváltás" után.Tök jó példa volt, ha valaki eddig nem értette volna.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166129"></A>59. <A HREF="mailto:emn@freemail.hu" STYLE="color: #000000">eMM</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2150&id=166061#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-27 13:28:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_809.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Pont ezért kellett a fritzeknek a nyersanyag főleg a szén a szintetikus olajhoz,gumihoz.Mert amit és amíg Romániából és Magyarországról tudtak szerezni(nem a gumit persze) az korántsem volt elég.<br />
+Hülyék lettek volna ezért hatmillió babót eltüzelni.Márpedig ennyire azért nem voltak még babó ügyben sem elvakultak a háború megnyerése tán fontosabb volt,amire Kurszk után valóban már esélyük sem maradt de legalább is nem sok.Pedig Albert Speer csodákat művelt a hadiiparban.<br />
+Viszont az atombomba előállítására sem igazán volt esélyük.Az amiknak is több százerer(!) embert és pár miliárd dollárt(akkori áron) kelett rá elkölteniük és nyugiban voltak a sivatagban.Ez a  bombázott Németországban lehetetlen lett volna.Piszkos bombát ugyan össze tudtak volna  hozni de annak meg nem sok hadászati értéke van.(mondjuk azért örömmel leszórták volna Londonra de még olyanjuk sem volt)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166109"></A>58. <A HREF="mailto:f.adam@citromail.hu" STYLE="color: #000000">Starkiller</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2150&id=166051#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-27 11:09:01</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5950.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez a Hegylakó melyik részében volt??<br />
+Róla mintázták volna Mcload - ot?<br />
+A babók halhatatlanok?<br />
+Ezért kiválasztott nép?<br />
+Ejjha.Milyen sötét titkok derülnek ki Holokausztcáfolás közben....</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment166108"></A>57. <A HREF="mailto:f.adam@citromail.hu" STYLE="color: #000000">Starkiller</A> -<FONT COLOR="#FF0000"><B>A rendszerből kizárva!</B></FONT></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2150&id=166023#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-04-27 11:06:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5950.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Meg egy világháború kellős közepén mennyi mindenre jó lenne az a "kis" szén. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2150&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2150&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2150&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2150&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2150&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2150&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2150&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2150&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

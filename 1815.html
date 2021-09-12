@@ -1,0 +1,466 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=1815#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Belovai István esete magyar szemmel";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_297.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>Belovai István esete magyar szemmel<BR><DIV CLASS="postheader_small">Blog - Farkas Roland</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 január 16. 04:11:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_1815.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Már régóta készülök írni 
+Belovai István ügyéről, de csak     mostanra forrott ki bennem a saját álláspontom. Anélkül meg nem 
+a Blog rovatban a helye, mehetne az     egész sztori a Droidzónába az alapján, amit a magyar 
+hatóságok művelnek vele.<br></div><br><div style="text-align: justify;">Belovai István 1985-ben 
+belép a szocionista vezérek képeitől zsúfolt     falú tárgyalóterembe, a katonai ügyész kötél általi 
+halált kér számára, de a bíró megkegyelmez neki     és "megússza" életfogytiglannal. A szép nevű dr. 
+Rabóczki     Ede vöröscsillagos hadbíró szerint az akkor 46 éves, alezredesi rendfokozatától 
+megfosztott Belovai     István kém és hazaáruló. <br><br><div style="text-align: center;"><img src="//www.belovai.org/Belovai_Istvan_%20formal1.jpg" style="border: 0px solid rgb(0, 0, 0); width: 169px; height: 198px;" border="0"><br><br></div><div style="text-align: center;"><i>Belovai   
+  István</i><br></div><br>Pedig hittek benne az elvtársak, nem véletlenül lett a katonai felderités  
+   elemző tisztje. Volt is munkája rengeteg, mert az akkori NSZK-ban állomásozó egyik amerikai 
+alakulat     tiszthelyettese, Clyde Lee Conrad őrmester a legtitkosabb NATO dokumentumok tucatjait 
+juttatta el a     magyar hirszerzőkön keresztül Budapestre, majd természetesen 
+Moszkvába.<br></div><br><div style="text-align: justify;">Belovai jól tudta, hogy a NATO 
+atomtitkainak birtokában a szovjetek és     a Varsói Szerződés csatlósai gond nélkül léphetnék át a 
+nyugatot védő atomaknazárat, ugyanis a     dokumentumok ezen 130 akna telepítési helyét 
+tartalmazták. Vagyis a szovjetek hozzájutottak az egyik     legféltettebb NATO-titokhoz. Elemzők 
+szerint ez egy esetleges háborúban a Nyugat vesztét okozta volna.<br></div><br><div style="text-align: justify;">Volna. Mert Belovai felismerte, hogy a hazája fontosabb számára, mint a 
+    proletariátus győzelme és az ország azonnali pusztulását jelentő atomháború. Ezért értesítette 
+az     amerikai hadsereget, hogy valaki nagyon busásan gazdagszik az állományuk tagjai közül. Később 
+    kiderült, hogy Magyarország több éven keresztül dollármilliókat fizetett a titkokért Conrad     
+őrmesternek. Az amerikai kémelhárítás fülön is csipte Conradot, a magyar elhárítás pedig elfogta     
+Belovait.<br></div><br><div style="text-align: justify;">Belovai István 1990-ben szabadult, az     
+elmaradt rendszerváltás miatt máig nem rehabilitálták.&nbsp; Mindenét elvesztette, a vagyonát,     
+családját, hazáját, miközben a katonai hírszerzés fejét szép végkielégítéssel és havi járandósággal  
+   nyugdíjazták. Belovai ma az Egyesült Államokban él, és szélmalomharcot vív nemzetünk új-régi     
+uraival<span style="color: black;">, az őt életfogy­tiglanra itélő Raboczkival, aki 20<span style="font-style: italic;"><span style="font-weight: bold;"></span></span></span><span style="color: black;"><i><span style="font-weight: bold;"></span></i></span><span style="color: black;">06. október 22-én a Parla­mentben Nagy<i> </i>Imre-érdemrendet kapott, mint a Legfelsőbb     
+  Bíróság nyugalmazott elnökhelyettese.&nbsp;<span class="SpellE"></span>(Az ellenzék nem 
+tiltakozott.)<br><br>Vagy a Fidesz     volt titokminiszterével, </span><span style="color: black;">a 
+magyaros kinézetű </span><span style="color: black;">Kövér Lászlóval, aki szintén a rehabilitálás 
+ellen foglalt állást. Na és ne     hagyjuk ki legfelsőbb b</span>í<span style="color: black;">rót, 
+dr. Lomniczi Zoltánt se, akinek sokkal     fontosabb dolga is van mint igazságot 
+szolgáltatni...<br><br></span><div style="text-align: center;"><img src="//www.zsido.com/images/upload/164/_DEM9957%20%28Medium%29.jpg" style="border: 0px solid rgb(0, 0, 0); width: 232px; height: 154px;" border="0"><br></div><span style="color: black;"><br></span><div style="text-align: justify;"><span style="color: black;">Belovai honlapja    
+ szerint még a holokauszt-túlélő Tom Lantost is megkörnyékezték, de az azóta megboldogult "magyar"   
+  származású kaliforniai képviselő nem törődött vele. Nem csoda, hiszen Lantos akkoriban éppen azzal 
+    foglalkozott, hogy miképpen mossa magát tisztára a <a target="_blank"style="font-weight: bold; color: black;" href="//kuruc.info/r/7/15342/">Nayirah-sztoriból</a>, hiszen egész Amerikát átverte ezzel a     
+hazug történettel, hogy a közvélemény támogassa az Irak elleni háborút.</span><br><span style="color: black;"></span></div><span style="color: black;"><br></span><div style="text-align: justify;"><span style="color: black;">Belovai Istvánt majd csak egy nemzeti     kormány fogja 
+rehabilitálni. Egyelőre a gonosz birodalma épül Magyarországon, de ne felejtsük el:     létezik a 
+hatás-ellenhatás törvénye. Báránybőrbe bújtak a régi ordasok, ezt Belovai István is jól     tudja. 
+Honlapján idézi </span>Dr. Horváth Balázst, az Antall-kormány belügyminiszterét, aki     
+szerint: <br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: italic;">"Olyan emberekkel vettük  körül magunkat, akiknek a hatalom közelébe sem 
+lett volna szabad kerülniük."</div><br><span style="color: black;">Mára már     nyilvánvaló, hogy 
+akik régen szocializmust csináltak, azok ma Európai Uniót és NATO-t. Teljesen     mindegy, hogy 
+melyik jön be, a&nbsp; lényeg, hogy semmi se legyen MAGYAR, minden globális és egyenlő     legyen (a 
+jelszó is marad: világ proletárjai egyesüljetek - Uniót!) és a hétköznapi emberek   birkává   
+but</span>ítva <span style="color: black;">és szolgasorsra </span>í<span style="color: black;">télve 
+  tovább gazdag</span>í<span style="color: black;">tják mindenkori uraikat...   </span><br><span style="color: black;"></span></div><span style="color: black;"><br></span><div style="text-align: justify;"><span style="color: black;">Belovai István ezektől nem várhat   rehabilitálást. Ezúton   
+k</span>í<span style="color: black;">vánom neki, hogy igazságot hozzon   számára a jövő.&nbsp; Akkor 
+  majd mi is mindannyian&nbsp; sajátunknak érezhetjük a hazánkat, amely   védelmére ő is felesküdött 
+és   ezt be is tartotta.</span><br><br><div style="text-align: right;"><span style="font-style: italic;">forrás:   </span><br style="font-style: italic;"><span style="font-style: italic;">http://belovai.org</span><br style="font-style: italic;"></div><br><span style="font-weight: bold;">Kiegészítés Tomcattől:</span> Történelmi érdekesség Belovai István 
+könyve, a <span style="font-style: italic;">Fedőneve: Scorpion, </span>amelyben életéről és a XX. 
+század egyik legnagyobb kémügyéről ír. Mindenkinek ajánlom letölteni és elolvasni. Már ha valaki még 
+megtalálja, mert még Belovai úr oldaláról sem lehet elérni már. Nekem valahol megvan egy DVD-men, ha 
+megtalálom, közkinccsé teszem. Avagy irány a Széchenyi Könyvtár...<br><br></div></div>   
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-01-16&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=4" TARGET="_blank"><IMG SRC="./resources/banners/artworkhu.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1815&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1815&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1815&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1815&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1815&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1815&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144450"></A>48. viphulb</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-18 11:01:17</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4012.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Arulas..? Valahogy itt sehogy sincs egyensuly. Mikor Kadarek a szovjet harckocsik hatan bejottek, elarultak a magyarokat. Az egesz rendszer illegalis, es illegitim volt. Mirol beszelunk? Egyuttal az osszes erintettet el kellene meszelni, aki kesobb a hatalomban tevekenykedett. Megtortent? :D<br />
+Belovai max. a rendszert arulta el, nem a hazajat.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144319"></A>47. <A HREF="mailto:antalf@yahoo.com" STYLE="color: #000000">antalf</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-17 14:51:47</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1261.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Én már utána néztem és érvekkel bizonyítottam, tehát neked is érvekkel kellene jönnöd.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144294"></A>46. 46. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1815&id=144191#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-17 10:23:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Pedig bizony Nagy Imre mindvégig kommunista maradt.Nézz utána.<br />
+<br />
+<br />
+<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144279"></A>45. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-17 06:48:54</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Most nem olvasok kommentárokat, de:<br />
+<br />
+"akik régen szocializmust csináltak, azok ma Európai Uniót és NATO-t."<br />
+<br />
+Exaktemundó!<br />
+<br />
+Mindenki úgy nézett rám annó, amikor hazajöttem az Államokból először és fűnek fának, aki figyelt elmondtam, hogy az ott maga a megtestesült földi kommunizmus, mint akit frissen szalasztottak a Lipótmezőről. Nem az államforma, nem a gazdasági, pénzügyi szabályozás, mert nem az a lényeg, hanem ami az emberek fejében/szívében/lelkében van - illetve nincs.<br />
+<br />
+Nomeg azok akik csinálják, csiszolják, gyúrják és faragják.<br />
+<br />
+Meg kellene nézni mindenkinek Jarl egyik linkjét: <br />
+<B><a href="//zugzwanged.org/dat/misc/century_of_the_self.avi" target="_new" style="color: #000000;">http://zugzwanged.org/dat/misc/century_of_the_self.avi</a></B><br />
+<br />
+"Ezt jól kiegészíti David Rockefellernek, a CFR, a Trilaterális Bizottság, a Bilderberg Csoport tagjának, a HÁLÓZAT egyik legfelsőbb vezetőjének - több forrás is a HÁLÓZAT CÁRJÁNAK nevezi - az alábbi köszönete és dicsérete a sajtónak, amelyet 1991-ben, a Baden Badenben tartott titkos Bilderberg tanácskozás résztvevői előtt mondott el:<br />
+<br />
+"Hálásak vagyunk a Washington Times-nak, a New York Times-nak, a Time Magazinnak és más lapok igazgatóinak, akik az eddigi tanácskozásainkon résztvettek, hogy tiszteletben tartották 40 éven át a diszkrécióra tett ígéretüket. Lehetetlen lett volna számunkra világátformáló tervünk kidolgozása, ha ezekben az években a sajtó nyilvánosságának a reflektor fényébe kerültünk volna. A világ ma már kifinomultabb és jobban elő van készítve arra, hogy a világkormányzat irányába meneteljen. Nem kétséges, hogy az intellektuális elit nemzetek feletti szuverenitása sokkal előnyösebb, mint a nemzeti önrendelkezés eddigi gyakorlata.""<br />
+<br />
+<br />
+<br />
+Azt kell megértenünk, nekünk kisembereknek, hogy az, amit mi hidegháborúnak hittünk, az nem az volt. Más volt a rendeltetése, más volt a célja. És természetesen még nincs is vége - annak ellenére, hogy a bábjátékosok a végjátékot játsszák. Akit pedig érdekel, hogy ezt a társasjátékot hogyan játsszak, az a játékszabályokat itt találja meg:<br />
+<br />
+<B><a href="//x3.hu/freeweb/frameset.x3?user=/zoner&page=/cion.html" target="_new" style="color: #000000;">http://x3.hu/freeweb/frameset.x3?user=/zoner&page=/cion.html</a></B><br />
+<br />
+Elvégre kinek fogsz hinni? A tévének, az újságoknak, vagy a saját, hazug szemeidnek?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144259"></A>44. Kritikus</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1815&id=144244#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-17 00:37:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2586.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">"Ugyanakkor tény, hogy nem tört ki a háború - vagyis tényleges kár nem esett. Vagyis a hazaárulásra csak kísérlet történt bizonyos értelemben - mert lehetett volna miatta többletveszteségünk, de mégsem lett. Márpedig hazaárulásnál a "kísérlet" ha a törvény nem is zárja ki, de mint fogalom elég értelmetlen. Én, úgy vélem, nem rehabilitálnám jogilag." <br />
+<br />
+Igen, igazad van MG. Szerintem az Élet pont jól elintézte ezt a dolgot. Mivel, ahogy írod, tényleges károkozás nem történt, így a halálos ítélet vagy az életfogytiglan csúnya justizmord  lett volna. Viszont, mivel közbejött a gengszterváltás, ezért '90-ben szabadult, vagyis legfeljebb 4-5 évet ült. Ez meg szerintem korrekt a hazaárulás kísérletéért... </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144257"></A>43. Kritikus</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=1815&id=144232#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-01-17 00:16:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2586.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Roland, pont  neked magyarázzam, egy ex-katonának, hogy ment ez akkoriban? Nyilván fel kellett készülniük hagyományos háborúra, mert ilyen fegyverekkel IS rendelkezik minden nagyhatalom. És persze használták is őket a hagyományos háborúikban, Koreától Vietnam-ig, Afganisztántól a Közel-Keletig. De nem egymás ellen, legfeljebb a csatlósaikon keresztül. Gondolom tudod, hogy ahol a 2 nagy tömb határos volt egymással, pl. az NDK-NSZK határnál, vagy a Szovjet-Török határnál, ott mindig kínosan vigyáztak rá mindkét részről, hogy ne történjen valami félreértés, amit esetleg provokációnak vehetne a másik fél. Szóval, a hatalmasra felduzzasztott hadseregek, és a néha harcias lózungok ellenére egyik fél sem készült totális háborúra a másik ellen...  </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144244"></A>42. Molnárgörény</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-16 23:43:56</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_448.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez egy elég lehetetlen probléma, hogy hazaáruló-e avagy nem. Az adott helyzetben nem is biztos, hogy létezik korrekt válasz.<br />
+<br />
+Először: azt tényként fogadhatjuk el, hogy a Varsói Szerződés és a gazda, a Szovjetunió emberellenes kommunista zsarnokszervezetek voltak. A NATO pedig valóban nem akart első csapást mérni - viszont az biztos, hogy egy orosz első csapást megválaszoltak volna.<br />
+<br />
+Belovai a kémkedésével nagyon sokat nem tett. Ez a háború kitörését vagy ki nem törését aligha befolyásolta. Ilyen értelemben tehát az, hogy "megvédte a hazát", valótlan fikció. Nem védett ő meg a háborútól senkit: egyszerűen szerencsénk volt, illetve az amerikai elrettentő potenciál elég volt ahhoz, hogy az oroszok ne merjenek támadni.<br />
+<br />
+Hogy ténylegesen mit okozott volna Belovai árulása, az csak háborúban derült volna ki. Ha a NATO emiatt könnyebben győzi le a magyar erőket: akkor a hazaárulás megáll. Ugyanis a "haza" nem egy elvont fogalom, hanem az állam és polgárainak összesége. Vagyis a magyar hadsereg vágóhídra juttatása akkor sem dicső tett, ha azt amiatt követi el valaki, mert a sereget egy embertelen ideológia alapján küldik harcba. A kommunista ideológiáról az elárult és emiatt elesett Kovács 23. János kiskatona mit sem tehet, meg arról se, hogy besorozták - és az édesanyja sem.<br />
+<br />
+Ebben az értelmezésben tehát Belovai bizony mégiscsak hazaáruló. Magyarország vereségéért tett, amivel háborúban magyar emberek halálát okozta volna. Nem a bolsevik gazfickókét fakultatívan, hanem ártatlanokét.<br />
+<br />
+Ugyanakkor tény, hogy nem tört ki a háború - vagyis tényleges kár nem esett. Vagyis a hazaárulásra csak kísérlet történt bizonyos értelemben - mert lehetett volna miatta többletveszteségünk, de mégsem lett. Márpedig hazaárulásnál a "kísérlet" ha a törvény nem is zárja ki, de mint fogalom elég értelmetlen.<br />
+<br />
+Én, úgy vélem, nem rehabilitálnám jogilag. Kapott pénzt, elmehetett Amerikába - legyen ez elég neki.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144232"></A>41. <A HREF="mailto:farkasroli@hotmail.com" STYLE="color: #000000">Farkas Roland</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-16 23:08:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_297.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">honlapja szerint Belovai nem kapott érte pénzt. pont.<br />
+<br />
+az eszkalálodásról és hagyományos háborúról: akkor mi a fenének költöttek milliárdokat fegyverkezésre? elég lett volna az usa-nak vagy a szu-nak fenntartania 2OO atomrakétát és ezzel biztositva van a csapás ellencsapás és a sikeres pusztitás.<br />
+<br />
+mégis harckocsik tizezreit gyártották...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144228"></A>40. Ronin206</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-16 22:26:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A The Independent bátor írása Izrael háborús bűneiről - Why do they hate the West so much, we will ask<br />
+2009-01-16. 20:12<br />
+<br />
+Izrael ismét rányitotta a pokol kapuit a palesztinokra. Negyven civil menekült egy ENSZ-iskolában, három egy másikban. Ennyi halott egy éjszaka alatt nem rossz egy olyan hadseregtől, amely a 'fegyverek tisztaságában' hisz. De miért lennénk meglepődve? A brit The Independent munkatársának cikke.<br />
+<br />
+/English version below/<br />
+<br />
+Hát elfelejtettük a 17,500 halottat - majdnem mind civilek, többségük gyermek és asszony - Izrael 1982-es libanoni inváziója során; az 1700 palesztin civil áldozatot a Sabra-Shatila mészárlásnál; a 106 libanoni civil menekült (fele gyermek) 1996-os Qana-i lemészárlását az ENSZ-bázison; a Marwahin-i menekültek vérontását, akiket az izraeliek kergettek el az otthonaikból 2006-ban, majd egy izraeli helikopter legyilkolta őket; az ugyanezen évi libanoni invázió és bombázás 1000 halottját, akik szintén túlnyomó többségben civilek voltak?<br />
+<br />
+Ami ámulatra méltó, az az, hogy annyi nyugati vezető, annyi elnök és miniszterelnök, és - attól tartok - annyi szerkesztő és újságíró bevette a régi hazugságot, hogy Izrael annyira, de annyira vigyáz a civil életekre. "Izrael minden tőle telhetőt megtesz, hogy elkerülje a civil áldozatokat", mondta egy izraeli követ mindössze pár órával a gázai mészárlás előtt. És minden elnöknek és miniszterelnöknek, aki megismételte ugyanezt a badarságot, ürügyként, hogy elkerüljék a tűzszünetet, a tegnap (a cikk 7-én jelent meg - a szerk.) esti vérengzés áldozatainak a vére szárad a kezén. Ha George Bushnak lett volna mersze, hogy tűzszünetet követeljen 48 órával előbb, az a 40 civil, az idősek, asszonyok és gyerekek most életben lennének.<br />
+<br />
+Robert Fisk<br />
+Robert Fisk<br />
+Ami történt, az nem csak szégyenletes. Az gyalázatos. Netán a "háborús bűnök" túl erős leírás lenne? Merthogy így neveznénk ezt a kegyetlenséget, ha a Hamász követte volna el. Ami a háborús bűnöket illeti tehát, ez azok közül való volt. Azután, hogy annyi közel-keleti tömeggyilkosságról tudósítottam &#8211; szíriai, iraki, iráni vagy izraeli seregek általiakról &#8211; feltételezem, cinizmus lehetne a reakcióm. De Izrael azt állítja, hogy ők a "nemzetközi terror" ellen harcolnak. Azt állítják, hogy értünk harcolnak Gázában, a mi nyugati eszméinkért, a biztonságunkért, a mi mértékünk szerint. Így tehát mi bűnrészesek vagyunk a Gázára hozott barbárságokban.<br />
+<br />
+Korábban számoltam már be a hasonló eseményekre az izraeli hadsereg által adott ürügyekről. Mivel nagy valószínűséggel ezeket a közeljövőben újramelegítik, íme néhány: a palesztinok ölték meg a saját menekültjeiket, a palesztinok ástak ki holttesteket a temetőkből és helyezték őket a romokra, végül is az egész a palesztinok hibája, mert egy fegyveres mozgalmat támogattak, vagy mert felfegyverzett palesztinok direkt ártatlan menekülteket használnak védőpajzsként.<br />
+<br />
+A Sabra és Shatila mészárlást Izrael libanoni jobboldali falangista szövetségesei követték el, amíg izraeli seregek - ahogyan Izrael saját vizsgálóbizottsága is feltárta - csak nézték 48 órán keresztül, és az ég világán semmit sem tettek, hogy megakadályozzák. Amikor Izraelt hibáztatták, Menachem Begin kormánya azzal vádolta meg a világot, hogy a középkori vérváddal illetik őket ismét. Azután, hogy az izraeli tüzérség lövedékekkel sújtotta a Qana-i ENSZ-bázist 1996-ban, az izraeliek azt állították, hogy Hezbollah fegyveresek rejtőzködtek ott. Nem volt igaz. A több mint 1000 halott miatti felelősséget 2006-ban - a háború úgy kezdődött, hogy a Hezbollah foglyul ejtett két izraeli katonát a határon - egyszerűen a Hezbollah nyakába varrták. Aztán Izrael azt állította, hogy a második Qana-i mészárlásnál a halott gyermekek testét valószínűleg temetőkből vitték oda. Ez is hazugság volt. A Marwahin-i vérontásra még csak mentséget sem kerestek. A falubelieket távozásra szólították fel, aminek eleget tettek, majd ezek után nehézfegyverzetű helikopterrel rájuk támadtak. A menekültek a teherautó oldalába állították a gyermekeiket, hogy látható legyen: ártatlanok utaznak benne. Az izraeli helikopter közelről kaszálta le őket. Mindössze ketten élték túl, úgy, hogy halottnak tetették magukat. Izrael még bocsánatot sem kért soha.<br />
+<br />
+Tizenkét évvel később egy másik izraeli helikopter támadt egy szomszédos faluból civileket szállító mentőautóra - ugyancsak azután, hogy Izrael távozásra szólította fel őket - és ezzel megöltek három gyereket és két asszonyt. Az izraeliek azt állították, hogy egy Hezbollah-harcos volt a mentőautóban. Ez sem volt igaz. Én tudósítottam ezekről az atrocitásokról, én megvizsgáltam mindet, beszéltem a túlélőkkel. Ugyanezt tette jópár kollégám. A mi sorsunk természetesen a vádak közt legrágalmazóbb lett: antiszemitizmussal vádoltak minket.<br />
+<br />
+És a következőket a legkisebb kétely nélkül írom: hallani fogjuk ezeket a botrányos kitalációkat megint. Majd mondják a Hamász a hibás-hazugságot - Isten a megmondója, volna miért hibáztatni őket enélkül is -, és valószínűleg a temetőből kiásott halottas hazugságot, és minden bizonnyal a Hamász volt az ENSZ-iskolában is-hazugságot, és legfőképpen az antiszemitizmus-hazugságot. A vezetőink pedig pfújolni fognak, és emlékeztetik a világot, hogy eredetileg a Hamász szegte meg a tűzszünetet. Nem így volt. Izrael szegte meg, először november 4-én, amikor a bombatámadásban megöltek 6 palesztint Gázában, és ismételten november 17-én, amikor egy másik bombázás ölt meg 4 palesztint.<br />
+<br />
+Igen, az izraeliek megérdemlik a biztonságot. Húsz izraeli halott 10 év alatt Gáza körül, ez valóban gyászos szám. De 600 palesztin áldozat (ma már 900-nál is több, harmada gyermek - a szerk.) mindössze egy hét alatt, ezrek az évek során 1948 óta &#8211; amikor az izraeli mészárlás Deir Yassin-nal megkezdte a palesztinok kivándoroltatását Palesztina azon részéből, ami később Izrael lett &#8211; teljesen más mértékű. Ez nem egy átlagos közel- keleti vérontásra emlékeztet bennünket, hanem a balkáni háborúk szintjén lévő atrocitásokra a kilencvenes évekből. És persze amikor egy arab nekilódul visszatarthatatlan haraggal, és kiadja lázító vak dühét Nyugaton, mi azt fogjuk mondani, hogy ehhez nekünk semmi közünk. Miért utálnak minket? - fogjuk kérdezni. De nehogy azt mondjuk, hogy nem tudjuk a választ.<br />
+<br />
+Robert Fisk - The Independent <br />
+Fordította: Irisz<br />
+<br />
+<br />
+Why do they hate the West so much, we will ask<br />
+<br />
+So once again, Israel has opened the gates of hell to the Palestinians. Forty civilian refugees dead in a United Nations school, three more in another. Not bad for a night's work in Gaza by the army that believes in "purity of arms". But why should we be surprised?<br />
+<br />
+by Robert Fisk - The Independent<br />
+<br />
+Have we forgotten the 17,500 dead &#8211; almost all civilians, most of them children and women &#8211; in Israel's 1982 invasion of Lebanon; the 1,700 Palestinian civilian dead in the Sabra-Chatila massacre; the 1996 Qana massacre of 106 Lebanese civilian refugees, more than half of them children, at a UN base; the massacre of the Marwahin refugees who were ordered from their homes by the Israelis in 2006 then slaughtered by an Israeli helicopter crew; the 1,000 dead of that same 2006 bombardment and Lebanese invasion, almost all of them civilians?<br />
+<br />
+What is amazing is that so many Western leaders, so many presidents and prime ministers and, I fear, so many editors and journalists, bought the old lie; that Israelis take such great care to avoid civilian casualties. "Israel makes every possible effort to avoid civilian casualties," yet another Israeli ambassador said only hours before the Gaza massacre. And every president and prime minister who repeated this mendacity as an excuse to avoid a ceasefire has the blood of last night's butchery on their hands. Had George Bush had the courage to demand an immediate ceasefire 48 hours earlier, those 40 civilians, the old and the women and children, would be alive.<br />
+<br />
+What happened was not just shameful. It was a disgrace. Would war crime be too strong a description? For that is what we would call this atrocity if it had been committed by Hamas. So a war crime, I'm afraid, it was. After covering so many mass murders by the armies of the Middle East &#8211; by Syrian troops, by Iraqi troops, by Iranian troops, by Israeli troops &#8211; I suppose cynicism should be my reaction. But Israel claims it is fighting our war against "international terror". The Israelis claim they are fighting in Gaza for us, for our Western ideals, for our security, for our safety, by our standards. And so we are also complicit in the savagery now being visited upon Gaza.<br />
+<br />
+I've reported the excuses the Israeli army has served up in the past for these outrages. Since they may well be reheated in the coming hours, here are some of them: that the Palestinians killed their own refugees, that the Palestinians dug up bodies from cemeteries and planted them in the ruins, that ultimately the Palestinians are to blame because they supported an armed faction, or because armed Palestinians deliberately used the innocent refugees as cover.<br />
+<br />
+The Sabra and Chatila massacre was committed by Israel's right-wing Lebanese Phalangist allies while Israeli troops, as Israel's own commission of inquiry revealed, watched for 48 hours and did nothing. When Israel was blamed, Menachem Begin's government accused the world of a blood libel. After Israeli artillery had fired shells into the UN base at Qana in 1996, the Israelis claimed that Hizbollah gunmen were also sheltering in the base. It was a lie. The more than 1,000 dead of 2006 &#8211; a war started when Hizbollah captured two Israeli soldiers on the border &#8211; were simply dismissed as the responsibility of the Hizbollah. Israel claimed the bodies of children killed in a second Qana massacre may have been taken from a graveyard. It was another lie. The Marwahin massacre was never excused. The people of the village were ordered to flee, obeyed Israeli orders and were then attacked by an Israeli gunship. The refugees took their children and stood them around the truck in which they were travelling so that Israeli pilots would see they were innocents. Then the Israeli helicopter mowed them down at close range. Only two survived, by playing dead. Israel didn't even apologise.<br />
+<br />
+Twelve years earlier, another Israeli helicopter attacked an ambulance carrying civilians from a neighbouring village &#8211; again after they were ordered to leave by Israel &#8211; and killed three children and two women. The Israelis claimed that a Hizbollah fighter was in the ambulance. It was untrue. I covered all these atrocities, I investigated them all, talked to the survivors. So did a number of my colleagues. Our fate, of course, was that most slanderous of libels: we were accused of being anti-Semitic.<br />
+<br />
+And I write the following without the slightest doubt: we'll hear all these scandalous fabrications again. We'll have the Hamas-to-blame lie &#8211; heaven knows, there is enough to blame them for without adding this crime &#8211; and we may well have the bodies-from-the-cemetery lie and we'll almost certainly have the Hamas-was-in-the-UN-school lie and we will very definitely have the anti-Semitism lie. And our leaders will huff and puff and remind the world that Hamas originally broke the ceasefire. It didn't. Israel broke it, first on 4 November when its bombardment killed six Palestinians in Gaza and again on 17 November when another bombardment killed four more Palestinians.<br />
+<br />
+Yes, Israelis deserve security. Twenty Israelis dead in 10 years around Gaza is a grim figure indeed. But 600 Palestinians dead in just over a week, thousands over the years since 1948 &#8211; when the Israeli massacre at Deir Yassin helped to kick-start the flight of Palestinians from that part of Palestine that was to become Israel &#8211; is on a quite different scale. This recalls not a normal Middle East bloodletting but an atrocity on the level of the Balkan wars of the 1990s. And of course, when an Arab bestirs himself with unrestrained fury and takes out his incendiary, blind anger on the West, we will say it has nothing to do with us. Why do they hate us, we will ask? But let us not say we do not know the answer.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment144217"></A>39. Ronin206</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-01-16 21:51:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Tc és aki többet foglalkozott ezen dolgokkal, mi a véleményetek erről?<br />
+<br />
+Interjú Harold Wallace Rosenthal-lal (1976-ból)<br />
+<br />
+<B><a href="//ujvilagrend.wordpress.com/2008/05/04/interju-harold-wallace-rosenthal-lal-1976-bol/" target="_new" style="color: #000000;">http://ujvilagrend.wordpress.com/2008/05/04/interju-harold-wallace-rosenthal-lal-1976-bol/</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=1815&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=1815&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=1815&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=1815&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=1815&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=1815&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

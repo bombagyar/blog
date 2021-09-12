@@ -1,0 +1,687 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2272#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Exkluzív! Interjú a körözött Kovács Balázs "Bajával", a ColdFusion volt vezetőjével";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2272#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Exkluzív! Interjú a körözött Kovács Balázs "Bajával", a ColdFusion volt vezetőjével<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 június 10. 22:23:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2272.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;"><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align: justify; margin-left: 20px; margin-right: 20px;"><font size="1"><span style="font-weight: bold;">Figyelem!</span> Az asva.info valótlanul terjeszti, hogy ez az interjú 
+hamisítvány. Természetesen nem az, Skype-on keresztül készült, és megvan róla a hangfelvétel. Az 
+asva.info névtelen szerkesztőinek hitelrontó állításaival a továbbiakban nem kívánunk 
+foglalkozni.<br></font></div><span style="font-style: italic;"><font size="1"><span style="font-weight: bold;"></span></font> </span><br>A cím nem egyszerű             
+szenzációhajhászásból született. Kovács Balázst, azaz Baját jelenleg több titkosszolgálat, több      
+       ország rendőrsége és az Interpol is keresi, miután sikerült kicsúsznia a hatalmas erőkkel     
+        végrehajtott budapesti razzia után a Nemzeti Nyomozó Iroda markából, és elhagynia az 
+országot.             Üzlettársait, több, mint egy tucat személyt előzetes letartóztatásba helyezték 
+szerzői és     szomszédos         jogok megsértése miatt, miután a rendőrség lerohanta és pincétől 
+padlásig     átkutatta a Kileen         Kazakhstan - korábban ColdFusion Kft - Victor Hugo utcai 
+telephelyét,     ahol a jelentések szerint         hatalmas warezszerver-hálózat működött. Az <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//asva.info/a-cfm-razzia-kepei-kozlemeny-2009-04-17.html">ASVA győzelmi jelentése</a>     
+        szerint Bajáék 365 millió forint kárt okoztak különféle kiadóknak az emelt díjas SMS-ért     
+árusított         szoftverek, filmek és zenei tartalmak illegális kereskedelmével. Ilyen hatalmas    
+ fogásra   nemhogy       Magyarországon, de az egész világon kevés példa volt ezidáig.<br><br><img src="./resources/pictures/tomcat_cfm_warez_3.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0">Internetes körökben a ColdFusion 
+            Magyarország Kft-nek - röviden CFM - finoman szólva nem volt töretlen a jó híre. 
+Kéretlen             reklámlevelek milliárdos nagyságrendű terjesztésével, felhasználók lehúzásával 
+vádolták   őket           mindenfelé keringő pletykák. A Spamwikin <a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//hu.spam.wikia.com/wiki/Coldfusion_Magyarorsz%C3%A1g_Kft.">külön 
+szócikk</a>   foglalkozik           az 1999-ben alapított informatikai céggel, közölve, hogy számos 
+spamben   hirdetett cég     weboldala   a     ColdFusion tárhelyén található, s 2008-ban a Spamwiki  
+ szégyenfalára került magyar     spamek 18%-a   a   CFM   hálózatából származott. Ugyanakkor szintén 
+  köztudott, hogy Kovács Balázs     gyakran dolgozott   a     rendőrségnek és a Nemzeti Nyomozó   
+Irodának informatikai     szakértőként.<br><br>Április 14-én a       ColdFusion irodáiban rendőrök   
+jelentek meg. Minden     számítógépet összecsomagoltak, mindenkit       letartóztattak, majd a cég   
+munkatársainak és egyes     üzletfeleinek otthonában is házkutatást       tartottak. Az elfogott   
+személyeket kivétel nélkül     előzetes letartóztatásba helyezték, ami példátlan       a hasonló   
+intézkedések történetében     Magyarországon. Úgy látszott, a hatóságok valamiért különösen         
+komolyan veszik a     ColdFusion-ügyet.<br><br><br style="font-weight: bold;"><span style="font-weight: bold;">Egy     kalandos menekülés története<br><br></span>- Konkrétan Siófokon   
+  voltam, amikor történtek   az     események - kezdi a razzia   történetét. - Azok a cikkek, amik   
+  kikerültek az Indexre, meg az       asva.hu-ra, meg mindenféle fasza   oldalakra, baromságok. 
+Semmit   nem   tudnak semmiről, csak       találgatnak. Ilyeneket írtak, hogy   kirakatembereket 
+fogtak el,   meg ilyen   faszságokat.       <br><br><span style="font-style: italic;">- Mi     
+történt?</span><br><br>- Akikhez   kimentek,     azoknál   kommandósok törték be az ajtót.   
+Norbertkánál (<a target="_blank"style="font-weight: bold; color: rgb(0, 0, 0);" href="//hu.spam.wikia.com/wiki/Wellinger_Norbert">Wellinger Norbert</a>)   otthon     voltak a  
+     szülei. Csengettek, azok odamentek, hogy ki az, és durr, az arcukba rúgták az   ajtót.     Így, 
+  ilyen     szinten.<br><br><span style="font-style: italic;">- Ezt így szokás. Engem is   így       
+vittek el     2006-ban.</span><br style="font-style: italic;"><br>- Onnan tudtam, hogy nagy gáz      
+   van, hogy hat     embert hívtam fel, és a hatból hat nem válaszolt. Akkor már lehetett tudni, 
+hogy         para van. Hozzá     kell tegyem, mindenki azt mondja, hogy ez a Nemzeti Nyomozó Iroda 
+másfél   éves       nyomozása, meg sikere,     estébé, estébé, hát ez nem így van. Az NNI három vagy 
+négy   nappal   előtte     kezdett el nyomozni. Az     Interpol foglalkozott az üggyel, többek 
+között   azért, mert az   egyik     ügyfelünk - nem mondom, hogy ki,     de szerintem úgyis rá lehet 
+jönni a   Google-lal - a   Teamburg     nevezetű orosz szexlapnak megcsinálta   a   magyar 
+klónváltozatát.   Ezen voltak olyan   képek -     állítólag - amelyek gyerekpornográfiához   
+vezettek.   Igaz, a   Teamburgon ki volt írva,   hogy a     modellek mind 18 éven felüliek, de 
+valami   igazságügyi     szakértő, aki ebben nyilván   nagyon jártas,     megállapította, hogy 
+néhány lány a képeken   még   nincs 18   éves. Nem tudom,   miből, talán a melle     méretéből? Nos, 
+innen indult az egész. Két     nappal a budapesti   razzia   előtt már bekopogott az     Interpol az 
+egyik ukrajnai cégünkhöz. El   is   vittek két embert. Két     nappal később Magyarországon     is 
+ugyanez történt, csak nagyobb     volumenben.<br><br><span style="font-style: italic;">- Tehát     
+alapvetően gyerekpornót kerestek,   nem   warezt?</span><br style="font-style: italic;"><br>-     
+Magyarországon már warezt is kerestek,   meg   mindent, ami   eszükbe   jutott, de mondom, ezt az    
+ egészet az Interpol indította, teljesen   mást   keresve. A   Nemzeti Nyomozó   Iroda vitte el az   
+  egészet más irányba, azt állítva, hogy   itt warez van,   meg   SMS-web, meg minden   kurvaanyja. 
+De ez     már ilyen hozzátett   dolog.<br><br><span style="font-style: italic;">- Gondolom, a   
+híradásokban     azért nem szerepel   gyerekpornó-anyagok     lefoglalása, mert nem is találtak   
+ilyesmit.</span><br style="font-style: italic;"><br>- A Nemzeti     Nyomozó Iroda jóvoltából   
+betekintésem van az     iratokba. Ennek ők   biztos nem örülnek, de az ő   bajuk.   Hetente kapok 
+egy<span style="font-style: italic;"> news   update</span>-et. A mai napig   nincs olyan   az 
+iratokban, hogy   gyermekpornográfia     lenne   bármelyik lefoglalt gépen. Egyébként   röhej ez is. 
+Ha   elmegy ma az ember a   Bank diszkóba       vagy hasonló helyre, és körülnéz, milyen   csajok 
+vannak ott, hát   azok is húsz-huszonkét   évesnek       néznek ki, közben tizenkét-tizennégy   
+évesek. Erre mit mondana a   szakértő? Teljesen     szubjektív     annak a megítélése, hogy ki hogy  
+ néz ki, erre nem lehet vádakat   alapozni. Nem egy   tizenöt   éves     lányról elmondható, hogy   
+húszévesnek néz ki, de fordítva is van   erre példa. A   "gyerekpornónál"       nem arra kell   
+gondolni, hogy két-három éves babákat fotóznak   meztelenül,   vagy megerőszakolják     őket.   
+Ilyen   nincs. Kábé olyanról van szó, hogy van esetleg egy 17     éves lány, akiről nem lehet     
+megmondani     ránézésre, hogy csak annyi. Az a durva   gyermekpornográfia,   amit a média sugall, 
+nem     is   létezik.   Ilyennel abszolút senki nem   foglalkozik. Ez egyszerűen pornó,   amiről nem 
+lehet       megállapítani, hogy a   "teen"   kategóriának melyik részét képviseli.<br><br><span style="font-style: italic;">- Hogyan   kerültél   Siófokról Budapestre, honnan tudtad meg, hogy nagy 
+  baj van?</span><br style="font-style: italic;"><br>- Siófokon aludtam egy wellness-szállodában, 
+egy   lány       társaságában. (Már elmúlt     tizennyolc, mielőtt valaki megkérdezi.) Gyakran járok 
+ebbe a         szállodába. Reggel hét órakor   meg nem   nevezett rendőrségi forrásból - 
+értelemszerűen nem fogom         megnevezni, mert   ellentétben az NNI-vel, én   nem fogok rendőr 
+kollégákat belekeverni az ügybe,   amit       az NNI a   közreműködésem nélkül is megtett,   
+gratulálok hozzá - azt a bizalmas   információt   kaptam,       hogy probléma van. Elég nagy 
+probléma, jó   lenne, ha intézkednék. Ennyi   volt a   telefonhívás, és     még   egy javaslat, hogy 
+a telefonomat mostantól   ne igazán használjam.   Pár   hónapja sikerült     vásárolnom   az 
+Interneten egy liechtensteini SIM kártyát,   ami nagyon jó,   mert   tudtommal   nemigen   lehet   
+lehallgatni, ezt tettem a készülékbe a régi helyett.   Ezen   elkezdtem     kommunikálni,   
+elkezdtem   felhívni embereket, hogy mégis, mi történt, mert a   rendőrségi   forrás     csak ennyit 
+  mondott, semmi   érdemi infót nem adott. Először a szervertermet   próbáltam, az ott       
+dolgozókat, de   nem vették fel.   Próbáltam a rendszergazdákat, nem vették   fel, a volt     
+üzlettársamat,   az se vette   fel. Megpróbáltam   Norbertkát felhívni, ő se vette   fel... és a     
+sokadik ilyen után gyanús   volt,   hogy senki nem veszi   fel a telefont. Jó, hogy   reggel hét óra 
+    volt, és nem sok informatikusra     jellemző, hogy ilyenkor   fent legyen, de ez   akkor is 
+gyanús     volt. Valakinek azért csak jelentkeznie     kellett volna, de     
+nem.<br><br>Megpróbáltam   felhívni   Norbertka szüleit vezetékes telefonon. Ők     felvették, de ez 
+  is   érdekes, hiszen egy     kommandósokkal végrehajtott házkutatási-lefoglalási   eljárás   
+közepén   hogy   tudták felvenni?   De   felvették, és mondták, hogy ott vannak a rendőrök, és   épp 
+    intézkednek,   berúgták az   ajtót,   Norbertkát bilincsbe verték. Feri szüleit is sikerült   
+elérnem,   ők is   ugyanezt     közölték:   kommandósok berúgták az ajtót, Ferit elvitték, az 
+autóját, a     számítógépét is. Egy     másik     barátomnál, akit kivételesen estére elengedtek, az 
+ADSL modemtől     kezdve a húga   Nintendójáig       mindent lefoglaltak. A délelőtti házkutatás 
+után azonban kijött     délután egy   másik brigád, és       közölték a szüleivel, hogy adják elő az 
+elrejtett pénzt, mert     különben   mindent szétbasznak,       széttörik a bútorokat, őket nem 
+érdekli semmi. Minden pénzt     odaadtak   nekik, ami volt otthon, és   azt     is lefoglalták. Hogy 
+ez legális vagy nem legális, nem       tudom, de elég durva volt. Összesen   kilenc     embert 
+vittek be, ebből hatot tartanak bent jelen       pillanatban is. <br><br>Kezdett   kristályosodni,   
+  hogy itt valami kurva nagy gáz van, hiszen       mindenkit, akivel valaha dolgoztam,   üzleteltem, 
+    barátkoztam vagy szorosabb kapcsolatot     ápoltam,   bevittek. Értelemszerűen mit   csinál az 
+ember     ilyenkor? Ha nem szeretne bent ülni     előzetesben,   akkor menekül. Hát én beültem   az 
+autómba - egy     M6-os BMW-vel voltam éppen - és     téptem haza. Elég   nagy sebességgel jöttem az 
+  M7-esen. Budapesttől     valami tíz kilométerre     állt az út szélén egy   rendőrségi Skoda 
+Octavia. Le   volt húzva a vezetőoldali     ablak,     folyamatosan figyelték az   elhaladókat. 
+Gondoltam, hogy nagy   valószínűséggel engem keresnek.         Lelassítottam százhúszra,   szépen 
+betartva a szabályokat   haladtam el mellettük, és reméltem,   hogy       csak parázom, hiszen   
+ilyenkor az ember nehezen   szabadul a gondolattól, hogy mindenki   őt   keresi,     mindenki őt 
+nézi.   Egyszer csak látom, hogy a   rendőr felkapcsolja a villogót, és     utánam ered. Tényleg     
+engem várt.   Rákapcsoltam, és mondanom   sem kell, a BMW-vel kettő   percbe   sem telt, hogy soha 
+ne   lássam     többet.<br><br>Az M7-esről   lehajtva Gazdagréten   mentem   keresztül, ahol 
+Norbertkáék lakására   rá     tudtam pillantani. Láttam   ott a   rendőrautókat, éppen   pakolták be 
+a számítógépeit. Nem álltam   meg,     nem tudom, láttak-e     engem. A hegyen keresztül   Pestre 
+hajtottam, a Visegrádi utcai lakásomhoz.   Azt     hittem, már   ott   is biztosan várnak. Az   
+autót a Lehel téri templomnál parkoltam le,   odasétáltam,       alaposan   körülnéztem, de   
+meglepetésemre nem volt ott senki. Felmentem a lakásba, ott   sem volt     senki.     Először azt   
+hittem, már elmentek, de aztán rájöttem, hogy az nem lehet, mert   riasztó   van,   és a       
+riasztótársaság azonnal telefonált volna, ha valaki behatol a lakásba. Simán     bementem.   
+Magamhoz       vettem pénzt, iratokat, ruhákat, mindent, ami szükséges, visszasétáltam a     
+kocsihoz.   Mondanom     sem   kell, ez a lakás alig száz méterre van az irodától. Ott mentem el a   
+sok   villogó     rendőrautó   meg a   bután bambuló sünök mellett, míg ezek odafent éppen   
+széttúrták az   irodámat,     hordták le a     szervereket. Jól van, pakoljatok csak, fiúk, csá...   
+Visszamentem az   autóhoz,     hazavittem a   csajt,   majd kivittem az összes kocsimat egy   
+autópiacra és eladtam. Csak   egyet     tartottam meg,   amelyikről   valószínűleg kevés tudomása   
+volt bárkinek is, beszálltam, és     elhagytam   vele az   országot. A határnál   semmi nem volt, a  
+ magyar okmányaimmal simán kimentem,   senki   nem   kérdezett   semmit. Először paráztam,   hátha   
+köröznek vagy valami, de nem volt semmi.   Két határon     és a   schengenin is problémamentesen     
+átjutottam. Lehúztam jó pár ezer kilométert,   míg eljutottam       ide, semmi gáz nem   
+volt.<br><br><span style="font-style: italic;">- De miért   pont       Kirgizisztánba?</span><br style="font-style: italic;"><br>- Mert nincs kiadatási   egyezménye       Magyarországgal, és ha van 
+  pénzed, ez egy nagyon   kedves ország.<br><br><br style="font-weight: bold;"><span style="font-weight: bold;">Rendőrségi   furcsaságok</span><br style="font-weight: bold;"><br style="font-style: italic;"><span style="font-style: italic;">-   Szerinted hogy lehet az,         
+hogy nem vagy rajta sem a magyarországi   belföldi, sem a schengeni   körözési listán, holott az     
+    Interpol keres?</span><br style="font-style: italic;"><br>- Nem   tudom. Pedig a külföldi   
+bejelentett       címeimen, három különböző országban már   kerestek.   Értelemszerűen ezek mind   
+fiktív lakcímek,   soha     az életben nem laktam ott, és nem is     terveztem ott lakni, a cégekhez 
+  kellettek. Voltak   ott   lerakva   dolgaim, amikért el lehetett   menni, ha   baj van, és menni   
+tovább. Ezek erre voltak,   semmi   másra. A   bérbeadók jelezték   nekem e-mailben, hogy   kerestek 
+  ott.<br><br><span style="font-style: italic;">-   Lehetségesnek   tartod, hogy a magyar   
+rendőrség   nem tartja annyira   fontosnak, hogy   téged     elkapjanak?</span><br style="font-style: italic;"><br>- Én nem tudom, a   magyar rendőrség mit     tart   fontosnak, és 
+mit nem. Hozzá kell   tennem,   hogy a magyar rendőrséggel   nekünk alapvetően jó       viszonyunk 
+volt. Sok ügyben   közreműködtünk, mint   szakértők, volt, hogy   operatív nyomozásban   is     
+részt vettünk. Az   Internet most attól harsog, hogy   jaj, mi egyszer   szakértők voltunk egy       
+warezrazziánál.   Igen, warezrazziánál tényleg csak egyszer,   mert mi nem   ilyen dolgokkal       
+foglalkoztunk.   Sokkal nagyobb kaliberű témákban voltunk benne, amiről   nem   nagyon tud senki, de 
+  ez     nem is   baj. A rendőrséggel nekünk alapvetően nagyon jó kapcsolatunk     <span style="font-style: italic;">volt.</span> Igazság szerint nem tudom, miért nem vagyok rajta a       
+körözési   listán.<br><br style="font-style: italic;"><span style="font-style: italic;">- Mondanál   
+      valamit ezekről az     ügyekről, vagy ezek még mindig bizalmasak?</span><br><br>- Ezek 
+nagyrészt         bizalmas ügyek. A     titoktartási szerződés értelemszerűen egy <span style="font-style: italic;">gentlemen's     agreement,</span> de... hát, nem tudom, hogy ezek után 
+vonatkoznak-e rám       ezek a   szabályok.     Igazából én a magyar "egyéniségemről" lemondtam, én 
+azt már soha többé nem       fogom   használni, tehát     senki sem fog engem úgy megismerni, hogy 
+Kovács Balázs, magyar       állampolgár. Tehát   nem biztos,   hogy   ezek a titoktartási 
+szerződések még vonatkoznak rám. Ezen       még gondolkodom.   Alapvetően a   Nemzeti   Nyomozó 
+Iroda akarta magának ezt a szart, most akkor   én     megnézem, meddig mennek   el     
+vele.<br><br><span style="font-style: italic;">- Tehát   magyarul   azt   üzened nekik, hogy ha 
+tovább       szívóznak, esetleg kipakolsz ezekről az   ügyekről,   amelyekben   rendőrségi 
+szakértőként részt       vettél.</span><br style="font-style: italic;"><br>-   Így van. Egy   tucat 
+ügyben részt vettünk, nagyon       sok szakértésünk volt.   Hozzá kell tennem,   hogy milyen   
+érdekes dolgok vannak: azt mondják, hogy       lefoglalták a CFM   szervereit. Ez nem   igaz, nem   
+foglaltak le egyetlenegy CFM-es szervert sem. Se a         mailszerverünket, se a hosting     
+szerverünket, se a VMS szerverünket. Jó, a számlázó gépünket         elvitték, oké. De példának   
+okáért   volt egy "szakértői gépünk", amin az összes ilyen anyagot,         rendőrségi ügyek aktáit, 
+  minősített   anyagokat tároltunk. Ez egy kódolt gép, nem a mi         szervertermünkben volt, de 
+ott   volt,   megtalálhatták volna, ez volt ugyanis a másodlagos         névszerverünk is. Ha 
+teljeskörű   lett volna   a lefoglalás, ezt is elvitték volna. De nem így   történt,       ez a gép 
+megvan. Miután   pedig   elhagytam az országot, erről a gépről távoli   eléréssel mindent       
+leszedtem és   letöröltem. Minden   itt van a notebookomon, persze   titkosítva. Folyamatban lévő    
+   nyomozások,   operatív megfigyelések   adatai, sok minden, amiben   benne voltunk. Olyan 
+dolgokban is,         amelyekről papír sem született.   Én nem az az ember   vagyok, aki szeretne 
+nyomozásokat hátráltatni         vagy ellehetetleníteni, de   nem nagyon értem   azt a problematikát 
+sem, hogy az egyik oldalon a   hatóság       kéri a   segítségünket, a másik   oldalon pedig 
+letartóztat mindenkit.<br><br><span style="font-style: italic;">- Úgy tudom, olyan   rendőröket is 
+belekevertek az ügybe, akik korábban     munkakapcsolatot       tartottak veled a   nyomozásaik 
+során.</span><br style="font-style: italic;"><br>- Igen, egy       igazságügyi szakértő   barátomat 
+is elővették, illetve jó néhány     rendőrtisztet, akikkel együtt       dolgoztunk - és   
+hozzáteszem, eredménnyel! - olyan ügyeken, mint     gyermekpornográfia, különböző   komoly       
+bűnszövetkezetek felderítése. Elmondom még egyszer,     warez-ügyek nem voltak köztük. Most       
+mindenkinek   az van az agyában, hogy a CFM egyenlő warez, a     CFM titokban warezben utazott, és   
+    közben informálta a   rendőrséget, de ez nem igaz!   Hozzáteszem,   a warez-ügyeket soha senki 
+nem     vette   igazán komolyan. Soha   olyan ítélet nem   született, amikor   valakit lecsukjanak, 
+vagy     akárcsak   előzetesbe rakjanak warez   miatt, mint   ebben az ügyben. Főleg   úgy, hogy nem 
+is     bizonyítható, hogy   volt warez, mert SMS-webről     beszélgetünk.<br><br><span style="font-style: italic;">- Csak a   laikusok kedvéért, mi az alapvető     különbség az SMS-web és 
+  egy warezszerver     között? Az újságok azt   írták, hogy warezszervereitek     voltak, amelyekhez 
+emelt   díjas SMS     elküldése után lehetett   hozzáférni, SMS-ért lehetett   havi, heti   tagságot 
+      váltani.<br></span><span style="font-style: italic;"></span><br>-   Warezszervernek a   
+klasszikus       FTP-ket minősítjük. Ezek úgy működnek, hogy be   kell fizetni   valamennyi pénzt 
+egy     bankszámlára,     vagy elküldeni egy címre, tökmindegy, amiért kapsz   egy   jelszót, és 
+hajrá,   töltsed. Ez   a     warezszerver. Épp ma olvastam az ASVA oldalán, hogy     lefoglaltak egy 
+ilyet.   <br><br>Az SMS-webet       cégek üzemeltetik. A cég betesz egy gépet egy     szerverfarmra, 
+amire   lehet regisztrálni, és   mindenki     feltölthet rá, amit akar. Gyakorlatilag   egy   
+ingyenes   tárhelyszolgáltatás. Van egy   védett   tárhelyrész   is, ahová olyan dolgokat lehet   
+feltenni,     amit pénzért szeretnénk letöltésre   kínálni.   Ez egy üzleti   tranzakció. A júzer   
+feltölti az     anyagait. Aki akarja, emelt díjas   SMS-ért letölti.   Hó végén,   elszámoláskor a   
+szervert   üzemeltető   cég, a katalizátor elszámol a   júzerrel, áfás   számla ellenében. A     
+katalizátor   aztán maga is számláz   a főkatalizátornak, az   pedig a   mobilszolgáltatóknak. Ez   
+abszolút     nyomon követhető, legális   tranzakció. Nem úgy   működik, hogy   valakinek az   
+"okosított"   bankszámlájára   mennek a titkos pénzek,   aztán azt adó-   és áfamentesen   kiveszi.  
+ Nem erről   van szó. És ezt nem is   fogják tudni rábizonyítani   egyetlen   "tettesre" sem -   már 
+  amennyire   tettesről beszélhetünk - mert   egyikük bankszámláján sincs   ilyen       
+pénzmozgás.<br><br><span style="font-style: italic;">- Tehát, ha   jól értelmezem, nem is a         
+ColdFusion tárolta a   warezt - már amennyi volt - hanem egy   tárhely-szolgáltatást nyújtottatok,   
+      amin valaki, egy   másik cég, üzemeltetett egy SMS-webet, és erre   a külső felhasználók 
+töltöttek   fel         anyagokat terjesztésre. Nem ti, hanem a felhasználók.</span><br style="font-style: italic;"><br>-       Így van. A ColdFusion azonban lassan már egy éve nincs is, 
+mert a   Kileen     felvásárolta. Most     persze   lehet huhogni, hogy offshore mögé bújtatott cég, 
+meg csak nevet       változtattunk, de     ugyanazok   maradtunk, satöbbi. Nem, a Kileen egy másik 
+cég. Pont. Másik     vezetés,   másik     elgondolás. Persze,   benne voltam a Kileen-ban, nem azt 
+mondom, hogy nem voltam     benne, de nem       mint vezető, hanem mint   beosztott. Ennyi. 
+Norbertka is benne volt, ő sem volt     vezető, csak       beosztott. Ennyi. Januárban   pedig, akár 
+elhiszik, akár nem, az egész szart, a       szervertermeket, a     gépeket, mindent eladtunk.   Nem 
+úgy adtuk el, hogy közben mi még vezettünk       vagy "okosítottunk",   vagy   más céggel titokban   
+folytattuk, nem. Ténylegesen eladtuk. A       HostInWest Kft. mindent   megvásárolt.   Január óta az 
+egész   szerverhosting üzletágat minden       szarával együtt eladtuk. Többek   között azért,   mert 
+meguntam. Nem   volt hozzá kedvem. Meguntam       ezt az állandó fikázást, ezt a   szarrágást, hogy  
+ mindenki minket ekéz.   Meg nem is akartam       tovább egy ilyen deficites piacban   részt venni. 
+A NNI erre   pár hónapra pedig   jött, és mindent       lefoglalt. A lefoglalást a   szerverteremben 
+úgy képzeld el,   hogy... Nos, nem öt   szerverterem       volt, ez faszság, amit írnak,   sosem 
+volt öt szervertermünk. Három   volt, ebből   fizikailag   kettő     volt a mi tulajdonunk, egyet   
+pedig béreltünk, pontosabban január óta   nem is mi,     hanem a     HostInWest Kft. A lefoglalást 
+úgy   képzeld el, hogy egyesével végigmentek   háromszáz   gépen -       egyesével! - és megnézték   
+tartalomszinten, hogy mi van rajtuk. Volt olyan ügyfél,     aki rendes       webhosting 
+szolgáltatást   csinált, és volt a gépén kettő azaz 2 darab film.   Lefoglalták!   Mert az       
+warez.   Ilyenek.<br><br>Úgy kezdték, hogy minden, amiben kettőnél több   vinyó van, azt viszik,     
+  mert   az   biztosan warezszerver. Szerencsére a rendszergazda, aki ott   volt, mondta nekik, hogy 
+ez     nem   így     van, mert vannak gépek, amelyekben több diszk kell, és   nem warez, például egy 
+    RAID-5-ös is három       diszkből épül fel, vagy a mailszerverünkben is   öt van. Mindenáron be  
+   akarták bizonyítani, hogy itt a       gépek hatvanöt-hetven százalékán   warez van. Végül 
+negyvenhárom     gépet vittek el, a sajtónak pedig     azt   mondták, az összes gép   húsz 
+százalékán találtak     "illegális tartalmat". De mondom, ezek is     ilyenek   voltak, hogy   volt 
+rajta két film, mire     lefoglalták az egész gépet.<br><br>Ez az egész     lefoglalósdi     
+egyértelműen arra ment ki, hogy     tönkretegyék a HostInWest Kft-t, illetve a többi     céget,   
+amelyekkel   kapcsolatban állt. A cég     bankszámláját zárolták, így üzleti tevékenységet nem       
+tud folytatni. Ez a   cég három hónapja     működik, három hónapja lett bejegyezve. Semmi illegális  
+     tevékenységet nem   folytatott! Nem     lehet ilyet kimutatni, mert nem volt! Az ügyfeleknek   
+számlát     adott, a könyvelése   rendben volt,     minden rendben volt. Ennyi. Zárolták a   
+bankszámlát,     tönkretették. A Nemzeti Nyomozó   Iroda     munkatársai még kétszer-háromszor   
+visszajöttek a     szerverterembe, blackbox-okat,       forgalomfigyelő poloskákat helyeztek el a   
+gépeken, és gúnyosan     odavetették, hogy "na, az     áramszámlát   miből fizetitek majd ki?"   
+Szóval nem kevés rosszindulat volt     a fiúkban, hogy     tönkretegyék ezt az   egész   
+vállalkozást.<br><br><br style="font-weight: bold;"><span style="font-weight: bold;">Az igazi     
+warezmaffia nem kalózokból áll...</span>     <br><br><span style="font-style: italic;">- De miért    
+ csinálták ezt? Ok nélkül biztosan nem, még ha     nem is     törvényes az ok. Valakinek az útjában  
+ állt ez a   cég?</span><br style="font-style: italic;"><br>-     Nagy valószínűséggel igen.<br><br style="font-style: italic;"><span style="font-style: italic;">-     Van ötleted, hogy   
+kinek?</span><br style="font-style: italic;"><br>-     Hát persze, hogy     van!<br><br><span style="font-style: italic;">-   Tehát úgy gondolod, hogy ez az     egész razzia     megrendelésre   
+történt?</span><br style="font-style: italic;"><br><img src="./resources/pictures/tomcat_proart.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0">- Nem valamelyik   konkurrens         szerverhosting-szolgáltató áll 
+  mögötte. A szerverhosting-szolgáltatásban nincs akkora   pénz,   mint       egyesek hiszik. Nem   
+hiszem, hogy valaki odament a Nemzeti Nyomozó Irodához, és azt     mondta,   fiúk,     itt van   
+kétmillió forint, tüntessétek el ezeket. Nem. A háttérben a ProArt nevű     szerzői   jogvédő       
+szervezet állt. Láttam rá némi bizonyítékot, hogy a ProArt megbeszéléseket     folytatott   a   
+Nemzeti     Nyomozó Irodával, és bizonyos... még egyszer mondom, bennfentes körökből,     hatósági   
+  személyektől     értesültem erről, bizonyos személyeknek, akik a nyomozásban részt   vettek,     
+azoknak   a ProArt pénzt     adott. Ez nem olyan szokatlan dolog. Annak idején nekünk is     
+felajánlotta a     ProArt azt, hogy ad     nekünk pénzt, ha cserébe adunk információkat. <br><br>A   
+  törvény előírja,   hogy   igazságügyi     szakértőnek kell jelen lennie egy ilyen lefoglalásnál,   
+  mint ami nálunk   történt. Ha nincs   kéznél     igazságügyi szakértő, akkor hívhatnak ún. eseti   
+  szakértőt. Érdekes,   hogy a mi esetünkben   nagyon     sok szakértő rendelkezésre állt volna, 
+mégis     egy bizonyos Horváth   Csaba jött oda, aki a   ProArt     megbízottja, és nem igazságügyi  
+ szakértő.   Vajon   miért?<br><br>Elmondom, miért. Mert ő a   ProArt     embere. A ProArt   
+protezsálta be, és a   ProArt   azt mondta a rendőrségnek, hogy fiúk, a   következő     van. Kaptok  
+ pénzt, nem keveset, ha     megoldjátok ezt a problémát. Mi pedig adunk egy   szakértőt, aki       
+segít nektek ebben. A rendőrök     erre rábólintottak. <br><br>Mi a jó ebben a   ProArt-nak? A     
+szakértőt   úgy bízzák meg, hogy azt     mondják: fiam, itt lesz X terabyte tartalom, amit   neked   
+meg   kell nézned,   hogy ebből mennyi     sért bármilyen szerzői jogot. Aztán majd kiszámlázod a    
+   rendőrségnek. Ezek a   szakértői díjak     nagyon magasak. Több tízmillió forintról is 
+beszélhetünk       egy-egy ilyen eset   kapcsán. Simán!     Szóval azt mondják a szakértőnek, fiam, 
+te kiszámlázol     húszmillió   forintot erre az   átvizsgált     65 terabyte-ra - ennyit foglaltak 
+le nálunk a ProArt     szerint, de ez   baromság, hiszen 43   gép     esetén ez azt jelentené, hogy 
+mindegyikben legalább     másfél terabyte volt -   és miénk ennek a       húszmilliónak a fele. Oké? 
+Hozunk neked munkát, a   felét   leadod. Tehát a ProArt is   jól jár, de       duplán jár jól. Mert 
+ők kifizetnek ötmilliót a     rendőröknek, de a dupláját kapják vissza   a       szakértői díjból. 
+Plusz utána beadja a   zenekiadóknak,   a BMG-nek, a Sony-nak, hogy mekkora királyak         
+vagyunk, mi világítottunk rá   erre az ügyre, ergo a   teljesítményünk nagyon jó, ergo     
+támogassatok     minket, mert ilyen jól   védjük az érdeketeket. Tehát   két helyről kapnak iszonyú  
+   mennyiségű pénzt,     miközben   valójában senki nem lopott el semmit!   Mindenki jól jár, 
+kivéve,     akit       lecsukatnak.<br><br><span style="font-style: italic;">- Tehát azt   állítod, 
+hogy az egész           ColdFusion-Kileen Kazakshtannál nem volt olyan tartalom, legalábbis   
+kimutatható mennyiségben,       amiért     ilyen súlyos intézkedést, vagy egyáltalán bármilyen 
+intézkedés   foganatosítható     legyen.   De a   ProArt,   meg gondolom más jogvédő szervezetek is 
+egyrészt   megvesztegették a     rendőrséget,   másrészt   az ügyben   vizsgálódó szakértőket, mert 
+egy sokmilliós   biznisz múlik     azon, hogy   felmutassanak ilyen   "nagy   
+fogásokat."</span><br><br>- Pontosan, így   van. De a     ProArtnak   érdeke, hogy eredményt   
+mutasson fel. A   ProArt egyébként nem is jogvédő   szervezet,     hiszen   utánanézhet bárki, a 
+MAHASZ és   az ASVA hozta   létre. Jogvédő szervezetek hoznak   létre     egy   jogvédő szervezetet, 
+amelyik az ő   jogaikat védi? Hát ez   meg mi? Elég furcsa anomália!     De     mindegy, létre van 
+hozva a ProArt, és ha   már van, eredményt kell   felmutatnia, hogy   pénzeljék       őket. Ez ilyen 
+egyszerű. Nekik a feladatuk az,   hogy illegális   tartalmakat   derítsenek       fel.<br><br><span style="font-style: italic;">- Tehát az   egész ProArt értelme     annyi, mint       kitenni egy 
+táblát, és ráírni, hogy "vigyázat, ennek a táblának   nagyon élesek a           sarkai".</span><br style="font-style: italic;"><br><img src="./resources/pictures/tomcat_rendorauto_villogo.jpg" style="border: 1px solid rgb(0, 0, 0); float: right; margin-left: 10px; margin-top: 0px; margin-bottom: 0px;" border="0">- Így van. De hozzá kell             tennem, mindannyian tudjuk, 
+hogy a rendőrségnek milyen ügyei vannak. Gyilkosságoktól kezdve             rablásokon át ezeregy 
+ügy, ami fontos, amire azt mondja az ember józan paraszti ésszel,   hogy   igen,         azt fel 
+kell deríteni, ki kell nyomozni, hogy ne gyilkoljanak az utcán, legyen   rend.   Az, hogy     valaki 
+    warezol, Pistike filmeket tölt le, az nem egy ügy. Mindenki nagyon   jól   tudja. A BRFK-n   is  
+ tudják,     nem egyszer volt ott "mesedélutánunk", ahol elmagyaráztuk,   hogy   egy-egy ilyen   
+warezos   ügy miért nem     halad. Azért nem, mert az ilyen eseteknél   hasraütéssel   
+megállapítanak   egy   kárértéket, teszem azt,     365 millió forint. De hol van ez a   pénz? Ezt 
+nem   egy bankból   rabolták   el, és valaki eldugta. Ez nem     egy olyan pénz, amit   valaki 
+valakinek   átutalt, vagy   valaki ezt   költi. Ez egy fiktív összeg, egy     teoretikus   érték. 
+Attól, hogy én   felteszek egy   CD-t, és azt te   letöltöd, teszem azt, egy 1500       forintos 
+SMS-ért, abból nekem   lesz 500   forintom, ennyi az én   hasznom. De a kárérték, amit ez   esetben  
+   megállapítanának,   húszezer   forint. De ez a pénz nincs   sehol! És a rendőrségnek is   ez a 
+problémája.       Megállapítanak egy   ilyen kárértéket, jó, és? Mit   tudnak vele   
+kezdeni?<br><br>Nálunk       SMS-webszervereket foglaltak   le. Warezszerver nem volt.   Bárki, aki  
+ azt állítja, hogy voltak,       hazudik. Nincsenek, nem voltak   warezszerverek. Nem fogják     
+kimutatni, hogy mi abból az   állítólagos     sok százmillió forintból   profitáltunk, akár a     
+cégtulajdonos, vagy bármelyikünk,   fel kell majd adniuk     ezt a nagy   összeesküvés-elméletüket.  
+ Még   egyszer mondom, itt külső   ügyfelek voltak. Senki nem     gondolhatja   komolyan, hogy több  
+ száz   SMS-webet mi ketten-hárman   üzemeltettünk! Ez iszonyatos munka     lenne,   teljesen   
+irracionális.   Ügyfelek vannak,   szerződéses ügyfelek, akik behoztak gépeket a mi         
+szervertermünkbe, és csináltak   rajtuk   SMS-webet. Az, hogy ők ezt hogyan reklámozzák, hogy ők     
+hogyan     tárolják ezeket a   tartalmakat,   hogyan fizetik ki a felhasználóikat - nem a mi     
+problémánk. Mi     SMS-katalizációt   végeztünk,   amit például a Vodafone is végez, amibe nem lehet 
+    belekötni. Ha a     felhasználók   esetleg   illegális tartalmat tettek közzé, ez miért a mi   
+hibánk?   Mi az     Internet-kapcsolatot adtuk     legálisan, számlával. Akkor most mi warezoltunk?  
+ A faszt. Az   ügyfél     warezolt.     Ennyi.<br><br><span style="font-style: italic;">- Nektek   
+azért volt egy   hírnevetek az       internetes   körökben. Hogy mennyire igaz vagy nem igaz, az   
+mindegy, de biztosan   lesz, aki   felkapja a     fejét,   hogy nahát, a Bajának még van pofája azt  
+ állítani, hogy náluk nem   volt   warez, sose csináltak       semmit, és ártatlanul üldözik őket.   
+Minek tulajdonítod, hogy pont a     ColdFusionről voltak ilyen       pletykák, hogy nagy   
+warezközpont, meg hogy a magyarországi spamek     jelentős része tőletek származik?       Ennek   
+nincs alapja?</span><br style="font-style: italic;"><br>- A forgalmunkat meg lehet nézni, 6         
+gigabit körül volt. Más szolgáltatóknak ennek     a többszöröse a forgalma. Az, hogy warezközpont    
+     lettünk volna, ez ebben a felfogásban, ebben   a   formában nem igaz. Én nem mondtam azt, hogy  
+       alaptalan, de... Itt van egy vád, amit ők     kreáltak, és majd ők bebizonyítják, hogy ez a 
+vád   igaz-e       vagy sem. Hozzáteszem, én ebben a     vádban, a szerzői és szomszédos jogok   
+megsértésében nem érzem       magam bűnösnek, mert ellenem     többek között volt egy vagyonosodási  
+ vizsgálat is. Most zárult le, fél       éve. Öt évre, sőt,     bizonyos téren régebbre is 
+kiterjedt,   és minden vagyonomat átvilágították.       Mindent! És nem     büntetett meg az APEH. 
+Nullás lett a   vagyonosodási vizsgálatom, bárkinek meg tudom       mutatni.     Ezek után nem 
+tudom, az NNI hogy   fogja azt bemutatni, hogy nekem titkolt jövedelmem lett       volna     a 
+warezből.<br><br><span style="font-style: italic;">- Azért legyünk őszinték, a   normálisan         
+működő vállalkozásokra   nem jellemző, hogy a vezetőik több országban tartanak fenn   fiktív     
+lakcímeket,     kapcsolatot   tartanak a rendőrséggel, és előre szólnak nekik, ha rájuk       
+mozdulnak...</span><br style="font-style: italic;"><br>- Persze, mert mi nem csak ezzel       
+foglalkoztunk, mi sok   mindennel     foglalkoztunk. Az, hogy informatika meg szerverek, ez egy 
+dolog       volt a sokból.   Én nem azt mondom,     hogy mi százszázalékosan legális mintapolgárok 
+voltunk, nem       ezt mondom.   De az, ami most megy,     túlzás. A spamekkel kapcsolatban annyit 
+szeretnék mondani,       hogy a   Spamwiki is megírta, milyen     érdekes, hogy a ColdFusiontól jövő 
+spamek három hónapja         megszűntek. Mi harcoltunk ugyanis a spam     ellen! Az, hogy az 
+ügyfelek spameltek, egy olyan     dolog.     Így reklámozták magukat - nem mi, hanem, még     
+egyszer mondom, az ügyfelek! Nem is a mi         hálózatunkból. Kérdezem én, hogy lehet ezt 
+megállítani? A     Spamwiki javaslata az volt, hogy         minden ilyen ügyfelet basszunk ki. 
+Nagyon jó! Ennyi erővel minden     ügyfelet kibaszhatunk.   Aztán       végül sikerült bizonyos 
+rendszabályokkal megállítanunk, és a Spamwiki     is   megjegyezte, hogy   jé, a     HostInWesttől 
+nem jön több spam, biztos új ember jött, aki végre... de       nem! Egyszerűen       elbeszélgettünk 
+az ügyfelekkel, és belátták, hogy a spam több feszültséget   okoz,     mint   amennyi     hasznot 
+hajt. Jött a Spamwiki ezzel, hogy azonnal szüntessük meg. Mit   azonnal? Nincs       ilyen, hogy     
+azonnal, minden egy folyamat. Beszélni kellett az ügyfelekkel,   meg kellett őket   győzni,         
+alternatív reklámforrásokat biztosítani. Amikor ez megvolt, a   spamek   megszűntek.<br><br><span style="font-style: italic;">- Norbertka, aki most előzetesbe   került, nem   volt túlzottan népszerű 
+        személyiség. Beszélték róla, hogy lehúzta az   embereket, a kiírtnál   magasabb összegű 
+díjat szedett   az       emelt díjas SMS-ért, aztán nem is   adott érte semmit. Ő is   a csapat 
+tagja volt. Hozzá hogy         viszonyulsz? Igaz ez a   híresztelés, és ha igen, miért   tűrtétek 
+el?</span><br style="font-style: italic;"><br>-   Norbertkának egyetlen torrent site-ja volt,   ezt 
+mindenki tudja, illetve az sem az övé           volt, csak menedzselte. SMS-webes oldalai pedig   
+nem voltak. Nekem sem voltak, és a csapatból       senki     másnak sem. Még egyszer elmondom, mi   
+azzal foglalkoztunk, hogy ügyfeleket toboroztunk,       adtunk   nekik   sávszélességet, 
+katalizációt,   SMS-webes megoldást. Ennyi. Nem spameltünk, nem       SMS-webeztünk,   nem   húztunk 
+le senkit. Ha   bárki az oldalára 1500 forint helyett 300 forintot   írt     ki, mert valóban   volt 
+  erre példa, és   bejelentették, szóltunk az ügyfélnek, és   megszüntette.     Norbertka nem 
+csinált       ilyeneket.<br><br><span style="font-style: italic;">-   És mit fogsz most     
+csinálni? Kikergettek   innen,     elmenekültél Európából, mihez fogsz   kezdeni?</span><br style="font-style: italic;"><br style="font-style: italic;">- Hát... pihenek. Ha   meguntam, majd    
+ eldöntöm. Most elsősorban nem   azon     spekulálok, hogy bármilyen üzletet   csináljak, pláne nem  
+   Magyarországon. Ismerkedem a   tájjal, tanulom     a nyelveket.<br><br style="font-style: italic;"><span style="font-style: italic;">- Nem is jössz     vissza többé   
+Magyarországra?</span><br style="font-style: italic;"><br>-   Elképzelhető, mert miért is       
+jönnék. Azokat, akikkel     üzleteltem, akik a barátaim voltak, az   NNI egyszerűen sittre küldte. A 
+      cégemet szétverték.     Kihez, mihez jöjjek vissza? Anyámék   vannak egyedül, de ők meg tudnak 
+  menni     bárhová, bármikor vehetek nekik repülőjegyet. Ami   Magyarországon volt, egy élet       
+munkája, azt mind     tönkretették.<br><br style="font-style: italic;"><span style="font-style: italic;">- Lehetséges,     hogy ezt az interjút később még   folytatjuk?</span><br style="font-style: italic;"><br>- Lehet.     Tudod, az NNI-nél sem minden full   fehér. Most nem   
+beszélek erről, de talán     majd legközelebb. Per     pillanat megnézem, milyen   irányban haladnak 
+  tovább. Mint mondtam, az aktáikat     nagyjából   hetente   naprakészen látom. Ami   folyik, az   
+teljesen igazságtalan és megalázó. Hat embert     úgy   tartanak   előzetes   letartóztatásban, hogy 
+  abszolút semmilyen bizonyíték nincs, még a gyanú alapja       is   hiányzik.   Csak bent tartják   
+őket - mert megtehetik. Ilyet te is láttál nemrég. Elég           közelről...<br><br><span style="font-style: italic;">(Ez az interjú pénteken készült. Baja azóta nem         jelentkezik.   
+Senki sem tudja, mi történt vele.)</span><br style="font-style: italic;"><br></div>              
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-06-10&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2272&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2272&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2272&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2272&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2272&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2272&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2272&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2272&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2272&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2272&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2272&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=2272&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=2272&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=2272&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=2272&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=2272&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173599"></A>140. rotinka</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-06-13 12:27:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4614.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Hát senki nem veszi észre, hogy nem a történetről van szó, hanem a módszerekről amivel ezt végre lehetett hajtani?!<br />
+Az, hogy mindenféle magánszféra sutba van hajítva, a dologhoz semmi köze- nem -lévő családtagok is ki lettek fosztva, csak mert az ÁVH-t valaki megbízta, hogy söprögessen az ő érdekében a piacon.<br />
+Ez a dolog lényege, s nem az ki mit csinált hanem, hogy ki mit veszíthet ez ázáltal. Legközelebb a sarki fűszerest is kirámolhatják, mert "veszélyezteti " valami mondvacsinált érdekek köreit.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173582"></A>139. Androl</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-06-13 10:09:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">most mi a faszomért kellene ezt a nyikhajt sajnálnom.....Hibázott.rábaszott...ennyi...<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173440"></A>138. Babylon</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-06-12 01:43:09</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_763.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Amúgy Teenburg ;)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173354"></A>137. gavai</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-06-11 15:38:08</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Komolyabb bűncselekmények elkövetésére is alkalmas egy ilyen kiépítetettségű logisztikai háttér, szakértelem, kapcsolatrendzser .<br />
+Ami nekem az interjúból még átjött, nagy valószínünüséggel itthon bújkál.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173348"></A><FONT COLOR="#FF0000">136. </FONT>Ju-86</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2272&id=173343#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-06-11 14:52:19</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173346"></A><FONT COLOR="#FF0000">135. </FONT>IronLowrider</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2272&id=173325#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-06-11 14:15:20</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_4347.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173343"></A><FONT COLOR="#FF0000">134. </FONT>start3</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-06-11 13:36:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_833.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173338"></A><FONT COLOR="#FF0000">133. </FONT><A HREF="mailto:daveslim@gmail.com" STYLE="color: #000000">Dave Slim</A></A></TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-06-11 12:51:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173336"></A><FONT COLOR="#FF0000">132. </FONT>Qdi Ace</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2272&id=173335#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-06-11 11:33:03</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2996.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment173335"></A><FONT COLOR="#FF0000">131. </FONT>Ju-86</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2272&id=173269#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-06-11 11:27:02</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2272&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2272&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2272&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2272&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2272&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2272&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2272&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2272&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2272&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2272&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2272&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=2272&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=2272&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=2272&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=2272&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=2272&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=1" TARGET="_blank"><IMG SRC="./resources/banners/illatosut6.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

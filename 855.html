@@ -1,0 +1,553 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//www.bombagyar.hu"><IMG SRC="./resources/cornericons/budahazy_cornericon_0.gif" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=855#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: A holokauszt-emléknapra";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_208.jpg" BORDER=0></TD><TD CLASS="postheader" VALIGN=TOP>A holokauszt-emléknapra<BR><DIV CLASS="postheader_small">Blog - Blogin</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2008 április 16. 10:42:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_855.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Mint ismeretes, ma van a   
+holokauszt ikszedik emléknapja az évben. Sokan azt feltételezik rólunk, hogy mi azt állítjuk: nem is 
+  volt holokauszt. Holott ez is a tipikus csúsztatás valójában: ők holokauszttagadónak neveznek   
+bennünket, pedig mi nem tagadjuk a holokauszt tényét. Holokausztrevizionisták vagyunk, azaz a   
+holokausztnak nevezett történelmi folyamat okát és méretét vizsgáljuk, véleményünk pedig eltér a   
+dogmatikusan lefektetett, ma történelminek nevezett hivatalos véleménytől.<br><br>Tudjuk, hogy a II. 
+  világháború során a III. Birodalom embereket munka- és koncentrációs táborokba szállított, ott   
+dolgoztatott. Azt is tudjuk, hogy ez előtte is így volt más háborúkban, sőt utána is így történt.   
+Tudjuk, hogy az Izrael&#8211;Libanon krízis idején a zsidó állam a határnál hasonló táborokat   
+létesített.<br><br>Nem tagadjuk, hogy a koncentrációs táborokban sokan meghaltak, véleményünk   
+szerint pedig minden emberéletért kár. A mai napon, a magyar holokauszt emléknapján megemlékezünk   
+minden ártatlanra (és nem csupán a zsidókra!), akiknek azért kellett meghalniuk, mert nemzetközi   
+érdekcsoportok zsidóellenes hangulatot keltettek, majd pénzelték a háborút (arról a Bombagyáron   
+többször olvashattatok, hogy Hitlernek például szabadkőműves zsidók adtak gyorshitelt, hogy a   
+háborúba léphessen).<br><br>Álláspontunk szerint a táborokba szállított zsidók olyan ártatlan   
+emberek lehettek, akik nem tudtak semmit a fejük fölött mozgolódó politikai-gazdasági eseményekről,  
+ nem voltak részesei a pénzmachniációknak, melyek révén Németországban antiszemita mozgalmak   
+alakultak, egyébként nem alaptalanul.<br><br>Nem hisszük el, hogy a II. világháborúban Hitler   
+genocídiumot tervezett: véleményünk szerint nem logikus a táborokba szállítás komoly logisztikai   
+feladatát és terhelését felvállalni, ha csupán embereket akarunk ölni. Véleményünk szerint nem lett  
+ volna medence, bordélyház egyes táborokban, ha azok megsemmisítő táborok lettek volna. Hitler és   
+vezetése sosem használta a haláltábor kifejezést, egyetlen hivatalos iratban vagy beszédében (még a  
+ Mein Kampfban sem!) hangzott el a kiirtásra utaló mondat (holott már Richard Wagner is emellett   
+érvelt jóval korábban). Nem hisszük, hogy a népirtásra készülők komoly orvosi ellátást nyújtottak   
+volna a megbetegedőknek (lásd Simon Wiesenthal, a nácivadász könyvét), és azt sem, hogy ők a háború  
+ végén nagyobb fejadag ételt juttattak volna a raboknak, mint amennyit a német nép tagjai   
+kaptak.<br><br>Nem tagadjuk a táborok szörnyűségeit, elismerjük, hogy sokan haltak meg. Úgy véljük   
+azonban, hogy főként járványokban, fertőzésekben, az akadozó ellátás miatt. Véleményünk szerint a   
+szövetséges hatalmak bűnösök, amiért szétlőtték az utánpótlást szállító   
+vasútvonalakat.<br><br>Mélységesen elítéljük, hogy egyesek hasznot kívánnak húzni bármilyen   
+emberéleteket követelő borzalomból. Nem fogadjuk el, hogy jócskán felnagyítva a szörnyűséget sokan   
+jogtalanul követelnek kártérítéseket vagy másokat a kollektív bűnösség miatt ártatlanul is elítélnek 
+  (lásd Magyarországot mint az utolsó csicskást, ahogy mondják). Ellenezzük, hogy a holokauszt még a 
+  nemzeti tragédiák elé is kerül. Közel sem esik annyi szó a kommunizmus százmillió áldozatáról, a   
+gulágokról, mint a holokauszt állítólagos hatmillió halottjáról. Ezt nemtelennek és   
+tisztességtelennek tartjuk.<br><br>Felháborítónak és az egyetemes emberi jogokat sértőnek gondoljuk, 
+  hogy a holokauszt nevű történelmi folyamat puszta vizsgálatáért, új adatok kereséséért, a régiek   
+megkérdőjelezéséért egyes országokban börtönbüntetés jár. Elfogadhatatlannak és árulkodónak tartjuk, 
+  hogy míg a tatárjárást lehet tagadni (bár épeszű ember nyilvánvalóan nem tenne ilyet), vizsgálni 
+is   megkötések nélkül, addig a nem is olyan régen történt holokausztról az elfogadotton kívül 
+véleményt   mondani nem szabad, azért holokauszttagadás címmel szabadságvesztés járhat. Szerintünk 
+az igazságot   nem kellene törvénnyel védeni.<br><br>Átlátszónak tartjuk a szinte évenkénti 
+történeti változásokat.   Míg a cigányok irtásáról, a porajmosról a nyolcvanas években szinte szó 
+sem esett, ma már a négerek,   sőt AIDS-esek világháborús népirtásáról is hallani (holott a 
+negyvenes években még nem volt ismert   HIV-vírus!). Auschwitz csak az utóbbi néhány tíz évben 
+lépett elő haláltáborrá: legelőször pedig   négymillió ember elgázosításáról beszéltek, míg 1991-ben 
+minden megjegyzés nélkül cserélték le a   bejáratnál található táblát 1,1 millió áldozatra. 1992-ben 
+David Cole egy videón járta be a   helyszínt, ahol az idegenvezető valótlanságokat állított. Mikor 
+szembesítették az igazsággal,   elismerte, hogy nem eredeti a gázkamra, melyet eredetiként mutatnak 
+be a mai napig. A legújabb   elmélet szerint egy, a tábor melleti faházban (!) történtek a 
+kivégzések. A Zyklon-B rovarölőt (mely   lassan hat, nem érthető, miért nem használtak erősebb 
+mérget, ha gyilkolni akartak) korábban úgy   mutatták be, hogy a zuhanyrózsából ömlött. Miután 
+rámutattak, hogy ez nem gáz, hanem granulátum, már   azt mondták, hogy a tetőn vágott lyukakban 
+dobták be. Állítólag elégették az embereket (a vallomások   szerint tíz perc alatt, holott egy test 
+legalább másfél óráig ég, mire hamu lesz, és akkor sem   tömegben, mert az oxigénhiány miatt 
+elaludna a tűz), de egy testből cipősdoboznyi hamu lesz. Soha   nem találták meg a keletkezett több 
+százezer tonnányi hamut.<br><br>Nem tartjuk elfogadhatónak, hogy   zsidó revizionisták műveit 
+tiltják: a holokauszttúlélők gyermekeként a úgynevezett holokausztiparról   (a holokausztra 
+telepedett, abból gazdasági hasznot húzó nemzetközi érdekszövetségről) könyvet író   Norman 
+Finkelstein vagy akár Jack Bernstein és sok más történész, kutató vagy túlélő művét   
+félremagyarázzák vagy személyüket lejáratják, ellehetetlenítik. A párbeszéd és viszontérvelés   
+helyett tiltások és büntetések érik azokat, akik tisztán szeretnének látni.<br><br>Véleményünk   
+szerint mindez és az, hogy sokan hasznot remélnek a holokausztból, méltatlan a halottak emléke   
+előtt. Biztosak vagyunk benne, hogy az, aki egy családtagját veszítette el egy háborúban (történt   
+bár az bármelyik ország munkatáborában vagy a harcmezőn a hazáért harcolva homályos érdekek és   
+parancsok miatt), hasonlóan elfogadhatatlannak tartja a számháborúzást, amelyet azok folytatnak,   
+akik mind nagyobbra és nagyobbra próbálják fújni a történteket. Ők nem érzik át, hogy nem a halottak 
+  száma, hanem puszta létük a katasztrófa. Azok, akik bűnösöket próbálnak keresni, gyűlöletet   
+próbálnak ébreszteni, pedig a bűnös nem mindig az, aki a követ dobja, hanem az, aki miatt dobják a   
+követ. Béke a halottak poraira, és legyen béke a ma élőknek is, hogy végre feltáruljon az igazság!   
+És béke saját halottainknak is, akikre talán már senki sem emlékszik, mert annyi más halottat   
+vagyunk kötelesek megsiratni.<br><br> </div>  </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2008-04-16&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=25" TARGET="_blank"><IMG SRC="./resources/banners/kirabanner.png" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=855&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=855&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=855&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=855&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=855&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=855&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=855&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=855&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=855&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=855&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=855&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=855&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=855&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=855&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=855&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=855&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment51003"></A>147. Frigo</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=855&id=49813#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-19 15:46:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_697.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Aláírtam. Vesszen Slota és a rasszista kurva bandája.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50998"></A>146. Frigo</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=855&id=49881#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-19 15:43:14</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_697.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">" Németországnak olyan gazdasága volt, mint az álom. Miért kellett volna bárkinek is hitelt adnia? "<br />
+Nézd már meg amerika gazdasága hogyan alakult egy tizedakkora országgal vívott háború alatt. Nem véletlenül mondják hogy mi kell a háborúhoz...<br />
+<br />
+" Én úgy emlékszem, hogy az amerikaiak röhögve lőtték a fegyvertelen arabokat. Az izraeliek meg főleg azt csinálják. "<br />
+Asszem már le lett tisztázva mit értenek a muzulmánimádók civileken, és mit értek én civileken. Az emberi pajzs és a kollaboráns nem az.<br />
+<br />
+" A gázmesét gondolom te se hiszed el. "<br />
+Már mondtam; amíg egy revizionista nem tereli be magát, és hasonló barátait egy gázkamrába vagy annak _pontos_ rekonstrukciójába, és nem ismétlik meg az egész vígjátékot _ellenőrzött körülmények között_, addig nincs miről beszélni. Vajon miért nem tette meg ezt senki se eddig.<br />
+<br />
+" A holokauszt amúgy egy görög szó, égést jelent. Ez abból adódott, hogy a holokamuzás legelején nem gázosítás volt a történet, [...] "<br />
+<B><a href="//en.wiktionary.org/wiki/holocaust" target="_new" style="color: #000000;">http://en.wiktionary.org/wiki/holocaust</a></B><br />
+<B><a href="//en.wikipedia.org/wiki/Holocaust_%28sacrifice%29" target="_new" style="color: #000000;">http://en.wikipedia.org/wiki/Holocaust_%28sacrifice%29</a></B><br />
+<br />
+" Ez meg nem a Mein Kampfból van. Rákerestem macskakörmökkel a googlen, az egyetlen amit kidobott, az a te hozzászólásod volt itt a bombagyáron. "<br />
+Mert mondjuk nem a pontos szöveget kéne keresni, mert mindig lehetnek benne elírások, meg bugok a keresőmotorban. Főleg ha fordításról van szó. <br />
+<B><a href="//gutenberg.net.au/ebooks02/0200601.txt" target="_new" style="color: #000000;">http://gutenberg.net.au/ebooks02/0200601.txt</a></B> - Volume II; Chapter XV; "At the beginning of the War, or even during the War" [...]<br />
+<B><a href="//ia331334.us.archive.org/2/items/meinkampf035176mbp/meinkampf035176mbp_djvu.txt" target="_new" style="color: #000000;">http://ia331334.us.archive.org/2/items/meinkampf035176mbp/meinkampf035176mbp_djvu.txt</a></B> - 984 MEIN KAMPF; "If, at the beginning of the War and <br />
+during the War" [...]<br />
+Nem ellenőriztem hogy a német verzióban is benne van-e, nekem elég volt hogy két angol fordításban is benne van, és sajnos nem beszélem Hitler és Marx kedvenc nyelvét.<br />
+<br />
+" Ha Gyurcsány nem tudja eltitkolni, hogy lop, csal, hazudik, akkor szerinted vagy 12 millió ember elgázosítása nem tűnt volna fel valakinek? "<br />
+Hitler már egyszer beszopta a közvéleményre gyakorolt hatását egy kiszivárgott infónak, - most hirtelen nagyon nem emlékszek rá mi a franc is volt az - aztán azután már kurvára vigyázott hogy ne nagyon szivárogjon ki semmi semmiről.<br />
+(Meg aztán ma is kurvára tudja ám az átlagember hogy milyen népirtások mennek. Akár külföldön, akár a saját országukban. Főleg a muzulmánok. Azok ha hall)<br />
+<br />
+" Azt írod, hogy a németeknél már csak a japánok voltak rosszabbak. "<br />
+Emberkísérletekre gondoltam. De valóban, érdemes lenne utánanézni hogy a szovjetek mennyire nyomatták az emberkísérleteket.<br />
+<br />
+" Senki sem hibás csak a nácik, ugye? "<br />
+Nácik által elkövetett népirtásban? IGEN. Ki más lenne a hibás?!<br />
+<br />
+" Talán bizonyítékokat kéne előtárni. "<br />
+<B><a href="//www.nizkor.org/" target="_new" style="color: #000000;">http://www.nizkor.org/</a></B> - Sok szerencsét az átnyálazásához.<br />
+<br />
+" A trolloket hogy hoztad össze a nácikkal? "<br />
+Blogint kérdezd.<br />
+<br />
+" A vöröskereszt dokumentációja valami 200ezer áldozatról ír. "<br />
+<B><a href="//www.nizkor.org/ftp.cgi/ftp.py?orgs/international/red-cross/300000-victims.response" target="_new" style="color: #000000;">http://www.nizkor.org/ftp.cgi/ftp.py?orgs/international/red-cross/300000-victims.response</a></B><br />
+<br />
+" Akkor nézd meg a One third of the holocaust filmet. Egy kis bódéban tesztelték és semmi bajuk se lett. "<br />
+Hallottam már erről a filmről, de még nem volt időm megnézni, fikázni meg főleg nem (gyakorlatilag most sincs időm, csak a napi fórumozási szükségletemet elégítem ki :D). Ellenben elnézegetve egy-két google keresést, eléggé sokan kitettek cáfolatokat, szóval nem hinném hogy túl nagy falat lenne.<br />
+<br />
+" A kutatások mást mondanak, de te biztosan jobban tudod. "<br />
+Hát olyan "kutató" én is vagyok mint a revizionisták.<br />
+<br />
+" Talán ha a magyar parlament [...] "<br />
+Én is elő tudok állni mindenféle összeesküvéselmélettel, meg hozzájuk mindenféle statisztikával, szájízem szerint leválogatott "bizonyítékkal", szövegtengerekből kipecázott idézetekkel, FUD-dal, hazugsággal, népi babonával, sztereotípiával, vélt vagy valós tulajdonságokkal, állami érdekekkel, és egyebekkel. És ha mégis, a logikát meg magát a valóságot is meghazudtolva, igaznak bizonyul egy olyan babó összeesküvés, amibe százszor annyi pénzt beleöltek, mint amennyiből ki lehetne építeni egy gazdag országot afrika kellős közepén, húsz fallal körbevéve, akkor azt mondom: Gratulálok nekik!<br />
+<br />
+" Ideje lenne már a magyar kiskatonákról is megemlékezni. "<br />
+<br />
+Mondjuk ha fele annyit foglalkozni a tisztelt jobboldal a babókkal, talán jutna idő nemzeti érzelműsködni is.<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50812"></A>145. Frigo</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-19 10:28:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_697.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ahhhahaha, milyen szöveget találtam.<br />
+<br />
+"This is just jew propaganda.<br />
+In reality Hitler gathered the jews in camps to give them food and shelter and pink teddy bears, but the selfish jews killed themselves to make him look bad."<br />
+</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50792"></A>144. 144. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-19 08:24:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A koncentrációs táborokhoz és gázkamrákhoz annyit, hogy egyik sem német találmány. Az 1900-ban folyó angol-búr háború alatt a brittek tudatosan alkalmaztak koncentrációs táborokat. Direkt rossz körülményű helyekre telepítették őket ahol a sárba, az időjárástól tépve éheztették halálra a civil rabokat. A gázkamra pedig amerikai találmány. Kivégzési célból hozták létre ami úgy nézett ki, hogy egy lezárt burokszobába egy székbe kötözték le a kivégzendőt és beengedték a gázt. Nekik azonban ez nem jött be hiszen feljegyeztek olyan esetet mikor a rab háromszor is kiszabadult kötelékéből, és újra kellett kezdeni a kivégzést.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50711"></A>143. toecutter</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-18 21:26:58</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1541.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">- A &#8222;Holokauszt&#8221; hazugság: Made in Amerika<br />
+<br />
+Senki sem vitatja, hogy mind Amerika, mind Németország, háborús óvintézkedései részeként, őrizetbe vette vette népességének bizonyos hányadát a 40-es években. Az Amerikaiak előszeretettel feledkeznek meg arról, hogy vagy 120 000 Japán nemzetiségű Amerikai állampolgárt tartóztattak le és zártak koncentrációs táborba az Egyesült Államok nyugati részén a háború végkifejletéig. Viszont nem engedik, hogy a Németek elfeledjék, hogy azok, Európa Németek által megszállt területein ugyanígy jártak el a babókkal, annak ellenére, hogy a Németeket ugyanaz motiválta cselekedeteikben, mint az Amerikaiakat a Japánokkal szemben &#8211; mégpedig az, hogy a babó nép egy meghatározhatatlan töredéke veszélyt jelentett a háborús erőfeszítés szempontjából és egyik ország sem volt hajlandó ezt a kockázatot felvállalni. Ezt senki nem vitatja. Ezek tények.<br />
+<br />
+Mindamellett ma már számos hiteles történész állítja azt világszerte &#8211; nyomós okkal &#8211; hogy a Német Birodalom soha nem adott ki parancsot a babók elpusztítására és hogy a babók koncentrációs táborokban váló gyilkolásáról festett kép hamis. A babók azért szenvedtek többet Németországban, mint a Japánok Amerikában, mert a Szövetségesek szőnyegbombázásai fokozatosan felmorzsolták Németország - a táborok fenntartásához szükséges - anyagi és humán erőforrásait. A háború vége felé már széleskörű volt az éhínség Németországban és ez nem kímélte a babókat sem. Azt se feledjük, hogy Németországnak jó oka volt a a babókkal szembeni bizalmatlanságra. A babók közössége, mint állam az államban, teljességgel és egy emberként árulták el Németországot az Első Világháború során, valamint üzentek hadat neki világméretű gazdasági és politikai blokádjukkal 1933-ban.<br />
+<br />
+<br />
+Az érthető ellenérzések dacára, amelyek Németországban a babókat kísérték, az országban nem volt sem emberek irtására használt gázkamra, sem krematórium. Ezeket azóta se találták meg. EGYET sem. Se nem készültek lámpaburák, se szappan. Nem létezett szadista összeesküvés, csakis egy elbukott háborús erőfeszítés &#8211; A Németeknek nincs és nem is volt miért szégyenkezniük. A babók szisztematikus irtására vonatkozó vád akkor is hamis volt, mint ahogy ma is az. Bizonyítékok és tanúvallomások lettek hamisítva és/vagy szándékosan elferdítve. Valójában a &#8222;Holokauszt&#8221; hazugsága Amerikában készült annak szellemében, hogy a német vezetők meggyilkolását - mint Németország alárendeltségének előfutárát -Palesztina cionista/babó megszállását és Amerika Európára ráerőltetett, Európa népeire nézve fajirtó jellegű eredményekkel járó politikáját mind a mai napig tartó hatással igazolja, szentesítse.<br />
+<br />
+<br />
+Európa valószínűleg legélesebb politikai elméje, az óriási politikai és történelmi ismerettel rendelkező német ügyvéd Horst Mahler a minap Teheránba készülődött, hogy a fentiekben említett témában hozzászóljon egy Iráni történészek által rendezett konferencián. Erre a Német kormány &#8211; melynek ezen ügyekben a mai napig nincs hatalma szuverén döntéseket hozni &#8211; azonnal bevonta útlevelét. 2006 Január 29.-én Mahler Úr levélben tiltakozott egy bizonyos Dehne nevű bírónál.<br />
+<br />
+<br />
+A következőkben ismertetjük a tiltakozás lényegi tartalmát, a lábjegyzetet kihagyva és némi rövidítést eszközölve, James Damon fordításában.<br />
+<br />
+&#8222;Talán még mindig nem jutott el az Ön tudatáig, hogy a világ babóságának szellemi vezetői - élükön a Robinson fivérekkel [Jacob és Nenemiah], a &#8222;diaszpóra babóságának királyával&#8221; Nahum Golgmann-nal, &#8222;Amerika Császárával&#8221;, Felix Frankfurter-rel, Roosevelt elnök &#8222;jobb kezével&#8221; Sam Rosenman-nal és Stephen Wise Ranagol-papval - valóban találkoztak és konspiráltak annak érdekében, hogy hihetőséget biztosítsanak a Nemzetközi Hadi-Törvényszék által kimondott hazugságoknak az úgynevezett Nürnbergi Per következményeképpen, ahol is a Birodalom vezetői ellen irányuló pert részleteiben és jó előre koreografálták.<br />
+<br />
+<br />
+&#8222;Az OMF[Organisational Form of a Modality of Foreign Rule &#8211; Idegen Fennhatóság Alatti Szerveződési Forma, értsd(jogi formula): a mai Német Szövetségi Köztársaság] &#8222;Holokauszt&#8221;-törvényei a sztálini kirakatperek a győztes Szövetségesek Nemzetközi Katonai Törvényszéke által Németországba bevezetett dicső bírósági hagyományait folytatják. Távol attól, hogy a realitás, igazságosság és jog szószólói lennének, ezek a törvények az akkori amerikai Főügyész, Robert Jackson szavaival: &#8222; a Szövetségesek háborús tevékenységének a folytatásai&#8221;. Az OMF/NSZK &#8222;Holokauszt&#8221; törvényeket betartató bíróságai nem mások, mint álca a Birodalom zsarnoki hatalmat gyakorló ellenségei számára.&#8221;<br />
+<br />
+&#8222;A Wehrmacht Második Világháborút követő feltétel-nélküli kapitulációját követően a Szövetségeseknek hatalmukban állott oly módon átírni a történteket, ahogy azt épp jónak látták. Nem nagy meglepetésünkre &#8222;bűnösnek&#8221; kiáltották ki Németországot, pont úgy, mint ahogy azt egyszer már megkísérelték megtenni az Első Világháború során. Ezután nekiláttak, hogy megteremtsék a háború utáni történelmi hazugságaikon nyugvó világrendjüket: a Globális Mammonizmust. Esély sincs arra, hogy ellensége-ink önként feladják a Birodalom felett aratott győzelmük gyümölcseit. Mindig is el voltak szánva arra, és ez a ma is így van, hogy vagyonuk eredetének titkát megőrizzék.<br />
+<br />
+<br />
+&#8222;Nincs amitől jobban félne az, aki hazugságra építette házát, mint az igazságtól, mely bármikor ledöntheti azt. Ezért van az, hogy a történetírás vonatkozásában az OMF/NSZK bíróságai kénytelenek fenntartani a győztes hatalmak hazugságainak hálóját, a Német közvéleménnyel teljességgel szembeszegülve. Ezek a bíróságok arra vannak kényszerítve, hogy a Birodalmi vezetésre a Nürnbergi (kirakat) Per által kimondott hazugságokat érvényben tartsák...<br />
+<br />
+&#8222;A Nemzetközi Katonai Törvényszék által 1945 Augusztus 8.án kiadott rendelet 19. cikkelyének megfelelően, a Törvényszék kivételt képezett a bizonyítási/bizonyítéki eljárási szabályok betartása alól. Ugyanezen rendelet a 20. cikkelye alapján ez a Bíróság kénye-kedve szerint utasíthatta avagy fogadhatta el az elé terjesztett bizonyítékokat. Így a védelem által cáfolatként használható bizonyítékokat gyakran el sem fogadták beterjesztésre.<br />
+<br />
+&#8222;A Nürnbergi Per ítéleteit a Második Világháború kitörésének okaira, valamint a Német katonai erők háború alatti cselekedeteire alapozták. Az idevonatkozó NSZK rendelet 7. cikkelye szerint, ezek a határozatok nem megkérdőjelezhetőek a Német bíróságok és hatóságok számára, még újonnan feltárt történelmi bizonyítékok fényében sem. Az iskolai tananyag vonatkozásában az Oktatásügyi és Művelődésügyi Minisztérium kötelessége ezen &#8222;tények&#8221; terjesztése, elsajátításuk számonkérése.<br />
+<br />
+&#8222;Dehne Úr, ön is nagyon jól tudja, hogy mit várnak öntől. A &#8222;Holokauszt&#8221; hazugságainak a történelmi igazsággal szemben való érvényre juttatásával Ön, közvetlen ügynöke lett ellenségeink rosszindulatú akcióinak. Az OMF/NSZK &#8222;törvényeinek&#8221; betartatása biztosítja, hogy soha semmi nem akadályozhatja a babók érdekeinek érvényesítését. A &#8222;Holokauszt&#8221; törvények ezt mindenütt nyíltan hangoztatják. Ez a helyzet kívánja meg azt, hogy röviden megvizsgáljuk a Nürnbergi Pert, mely a Nyugati Civilizáció szégyenfoltja lett.<br />
+<br />
+&#8222;A Törvényszék &#8222;feltalálásáért&#8221; két Litván babónak "lehetünk hálásak": a Jacob és Nenemiah Robinson testvérpárosnak, míg a tényleges megvalósítás a Babó Világkongresszus műve volt. A Zs.V. Elnöke, Nahum Goldman, a &#8222;babó diaszpóra királya&#8221; egekig magasztalta a törvényszék létrejöttét, mint a nemzetközi igazságszolgáltatás és humán erkölcsök legnagyobb történelmi jelentőségű megnyilvánulását. Nahum viszont be is számol nekünk arról, hogy milyen módon lettek a babó befolyás szálai megmozgatva annak érdekében, hogy az Amerikai Kormány is &#8222;harapjon&#8221;.<br />
+<br />
+<br />
+&#8222;Ezt írja:'A Robinson fivérek vezetésével, a Zs.V. Hatalmas energiákat ölt bele ezeknek a tárgyalásoknak a mentális, és morális előkészületeibe. A Roosevelt Kormányzat javára legyen írva, hogy kivétel nélkül magáévá tette ezeket az elveket és eloszlatta a Szövetségesek &#8211; különösen Anglia &#8211; aggályait.' Goldman visszaemlékezései elárulják miképpen is történt mindez:<br />
+<br />
+A háború 1941-42-es éveiben Genfből informáltak bennünket a babók koncentrációs táborok-béli pusztulásáról. Ez arra ösztökélte (Stephen)Wise-t, hogy meglátogassa az Elnököt, és rávegye, hogy a Szövetségesek figyelmeztessék a Németeket ennek a brutális eljárásnak a háború utáni következményeiről, valamint felelősségre vonásuk bizonyossága felől. Megállapodtunk Rosenmannal, hogy a hétvégén mind összejövünk nyári villájában, mely Roosevelt &#8222;Hyde Park&#8221;-jától nem esett messze, hogy megbeszéljük mit mondjon az Elnöknek Washingtonban hétfőn.<br />
+<br />
+<br />
+Forró nyári reggel volt amint ott ültünk Rosenman verandáján nyakkendő és zakó nélkül, amikor meghallottuk az Elnök autójának hangját. Azonnal rájöttünk, hogy az Elnök Rosenmant szándékozik meglátogatni. Elkezdtük magunkra szedni nyakkendőinket és zakóinkat, amikor Rosenman megnyugtatott bennünket, hogy ez nem szükséges, mivel Roosevelt nem ad a külsőségekre. Hamarosan az Elnök kocsija megállt a veranda előtt és még mielőtt üdvözölhettük volna elkezdett ugratni bennünket: 'Nocsak, hát nem érdekes? Sam Rosenman, Stephen Wise, és Nahum Goldman üldögél itt azon egyezkedve, hogy miféle utasítást kívánnak adni az Egyesült Államok Elnökének. Gondolják csak meg: Mit nem adnának a Nácik egy fényképért erről az összejövetelről'. Elkezdtünk dadogva szabadkozni arról, hogy egy sürgönyt kaptunk Európából, azt vitattuk, és, hogy Rosenman hétfőn akarta neki megmutatni. Erre Roosevelt kacsintott egyet és azt mondta: 'Semmi gond, Sam majd hétfőn meglátogat és elmondja mit kell tennem.'. Ezután elment.<br />
+<br />
+&#8222;Másutt Goldman a hatalom gyakorlásának örömeit még intimebben ecseteli: 'A csábítás igazi szenvedéllyé válhat...egy nő elcsábításának gyönyöre intenzívebb lehet egy pillanatra, de egy államférfi megnyerése nagyon is hasonló érzés...Az alatt a idő alatt, amit Amerikában töltöttem, minden elnöknek &#8211; Rooseveltnek, Trumannak, Kennedynek, Johnsonnak és Nixonnak is &#8211; megvolt a maga &#8222;udvari babója&#8221;, dúsgazdag emberek, ők pénzelték az elnökök választási hadjáratait és mellékesen befolyásos vezetői voltak a babók közösségeinek.<br />
+<br />
+Egy másik prominens &#8222;udvari babó&#8221; akihez Roosevelt személyesen is nagyon ragaszkodott Felix Frankfurter volt. Sok éven át Frankfurter Washington legbefolyásosabb embereinek egyike, mely befolyás résztvevőjévé tette az &#8222;Amerika Császára&#8221; gúnynévre ácsingózó vetélkedésben a babók köreiben. Frankfurter sok volt hallgatóját nevezték ki fontos posztokra Roosevelt kormányában. Goldman megjegyezte, hogy 'míg Frankfurter nem kívánt megjelenni a színpadon, annál nagyobb öröme telt a bábuk mozgatásában a színfalak mögött'.<br />
+<br />
+<br />
+Míg a Britt kormány az elfogott Német vezetőség &#8211; mintegy 50000 ember - sommás kivégzésének híve volt, Sztálin, a szívének oly kedves kirakatperekért epekedett. Az Egyesült Államokat is ez a megoldás érdekelte. A Nemzetközi Jog alapján viszont nem lehetett eljárást indítani katonák ellen, akik parancsot teljesítettek. Amikor Jacob Robinson ennek ellenére az elfogott Németek törvényszék által való vád alá helyezését javasolta, az Amerikai Legfelsőfokú Bíróság bírái bolondnak nevezték. 'Mi volt olyan szokatlan a Náci tisztek háborús tetteiben?' &#8211; érdeklődtek. Lehetséges, hogy magát Hitlert vagy még tán Gőringet is el lehetne ítélni, de hogy egyszerű katonákat, akik hűségesen teljesítették parancsaikat nem, az bizonyos. Végül is Robinson álláspontja meggyőzte a Legfelsőfokú Bíróság egyik tagját: Robert Jackson bírót.<br />
+<br />
+&#8222;Robert H.Jackson(1892-1954), Franklin Delano Roosevelt elnök egy közeli barátja és tanácsadója, Főügyész-helyettesi posztot töltött be 1936-tól 1939-ig, majd kinevezték Főügyésznek 1940-től 1941-el bezárólag. Azon a véleményen volt, hogy a tribunus a Szövetséges háborús törekvések folytatása &#8211; békeidőben. A háború végén azzal a megbízatással küldték Európába, hogy bélyegezze meg a törvény nevében Németországot mindörökre az agresszor nemzet - mely egyes egyedül felelős a Második Világháború kitöréséért és az azzal járó minden szenvedésért &#8211; bélyegével.<br />
+<br />
+<br />
+&#8222;Roosevelt utasítására Samuel Rosenman bíró már 1945 április elején Londonba utazott annak érdekében, hogy &#8222;Német Háborús Bűnösök&#8221; bíróság elé állításának kollektív módozatait kidolgozza. Április 5-én Sir John Simon, a Főkancellár, a Britt törvénykezés feje Hitler és Vezérkara tárgyalás nélküli kivégzése mellett érvelt. Sir David Maxwell Fyfe, a Britt Főügyész is arról tájékoztatta Rosenman-t, hogy ő, személyesen is ennek az eljárásnak lenne híve. Másnap viszont, mindezek ellenére azt nyilatkozta, hogy Washington ragaszkodik a bírósági tárgyalásokhoz a kivégzések előtt...<br />
+<br />
+&#8222;Nyilvánvaló, hogy azok, akik kifundálták a törvényszéki eljárást, meggyőzték a 'Britt törvénykezés fejét' egy &#8211; egy magas rangú nemzetközi Bíróság által kimondott<br />
+&#8211; KÉZENFEKVŐ ÉS NYILVÁNVALÓ bűnösség látszatát keltő nyilatkozat szükségessé-géről, a Német háborús bűnök és kriminalitás kezeléséhez. De létezik-e akár egyetlen bíró is, aki 50000 Nemzeti Szocialista fogoly, a Szövetségesek általi lelövetését bizonyítékának venné annak, hogy az az 50000 áldozat valóban elkövette azokat a kegyetlen tetteket, amiért végül is lelövettettek? Nem volt nagy az esélye, hogy találnak ilyet. Az a bíró, aki elfogad egy ilyen a hipotézist, mármint, hogy egy gyilkosra, pusztán azáltal, hogy maga is áldozattá vált, rábizonyosodott , hogy ő maga is főbenjáró bűnt követett el, és ezáltal bűnössége mindenki számára nyilvánvalóvá vált, nos, AZ a bíró maga is az elmegyógyintézetben kötne ki minden emberi számítás szerint.<br />
+<br />
+&#8222;Roosevelt halála után Truman elnök segédletével Rosenman hivatalosan is felajánlotta a győztesek bírósági eljárásának Főügyészi posztját Jackson számára. Egyetlen feltétel volt: A Nácikat egy becsületes és igazságos tárgyalás lefolyása után - fel kell akasztani. Jackson, örömmel és azonnal elfogadta a megbízást. Régóta dédelgette azt az elméletet, miszerint a huszadik században nem érvényesek a 19. század hadviselésére vonatkozó szabályok. Azt is vallotta, hogy az USA, világvezető szerepe folytán a világ akármelyik részén folyó bármely konfliktusba tetszése szerint beavatkozhat. Hangoztatta, hogy az USA, morális felsőbbrendűségét biztosítandó, fel van hatalmazva arra, hogy bizonyítsa, hogy ezek az &#8222;átkozott Németek az egyedüli felelősek&#8221; a háborúért... &#8222;Szükségünk van egy bűnbakra, melynek nyakába varrhatjuk a világ bűneit még egy jó darabig...&#8221; - hangoztatta.<br />
+<br />
+<br />
+A pert megelőző konzultációk alkalmával Jackson figyelmen kívül hagyta európai szövetségeseinek azon ellenvetéseit, miszerint Franciaországban lefoglalt okmányok egyértelműen bizonyítják, hogy a Birodalom nemhogy nem volt felelős a háború kitörséért, de, hogy valójában rákényszerítették azt. Rámutattak, hogy az iratok mind azt bizonyítják, hogy mind Anglia, mind Franciaország, mind az USA támogatta Lengyelországot annak Németországgal szemben felvett agresszív és csökönyös álláspontjában. Hogy Lengyelország kétszer is mozgósította csapatait mire Németország lépett. Hogy a Lengyel Rydz-Smigly marsall 1939 Júliusában nyíltan azt hangoztatta tiszti kara előtt Thorn-ban, hogy Lengyelország háborút akar és Németország ebben nem fogja tudni megakadályozni. Továbbá, hogy Roosevelt gyakorlatilag háborút üzent Németországnak 1941-ben. A Német Hadüzenet teljesen jogos és helyénvaló volt az amerikai provokációk a német hajózás elleni tükrében, valamint az Amerikai semlegesség megsértésével az Angliába irányuló fegyver és lőszerszállítmányaik következtében.<br />
+<br />
+&#8222;Ebből persze semmit nem használhatott a védelem az eljárás során. Németországot, mint az egyetlen felelőst, el kellett ítélni és az európai háborút Német agresszivitásként kellett beállítani. Taylor dandártábornok, a vád főtanácsadója, a tények ismeretében tiltakozott, mondván, hogy &#8222;egy becsületes eljárás során lehetetlen lenne Németország egyedüli felelősségének vádját elfogadtatni és hogy egy ilyen jellegű erőfeszítésnek az lenne a következménye, hogy ennek ellenkezőjére derülne fény&#8221;. Az USA-nak végül is sikerült belekergetnie Németországot a Lengyel csapdába: hiszen Churchill és Roosevelt a kezdet kezdetétől a Német Birodalom teljes megsemmisítését tűzte ki célul.<br />
+<br />
+<br />
+&#8222;Erre Jackson így vágott vissza: 'Ki beszél itt egy becsületes eljárásról? Persze, hogy a Németek meg fogják vádolni a a Szövetségeseket olyan politikai vezérelvek alkalmazásával velük szemben, ami háborúba kényszerítette őket. Fel vagyok rájuk készülve, mióta lefoglaltuk a Német Külügyminisztérium iratait. Mindegyik irat ugyanazt a következtetést vonja le: &#8222;Körbe vagyunk véve, tehát harcolnunk kell, különben megfojtanak bennünket. Nos, ha háborúhoz vezető politikai és gazdasági okoknak ezen elemzései hangot kaphatnának a per során, az számunkra katasztrófát jelentene. Beláthatatlan következményei lennének mind Európában, mind Amerikában&#8221;...<br />
+<br />
+&#8222;Taylor ezt a következőképpen összegezte: 'Tehát a kérdés felmerülését, hogy ki is kezdeményezte a háborút mindenáron meg kell akadályoznunk...egyszerűen nem hangozhat el'. Ez viszont csak akkor volt lehetséges, ha Jacksonnak, mint a legfőbb törvényhozónak sikerülne a per tökéletes lefolytatásához szükséges olyan jellegű szabályokat lefektetnie, melyek egyszerűen megtiltják a diskurzusokat a háború kitöréséért való felelősség témakörében. Jackson úgy értékelte Taylor ez irányú észrevételét, mint az irányvonalat, melyet követnie kell és megjegyezte: 'Ha a Bíróság az összes idevonatkozó megjegyzést és dokumentumot kizárja, mint nem tárgyhoz tartozó, jelentéktelen mozzanatot, s ebben az esetben a Nyugati Hatalmak, valamint a Szovjetúnió és Lengyelország háborús politikájára sem lehet majd hivatkozni.'<br />
+<br />
+<br />
+&#8222;Taylor e gondolathoz azt a metafórát kanyarította, hogy a két háború közötti Európa cápáktól hemzsegő lagúnáját egy olyan halastóként kellene feltüntetni, ahol is egyetlen ördögi csuka úszkál &#8211; magyarázta később Jackson &#8211; és ennek a csukának &#8211; természetesen Hitlerről van szó - , az eljárás végére át kellene vedlenie egy szörnyű gyilkos cápává, mely felfalná az összes többi kishalat, a világgal egyetemben. 1945 Június 6.-ára Jackson jelentése biztosította Trumant arról, hogy megvan az új jogi koncepció és tervezet az eljárás lefolytatására, és hogy annak szerves része lesz egy Londoni egyeztető konferencia a Szövetségesek jogi képviselőinek részvételével. Ez a konferencia Június 26.-a és Augusztus 8.-a között zajlott le.<br />
+<br />
+&#8222;A Francia Dr. Gros, a nemzetközi jogok professzora azzal kezdte felszólalását, hogy rámutatott: a hódító háborúk nem értelmezhetők a nemzetközi jog bűnös megszegéseként...ha viszont a háborút egyének bűncselekményeinek tekintenénk, akkor talán hivatkozhatnánk a törvényességre. A Szovjet küldött, Trainin pedig legutóbbi könyvére hivatkozva azt állította, hogy a Népszövetségben akkoriban uralkodó jogi szemlélet jegyében a hódító háború ugyan bűntettnek minősűl a nemzetközi jog szempontjából, viszont az csak kártérítési követelést vonna maga után, nem pedig bűnügyi eljárást. Trainin ugyan szeretett volna más következtetésre jutni, de, amint azt el is mondta, álláspontja szerint egy hódító háborúnak nincs személyre szabható bűnügyi vonatkozása. Ráadásul az 1945 Februárjában született Közös Jaltai Nyilatkozat nem említett semmiféle bűnügyi felelősségrevonást a háborút illetően.<br />
+<br />
+<br />
+&#8222;Jackson felháborodott ezekre az ellenvetésekre. Azt állította, hogy az Egyesült Államok totális háborút vívott, és nem volt tekintettel a nemzetközi egyezményekre akciói megtervezésében, amennyiben az ellenségnek nem volt esélye közvetlen és azonnali megtorlásra. Továbbá, mivel az USA a győztes szövetséges hatalmak közül a legerősebb, senki sincs abban a pozícióban, hogy meggátolja abban, hogy mindegyikük érdekében új irányelveket vezessen be. Erre alapozva dolgozta ki személyesen a vádirat tervét. Ez a következő pontokban volt összefoglalható: Agresszív(hódító jellegű)háború megindítása, Nemzetközi Békeszerződések és Szövetségek megszegése valamint a Nemzet-politikának háborús céloknak való alávetése. Kijelentette, hogy a háborús bűnökről szóló vádakat másodrendűekként értékeli.<br />
+<br />
+A további egyeztetések során kijelentette: 'Az Egyesült Államok érdekében áll, hogy kifejlesszen a nemzetközi jogban egy olyan (új)kategóriát, amely értelmében Németország háborús cselekedeteinek egészét büntetőeljárás alá lehetne vonni.<br />
+<br />
+&#8222;A francia másodfokú bíróság egyik bírója, Robert Falco viszont elgondolkoztatta Jacksont, amikor felvetette, hogy: 'ha megalkotunk egy ilyenfajta jogi konstrukciót, olyan bűntettekért fogjuk a Németeket elítélni, amivel a Szövetségeseket is meg lehet majd vádolni.' Tehát a probléma abból adódott, hogy hogyan is tudják majd a győztes hatalmak egy nemzetközi bíróságon pellengérre állítani és megbüntetni a Németeket a nemzetközi jog megsértéséért úgy, hogy közben a saját bűneik ne kerülhessenek az ítélőszék hatáskörébe. Várható volt, hogy a világ a győztesek arcába fogja vágni ugyanazt a sarat azzal, hogy &#8211; de hát ti ugyanezt cselekedtétek &#8211; és azok a bírák, akiket a semleges országok küldtek, egyszerűen ki fogják dobni a periratot.<br />
+<br />
+&#8222;Az egész egy nemzetközi vizsgálóbizottsággá fog korcsosulni&#8221;-siránkozott Falco, mire Jackson ejtette álarcát: &#8222;Vegye tudomásul, hogy ebből nem lesz holmi vizsgálóbizottságosdi, hanem Hadi-Törvényszék! És senkinek nem lesz beleszólása a bírák kijelölésébe, csak nekünk és csakis nekünk. Csakis a Szövetséges hatalmak országaiból fogjuk őket válogatni. Mi leszünk akik meghatározzuk a bíróság alapszabályát, összetételét, jogi szabályzatát. Mi leszünk a Vád és Itélőszék. Ebben a perben sem a vádlottaknak, sem a tanúknak nem lesz joguk, hogy szabadon tanúskodjanak, Hermann Göring esetleges kivételével.<br />
+<br />
+<br />
+&#8222;Ezen a ponton vetette közbe Prof. Gros, hogy ha törvényhozók, ügyészek és bírák ugyanannak a hatalomnak a képviselői, az magában is döntő erejű érvként szól a Törvényszék ellen: &#8222;Pályafutásom során még nem találkoztam olyan jogi szervezettel, amely ezt jogosnak és törvényszerűnek minősítené&#8221;. Azután felvetette: &#8222; akárhogy is van, hogyan is lehet olyanokat, akik nem követtek el bűncselekményeket vád alá helyezni és elítélni? Mi, Franciák lehet, hogy úgy vélnénk, hogy bár ez politikailag kívánatos lenne, viszont lehetetlennek tartjuk a Nemzetközi Jog értelmében.&#8221;<br />
+<br />
+&#8222;Jacksonnak erre nem volt mit mondania, csak azt jegyezte meg cinikusan, hogy:&#8221; A nemzetközi jog erőtlen és zavaros ebben a vonatkozásban...egyszerűen el kell majd hitetnünk, hogy a Németek személyesen felelősek&#8221;. Professzor Gros még most sem tudta elfogadni a gondolatot és így érvelt: 'A tettek, amikkel a Német vezetést meg lehet vádolni nem jelentenek újdonságot a háborúk történetében, de a tény az, hogy eddig senki nem nyilvánította az ilyesfajta cselekedeteket a Nemzetközi Jog bűnös mértékű megszegésének. Ha most mi itt ezt megtesszük, a vizsgált tett elkövetése utáni törvényhozás vétségét követjük el.&#8221; A professzor érvelése nem hatotta meg Jacksont a legkisebb mértékben sem: &#8222;Lehet, hogy igaza van&#8221; -válaszolta &#8211; és pontosan ez okból kifolyólag, a Nemzetközi Jog sarokköveinek értelmezéséről szóló elmélkedéseket a minimumra kell szorítanunk a tárgyalóteremben&#8221;. Itt az Angol Főügyész is bekapcsolódott és hozzátette:" Amit mi el akarunk kerülni az eljárás során, az annak a megvitatása, hogy maga az eljárás törvényes-e a Nemzetközi Jog vonatkozásában. Ezt úgy fogjuk elérni, hogy egyszerűen ki fogjuk nyilatkozni mi is a Nemzetközi Jog idevonatkozó szelleme és ezután nem fogjuk engedni, hogy ezeket a pontokat megtámadják."<br />
+<br />
+Jackson erre erre így foglalta ösze a tanácskozás határozatait: "Önnek tökéletesen igaza van. Hiszen a Szövetségesek jogilag a mai napig háborúban állnak Németországgal, annak ellenére, hogy annak minden politikai és katonai intézménye összeomlott. A mi Katonai Törvényszékünk a Szövetséges háborús erőfeszítések folyamatosságát jelképezi...És mint Győztesek, megkérdőjelezhetelen jogunknak tartjuk azon dokumentumok és szemtanuk a Bíróság előtti titokbantartását melyek ügyünket veszélyeztethetik" &#8211; "De hiszen ez az egész Európai Jogrend kiforgatása! Tehát mi itt nem az igazságot keressük, hanem pusztán jogi diadalt kívánunk aratni? -tiltakozott ismét Prof.Gros. "Így van" -válaszolta Jackson &#8211; "és mivel minden adu a kezünkben van, győzelmünkhöz nem férhet kétség".<br />
+<br />
+<br />
+"Így hát a Nürnbergi Per a mai napig is a hatalom diadalát szimbolizálja a törvény felett, melyet bírói tallárt öltött bűnözők követtek el.<br />
+<br />
+"1945 Aug.-án a Londoni Konferencia véget ért a "Tengelyhatalmak Fő Háborús Bűnöseinek Vád alá való helyezéséről és a büntetésvégrehajtásáról szóló Megállapodás" meghozatalával, mellékelve hozzá egy ezen Bíróság részére megállapított speciális cikkelyt. A Londoni Konferencia jegyzőkönyvei illegális kiadványként jelentek meg négy évvel később, a "Robert H. Jackson Jelentés" címmel. Amennyiben még 1945-ben napvilágot láttak volna, minden -az Angol Polgári Törvénykönyv &#8211; hatáskörébe tartozó bírósági határozatot azonnal törvénytelenné kellett volna nyilvánítani. Amennyiben a Bíróságok megismerték volna ezeket a határozatokat, nem maradt volna más választásuk, mint hogy megszakítsák az eljárásaikat és kidobják azokat, vagy teljesen ujrakezdjék őket. Azok a Bírák, akik jelen voltak a konferencián, tökéletesen tisztában voltak a következményekkel: minden ítéletet, mely a Nürnbergi Per lefolytatása előtt született, érvényteleníteni kellett volna. Ezek a Bírók késégtelenül kompromittálódtak. Kénytelenek lettek volna alkalmatlannak nyílvánítani önmagukat, de nem ezt tették. Ezen események pontos és részletes és dokumentált leírását megtalálhatjuk Hans Meiser a Das Tribunal "A Törvényszék" című művében, melynek egy elektonikus, digitalizált példányát itt csatolom.<br />
+<br />
+"Amikoris az ember rájön, hogy a Nemzetközi Törvényszék nem volt más, mint a Győztesek gyilkosságra való összeesküvése, azt is tisztán fogja látni, hogy azok az úgynevezett "bírók" Nürnbergben nem mást vittek végbe, minthogy törvényes leplet szolgáltattak a Birodalom Vezetőinek meggyilkolásához és irgalmat nem ismerve kiszolgáltatták a Német Nép egészét annak az Auschwitz-i furkósbotnak, melyet ellenségeink a mai napig arra használnak, hogy a Német Nép lelkületét pusztítsák.<br />
+<br />
+<br />
+"A Holokauszt "Kétségbevonhatatlan Nyílvánvalóságát" kijelentő OMF/Német Köztársasági bíroságok üres szólamokkal házalnak. Nem létezik bizonyíték az esemény valódiságára, melynek szellemét ezzel a harci kiáltással idézik, amit tökéletesen igazol Germar Rudolf : 'Vorlesungen über den Holocaust&#8212;Strittige Fragen im Kreuzverh&#1094;r' ('Lectures on the Holocaust&#8212;Controversial Issues Cross Examined'), (A Holokauszt Helyreigazítása &#8211; Vitatott kérdések a kereszt-tűzben)Castle Hill Publishers, P.O. Box 118, Hastings, TN34 3ZQ, UK (April 2005)[Amerikaiak, az <B><a href="//vho.org/store/USA" target="_new" style="color: #000000;">http://vho.org/store/USA</a></B> honlapról tudják megvásárolni, illetve letölteni ezt az illusztrált angol nyelvű 568-oldalas kötetet. A Castle Hill kiadó címe: 253 W. 72nd Street, #1711, New York, NY 10023 USA].<br />
+<br />
+&#8220;Nos, Mr Dehne, talán most már Ön is kezdi megérteni a rémületet, melyel a világ babóság az Iráni Elnök, Mr Ahmadinejad azon bejelentésére reagált, mely szerint Irán meg fog szervezni valamint szponzorál egy Nemzetközi Tudományos Konferenciát a Holokauszt hitelességének megállapítása érdekében. Ha az Ön szavainak értelmében, melyek szerint az én &#8211; Irániak szemében kívánatos &#8211; részvételem ezen a konferencián &#8220; komoly következményekkel&#8221; járna Szövetségi Köztársaságunk szempontjából, akkor azt hiszem Ön jellemezte a &#8220;Bundesrepublic&#8221;-unkat nem én, mégpedig oly módon, hogy ahoz nincs mit hozzátenni.<br />
+<br />
+<br />
+&#8220;A &#8220;Bundesrepublic&#8221; az 'alaptörvényével'(Basic Law) egyetemben szerte fog foszlani azon a szép napon, amikor is a Német Nép által SZABAD VÁLASZTÁS során elfogadott Alkotmány visszatér a Jogrendbe.(a Basic Law 146. Paragrafusa) Ez lesz az a nap, amikor is a Német Nép Alkotmányozó Országgyűlés útján fogja visszautasítani Birodalom ellenségei által rákényszerített történelmi hazugságokat és visszaköveteli szuverenitását. És ez a nap közelebb van, mint gondolná. A Teheráni Konferencia nagyban hozzá fog járulni a Szövetségi Köztársaság felbomlásához, mivel arra a hazugságra épült, amit Teheránban össze fognak zúzni: A Holokauszt hazugságára.<br />
+<br />
+&#8220;Befejezésül arra szeretném Önt emlékeztetni &#8211; írja Norst Mahler &#8211; hogy a Német Birodalom a mai napig létezik. A törvényei még mindíg érvényben vannak. Jelenleg nem lehet őket foganatosítani, mivel a Nemzetközi Joggal ellentétben álló idegen megszállás akadályozza a Birodalmat ebben. Amikor viszont a Birodalom hatalma visszaáll, az Ön tevékenysége Hazaárulásnak lesz minősítve.<br />
+<br />
+AustraliaFreePress.org<br />
+(ford:tc)<br />
+<br />
+<B><a href="//mitkereselitt.blogspot.com/2007/10/holokauszt-hazugsg-made-in-amerika.html" target="_new" style="color: #000000;">http://mitkereselitt.blogspot.com/2007/10/holokauszt-hazugsg-made-in-amerika.html</a></B></DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50536"></A>142. hungaricum</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-18 13:06:51</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_3540.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">a holojauszt emléknap margójára (de szól az "antifasisztáknak" is): most néztem meg Andrzej Wajda "Katyn" (ejtsd: Kátiny) c. filmjét. Nagyon jó a film, minden benne van a szovjet "antifasiszta" módszerekről és értékrendről. Mi mégis megtűrjük ezen világ örököseit (jogutódjait). Szörnyű!!!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50392"></A>141. 141. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-17 21:13:10</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">B.E.D.:Ez van, ezek már nagyon régen nem magyarok, csak a nyelvet beszélik.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50329"></A>140. pusztuljárulózsidesz</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=855&id=50270#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-17 19:14:27</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_2671.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Belógatnám a krokodilok fölé, hogy lassan cincálják szét. Ez tényleg egy überszarházi.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50313"></A><FONT COLOR="#FF0000">139. </FONT>JPP</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=855&id=50270#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2008-04-17 18:49:00</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1133.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment50270"></A>138. 138. Törölt felhasználó</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2008-04-17 17:15:45</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Történetesen, ma felbasztam magam (pontosabban ma is), reggel a kosuth rádióban bejátszottak egy részletet, vmi holokauszt vállalkozó főRanagol-papgecitől, aki az összes fröcsögés között azt is mondta, hogy "...a magyar újfasisztáknak van elég fantáziájuk, hogy hátulról körbetáncolják a totemmadarukat..." . <br />
+Hát a büdös kurva anyját ennek! Az egész magyarság oly dicső és nemes történelmi jelképét, mint a turult letotemezi?? Kevesen szapulják a babók oly nagyra tartott jelképeit, de azok sem a közrádióban, ez a senkiházi élősködő pöcspumpa meg a nemzetünk történelmét szarja le magasról???<br />
+Ha másért nem, ezértmár megérdemli, hogy utáljuk, de ezzel nem csak magának, hanem a vallástársainak is kurvára árt!<br />
+Mégegyszer hangsulyozom, a jó büdös kurva anyját a mazsihisz főRanagol-papjának, ugyanis ő fingta ki ezt a gyalázatot a mocskos pofáján!!!</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=855&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=855&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=855&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=855&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=855&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=855&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=855&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=855&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=855&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=855&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=855&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=855&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=855&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> <A HREF="./index.php?post=855&commentstart=120#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>13</B></A> <A HREF="./index.php?post=855&commentstart=130#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>14</B></A> <A HREF="./index.php?post=855&commentstart=140#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>15</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=15" TARGET="_blank"><IMG SRC="./resources/banners/karpatia_ujsag.jpg" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>

@@ -1,0 +1,607 @@
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; lang=hu; charset=iso-8859-2">
+
+<link rel="alternate" type="application/rss+xml" href="//bombagyar.hu/rss/rssfeed.xml" />
+
+<TITLE>
+bombagyár!
+</TITLE>
+
+<NOSCRIPT>
+<H1>KAPCSOLD BE A JAVASCRIPTET, ÁZZE!!</H1>
+Hol élsz te, 1995-ben?
+<BR><BR>
+</NOSCRIPT>
+
+<META content="Bombagyár" name=description>
+<META content="tomcat blogadmin blog bombagyár bomba szamizdat cigány zsidó csocselék droid cigánybunözés nemzeti terror terrorista média bajkevero rasszista náci kommunista droid droidzóna" name=keywords>
+<META content=all name=robots>
+
+<link href="./css/user.css" type="text/css" rel="stylesheet" title="UI CSS" />
+<SCRIPT LANGUAGE="JavaScript" SRC="./javascript/admin.js"></SCRIPT>
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function preloadimages() {
+
+    button01_off=new Image(); button01_off.src="./pic/button01_off.gif";
+    button01_on=new Image(); button01_on.src="./pic/button01_on.gif";
+    button02_off=new Image(); button02_off.src="./pic/button02_off.gif";
+    button02_on=new Image(); button02_on.src="./pic/button02_on.gif";
+    button03_off=new Image(); button03_off.src="./pic/button03_off.gif";
+    button03_on=new Image(); button03_on.src="./pic/button03_on.gif";
+    button04_off=new Image(); button04_off.src="./pic/button04_off.gif";
+    button04_on=new Image(); button04_on.src="./pic/button04_on.gif";
+    button05_off=new Image(); button05_off.src="./pic/button05_off.gif";
+    button05_on=new Image(); button05_on.src="./pic/button05_on.gif";
+    button06_off=new Image(); button06_off.src="./pic/button06_off.gif";
+    button06_on=new Image(); button06_on.src="./pic/button06_on.gif";
+}
+
+function modifyuser(userid) {
+   window.open('popup_modifyuser.php?userid='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=490');
+}
+
+function deleteuser(userid) {
+   if (confirm('Kéred a regisztrációd megszüntetését?')) { if (confirm('A merevlemezed teljes tartalma törölve lesz. Biztos?')) { alert('Csak vicceltem, ne szarj be.'); window.location = ('deleteuser.php?id='+userid); } }
+}
+
+function userdatasheet(userid) {
+   window.open('popup_modify_userdatasheet.php?id='+userid, 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=480');
+}
+
+function newpost(section) {
+   window.open('popup_edit_post.php?section='+section+'&id=-1', 'editorwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function modifypost(postid) {
+   window.open('popup_edit_post.php?id='+postid, 'formwindow', 'status=no,scrollbars=no,noresize,width=750,height=710');
+}
+
+function newuser(userid) {
+   window.open('popup_newuser.php', 'formwindow', 'status=no,scrollbars=auto,noresize,width=280,height=670');
+}
+
+function sections() {
+   window.open('popup_sections.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function usersettings() {
+   window.open('popup_usersettings.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=380,height=240');
+}
+
+function systemmails() {
+   window.open('popup_emails.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function users() {
+   window.open('popup_users.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function favourites() {
+   window.open('popup_favourites.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function faq() {
+   window.open('popup_faq.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function banners() {
+   window.open('popup_banners.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function cornericons() {
+   window.open('popup_cornericons.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function settings() {
+   window.open('popup_settings.php', 'formwindow', 'status=no,scrollbars=yes,noresize,width=520,height=380');
+}
+
+function userreminder() {
+   window.open('popup_userreminder.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=250,height=120');
+}
+
+function calendar(section, postdate) {
+   if (section == '') { section=0; }
+   window.open('popup_calendar.php?section='+section+'&postdate='+postdate, 'formwindow', 'status=no,scrollbars=no,noresize,width=270,height=220');
+}
+
+function addcomment(post, replyto, priv) {
+   window.open('popup_addcomment.php?post='+post+'&replyto='+replyto+'&private='+priv, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+function modifysuperuser(id) {
+   window.open('popup_modify_superuser.php?id='+id, 'formwindow', 'status=no,scrollbars=no,noresize,width=265,height=465');
+}
+
+function predefmessages() {
+   window.open('popup_predefmessages.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=380');
+}
+
+function gaza() {
+   window.open('popup_gazaorders.php', 'formwindow', 'status=no,scrollbars=no,noresize,width=650,height=500');
+}
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY ONLOAD="preloadimages();">
+<CENTER>
+<TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD><A HREF="./index.php"><IMG SRC="./pic/001.gif" BORDER=0></A><A HREF="//href.hu/x/7x11"><IMG SRC="./resources/cornericons/freegaza_sarokikon" BORDER=0></A></TD></TABLE><TABLE WIDTH=960 CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	
+	
+	
+
+<TD WIDTH=125 VALIGN=TOP>
+<! -- BAL OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=blog" ONMOUSEOVER="document.button01.src=button01_on.src; return true;" ONMOUSEOUT="document.button01.src=button01_off.src; return true"><IMG SRC="./pic/button01_off.gif" NAME="button01" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=levrov" ONMOUSEOVER="document.button02.src=button02_on.src; return true;" ONMOUSEOUT="document.button02.src=button02_off.src; return true"><IMG SRC="./pic/button02_off.gif" NAME="button02" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=faq" ONMOUSEOVER="document.button03.src=button03_on.src; return true;" ONMOUSEOUT="document.button03.src=button03_off.src; return true"><IMG SRC="./pic/button03_off.gif" NAME="button03" BORDER=0></A><BR>
+<BR>
+
+<DIV CLASS="sideforms"><FORM NAME="login" METHOD=POST ACTION="./login.php"><input type="hidden" name="convertGET" value="1"><IMG SRC="./pic/label03.gif"><BR>júzerném:<BR><INPUT TYPE="text" NAME="username" STYLE="width: 120px;"><BR>pesszvörd:<BR><INPUT TYPE="password" NAME="password" STYLE="width: 120px;"><BR><BR><CENTER><INPUT TYPE="submit" VALUE="bemegyek" CLASS="sidebuttons" STYLE="width: 80px;"><BR></CENTER></FORM><CENTER><A HREF="//www.bombagyar.hu/" STYLE="color: #878787">titkosított kapcsolat</A></CENTER><A HREF="./index.php?post=2631#" STYLE="color: #878787" ONCLICK="userreminder();">hú, mi is a jelszó?</A><BR><BR>	
+
+</CENTER>
+</DIV>
+
+<! -- Kereso -- !>
+
+<FORM CLASS="sideforms" NAME="search" METHOD=POST ACTION="./index.php"><input type="hidden" name="convertGET" value="1">
+<IMG SRC="./pic/label02.gif">
+<INPUT TYPE="text" NAME="search" STYLE="width: 120px;"><BR>
+<INPUT TYPE="hidden" NAME="searchmode" VALUE="1">
+<INPUT TYPE="hidden" NAME="searchplace" VALUE="2">
+<INPUT TYPE="hidden" NAME="section" VALUE="0">
+<A HREF="./index.php?filter=search" CLASS="favlist" STYLE="color: #878787">részletes kereso &#187;</A><BR>
+</FORM>
+
+<! -- Linkek -- !>
+
+<IMG SRC="./pic/label01.gif"><BR>
+
+<DIV CLASS="favlistheader"><B>blogok</B></DIV><DIV CLASS="favlist"><A HREF="//fonix.blog.hu" STYLE="color: #878787" TARGET="_blank">f&#337;nix</A><BR><A HREF="//govindananda.blogter.hu/" STYLE="color: #878787" TARGET="_blank">govindananda</A><BR><A HREF="//jezusszive.crpl.hu/" STYLE="color: #878787" TARGET="_blank">jézus szíve</A><BR><A HREF="//molnargoreny.blog.hu/" STYLE="color: #878787" TARGET="_blank">molnárgörény</A><BR><A HREF="//naczivadasz.com" STYLE="color: #878787" TARGET="_blank">náczivadász</A><BR><A HREF="//www.napirajz.hu" STYLE="color: #878787" TARGET="_blank">napirajz</A><BR><A HREF="//www.napiszar.com" STYLE="color: #878787" TARGET="_blank">napiszar</A><BR><A HREF="//eduardorozsaflores.blogspot.com/" STYLE="color: #878787" TARGET="_blank">rózsa-flores eduardo</A><BR><A HREF="//blog.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat régi blogja</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>észraktár</B></DIV><DIV CLASS="favlist"><A HREF="//zugzwanged.org" STYLE="color: #878787" TARGET="_blank">jarl oktató linkjei</A><BR><A HREF="//lemil.blog.hu" STYLE="color: #878787" TARGET="_blank">lemil.blog.hu</A><BR><A HREF="//tttweb.hu/" STYLE="color: #878787" TARGET="_blank">titkos tudás tárháza</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>jótékonykodj</B></DIV><DIV CLASS="favlist"><A HREF="//minimenhely.hu/" STYLE="color: #878787" TARGET="_blank">minimenhely</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>kommuna</B></DIV><DIV CLASS="favlist"><A HREF="//bgy_fotoklub.extra.hu/" STYLE="color: #878787" TARGET="_blank">fotóklub</A><BR><A HREF="//torrent.bombagyar.hu/" STYLE="color: #878787" TARGET="_blank">tbomba (torrent)</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>nemzeti</B></DIV><DIV CLASS="favlist"><A HREF="//www.hunhir.hu" STYLE="color: #878787" TARGET="_blank">hunhír</A><BR><A HREF="//www.magyarmenedek.com" STYLE="color: #878787" TARGET="_blank">magyar menedék</A><BR><A HREF="//magyarnevek.hu/" STYLE="color: #878787" TARGET="_blank">magyar nevek</A><BR><A HREF="//www.szentkoronaradio.com" STYLE="color: #878787" TARGET="_blank">szent korona rádió</A><BR><A HREF="//magyartaltos.info" STYLE="color: #878787" TARGET="_blank">táltos hub</A><BR><BR></DIV><DIV CLASS="favlistheader"><B>szponzoraink</B></DIV><DIV CLASS="favlist"><A HREF="//www.tomcatpolo.hu" STYLE="color: #878787" TARGET="_blank">tomcat polóboltja</A><BR><BR></DIV>
+</TD>
+<TD VALIGN=TOP>
+
+<! -- KOZEPSO COLUMN -- !>
+
+<TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=100% BACKGROUND="pic/firstheader.gif" BGCOLOR=#919191 VALIGN=TOP><TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0><TD WIDTH=70% VALIGN=TOP ALIGN=LEFT CLASS="postheader"><SCRIPT LANGUAGE="JavaScript">document.title="bombagyár! :: Ki hinné, hogy lapos a Föld?";</SCRIPT><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=55 ALIGN=LEFT VALIGN=TOP><A HREF="./index.php?post=2631#" ONCLICK="window.open('popup_userdatasheet.php?id=14', 'formwindow', 'status=no,scrollbars=no,noresize,width=600,height=460');"><IMG SRC="./resources/avatars/avatar_14.jpg" BORDER=0></A></TD><TD CLASS="postheader" VALIGN=TOP>Ki hinné, hogy lapos a Föld?<BR><DIV CLASS="postheader_small">Blog - Tomcat</DIV></TD></TABLE></TD><TD WIDTH=30% VALIGN=TOP ALIGN=RIGHT CLASS="postheader">2009 október 23. 17:58:00<BR><DIV CLASS="postheader_small">&nbsp;&nbsp;&nbsp;<A HREF="./rss/commentrss_2631.xml" STYLE="color: #D4D4D4">komment-RSS</A></DIV></TD></TABLE><IMG SRC="./pic/002.gif"></TD></TR><TR><TD BACKGROUND="pic/009.gif" CLASS="blogtext" VALIGN=TOP><DIV STYLE="overflow: hidden; text-align: justify;"><div style="text-align: justify;">Ma már természetesen senki.    
+         Mindenkinek elmagyarázzák apró gyermekkorában, hogy egy gömbforma sárgolyón élünk,   
+helyesebben       geoid     formájún, de ezzel majd csak hatodikban lepik meg a felnövekvő   
+állampolgárt a cseles           földrajztanárok, és mindjárt hozzáteszik azt is, hogy régen buták   
+voltak az emberek, és azt   hitték,         hogy a Föld lapos. Sőt, aki azt merte mondani, hogy   
+gömbölyű, azt istenkáromlásért   máglyára         vetették, mert ezek tényleg ennyire buták voltak.  
+ Szerencsére jött a   felvilágosodás,   és...<br><br>És       a helyzet az, hogy ebből éppen úgy nem 
+  igaz egy szó sem,   mint az inkvizíció   állítólagos       rémtetteiből. A középkorban ugyanis 
+senki   sem hitte, hogy a   Föld lapos, és senkit   sem égettek meg       érte, ha ezt vitatta. 
+Mindez   modern társadalmunk egyik   szándékosan terjesztett   propagandahazugsága,         
+történelemhamisítás, amit nagyon is jól   meghatározott céllal agyaltak ki   azok a körök, amelyek a 
+        XVIII. század környékén   felforgatták társadalmunkat. A lapos Föld   meséje azt hivatott   
+elhitetni   az     emberekkel, hogy   volt valamiféle éles váltás, úgynevezett   "felvilágosodás",   
+"tudományos   forradalom",     amikor   az emberiség néhány "nagy gondolkodó"   hatására egyik   
+napról a másikra   elvetette az       úgynevezett "babonákat", és azóta mindenki okos,   egyre   
+okosabb. Ha ez így lenne,   nem lennének   tele a     női magazinok horoszkóppal meg     
+boszorkánysággal, és a gyerekek ma is tudnák,   hogy a   tehén nem   lila.   Ne dőljünk be a     
+szabadkőműves marhaságoknak, az emberiség nem egyik   napról a   másikra találta   fel a     
+tudományt,   s ehhez nem kellett az egyházat sem     lerombolni.<br><br>Bármily furcsán hangzik     
+azoknak,   akik   még sohasem hallották, a feudális     rendszer az emberiség legfejlettebb   
+társadalmi   rendje volt.     Tudniillik több, mint ezer éve   volt   kiforrottá válni, míg a modern 
+  demokrácia száz   éves sincs     (kivéve az Egyesült Államokat   és   Svájcot), a kommunizmus és   
+egyéb kísérleti rendszerek   pedig még     fiatalabbak, és nem sok     eredményt hoztak. Tetszik-e   
+vagy sem, a feudalizmust soha nem   sikerült     megfelelően működő     rendszerrel kiváltani.   
+Helyette csupán olyan rendszerek születtek,   amelyek   az   ember mohóságát     hivatottak   
+kielégíteni, felélve bolygónk szűkös erőforrásait. Ám ez   nagyon   is   megfelel   azoknak,   akik  
+ hisznek benne, hogy a még több autó, még több műanyag, még több     űrhajó     előbb-utóbb     
+határtalan boldogságot hoz, nekik pedig érdekük - akár tudatosulva, akár nem   -     hogy a     
+demokrácia   előtti rendszereket ostoba, elavult, korlátolt világnak állítsák be. A     legtöbb     
+ember   számára   pedig nem kell, hogy tudatosan higgye ezt. Elég, ha úgy nő fel, hogy     látja: ma 
+  van   televízió   meg   autó, háromszáz éve nem volt, ma "szabadok" vagyunk, háromszáz éve     
+pedig   a földesúr   dirigált. Az     az összefüggés, hogy ma a földesúrnál ezerszer rosszabb erők   
+    dirigálnak, és a   "jogtalan" tizednél     százszor többet szednek el a nehezen megszerzett      
+ keresetből, már meghaladja a   legtöbb ember     felfogóképességét, vagy ha mégsem, bekapcsol a jól 
+      ismert önigazoló reflex, és   magyarázatot talál     erre a különös jelenségre. Például hogy a 
+      modern társadalom mennyivel többet   nyújt a ma emberének     ezért a több pénzért, több 
+adóért,       több munkáért.<br><br>A szabadkőművesek,   akiknek mai modern     világunkat 
+köszönhetjük, a       kezdetektől fogva mindent megtettek, hogy ezeket a   hiedelmeket   elhintsék.  
+ Ezek egyike a "lapos       Föld" meséje, és az az állítás, hogy bizonyos "nagy     gondolkodókat" - 
+akik   természetesen   mind     hozzájuk tartoztak, például Galilei, aki az Illuminátusok     tagja 
+volt, és ezen   állításukban az     sem zavarja őket, hogy akkoriban az Illuminátusok még meg sem    
+ alakultak - a   velejéig   gonosz   és   ostoba egyház üldözte. Minden társadalmi 
+reformermozgalomnak     megvan a   maga hamis       szenvedéstörténete, még a református egyháznak 
+is. Közkeletű mese, még       "korabeli metszeteken" is       ábrázolták, hogy az inkvizíció 
+gályarabnak adta el a református       lelkészeket. Aki azonban     ismeri a   hajózás történetét, 
+ezen csak elmosolyodik. Egyrészt   gályákat     már régen nem     használtak a   középkorban, 
+másrészt amikor használtak, akkor sem   rabszolgák ültek az     evezőknél,     hanem jól   fizetett, 
+profi tengerészek. Tele van ilyen   tévhitekkel és mesékkel a     középkorról     alkotott   
+képünk.<br><br><A NAME="JWSSIJW"><A HREF="./index.php?post=2631#JWSSIJW" ONCLICK="openbigwindow('resources/pictures/tomcat_fold_gombolyu.jpg', 663, 590); return true;"><img bigpic="resources/pictures/tomcat_fold_gombolyu.jpg" src="./resources/pictures/tomcat_fold_gombolyu_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); 
+float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A lapos Föld meséje 
+            is ilyen közhiedelem. Olyannyira az, hogy a Brit Történelemtudományi Társaság 1945-ben   
+      másodikként     említette ezt a húsz legelterjedtebb történelmi tévhitet felsoroló 
+kiadványában. A         felforgató     propagandisták szándékosan mosták össze a különböző korok 
+ismereteit. Az   emberiség       ugyanis már az     ókorban rájött, hogy a Föld nem lehet lapos. 
+Arisztotelész   idejében, Kr. e.   330     körül ez már     köztudomású volt. A nagy filozófus már 
+akkor   bizonyította a Föld   gömbölyűségét     például azzal, hogy     ha dél felé utazunk, a 
+horizont   fölött egyre magasabban   látjuk a déli     félteke csillagait, illetve a     hajósok 
+először a   hegyek csúcsait látják meg a   szárazföldből, s a     part felé közeledve egyre többet.  
+   Krisztus   születése előtt pár évvel   Sztrabón felhívta a     figyelmet, hogy a Föld 
+holdfogyatkozáskor       megfigyelhető árnyéka mindig   kör alakú, márpedig csak     egy gömb vet 
+minden irányba kerek   árnyékot,     egy korong lapított   ellipszist mutatna.     Erasztothenész 
+pedig néhány egyszerű   megfigyelés nyomán     kiszámította a   Föld kerületét is: 252     ezer 
+sztadion, azaz nagyjából 40   ezer kilométer. Ez Kr.e. 240     körül   történt, jóval azelőtt, hogy  
+   valaki kitalálta volna,   hogy a történelmet korokra       ossza.<br><br>A korai középkorban 
+ugyan     voltak keresztény   szerzők, akik kétségbe vonták a Föld       gömbölyű voltát, de a 
+többség nem     foglalkozott a   kérdéssel, mert teológiai szempontból       jelentéktelennek 
+tartották. Ilyen volt     például   Caesareai Bazil (329-379). Több vezető főpap is       említést 
+tett teológiai műveiben arról,       hogy a Föld gömbölyű, és hogy jelentéktelen porszem   egy     
+hatalmas univerzumban. Így például       Izidor sevillai püspök (560-636) ezt írta <span style="font-style: italic;">Etymologiae</span> című       enciklopédiájában, ami a kor Wikipediája   
+volt,     Rabanus Maurus IX. századi püspök pedig       félgömbként írta le a Föld lakott, északi   
+részét,     lakatlannak képzelve a déli féltekét. Számos       ilyen mű maradt <A NAME="UGVJQXV"><A HREF="./index.php?post=2631#UGVJQXV" ONCLICK="openbigwindow('resources/pictures/tomcat_orszagalma.jpg', 246, 400); return true;"><img bigpic="resources/pictures/tomcat_orszagalma.jpg" src="./resources/pictures/tomcat_orszagalma_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: 
+left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A><br>ránk mind a korai      
+       középkorból, mind a későbbi időkből. Aquinói Szent Tamás is a Föld gömb alakjáról beszélt,    
+   Hermannus       Contractus, XI. század egyik legjelentősebb hittudósa pedig megismételte       
+Erasztotenész mérését.       Dante <span style="font-style: italic;">Isteni színjátéka</span> is     
+  említi a Föld gömb alakját.   Mi     több, az európai keresztény királyok közismert hatalmi 
+jelképe,       az "országalma" (helyes   nevén:     globus cruciger) is a gömbölyű Földet jelképezi, 
+rajta a       kereszttel, ami Isten uralmát   fejezi ki e     gömb alakú világ felett. Nem kell 
+tehát messzire       mennünk annak cáfolatáért, hogy a   középkorban laposnak képzelték volna 
+bolygónkat,       csak a Parlamentbe kell benéznünk az   óránként induló     
+turistacsoporttal.<br><br>A       középkor-ellenesek számos történetet hoznak fel   arra, hogy a 
+gömbölyű     Föld elméletét       hangoztatókat az egyház üldözte. Állításuk szerint nem csak   
+Galileit, hanem már     Vergilius       salzburgi püspököt (cc. 700-784) is azért átkozta ki az 
+egyház,   mert "Istentől     elrugaszkodott,       sátáni tanokat oktatott", nevezetesen a Föld 
+gömbölyű voltát.   Zakariás, az utolsó     bizánci     pápa   döntése szerint <span style="font-style: italic;">"aki abban   tesz hitet, hogy más         világok   léteznek, és ilyen 
+más világ létezhet a föld alatt, melyet emberek   laknak, vagy ilyen     világ       létezik más 
+napok vagy holdak körül, vitessék egyházi tanácsunk elé,   fosztassék meg     minden       
+rangjától, s egyházunk kebeléről kiátkoztassék."</span> De az ítélet nem   arról szólt,     hogy a 
+Föld       gömb alakjának állításáért járna ilyen súlyos büntetés, hanem azért, ha   valaki     azt 
+tanítja,   hogy     léteznek valahol emberek, akik egy más világon élnek, ezért nem Ádámtól     és   
+Évától,   következésképpen     nem Istentől származnak. Vergiliust egyébként pár száz évvel   később 
+      rehabilitálták és boldoggá     avatták.<br><br>Közkeletű tévhit az is, hogy Kolumbusz   
+Kristóf   nagyon     bátor volt, mert annak     ellenére indult el nyugat felé hajóival, hogy a   
+korabeli   tudósok meg     voltak róla győződve, hogy     arrafelé le fognak zuhanni a Föld szélén.  
+   Természetesen ebből sem     igaz egy szó sem. Kolumbusz     érdekes figura volt, térjünk ki     
+személyére néhány     szóban.<br><br><A NAME="ZJXVUHN"><A HREF="./index.php?post=2631#ZJXVUHN" ONCLICK="openbigwindow('resources/pictures/tomcat_kolumbusz.jpg', 300, 373); return true;"><img bigpic="resources/pictures/tomcat_kolumbusz.jpg" src="./resources/pictures/tomcat_kolumbusz_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: 
+left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>A közhiedelem abban nem    
+     téved, hogy valóban Kolumbusz ötlete volt     nyugatnak indulva megtalálni Indiát. Azt már   
+nemigen       jegyezték fel, hogy nem egyedül dolgozta ki az     útitervet, hanem testvére, a   
+térképrajzoló       Bartolomeo segítségével. Kolumbusz roppant erőszakos     ember volt, kitűnő   
+szervező, ám nagyon       rossz hajózási szakember. Alfraganus arab földrajztudós     térképeit   
+tanulmányozva arra jutott,       hogy India Spanyolországtól nyugati irányban mindössze néhány       
+ezer mérföldre lehet. Nem fordult       meg a fejében, hogy Alfraganus - aki természetesen pontos    
+   térképeket rajzolt - nem olasz,   hanem     arab mérföldben számolt, ami csaknem hatszáz méterrel 
+      hosszabb. Helytelen   számításaival,   amelyek   egy sokkal kisebb Földet feltételeztek, sorra 
+  kereste fel     az európai   uralkodókat,   hajót és   támogatást kérve expedíciójához, amelytől   
+komoly profitot remélt.       1485-ben II. János   portugál   királynak, 1486-ban II. Ferdinánd és   
+I. Izabella spanyol   uralkodóknak,     bátyja pedig   az angol   VII. Henriknek mutatta be a   
+terveket. Azonban az   uralkodók hajózási     szakemberei a   javaslatokat   átvizsgálva mindenhol   
+arra jutottak, hogy a   számítások tévesek, és a terv     nem   megvalósítható. A   korabeli hajók   
+hatótávolságának ugyanis   korlátot szabott a szállítható       élelmiszer és ivóvíz   mennyisége.   
+Feltételezve, hogy Európa és   Ázsia között homogén óceán terül el,       ennek a   távolságnak   
+hajóval nekivágni öngyilkosság lett   volna. Kolumbusz tudta ezt, ám   ragaszkodott         
+elképzeléséhez, és kitartott amellett, hogy a   feltételezett távolság sokkal   kisebb, mint         
+Eraszthotenész kiszámította. <br><br>Annak   ellenére, hogy tervei elutasításra   kerültek, a   
+spanyol       királyi udvarban tisztelettel   övezték. Olyannyira, hogy uralkodói   utasításra évi   
+12 ezer maravedi       javadalmazást ítéltek   meg neki, s egy menlevelet is kapott,   amely   
+kötelezte a szabad királyi       városokat, hogy   számára ingyen szállást és ellátást     
+biztosítsanak utazásai során. Kitartó lobbizása       végül   eredménnyel járt. Amikor a spanyolok   
+  visszafoglalták Grenada városát a móroktól, Alcazár         várában ismét találkozott Izabellával 
+és     Ferdinánddal. A királynő ismét elutasította tervét, ám         Ferdinándnak megtetszett az   
+ötletéhez   makacsul ragaszkodó hajós, és futárt szalajtott utána,         visszahívta a várba, és   
+tanácsadói   véleményét felülbírálva három hajót ajánlott fel neki. A   három       hajó nevét is   
+helytelenül   jegyezte meg az utókor: <span style="font-style: italic;">Santa Maria,   Pinta</span>  
+ és <span style="font-style: italic;">Santa Clara,</span> nem   pedig     <span style="font-style: 
+italic;">Ni&#241;a,</span> az csak beceneve volt az egységnek   tulajdonosa, Juan   Ni&#241;o de     
+Moguer után. A történet     további folytatását ismerjük: az   erőszakos Kolumbusz addig   ütötte a  
+   legénységet (szó szerint),   amíg   el nem jutottak az   Indiának hitt Bahamákig. A békés       
+őslakosokkal könnyen szót értettek a   spanyolok,   mindjárt el   is raboltak néhányat, hogy odahaza 
+      bemutathassák. Kolumbusz még háromszor   tért vissza     Amerikába, haláláig azt hivén, Ázsia  
+     partjaihoz jutott el. Szolgálataiért komoly   jutalmakban     részesült, kinevezték a "Nyugati  
+ Indiák"     kormányzójává, ám olyan durva módszerekkel     kormányzott,   hogy 1500-ban   
+letartóztatták, és     bátyjával együtt fél év várfogságra ítélték.   Királyi   kegyelmet   kapott   
+ugyan, és még megtehette     negyedik útját nyugat felé, de állami   pozíciót már   sohasem     
+kaphatott. Ezen az útján kiderült,     hogy vannak a tengeren nála nagyobb   droidok is: Santo     
+Domingo   kormányzóját hiába figyelmeztette     egy közeledő hurrikánra, az nem   hitte el, hogy   
+ekkora   vihar   létezhet, és pontosan a közepébe     küldte az aztékoktól elrabolt   arannyal   
+hazafelé tartó   kincses   flottáját.<br><A NAME="ZQMLTRS"><A HREF="./index.php?post=2631#ZQMLTRS" ONCLICK="openbigwindow('resources/pictures/tomcat_galilei.jpg', 450, 651); return true;"><img bigpic="resources/pictures/tomcat_galilei.jpg" src="./resources/pictures/tomcat_galilei_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: 
+right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A><br>De hagyjuk most       
+történelmi nagyjaink különös életét, s       nézzük, hogyan alakult a továbbiakban a Föld alakjáról  
+ folyó     vita, és hogyan jutottunk el odáig,       hogy ostobaságokat tulajdonítsunk a középkor   
+nagyon is     felvilágosult emberének. Nézzük, mi       történt az állítólag meghurcolt Galileo   
+Galileivel, és     voltaképpen miért is szenvedett       máglyahalált 1600-ban kortársa, Giordano   
+Bruno. Az ő idejükben már     nem volt mit vitatni a Föld       gömbölyűségéről, ám hogy melyik   
+égitest kering melyik körül, még vita     tárgyát       képezte.<br><br>Galilei 1610 körül kezdte   
+hangoztatni a heliocentrikus világkép helyességét,           amiért valóban feljelentették őt az   
+inkvizíciónál, mivel a katolikus egyház néhány vezetője korábban     a     geocentrikus   világkép   
+mellett foglalt állást. Az inkvizíció felmentette őt, de azzal sem     vesztett     volna sokat, ha  
+   nem, ugyanis az inkvizíció nem foglalkozott emberek elégetésével,     megkínzásával   és   más    
+ csacskaságokkal, csupán azt vizsgálta, méltó-e a megvádolt személy az     egyház   gondoskodására.  
+   Aki   látványosan tagadta az egyház tanítását, többé nem mehetett     templomba, nem   temették   
+  megszentelt   temetőbe, és a gyermekét sem keresztelték meg. Ateistáknak     ez valószínűleg   nem 
+  is volt   olyan nagy   veszteség...<br><A NAME="TAFDXYV"><A HREF="./index.php?post=2631#TAFDXYV" ONCLICK="openbigwindow('resources/pictures/tomcat_galilei_inkvizicio.jpg', 443, 338); return true;"><img bigpic="resources/pictures/tomcat_galilei_inkvizicio.jpg" src="./resources/pictures/tomcat_galilei_inkvizicio_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); 
+float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A><br>Élete során     
+        Galilei mindvégig a heliocentrikus világkép mellett érvelt, többek között egyházi tudósokkal 
+  is           vitába szállva. Senki sem kívánta ezért megégetni vagy kiátkozni. Sőt, 1632-ben VIII. 
+  Orbán   pápa   és       az inkvizíciós testület jóváhagyásával jelenhetett meg <i>Dialogo sopra i  
+ due   massimi   sistemi del       mondo</i> (Két világmodell összevetéséről szóló párbeszéd) című   
+könyve,   amelyben a   korábbi   évtizedek     során lezajlott vitáinak összegzését tartalmazta.   
+Ennél ékesebb bizonyítéka nincs is   annak, hogy az     egyháznak semmi baja nem volt tanításaival. 
+  Más oka volt,   hogy mégis     inkvizíciós bíróság     előtt kellett felelnie. A könyvben a   
+heliocentrikus világkép   mellett saját     nevében, a ptolemaioszi     geocentrikus elmélet mellett 
+  pedig egy Simplicio (azaz   "Együgyű") nevű     fiktív karakter nevében     érvel. Ez megfelelt   
+VIII. Orbán azon kérésének, hogy   a könyvben mindkét     világkép mellett és ellen     hangozzanak  
+ el a kor tudományos érvei, illetve   hogy saját pápai     véleménye is szerepeljen benne, mint      
+ az egyház hivatalos álláspontja.   Csakhogy Galilei, egyfajta     fricskaként, a pápa szavait   
+Simplicio     szájába adta, köznevetség   tárgyává téve az egyházfőt.     VIII. Orbán ugyan   
+könnyedén vette a tréfát,   de   a továbbiakban   nem támogatta a tudóst, aki így       
+kiszolgáltatottá vált az akkoriban komoly   politikai   hatalmat   képviselő egyházi vezetők       
+számára.<br><br>Az inkvizíció azonban még csak nem is ezért állította   bírósága elé. Az utókor     
+rendesen megkeverte az eljárás   történetét, és a   történelemhamisítók   ezt   saját javukra     
+fordították. Galileit évekkel könyve   megjelenése előtt idézték   Rómába,   mert   nyíltan vitatta  
+ a   Biblia bizonyos passzusait,   képtelenségnek minősítve a Szentírás     bizonyos   részeit. A 
+per     tárgya az az állítása volt, hogy a   Biblia valótlanságot állít Józsué     könyvében,   ahol 
+azt     írja:<br><br><div style="padding: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 
+0%; color: rgb(0, 0, 0); -moz-background-clip: border; -moz-background-origin: padding; 
+-moz-background-inline-policy: continuous; text-align: justify; margin-left: 20px; margin-right: 
+20px; font-style: italic;">"<a target="_blank"name="para_13">És megálla a   nap, és vesztegle a hold     is, a míg  
+      bosszút álla a nép az ő ellenségein. Avagy nincsen-é ez   megírva a Jásár    könyvében? És     
+megálla a     nap az égnek közepén és nem sietett lenyugodni  majdnem   teljes egy         
+napig.</a>"</div><br>Illetve   a Zsoltárok Könyvében, ahol ez állt:<br><br><div style="padding: 
+10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; color: rgb(0, 0, 0); 
+-moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: 
+continuous; text-align: justify; margin-left: 20px; margin-right: 20px; font-style: 
+italic;">"Mondjátok a népek között: Az   Úr   uralkodik; megerősítette a földet, hogy meg ne       
+induljon;   ő ítéli meg a népeket     igazsággal."</div><br>A fenti idézet úgy is fordítható, hogy   
+    "a föld   szilárdan áll, nem mozog".     Károli Gáspár már az itt látható formában értelmezte és 
+      fordította   magyarra, ez is mutatja, hogy   az   idézet allegorikusan értendő. Galilei 
+azonban   szó     szerint   értelmezte, és a tudomány nevében     megkérdőjelezte a Szent Biblia 
+szavát.   Rontott a     helyzeten, hogy   jónéhány hittudós szintén szó     szerint kívánta 
+értelmezni a   nyilvánvalóan     szimbolikus sorokat. A   per évekig húzódott, és még     
+folyamatban volt, amikor   a <i>Dialogo sopra     i due massimi sistemi del   mondo</i> megjelent. 
+Galilei     végül   elvesztette a pert, nem kis     részben a pápával szembeni említett   pimaszsága 
+miatt, aki       visszavonta a könyvhöz adott     hozzájárulását. Az utókornak ezt már úgy   
+mesélik, hogy az egyház       "betiltotta" Galilei könyvét,     holott ez nem igaz, csak nem 
+nyomtatták ki,   ami gyakorlatilag   egyet     jelentett az     ellehetetlenítéssel, hiszen 
+akkoriban a könyvnyomtatás és   -terjesztés   szinte teljes     egészében     az egyház felügyelete 
+alatt volt. Az sem igaz, hogy élete   végéig   házi őrizetre ítélték     volna,     mert az 
+inkvizíciónak nem állott hatalmában ilyen intézkedést     elrendelni. Nem állt őr   Galilei       
+háza előtt, csupán a kiátkozás veszélye fenyegette, ha   elhagyja az   épületet, vagy   látogatót    
+ fogad.   Élemedett korára a tudós elvesztette látását,   ekkor már   engedélyezték számára,   hogy  
+   vendégeket   fogadjon. Ekkor jutott el Hollandiába a   "rabsága" alatt írt   utolsó könyve, s ott 
+      nyomtatták ki. Aki   olvasta Thyl Ulenspiegel   kalandjait, tudhatja, hogy miért   pont       
+ott.<br><br><A NAME="FHRZNNJ"><A HREF="./index.php?post=2631#FHRZNNJ" ONCLICK="openbigwindow('resources/pictures/tomcat_viviani.jpg', 240, 326); return true;"><img bigpic="resources/pictures/tomcat_viviani.jpg" src="./resources/pictures/tomcat_viviani_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); float: 
+left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>S bár mindenkinek ez jut   
+      eszébe elsőként, ha Galilei nevét     meghallja, mégsem mondta, soha hogy "és mégis mozog". Ez 
+a         mondatot 124 évvel később adta a   szájába   első életrajzírója, a szintén tudós Vincenzio 
+  Viviani.       1761-et írtak akkor, nagy   szükség volt   "felvilágosult" hősökre, akiket a "sötét 
+  középkorban"       meghurcoltak haladó   munkásságukért... Néhány   évvel később alakult meg a 
+hírhedt   Illuminátus Rend,       akik   kezdettől fogva ikonként emelték fel   Galileit, mint "az 
+idejétmúlt   vallási dogmák       áldozatát",   bár ő nyilván tiltakozott volna, lévén hogy   mélyen 
+hívő római   katolikus volt. A       Rotschild- és   Warburg-családok pénzelte Illuminátusok 
+kezdettől   fogva a   katolikus egyház       lerombolását célozták,   napjainkra nem is kevés 
+sikerrel. Az sem véletlen,     hogy a   Magyarországot     1918-ban felforgató egyik   titkos 
+társaság neve Galilei Kör volt. Ennek a       társaságnak Rákosi     Mátyás volt a titkára, s   
+mellesleg ma is működik.<br><br>Galilei     történetét   megismerve ugorjunk     vissza néhány évet, 
+és   ismerkedjünk meg Giordano Brunóval. A     hivatalos   történelemírás szerint     1600-ban 
+ítélte   máglyahalálra az inkvizíció - a     heliocentrikus világkép   hangoztatása miatt.     Ugye, 
+ott az a   bizonyos szög a fejekben? Hiszen     ez éppen tíz évvel azelőtt   történt, hogy Galilei   
+  ugyanezt   hangoztatta volna. Vajon mi     történt az inkvizícióval, hogy egyszer   megégetett     
+embereket, ám néhány   éven belül már pápai     jóváhagyással írhatta meg ugyanazt egy másik   
+ember?     Természetesen Bruno   halálának semmi   köze   sem volt a tudományhoz!<br><br>A <span style="font-style: italic;">Stanford   Encyclopedia of     Phylosophy</span> szerint 1600-ban az 
+egyháznak   nem volt     álláspontja a   kopernikuszi     világképről. Következésképp Giordano 
+Brunót sem nyilváníthatták       eretneknek. Az egyház   csak     évekkel később, Galilei idején 
+kezdett foglalkozni a kérdéssel       egyáltalán. Ugyanezt írja az       1908-ban kiadott Katolikus 
+Enciklopédia is: Brunót nem a     heliocentrikus   világkép elmélete,   nem   is   a szerinte 
+emberek által lakott világok sokaságának     leírása miatt fogták   perbe,   hanem   olyan   
+állítások miatt, mint hogy Krisztus nem Isten fia volt,     csak egy ügyes varázsló,     a   
+Szentlélek nem   más, mint a világ lelke, illetve hogy az ördög     üdvözülhet. Bruno   
+mártírságának     legendája éppen úgy   évszázadokkal halála után született, mint       
+Galileié.<br><br>A per okát   máshol   kell keresnünk.   Giordano Bruno ugyanis nem csak a katolikus 
+      egyházat, hanem a   zsidókat is támadta   műveiben. <span style="font-style: italic;">Spacio   
+della     Bestis   Trionfante</span> című, 1584-ben   megjelent művében   például ezt írta róluk:   
+<span style="font-style: italic;">"ezeket a leprát   terjesztő, közveszélyes   férgeket jobb lenne   
+      kiirtani és elpusztítani még születésük előtt."   </span>Írta ezt annak ellenére   - vagy 
+éppen         azért? - hogy jól ismerte őket, hiszen tudományos   munkája során tüzetesen   
+tanulmányozta a         Kabbalát és más zsidó iratokat. Az inkvizíció korrupt   tisztségviselőire 
+nagy   befolyással   bíró       zsidóknak pedig szokásuk volt elevenen elégetni azokat,   akiket nem 
+kedveltek: így     járt Samuel       ibn Zarza rabbi is, akit Valenciában égettek el saját   
+hitsorsosai, mert azt   mondta,   hogy a       teremtés előtt is létezhetett világ. (Ezt azonban 
+számos   történész   tagadja.) De Girolamo         Savonarola is így járt, miután Firenze városának 
+vezetőjeként     megpróbálta betiltani az uzsorát, a         szerencsejátékot, a bordélyházakat és 
+egyéb, akkoriban   és azóta   is (lásd King's City) a   zsidók       érdekeltségébe tartozó 
+üzletágakat.<br><br>Sem   Galilei, sem Giordano   Bruno, sem   Savonarola       ítéletét nem írta 
+alá a pápa, akinek pedig   jóvá kellett volna hagynia az     inkvizíció határozatait.       
+Mindhárom per formailag érvénytelen   volt a maga idejében, ahogyan a     nürnbergi per is az volt,  
+     mégis végrehajtották. Az   inkvizíciónak eleve nem is lett volna joga   világi   büntetést 
+elrendelni,       például Giordano   Bruno esetében. Bár az ítéleteket nem az   egyház hozta, a XX.  
+ században a   Vatikán     mégis   bocsánatot kért "az inkvizíció bűneiért",   eleget téve a 
+katolikus egyházba     köztudottan       mélyen beépült szabadkőművesek   követelésének.<br><A NAME="ELFDUCZ"><A HREF="./index.php?post=2631#ELFDUCZ" ONCLICK="openbigwindow('resources/pictures/tomcat_giordano_bruno_szobra.jpg', 439, 800); return true;"><img bigpic="resources/pictures/tomcat_giordano_bruno_szobra.jpg" src="./resources/pictures/tomcat_giordano_bruno_szobra_thumb.jpg" style="border: 1px solid rgb(0, 0, 
+0); float: right; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A><br>Giordano    
+         Brunónak 1889-ben, Róma elfoglalása után szobrot állítottak Rómában, talapzatán a következő 
+            felirattal: <span style="font-style: italic;">"A katolikus egyház ölte meg, a tudomány   
+          ellensége."</span> A szobrot Giovanni Bovio alkotta, az Olaszországi Nagyoriens Páholy   
+nagymestere.           A szobrot felavatásakor száz szabadkőműves zászlóval vették körül, s ma az   
+ateisták kedvelt           szimbolikus találkozóhelye. Ennek sem biztos, hogy örülne szegény   
+Giordano Bruno, hiszen ő   maga         katolikus pap volt. De kit érdekel ez ma már, a halott azé,  
+ aki   megszerzi...<br><br><A NAME="PKMPAYB"><A HREF="./index.php?post=2631#PKMPAYB" ONCLICK="openbigwindow('resources/pictures/tomcat_washington_irving.jpg', 421, 599); return true;"><img bigpic="resources/pictures/tomcat_washington_irving.jpg" src="./resources/pictures/tomcat_washington_irving_thumb.jpg" style="border: 1px solid rgb(0, 0, 0); 
+float: left; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" border="0"></A>Adós vagyok még     
+        annak nevével, akinek köszönhetően ma azt hisszük, a középkori ember a Földet laposnak 
+hitte.   Az     az       állítás, hogy Kolumbuszt azért nem támogatták, mert azt hitték, a Föld 
+lapos, és a   hajók       lezuhannak     a széléről, Washington Irving (1783-1859) amerikai 
+romantikus   regényírótól   származik,     aki 1828-ban     tette közzé <span style="font-style: 
+italic;">The   Life and Voyages   of Cristopher     Columbus</span>     (Kolumbusz Kristóf élete és 
+utazásai) című,   világsikert   aratott könyvét. Tőle     származik az az     állítás is, hogy a 
+matrózok lázadó   hangulatban tették   meg az utat, rettegve     attól, hogy leesnek a     Föld 
+széléről, noha ez nem   igaz. Hiszen a   tengerészek tudták a legjobban,     hogy a Föld gömbölyű,   
+  megfigyelhették egész   életük során   számtalanszor, ha parthoz vagy másik     hajóhoz 
+közeledtek. A     matrózok valójában   Kolumbusz   dilettantizmusa miatt rettegtek, hiszen     
+kellemetlen halál a tengeren     eltévedve   éhen veszni.   Washington Irving feladatának tekintette 
+    megszépíteni Kolumbusz karakterét az       utókor előtt,   ami nem is csoda, mivel valószínűleg 
+maga is     szabadkőműves volt. Erről ugyan   soha   nem     vallott, de életútját követve 
+valószínűsíthető. Nevét     George Washington után   kapta, akinek       gyermekkorától nagy 
+tisztelője volt, és vele való     találkozását festményen is   megörökítette.   Fiatal     kora 
+jelentős részét a szabadkőművesség     fellegvárának számító   Párizsban töltötte,   ahol aktívan 
+részt     vett a társasági életben.     <br><br>Számos tévhitet   ilyen írók hintenek el   a 
+köztudatban. Gondoljunk     csak Dan Brownra, aki     az Illuminátusokat   próbálta mesebeli   
+szervezetté formálni ostoba, ám     világszerte százmilliós     példányszámban   eladott regényében, 
+a   <span style="font-style: italic;">Da     Vinci-kódban,     </span>vagy   Steven Spielbergre, aki 
+soha   meg nem történt eseményeket tett "valósággá"     megható       játékfilmjeiben. A felforgató 
+mozgalmak   mindig is nagyon jól tudták, hogy a       történelemhamisítást     a populáris 
+kultúrában kell   kezdeni, mert az átlagember jobban szeret   tanulni,     ha   szórakozásnak   
+hiszi, mint egy   egyetemen ülni és tények közt szelektálni.   Figyeljünk oda, mit       olvasunk, 
+mit   nézünk és mit   hiszünk el, mert az agymosásnak   mindannyian célpontjai vagyunk. Bármit       
+szabad   hinnünk, csak   azt nem, hogy a jelenlegi   világrend nem jó. Ennek pedig az a legbiztosabb 
+        megelőzése, ha e   világrend minden   alternatíváját butának, elavultnak, erőszakosnak vagy  
+ barbárnak       állítják be   előttünk. Az   átlagember úgyse fog utánajárni.<br><br> </div>        
+ </DIV></TD></TR><TR><TD HEIGHT=36 WIDTH=100% BACKGROUND="pic/003.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A HREF="./index.php?date=2009-10-23&section="  STYLE="color: #ACACAC; font-size: 10px;"><B>vissza a főoldalra</B></A></TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=13" TARGET="_blank"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="468" height="60"><param name="movie" value="resources/banners/szentkoronaradio.swf" /><param name="quality" value="high" /><embed src="./resources/banners/szentkoronaradio.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="468" height="60"></embed></object></A></TD></TR>
+	
+	
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+function privmsg(commentid) {
+   window.open('popup_privmsg.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=520,height=350');
+}
+
+function modifycomment(commentid) {
+   window.open('popup_addcomment.php?id='+commentid, 'formwindow', 'status=no,scrollbars=no,noresize,width=420,height=400');
+}
+
+</SCRIPT>
+
+<TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><A NAME="comments"></A><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2631&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2631&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2631&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2631&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2631&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2631&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2631&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2631&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2631&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2631&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2631&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=2631&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=2631&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> </TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment191368"></A>114. brujerizmo</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-10-28 08:29:48</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_6449.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">az angyalok és démonok c. brown-könyv épül az illuminátus-mítoszra nem?</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190947"></A>113. Belmont</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2631&id=190937#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-10-25 21:21:44</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1019.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Lehet, hogy &#8222;tele van", de a cikk mondandója attól még érthető. Persze, nem szerencsés, hogy mindenért a &#8222;szabadkőművességet" látszik okolni a cikk, illetve az sem, hogy itt-ott a tényanyag a személyes véleménnyel keveredik. De végül is ez egy blog.<br />
+<br />
+A cikk arra a kérdésre világít rá, hogy miért van az, hogy minden modern &#8222;felfedezés" romboló és felforgató céllal jelent meg a világban?<br />
+<br />
+Ismétlem: a napközpontúság megfért volna a földközpontúság mellett, lévén az előbbi egy természettudományos elmélet, míg az utóbbi teológiai tan, ezért is nem látott benne kivetnivalót az egyház - a későbbi összeütközés abból keletkezett, hogy Galilei teológiai érvényűként propagálta, ezt a devianciát nem nézhette tétlenül az egyház.<br />
+<br />
+A feudalizmus &#8222;idejétmúltsága" kapcsán meg elég annyi, hogy bárhogy is mocskolják és blamálják, az elvei a mai napig működnek. Csak persze ma már kifordítva, egy jövendő &#8222;ellenfeudalisztikus" társadalom felé mutatva. A leendő nagybirtokosok nagyon is tisztában vannak azzal, hogy a világban a föld az alapja mindennek. Lásd pl. a hírhedt mondatot Magyarország fölvásárlásáról...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190937"></A>112. Dragonetti</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-10-25 19:25:26</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ez a cikked tele van helytelen, de legalábbis üvöltően pontatlan adatokkal. Oké bevallom, én is illuminátus vagyok, mint minden földrajztanár. </DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190928"></A><FONT COLOR="#FF0000">111. </FONT>Turulgazda</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2631&id=190897#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-10-25 17:44:49</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./pic/noavatar.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190927"></A>110. Felis</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2631&id=190923#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-10-25 17:36:11</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1243.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Dupla szmájlit ne tessék figyelmen kívül hagyni a végén, a félreértések elkerülése végett került oda, de úgy tűnik most nem használt:)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190923"></A>109. Oroszlánszív</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2631&id=190911#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-10-25 16:45:50</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_5585.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">okszi felis és akkor mi van a lééccccikkével?xD</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190914"></A>108. Felis</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2631&id=190876#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-10-25 15:29:18</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1243.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Egyszerűen nincs jogunk kijelenteni egy egész társadalomról, hogy ostoba! Maga a szóhasználat, hogy "sötét középkor" is csak a felvilágosodás kreációja (talán ez benne is van a cikkben). A rom.kat. egyház természetesen nem "szent", de pl. Kínára mind máig nem volt hatással, mégis hasonló fejlődési folyamaton ment át az országuk. Mindenhol - egymástól függetlenül - kialakult egy, a feudális rendszerhez hasonló állapot és ezzel lehet, hogy együtt járt egyfajta stagnálása a természettudományok rohamos előrehaladásának. Mégis, ez úgy tűnik kellett az EGÉSZ emberiségnek és az írott történelemben ez a rendszer tartotta magát a legtovább, ezért én azzal nem tudok mit kezdeni, hogy hogyan mondhatja valaki azt, hogy mindenki hülye, aki ebben látta anno a jövőjét...</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190911"></A><FONT COLOR="#FF0000">107. </FONT>Felis</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2631&id=190844#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-10-25 15:13:29</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_1243.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;"><B>Privát üzenet</B><BR>Csak regisztrált felhasználók olvashatják el.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190897"></A>106. Tomcat</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A HREF="./gotocomment.php?post=2631&id=190876#comments" STYLE="color: #777777; font-weight: normal;">(előzmény)</A> 2009-10-25 13:41:53</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_14.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Írás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Felhasználók módosításának joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentárok törlésének joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><IMG SRC="./pic/goldstar2.gif" TITLE="Supervisor"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">A pestisjárványnak semmi köze nem volt az egyházhoz. Az ostobaságot úgy érted, hogy nem volt autójuk, számítógépük meg atombombájuk? Mert akkor stimmel. Embert égetni ma is szoktak, mostanság akár ezerszámra is, lásd Drezda, Hirosima, Mile of Death. Azzal meg ne vitatkozz, hogy a középkori ember laposnak gondolta volna a Földet, mert nem gondolta annak. Persze, te lehet, hogy azt gondolod a középkori emberről, hogy igen, de ez senkit sem érdekel. Olvasd el a cikket még egyszer, lassan.</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/004.gif"><TABLE WIDTH=100% HEIGHT=30 CELLPADDING=0 CELLSPACING=0 BORDER=0><TD WIDTH=82 ALIGN=LEFT>&nbsp;</TD><TD CLASS="commentheader" VALIGN=BOTTOM STYLE="padding-bottom: 3px;"><A NAME="comment190890"></A>105. fekete kutya</TD><TD CLASS="commentheader" ALIGN=RIGHT VALIGN=BOTTOM STYLE="padding-bottom: 3px;">2009-10-25 13:18:32</TD><TD WIDTH=10 VALIGN=LEFT>&nbsp;</TD></TABLE></TD></TR><TR><TD WIDTH=100% BACKGROUND="pic/010.gif"><TABLE STYLE="margin-bottom: 10px;" CELLPADDING=5 CELLSPACING=0 BORDER=0><TD WIDTH=10 ALIGN=LEFT VALIGN=TOP>&nbsp;</TD><TD WIDTH=72 ALIGN=LEFT VALIGN=TOP><IMG SRC="./resources/avatars/avatar_319.jpg" CLASS="avatar" BORDER=0><BR><IMG SRC="./pic/goldstar2.gif" TITLE="Kommentálás joga"><BR></TD><TD VALIGN=TOP ALIGN=JUSTIFY CLASS="comment"><DIV STYLE="width: 560px; overflow: hidden;">Ó, azt hogy a Föld meg a Hold gömb, már nagyon régen tudjuk. Azóta biztosan, hogy az agyunk elérte a kb 1200 köbcentit. Nem is volt ez olyan nagy teljesítmény, pl egyszer egy okos vadász éjszaka tért vissza a táborba, miután sokáig csodálta a félholdat, és észrevette, hogy a társai fejét, arcát pont úgy világítja meg a tábortűz fénye, ahogy a Hold végigmegy a fázisain: aki háttal ült neki, abból semmit sem látott, aki szemben, annak az egész arcát látta, a többiekből is épp annyit, amennyi fény esett rájuk. Szerintem innen a "Hold arca" kifejezés is, hiszen az érkezésére minden szempár feléje fordult, így még talán a kötött keringésből is megsejthettek valamit :)</DIV></TD></TABLE><IMG SRC="./pic/015.gif"></TD></TR><TR><TD HEIGHT=90 WIDTH=100% BACKGROUND="pic/005.gif" CLASS="navlinks" ALIGN=CENTER VALIGN=CENTER><TABLE WIDTH=100% CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD WIDTH=5%></TD><TD WIDTH=20%>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=CENTER>&nbsp;</TD><TD WIDTH=15%>&nbsp;</TD><TD WIDTH=20% ALIGN=RIGHT><A HREF="./index.php?post=2631&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>következő 10 &#187;</B></A></TD><TD WIDTH=5%>&nbsp;</TD></TABLE><A HREF="./index.php?post=2631&commentstart=0#comments" STYLE="color: #FFFFFF; font-size: 10px;"><B>1</B></A> <A HREF="./index.php?post=2631&commentstart=10#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>2</B></A> <A HREF="./index.php?post=2631&commentstart=20#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>3</B></A> <A HREF="./index.php?post=2631&commentstart=30#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>4</B></A> <A HREF="./index.php?post=2631&commentstart=40#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>5</B></A> <A HREF="./index.php?post=2631&commentstart=50#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>6</B></A> <A HREF="./index.php?post=2631&commentstart=60#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>7</B></A> <A HREF="./index.php?post=2631&commentstart=70#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>8</B></A> <A HREF="./index.php?post=2631&commentstart=80#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>9</B></A> <A HREF="./index.php?post=2631&commentstart=90#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>10</B></A> <A HREF="./index.php?post=2631&commentstart=100#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>11</B></A> <A HREF="./index.php?post=2631&commentstart=110#comments" STYLE="color: #ACACAC; font-size: 10px;"><B>12</B></A> </TD></TR><TR><TD WIDTH=100% HEIGHT=90 BACKGROUND="pic/005.gif" ALIGN=CENTER VALIGN=CENTER><A HREF="./openbanner.php?id=5" TARGET="_blank"><IMG SRC="./resources/banners/tomcatpolo_banner1.gif" CLASS="avatar"></A></TD></TR>
+	
+	
+	
+
+
+</TABLE>
+</TD>
+
+<TD WIDTH=126 VALIGN=TOP CLASS="sideforms">
+<! -- JOBB OLDALI COLUMN -- !>
+
+<A HREF="./index.php?section=droidzona" ONMOUSEOVER="document.button04.src=button04_on.src; return true;" ONMOUSEOUT="document.button04.src=button04_off.src; return true"><IMG SRC="./pic/button04_off.gif" NAME="button04" BORDER=0></A><BR>
+
+<A HREF="./index.php?filter=msgbox" ONMOUSEOVER="document.button05.src=button05_on.src; return true;" ONMOUSEOUT="document.button05.src=button05_off.src; return true"><IMG SRC="./pic/button05_off.gif" NAME="button05" BORDER=0></A><BR>
+
+<A HREF="./index.php?section=radio" ONMOUSEOVER="document.button06.src=button06_on.src; return true;" ONMOUSEOUT="document.button06.src=button06_off.src; return true"><IMG SRC="./pic/button06_off.gif" NAME="button06" BORDER=0></A><BR>
+
+<IMG SRC="./pic/008.gif"><BR>
+
+<! -- oneliner -- !>
+
+<TABLE WIDTH=100% CELLPADDING=2 CELLSPACING=0 BORDER=0>
+<A NAME="oneliner"></A>
+<FORM NAME="oneliner" METHOD=POST ACTION="./addoneliner.php"><input type="hidden" name="convertGET" value="1">
+
+<TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Gabucino" STYLE="color: #FFFFFF"><B>08:27</B></A><BR>Irigyek, de van<BR>is mire :) SQL<BR>meg átmegy<BR>readonlyba, mert<BR>ez vicc.</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>na de régen nem<BR>frissült az<BR>üzenőfal...</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="-Wolverine-" STYLE="color: #FFFFFF"><B>01:40</B></A><BR>ja és csakazértis<BR>Éjszakai Műszak<BR>8)! </TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="devius" STYLE="color: #FFFFFF"><B>13:55</B></A><BR>Oszt azé....?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bryan5" STYLE="color: #FFFFFF"><B>11:50</B></A><BR>újra elérhető<BR>volna az oldal?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="bolsimaci" STYLE="color: #FFFFFF"><B>07:35</B></A><BR>hova lett az új<BR>honlap?</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>15:57</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="fanyűvő" STYLE="color: #FFFFFF"><B>05:38</B></A><BR>Gauranga<BR>mindenkinek!</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Angelx" STYLE="color: #FFFFFF"><B>19:27</B></A><BR>vau-vau</TD></TR><TR><TD WIDTH=126 CLASS="favlist" BACKGROUND="pic/007.gif"><A TITLE="Buga Jakab" STYLE="color: #FFFFFF"><B>02:19</B></A><BR>Nezd meg melyik<BR>orszagrol nem<BR>esik semmi<BR>negativ emlites a<BR>wikileaksen, es<BR>lehet, hogy<BR>osszeall a kep,<BR>kik es mik is ok<BR>igazabol es mi a<BR>celja ennek a<BR>bohozatnak.</TD></TR></TABLE><IMG SRC="./pic/label04.gif">
+
+
+<! -- túraszervezo -- !>
+
+<A NAME="turasidebar"></A>
+<BR>
+
+<IMG SRC="./pic/label10.jpg"><BR><BR><A HREF="./index.php?filter=cartrip" CLASS="favlist" STYLE="color: #878787">túraszervező</A><BR><A HREF="./rss/cartrip_rss.xml" CLASS="favlist" STYLE="color: #878787">túra-rss</A><BR><A HREF="./index.php?post=2447" CLASS="favlist" STYLE="color: #878787">mi ez?</A><BR>
+<! -- Smarties -- !>
+
+<IMG SRC="./pic/label05.gif" STYLE="margin-top: 10px;"><BR>
+
+<A HREF="./index.php?filter=best" CLASS="favlist" STYLE="color: #878787">legjobbak</A><BR>
+<A HREF="./index.php?filter=toplist" CLASS="favlist" STYLE="color: #878787">legolvasottabbak</A><BR>
+<A HREF="./index.php?filter=contents" CLASS="favlist" STYLE="color: #878787">tartalomjegyzék</A><BR>
+<A HREF="./rss/rssfeed.xml" CLASS="favlist" STYLE="color: #878787">rss feed</A><BR>
+
+<! -- Birthdays -- !>
+
+<IMG SRC="./pic/label08.gif" STYLE="margin-top: 10px;"><BR>
+<DIV STYLE="margin-left: 8px;">
+
+AboryM<BR>Caesar<BR>Count Grishnackh<BR>cscsabi<BR>eürdüngh<BR>Feki<BR>GyalogKakukk<BR>Ishukone<BR>Kadzseszka<BR>LACI1993<BR>Mini<BR>Muska<BR>Rommel<BR>Segi<BR>Takezó<BR>tommylee<BR>vikcee<BR><BR></DIV>
+
+</TD>
+
+</TABLE>
+<IMG SRC="./pic/006.gif">
+<BR>
+<DIV CLASS="copyright">
+BlogGép 1.1 (C) 2007-2009 tomcat<BR>
+nem adom<BR>
+hülye kérdések elott olvasd el a faq-t<BR><BR>
+minden, a bombagyar.hu-n és aloldalain közölt tartalom újraközléséhez<BR>
+a szerkeszt&otilde;k írásos beleegyezése szükséges<BR><BR>
+
+az olvasói kommentárok és levelek nem feltétlenül a szerkeszt&otilde;k véleményét tükrözik
+<BR><BR>
+
+<A NAME="rootmenu"></A>
+
+<A HREF="./index.php?filter=hazirend" STYLE="color: #878787; font-size: 10px;">házirend elolvasása</A>&nbsp;&nbsp;
+
+
+</DIV>
+
+
+</CENTER>
+
+<!-- <script src="//www.google-analytics.com/urchin.js" type="text/javascript">
+</script> -->
+<script type="text/javascript">
+_uacct = "UA-2742887-1";
+urchinTracker();
+</script>
+
+<!-- Piwik
+<script type="text/javascript">
+var pkBaseURL = (("http:" == document.location.protocol) ? "http://piwik.gabucino.be/piwik/" : "http://piwik.gabucino.be/piwik/");
+document.write(unescape("%3Cscript src='./" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="//piwik.gabucino.be/piwik/piwik.php?idsite=2" style="border:0" alt=""/></p></noscript>
+End Piwik Tag -->
+
+</BODY>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111355066-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111355066-1');</script>
+</HTML>
+
+<style>.avatar{visibility:hidden;} img[attribute='KommentĂĄlĂĄs joga']{ display: none;}</style>
+<script>
+// ha nem tolt be egy kep akkor siman a pictues mappaban keressuk
+document.addEventListener("DOMContentLoaded", function(event) {
+
+var images = document.querySelectorAll('img');
+
+for (var i = 0; i < images.length; i++) {
+  if(images[i].naturalWidth == 0 ){
+   console.log(images[i].src);
+   var origsrc = images[i].getAttribute("src").toString();
+    console.log(origsrc);
+    newsrc = "./resources/pictures/" + origsrc.split('/').pop()
+    images[i].src = newsrc;
+    console.log(newsrc);
+  }
+}
+
+});
+</script>
